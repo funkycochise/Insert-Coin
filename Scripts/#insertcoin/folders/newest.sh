@@ -34,8 +34,14 @@ function linkfolder {
 if  test -f "$RegSourceRoot/Chelnov - Atomic Runner (World).mra" ; then
   linkfolder "_Chelnov"
 fi
-if  test -f "$RegSourceRoot/Karnov (US, rev 6).mra" ; then
-  linkfolder "_Karnov"
+#if  test -f "$RegSourceRoot/Karnov (US, rev 6).mra" ; then
+#  linkfolder "_Karnov"
+#fi
+if  test -f "$RegSourceRoot/Sky Soldiers (US).mra" ; then
+  linkfolder "_Sky Soldiers"
+fi
+if  test -f "$RegSourceRoot/Time Soldiers (US Rev 3).mra" ; then
+  linkfolder "_Time Soldiers"
 fi
 
 #1216
