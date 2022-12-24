@@ -25,10 +25,11 @@ then
    addgame "ASO.mra" "_ASO"
    addgame "FightingGolf.mra" "_FightingGolf"
    addgame "Ikari Warriors.mra" "_Ikari Warriors"
+   addgame "SAR - Search And Rescue (World).mra" "_S.A.R. - Search and Rescue"
    addgame "Sky Soldiers (US).mra" "_Sky Soldiers"
+   addgame "Time Soldiers (US Rev 3).mra" "_Time Soldiers"
    addgame "TNKIII.mra" "_TNKIII"
    addgame "Victory Road.mra" "_Victory Road"
-   addgame "SAR - Search And Rescue (World).mra" "_S.A.R. - Search and Rescue"
 fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
