@@ -25,6 +25,7 @@ then
    addgame "ASO.mra" "_ASO"
    addgame "FightingGolf.mra" "_FightingGolf"
    addgame "Ikari Warriors.mra" "_Ikari Warriors"
+   addgame "Sky Soldiers (US).mra" "_Sky Soldiers"
    addgame "TNKIII.mra" "_TNKIII"
    addgame "Victory Road.mra" "_Victory Road"
    addgame "SAR - Search And Rescue (World).mra" "_S.A.R. - Search and Rescue"
