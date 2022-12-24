@@ -658,6 +658,8 @@ dl "karnov.zip"
 dl "chelnov.zip"
 #dl "wndrplnt.zip"
 dl "mrjong.zip"
+dl "skysoldr.zip"
+dl "timesold.zip"
 
 #special_echo "Downloading missing neogeo mame roms"
 neo "2020bb.zip"
