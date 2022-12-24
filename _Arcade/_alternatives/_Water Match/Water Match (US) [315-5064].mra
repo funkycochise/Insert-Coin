@@ -1,0 +1,98 @@
+<misterromdescription>
+    <name>Water Match (US) [315-5064]</name>
+    <setname>wmatch</setname>
+    <rbf>segasys1</rbf>
+    <mameversion>0229</mameversion>
+    <year>1984</year>
+    <manufacturer>Sega (Bally Midway License)</manufacturer>
+    <players>2</players>
+    <joystick>4-way</joystick>
+    <rotation>Vertical/CCW</rotation>
+    <region>US</region>
+    <mratimestamp>20210630000000</mratimestamp>
+
+    <buttons names="Right,Left,Down,Up,Dive,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="5"/>
+
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fc">
+        <!-- SWA -->
+        <dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- SWB -->
+        <dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Time" bits="10,11" ids="Fastest,Faster,Fast,Normal"/>
+        <dip name="Difficulty" bits="14" ids="Hard,Easy"/>
+    </switches>
+
+    <rom index="0" zip="wmatch.zip" type="merged" md5="None">
+
+        <!-- soundcpu - starts at 0x0 - size: 0x8000-->
+        <part name="wm.3" crc="50d2afb7"/>
+        <part name="wm.3" crc="50d2afb7"/>
+        <part name="wm.3" crc="50d2afb7"/>
+        <part name="wm.3" crc="50d2afb7"/>
+
+        <!-- maincpu - starts at 0x8000 - size: 0x18000 -->
+        <part name="wm.129" crc="b6db4442"/>
+        <part name="wm.130" crc="59a0a7a0"/>
+        <part name="wm.131" crc="4cb3856a"/>
+        <part name="wm.132" crc="e2e44b29"/>
+        <part name="wm.133" crc="43a36445"/>
+        <part name="wm.134" crc="5624794c"/>
+        <part name="wm.133" crc="43a36445"/>
+        <part name="wm.134" crc="5624794c"/>
+        <part name="wm.133" crc="43a36445"/>
+        <part name="wm.134" crc="5624794c"/>
+        <part name="wm.133" crc="43a36445"/>
+        <part name="wm.134" crc="5624794c"/>
+
+        <!-- sprites - starts at 0x20000 - size: 0x18000 -->
+        <part name="wm.86" crc="238ae0e5"/>
+        <part name="wm.93" crc="a2f19170"/>
+        <part name="wm.86" crc="238ae0e5"/>
+        <part name="wm.93" crc="a2f19170"/>
+        <part name="wm.86" crc="238ae0e5"/>
+        <part name="wm.93" crc="a2f19170"/>
+        <part name="wm.86" crc="238ae0e5"/>
+        <part name="wm.93" crc="a2f19170"/>
+
+        <!-- tiles - starts at 0x40000 -size: 0x18000 -->
+        <part name="wm.82" crc="540f0bf3"/>
+        <part name="wm.65" crc="92c1e39e"/>
+        <part name="wm.82" crc="540f0bf3"/>
+        <part name="wm.65" crc="92c1e39e"/>
+        <part name="wm.81" crc="6a01ff2a"/>
+        <part name="wm.64" crc="aae6449b"/>
+        <part name="wm.81" crc="6a01ff2a"/>
+        <part name="wm.64" crc="aae6449b"/>
+        <part name="wm.80" crc="fc3f0bd4"/>
+        <part name="wm.63" crc="c2ce9b93"/>
+        <part name="wm.80" crc="fc3f0bd4"/>
+        <part name="wm.63" crc="c2ce9b93"/>
+
+        <!-- lookup_proms - starts at 0x58000 - size: 0x100 -->
+        <part name="pr-5317.106" crc="648350b8"/>
+
+        <!-- color_proms - starts at 0x58100 - size: 0x300 -->
+        <part repeat="0x300">00</part>
+
+        <!-- Total 0x58400 bytes - 353 kBytes -->
+
+        <!-- encryption_device - sega_317-5064_device -->
+        <part>
+        88 a8 80 a0 a0 80 20 00 08 88 00 80 88 a8 80 a0
+        20 00 a0 80 20 28 a0 a8 20 28 a0 a8 a0 80 20 00
+        a8 28 88 08 a8 28 88 08 08 88 00 80 a8 28 88 08
+        a8 28 88 08 20 28 a0 a8 a8 28 88 08 a8 28 88 08
+        20 28 a0 a8 88 a8 80 a0 88 a8 80 a0 20 28 a0 a8
+        20 28 a0 a8 a0 80 20 00 20 28 a0 a8 20 28 a0 a8
+        20 00 a0 80 20 28 a0 a8 a8 28 88 08 a0 80 20 00
+        20 28 a0 a8 20 28 a0 a8 a8 28 88 08 a8 28 88 08
+        </part>
+    </rom>
+
+    <rom index="1">
+        <part>0e</part>
+    </rom>
+
+</misterromdescription>

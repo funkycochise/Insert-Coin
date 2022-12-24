@@ -1,0 +1,102 @@
+<misterromdescription>
+    <name>Sega Ninja (US) [315-5102]</name>
+    <setname>seganinj</setname>
+    <rbf>segasys1</rbf>
+    <mameversion>0229</mameversion>
+    <year>1985</year>
+    <manufacturer>Sega</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>Horizontal</rotation>
+    <region>US</region>
+    <mratimestamp>20210630000000</mratimestamp>
+
+    <buttons names="Shuriken,8-Way Shuriken,Disappear,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="3"/>
+
+    <switches page_id="1" page_name="Switches" base="16" default="ff,dc">
+        <!-- SWA -->
+        <dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- SWB -->
+        <dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Lives" bits="10,11" ids="240,4,2,3"/>
+        <dip name="Extend" bits="12" ids="50k 100k 150k 200k,20k 70k 120k 170k"/>
+        <dip name="Allow Continue" bits="13" ids="Yes,No"/>
+        <dip name="Difficulty" bits="14" ids="Hard,Easy"/>
+    </switches>
+
+    <rom index="0" zip="seganinj.zip" type="merged" md5="None">
+        <!-- soundcpu - starts at 0x0 - size: 0x8000-->
+        <part name="epr-6559.120" crc="5a1570ee"/>
+        <part name="epr-6559.120" crc="5a1570ee"/>
+        <part name="epr-6559.120" crc="5a1570ee"/>
+        <part name="epr-6559.120" crc="5a1570ee"/>
+
+        <!-- maincpu - starts at 0x8000 - size: 0x18000 -->
+        <part name="epr-6594a.116" crc="a5d0c9d0"/>
+        <part name="epr-6595a.109" crc="b9e6775c"/>
+        <part name="epr-6596a.96" crc="f2eeb0d8"/>
+        <part name="epr-6596a.96" crc="f2eeb0d8"/>
+        <part name="epr-6596a.96" crc="f2eeb0d8"/>
+        <part name="epr-6596a.96" crc="f2eeb0d8"/>
+
+        <!-- sprites - starts at 0x20000 - size: 0x18000 -->
+        <part name="epr-6546.117" crc="a4785692"/>
+        <part name="epr-6548.04" crc="bdf278c1"/>
+        <part name="epr-6547.110" crc="34451b08"/>
+        <part name="epr-6549a.05" crc="7c51488c"/>
+        <part name="epr-6546.117" crc="a4785692"/>
+        <part name="epr-6548.04" crc="bdf278c1"/>
+        <part name="epr-6547.110" crc="34451b08"/>
+        <part name="epr-6549a.05" crc="7c51488c"/>
+
+        <!-- tiles - starts at 0x40000 -size: 0x18000 -->
+        <part name="epr-6558.62" crc="2af9eaeb"/>
+        <part name="epr-6592.61" crc="7804db86"/>
+        <part name="epr-6558.62" crc="2af9eaeb"/>
+        <part name="epr-6592.61" crc="7804db86"/>
+        <part name="epr-6556.64" crc="79fd26f7"/>
+        <part name="epr-6590.63" crc="bf858cad"/>
+        <part name="epr-6556.64" crc="79fd26f7"/>
+        <part name="epr-6590.63" crc="bf858cad"/>
+        <part name="epr-6554.66" crc="5ac9d205"/>
+        <part name="epr-6588.65" crc="dc931dbb"/>
+        <part name="epr-6554.66" crc="5ac9d205"/>
+        <part name="epr-6588.65" crc="dc931dbb"/>
+
+        <!-- lookup_proms - starts at 0x58000 - size: 0x100 -->
+        <part name="pr-5317.76" crc="648350b8"/>
+
+        <!-- color_proms - starts at 0x58100 - size: 0x300 -->
+        <part repeat="0x300">00</part>
+
+        <!-- Total 0x58100 bytes - 352 kBytes -->
+
+        <!-- encryption_device - sega_317-5102_device -->
+        <part>
+        88 a8 80 a0 88 08 80 00 28 a8 08 88 a0 a8 80 88
+        a8 a0 28 20 a8 a0 28 20 28 a8 08 88 a0 a8 80 88
+        28 08 a8 88 28 08 a8 88 28 a8 08 88 88 08 80 00
+        28 08 a8 88 28 08 a8 88 28 a8 08 88 a8 a0 28 20
+        88 08 80 00 88 a8 80 a0 a0 a8 80 88 28 a8 08 88
+        a8 a0 28 20 88 a8 80 a0 a8 a0 28 20 28 a8 08 88
+        28 08 a8 88 88 a8 80 a0 28 08 a8 88 28 08 a8 88
+        88 a8 80 a0 88 a8 80 a0 a8 a0 28 20 28 08 a8 88
+        </part>
+    </rom>
+
+    <rom index="1">
+        <part>80</part>
+    </rom>
+
+    <rom index="3" md5="none">
+        <part>
+        00 00 00 00 00 ff 00 02 00 02 00 01 00 ff 00 00
+        00 00 ef 00 00 31 00 43
+        </part>
+    </rom>
+
+    <nvram index="4" size="49"/>
+
+</misterromdescription>

@@ -1,0 +1,62 @@
+<misterromdescription>
+	<name>Swat (315-5048)</name>
+	<mameversion>0217</mameversion>
+	<setname>swat</setname>
+	<mratimestamp>202001070000</mratimestamp>
+	<year>1984</year>
+	<manufacturer>Coreland / Sega</manufacturer>
+	<category>Shooter</category>
+	<rbf>segasys1</rbf>
+    <switches default="FF,7E" base="8">
+		<dip bits="9,10"   name="Lives" ids="Infinite,5,4,3"/>
+		<dip bits="11,13"  name="Bonus at" ids="Never,90k,80k,70k,60k,50k,40k,30k"/>
+	</switches>
+	<buttons names="Bomb,Fire,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,Start,Select,R,C"/>
+	<rom index="1">
+		<part>06</part>
+	</rom>
+	<rom index="0" zip="swat.zip" md5="63402cddf57d92dcfdcecbce7d1d9b83" type="merged|nonmerged|split">
+		<part crc="93db9c9f" name="epr5807b.129"/>
+		<part crc="67116665" name="epr-5808.130"/>
+		<part crc="fd792fc9" name="epr-5809.131"/>
+		<part crc="dc2b279d" name="epr-5810.132"/>
+		<part crc="093e3ab1" name="epr-5811.133"/>
+		<part crc="5bfd692f" name="epr-5812.134"/>
+
+		<part crc="f6afd0fd" name="epr-5819.3"/>
+		<part crc="f6afd0fd" name="epr-5819.3"/>
+
+		<part crc="5a732865" name="epr-5805.86"/>
+		<part crc="26ac258c" name="epr-5806.93"/>
+		<part crc="5a732865" name="epr-5805.86"/>
+		<part crc="26ac258c" name="epr-5806.93"/>
+
+		<part crc="b22033d9" name="epr-5818.82"/>
+		<part crc="4384376d" name="epr-5816.81"/>
+		<part crc="be721c99" name="epr-5814.80"/>
+
+		<part crc="fd942797" name="epr-5817.65"/>
+		<part crc="16ad046c" name="epr-5815.64"/>
+		<part crc="0d42c27e" name="epr-5813.63"/>
+
+		<part crc="648350b8" name="pr-5317.106"/>
+		<part>
+88 08 80 00 a0 a8 80 88 88 08 80 00 88 a8 80 a0
+a0 80 20 00 88 08 80 00 a0 a8 80 88 88 08 80 00
+28 20 a8 a0 a0 a8 80 88 88 a8 80 a0 28 20 a8 a0
+a0 80 20 00 a0 a8 80 88 28 20 a8 a0 a0 a8 80 88
+a0 80 20 00 a0 80 20 00 a0 20 80 00 88 a8 80 a0
+a0 20 80 00 a0 20 80 00 a0 20 80 00 a0 20 80 00
+a0 80 20 00 a0 80 20 00 88 a8 80 a0 28 20 a8 a0
+a0 a8 80 88 a0 80 20 00 28 20 a8 a0 a0 a8 80 88
+		</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+		00 00 D3 00 00 3C 00 49
+		00 00 C0 14 00 03 00 02
+		</part>
+	</rom>
+	<nvram index="4" size="63"/>
+</misterromdescription>

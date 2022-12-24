@@ -1,0 +1,102 @@
+<misterromdescription>
+    <name>SWAT (Japan) [315-5048]</name>
+    <setname>swat</setname>
+    <rbf>segasys1</rbf>
+    <mameversion>0229</mameversion>
+    <year>1984</year>
+    <manufacturer>Coreland / Sega</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>Vertical/CCW</rotation>
+    <region>Japan</region>
+    <mratimestamp>20210630000000</mratimestamp>
+
+    <buttons names="Shot,Bomb,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fe">
+        <!-- SWA -->
+        <dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- SWB -->
+        <dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+        <dip name="Lives" bits="9,10" ids="Infinite,5,4,3"/>
+        <dip name="Extend" bits="11,13" ids="None,90k,80k,70k,60k,50k,40k,30k"/>
+    </switches>
+
+    <rom index="0" zip="swat.zip" type="merged" md5="None">
+        <!-- soundcpu - starts at 0x0 - size: 0x8000-->
+        <part name="epr-5819.3" crc="f6afd0fd"/>
+        <part repeat="0x6000">00</part>
+
+        <!-- maincpu - starts at 0x8000 - size: 0x18000 -->
+        <part name="epr5807b.129" crc="93db9c9f"/>
+        <part name="epr-5808.130" crc="67116665"/>
+        <part name="epr-5809.131" crc="fd792fc9"/>
+        <part name="epr-5810.132" crc="dc2b279d"/>
+        <part name="epr-5811.133" crc="093e3ab1"/>
+        <part name="epr-5812.134" crc="5bfd692f"/>
+        <part name="epr-5811.133" crc="093e3ab1"/>
+        <part name="epr-5812.134" crc="5bfd692f"/>
+        <part name="epr-5811.133" crc="093e3ab1"/>
+        <part name="epr-5812.134" crc="5bfd692f"/>
+        <part name="epr-5811.133" crc="093e3ab1"/>
+        <part name="epr-5812.134" crc="5bfd692f"/>
+
+        <!-- sprites - starts at 0x20000 - size: 0x18000 -->
+        <part name="epr-5805.86" crc="5a732865"/>
+        <part name="epr-5806.93" crc="26ac258c"/>
+        <part name="epr-5805.86" crc="5a732865"/>
+        <part name="epr-5806.93" crc="26ac258c"/>
+        <part name="epr-5805.86" crc="5a732865"/>
+        <part name="epr-5806.93" crc="26ac258c"/>
+        <part name="epr-5805.86" crc="5a732865"/>
+        <part name="epr-5806.93" crc="26ac258c"/>
+
+        <!-- tiles - starts at 0x40000 -size: 0x18000 -->
+        <part name="epr-5818.82" crc="b22033d9"/>
+        <part name="epr-5817.65" crc="fd942797"/>
+        <part name="epr-5818.82" crc="b22033d9"/>
+        <part name="epr-5817.65" crc="fd942797"/>
+        <part name="epr-5816.81" crc="4384376d"/>
+        <part name="epr-5815.64" crc="16ad046c"/>
+        <part name="epr-5816.81" crc="4384376d"/>
+        <part name="epr-5815.64" crc="16ad046c"/>
+        <part name="epr-5814.80" crc="be721c99"/>
+        <part name="epr-5813.63" crc="0d42c27e"/>
+        <part name="epr-5814.80" crc="be721c99"/>
+        <part name="epr-5813.63" crc="0d42c27e"/>
+
+        <!-- lookup_proms - starts at 0x58000 - size: 0x100 -->
+        <part name="pr-5317.106" crc="648350b8"/>
+
+        <!-- color_proms - starts at 0x58100 - size: 0x300 -->
+        <part repeat="0x300">00</part>
+
+        <!-- Total 0x58400 bytes - 353 kBytes -->
+        <!-- encryption_device - sega_317-5048_device -->
+        <part>
+        88 08 80 00 a0 a8 80 88 88 08 80 00 88 a8 80 a0
+        a0 80 20 00 88 08 80 00 a0 a8 80 88 88 08 80 00
+        28 20 a8 a0 a0 a8 80 88 88 a8 80 a0 28 20 a8 a0
+        a0 80 20 00 a0 a8 80 88 28 20 a8 a0 a0 a8 80 88
+        a0 80 20 00 a0 80 20 00 a0 20 80 00 88 a8 80 a0
+        a0 20 80 00 a0 20 80 00 a0 20 80 00 a0 20 80 00
+        a0 80 20 00 a0 80 20 00 88 a8 80 a0 28 20 a8 a0
+        a0 a8 80 88 a0 80 20 00 28 20 a8 a0 a0 a8 80 88
+        </part>
+    </rom>
+
+    <rom index="1">
+        <part>02</part>
+    </rom>
+
+    <rom index="3" md5="none">
+        <part>
+        00 00 00 00 00 ff 00 02 00 02 00 01 00 ff 00 00
+        00 00 d3 00 00 3c 00 49 00 00 c0 14 00 03 00 02
+        </part>
+    </rom>
+
+    <nvram index="4" size="63"/>
+
+</misterromdescription>

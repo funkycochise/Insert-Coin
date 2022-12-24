@@ -1,0 +1,111 @@
+<misterromdescription>
+    <name>Wonder Boy (Set 1, Japan) [315-5177]</name>
+    <setname>wboy</setname>
+    <rbf>segasys1</rbf>
+    <mameversion>0229</mameversion>
+    <year>1986</year>
+    <manufacturer>Escape (Sega License)</manufacturer>
+    <players>2</players>
+    <joystick>4-way</joystick>
+    <rotation>Horizontal</rotation>
+    <region>Japan</region>
+    <mratimestamp>20210630000000</mratimestamp>
+
+    <buttons names="Action/Run,Jump,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fc">
+        <!-- SWA -->
+        <dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- SWB -->
+        <dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Lives" bits="10,11" ids="Free Play,5,4,3"/>
+        <dip name="Extend" bits="12" ids="30k 120k 210k 300k,30k 100k 170k 240k"/>
+        <dip name="Allow Continue" bits="13" ids="No,Yes"/>
+        <dip name="Difficulty" bits="14" ids="Hard,Easy"/>
+    </switches>
+
+    <rom index="0" zip="wboy.zip" type="merged" md5="None">
+
+        <!-- soundcpu - starts at 0x0 - size: 0x8000-->
+        <part name="epr-7498.120" crc="78ae1e7b"/>
+        <part name="epr-7498.120" crc="78ae1e7b"/>
+        <part name="epr-7498.120" crc="78ae1e7b"/>
+        <part name="epr-7498.120" crc="78ae1e7b"/>
+
+        <!-- maincpu - starts at 0x8000 - size: 0x18000 -->
+        <part name="epr-7489.116" crc="130f4b70"/>
+        <part name="epr-7490.109" crc="9e656733"/>
+        <part name="epr-7491.96"  crc="1f7d0efe"/>
+        <part name="epr-7491.96"  crc="1f7d0efe"/>
+        <part name="epr-7491.96"  crc="1f7d0efe"/>
+        <part name="epr-7491.96"  crc="1f7d0efe"/>
+
+        <!-- sprites - starts at 0x20000 - size: 0x18000 -->
+        <part name="epr-7485.117" crc="c2891722"/>
+        <part name="epr-7487.04"  crc="2d3a421b"/>
+        <part name="epr-7486.110" crc="8d622c50"/>
+        <part name="epr-7488.05"  crc="007c2f1b"/>
+        <part name="epr-7485.117" crc="c2891722"/>
+        <part name="epr-7487.04"  crc="2d3a421b"/>
+        <part name="epr-7486.110" crc="8d622c50"/>
+        <part name="epr-7488.05"  crc="007c2f1b"/>
+
+        <!-- tiles - starts at 0x40000 -size: 0x18000 -->
+        <part name="epr-7497.62" crc="08d609ca"/>
+        <part name="epr-7496.61" crc="6f61fdf1"/>
+        <part name="epr-7497.62" crc="08d609ca"/>
+        <part name="epr-7496.61" crc="6f61fdf1"/>
+        <part name="epr-7495.64" crc="6a0d2c2d"/>
+        <part name="epr-7494.63" crc="a8e281c7"/>
+        <part name="epr-7495.64" crc="6a0d2c2d"/>
+        <part name="epr-7494.63" crc="a8e281c7"/>
+        <part name="epr-7493.66" crc="89305df4"/>
+        <part name="epr-7492.65" crc="60f806b1"/>
+        <part name="epr-7493.66" crc="89305df4"/>
+        <part name="epr-7492.65" crc="60f806b1"/>
+
+        <!-- lookup_proms - starts at 0x58000 - size: 0x100 -->
+        <part name="pr-5317.76" crc="648350b8"/>
+
+        <!-- color_proms - starts at 0x58100 - size: 0x300 -->
+        <part repeat="0x300">00</part>
+
+        <!-- Total 0x58100 bytes - 352 kBytes -->
+
+        <!-- encryption_device - sega_317-5177_device -->
+        <part>
+        04 54 51 15 40 44 01 51 55 10 44 41 05 55 50 14
+        41 45 00 50 54 11 45 40 04 54 51 15 40 44 01 51
+        55 10 44 41 05 55 50 14 41 45 00 50 54 11 45 40
+        04 54 51 15 40 44 01 51 55 10 44 41 05 55 50 14
+        04 54 51 15 40 44 01 51 55 10 44 41 05 55 50 14
+        41 45 00 50 54 11 45 40 04 54 51 15 40 44 01 51
+        55 10 44 41 05 55 50 14 41 45 00 50 54 11 45 40
+        04 54 51 15 40 44 01 51 55 10 44 41 05 55 50 14
+        00 00 00 00 01 01 01 01 01 02 02 02 02 02 03 03
+        03 03 04 04 04 04 04 05 05 05 05 05 06 06 06 06
+        06 07 07 07 07 07 08 08 08 08 09 09 09 09 09 0a
+        0a 0a 0a 0a 0b 0b 0b 0b 0b 0c 0c 0c 0c 0c 0d 0d
+        08 08 08 08 09 09 09 09 09 0a 0a 0a 0a 0a 0b 0b
+        0b 0b 0c 0c 0c 0c 0c 0d 0d 0d 0d 0d 0e 0e 0e 0e
+        0e 0f 0f 0f 0f 0f 10 10 10 10 11 11 11 11 11 12
+        12 12 12 12 13 13 13 13 13 14 14 14 14 14 15 15
+        </part>
+    </rom>
+
+    <rom index="1">
+        <part>84</part>
+    </rom>
+
+    <rom index="3" md5="none">
+        <part>
+        00 0f ff ff 00 ff 00 02 00 02 00 01 00 ff 00 00
+        00 00 c1 00 01 40 20 20 00 00 e8 56 00 0f 01 10
+        </part>
+    </rom>
+
+    <nvram index="4" size="335"/>
+
+</misterromdescription>
