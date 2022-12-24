@@ -1,0 +1,92 @@
+<misterromdescription>
+    <name>My Hero (US) [No Protection]</name>
+    <setname>myhero</setname>
+    <rbf>segasys1</rbf>
+    <mameversion>0229</mameversion>
+    <year>1985</year>
+    <manufacturer>Coreland / Sega</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>Horizontal</rotation>
+    <region>US</region>
+    <mratimestamp>20210630000000</mratimestamp>
+
+    <buttons names="Punch/Kick/Sweep/Block,Jump Kick/Block,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+
+    <switches page_id="1" page_name="Switches" base="16" default="ff,7c">
+        <!-- SWA -->
+        <dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- SWB -->
+        <dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Lives" bits="10,11" ids="Infinite,5,4,3"/>
+        <dip name="Extend" bits="12,13" ids="90k,70k,50k,30k"/>
+        <dip name="Difficulty" bits="14" ids="Hard,Easy"/>
+    </switches>
+
+    <rom index="0" zip="myhero.zip" type="merged" md5="None">
+        <!-- soundcpu - starts at 0x0 - size: 0x8000-->
+        <part name="epr-69xx.120" crc="0039e1e9"/>
+        <part name="epr-69xx.120" crc="0039e1e9"/>
+        <part name="epr-69xx.120" crc="0039e1e9"/>
+        <part name="epr-69xx.120" crc="0039e1e9"/>
+
+        <!-- maincpu - starts at 0x8000 - size: 0x18000 -->
+        <part name="epr-6963b.116" crc="4daf89d4"/>
+        <part name="epr-6964a.109" crc="c26188e5"/>
+        <part name="epr-6927.96" crc="3cbbaf64"/>
+        <part name="epr-6927.96" crc="3cbbaf64"/>
+        <part name="epr-6927.96" crc="3cbbaf64"/>
+        <part name="epr-6927.96" crc="3cbbaf64"/>
+
+        <!-- sprites - starts at 0x20000 - size: 0x18000 -->
+        <part name="epr-6921.117" crc="f19e05a1"/>
+        <part name="epr-6923.04" crc="7988adc3"/>
+        <part name="epr-6922.110" crc="37f77a78"/>
+        <part name="epr-6924.05" crc="42bdc8f6"/>
+        <part name="epr-6921.117" crc="f19e05a1"/>
+        <part name="epr-6923.04" crc="7988adc3"/>
+        <part name="epr-6922.110" crc="37f77a78"/>
+        <part name="epr-6924.05" crc="42bdc8f6"/>
+
+        <!-- tiles - starts at 0x40000 -size: 0x18000 -->
+        <part name="epr-6966.62" crc="157f0401"/>
+        <part name="epr-6961.61" crc="be53ce47"/>
+        <part name="epr-6966.62" crc="157f0401"/>
+        <part name="epr-6961.61" crc="be53ce47"/>
+        <part name="epr-6960.64" crc="bd381baa"/>
+        <part name="epr-6959.63" crc="bc04e79a"/>
+        <part name="epr-6960.64" crc="bd381baa"/>
+        <part name="epr-6959.63" crc="bc04e79a"/>
+        <part name="epr-6958.66" crc="714f2c26"/>
+        <part name="epr-6957.65" crc="80920112"/>
+        <part name="epr-6958.66" crc="714f2c26"/>
+        <part name="epr-6957.65" crc="80920112"/>
+
+        <!-- lookup_proms - starts at 0x58000 - size: 0x100 -->
+        <part name="pr-5317.76" crc="648350b8"/>
+
+        <!-- color_proms - starts at 0x58100 - size: 0x300 -->
+        <part repeat="0x300">00</part>
+
+        <!-- Total 0x58400 bytes - 353 kBytes -->
+
+        <!-- encryption_device - none -->
+        <part repeat="0x100">00</part>
+    </rom>
+
+    <rom index="1">
+        <part>80</part>
+    </rom>
+
+    <rom index="3" md5="none">
+        <part>
+        00 00 00 00 00 ff 00 02 00 02 00 01 00 ff 00 00
+        00 00 d3 00 00 3c 00 49 00 00 c0 17 00 03 00 00
+        </part>
+    </rom>
+
+    <nvram index="4" size="63"></nvram>
+
+</misterromdescription>
