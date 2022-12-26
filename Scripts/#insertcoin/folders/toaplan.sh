@@ -27,6 +27,7 @@ if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
    #special_echo "\$orientation is empty or H"
    addgame "Hellfire (2P set).mra" "_Hellfire"
+   addgame "Pipi & Bibis - Whoopee!! (Z80 sound cpu, set 1).mra" "_Pipi & Bibis"
    addgame "Zero Wing (2P set).mra" "_Zero Wing"
    addgame "Snow Bros. 2 - With New Elves - Otenki Paradise (Hanafram).mra" "_Snow Bros. 2"
 fi
