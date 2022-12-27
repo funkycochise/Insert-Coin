@@ -19,6 +19,7 @@ orientation=$2
 if [ -z "$orientation" ] || [ "$orientation" = "V" ];
 then
    #special_echo "\$orientation is empty or V"
+   addgame "Alcon Bootleg.mra" "_SlapFight"
    addgame "Arkanoid (Japan).mra" "_Arkanoid"
    addgame "Arkanoid (JP).mra" "_Arkanoid"
    addgame "Arkanoid (Unl. lives) [hb].mra" "_Arkanoid"
@@ -31,12 +32,14 @@ then
    addgame "Lunar Rescue.mra" "_Lunar Rescue"
    addgame "Lupin III (Set 2).mra" "_Lupin III"
    addgame "Lupin III.mra" "_Lupin III"
+   addgame "SlapFight Bootleg.mra" "_SlapFight"
    addgame "Space Chaser.mra" "_Space Chaser"
    addgame "Space Invaders II (Midway, cocktail).mra" "_Space Invaders Part II"
    addgame "Space Invaders Part II (Taito, Bigger ROMs).mra" "_Space Invaders Part II"
    addgame "Space Invaders Part II.mra" "_Space Invaders Part II"
    addgame "Space Invaders.mra" "_Space Invaders"
    addgame "Tokio - Scramble Formation (bootleg).mra" "_Tokio"
+
 fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
