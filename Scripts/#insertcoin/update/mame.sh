@@ -661,6 +661,7 @@ dl "mrjong.zip"
 dl "skysoldr.zip"
 dl "timesold.zip"
 dl "pipibibs.zip"
+dl "alcon.zip"
 
 #special_echo "Downloading missing neogeo mame roms"
 neo "2020bb.zip"
