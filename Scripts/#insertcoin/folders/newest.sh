@@ -30,6 +30,11 @@ function linkfolder {
    fi
 }
 
+#1227
+if  test -f "$RegSourceRoot/SlapFight Bootleg.mra" ; then
+  linkfolder "_SlapFight"
+fi
+
 #1225
 if  test -f "$RegSourceRoot/Pipi & Bibis - Whoopee!! (Z80 sound cpu, set 1).mra" ; then
   linkfolder "_Pipi & Bibis"
