@@ -22,6 +22,8 @@ then
    addgame "Out Zone.mra" "_Out Zone"
    addgame "Truxton - Tatsujin.mra" "_Truxton"
    addgame "Truxton II - Tatsujin Oh.mra" "_Truxton II"
+   addgame "SlapFight Bootleg.mra" "_SlapFight"
+    addgame "Alcon Bootleg.mra" "_SlapFight"
 fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
