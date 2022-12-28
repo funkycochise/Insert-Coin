@@ -38,6 +38,7 @@ then
    addgame "Space Invaders Part II (Taito, Bigger ROMs).mra" "_Space Invaders Part II"
    addgame "Space Invaders Part II.mra" "_Space Invaders Part II"
    addgame "Space Invaders.mra" "_Space Invaders"
+   addgame "Tiger Heli Bootleg.mra" "_Tiger Heli"
    addgame "Tokio - Scramble Formation (bootleg).mra" "_Tokio"
 
 fi
