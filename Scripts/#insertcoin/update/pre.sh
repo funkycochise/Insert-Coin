@@ -7,4 +7,6 @@ special_echo () {
 }
 exec &>/dev/null
 
+rm -r /media/fat/Scripts/#insertcoin/console.zip*
+
 find . -maxdepth 1 -type f -name "SEGASYS1_*" ! -name "SEGASYS1_20210901.rbf*" -delete
