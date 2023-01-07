@@ -38,6 +38,9 @@ function linkfolder {
    fi
 }
 
+#0106
+add "Extermination (World).mra" "_Extermination"
+
 #1228
 add "Tiger Heli Bootleg.mra" "_Tiger Heli"
 
