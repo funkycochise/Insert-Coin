@@ -40,6 +40,7 @@ then
    addgame "Space Invaders.mra" "_Space Invaders"
    addgame "Tiger Heli Bootleg.mra" "_Tiger Heli"
    addgame "Tokio - Scramble Formation (bootleg).mra" "_Tokio"
+   addgame "Extermination (World).mra" "_Extermination"
 
 fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
