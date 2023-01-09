@@ -29,12 +29,13 @@
 		<patch offset="0x10245">05</patch>
 		<patch offset="0x104E6">C9</patch>
 		<patch offset="0x107F0">C9</patch>
+		<patch offset="0x128BC">C9</patch>		
 		<patch offset="0x14129">C9</patch>
 		<patch offset="0x14D4A">00</patch>
 		<patch offset="0x14D4B">00</patch>
 		<patch offset="0x14D4C">00</patch>
 		<patch offset="0x15BE8">C9</patch>
-		<patch offset="0x15F77">C9</patch>	
+		<patch offset="0x15F77">C9</patch>
 	</rom>
 	<rom index="3" md5="none">																	
 		<part>																
