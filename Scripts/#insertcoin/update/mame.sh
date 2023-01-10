@@ -837,6 +837,7 @@ neo "zedblade.zip"
 neo "zintrckb.zip"
 neo "zupapa.zip"
 
+
 #not neogeo related but in the same repository
 neo "ffightae.zip"
 neo "ffightae_cps2_gfx.zip"
@@ -850,6 +851,7 @@ neo "sf2ceea.zip"
 neo "sf2rb3.zip"
 neo "sf2v004.zip"
 neo "sfzch_cps15.zip"
+neo "pollen_angel.zip"
 
 cd /media/fat
 rm -r "$TEMP"
