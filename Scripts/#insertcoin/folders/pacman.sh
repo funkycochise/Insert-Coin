@@ -37,6 +37,7 @@ then
    addgame "Pacman Club.mra" "_Pacman"
    addgame "Pacman Plus.mra" "_Pacman"
    addgame "Pac-Manic Miner.mra" "_Pacman"
+   addgame "Pollen Angel.mra" "_Pacman"
    addgame "Ponpoko.mra" "_Pacman"
    addgame "Puck Man (Japan set 1).mra" "_Pacman"
    addgame "Super Glob.mra" "_Pacman"
