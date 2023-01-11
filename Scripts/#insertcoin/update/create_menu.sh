@@ -74,6 +74,9 @@ sh ./$subfolder/iremm62.sh "$OutputRoot"
 #special_echo "Creating $OutputRoot/_Irem-M72 "
 sh ./$subfolder/iremm72.sh "$OutputRoot" 
 
+#special_echo "Creating $OutputRoot/_Irem-M92 "
+#sh ./$subfolder/iremm92.sh "$OutputRoot" 
+
 #special_echo "Creating $OutputRoot/_Jaleco"
 sh ./$subfolder/jaleco.sh "$OutputRoot" 
 
