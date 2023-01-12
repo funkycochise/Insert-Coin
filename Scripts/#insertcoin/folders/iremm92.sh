@@ -23,10 +23,11 @@ create "$MainDir"
 
 orientation=$2
 
-#if [ -z "$orientation" ] || [ "$orientation" = "V" ];
-#then
-#   #special_echo "\$orientation is empty or V"
-#fi
+if [ -z "$orientation" ] || [ "$orientation" = "V" ];
+then
+   #special_echo "\$orientation is empty or V"
+   addgame "Lethal Thunder (World).mra" "_Lethal Thunder"
+fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
    #special_echo "\$orientation is empty or H"
@@ -35,7 +36,6 @@ then
    addgame "Gunforce - Battle Fire Engulfed Terror Island (World).mra" "_Gunforce"
    addgame "Hook (World).mra" "_Hook"
    addgame "In The Hunt (World).mra" "_In The Hunt"
-   addgame "Lethal Thunder (World).mra" "_Lethal Thunder"
    addgame "Mystic Riders (World).mra" "_Mystic Riders"
    addgame "Ninja Baseball Bat Man (World).mra" "_Ninja Baseball Bat Man"
    addgame "R-Type Leo (World).mra" "_R-Type Leo"
