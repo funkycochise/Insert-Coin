@@ -38,6 +38,10 @@ function linkfolder {
    fi
 }
 
+
+#0113
+add "Karnov (US, rev 6).mra" "_Karnov"
+
 #0106
 add "Extermination (World).mra" "_Extermination"
 
