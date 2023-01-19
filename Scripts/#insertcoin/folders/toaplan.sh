@@ -23,7 +23,8 @@ then
    addgame "Truxton - Tatsujin.mra" "_Truxton"
    addgame "Truxton II - Tatsujin Oh.mra" "_Truxton II"
    addgame "SlapFight Bootleg.mra" "_SlapFight"
-    addgame "Alcon Bootleg.mra" "_SlapFight"
+   addgame "Alcon Bootleg.mra" "_SlapFight"
+   addgame "Performan (Japan).mra" "_Performan"
 fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
