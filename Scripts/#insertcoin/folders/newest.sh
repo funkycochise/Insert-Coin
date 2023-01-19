@@ -38,6 +38,8 @@ function linkfolder {
    fi
 }
 
+#0118
+add "Performan (Japan).mra" "_Performan"
 
 #0113
 add "Karnov (US, rev 6).mra" "_Karnov"
