@@ -38,6 +38,9 @@ function linkfolder {
    fi
 }
 
+#0120
+add "Wonder Planet (Japan).mra" "_Wonder Planet"
+
 #0118
 add "Performan (Japan).mra" "_Performan"
 
