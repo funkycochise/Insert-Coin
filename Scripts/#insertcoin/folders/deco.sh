@@ -25,6 +25,7 @@ then
    addgame "Burnin' Rubber.mra" "_Burning Rubber"
    addgame "Heavy Barrel (World).mra" "_Heavy Barrel"
    addgame "Karate Champ (US).mra" "_Karate Champ"
+   addgame "Wonder Planet (Japan).mra" "_Wonder Planet"
 fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
