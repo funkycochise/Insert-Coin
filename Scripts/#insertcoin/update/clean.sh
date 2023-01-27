@@ -74,6 +74,10 @@ if [ -d "$ALT/_Alex Kidd" ]
 then
    rm -r "$ALT/_Alex Kidd"
 fi
-
+#Zaxxon
+if [ -d "$ALT/_Zaxxon" ] 
+then
+   rm -r "$ALT/_Zaxxon"
+fi
 special_echo ""
 
