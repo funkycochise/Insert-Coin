@@ -19,7 +19,7 @@ orientation=$2
 if [ -z "$orientation" ] || [ "$orientation" = "V" ];
 then
    #special_echo "\$orientation is empty or V"
-   addgame "Future Spy.mra" "_Future Spy"
+   addgame "Future Spy (315-5061).mra" "_Future Spy"
    addgame "Pengo (Set 1, Rev C).mra" "_Pengo"
    addgame "Super Zaxxon.mra" "_Super Zaxxon"
    addgame "Zaxxon (Set 1, Rev D).mra" "_Zaxxon"
