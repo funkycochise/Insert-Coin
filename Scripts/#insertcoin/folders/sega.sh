@@ -22,7 +22,7 @@ then
    addgame "Future Spy.mra" "_Future Spy"
    addgame "Pengo (Set 1, Rev C).mra" "_Pengo"
    addgame "Super Zaxxon.mra" "_Super Zaxxon"
-   addgame "zaxxon.mra" "_Zaxxon"
+   addgame "Zaxxon (Set 1, Rev D).mra" "_Zaxxon"
    addgame "Congo Bongo.mra" "_Congo Bongo"
 fi
 #if [ -z "$orientation" ] || [ "$orientation" = "H" ];
