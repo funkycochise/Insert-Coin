@@ -16,5 +16,11 @@ if [ -d "$ALT/_Zaxxon" ]
 then
    rm -r "$ALT/_Zaxxon"
 fi
+#Future Spy
+if [ -d "$ALT/_Future Spy" ] 
+then
+   rm -r "$ALT/_Future Spy"
+fi
+_Future Spy
 
 find . -maxdepth 1 -type f -name "SEGASYS1_*" ! -name "SEGASYS1_20210901.rbf*" -delete
