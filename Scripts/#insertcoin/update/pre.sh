@@ -1,6 +1,8 @@
 # redirect stdout/stderr to a file
 #exec >run.txt 2>&1
 
+ALT=/media/fat/_Arcade/_alternatives
+
 exec 3>&1
 special_echo () {
     echo "$@" >&3
