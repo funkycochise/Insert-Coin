@@ -25,8 +25,8 @@ then
    #special_echo "\$orientation is empty or H"
    #addgame "Combat Hawk.mra" "_Combat Hawk"
    addgame "Ninjakun.mra" "_Ninjakun Majou no Bouken"
-   addgame "Penguin-Kun Wars (Japan).mra" "_Penguin-Kun Wars"
-   addgame "Penguin-Kun Wars.mra" "_Penguin-Kun Wars"
+   addgame "Penguin-Kun_Wars_Japan.mra" "_Penguin-Kun Wars"
+   addgame "Penguin-Kun_Wars.mra" "_Penguin-Kun Wars"
    addgame "Raiders5.mra" "_Raiders5"
    addgame "Nova 2001.mra" "_Nova 2001"
 fi
