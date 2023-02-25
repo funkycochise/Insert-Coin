@@ -38,6 +38,12 @@ function linkfolder {
    fi
 }
 
+#0224
+add "The NewZealand Story (World, old version) (P0-041A PCB).mra" "_The NewZealand Story"
+add "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen"
+add "Dr. Toppel's Adventure (World).mra" "_Dr. Toppel's Adventure"
+add "Plump Pop (Japan).mra" "_Plump Pop"
+
 #0120
 add "Wonder Planet (Japan).mra" "_Wonder Planet"
 
