@@ -28,6 +28,7 @@ then
    addgame "Arkanoid (World).mra" "_Arkanoid"
    addgame "Arkanoid.mra" "_Arkanoid"
    addgame "Balloon Bomber.mra" "_Balloon Bomber"
+   addgame "Dr. Toppel's Adventure (World).mra" "_Dr. Toppel's Adventure"
    addgame "Kageki (World).mra" "_Kageki"
    addgame "Lunar Rescue.mra" "_Lunar Rescue"
    addgame "Lupin III (Set 2).mra" "_Lupin III"
@@ -41,6 +42,7 @@ then
    addgame "Tiger Heli Bootleg.mra" "_Tiger Heli"
    addgame "Tokio - Scramble Formation (bootleg).mra" "_Tokio"
    addgame "Extermination (World).mra" "_Extermination"
+   
 
 fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
@@ -48,10 +50,13 @@ then
    #special_echo "\$orientation is empty or H"
    addgame "Bubble Bobble (Japan, Ver 0.1).mra" "_Bubble Bobble"
    addgame "Bubble Bobble.mra" "_Bubble Bobble"
+   addgame "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen"
    addgame "Colony 7 (Set 1).mra" "_Colony7"
    addgame "Colony 7.mra" "_Colony7"
    addgame "Crazy Balloon.mra" "_Crazy Balloon"
    addgame "Insector X (World).mra" "_Insector X"
+   addgame "Plump Pop (Japan).mra" "_Plump Pop"
    addgame "Rastan (World Rev 1).mra" "_Rastan"
+   addgame "The NewZealand Story (World, old version) (P0-041A PCB).mra" "_The NewZealand Story"
 fi
 exit 0
