@@ -26,12 +26,12 @@ then
    mv "$ALT/_Boulder Dash/Boulder Dash Part 2/Boulder Dash - Boulder Dash Part 2 (Japan).mra" "$ALT/_Boulder Dash"
    rm -r "$ALT/_Boulder Dash/Boulder Dash Part 2"
 fi
-#gameboy color ?
+#gameboy color ? remove
 if [ -f "/media/fat/_Console/GameboyColor.mgl" ] 
 then
    rm -r "/media/fat/_Console/GameboyColor.mgl"
 fi
-#wonderswan color mgl ?
+#wonderswan color mgl ? remove
 if [ -f "/media/fat/_Console/WonderSwan Color.mgl" ] 
 then
    rm -r "/media/fat/_Console/WonderSwan Color.mgl"
