@@ -38,6 +38,7 @@ then
    addgame  "Gulun.Pa_-_Prototype_1993_-_Japan_931220_L-.mra" "_Gulun.Pa"
    addgame  "Knights of the Round -World 911127-.mra" "_Knights of the Round"
    addgame  "Magic Sword  Heroic Fantasy -World 900725-.mra" "_Magic Sword  Heroic Fantasy"
+   addgame  "Magical Pumpkin Puroland de Daibouken (Japan 960712).mra" "_Magical Pumpkin Puroland de Daibouken"
    addgame  "Mega Man  The Power Battle -CPS1, USA 951006-.mra" "_Mega Man  The Power Battle -CPS1"
    addgame  "Mega Twins -World 900619-.mra" "_Chiki Chiki Boys"
    addgame  "Nemo -World 901130-.mra" "_Nemo"
