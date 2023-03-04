@@ -680,6 +680,7 @@ dl "tnzs.zip"
 dl "chukatai.zip"
 dl "drtoppel.zip"
 dl "plumppop.zip"
+dl "mpumpkin.zip"
 
 #special_echo "Downloading missing neogeo mame roms"
 neo "2020bb.zip"
