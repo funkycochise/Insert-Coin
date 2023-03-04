@@ -14,7 +14,7 @@ cd /media/fat/Scripts/temp
 wget https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/update_console.sh
 mv /media/fat/Scripts/temp/update_console.sh /media/fat/Scripts/#insertcoin/update
 rm -r /media/fat/Scripts/temp >/dev/null
-sh /media/fat/Scripts/#insertcoin/update/update_main_mister.sh
+sh /media/fat/Scripts/#insertcoin/update/update_console.sh
 special_echo "Completed."
 
 
