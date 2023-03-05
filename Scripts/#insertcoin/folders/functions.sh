@@ -1,11 +1,5 @@
  #!/bin/bash  
 
-exec 3>&1
-special_echo () {
-    echo -e "$@" >&3
-}
-exec &>/dev/null
-
 RegSourceRoot=/media/fat/_Arcade
 AltSourceRoot=/media/fat/_Arcade/_alternatives
 
