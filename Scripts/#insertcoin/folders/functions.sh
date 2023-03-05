@@ -76,8 +76,8 @@ function addgame {
 if  test -f "$RegSourceRoot/$1"; then
    createlinkfile "$1" "$2"
    symlinkfolder "$2" "$3"
-else
-   echo -e "NF $RegSourceRoot/$1\n" >> /media/fat/Scripts/out.txt
+#else
+#   echo -e "NF $RegSourceRoot/$1\n" >> /media/fat/Scripts/out.txt
 fi
 }
 
