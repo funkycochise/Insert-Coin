@@ -25,7 +25,6 @@ then
    addgame "Galaga.mra" "_Galaga"
    addgame "Galaxian (Namco, Set 1).mra" "_Galaxian"
    addgame "Gaplus (GP2 Rev B).mra" "_Gaplus"
-   addgame "Gatsbee.mra" "_Galaga"
    addgame "Grobda (W, New Ver.).mra" "_Grobda"
    addgame "King And Balloon.mra" "_King And Balloon"
    addgame "Mappy (US).mra" "_Mappy"

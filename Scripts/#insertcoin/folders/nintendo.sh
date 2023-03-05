@@ -22,13 +22,9 @@ then
    addgame "Donkey Kong (Spanish Crazy Kong bootleg).mra" "_Donkey Kong"
    addgame "Donkey Kong (US, Set 1).mra" "_Donkey Kong"
    addgame "Donkey Kong 3 (US).mra" "_Donkey Kong 3"
-   addgame "Donkey Kong 3.mra" "_Donkey Kong 3"
    addgame "Donkey Kong Junior (US, Set F-2).mra" "_Donkey Kong Junior"
-   addgame "Donkey Kong Junior.mra" "_Donkey Kong Junior"
-   addgame "Donkey Kong.mra" "_Donkey Kong"
    addgame "Mario Bros. (US, Rev G).mra" "_Mario Bros"
-   addgame "Mario Bros.mra" "_Mario Bros"
-   addgame "Radar Scope.mra" "_Radar Scope"
+   addgame "Radar Scope (rev. D).mra" "_Radar Scope"
 fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
