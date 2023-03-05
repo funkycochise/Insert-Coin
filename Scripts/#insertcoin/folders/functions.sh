@@ -1,5 +1,11 @@
  #!/bin/bash  
 
+exec 3>&1
+special_echo () {
+    echo -e "$@" >&3
+}
+exec &>/dev/null
+
 RegSourceRoot=/media/fat/_Arcade
 AltSourceRoot=/media/fat/_Arcade/_alternatives
 
@@ -66,9 +72,12 @@ ln -s "$RegSourceRoot/$1" "$AltSourceRoot/$2/$1"
 }
 
 function addgame {
+#echo -e "\naddgame $3" >> /media/fat/Scripts/out.txt
 if  test -f "$RegSourceRoot/$1"; then
    createlinkfile "$1" "$2"
    symlinkfolder "$2" "$3"
+else
+   echo -e "NF $RegSourceRoot/$1\n" >> /media/fat/Scripts/out.txt
 fi
 }
 

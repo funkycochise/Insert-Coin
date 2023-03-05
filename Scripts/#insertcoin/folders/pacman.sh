@@ -39,9 +39,9 @@ then
    addgame "Pac-Manic Miner.mra" "_Pacman"
    addgame "Pollen Angel.mra" "_Pacman"
    addgame "Ponpoko.mra" "_Pacman"
-   addgame "Puck Man (Japan set 1).mra" "_Pacman"
-   addgame "Super Glob.mra" "_Pacman"
-   addgame "The Glob.mra" "_Pacman"
+   addgame "Puck Man (JP, Set 1).mra" "_Pacman"
+   addgame "Super Glob (Pac-Man, German) [bl].mra" "_Pacman"
+   addgame "The Glob (Pac-Man Hardware).mra" "_Pacman"
    addgame "Van-Van Car.mra" "_Pacman"
    addgame "Woodpecker.mra" "_Pacman"
 fi

@@ -25,7 +25,6 @@ then
    special_echo "$MainDir $orientation is empty or H"
    addgame "Bagman.mra" "_Bagman"
    addgame "Botanic (English, Spanish, Set 1).mra" "_Botanic"
-   addgame "Botanic.mra" "_Botanic"
    addgame "Pickin'.mra" "_Pickin"
    addgame "Squash.mra" "_Squash"
    addgame "Super Bagman.mra" "_Super Bagman"

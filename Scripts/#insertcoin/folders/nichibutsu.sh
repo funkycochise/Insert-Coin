@@ -24,7 +24,7 @@ then
    addgame "Cosmo Police Galivan (12-26-1985).mra" "_Galivan"
    addgame "Kid no Hore Hore Daisakusen.mra" "_Booby Kids"
    addgame "Legion - Spinner-87 (World ver 2.03).mra" "_Legion - Spinner-87"
-   addgame "Moon Cresta.mra" "_Moon Cresta"
+   addgame "Moon Cresta (Galaxian Hardware) [bl].mra" "_Moon Cresta"
    addgame "Sei Senshi Amatelass.mra" "_Soldier Girl Amazon"
    addgame "Terra Cresta (YM3526 set 1).mra" "_Terra Cresta"
    addgame "Terra Force (Japan).mra" "_Terra Force"

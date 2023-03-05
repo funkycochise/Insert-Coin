@@ -32,7 +32,6 @@ then
    addgame  "Final Fight (World, set 1).mra" "_Final Fight"
    addgame  "Forgotten Worlds -World, newer-.mra" "_Forgotten Worlds"
    addgame  "Ganbare! Marine Kun -Japan 2K0411-.mra" "_Ganbare! Marine Kun"
-   addgame  "Ghouls'n Ghosts -patched-.mra" "_Ghouls'n Ghosts"
    addgame  "Gulun.Pa! (Japan 931220 L) (prototype).mra" "_Gulun.Pa"
    addgame  "Knights of the Round (World 911127).mra" "_Knights of the Round"
    addgame  "Magic Sword Heroic Fantasy (World 900725).mra" "_Magic Sword  Heroic Fantasy"

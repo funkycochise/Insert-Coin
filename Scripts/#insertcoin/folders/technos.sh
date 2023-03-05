@@ -28,7 +28,6 @@ then
    addgame "V'Ball (US) [bl].mra" "_V'Ball"
    addgame "V'Ball (US).mra" "_V'Ball"
    addgame "Renegade (US bootleg).mra" "_Renegade"
-   addgame "Nekketsu Kouha Kunio-kun (Japan bootleg).mra" "_Renegade"
    addgame "XSleenaBA.mra" "_Xain'd Sleena"
    addgame "XSleenaB.mra" "_Xain'd Sleena"
 fi

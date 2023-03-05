@@ -23,7 +23,6 @@ if [ -z "$orientation" ] || [ "$orientation" = "V" ];
 then
    #special_echo "\$orientation is empty or V"
    addgame "Psychic 5 (World).mra" "_Psychic 5"
-   addgame "Psychic 5 (Japan).mra" "_Psychic 5"
    addgame "Exerion (Jaleco).mra" "_Exerion"
    addgame "Exerion (Taito).mra" "_Exerion"
 fi

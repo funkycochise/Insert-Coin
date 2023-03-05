@@ -33,7 +33,7 @@ fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
    #special_echo "\$orientation is empty or H"
-   addgame "Popeye.mra" "_Popeye"
+   addgame "Popeye (Rev D).mra" "_Popeye"
    addgame "Sky Skipper.mra" "_Sky Skipper"
 fi
 exit 0

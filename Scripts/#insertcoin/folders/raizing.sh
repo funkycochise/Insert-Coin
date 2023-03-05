@@ -23,7 +23,6 @@ then
    addgame "Battle Garegga (Europe - USA - Japan - Asia) (Sat Feb 3 1996).mra" "_Battle Garegga"
    addgame "Kingdom Grandprix.mra" "_Kingdom Grandprix"
    addgame "Sorcer Striker.mra" "_Sorcer Striker"
-   addgame "Mahou Daisakusen (Japan).mra" "_Sorcer Striker"
 fi
 #if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 #then

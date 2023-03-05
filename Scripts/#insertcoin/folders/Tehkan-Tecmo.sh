@@ -28,8 +28,6 @@ fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
    #special_echo "\$orientation is empty or H"
-   addgame "Rygar (US set 2).mra" "_Rygar"
-   addgame "Rygar (US set 3 Old Version).mra" "_Rygar"
    addgame "Rygar.mra" "_Rygar"
    addgame "Silkworm.mra" "_Silkworm"
    addgame "Solomon's Key.mra" "_Solomons Key"

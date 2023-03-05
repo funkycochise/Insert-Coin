@@ -27,7 +27,6 @@ if [ -z "$orientation" ] || [ "$orientation" = "V" ];
 then
    #special_echo "\$orientation is empty or V"
    addgame  "1942 (Revision B).mra" "_1942"
-   addgame  "1943 Kai Midway Kaisen.mra" "_1943 The Battle of Midway"
    addgame  "1943 Kai Midway Kaisen (Japan).mra" "_1943 The Battle of Midway"
    addgame  "1943 The Battle of Midway (Euro).mra" "_1943 The Battle of Midway"
    addgame  "1943 The Battle of Midway Mark II (US).mra" "_1943 The Battle of Midway"

@@ -22,7 +22,7 @@ then
   addgame "Fever SOS.mra" "_Dangun Feveron"
   addgame "DoDonPachi (Arrange).mra" "_DoDonPachi"
   addgame "DoDonPachi (Japan).mra" "_DoDonPachi"
-  addgame "DoDonPachi (Japan, No Warn).mra" "_DoDonPachi"
+  #addgame "DoDonPachi (Japan, No Warn).mra" "_DoDonPachi"
   addgame "DoDonPachi Trainer (Japan).mra" "_DoDonPachi"
   addgame "DoDonPachi.mra" "_DoDonPachi"
   addgame "DonPachi.mra" "_DonPachi"

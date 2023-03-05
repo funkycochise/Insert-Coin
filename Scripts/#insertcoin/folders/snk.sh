@@ -35,7 +35,7 @@ if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
    #special_echo "\$orientation is empty or H"
    addgame "Athena.mra" "_Athena"
-   addgame "CountryClub.mra" "_CountryClub"
+   addgame "Country Club.mra" "_CountryClub"
    addgame "Prehistoric Isle in 1930 (World).mra" "_Prehistoric Isle in 1930"
    addgame "Street Smart (US Version 2).mra" "_Street Smart"
    addgame "P.O.W. - Prisoners of War (US Version 1).mra" "_P.O.W. - Prisoners of War"

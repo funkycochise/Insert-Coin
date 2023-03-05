@@ -20,16 +20,12 @@ orientation=$2
 if [ -z "$orientation" ] || [ "$orientation" = "V" ];
 then
    addgame "Amidar (Scramble).mra" "_Amidar"
-   addgame "Amidar.mra" "_Amidar"
    addgame "Fast Lane.mra" "_Fast Lane"
    addgame "Finalizer - Super Transformation (Set 1).mra" "_Finalizer - Super Transformation"
    addgame "Finalizer - Super Transformation (Set 2) [bl].mra" "_Finalizer - Super Transformation"
    addgame "Finalizer - Super Transformation (Set 2).mra" "_Finalizer - Super Transformation"
    addgame "Frogger (Konami Bugfixed).mra" "_Frogger"
    addgame "Frogger (Sega, Set 2).mra" "_Frogger"
-   addgame "Frogger.mra" "_Frogger"
-   addgame "Gyruss (bootleg).mra" "_Gyruss"
-   addgame "Gyruss (Centuri).mra" "_Gyruss"
    addgame "Gyruss.mra" "_Gyruss"
    addgame "Jackal (W) [bl].mra" "_Jackal"
    addgame "Jackal (W).mra" "_Jackal"
@@ -54,7 +50,6 @@ then
    addgame "Top Gunner (US) [bl].mra" "_Jackal"
    addgame "Top Gunner (US).mra" "_Jackal"
    addgame "Trick Trap (World).mra" "_Labyrinth Runner"
-   addgame "Venus (bootleg of Gyruss).mra" "_Gyruss"
 fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then

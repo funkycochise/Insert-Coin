@@ -19,9 +19,7 @@ orientation=$2
 if [ -z "$orientation" ] || [ "$orientation" = "V" ];
 then
    #special_echo "\$orientation is empty or V"
-   addgame "Bump 'n' Jump.mra" "_Burning Rubber"
    addgame "Burger Time (Set 1).mra" "_Burger Time"
-   addgame "Burger Time.mra" "_Burger Time"
    addgame "Burnin' Rubber.mra" "_Burning Rubber"
    addgame "Heavy Barrel (World).mra" "_Heavy Barrel"
    addgame "Karate Champ (US).mra" "_Karate Champ"
@@ -34,8 +32,6 @@ then
    addgame "Boulder Dash - Boulder Dash Part 2 (World).mra" "_Boulder Dash"
    addgame "Chelnov - Atomic Runner (World).mra" "_Chelnov"
    addgame "Hippodrome (US).mra" "_Hippodrome"
-   addgame "Karnov (Japan).mra" "_Karnov"   
-   addgame "Karnov (US, rev 5).mra" "_Karnov"
    addgame "Karnov (US, rev 6).mra" "_Karnov"
    addgame "Midnight Resistance (World).mra" "_Midnight Resistance"
    addgame "Robocop (World revision 4).mra" "_Robocop"
