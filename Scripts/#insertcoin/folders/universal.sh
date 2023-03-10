@@ -23,7 +23,6 @@ then
    addgame "Cosmic Alien.mra" "_Cosmic Alien"
    addgame "Devil Zone.mra" "_Devil Zone"
    addgame "Galaxy Wars (Universal, Set 1).mra" "_Galaxy Wars"
-   addgame "Galaxy Wars.mra" "_Galaxy Wars"
    addgame "Lady Bug.mra" "_Lady Bug"
    addgame "Magical Spot.mra" "_Magical Spot"
    addgame "Mr. Do! Fixed.mra" "_Mr. Do!"

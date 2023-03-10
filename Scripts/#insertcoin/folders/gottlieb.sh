@@ -23,7 +23,7 @@ then
    addgame "Insector.mra" "_Insector"
    addgame "Mad Planets.mra" "_Mad Planets"
    addgame "QBert Qubes.mra" "_QBert Qubes"
-   addgame "QBert.mra" "_QBert"
+   addgame "Q'bert (US, Set 1).mra" "_QBert"
    addgame "Tylz.mra" "_Tylz"
 fi
 #if [ -z "$orientation" ] || [ "$orientation" = "H" ];

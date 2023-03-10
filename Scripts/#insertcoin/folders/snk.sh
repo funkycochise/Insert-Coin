@@ -23,7 +23,7 @@ if [ -z "$orientation" ] || [ "$orientation" = "V" ];
 then
    #special_echo "\$orientation is empty or V"
    addgame "ASO.mra" "_ASO"
-   addgame "FightingGolf.mra" "_FightingGolf"
+   addgame "Fighting Golf.mra" "_Fighting Golf"
    addgame "Ikari Warriors.mra" "_Ikari Warriors"
    addgame "SAR - Search And Rescue (World).mra" "_S.A.R. - Search and Rescue"
    addgame "Sky Soldiers (US).mra" "_Sky Soldiers"

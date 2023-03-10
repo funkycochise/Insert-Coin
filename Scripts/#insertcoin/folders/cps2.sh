@@ -54,7 +54,7 @@ then
    addgame "Street Fighter Alpha 3 (Euro 980904).mra" "_Street Fighter Alpha 3"
    addgame "Street Fighter Zero 3 Challenger's Edition (USA 980904).mra" "_Street Fighter Alpha 3"
    addgame "Street Fighter Alpha 3 Challenger's Edition (USA 980904).mra" "_Street Fighter Alpha 3"
-   addgame "Street Fighter Zero (Japan 950727).mra" "_Street Fighter Alpha Warriors' Dreams"
+   addgame "Street Fighter Zero (CPS Changer, Japan 951020).mra" "_Street Fighter Alpha Warriors' Dreams"
    addgame "Street Fighter Zero 2 Alpha (Asia 960826).mra" "_Street Fighter Zero 2 Alpha"
    addgame "Super Gem Fighter Mini Mix (USA 970904).mra" "_Super Gem Fighter Mini Mix"
    addgame "Super Puzzle Fighter II Turbo (Euro 960529).mra" "_Super Puzzle Fighter II Turbo"

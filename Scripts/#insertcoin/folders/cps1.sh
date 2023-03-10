@@ -46,7 +46,7 @@ then
    addgame  "Quiz Tonosama no Yabou 2 Zenkoku-ban (Japan 950123).mra" "_Quiz Tonosama no Yabou 2  Zenkoku-ban"
    addgame  "Street Fighter II' Champion Edition (World 920513).mra" "_Street Fighter II' Champion Edition"
    addgame  "Street Fighter II' Hyper Fighting (World 921209).mra" "_Street Fighter II' Hyper Fighting"
-   addgame  "Street Fighter II  The World Warrior -World 910522-.mra" "_Street Fighter II The World Warrior"
+   addgame  "Street Fighter II The World Warrior (World 910522).mra" "_Street Fighter II The World Warrior"
    addgame  "Street Fighter Zero (CPS Changer, Japan 951020).mra" "_Street Fighter Zero -CPS Changer"
    addgame  "Strider (USA, B-Board 89624B-2).mra" "_Strider"
    addgame  "The King of Dragons (World 910805).mra" "_The King of Dragons"

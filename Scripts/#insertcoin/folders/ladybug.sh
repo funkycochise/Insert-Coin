@@ -25,7 +25,7 @@ fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
    #special_echo "\$orientation is empty or H"
-   addgame "Dorodon.mra" "_Dorodon"
+   addgame "Dorodon (Set 1).mra" "_Dorodon"
    addgame "Snap Jack.mra" "_Snap Jack"
 fi
 

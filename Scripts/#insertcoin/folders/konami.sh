@@ -37,7 +37,6 @@ then
    addgame "Road Fighter (set 1).mra" "_Road Fighter"
    addgame "Roc'n Rope.mra" "_Roc'n Rope"
    addgame "Scramble (Stern, Set 1).mra" "_Scramble"
-   addgame "Scramble.mra" "_Scramble"
    addgame "Super Basketball (version I, encrypted).mra" "_Super Basketball"
    addgame "Super Cobra.mra" "_Super Cobra"
    addgame "The End (bkg).mra" "_The End"
@@ -53,7 +52,7 @@ then
 fi
 if [ -z "$orientation" ] || [ "$orientation" = "H" ];
 then
-   addgame "Combat School Joystick.mra" "_Combat School"
+   addgame "Combat School (joystick).mra" "_Combat School"
    addgame "Green Beret.mra" "_Green Beret"
    addgame "Hyper Sports.mra" "_Hyper Sports"
    addgame "Iron Horse (Ver. K).mra" "_Iron Horse"
@@ -63,7 +62,6 @@ then
    addgame "Nemesis (ROM Version).mra" "_Nemesis"
    addgame "Mr. Goemon.mra" "_Mr. Goemon"
    addgame "River Patrol (JP, Unprotected).mra" "_River Patrol"
-   addgame "River Patrol.mra" "_River Patrol"
    addgame "Rush'n Attack (US).mra" "_Green Beret"
    addgame "Scooter Shooter.mra" "_Scooter Shooter"
    addgame "Track & Field.mra" "_Track & Field"

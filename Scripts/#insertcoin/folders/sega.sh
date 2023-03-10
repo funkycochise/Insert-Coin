@@ -21,7 +21,7 @@ then
    #special_echo "\$orientation is empty or V"
    addgame "Future Spy (315-5061).mra" "_Future Spy"
    addgame "Pengo (Set 1, Rev C).mra" "_Pengo"
-   addgame "Super Zaxxon.mra" "_Super Zaxxon"
+   addgame "Super Zaxxon (315-5013).mra" "_Super Zaxxon"
    addgame "Zaxxon (Set 1, Rev D).mra" "_Zaxxon"
    addgame "Congo Bongo.mra" "_Congo Bongo"
 fi
