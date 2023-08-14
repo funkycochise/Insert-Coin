@@ -193,7 +193,7 @@ if [ ! -d "$outdir/$dir/$renamed" ]
 then
    ln -s "$Alt/$sub" "$outdir/$dir/$renamed"
 fi
-if  [ "$orientation" = "H" ];
+if [ "$orientation" = "H" ] && [ "$horizontal" == "1" ]
 then
    #echo "H"
    if [ ! -d "$outdir/$horz" ] 
@@ -219,7 +219,7 @@ then
       fi
    fi
 fi
-if  [ "$orientation" = "V" ];
+if [ "$orientation" = "V" ] && [ "$vertical" == "1" ]
 then
    #echo "V"
    if [ ! -d "$outdir/$vert" ] 
