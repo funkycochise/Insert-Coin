@@ -1,0 +1,96 @@
+<misterromdescription>
+    <name>Star Jacker (Japan) [No Protection]</name>
+    <setname>starjack</setname>
+    <rbf>segasys1</rbf>
+    <mameversion>0229</mameversion>
+    <year>1983</year>
+    <manufacturer>Sega</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>Vertical/CCW</rotation>
+    <region>Japan</region>
+    <mratimestamp>20210630000000</mratimestamp>
+
+    <buttons names="Shot,Bomb,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fe">
+        <!-- SWA -->
+        <dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- SWB -->
+        <dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+        <dip name="Lives" bits="9,10" ids="Infinite,5,4,3"/>
+        <dip name="Extend" bits="11,13" ids="50k, then every 60k,Every 50k,40k, then every 50k,Every 40k,30k, then every 40k,Every 30k,20k, then every 30k,Every 20k"/>
+        <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Medium,Easy"/>
+    </switches>
+
+    <rom index="0" zip="starjack.zip" type="merged" md5="None">
+        <!-- soundcpu - starts at 0x0 - size: 0x8000-->
+        <part name="epr-5332.3" crc="7a72ab3d"/>
+        <part repeat="0x6000">00</part>
+
+        <!-- maincpu - starts at 0x8000 - size: 0x18000 -->
+        <part name="epr-5320b.129" crc="7ab72ecd"/>
+        <part name="epr-5321a.130" crc="38b99050"/>
+        <part name="epr-5322a.131" crc="103a595b"/>
+        <part name="epr-5323.132" crc="46af0d58"/>
+        <part name="epr-5324.133" crc="1e89efe2"/>
+        <part name="epr-5325.134" crc="d6e379a1"/>
+        <part name="epr-5324.133" crc="1e89efe2"/>
+        <part name="epr-5325.134" crc="d6e379a1"/>
+        <part name="epr-5324.133" crc="1e89efe2"/>
+        <part name="epr-5325.134" crc="d6e379a1"/>
+        <part name="epr-5324.133" crc="1e89efe2"/>
+        <part name="epr-5325.134" crc="d6e379a1"/>
+
+        <!-- sprites - starts at 0x20000 - size: 0x18000 -->
+        <part name="epr-5318.86" crc="6f2e1fd3"/>
+        <part name="epr-5319.93" crc="ebee4999"/>
+        <part name="epr-5318.86" crc="6f2e1fd3"/>
+        <part name="epr-5319.93" crc="ebee4999"/>
+        <part name="epr-5318.86" crc="6f2e1fd3"/>
+        <part name="epr-5319.93" crc="ebee4999"/>
+        <part name="epr-5318.86" crc="6f2e1fd3"/>
+        <part name="epr-5319.93" crc="ebee4999"/>
+
+        <!-- tiles - starts at 0x40000 -size: 0x18000 -->
+        <part name="epr-5331.82" crc="251d898f"/>
+        <part name="epr-5330.65" crc="eb048745"/>
+        <part name="epr-5331.82" crc="251d898f"/>
+        <part name="epr-5330.65" crc="eb048745"/>
+        <part name="epr-5329.81" crc="3e8bcaed"/>
+        <part name="epr-5328.64" crc="9ed7849f"/>
+        <part name="epr-5329.81" crc="3e8bcaed"/>
+        <part name="epr-5328.64" crc="9ed7849f"/>
+        <part name="epr-5327.80" crc="79e92cb1"/>
+        <part name="epr-5326.63" crc="ba7e2b47"/>
+        <part name="epr-5327.80" crc="79e92cb1"/>
+        <part name="epr-5326.63" crc="ba7e2b47"/>
+
+        <!-- lookup_proms - starts at 0x58000 - size: 0x100 -->
+        <part name="pr-5317.106" crc="648350b8"/>
+
+        <!-- color_proms - starts at 0x58100 - size: 0x300 -->
+        <part repeat="0x300">00</part>
+
+        <!-- Total 0x58400 bytes - 353 kBytes -->
+
+        <!-- encryption_device - none -->
+        <part repeat="0x100">00</part>
+
+    </rom>
+
+    <rom index="1">
+        <part>06</part>
+    </rom>
+
+    <rom index="3" md5="none">
+        <part>
+        01 0f ff ff 00 ff 00 02 00 02 00 01 00 ff 00 00
+        00 00 c0 e1 00 1e 00 52 00 00 c0 db 00 03 00 03
+        </part>
+    </rom>
+
+    <nvram index="4" size="33"/>
+
+</misterromdescription>

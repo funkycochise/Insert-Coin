@@ -1,0 +1,80 @@
+clear
+exec 3>&1
+NC='\033[0m' # No Color
+BLACK='\033[0;30m'
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+ORANGE='\033[0;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+LIGHTGRAY='\033[0;37m'
+
+DARKGRAY='\033[1;30m'
+LIGHTRED='\033[1;31m'
+LIGHTGREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+LIGHTBLUE='\033[1;34m'
+LIGHTPURPLE='\033[1;35m'
+LIGHTCYAN='\033[1;36m'
+WHITE='\033[1;37m'
+
+COL=$1
+if [ -z "$COL" ];
+then
+   COL=$(( $RANDOM % 15 + 1 ))
+fi
+
+if   [ $COL = "1" ]; then 
+   echo -e "${RED}"
+elif [ $COL = "2" ]; then 
+   echo -e "${GREEN}"
+elif [ $COL = "3" ]; then 
+   echo -e "${ORANGE}"
+elif [ $COL = "4" ]; then 
+   echo -e "${BLUE}"
+elif [ $COL = "5" ]; then 
+   echo -e "${PURPLE}"
+elif [ $COL = "6" ]; then 
+   echo -e "${CYAN}"
+elif [ $COL = "7" ]; then 
+   echo -e "${LIGHTGRAY}"
+elif [ $COL = "8" ]; then 
+   echo -e "${DARKGRAY}"
+elif [ $COL = "9" ]; then 
+   echo -e "${LIGHTRED}"
+elif [ $COL = "10" ]; then 
+   echo -e "${LIGHTGREEN}"
+elif [ $COL = "11" ]; then 
+   echo -e "${YELLOW}"
+elif [ $COL = "12" ]; then 
+   echo -e "${LIGHTBLUE}"
+elif [ $COL = "13" ]; then 
+   echo -e "${LIGHTPURPLE}"
+elif [ $COL = "14" ]; then 
+   echo -e "${LIGHTCYAN}"
+elif [ $COL = "15" ]; then 
+   echo -e "${WHITE}"
+fi                            
+
+                                                
+
+echo -e " ██▓███▄    █  ██████▓█████ ██▀███ ▄▄▄█████▓    ▄████▄  ▒█████  ██▓███▄    █"
+echo -e "▓██▒██ ▀█   █▒██    ▒▓█   ▀▓██ ▒ ██▓  ██▒ ▓▒   ▒██▀ ▀█ ▒██▒  ██▓██▒██ ▀█   █"
+echo -e "▒██▓██  ▀█ ██░ ▓██▄  ▒███  ▓██ ░▄█ ▒ ▓██░ ▒░   ▒▓█    ▄▒██░  ██▒██▓██  ▀█ ██▒"
+echo -e "░██▓██▒  ▐▌██▒ ▒   ██▒▓█  ▄▒██▀▀█▄ ░ ▓██▓ ░    ▒▓▓▄ ▄██▒██   ██░██▓██▒  ▐▌██▒"
+echo -e "░██▒██░   ▓██▒██████▒░▒████░██▓ ▒██▒ ▒██▒ ░    ▒ ▓███▀ ░ ████▓▒░██▒██░   ▓██░"
+echo -e "░▓ ░ ▒░   ▒ ▒▒ ▒▓▒ ▒ ░░ ▒░ ░ ▒▓ ░▒▓░ ▒ ░░      ░ ░▒ ▒  ░ ▒░▒░▒░░▓ ░ ▒░   ▒ ▒ "
+echo -e " ▒ ░ ░░   ░ ▒░ ░▒  ░ ░░ ░  ░ ░▒ ░ ▒░   ░         ░  ▒    ░ ▒ ▒░ ▒ ░ ░░   ░ ▒░"
+echo -e " ▒ ░  ░   ░ ░░  ░  ░    ░    ░░   ░  ░         ░       ░ ░ ░ ▒  ▒ ░  ░   ░ ░ "
+echo -e " ░          ░      ░    ░  ░  ░                ░ ░         ░ ░  ░          ░ "
+echo -e "                                               ░                             "
+echo -e "${NC}"
+
+
+
+
+
+
+
