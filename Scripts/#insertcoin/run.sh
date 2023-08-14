@@ -131,8 +131,8 @@ sh ./update/post.sh
 
 if [ "$main_mister" == "1" ]; then
    echo "Main"
-   #sh ./update/update_main_mister.sh
-   #reboot
+   sh ./update/update_main_mister.sh
+   reboot
 fi
 
 echo -n -e "Creation process completed in $elapsed sec.\n"
