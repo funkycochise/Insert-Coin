@@ -68,6 +68,14 @@ folder_name=${folder_name:0:${#folder_name}}
 #echo "folder_name: $folder_name"
 
 #clean of existing folders
+folder="/media/fat/_Arcade/finalfolder"
+#echo "$folder"
+if [ -d "$folder" ] 
+then
+  #echo "Removing $folder"
+  rm -r "$folder"
+fi 
+
 folder="/media/fat/_Arcade/$finalfolder"
 #echo "$folder"
 if [ -d "$folder" ] 
