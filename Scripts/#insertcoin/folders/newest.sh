@@ -59,7 +59,7 @@ add  "Water Ski.mra" "_Water Ski"
 add  "Wild Western.mra" "_Wild Western"
 
 add  "Jungle Hunt.mra" "_Jungle Hunt"
-add  "Elevator Action.mra" "_Elevator Action"
+#add  "Elevator Action.mra" "_Elevator Action"
 add  "Elevator Action Bootleg.mra" "_Elevator Action"
 add  "Jungle King.mra" "_Jungle King"
 add  "Kick Start Wheelie King.mra" "_Kick Start Wheelie King"
