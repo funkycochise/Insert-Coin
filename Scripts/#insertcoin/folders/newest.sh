@@ -33,6 +33,9 @@ function linkfolder {
    fi
 }
 
+#0818
+add "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra" "_Teenage Mutant Ninja Turtles"
+
 #0811
 add "The Simpsons (4 Players World, set 1).mra" "_The Simpsons"
 
