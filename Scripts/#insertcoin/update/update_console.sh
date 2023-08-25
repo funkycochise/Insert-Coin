@@ -2,7 +2,7 @@
 
 echo "Getting latest console cores"
 
-CONSOLE=/media/fat/_Console/
+CONSOLE=/media/fat/_Console
 
 dualsdram=$1
 psx=$2
@@ -18,105 +18,121 @@ neogeo=$6
 #echo "neogeo: $neogeo"
 
 function PSX {
-
-  dualsdram=$1
-  wget https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/PSX.zip --quiet
-  unzip -qq PSX.zip
-  rm -r PSX.zip
-  files=( "$path"/*.rbf )
-  #echo "${#files[@]}"
-  #for f in $files
-  #do
-  #  echo "${f}"
-  #done
-
+  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/PSX.zip -O -k -s --output /media/fat/Scripts/temp/PSX.zip
+  #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/PSX.zip --quiet
+  unzip -qq /media/fat/Scripts/temp/PSX.zip -d /media/fat/Scripts/temp
+  rm -r /media/fat/Scripts/temp/PSX.zip
+  rm -r /media/fat/_Console/PSX*
+  cd /media/fat/Scripts/temp
+  installed="0"
   for f in $(ls ./*.rbf)
   do
-    #echo "$f"
-    #echo "${f:2:4}"
-    if [ "$dualsdram" == "1" ]; then
-      if [ "${f:2:4}" == "Dual" ]; then
-        #echo "Dual sdram"
-        target=${f:7:${#f}}
-        #echo "source: $f"
-        #echo "target: $target"
-        mv $f $CONSOLE/$target
-        touch $CONSOLE/PSX*.rbf >/dev/null
-	#remove keep only latest
-        find $CONSOLE -maxdepth 1 -type f -name "PSX*" ! -name "$target" -delete 
-        echo "PSX"
-      fi
-    else
+    if [ "$dualsdram" == "0" ]; then
       if [ ! "${f:2:4}" == "Dual" ]; then
-        #echo "Single sdram"
-        target=${f:2:${#f}}
-        #echo "source: $f"
+        target="${f:2:${#f}}"
         #echo "target: $target"
-        mv $f $CONSOLE/$target
-        touch $CONSOLE/PSX*.rbf >/dev/null
-	#remove keep only latest
-        find $CONSOLE -maxdepth 1 -type f -name "PSX*" ! -name "$target" -delete
-        echo "PSX"
+        #ls /media/fat/Scripts/temp/$target
+        mv /media/fat/Scripts/temp/$target /media/fat/_Console/$target
+        touch /media/fat/_Console/$target >/dev/null
+        installed="1"
+      fi
+    elif [ "$dualsdram" == "1" ]; then
+      if [ "${f:2:4}" == "Dual" ]; then
+        target="PSX_Dual${f:10:${#f}}"
+        #echo "target: $target"
+        mv $f /media/fat/Scripts/temp/$target
+        #ls /media/fat/Scripts/temp/$target
+        mv /media/fat/Scripts/temp/$target /media/fat/_Console/$target
+        touch /media/fat/_Console/$target >/dev/null
+        installed="1"
+      fi
+    elif [ "$dualsdram" == "2" ]; then
+      #echo "Both core for SDRAM"
+      #echo "source: $f"
+      if [ "${f:2:4}" == "Dual" ]; then
+        target="PSX_Dual${f:10:${#f}}"
+        #echo "target: $target"
+        mv $f /media/fat/Scripts/temp/$target
+        #ls /media/fat/Scripts/temp/$target
+        mv /media/fat/Scripts/temp/$target /media/fat/_Console/$target
+        touch /media/fat/_Console/$target >/dev/null
+        installed="1"
+      else
+        target="${f:2:${#f}}"
+        #echo "target: $target"
+        #ls /media/fat/Scripts/temp/$target
+        mv /media/fat/Scripts/temp/$target /media/fat/_Console/$target
+        touch /media/fat/_Console/$target >/dev/null
+        installed="1"
       fi
     fi
+
     #clean any file left
     if test -f "./$f"; then
       rm -r ./$f
     fi
   done
+  if [ "$installed" == "1" ]; then
+    echo "PSX"
+  fi
 }
 
 function Saturn {
-  dualsdram=$1
-  
-  wget https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Saturn.zip --quiet
-  unzip -qq Saturn.zip
-  rm -r Saturn.zip
-  files=( "$path"/*.rbf )
-  #echo "${#files[@]}"
-  #for f in $files
-  #do
-  #  echo "${f}"
-  #done
-
+  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Saturn.zip -O -k -s --output /media/fat/Scripts/temp/Saturn.zip
+  #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Saturn.zip --quiet
+  unzip -qq /media/fat/Scripts/temp/Saturn.zip -d /media/fat/Scripts/temp
+  rm -r /media/fat/Scripts/temp/Saturn.zip
+  rm -r /media/fat/_Console/Saturn*
+  cd /media/fat/Scripts/temp
+  installed="0"
   for f in $(ls ./*.rbf)
-  #for f in $files
   do
-    #echo "$f"
-    #echo "${f:2:4}"
-    if [ "$dualsdram" == "1" ]; then
+    if [ "$dualsdram" == "0" ]; then
+      if [ ! "${f:2:4}" == "Dual" ]; then
+        target="${f:2:${#f}}"
+        #echo "target: $target"
+        target=$f
+        mv $f $CONSOLE/$target
+        touch $CONSOLE/$target >/dev/null
+        installed="1"
+      fi
+    elif [ "$dualsdram" == "1" ]; then
       if [ "${f:2:4}" == "Dual" ]; then
         #echo "Dual sdram"
-        target=${f:7:${#f}}
-        #echo "source: $f"
+        target="Saturn_Dual${f:13:${#f}}"
         #echo "target: $target"
         mv $f $CONSOLE/$target
-        touch $CONSOLE/Saturn*.rbf >/dev/null
-	#remove keep only latest
-        find $CONSOLE -maxdepth 1 -type f -name "Saturn*" ! -name "$target" -delete 
-        echo "Saturn"
+        touch $CONSOLE/$target >/dev/null
+        installed="1"
       fi
-    else
-      if [ ! "${f:2:4}" == "Dual" ]; then
-        #echo "Single sdram"
-        target=${f:2:${#f}}
-        #echo "source: $f"
+
+    elif [ "$dualsdram" == "2" ]; then
+      #echo "Both core for SDRAM"
+      #echo "source: $f"
+      if [ "${f:2:4}" == "Dual" ]; then
+        target="Saturn_Dual${f:13:${#f}}"
         #echo "target: $target"
         mv $f $CONSOLE/$target
-        touch $CONSOLE/Saturn*.rbf >/dev/null
-	#remove keep only latest
-        find $CONSOLE -maxdepth 1 -type f -name "Saturn*" ! -name "$target" -delete 
-        echo "Saturn"
+        touch $CONSOLE/$target >/dev/null
+        installed="1"
+      else
+        target="${f:2:${#f}}"
+        #echo "target: $target"
+        target=$f
+        mv $f $CONSOLE/$target
+        touch $CONSOLE/$target >/dev/null
+        installed="1"
       fi
     fi
-
     #clean any file left
     if test -f "./$f"; then
       rm -r ./$f
     fi
   done
+  if [ "$installed" == "1" ]; then
+    echo "Saturn"
+  fi
 }
-
 
 function S32X {
   wget https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/S32X.zip --quiet
@@ -184,9 +200,8 @@ function NeoGeo {
   done
 }
 
-
 if [ "$psx" == "1" ]; then
-  PSX "$dualsdram"
+  PSX
 fi
 if [ "$s32x" == "1" ]; then
   S32X
@@ -195,12 +210,11 @@ if [ "$sgb" == "1" ]; then
   SGB
 fi
 if [ "$saturn" == "1" ]; then
-  Saturn "$dualsdram"
+  Saturn
 fi
 if [ "$neogeo" == "1" ]; then
   NeoGeo
 fi
-
 
 echo "Completed"
 echo ""
