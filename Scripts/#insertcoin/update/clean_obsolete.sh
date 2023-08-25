@@ -78,5 +78,10 @@ if [ -d "$ALT/_Double Dragon II - The Revenge" ]
 then
    rm -r "$ALT/_Double Dragon II - The Revenge"
 fi
+#clean previous M.I.A folder
+if [ -d "$ALT/_M.I.A" ]
+then
+   rm -r "$ALT/_M.I.A"
+fi
 echo "Completed."
 echo ""
