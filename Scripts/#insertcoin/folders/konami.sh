@@ -56,6 +56,7 @@ add "$dir" "H" "M.I.A. - Missing in Action (version T).mra" "_M.I.A. - Missing i
 add "$dir" "H" "Manhattan 24 Bunsyo (J).mra" "_JailBreak"
 add "$dir" "H" "Mr. Goemon.mra" "_Mr. Goemon"
 add "$dir" "H" "Nemesis (ROM Version).mra" "_Nemesis"
+add "$dir" "H" "Punk Shot (US 4 Players).mra" "_Punk Shot"
 add "$dir" "H" "River Patrol (JP, Unprotected).mra" "_River Patrol"
 add "$dir" "H" "Rush'n Attack (US).mra" "_Green Beret"
 add "$dir" "H" "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra" "_Teenage Mutant Ninja Turtles"

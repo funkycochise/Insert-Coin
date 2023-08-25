@@ -33,6 +33,10 @@ function linkfolder {
    fi
 }
 
+#0824
+add "Punk Shot (US 4 Players).mra" "_Punk Shot"
+add "M.I.A. - Missing in Action (version T).mra" "_M.I.A. - Missing in Action"
+
 #0818
 add "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra" "_Teenage Mutant Ninja Turtles"
 
@@ -103,8 +107,8 @@ add "The NewZealand Story (World, old version) (P0-041A PCB).mra" "_The NewZeala
 
 #0428
 #add "Arkanoid - Revenge of DOH (World).mra" "_Arkanoid II"
-add "M.I.A. - Missing in Action (rev T).mra" "_M.I.A. - Missing in Action"
-add "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra" "_Teenage Mutant Ninja Turtles"
+#add "M.I.A. - Missing in Action (rev T).mra" "_M.I.A. - Missing in Action"
+#add "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra" "_Teenage Mutant Ninja Turtles"
 
 #0416
 add "Battletoads.mgl" "_Battletoads"
