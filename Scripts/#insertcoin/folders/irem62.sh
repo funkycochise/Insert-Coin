@@ -1,7 +1,7 @@
 
 source ./folders/functions.sh
 
-dir="_Irem M62 Hardware"
+dir="_Irem M62"
 out=$1
 horizontal=$2
 vertical=$3

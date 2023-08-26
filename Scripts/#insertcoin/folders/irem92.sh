@@ -1,7 +1,7 @@
 
 source ./folders/functions.sh
 
-dir="_Irem M92 Hardware"
+dir="_Irem M92"
 out=$1
 horizontal=$2
 vertical=$3
@@ -22,4 +22,18 @@ add "$dir" "H" "R-Type Leo (World).mra" "_R-Type Leo"
 add "$dir" "H" "Superior Soldiers (US).mra" "_Superior Soldiers"
 add "$dir" "H" "Undercover Cops (World).mra" "_Undercover Cops"
 add "$dir" "V" "Lethal Thunder (World).mra" "_Lethal Thunder"
+
+dir "$dir" "H" "" "_Blade Master (Turbo)"
+dir "$dir" "H" "" "_Dream Soccer '94 (Turbo)"
+dir "$dir" "H" "" "_Gun Force II (Turbo)"
+dir "$dir" "H" "" "_Gunforce - Battle Fire Engulfed Terror Island (Turbo)"
+dir "$dir" "H" "" "_Hook (Turbo)"
+dir "$dir" "H" "" "_In The Hunt (Turbo)"
+dir "$dir" "H" "" "_Lethal Thunder (Turbo)"
+dir "$dir" "H" "" "_Major Title 2 (Turbo)"
+dir "$dir" "H" "" "_Mystic Riders (Turbo)"
+dir "$dir" "H" "" "_Ninja Baseball Bat Man (Turbo)"
+dir "$dir" "H" "" "_R-Type Leo (Turbo)"
+dir "$dir" "H" "" "_Superior Soldiers (Turbo)"
+dir "$dir" "H" "" "_Undercover Cops (Turbo)"
 dot
