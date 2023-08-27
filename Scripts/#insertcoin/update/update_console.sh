@@ -10,12 +10,14 @@ s32x=$3
 saturn=$4
 sgb=$5
 neogeo=$6
+n64=$7
 
 #echo "psx: $psx"
 #echo "s32x: $s32x"
 #echo "saturn: $saturn"
 #echo "sgb: $sgb"
 #echo "neogeo: $neogeo"
+#echo "N64: $n64"
 
 function PSX {
   curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/PSX.zip -O -k -s --output /media/fat/Scripts/temp/PSX.zip
@@ -200,6 +202,57 @@ function NeoGeo {
   done
 }
 
+function N64 {
+  GAMES=/media/fat/games/N64
+  CONSOLE=/media/fat/_Console
+  wget https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/N64.zip --quiet
+  unzip -qq N64.zip
+  rm -r N64.zip
+
+  for f in $(ls ./*.*)
+  do
+    target=${f:2:${#f}}
+    #echo "source: $f"
+    #echo "target: $target"
+    if [ "$target" == "boot.rom" ]; then
+      #echo "boot.rom"
+      if [ ! -d "$GAMES" ] 
+      then
+        mkdir $GAMES
+      fi
+      if [ ! -f "$GAMES/$target" ] 
+      then
+        cp $f $GAMES/$target
+      fi
+      rm -r ./$f
+    elif [ "$target" == "N64-database.txt" ]; then
+      #echo "N64-database.txt"
+      if [ ! -f "$GAMES/$target" ] 
+      then
+        cp $f $GAMES/$target
+      fi
+      rm -r ./$f
+    elif [ "${target:0:3}" == "N64" ]; then
+      #echo "N64: $target"
+      mv $f $CONSOLE/$target
+      touch $CONSOLE/$target
+      find $CONSOLE -maxdepth 1 -type f -name "N64*" ! -name "$target" -delete
+    fi
+   
+    #mv $f $CONSOLE/$target --force
+    #touch $CONSOLE/$target >/dev/null
+    #remove keep only latest
+
+    #find $CONSOLE -maxdepth 1 -type f -name "NeoGeo*" ! -name "$target" -delete
+    #echo "N64"
+    #clean any file left
+    #if test -f "./$f"; then
+    #  rm -r ./$f
+    #fi
+  done
+  echo "N64"
+}
+
 if [ "$psx" == "1" ]; then
   PSX
 fi
@@ -214,6 +267,9 @@ if [ "$saturn" == "1" ]; then
 fi
 if [ "$neogeo" == "1" ]; then
   NeoGeo
+fi
+if [ "$n64" == "1" ]; then
+  N64
 fi
 
 echo "Completed"

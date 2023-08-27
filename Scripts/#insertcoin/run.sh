@@ -58,6 +58,9 @@ sgb=${sgb:0:1}
 source <(grep neogeo $ini)
 neogeo=${neogeo:0:1}
 #echo "neogeo: $neogeo"
+source <(grep n64 $ini)
+n64=${n64:0:1}
+#echo "n64: $n64"
 source <(grep folder_name $ini)
 #echo "folder_name: $folder_name"
 folder_name=${folder_name:0:${#folder_name}}
@@ -125,7 +128,7 @@ if [ "$obsolete_core" == "1" ]; then
   sh ./update/clean_obsolete.sh
 fi 
 if [ "$console_core" == "1" ]; then
-   sh ./update/update_console.sh $dualsdram $psx $s32x $saturn $sgb $neogeo
+   sh ./update/update_console.sh $dualsdram $psx $s32x $saturn $sgb $neogeo $n64
 fi
 sh ./update/post.sh
 
