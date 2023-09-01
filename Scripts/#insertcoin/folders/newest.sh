@@ -33,6 +33,9 @@ function linkfolder {
    fi
 }
 
+#0901
+add "The Final Round (version M).mra" "_The Final Round"
+
 #0824
 add "Punk Shot (US 4 Players).mra" "_Punk Shot"
 add "M.I.A. - Missing in Action (version T).mra" "_M.I.A. - Missing in Action"
