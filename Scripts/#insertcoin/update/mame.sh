@@ -733,6 +733,7 @@ dl "zaxxon.zip"
 dl "zerowing.zip"
 dl "zigzagb.zip"
 dl "zzyzzyxx.zip"
+dl "fround.zip"
 
 #special_echo "Downloading missing neogeo mame roms"
 neo "2020bb.zip"
