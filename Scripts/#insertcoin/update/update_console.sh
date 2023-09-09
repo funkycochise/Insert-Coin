@@ -225,6 +225,17 @@ function N64 {
         cp $f $GAMES/$target
       fi
       rm -r ./$f
+    elif [ "$target" == "boot1.rom" ]; then
+      #echo "boot.rom"
+      if [ ! -d "$GAMES" ] 
+      then
+        mkdir $GAMES
+      fi
+      if [ ! -f "$GAMES/$target" ] 
+      then
+        cp $f $GAMES/$target
+      fi
+      rm -r ./$f    
     elif [ "$target" == "N64-database.txt" ]; then
       #echo "N64-database.txt"
       #ls $f
