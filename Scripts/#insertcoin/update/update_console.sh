@@ -228,7 +228,10 @@ function N64 {
     elif [ "$target" == "N64-database.txt" ]; then
       #echo "N64-database.txt"
       #ls $f
-      rm -r  $GAMES/N64-database.txt
+      if [ -f "$GAMES/N64-database.txt" ] 
+      then
+        rm -r  $GAMES/N64-database.txt
+      fi
       cp $f $GAMES/N64-database.txt
       touch $GAMES/N64-database.txt
       #if [ ! -f "$GAMES/$target" ] 
