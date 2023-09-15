@@ -209,6 +209,9 @@ function N64 {
   unzip -qq N64.zip
   rm -r N64.zip
 
+  rm -r N64-database.txt
+  wget https://raw.githubusercontent.com/MiSTer-devel/N64_ROM_Database/main/N64-database.txt --quiet
+
   for f in $(ls ./*.*)
   do
     target=${f:2:${#f}}
