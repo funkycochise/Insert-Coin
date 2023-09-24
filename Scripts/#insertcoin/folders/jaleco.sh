@@ -15,7 +15,7 @@ add "$dir" "V" "Exerion (Taito).mra" "_Exerion"
 
 dir "$dir" "H" "" "_Avenging Spirit"
 add "$dir" "H" "chameleon.mra" "_Chameleon"
-dir "$dir" "H" "Iga Ninjyutsuden (Japan).mra" "_Ninja Kazan"
+add "$dir" "H" "Iga Ninjyutsuden (Japan).mra" "_Ninja Kazan"
 add "$dir" "H" "P-47 - The Freedom Fighter (Japan).mra" "_P-47 - The Freedom Fighter"
 add "$dir" "H" "Rod-Land (World, set 1).mra" "_Rod-Land"
 add "$dir" "H" "Saint Dragon (Set 1).mra" "_Saint Dragon"
