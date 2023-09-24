@@ -33,6 +33,10 @@ function linkfolder {
    fi
 }
 
+
+#0924
+add "Iga Ninjyutsuden (Japan).mra" "_Ninja Kazan"
+
 #0901
 add "The Final Round (version M).mra" "_The Final Round"
 
