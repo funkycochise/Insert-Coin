@@ -108,7 +108,10 @@ then
       fi
    fi
 else
-   echo -e "NF $Arcade/$mra\n" >> /media/fat/Scripts/out.txt
+  if [ ! -z "$mra" ];
+  then
+    echo -e "NF $Arcade/$mra\n" >> /media/fat/Scripts/out.txt
+  fi
 fi
 
 if [ "$orientation" = "H" ] && [ "$horizontal" == "1" ]
