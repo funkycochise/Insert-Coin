@@ -91,7 +91,7 @@ sh folders/irem.sh "$out" $horizontal $vertical
 sh folders/irem62.sh "$out" $horizontal $vertical
 sh folders/irem72.sh "$out" $horizontal $vertical
 sh folders/irem92.sh "$out" $horizontal $vertical
-#sh folders/irem92t.sh "$out" $horizontal $vertical
+sh folders/irem92t.sh "$out" $horizontal $vertical
 sh folders/jaleco.sh "$out" $horizontal $vertical
 sh folders/Kiwako.sh "$out" $horizontal $vertical
 sh folders/konami.sh "$out" $horizontal $vertical
