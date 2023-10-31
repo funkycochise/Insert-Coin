@@ -33,6 +33,8 @@ function linkfolder {
    fi
 }
 
+#1031
+add  "Splatter House (World, new version (SH3)).mra" "_Splatter House"
 
 #0924
 add "Iga Ninjyutsuden (Japan).mra" "_Ninja Kazan"

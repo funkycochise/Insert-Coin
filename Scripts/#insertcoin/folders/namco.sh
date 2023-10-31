@@ -34,5 +34,6 @@ add "$dir" "V"  "The Tower of Druaga.mra" "_The Tower of Druaga"
 add "$dir" "V"  "Xevious.mra" "_Xevious"
 
 add "$dir" "H"  "Bosconian - Star Destroyer (new version).mra" "_Bosconian"
+add "$dir" "H"  "Splatter House (World, new version (SH3)).mra" "_Splatter House"
 
 dot
