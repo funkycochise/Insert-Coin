@@ -25,6 +25,9 @@ console_mgl=${console_mgl:0:1}
 source <(grep obsolete_core $ini)
 obsolete_core=${obsolete_core:0:1}
 #echo "obsolete_core: $obsolete_core"
+source <(grep remove_other $ini)
+remove_other=${remove_other:0:1}
+#echo "remove_other: $remove_other"
 source <(grep console_core $ini)
 console_core=${console_core:0:1}
 #echo "console_core: $console_core"
@@ -125,7 +128,7 @@ if [ "$console_mgl" == "1" ]; then
   sh ./update/clean_console.sh
 fi
 if [ "$obsolete_core" == "1" ]; then
-  sh ./update/clean_obsolete.sh
+  sh ./update/clean_obsolete.sh "$remove_other"
 fi 
 if [ "$console_core" == "1" ]; then
    sh ./update/update_console.sh $dualsdram $psx $s32x $saturn $sgb $neogeo $n64

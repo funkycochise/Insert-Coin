@@ -1,13 +1,20 @@
 #!/bin/bash
 
-launchdir=$1
-#special_echo "launchdir $launchdir"
+remove_other=$1
 
 ALT=/media/fat/_Arcade/_alternatives
 CORE=/media/fat/_Arcade/Cores
 CONSOLE=/media/fat/_Console
 
-echo "Cleaning obsolete core"
+echo "Cleaning obsolete/unwanted core"
+#echo "remove_other : $remove_other"
+if [ "$remove_other" == "1" ]; then
+  if [ -d "/media/fat/_Other" ] 
+  then
+    echo "removing _Other"
+    rm -r "/media/fat/_Other"
+  fi
+fi
 
 #remove previous G&W core
 if [ -f "$CONSOLE/GnW_20220606.rbf" ] 
