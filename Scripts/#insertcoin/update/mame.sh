@@ -737,7 +737,7 @@ dl "zerowing.zip"
 dl "zigzagb.zip"
 dl "zzyzzyxx.zip"
 dl "gbusters.zip"
-Gang Busters (set 1).mra
+
 
 #special_echo "Downloading missing neogeo mame roms"
 neo "2020bb.zip"
