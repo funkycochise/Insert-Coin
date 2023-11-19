@@ -46,8 +46,8 @@ function dl {
       #curl $ARCHIVE_MERGED/$1 -O -k
       wget $ARCHIVE_MERGED/$1
       mv $TEMP/$1 $mametarget/$1 
-    #else
-#     special_echo "$1 already exixts"
+   #else
+    # special_echo "$1 already exixts"
    fi
 
 }
@@ -312,6 +312,7 @@ dl "gardia.zip"
 dl "gaunt2.zip"
 dl "gauntlet.zip"
 dl "gberet.zip"
+dl "gbusters.zip"
 dl "gbusters.zip"
 dl "gemini.zip"
 dl "ghouls.zip"
@@ -736,7 +737,6 @@ dl "zaxxon.zip"
 dl "zerowing.zip"
 dl "zigzagb.zip"
 dl "zzyzzyxx.zip"
-dl "gbusters.zip"
 
 
 #special_echo "Downloading missing neogeo mame roms"
