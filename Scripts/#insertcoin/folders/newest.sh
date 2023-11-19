@@ -33,6 +33,9 @@ function linkfolder {
    fi
 }
 
+#1117
+add "Gang Busters (set 1).mra" "_Gang Busters"
+
 #1031
 add  "Splatter House (World, new version (SH3)).mra" "_Splatter House"
 
