@@ -33,6 +33,9 @@ function linkfolder {
    fi
 }
 
+#1124
+add "Thunder Cross (set 1).mra" "_Thunder Cross"
+
 #1117
 add "Gang Busters (set 1).mra" "_Gang Busters"
 
