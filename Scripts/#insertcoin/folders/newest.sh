@@ -33,6 +33,10 @@ function linkfolder {
    fi
 }
 
+#1208
+add "Renegade (US).mra" "_Renegade"
+add "Tokio - Scramble Formation (newer).mra" "_Tokio"
+
 #1124
 add "Thunder Cross (set 1).mra" "_Thunder Cross"
 
