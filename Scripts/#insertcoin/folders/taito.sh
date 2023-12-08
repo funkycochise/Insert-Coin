@@ -32,6 +32,7 @@ add "$dir" "V" "Space Invaders Part II (Taito, Bigger ROMs).mra" "_Space Invader
 add "$dir" "V" "Space Invaders.mra" "_Space Invaders"
 add "$dir" "V" "Tiger Heli Bootleg.mra" "_Tiger Heli"
 add "$dir" "V" "Tokio - Scramble Formation (bootleg).mra" "_Tokio"
+add "$dir" "V" "Tokio - Scramble Formation (newer).mra" "_Tokio"
 
 add "$dir" "H" "Bubble Bobble (Japan, Ver 0.1).mra" "_Bubble Bobble"
 add "$dir" "H" "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen"

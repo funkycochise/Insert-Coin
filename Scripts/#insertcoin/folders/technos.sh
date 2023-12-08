@@ -18,5 +18,6 @@ add "$dir" "H" "Double Dragon II The Revenge (World).mra" "_Double Dragon II The
 add "$dir" "H" "V'Ball (US) [bl].mra" "_V'Ball"
 add "$dir" "H" "V'Ball (US).mra" "_V'Ball"
 add "$dir" "H" "Renegade (US bootleg).mra" "_Renegade"
+add "$dir" "H" "Renegade (US).mra" "_Renegade"
 
 dot
