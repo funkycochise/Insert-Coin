@@ -208,8 +208,6 @@ function N64 {
   wget https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/N64.zip --quiet
   unzip -qq N64.zip
   rm -r N64.zip
-
-  rm -r N64-database.txt
   wget https://raw.githubusercontent.com/MiSTer-devel/N64_ROM_Database/main/N64-database.txt --quiet
 
   for f in $(ls ./*.*)
