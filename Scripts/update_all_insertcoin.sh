@@ -2,4 +2,4 @@
 
 clear
 cd /media/fat/Scripts/#insertcoin
-./run.sh
+./run.sh | tee output.log
