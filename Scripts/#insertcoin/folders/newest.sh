@@ -33,6 +33,9 @@ function linkfolder {
    fi
 }
 
+#1219
+add "Polaris.mra" "_Polaris"
+
 #1208
 add "Renegade (US).mra" "_Renegade"
 add "Tokio - Scramble Formation (newer).mra" "_Tokio"
