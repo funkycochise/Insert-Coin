@@ -33,6 +33,10 @@ function linkfolder {
    fi
 }
 
+add "Hachoo.mra" "_Hachoo"
+add "In Your Face (US, Prototype).mra" "_In Your Face"
+add "" "_E.D.F. - Earth Defense Force"
+
 #1219
 add "Polaris.mra" "_Polaris"
 
