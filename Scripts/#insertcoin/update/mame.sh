@@ -740,6 +740,9 @@ dl "zaxxon.zip"
 dl "zerowing.zip"
 dl "zigzagb.zip"
 dl "zzyzzyxx.zip"
+dl "hachoo.zip"
+dl "inyourfa.zip"
+dl "edf.zip"
 
 
 #special_echo "Downloading missing neogeo mame roms"
