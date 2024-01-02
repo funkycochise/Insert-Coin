@@ -23,5 +23,5 @@ add "$dir" "H" "Soldam.mra" "_Soldam"
 add "$dir" "H" "The Lord of King (Japan).mra" "_The Astyanax"
 add "$dir" "H" "Hachoo.mra" "_Hachoo"
 add "$dir" "H" "In Your Face (US, Prototype).mra" "_In Your Face"
-add "$dir" "H" "_E.D.F. - Earth Defense Force"
+dir "$dir" "H" "_E.D.F. - Earth Defense Force"  "_E.D.F. - Earth Defense Force"
 dot
