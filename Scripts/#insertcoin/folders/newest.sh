@@ -33,6 +33,13 @@ function linkfolder {
    fi
 }
 
+#2024
+#0102
+#Jaleco Megasystem1
+add "Hachoo.mra" "_Hachoo"
+add "In Your Face (US, Prototype).mra" "_In Your Face"
+dir "" "_E.D.F. - Earth Defense Force"
+
 #1219
 add "Polaris.mra" "_Polaris"
 
