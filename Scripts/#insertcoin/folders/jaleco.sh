@@ -21,4 +21,7 @@ add "$dir" "H" "Rod-Land (World, set 1).mra" "_Rod-Land"
 add "$dir" "H" "Saint Dragon (Set 1).mra" "_Saint Dragon"
 add "$dir" "H" "Soldam.mra" "_Soldam"
 add "$dir" "H" "The Lord of King (Japan).mra" "_The Astyanax"
+add "$dir" "H" "Hachoo.mra" "_Hachoo"
+add "$dir" "H" "In Your Face (US, Prototype).mra" "_In Your Face"
+dir "_E.D.F. - Earth Defense Force"
 dot
