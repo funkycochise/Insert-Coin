@@ -100,6 +100,7 @@ sh folders/ladybug.sh "$out" $horizontal $vertical
 sh folders/mcr1.sh "$out" $horizontal $vertical
 sh folders/mcr2.sh "$out" $horizontal $vertical
 sh folders/mcr3.sh "$out" $horizontal $vertical
+sh folders/midwayy.sh "$out" $horizontal $vertical
 sh folders/namco.sh "$out" $horizontal $vertical
 sh folders/neogeo.sh "$out" $horizontal $vertical
 sh folders/nichibutsu.sh "$out" $horizontal $vertical

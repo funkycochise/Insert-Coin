@@ -59,6 +59,14 @@ then
     rm -r "$CORE/SEGASYS1_20230315.rbf"
   fi
 fi
+#clean DK previous version if newest exist
+if [ -f "$CORE/DonkeyKong_20231228.rbf" ] 
+then
+  if [ -f "$CORE/DonkeyKong_20230314.rbf" ] 
+  then
+    rm -r "$CORE/DonkeyKong_20230314.rbf"
+  fi
+fi
 #clean Arkanoid alternative folder
 if [ -f "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (Japan bootleg).mra" ]
 then

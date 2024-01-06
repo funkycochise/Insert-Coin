@@ -1,7 +1,7 @@
  #!/bin/bash  
 source ./folders/functions.sh
 
-dir="_MCR1"
+dir="_Midway_MCR1"
 out=$1
 horizontal=$2
 vertical=$3

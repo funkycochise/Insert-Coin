@@ -1,6 +1,6 @@
 source ./folders/functions.sh
 
-dir="_MCR2"
+dir="_Midway_MCR2"
 out=$1
 horizontal=$2
 vertical=$3

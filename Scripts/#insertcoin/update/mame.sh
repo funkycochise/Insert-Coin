@@ -743,6 +743,12 @@ dl "zzyzzyxx.zip"
 dl "hachoo.zip"
 dl "inyourfa.zip"
 dl "edf.zip"
+dl "hiimpact.zip"
+dl "shimpact.zip"
+dl "term2.zip"
+dl "totcarn.zip"
+dl "smashtv.zip"
+dl "mk.zip"
 
 
 #special_echo "Downloading missing neogeo mame roms"
