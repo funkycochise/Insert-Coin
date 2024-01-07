@@ -33,6 +33,11 @@ function linkfolder {
    fi
 }
 
+#0107
+add "Jitsuryoku!! Pro Yakyuu (Japan).mra" "_Jitsuryoku!! Pro Yakyuu"
+add "Plus Alpha.mra" "_Plus Alpha"
+
+#0102
 add "Hachoo.mra" "_Hachoo"
 add "In Your Face (US, Prototype).mra" "_In Your Face"
 add "" "_E.D.F. - Earth Defense Force"
