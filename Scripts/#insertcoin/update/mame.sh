@@ -749,6 +749,8 @@ dl "term2.zip"
 dl "totcarn.zip"
 dl "smashtv.zip"
 dl "mk.zip"
+dl "jitsupro.zip"
+dl "plusalph.zip"
 
 
 #special_echo "Downloading missing neogeo mame roms"

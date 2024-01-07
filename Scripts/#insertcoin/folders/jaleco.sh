@@ -9,9 +9,10 @@ setout "$out"
 sethorizontal "$horizontal"
 setvertical "$vertical"
 
-add "$dir" "V" "Psychic 5 (World).mra" "_Psychic 5"
 add "$dir" "V" "Exerion (Jaleco).mra" "_Exerion"
 add "$dir" "V" "Exerion (Taito).mra" "_Exerion"
+add "$dir" "V" "Plus Alpha.mra" "_Plus Alpha"
+add "$dir" "V" "Psychic 5 (World).mra" "_Psychic 5"
 
 dir "$dir" "H" "" "_Avenging Spirit"
 add "$dir" "H" "chameleon.mra" "_Chameleon"
@@ -24,4 +25,5 @@ add "$dir" "H" "The Lord of King (Japan).mra" "_The Astyanax"
 add "$dir" "H" "Hachoo.mra" "_Hachoo"
 add "$dir" "H" "In Your Face (US, Prototype).mra" "_In Your Face"
 dir "$dir" "H" "_E.D.F. - Earth Defense Force"  "_E.D.F. - Earth Defense Force"
+add "$dir" "H" "Jitsuryoku!! Pro Yakyuu (Japan).mra" "_Jitsuryoku!! Pro Yakyuu"
 dot
