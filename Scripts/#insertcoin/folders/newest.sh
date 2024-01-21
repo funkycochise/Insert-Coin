@@ -33,6 +33,10 @@ function linkfolder {
    fi
 }
 
+#0121
+add "Carnival.mra" "_Carnival"
+add "Pulsar.mra" "_Pulsar"
+
 #0107
 add "Jitsuryoku!! Pro Yakyuu (Japan).mra" "_Jitsuryoku!! Pro Yakyuu"
 add "Plus Alpha.mra" "_Plus Alpha"

@@ -751,6 +751,8 @@ dl "smashtv.zip"
 dl "mk.zip"
 dl "jitsupro.zip"
 dl "plusalph.zip"
+dl "carnival.zip"
+dl "pulsar.zip"
 
 
 #special_echo "Downloading missing neogeo mame roms"
