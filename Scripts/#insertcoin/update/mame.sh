@@ -753,6 +753,7 @@ dl "jitsupro.zip"
 dl "plusalph.zip"
 dl "carnival.zip"
 dl "pulsar.zip"
+dl "sspaceat.zip"
 
 
 #special_echo "Downloading missing neogeo mame roms"
