@@ -33,10 +33,6 @@ function linkfolder {
    fi
 }
 
-#0126
-
-add "Battletoads.mgl" "_Battletoads"
-
 #0121
 add "Carnival.mra" "_Carnival"
 add "Pulsar.mra" "_Pulsar"
