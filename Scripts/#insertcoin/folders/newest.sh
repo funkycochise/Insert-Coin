@@ -33,6 +33,9 @@ function linkfolder {
    fi
 }
 
+#0209
+add "Parodius Da! Shinwa kara Owarai e (World, set 1).mra" "_Parodius Da! Shinwa kara Owarai e"
+
 #0121
 add "Carnival.mra" "_Carnival"
 add "Pulsar.mra" "_Pulsar"
