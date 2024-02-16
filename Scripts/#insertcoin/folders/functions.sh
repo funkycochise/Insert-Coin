@@ -19,16 +19,21 @@ Arcade=/media/fat/_Arcade
 Alt=/media/fat/_Arcade/_alternatives
 vert="__Vertical"
 horz="__Horizontal"
+stg_h="__STG_H
+stg_v="__STG_V
 
 function setout {
 outdir="$1"
 }
+
 function sethorizontal {
 horizontal="$1"
 }
 function setvertical {
 vertical="$1"
 }
+
+
 
 function create {
 newFolder=$1
@@ -40,9 +45,10 @@ function add {
 
 dir="$1"
 orientation="$2"
-mra="$3"
-sub="$4"
-renamed="$5"
+genre="$3"
+mra="$4"
+sub="$5"
+renamed="$6"
 
 #echo "dir: $dir"
 #echo "orientation: $orientation"
