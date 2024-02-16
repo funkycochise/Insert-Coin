@@ -1,10 +1,60 @@
-# Insert Coin is a db extension for update_all Downloader
+Insert-Coin script for Mister FPGA
 
-in downloader.ini (SD root) add the following :
+Aims of the projet : 
 
-<p>[funkycochise/Insert-Coin]</p>
-<p>db_url = https://raw.githubusercontent.com/funkycochise/Insert-Coin/db/db.json.zip</p>
+1. First Main goal is to build a custom folder inside _Arcade Folder. 
+This folder is named "_Insert Coin" and contains several Systems and Editors:
+![image](https://user-images.githubusercontent.com/29161585/202754827-3752611c-086f-493e-a91a-ae759f3b3fe3.png)
 
-<p>After running update_all, launch update_all_insertcoin.sh which would be installed in Script folder</p>
+The folder is built according to the existing mra inside _Arcade folder.
+So if beta cores are installed manually, they can be recognized if supported.
+rndmnkiii, pierco, jotego, raki
 
-https://youtu.be/eB6NfVC9T9E
+2. Custom Main Mister feature.
+Running insertcoin will install a custom Mister will provide the ability to hide rom loading progress bar.
+For more details: https://github.com/funkycochise/Main_MiSTer/wiki
+
+3. Additional arcade cores and mras.
+Running insertcoin will install additional arcade cores.
+In example SEGASYS1 and NEOGEO from black wine.
+
+3. Download of arcade mame roms.
+Running insertcoin will download mame roms and neogeo if they are missing.
+
+4. Update of latest console core version (nightlies)
+
+How to Install:
+Insert Coin is using update_all to perform core, mras and script installation.
+In downloader.ini add the following :
+
+`[funkycochise/Insert-Coin]`
+<br>
+`db_url = https://raw.githubusercontent.com/funkycochise/Insert-Coin/db/db.json.zip`
+<br>
+Run update_all : you will notice insert coin in the log.
+then run update_all_insertcoin
+<br>
+if you want to install custom main mister, run
+<br>
+`Scripts/#insertcoin/main_mister/install.sh`
+<br>
+<br>
+if you change your mind run 
+<br>
+`Scripts/#insertcoin/main_mister/uninstall.sh`
+<br>
+<br>
+if you want to install latest console core version, run
+<br>
+`Scripts/#insertcoin/console/install.sh`
+<br>
+<br>
+to uninstall run 
+<br>
+`Scripts/#insertcoin/console/uninstall.sh`
+<br>
+
+
+
+
+
