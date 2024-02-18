@@ -756,6 +756,11 @@ dl "zerowing.zip"
 dl "zigzagb.zip"
 dl "zzyzzyxx.zip"
 neo "vendetta.zip"
+dl "venture.zip"
+dl "targ.zip"
+dl "spectar.zip"
+dl "pepper2.zip"
+dl "mtrap.zip"
 
 
 #special_echo "Downloading missing neogeo mame roms"
