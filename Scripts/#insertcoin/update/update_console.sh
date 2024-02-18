@@ -75,7 +75,7 @@ function PSX {
     fi
   done
   if [ "$installed" == "1" ]; then
-    echo "PSX"
+    echo -n -e "PSX "
   fi
 }
 
@@ -132,7 +132,7 @@ function Saturn {
     fi
   done
   if [ "$installed" == "1" ]; then
-    echo "Saturn"
+    echo -n -e "Saturn "
   fi
 }
 
@@ -150,7 +150,7 @@ function S32X {
     touch $CONSOLE/$target >/dev/null
     #remove keep only latest
     find $CONSOLE -maxdepth 1 -type f -name "S32X*" ! -name "$target" -delete
-    echo "S32X"
+    echo -n -e "S32X "
     #clean any file left
     if test -f "./$f"; then
       rm -r ./$f
@@ -172,7 +172,7 @@ function SGB {
     touch $CONSOLE/$target >/dev/null
     #remove keep only latest
     find $CONSOLE -maxdepth 1 -type f -name "SGB*" ! -name "$target" -delete
-    echo "SGB"
+    echo -n -e "SGB "
     #clean any file left
     if test -f "./$f"; then
       rm -r ./$f
@@ -194,7 +194,7 @@ function NeoGeo {
     touch $CONSOLE/$target >/dev/null
     #remove keep only latest
     find $CONSOLE -maxdepth 1 -type f -name "NeoGeo*" ! -name "$target" -delete
-    echo "NeoGeo"
+    echo -n -e "NeoGeo "
     #clean any file left
     if test -f "./$f"; then
       rm -r ./$f
@@ -269,7 +269,7 @@ function N64 {
     #  rm -r ./$f
     #fi
   done
-  echo "N64"
+  echo -e "N64 "
 }
 
 if [ "$psx" == "1" ]; then
