@@ -14,4 +14,5 @@ add "$dir" "H" "TARG.mra" "_TARG"
 add "$dir" "H" "Spectar.mra" "_Spectar"
 add "$dir" "H" "Pepper II.mra" "_Pepper II"
 add "$dir" "H" "Mouse Trap.mra" "_Mouse Trap"
+add "$dir" "H" "Hard Hat.mra" "_Hard Hat"
 dot
