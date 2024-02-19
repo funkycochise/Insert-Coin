@@ -761,6 +761,7 @@ dl "targ.zip"
 dl "spectar.zip"
 dl "pepper2.zip"
 dl "mtrap.zip"
+dl "hardhat.zip"
 
 
 #special_echo "Downloading missing neogeo mame roms"
