@@ -39,9 +39,9 @@ elif [ $COL = "5" ]; then
 elif [ $COL = "6" ]; then 
    echo -e "${CYAN}"
 elif [ $COL = "7" ]; then 
-   echo -e "${LIGHTGRAY}"
+   echo -e "${RED}"
 elif [ $COL = "8" ]; then 
-   echo -e "${DARKGRAY}"
+   echo -e "${GREEN}"
 elif [ $COL = "9" ]; then 
    echo -e "${LIGHTRED}"
 elif [ $COL = "10" ]; then 
@@ -55,9 +55,8 @@ elif [ $COL = "13" ]; then
 elif [ $COL = "14" ]; then 
    echo -e "${LIGHTCYAN}"
 elif [ $COL = "15" ]; then 
-   echo -e "${WHITE}"
-fi                            
-
+   echo -e "${BLUE}"
+fi
                                                 
 
 echo -e " ██▓███▄    █  ██████▓█████ ██▀███ ▄▄▄█████▓    ▄████▄  ▒█████  ██▓███▄    █"
