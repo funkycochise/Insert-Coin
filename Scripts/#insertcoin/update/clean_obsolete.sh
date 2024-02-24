@@ -103,5 +103,10 @@ if [ -d "$ALT/_Batrider" ]
 then
    rm -r "$ALT/_Batrider"
 fi
+#_Metal Slug 2
+if [ -d "$ALT/_Metal Slug 2" ]
+then
+   rm -r "$ALT/_Metal Slug 2"
+fi
 echo "Completed."
 echo ""
