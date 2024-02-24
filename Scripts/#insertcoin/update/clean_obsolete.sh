@@ -108,5 +108,10 @@ if [ -d "$ALT/_Metal Slug 2" ]
 then
    rm -r "$ALT/_Metal Slug 2"
 fi
+#_Varth  Operation Thunderstorm
+if [ -d "$ALT/_Varth  Operation Thunderstorm" ]
+then
+   rm -r "$ALT/_Varth  Operation Thunderstorm"
+fi
 echo "Completed."
 echo ""
