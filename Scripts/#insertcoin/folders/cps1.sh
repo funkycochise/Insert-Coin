@@ -11,7 +11,7 @@ setvertical "$vertical"
 
 add "$dir" "V"  "1941 Counter Attack (World 900227).mra" "_1941 Counter Attack"
 add "$dir" "V"  "Mercs (World 900302).mra" "_Mercs"
-add "$dir" "V"  "Varth Operation Thunderstorm (World 920714).mra" "_Varth  Operation Thunderstorm"
+add "$dir" "V"  "Varth Operation Thunderstorm (World 920714).mra" "_Varth Operation Thunderstorm"
 
 add "$dir" "H"  "Adventure Quiz Capcom World 2 (Japan 920611).mra" "_Adventure Quiz Capcom World 2"
 add "$dir" "H"  "Captain Commando (World 911202).mra" "_Captain Commando"
