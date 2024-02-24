@@ -113,5 +113,10 @@ if [ -d "$ALT/_Varth  Operation Thunderstorm" ]
 then
    rm -r "$ALT/_Varth  Operation Thunderstorm"
 fi
+#_Ring of Destruction Slam Masters II
+if [ -d "$ALT/_Ring of Destruction Slam Masters II" ]
+then
+   rm -r "$ALT/_Ring of Destruction Slam Masters II"
+fi
 echo "Completed."
 echo ""
