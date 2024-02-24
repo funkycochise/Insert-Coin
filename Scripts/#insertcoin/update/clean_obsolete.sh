@@ -98,5 +98,10 @@ if [ -d "$ALT/_M.I.A" ]
 then
    rm -r "$ALT/_M.I.A"
 fi
+#_Batrider
+if [ -d "$ALT/_Batrider" ]
+then
+   rm -r "$ALT/_Batrider"
+fi
 echo "Completed."
 echo ""
