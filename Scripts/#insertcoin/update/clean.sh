@@ -79,5 +79,10 @@ if [ -d "$ALT/_Zaxxon" ]
 then
    rm -r "$ALT/_Zaxxon"
 fi
+#_Batrider
+if [ -d "$ALT/_Batrider" ] 
+then
+   rm -r "$ALT/_Batrider"
+fi
 special_echo ""
 
