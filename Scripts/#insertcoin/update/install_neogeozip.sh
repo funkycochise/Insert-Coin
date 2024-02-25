@@ -1,5 +1,5 @@
 
-addon="/media/fat/Scripts/#pedro/addon"
+addon="/media/fat/Scripts/#local/addon"
 arcade="/media/fat/_Arcade"
 
 if [ -d "$addon" ];
