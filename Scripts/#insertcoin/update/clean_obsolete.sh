@@ -119,11 +119,11 @@ then
    rm -r "$ALT/_Ring of Destruction Slam Masters II"
 fi
 #vimana core
-if [ -f "$CORE/vimana_20230606.rbf" ] 
-then
-  if [ -f "$CORE/vimana_20230526.rbf" ] 
-  then
+#vimana core
+if [ -f "$CORE/vimana_20230606.rbf" ]; then
+  if [ -f "$CORE/vimana_20230526.rbf" ]; then
     rm -r "$CORE/vimana_20230526.rbf"
   fi
+fi
 echo "Completed."
 echo ""
