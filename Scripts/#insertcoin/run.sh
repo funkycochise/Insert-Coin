@@ -104,7 +104,7 @@ then
   rm -r "$folder"
 fi 
 
-COL=$(( $RANDOM % 15 + 1 ))
+COL=$(( $RANDOM % 12 + 1 ))
 
 sh ./update/banner.sh $COL
 
