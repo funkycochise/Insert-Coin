@@ -34,6 +34,7 @@ act_horizontal="1"
 vsf_horizontal="1"
 spo_horizontal="1"
 
+
 function add {
 
 dir="$1"
@@ -445,7 +446,6 @@ fi
 #echo "------------------------------------------------"
 }
 
-
 function dot {    
-echo -n -e "█"
+echo -n -e "${RED}█"
 }
