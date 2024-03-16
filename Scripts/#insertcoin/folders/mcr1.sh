@@ -2,13 +2,11 @@
 source ./folders/functions.sh
 
 dir="_Midway_MCR1"
-out=$1
+outdir=$1
 horizontal=$2
 vertical=$3
-
-setout "$out"
-sethorizontal "$horizontal"
-setvertical "$vertical"
+stg_horizontal=$4
+stg_vertical=$5
 
 add "$dir" "V"  "Kick.mra" "_Kick"
 add "$dir" "V"  "Kick-Man.mra" "_Kick-Man"

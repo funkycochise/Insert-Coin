@@ -2,13 +2,11 @@
 source ./folders/functions.sh
 
 dir="_Pacman"
-out=$1
+outdir=$1
 horizontal=$2
 vertical=$3
-
-setout "$out"
-sethorizontal "$horizontal"
-setvertical "$vertical"
+stg_horizontal=$4
+stg_vertical=$5
 
 add "$dir" "V"  "Ali Baba and 40 Thieves.mra" "_Pacman"
 add "$dir" "V"  "Beastie Feastie (Pac-Man Conversion).mra" "_Pacman"

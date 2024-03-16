@@ -2,13 +2,11 @@
 source ./folders/functions.sh
 
 dir="_Sega-System-E"
-out=$1
+outdir=$1
 horizontal=$2
 vertical=$3
-
-setout "$out"
-sethorizontal "$horizontal"
-setvertical "$vertical"
+stg_horizontal=$4
+stg_vertical=$5
 
 add "$dir" "V" "Megumi Rescue (Japan).mra" "_SystemE_Megumi Rescue" "_Megumi Rescue"
 add "$dir" "V" "Riddle of Pythagoras (Japan).mra" "_SystemE_Riddle of Pythagoras" "_Riddle of Pythagoras"
@@ -19,6 +17,6 @@ add "$dir" "H" "Hang On Jr.mra" "_SystemE_Hang On Jr" "_Hang On Jr"
 add "$dir" "H" "Opa Opa (Rev A, unprotected).mra" "_SystemE_Opa Opa" "_Opa Opa"
 add "$dir" "H" "Opa Opa.mra" "_SystemE_Opa Opa" "_Opa Opa"
 add "$dir" "H" "Slap Shooter.mra" "_SystemE_Slap Shooter" "_Slap Shooter"
-add "$dir" "H" "Tetris (Japan, System E).mra" "_SystemE_Tetris" "_Tetris"
+add "$dir" "H" "Tetris (Japan, System E).mra" "_SystemE_Tetris" "_Tetris" "" "PUZ"
 
 dot

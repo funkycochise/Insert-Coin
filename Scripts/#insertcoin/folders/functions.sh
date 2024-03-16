@@ -19,22 +19,20 @@ Arcade=/media/fat/_Arcade
 Alt=/media/fat/_Arcade/_alternatives
 vert="__Vertical"
 horz="__Horizontal"
+genre_stg_h="__STG_H"
+genre_stg_v="__STG_V"
 
-function setout {
-outdir="$1"
-}
-function sethorizontal {
-horizontal="$1"
-}
-function setvertical {
-vertical="$1"
-}
+genre_puz="__Puzzle"
+genre_bea="__Beat'em up"
+genre_act="__Action"
+genre_spo="__Sport"
+genre_vsf="__Vs Fighting"
 
-function create {
-newFolder=$1
-#echo "   creating ${newFolder}"
-mkdir -p "${newFolder}"
-}
+puz_horizontal="1"
+bea_horizontal="1"
+act_horizontal="1"
+vsf_horizontal="1"
+spo_horizontal="1"
 
 function add {
 
@@ -43,6 +41,7 @@ orientation="$2"
 mra="$3"
 sub="$4"
 renamed="$5"
+genre="$6"
 
 #echo "dir: $dir"
 #echo "orientation: $orientation"
@@ -114,56 +113,156 @@ else
   fi
 fi
 
-if [ "$orientation" = "H" ] && [ "$horizontal" == "1" ]
-then
-   #echo "H"
-   if [ ! -d "$outdir/$horz" ] 
-   then
-      #echo "Creating $outdir/$horz"
-      mkdir "$outdir/$horz"
-   fi
-   if [ ! -z "$dir" ];
-   then 
-      if [ ! -d "$outdir/$horz/$dir" ] 
-      then
-         #echo "Creating $outdir/$horz/$dir"
-         mkdir "$outdir/$horz/$dir"
+if [ "$horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      #echo "H"
+      if [ ! -d "$outdir/$horz" ]; then
+         #echo "Creating $outdir/$horz"
+         mkdir "$outdir/$horz"
       fi
-      if [ ! -d "$outdir/$horz/$dir/$renamed" ] 
-      then
-         ln -s "$Alt/$sub" "$outdir/$horz/$dir/$renamed"
-      fi
-   else
-      if [ ! -d "$outdir/$horz/$renamed" ] 
-      then
-         ln -s "$Alt/$sub" "$outdir/$horz/$renamed"
+      if [ ! -z "$dir" ]; then 
+         if [ ! -d "$outdir/$horz/$dir" ]; then
+            #echo "Creating $outdir/$horz/$dir"
+            mkdir "$outdir/$horz/$dir"
+         fi
+         if [ ! -d "$outdir/$horz/$dir/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$horz/$dir/$renamed"
+         fi
+      else
+         if [ ! -d "$outdir/$horz/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$horz/$renamed"
+         fi
       fi
    fi
 fi
 
-if [ "$orientation" = "V" ] && [ "$vertical" == "1" ]
-then
-   #echo "V"
-   if [ ! -d "$outdir/$vert" ] 
-   then
-      #echo "Creating $outdir/$vert"
-      mkdir "$outdir/$vert"
+if [ "$vertical" == "1" ]; then
+   if [ "$orientation" = "V" ]; then
+      #echo "V"
+      if [ ! -d "$outdir/$vert" ]; then
+         #echo "Creating $outdir/$vert"
+         mkdir "$outdir/$vert"
+      fi
+      if [ ! -z "$dir" ]; then 
+         if [ ! -d "$outdir/$vert/$dir" ]; then
+            #echo "Creating $outdir/$vert/$dir"
+            mkdir "$outdir/$vert/$dir"
+         fi
+         if [ ! -d "$outdir/$vert/$dir/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$vert/$dir/$renamed"
+         fi
+      else
+         if [ ! -d "$outdir/$vert/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$vert/$renamed"
+         fi
+      fi
    fi
-   if [ ! -z "$dir" ];
-   then 
-      if [ ! -d "$outdir/$vert/$dir" ] 
-      then
-         #echo "Creating $outdir/$vert/$dir"
-         mkdir "$outdir/$vert/$dir"
+fi
+
+#genre section
+
+if [ "$stg_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "STG" ]; then
+         if [ ! -d "$outdir/$genre_stg_h" ]; then
+            #echo "Creating $outdir/$genre_stg_h"
+            mkdir "$outdir/$genre_stg_h"
+         fi
+         if [ ! -d "$outdir/$genre_stg_h/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_stg_h/$renamed"
+         fi
       fi
-      if [ ! -d "$outdir/$vert/$dir/$renamed" ] 
-      then
-         ln -s "$Alt/$sub" "$outdir/$vert/$dir/$renamed"
+   fi
+fi
+if [ "$puz_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "PUZ" ]; then
+         if [ ! -d "$outdir/$genre_puz" ]; then
+            #echo "Creating $outdir/$genre_puz"
+            mkdir "$outdir/$genre_puz"
+         fi
+         if [ ! -d "$outdir/$genre_puz/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_puz/$renamed"
+         fi
       fi
-   else
-      if [ ! -d "$outdir/$vert/$renamed" ] 
-      then
-         ln -s "$Alt/$sub" "$outdir/$vert/$renamed"
+   fi
+fi
+if [ "$bea_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "BEA" ]; then
+         if [ ! -d "$outdir/$genre_bea" ]; then
+            #echo "Creating $outdir/$genre_bea"
+            mkdir "$outdir/$genre_bea"
+         fi
+         if [ ! -d "$outdir/$genre_bea/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_bea/$renamed"
+         fi
+      fi
+   fi
+fi
+if [ "$bea_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "BEA" ]; then
+         if [ ! -d "$outdir/$genre_bea" ]; then
+            #echo "Creating $outdir/$genre_bea"
+            mkdir "$outdir/$genre_bea"
+         fi
+         if [ ! -d "$outdir/$genre_bea/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_bea/$renamed"
+         fi
+      fi
+   fi
+fi
+if [ "$act_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "ACT" ]; then
+         if [ ! -d "$outdir/$genre_act" ]; then
+            #echo "Creating $outdir/$genre_act"
+            mkdir "$outdir/$genre_act"
+         fi
+         if [ ! -d "$outdir/$genre_act/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_act/$renamed"
+         fi
+      fi
+   fi
+fi
+if [ "$spo_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "SPO" ]; then
+         if [ ! -d "$outdir/$genre_spo" ]; then
+            #echo "Creating $outdir/$genre_spo"
+            mkdir "$outdir/$genre_spo"
+         fi
+         if [ ! -d "$outdir/$genre_spo/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_spo/$renamed"
+         fi
+      fi
+   fi
+fi
+if [ "$vsf_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "VSF" ]; then
+         if [ ! -d "$outdir/$genre_vsf" ]; then
+            #echo "Creating $outdir/$genre_vsf"
+            mkdir "$outdir/$genre_vsf"
+         fi
+         if [ ! -d "$outdir/$genre_vsf/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_vsf/$renamed"
+         fi
+      fi
+   fi
+fi
+
+if [ "$stg_vertical" == "1" ]; then
+   if [ "$orientation" = "V" ]; then
+      if [ "$genre" == "STG" ]; then
+         if [ ! -d "$outdir/$genre_stg_v" ]; then
+            #echo "Creating $outdir/$genre_stg_v"
+            mkdir "$outdir/$genre_stg_v"
+         fi
+         if [ ! -d "$outdir/$genre_stg_v/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_stg_v/$renamed"
+         fi
       fi
    fi
 fi
@@ -180,12 +279,14 @@ orientation="$2"
 mra="$3"
 sub="$4"
 renamed="$5"
+genre="$6"
 
 #echo "dir: $dir"
 #echo "orientation: $orientation"
 #echo "mra: $mra"
 #echo "sub: $sub"
 #echo "renamed: $renamed"
+#echo "genre $genre"
 if [ -z "$renamed" ];
 then
    renamed=$sub
@@ -196,59 +297,149 @@ if [ ! -d "$outdir/$dir/$renamed" ]
 then
    ln -s "$Alt/$sub" "$outdir/$dir/$renamed"
 fi
-if [ "$orientation" = "H" ] && [ "$horizontal" == "1" ]
-then
-   #echo "H"
-   if [ ! -d "$outdir/$horz" ] 
-   then
-      #echo "Creating $outdir/$horz"
-      mkdir "$outdir/$horz"
-   fi
-   if [ ! -z "$dir" ];
-   then 
-      if [ ! -d "$outdir/$horz/$dir" ] 
-      then
-         #echo "Creating $outdir/$horz/$dir"
-         mkdir "$outdir/$horz/$dir"
+
+if [ "$horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      #echo "H"
+      if [ ! -d "$outdir/$horz" ]; then
+         #echo "Creating $outdir/$horz"
+         mkdir "$outdir/$horz"
       fi
-      if [ ! -d "$outdir/$horz/$dir/$renamed" ] 
-      then
-         ln -s "$Alt/$sub" "$outdir/$horz/$dir/$renamed"
-      fi
-   else
-      if [ ! -d "$outdir/$horz/$renamed" ] 
-      then
-         ln -s "$Alt/$sub" "$outdir/$horz/$renamed"
+      if [ ! -z "$dir" ]; then 
+         if [ ! -d "$outdir/$horz/$dir" ]; then
+            #echo "Creating $outdir/$horz/$dir"
+            mkdir "$outdir/$horz/$dir"
+         fi
+         if [ ! -d "$outdir/$horz/$dir/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$horz/$dir/$renamed"
+         fi
+      else
+         if [ ! -d "$outdir/$horz/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$horz/$renamed"
+         fi
       fi
    fi
 fi
-if [ "$orientation" = "V" ] && [ "$vertical" == "1" ]
-then
-   #echo "V"
-   if [ ! -d "$outdir/$vert" ] 
-   then
-      #echo "Creating $outdir/$vert"
-      mkdir "$outdir/$vert"
-   fi
-   if [ ! -z "$dir" ];
-   then 
-      if [ ! -d "$outdir/$vert/$dir" ] 
-      then
-         #echo "Creating $outdir/$vert/$dir"
-         mkdir "$outdir/$vert/$dir"
+if [ "$vertical" == "1" ]; then
+   if [ "$orientation" = "V" ]; then
+      #echo "V"
+      if [ ! -d "$outdir/$vert" ]; then
+         #echo "Creating $outdir/$vert"
+         mkdir "$outdir/$vert"
       fi
-      if [ ! -d "$outdir/$vert/$dir/$renamed" ] 
-      then
-         ln -s "$Alt/$sub" "$outdir/$vert/$dir/$renamed"
-      fi
-   else
-      if [ ! -d "$outdir/$vert/$renamed" ] 
-      then
-         ln -s "$Alt/$sub" "$outdir/$vert/$renamed"
+      if [ ! -z "$dir" ]; then 
+         if [ ! -d "$outdir/$vert/$dir" ]; then
+            #echo "Creating $outdir/$vert/$dir"
+            mkdir "$outdir/$vert/$dir"
+         fi
+         if [ ! -d "$outdir/$vert/$dir/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$vert/$dir/$renamed"
+         fi
+      else
+         if [ ! -d "$outdir/$vert/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$vert/$renamed"
+         fi
       fi
    fi
 fi
 
+#genre section
+
+if [ "$stg_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "STG" ]; then
+         if [ ! -d "$outdir/$genre_stg_h" ]; then
+            #echo "Creating $outdir/$genre_stg_h"
+            mkdir "$outdir/$genre_stg_h"
+         fi
+         if [ ! -d "$outdir/$genre_stg_h/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_stg_h/$renamed"
+         fi
+      fi
+   fi
+fi
+if [ "$puz_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "PUZ" ]; then
+         if [ ! -d "$outdir/$genre_puz" ]; then
+            #echo "Creating $outdir/$genre_puz"
+            mkdir "$outdir/$genre_puz"
+         fi
+         if [ ! -d "$outdir/$genre_puz/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_puz/$renamed"
+         fi
+      fi
+   fi
+fi
+if [ "$bea_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "BEA" ]; then
+         if [ ! -d "$outdir/$genre_bea" ]; then
+            #echo "Creating $outdir/$genre_bea"
+            mkdir "$outdir/$genre_bea"
+         fi
+         if [ ! -d "$outdir/$genre_bea/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_bea/$renamed"
+         fi
+      fi
+   fi
+fi
+if [ "$act_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "ACT" ]; then
+         if [ ! -d "$outdir/$genre_act" ]; then
+            #echo "Creating $outdir/$genre_act"
+            mkdir "$outdir/$genre_act"
+         fi
+         if [ ! -d "$outdir/$genre_act/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_act/$renamed"
+         fi
+      fi
+   fi
+fi
+if [ "$spo_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "SPO" ]; then
+         echo "SPO $outdir/$genre_spo/$renamed"
+         if [ ! -d "$outdir/$genre_spo" ]; then
+            #echo "Creating $outdir/$genre_spo"
+            mkdir "$outdir/$genre_spo"
+         fi
+         if [ ! -d "$outdir/$genre_spo/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_spo/$renamed"
+         fi
+      fi
+   fi
+fi
+if [ "$vsf_horizontal" == "1" ]; then
+   if [ "$orientation" = "H" ]; then
+      if [ "$genre" == "VSF" ]; then
+         echo "SPO $outdir/$genre_vsf/$renamed"
+         if [ ! -d "$outdir/$genre_vsf" ]; then
+            #echo "Creating $outdir/$genre_vsf"
+            mkdir "$outdir/$genre_vsf"
+         fi
+         if [ ! -d "$outdir/$genre_vsf/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_vsf/$renamed"
+         fi
+      fi
+   fi
+fi
+
+if [ "$stg_vertical" == "1" ]; then
+   if [ "$orientation" = "V" ]; then
+      if [ "$genre" == "STG" ]; then
+         #echo "STG"
+         if [ ! -d "$outdir/$genre_stg_v" ]; then
+            #echo "Creating $outdir/$genre_stg_v"
+            mkdir "$outdir/$genre_stg_v"
+         fi
+         if [ ! -d "$outdir/$genre_stg_v/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$genre_stg_v/$renamed"
+         fi
+      fi
+   fi
+fi
 
 
 #echo "------------------------------------------------"

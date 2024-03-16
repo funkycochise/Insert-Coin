@@ -1,13 +1,11 @@
 source ./folders/functions.sh
 
 dir="_Williams"
-out=$1
+outdir=$1
 horizontal=$2
 vertical=$3
-
-setout "$out"
-sethorizontal "$horizontal"
-setvertical "$vertical"
+stg_horizontal=$4
+stg_vertical=$5
 
 add "$dir" "H" "Alien Arena (Stargate upgrade).mra" "_Alien Arena"
 add "$dir" "H" "Bubbles.mra" "_Bubbles"

@@ -1,13 +1,11 @@
 source ./folders/functions.sh
 
 dir="_Neo-geo"
-out=$1
+outdir=$1
 horizontal=$2
 vertical=$3
-
-setout "$out"
-sethorizontal "$horizontal"
-setvertical "$vertical"
+stg_horizontal=$4
+stg_vertical=$5
 
 #add "$dir" "H" "Columns.mra" 
 #add "$dir" "H" "Frog Feast.mra" 
@@ -110,11 +108,11 @@ add "$dir" "H"  "Pop 'n Bounce.mra"
 add "$dir" "H"  "Power Spikes II.mra" 
 add "$dir" "H"  "Prehistoric Isle 2.mra" 	
 add "$dir" "H"  "Pulstar.mra" 
-add "$dir" "H"  "Puzzle Bobble.mra" 
-add "$dir" "H"  "Puzzle Bobble 2.mra" 
-add "$dir" "H"  "Puzzle De Pon!.mra" 
-add "$dir" "H"  "Puzzle De Pon! R!.mra" 
-add "$dir" "H"  "Puzzled.mra" 
+add "$dir" "H"  "Puzzle Bobble.mra" "" "" "PUZ"
+add "$dir" "H"  "Puzzle Bobble 2.mra" "" "" "PUZ"
+add "$dir" "H"  "Puzzle De Pon!.mra" "" "" "PUZ"
+add "$dir" "H"  "Puzzle De Pon! R!.mra" "" "" "PUZ"
+add "$dir" "H"  "Puzzled.mra" "" "" "PUZ"
 add "$dir" "H"  "Quiz Daisousa Sen - The Last Count Down.mra" 
 add "$dir" "H"  "Quiz King of Fighters.mra" 
 add "$dir" "H"  "Quiz Meitantei Neo & Geo - Quiz Daisousa Sen part 2.mra" 
@@ -145,7 +143,7 @@ add "$dir" "H"  "Spin Master.mra"
 add "$dir" "H"  "Stakes Winner.mra" 
 add "$dir" "H"  "Stakes Winner 2.mra" 
 add "$dir" "H"  "Street Hoop.mra" 
-add "$dir" "H"  "Strikers 1945 Plus.mra" 
+add "$dir" "H"  "Strikers 1945 Plus.mra" "" "STG"
 add "$dir" "H"  "Super Bubble Pop.mra" 
 add "$dir" "H"  "Super Dodge Ball.mra" 
 add "$dir" "H"  "Super Sidekicks.mra" 

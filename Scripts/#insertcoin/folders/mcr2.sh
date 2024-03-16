@@ -1,13 +1,11 @@
 source ./folders/functions.sh
 
 dir="_Midway_MCR2"
-out=$1
+outdir=$1
 horizontal=$2
 vertical=$3
-
-setout "$out"
-sethorizontal "$horizontal"
-setvertical "$vertical"
+stg_horizontal=$4
+stg_vertical=$5
 
 add "$dir" "V"  "Satan's Hollow (Set 1).mra" "_Satan's Hollow"
 add "$dir" "V"  "Tron.mra" "_Tron"

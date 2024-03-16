@@ -40,12 +40,20 @@ main_mister=${main_mister:0:1}
 source <(grep newest $ini)
 newest=${newest:0:1}
 #echo "newest: $newest"
-source <(grep vertical $ini)
-vertical=${vertical:0:1}
-#echo "vertical: $vertical"
 source <(grep horizontal $ini)
 horizontal=${horizontal:0:1}
 #echo "horizontal: $horizontal"
+source <(grep vertical $ini)
+vertical=${vertical:0:1}
+#echo "vertical: $vertical"
+
+source <(grep stg_h $ini)
+stg_h=${stg_h:0:1}
+#echo "stg_h: $stg_h"
+source <(grep stg_v $ini)
+stg_v=${stg_v:0:1}
+#echo "stg_v: $stg_v"
+
 source <(grep psx $ini)
 psx=${psx:0:1}
 #echo "psx: $psx"
@@ -104,12 +112,12 @@ if test -f "./update/install_neogeozip.sh"; then
    sh ./update/install_neogeozip.sh
 fi
 
-if test -f "/media/fat/Scripts/out.txt"; then
-   rm -r /media/fat/Scripts/out.txt
-fi
+#if test -f "/media/fat/Scripts/out.txt"; then
+#   rm -r /media/fat/Scripts/out.txt
+#fi
 
 start_time=$SECONDS
-sh ./update/create_menu.sh $launchdir "$targetfolder" $COL $newest $horizontal $vertical
+sh ./update/create_menu.sh $launchdir "$targetfolder" $COL $newest $horizontal $vertical $stg_h $stg_v
 if test -d "/media/fat/_Arcade/$targetfolder"; 
 then
   #echo "$targetfolder to $finalfolder"

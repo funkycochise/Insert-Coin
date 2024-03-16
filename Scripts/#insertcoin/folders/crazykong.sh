@@ -1,13 +1,11 @@
 source ./folders/functions.sh
 
 dir="_CrazyKong"
-out=$1
+outdir=$1
 horizontal=$2
 vertical=$3
-
-setout "$out"
-sethorizontal "$horizontal"
-setvertical "$vertical"
+stg_horizontal=$4
+stg_vertical=$5
 
 add "$dir" "V" "Big Kong.mra" "_Crazy Kong"
 add "$dir" "V" "Crazy Kong (Orca bootleg).mra" "_Crazy Kong"

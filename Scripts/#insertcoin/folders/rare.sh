@@ -2,14 +2,12 @@
 source ./folders/functions.sh
 
 dir="_Rare"
-out=$1
+outdir=$1
 horizontal=$2
 vertical=$3
+stg_horizontal=$4
+stg_vertical=$5
 
-setout "$out"
-sethorizontal "$horizontal"
-setvertical "$vertical"
-
-add "$dir" "H"  "Battletoads.mgl" "_Battletoads"
+add "$dir" "H"  "Battletoads.mgl" "_Battletoads" "" "BEA"
 
 dot

@@ -3,13 +3,11 @@
 source ./folders/functions.sh
 
 dir="_MCR3Scroll"
-out=$1
+outdir=$1
 horizontal=$2
 vertical=$3
-
-setout "$out"
-sethorizontal "$horizontal"
-setvertical "$vertical"
+stg_horizontal=$4
+stg_vertical=$5
 
 addgame "Crater Raider.mra" "_Crater Raider"
 addgame "Spy Hunter.mra" "_Spy Hunter"

@@ -2,13 +2,11 @@
 source ./folders/functions.sh
 
 dir=""
-out=$1
+outdir=$1
 horizontal=$2
 vertical=$3
-
-setout "$out"
-sethorizontal "$horizontal"
-setvertical "$vertical"
+stg_horizontal=$4
+stg_vertical=$5
 
 add "$dir" "V"  "Amidar (Scramble).mra" "_Scramble"
 add "$dir" "V"  "Anteater.mra" "_Scramble" 

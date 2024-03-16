@@ -2,12 +2,13 @@
 source ./folders/functions.sh
 
 dir="__Newest"
-out=$1
-#echo "out: $out"
-#echo "dir: $dir"
-setout "$out"
+outdir=$1
+horizontal=$2
+vertical=$3
+stg_horizontal=$4
+stg_vertical=$5
 
-mkdir "$out/$dir"
+mkdir "$outdir/$dir"
 
 function add {
 
@@ -29,7 +30,7 @@ function linkfolder {
    if [[ "$counter" -lt 100 ]]; then
       #echo "$counter - $1"
       formated=$(printf "%02d" $counter)
-      ln -s "$Alt/$1"  "$out/$dir/_$formated$1"
+      ln -s "$Alt/$1"  "$outdir/$dir/_$formated$1"
    fi
 }
 

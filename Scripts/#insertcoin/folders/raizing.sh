@@ -2,18 +2,16 @@
 source ./folders/functions.sh
 
 dir="_Raizing-8ing"
-out=$1
+outdir=$1
 horizontal=$2
 vertical=$3
+stg_horizontal=$4
+stg_vertical=$5
 
-setout "$out"
-sethorizontal "$horizontal"
-setvertical "$vertical"
-
-add "$dir" "V"  "Armed Police Batrider Special Ver. (USA) (Fri Feb 13 1998).mra" "_Armed Police Batrider"
-add "$dir" "V"  "Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra" "_Battle Bakraid"
-add "$dir" "V"  "Battle Garegga (Europe - USA - Japan - Asia) (Sat Feb 3 1996).mra" "_Battle Garegga"
-add "$dir" "V"  "Kingdom Grandprix.mra" "_Kingdom Grandprix"
-add "$dir" "V"  "Sorcer Striker.mra" "_Sorcer Striker"
+add "$dir" "V"  "Armed Police Batrider Special Ver. (USA) (Fri Feb 13 1998).mra" "_Batrider" "" "STG"
+add "$dir" "V"  "Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra" "_Battle Bakraid" "" "STG"
+add "$dir" "V"  "Battle Garegga (Europe - USA - Japan - Asia) (Sat Feb 3 1996).mra" "_Battle Garegga" "" "STG"
+add "$dir" "V"  "Kingdom Grandprix.mra" "_Kingdom Grandprix" "" "STG"
+add "$dir" "V"  "Sorcer Striker.mra" "_Sorcer Striker" "" "STG"
 
 dot

@@ -31,6 +31,8 @@ COL=$3
 newest=$4
 horizontal=$5
 vertical=$6
+stg_h=$7
+stg_v=$8
 
 
 out="/media/fat/_Arcade/$targetdir"
@@ -74,59 +76,59 @@ elif [ $COL = "15" ]; then
    echo -e "${WHITE}"
 fi
 
-sh folders/alpha.sh "$out" $horizontal $vertical
-sh folders/atari.sh "$out" $horizontal $vertical
-sh folders/bagman.sh "$out" $horizontal $vertical
-sh folders/bally-midway.sh "$out" $horizontal $vertical
-sh folders/capcom.sh "$out" $horizontal $vertical
-sh folders/cave.sh "$out" $horizontal $vertical
-sh folders/cps1.5.sh "$out" $horizontal $vertical
-sh folders/cps1.sh "$out" $horizontal $vertical
-sh folders/cps2.sh "$out" $horizontal $vertical
-sh folders/crazykong.sh "$out" $horizontal $vertical
-sh folders/deco.sh "$out" $horizontal $vertical
-sh folders/exidy.sh "$out" $horizontal $vertical
-sh folders/galaxian.sh "$out" $horizontal $vertical
-sh folders/gottlieb.sh "$out" $horizontal $vertical
-sh folders/irem.sh "$out" $horizontal $vertical
-sh folders/irem62.sh "$out" $horizontal $vertical
-sh folders/irem72.sh "$out" $horizontal $vertical
-sh folders/irem92.sh "$out" $horizontal $vertical
-sh folders/irem92t.sh "$out" $horizontal $vertical
-sh folders/jaleco.sh "$out" $horizontal $vertical
-sh folders/Kiwako.sh "$out" $horizontal $vertical
-sh folders/konami.sh "$out" $horizontal $vertical
-sh folders/konami_twin16.sh "$out" $horizontal $vertical
-sh folders/ladybug.sh "$out" $horizontal $vertical
-sh folders/mcr1.sh "$out" $horizontal $vertical
-sh folders/mcr2.sh "$out" $horizontal $vertical
-sh folders/mcr3.sh "$out" $horizontal $vertical
-sh folders/midwayy.sh "$out" $horizontal $vertical
-sh folders/namco.sh "$out" $horizontal $vertical
-sh folders/neogeo.sh "$out" $horizontal $vertical
-sh folders/nichibutsu.sh "$out" $horizontal $vertical
-sh folders/nintendo.sh "$out" $horizontal $vertical
-sh folders/pacman.sh "$out" $horizontal $vertical
-sh folders/raizing.sh "$out" $horizontal $vertical
-sh folders/rare.sh "$out" $horizontal $vertical
-sh folders/robotron.sh "$out" $horizontal $vertical
-sh folders/scramble.sh "$out" $horizontal $vertical
-sh folders/sega.sh "$out" $horizontal $vertical
-sh folders/segaoutrun.sh "$out" $horizontal $vertical
-sh folders/segasys1.sh "$out" $horizontal $vertical
-sh folders/segasys16.sh "$out" $horizontal $vertical
-sh folders/segasys2.sh "$out" $horizontal $vertical
-sh folders/segasyse.sh "$out" $horizontal $vertical
-sh folders/si.sh "$out" $horizontal $vertical
-sh folders/snk.sh "$out" $horizontal $vertical
-sh folders/taito.sh "$out" $horizontal $vertical
-sh folders/taitosj.sh "$out" $horizontal $vertical
-sh folders/technos.sh "$out" $horizontal $vertical
-sh folders/Tehkan-Tecmo.sh "$out" $horizontal $vertical
-sh folders/toaplan.sh "$out" $horizontal $vertical
-sh folders/universal.sh "$out" $horizontal $vertical
-sh folders/upl.sh "$out" $horizontal $vertical
-sh folders/williams.sh "$out" $horizontal $vertical
+sh folders/alpha.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/atari.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/bagman.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/bally-midway.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/capcom.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/cave.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/cps1.5.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/cps1.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/cps2.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/crazykong.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/deco.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/exidy.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/galaxian.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/gottlieb.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/irem.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/irem62.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/irem72.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/irem92.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/irem92t.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/jaleco.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/Kiwako.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/konami.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/konami_twin16.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/ladybug.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/mcr1.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/mcr2.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/mcr3.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/midwayy.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/namco.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/neogeo.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/nichibutsu.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/nintendo.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/pacman.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/raizing.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/rare.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/robotron.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/scramble.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/sega.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/segaoutrun.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/segasys1.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/segasys16.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/segasys2.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/segasyse.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/si.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/snk.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/taito.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/taitosj.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/technos.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/Tehkan-Tecmo.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/toaplan.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/universal.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/upl.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/williams.sh "$out" $horizontal $vertical $stg_h $stg_v
 if [ "$newest" == "1" ]; then
   sh folders/newest.sh "$out"
 fi
