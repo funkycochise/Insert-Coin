@@ -400,7 +400,7 @@ fi
 if [ "$spo_horizontal" == "1" ]; then
    if [ "$orientation" = "H" ]; then
       if [ "$genre" == "SPO" ]; then
-         echo "SPO $outdir/$genre_spo/$renamed"
+         #echo "SPO $outdir/$genre_spo/$renamed"
          if [ ! -d "$outdir/$genre_spo" ]; then
             #echo "Creating $outdir/$genre_spo"
             mkdir "$outdir/$genre_spo"
@@ -414,7 +414,7 @@ fi
 if [ "$vsf_horizontal" == "1" ]; then
    if [ "$orientation" = "H" ]; then
       if [ "$genre" == "VSF" ]; then
-         echo "SPO $outdir/$genre_vsf/$renamed"
+         #echo "SPO $outdir/$genre_vsf/$renamed"
          if [ ! -d "$outdir/$genre_vsf" ]; then
             #echo "Creating $outdir/$genre_vsf"
             mkdir "$outdir/$genre_vsf"
