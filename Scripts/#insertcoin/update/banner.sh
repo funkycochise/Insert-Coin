@@ -21,11 +21,7 @@ LIGHTCYAN='\033[1;36m'
 WHITE='\033[1;37m'
 
 COL=$1
-if [ -z "$COL" ];
-then
-   COL=$(( $RANDOM % 15 + 1 ))
-fi
-
+COL=$1
 if   [ $COL = "1" ]; then 
    echo -e "${RED}"
 elif [ $COL = "2" ]; then 
@@ -39,26 +35,18 @@ elif [ $COL = "5" ]; then
 elif [ $COL = "6" ]; then 
    echo -e "${CYAN}"
 elif [ $COL = "7" ]; then 
-   echo -e "${RED}"
-elif [ $COL = "8" ]; then 
-   echo -e "${GREEN}"
-elif [ $COL = "9" ]; then 
    echo -e "${LIGHTRED}"
-elif [ $COL = "10" ]; then 
+elif [ $COL = "8" ]; then 
    echo -e "${LIGHTGREEN}"
-elif [ $COL = "11" ]; then 
+elif [ $COL = "9" ]; then 
    echo -e "${YELLOW}"
-elif [ $COL = "12" ]; then 
+elif [ $COL = "10" ]; then 
    echo -e "${LIGHTBLUE}"
-elif [ $COL = "13" ]; then 
+elif [ $COL = "11" ]; then 
    echo -e "${LIGHTPURPLE}"
-elif [ $COL = "14" ]; then 
+elif [ $COL = "12" ]; then 
    echo -e "${LIGHTCYAN}"
-elif [ $COL = "15" ]; then 
-   echo -e "${BLUE}"
 fi
-                                                
-
 echo -e " ██▓███▄    █  ██████▓█████ ██▀███ ▄▄▄█████▓    ▄████▄  ▒█████  ██▓███▄    █"
 echo -e "▓██▒██ ▀█   █▒██    ▒▓█   ▀▓██ ▒ ██▓  ██▒ ▓▒   ▒██▀ ▀█ ▒██▒  ██▓██▒██ ▀█   █"
 echo -e "▒██▓██  ▀█ ██░ ▓██▄  ▒███  ▓██ ░▄█ ▒ ▓██░ ▒░   ▒▓█    ▄▒██░  ██▒██▓██  ▀█ ██▒"
