@@ -21,32 +21,8 @@ LIGHTCYAN='\033[1;36m'
 WHITE='\033[1;37m'
 
 COL=$1
-COL=$1
-if   [ $COL = "1" ]; then 
-   echo -e "${RED}"
-elif [ $COL = "2" ]; then 
-   echo -e "${GREEN}"
-elif [ $COL = "3" ]; then 
-   echo -e "${ORANGE}"
-elif [ $COL = "4" ]; then 
-   echo -e "${BLUE}"
-elif [ $COL = "5" ]; then 
-   echo -e "${PURPLE}"
-elif [ $COL = "6" ]; then 
-   echo -e "${CYAN}"
-elif [ $COL = "7" ]; then 
-   echo -e "${LIGHTRED}"
-elif [ $COL = "8" ]; then 
-   echo -e "${LIGHTGREEN}"
-elif [ $COL = "9" ]; then 
-   echo -e "${YELLOW}"
-elif [ $COL = "10" ]; then 
-   echo -e "${LIGHTBLUE}"
-elif [ $COL = "11" ]; then 
-   echo -e "${LIGHTPURPLE}"
-elif [ $COL = "12" ]; then 
-   echo -e "${LIGHTCYAN}"
-fi
+
+echo -e "${RED}"                                           
 echo -e " ██▓███▄    █  ██████▓█████ ██▀███ ▄▄▄█████▓    ▄████▄  ▒█████  ██▓███▄    █"
 echo -e "▓██▒██ ▀█   █▒██    ▒▓█   ▀▓██ ▒ ██▓  ██▒ ▓▒   ▒██▀ ▀█ ▒██▒  ██▓██▒██ ▀█   █"
 echo -e "▒██▓██  ▀█ ██░ ▓██▄  ▒███  ▓██ ░▄█ ▒ ▓██░ ▒░   ▒▓█    ▄▒██░  ██▒██▓██  ▀█ ██▒"
