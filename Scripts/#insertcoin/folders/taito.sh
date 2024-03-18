@@ -38,6 +38,6 @@ add "$dir" "H" "Insector X (World).mra" "_Insector X" "" "STG"
 add "$dir" "H" "Kick And Run.mra" "_Kick And Run"
 add "$dir" "H" "Plump Pop (Japan).mra" "_Plump Pop"
 add "$dir" "H" "Rastan (World Rev 1).mra" "_Rastan" "" "ACT"
-add "$dir" "H" "The NewZealand Story (World, old version) (P0-041A PCB).mra" "_The NewZealand Story" "" "ACT"
+add "$dir" "H" "The NewZealand Story (World, new version) (P0-043A PCB).mra" "_The NewZealand Story" "" "ACT"
 
 dot
