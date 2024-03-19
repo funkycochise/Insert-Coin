@@ -145,7 +145,7 @@ add "Extermination (World).mra" "_Extermination"
 add "Haunted Castle (version M).mra" "_Haunted_Castle"
 add "Kageki (World).mra" "_Kageki"
 add "Insector X (World).mra" "_Insector X"
-add "The NewZealand Story (World, old version) (P0-041A PCB).mra" "_The NewZealand Story"
+add "#sh (World, new version) (P0-043A PCB).mra" "_The NewZealand Story"
 
 #0428
 #add "Arkanoid - Revenge of DOH (World).mra" "_Arkanoid II"
@@ -175,7 +175,7 @@ add "Undercover Cops (World).mra" "_Undercover Cops"
 #0324
 add "Out Run (sitdown-upright, Rev B).mra" "_Out Run"
 #0224
-add "The NewZealand Story (World, old version) (P0-041A PCB).mra" "_The NewZealand Story"
+add "The NewZealand Story (World, new version) (P0-043A PCB).mra" "_The NewZealand Story"
 add "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen"
 add "Dr. Toppel's Adventure (World).mra" "_Dr. Toppel's Adventure"
 add "Plump Pop (Japan).mra" "_Plump Pop"
