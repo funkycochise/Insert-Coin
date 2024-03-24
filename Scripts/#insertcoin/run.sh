@@ -148,4 +148,4 @@ if [ "$main_mister" == "1" ]; then
    reboot
 fi
 
-echo -n -e "Creation process completed in $elapsed sec.\n"
+#echo -n -e "Creation process completed in $elapsed sec.\n"
