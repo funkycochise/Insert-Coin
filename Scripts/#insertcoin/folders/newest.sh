@@ -34,6 +34,10 @@ function linkfolder {
    fi
 }
 
+#0329
+add "Galaga '88.mra" "_Galaga '88"
+add "Toki (World, set 1).mra" "_Toki"
+
 #0216
 add "Vendetta (World, 4 Players, ver. T).mra" "_Vendetta"
 
