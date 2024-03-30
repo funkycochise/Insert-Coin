@@ -16,7 +16,7 @@ add "$dir" "V" "Pac-Mania.mra" "_Pac-Mania" "" "ACT"
 add "$dir" "V" "Quester (Japan).mra" "_Quester" "" "ACT"
 
 add "$dir" "H" "Bakutotsu Kijuutei.mra" "_Bakutotsu Kijuutei" "" "STG"
-"Chou Zetsurinjin Berabowman (Japan, Rev C).mra" "_Chou Zetsurinjin Berabowman" "" "ACT"
+add "$dir" "H" "Chou Zetsurinjin Berabowman (Japan, Rev C).mra" "_Chou Zetsurinjin Berabowman" "" "ACT"
 add "$dir" "H" "Boxy Boy (World, SB2).mra" "_Boxy Boy" "" "PUZ"
 add "$dir" "H" "Face Off (Japan 2 Players).mra" "_Face Off" "" "SPO"
 add "$dir" "H" "Marchen Maze (Japan).mra" "_Marchen Maze" "" "ACT"
