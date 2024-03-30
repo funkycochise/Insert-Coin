@@ -98,6 +98,7 @@ sh folders/mcr2.sh "$out" $horizontal $vertical $stg_h $stg_v
 sh folders/mcr3.sh "$out" $horizontal $vertical $stg_h $stg_v
 sh folders/midwayy.sh "$out" $horizontal $vertical $stg_h $stg_v
 sh folders/namco.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/namco_sys1.sh "$out" $horizontal $vertical $stg_h $stg_v
 sh folders/neogeo.sh "$out" $horizontal $vertical $stg_h $stg_v
 sh folders/nichibutsu.sh "$out" $horizontal $vertical $stg_h $stg_v
 sh folders/nintendo.sh "$out" $horizontal $vertical $stg_h $stg_v
@@ -114,6 +115,7 @@ sh folders/segasys2.sh "$out" $horizontal $vertical $stg_h $stg_v
 sh folders/segasyse.sh "$out" $horizontal $vertical $stg_h $stg_v
 sh folders/si.sh "$out" $horizontal $vertical $stg_h $stg_v
 sh folders/snk.sh "$out" $horizontal $vertical $stg_h $stg_v
+sh folders/tad.sh "$out" $horizontal $vertical $stg_h $stg_v
 sh folders/taito.sh "$out" $horizontal $vertical $stg_h $stg_v
 sh folders/taitosj.sh "$out" $horizontal $vertical $stg_h $stg_v
 sh folders/technos.sh "$out" $horizontal $vertical $stg_h $stg_v
