@@ -1,7 +1,7 @@
 #!/bin/bash  
 source ./folders/functions.sh
 
-dir="__Newest"
+dir="_#Newest"
 outdir=$1
 horizontal=$2
 vertical=$3
