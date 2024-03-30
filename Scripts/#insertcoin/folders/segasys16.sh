@@ -35,7 +35,7 @@ add "$dir" "H" "Golden Axe (set 6, US) (8751 317-123A).mra" "_Golden Axe" "" "BE
 
 add "$dir" "H" "MVP (set 2, US) (FD1094 317-0143).mra" "_MVP" "" "SPO"
 add "$dir" "H" "Quartet 2 (World, S16A) [No Protection].mra" "_Quartet" "" "ACT"
-add "$dir" "H" "Riot City (Japan).mra" "_Riot City"
+add "$dir" "H" "Riot City (Japan).mra" "_Riot City" "" "BEA"
 add "$dir" "H" "RyuKyu (Rev A, Japan) (FD1094 317-5023A).mra" "_RyuKyu"
 add "$dir" "H" "SDI Strategic Defense Initiative (Japan, New Ver., S16A) [FD1089B 317-0027].mra" "_SDI" "" "STG"
 add "$dir" "H" "Shinobi (Set 6, World, S16A) [No Protection].mra" "_Shinobi" "" "ACT"
