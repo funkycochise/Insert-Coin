@@ -16,6 +16,6 @@ add "$dir" "V"  "Mario Bros. (US, Rev G).mra" "_Mario Bros" "" "ACT"
 add "$dir" "V"  "Radar Scope (rev. D).mra" "_Radar Scope" "" "STG"
 
 add "$dir" "H"  "Popeye (Rev D).mra" "_Popeye" "" "ACT"
-add "$dir" "H"  "Sky Skipper.mra" "_Sky Skipper" "" "STG"
+add "$dir" "H"  "Sky Skipper.mra" "_Sky Skipper" "" "ACT"
 
 dot
