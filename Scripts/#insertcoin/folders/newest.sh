@@ -34,6 +34,9 @@ function linkfolder {
    fi
 }
 
+#0406
+add "Pac-Mania.mra" "_Pac-Mania"
+
 #0329
 add "Galaga '88.mra" "_Galaga '88"
 add "Toki (World, set 1).mra" "_Toki"
