@@ -255,7 +255,14 @@ function N64 {
       #echo "N64: $target"
       mv $f $CONSOLE/$target
       touch $CONSOLE/$target
-      find $CONSOLE -maxdepth 1 -type f -name "N64*" ! -name "$target" -delete
+      if [ -f "/media/fat/_Console/N64_20240322.rbf" ] 
+      then
+        if [ -f "/media/fat/_Console/N64_20240323.rbf" ] 
+        then
+          mv "/media/fat/_Console/N64_20240323.rbf" "/media/fat/_Console/N64_Turbo_20240323.rbf"
+        fi
+      fi
+      #find $CONSOLE -maxdepth 1 -type f -name "N64*" ! -name "$target" -delete
     fi
    
     #mv $f $CONSOLE/$target --force
@@ -287,6 +294,7 @@ fi
 if [ "$neogeo" == "1" ]; then
   NeoGeo
 fi
+#as N64 is now official, I suspend its update through insert coin
 if [ "$n64" == "1" ]; then
   N64
 fi
