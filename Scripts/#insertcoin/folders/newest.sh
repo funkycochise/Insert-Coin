@@ -34,6 +34,12 @@ function linkfolder {
    fi
 }
 
+#0419
+add "Blast Off (Japan).mra" "_Blast Off"
+add "Dangerous Seed (Japan).mra" "_Dangerous Seed" 
+add "Dragon Spirit (new version (DS3)).mra" "_Dragon Spirit"
+add "Pistol Daimyo no Bouken (Japan).mra" "_Pistol Daimyo no Bouken" 
+
 #0406
 add "Pac-Mania.mra" "_Pac-Mania"
 
