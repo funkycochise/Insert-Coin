@@ -126,6 +126,10 @@ then
     rm -r "$CORE/vimana_20230526.rbf"
   fi
 fi
+if [ -f "$CORE/IremM92Turbo_20230521.rbf" ] 
+then
+    rm -r "$CORE/IremM92Turbo_20230521.rbf"
+fi
 
 echo "Completed."
 echo ""
