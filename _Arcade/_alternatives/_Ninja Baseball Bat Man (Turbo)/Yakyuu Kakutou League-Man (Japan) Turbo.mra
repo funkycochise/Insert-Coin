@@ -1,12 +1,12 @@
 <misterromdescription>
     <name>Yakyuu Kakutou League-Man (Japan)</name>
     <mameversion>0245</mameversion>
-    <setname>leaguemn</setname>
+    <setname>leaguemn_t</setname>
     <parent>nbbatman</parent>
     <year>1993</year>
     <manufacturer>Irem</manufacturer>
     <category>Fighter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <players>4</players>

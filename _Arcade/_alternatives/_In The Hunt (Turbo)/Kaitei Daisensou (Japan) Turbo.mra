@@ -1,12 +1,12 @@
 <misterromdescription>
     <name>Kaitei Daisensou (Japan)</name>
     <mameversion>0245</mameversion>
-    <setname>kaiteids</setname>
+    <setname>kaiteids_t</setname>
     <parent>inthunt</parent>
     <year>1993</year>
     <manufacturer>Irem</manufacturer>
     <category>Shooter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <players>2</players>

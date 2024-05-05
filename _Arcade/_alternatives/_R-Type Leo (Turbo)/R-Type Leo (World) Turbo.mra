@@ -1,11 +1,11 @@
 <misterromdescription>
     <name>R-Type Leo (World)</name>
     <mameversion>0245</mameversion>
-    <setname>rtypeleo</setname>
+    <setname>rtypeleo_t</setname>
     <year>1992</year>
     <manufacturer>Irem</manufacturer>
     <category>Shooter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <players>2</players>

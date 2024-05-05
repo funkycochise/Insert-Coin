@@ -1,12 +1,12 @@
 <misterromdescription>
     <name>Ninja Baseball Bat Man (World)</name>
     <mameversion>0245</mameversion>
-    <setname>nbbatmanu</setname>
+    <setname>nbbatmanu_t</setname>
     <parent>nbbatman</parent>
     <year>1993</year>
     <manufacturer>Irem</manufacturer>
     <category>Fighter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <players>4</players>

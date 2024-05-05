@@ -1,11 +1,11 @@
 <misterromdescription>
     <name>Gunforce - Battle Fire Engulfed Terror Island (World)</name>
     <mameversion>0245</mameversion>
-    <setname>gunforce</setname>
+    <setname>gunforce_t</setname>
     <year>1991</year>
     <manufacturer>Irem</manufacturer>
     <category>Shooter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <players>2</players>

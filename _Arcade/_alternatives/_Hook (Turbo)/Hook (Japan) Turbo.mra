@@ -2,11 +2,11 @@
     <name>Hook (Japan)</name>
     <mameversion>0245</mameversion>
     <parent>hook</parent>
-    <setname>hookj</setname>
+    <setname>hookj_t</setname>
     <year>1992</year>
     <manufacturer>Irem</manufacturer>
     <category>Shooter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <joystick>8-way</joystick>

@@ -1,12 +1,12 @@
 <misterromdescription>
     <name>R-Type Leo (Japan)</name>
     <mameversion>0245</mameversion>
-    <setname>rtypeleoj</setname>
+    <setname>rtypeleoj_t</setname>
     <parent>rtypeleo</parent>
     <year>1992</year>
     <manufacturer>Irem</manufacturer>
     <category>Shooter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <players>2</players>

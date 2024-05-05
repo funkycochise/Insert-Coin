@@ -1,11 +1,11 @@
 <misterromdescription>
     <name>Gun Force II (US)</name>
     <mameversion>0245</mameversion>
-    <setname>gunforc2</setname>
+    <setname>gunforc2_t</setname>
     <year>1994</year>
     <manufacturer>Irem</manufacturer>
     <category>Shooter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <joystick>8-way</joystick>

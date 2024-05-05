@@ -1,12 +1,12 @@
 <misterromdescription>
     <name>Mahou Keibitai Gun Hohki (Japan)</name>
     <mameversion>0245</mameversion>
-    <setname>gunhohki</setname>
+    <setname>gunhohki_t</setname>
     <parent>mysticri</parent>
     <year>1992</year>
     <manufacturer>Irem</manufacturer>
     <category>Shooter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <joystick>8-way</joystick>

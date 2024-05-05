@@ -1,11 +1,11 @@
 <misterromdescription>
     <name>Major Title 2 (World, set 1)</name>
     <mameversion>0245</mameversion>
-    <setname>majtitl2</setname>
+    <setname>majtitl2_t</setname>
     <year>1992</year>
     <manufacturer>Irem</manufacturer>
     <category>Sports</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <players>4</players>

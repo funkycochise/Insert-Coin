@@ -1,12 +1,12 @@
 <misterromdescription>
     <name>In The Hunt (US)</name>
     <mameversion>0245</mameversion>
-    <setname>inthuntu</setname>
+    <setname>inthuntu_t</setname>
     <parent>inthunt</parent>
     <year>1993</year>
     <manufacturer>Irem</manufacturer>
     <category>Shooter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <players>2</players>

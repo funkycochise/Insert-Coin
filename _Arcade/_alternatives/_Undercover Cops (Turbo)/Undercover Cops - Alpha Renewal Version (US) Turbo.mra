@@ -1,12 +1,12 @@
 <misterromdescription>
     <name>Undercover Cops - Alpha Renewal Version (US)</name>
     <mameversion>0245</mameversion>
-    <setname>uccopsaru</setname>
+    <setname>uccopsaru_t</setname>
     <parent>uccops</parent>
     <year>1992</year>
     <manufacturer>Irem</manufacturer>
     <category>Fighter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <players>3</players>

@@ -1,11 +1,11 @@
 <misterromdescription>
     <name>Mystic Riders (World)</name>
     <mameversion>0245</mameversion>
-    <setname>mysticri</setname>
+    <setname>mysticri_t</setname>
     <year>1992</year>
     <manufacturer>Irem</manufacturer>
     <category>Shooter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <joystick>8-way</joystick>

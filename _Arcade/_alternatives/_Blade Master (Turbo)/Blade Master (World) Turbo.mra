@@ -1,11 +1,11 @@
 <misterromdescription>
     <name>Blade Master (World)</name>
     <mameversion>0245</mameversion>
-    <setname>bmaster</setname>
+    <setname>bmaster_t</setname>
     <year>1991</year>
     <manufacturer>Irem</manufacturer>
     <category>Brawler</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <joystick>8-way</joystick>

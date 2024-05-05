@@ -2,11 +2,11 @@
     <name>Gunforce - Battle Fire Engulfed Terror Island (Japan)</name>
     <mameversion>0245</mameversion>
     <parent>gunforce</parent>
-    <setname>gunforcej</setname>
+    <setname>gunforcej_t</setname>
     <year>1991</year>
     <manufacturer>Irem</manufacturer>
     <category>Shooter</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <players>2</players>

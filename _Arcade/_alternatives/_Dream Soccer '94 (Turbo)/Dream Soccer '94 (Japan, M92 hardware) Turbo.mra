@@ -2,11 +2,11 @@
     <name>Dream Soccer '94 (Japan, M92 hardware)</name>
     <mameversion>0245</mameversion>
     <parent>dsoccr94</parent>
-    <setname>dsoccr94j</setname>
+    <setname>dsoccr94j_t</setname>
     <year>1994</year>
     <manufacturer>Irem</manufacturer>
     <category>Sport</category>
-    <rbf>IremM92_Turbo</rbf>
+    <rbf>IremM92</rbf>
     <rotation>horizontal</rotation>
 
     <joystick>8-way</joystick>
