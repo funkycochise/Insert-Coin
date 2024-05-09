@@ -33,7 +33,6 @@ add "$dir" "H" "Wizard of Wor (Speech).mra" "_Wizard of Wor"
 add "$dir" "H" "Wizard of Wor.mra" "_Wizard of Wor"
 
 add "$dir" "V" "Gorf (Program 1).mra" "_Gorf" "" "STG"
-add "$dir" "V" "Gorf (Speech).mra" "_Gorf" "" "STG"
 add "$dir" "V" "Gorf.mra" "_Gorf" "" "STG"
 add "$dir" "V" "Journey.mra" "_Journey"
 add "$dir" "V" "Kick.mra" "_Kick"
