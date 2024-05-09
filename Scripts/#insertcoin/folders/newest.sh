@@ -34,6 +34,11 @@ function linkfolder {
    fi
 }
 
+#0503
+add "Boxy Boy (World, SB2).mra" "_Boxy Boy"
+add "Marchen Maze (Japan).mra" "_Marchen Maze"
+add "Shadowland (YD3).mra" "_Shadowland"
+
 #0419
 add "Blast Off (Japan).mra" "_Blast Off"
 add "Dangerous Seed (Japan).mra" "_Dangerous Seed" 
