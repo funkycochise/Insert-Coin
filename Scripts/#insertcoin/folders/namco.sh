@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_Namco"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V"  "Dig Dug (Rev 2).mra" "_Dig Dug" "" "ACT"
 add "$dir" "V"  "Dig Dug II (New Ver).mra" "_Dig Dug II" "" "ACT"

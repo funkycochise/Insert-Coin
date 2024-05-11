@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_Williams"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "H" "Alien Arena (Stargate upgrade).mra" "_Alien Arena"
 add "$dir" "H" "Bubbles.mra" "_Bubbles"

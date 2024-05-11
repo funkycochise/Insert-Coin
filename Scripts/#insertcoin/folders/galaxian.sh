@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_Galaxian"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V"  "Moon Quasar.mra" "_Moon Quasar"
 add "$dir" "V" "Azurian Attack.mra" "_Galaxian"

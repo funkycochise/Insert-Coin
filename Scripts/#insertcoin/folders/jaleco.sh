@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_Jaleco"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Exerion (Jaleco).mra" "_Exerion" "" "STG"
 add "$dir" "V" "Exerion (Taito).mra" "_Exerion" "" "STG"

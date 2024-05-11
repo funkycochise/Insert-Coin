@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Raizing-8ing"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V"  "Armed Police Batrider Special Ver. (USA) (Fri Feb 13 1998).mra" "_Armed Police Batrider" "" "STG"
 add "$dir" "V"  "Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra" "_Battle Bakraid" "" "STG"

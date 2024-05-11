@@ -994,7 +994,6 @@ cd /media/fat
 rm -r "$TEMP"
 
 special_echo "Completed."
-special_echo ""
 
 
 

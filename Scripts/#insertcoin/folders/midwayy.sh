@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Midway_YUnit"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "H"  "High Impact Football (rev LA5 02-15-91).mra" "_High Impact Football"
 add "$dir" "H"  "Mortal Kombat (rev 4.0 09-28-92).mra" "_Mortal Kombat"

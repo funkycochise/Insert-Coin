@@ -4,10 +4,7 @@ source ./folders/functions.sh
 
 dir="_MCR3Scroll"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 addgame "Crater Raider.mra" "_Crater Raider"
 addgame "Spy Hunter.mra" "_Spy Hunter"

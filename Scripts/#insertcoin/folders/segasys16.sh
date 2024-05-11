@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Sega-System-16"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Ace Attacker (Japan, S16A) [FD1094 317-0060].mra" "_Ace Attacker" "" "SPO"
 add "$dir" "V" "Action Fighter (World, S16A) [FD1089A 317-0018].mra" "_Action Fighter"

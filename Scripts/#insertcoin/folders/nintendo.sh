@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Nintendo"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V"  "Donkey Kong (Spanish Crazy Kong bootleg).mra" "_Donkey Kong" "" "ACT"
 add "$dir" "V"  "Donkey Kong (US, Set 1).mra" "_Donkey Kong" "" "ACT"

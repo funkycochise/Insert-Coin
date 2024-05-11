@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_TaitoSJ"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Alpine Ski.mra" "_Alpine Ski" "" "SPO"
 add "$dir" "V" "Bio Attack.mra" "_Bio Attack"

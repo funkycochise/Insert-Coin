@@ -30,6 +30,17 @@ then
   fi
 fi
 
+#Zaxxon
+if [ -d "$ALT/_Zaxxon" ] 
+then
+   rm -r "$ALT/_Zaxxon"
+fi
+#Future Spy
+if [ -d "$ALT/_Future Spy" ] 
+then
+   rm -r "$ALT/_Future Spy"
+fi
+
 #Tetris Clean up
 if [ -d "$ALT/_Tetris" ] 
 then
@@ -52,6 +63,10 @@ then
   rm -r "$ALT/_Boulder Dash/Boulder Dash Part 2"
 fi
 #clean sega system 1 previous version
+
+cd /media/fat/_Arcade/cores
+#find . -maxdepth 1 -type f -name "SEGASYS1_*" ! -name "SEGASYS1_20210901.rbf*" -delete
+
 if [ -f "$CORE/SEGASYS1_20230418.rbf" ] 
 then
   if [ -f "$CORE/SEGASYS1_20230315.rbf" ] 

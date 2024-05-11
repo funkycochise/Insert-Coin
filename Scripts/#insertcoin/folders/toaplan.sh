@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Toaplan"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"
 add "$dir" "V" "Out Zone.mra" "_Out Zone" "" "STG"

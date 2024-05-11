@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_Namco_System1"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Blast Off (Japan).mra" "_Blast Off" "" "SPO" "" "STG"
 add "$dir" "V" "Blazer (Japan).mra" "_Blazer" "" "STG"

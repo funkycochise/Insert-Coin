@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Sega"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Carnival.mra" "_Carnival" "" "ACT"
 add "$dir" "V" "Future Spy (315-5061).mra" "_Future Spy"

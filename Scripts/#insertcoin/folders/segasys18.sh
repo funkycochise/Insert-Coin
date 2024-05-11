@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Sega-System-18"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "H" "Alien Storm (World, 2 Players) (FD1094 317-0154).mra" "_Alien Storm" "" "BEA"
 add "$dir" "H" "Bloxeed (Japan) (FD1094 317-0139).mra" "_Bloxeed" "" "PUZ"

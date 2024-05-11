@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Konami"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V"  "Amidar (Scramble).mra" "_Amidar" "" "PUZ"
 add "$dir" "V"  "Fast Lane.mra" "_Fast Lane"

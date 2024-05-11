@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Taito"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight"
 add "$dir" "V" "Arkanoid - Revenge of DOH (World).mra" "_Arkanoid II"

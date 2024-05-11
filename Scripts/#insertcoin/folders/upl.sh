@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_Upl"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
    #addgame "Combat Hawk.mra" "_Combat Hawk"
 add "$dir" "H" "Ninjakun.mra" "_Ninjakun Majou no Bouken" "" "ACT"

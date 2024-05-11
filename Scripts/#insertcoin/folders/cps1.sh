@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_CPS1"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V"  "1941 Counter Attack (World 900227).mra" "_1941 Counter Attack" "" "STG"
 add "$dir" "V"  "Mercs (World 900302).mra" "_Mercs" "" "STG"

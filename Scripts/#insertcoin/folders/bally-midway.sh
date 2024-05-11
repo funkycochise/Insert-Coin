@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_Bally-midway"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "H" "Bosconian - Star Destroyer (Midway, new version).mra" "_Bosconian" "" "STG"
 add "$dir" "H" "Crater Raider.mra" "_Crater Raider"

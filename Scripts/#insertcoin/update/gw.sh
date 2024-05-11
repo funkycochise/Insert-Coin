@@ -98,7 +98,6 @@ dl "Turtle Bridge.gnw"
 dl "Vermin.gnw"
 
 special_echo "Completed."
-special_echo ""
 
 
 

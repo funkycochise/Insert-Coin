@@ -1,10 +1,8 @@
 source ./folders/functions.sh
+
 dir="_CPS2"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "19XX The War Against Destiny (Euro 960104).mra" "_19XX The War Against Destiny" "" "STG"
 add "$dir" "V" "Dimahoo (Euro 000121).mra" "_Dimahoo" "" "STG"

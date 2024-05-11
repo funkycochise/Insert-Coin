@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Atari"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Breakout (TTL).mra" "_Breakout"
 add "$dir" "V" "Centipede (Rev 3).mra" "_Centipede"

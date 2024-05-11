@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Universal"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Cosmic Alien.mra" "_Cosmic Alien"
 add "$dir" "V" "Cosmic Guerilla.mra" "_Cosmic Guerilla"

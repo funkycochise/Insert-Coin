@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir=""
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V"  "Amidar (Scramble).mra" "_Scramble"
 add "$dir" "V"  "Anteater.mra" "_Scramble" 

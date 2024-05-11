@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_Nichibutsu"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V"  "Armed F (Japan).mra" "_Formation Armed F" "" "STG"
 add "$dir" "V"  "Cosmo Police Galivan (12-26-1985).mra" "_Galivan" "" "ACT"

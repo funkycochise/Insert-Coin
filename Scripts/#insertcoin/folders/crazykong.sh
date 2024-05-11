@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_CrazyKong"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Big Kong.mra" "_Crazy Kong"
 add "$dir" "V" "Crazy Kong (Orca bootleg).mra" "_Crazy Kong"

@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir=""
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "280Z-ZZAP (US).mra" "_Space Invaders"
 add "$dir" "V" "Amazing Maze.mra" "_Space Invaders"

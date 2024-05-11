@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_Capcom-Mitchell"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V"  "1942 (Revision B).mra" "_1942" "" "STG"
 add "$dir" "V"  "1943 Kai Midway Kaisen (Japan).mra" "_1943 The Battle of Midway" "" "STG"

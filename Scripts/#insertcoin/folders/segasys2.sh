@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Sega-System-2"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Toki no Senshi - Chrono Soldier [MC-8123, 317-0040].mra" "_Toki no Senshi" "" "ACT"
 

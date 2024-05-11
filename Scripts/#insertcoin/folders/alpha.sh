@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Alpha"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "H" "Gang Wars.mra" "_Gang Wars" "" "BEA"
 add "$dir" "V" "Sky Adventure (World).mra" "_Sky Adventure" "" "STG"

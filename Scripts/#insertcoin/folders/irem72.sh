@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_Irem M72"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Air Duel (Japan, M72 hardware).mra" "_Air Duel" "" "STG"
 add "$dir" "V" "Air Duel (World, M72 hardware).mra" "_Air Duel" "" "STG"

@@ -8,7 +8,7 @@ launchdir=$(pwd)
 targetfolder="_Insert_Coin"
 finalfolder="_Insert Coin"
 
-sh ./update/pre.sh
+./update/pre.sh
 
 #get setup settings
 ini=/media/fat/Scripts/#insertcoin/setup.ini
@@ -37,22 +37,6 @@ dualsdram=${dualsdram:0:1}
 source <(grep main_mister $ini)
 main_mister=${main_mister:0:1}
 #echo "main_mister: $main_mister"
-source <(grep newest $ini)
-newest=${newest:0:1}
-#echo "newest: $newest"
-source <(grep horizontal $ini)
-horizontal=${horizontal:0:1}
-#echo "horizontal: $horizontal"
-source <(grep vertical $ini)
-vertical=${vertical:0:1}
-#echo "vertical: $vertical"
-
-source <(grep stg_h $ini)
-stg_h=${stg_h:0:1}
-#echo "stg_h: $stg_h"
-source <(grep stg_v $ini)
-stg_v=${stg_v:0:1}
-#echo "stg_v: $stg_v"
 
 source <(grep psx $ini)
 psx=${psx:0:1}
@@ -79,7 +63,8 @@ folder_name=${folder_name:0:${#folder_name}}
 #if [ -z "$folder_name" ]; then
 #  folder_name=$finalfolder
 #fi
-#echo "folder_name: $folder_name"
+echo "folder_name: $folder_name"
+
 
 #clean of existing folders
 folder="/media/fat/_Arcade/finalfolder"
@@ -106,10 +91,10 @@ fi
 
 COL=$(( $RANDOM % 12 + 1 ))
 
-sh ./update/banner.sh $COL
+./update/banner.sh $COL
 
 if test -f "./update/install_neogeozip.sh"; then
-   sh ./update/install_neogeozip.sh
+   ./update/install_neogeozip.sh
 fi
 
 #if test -f "/media/fat/Scripts/out.txt"; then
@@ -117,7 +102,10 @@ fi
 #fi
 
 start_time=$SECONDS
-sh ./update/create_menu.sh $launchdir "$targetfolder" $COL $newest $horizontal $vertical $stg_h $stg_v
+
+
+./update/create_menu.sh $launchdir "$targetfolder" $COL
+
 if test -d "/media/fat/_Arcade/$targetfolder"; 
 then
   #echo "$targetfolder to $finalfolder"
@@ -127,25 +115,26 @@ fi
 elapsed=$(( SECONDS - start_time ))
 
 if [ "$mame_rom" == "1" ]; then
-  sh ./update/mame.sh
+  ./update/mame.sh
 fi
 if [ "$gnw_rom" == "1" ]; then
-  sh ./update/gw.sh
+  ./update/gw.sh
 fi
 if [ "$console_mgl" == "1" ]; then
-  sh ./update/clean_console.sh
+  ./update/clean_console.sh
 fi
 if [ "$obsolete_core" == "1" ]; then
-  sh ./update/clean_obsolete.sh "$remove_other"
+  ./update/clean_obsolete.sh "$remove_other"
 fi 
 if [ "$console_core" == "1" ]; then
-   sh ./update/update_console.sh $dualsdram $psx $s32x $saturn $sgb $neogeo $n64
+  ./update/update_console.sh $dualsdram $psx $s32x $saturn $sgb $neogeo $n64
 fi
 sh ./update/post.sh
 
 if [ "$main_mister" == "1" ]; then
-   sh ./update/update_main_mister.sh
+   ./update/update_main_mister.sh
    reboot
 fi
 
 #echo -n -e "Creation process completed in $elapsed sec.\n"
+

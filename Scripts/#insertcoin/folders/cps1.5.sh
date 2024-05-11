@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_CPS1.5"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "H"  "Cadillacs and Dinosaurs (World 930201).mra" "_Cadillacs and Dinosaurs" "" "BEA"
 add "$dir" "H"  "Muscle Bomber Duo Ultimate Team Battle (World 931206).mra" "_Muscle Bomber Duo" "" "VSF"

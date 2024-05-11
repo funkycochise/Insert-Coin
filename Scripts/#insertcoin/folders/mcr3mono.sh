@@ -4,10 +4,7 @@ source ./folders/functions.sh
 
 dir="_MCR3Mono"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 addgame "Demolition Derby (MCR-3 Mono Board Version).mra" "_Demolition Derby"
 addgame "Demolition Derby.mra" "_Demolition Derby"

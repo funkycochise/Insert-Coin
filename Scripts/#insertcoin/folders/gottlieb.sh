@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_Gottlieb"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Curve Ball.mra" "_Curve Ball"
 add "$dir" "V" "Insector.mra" "_Insector"

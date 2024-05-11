@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Irem M92 (Turbo)"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "" "_Lethal Thunder (Turbo)" "" "STG"
 

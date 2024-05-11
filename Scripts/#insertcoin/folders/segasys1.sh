@@ -3,10 +3,7 @@ source ./folders/functions.sh
 
 dir="_Sega-System-1"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Block Gal.mra" "_Block Gal"
 add "$dir" "V" "Gardia (317-0006).mra" "_Gardia" "" "STG"

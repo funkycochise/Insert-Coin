@@ -2,10 +2,7 @@ source ./folders/functions.sh
 
 dir="_DataEast-Deco"
 outdir=$1
-horizontal=$2
-vertical=$3
-stg_horizontal=$4
-stg_vertical=$5
+loadsetup
 
 add "$dir" "V" "Burger Time (Set 1).mra" "_Burger Time" "" "ACT"
 add "$dir" "V" "Burnin' Rubber.mra" "_Burning Rubber" "" "ACT"
