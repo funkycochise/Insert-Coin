@@ -63,7 +63,7 @@ folder_name=${folder_name:0:${#folder_name}}
 #if [ -z "$folder_name" ]; then
 #  folder_name=$finalfolder
 #fi
-echo "folder_name: $folder_name"
+#echo "folder_name: $folder_name"
 
 
 #clean of existing folders
