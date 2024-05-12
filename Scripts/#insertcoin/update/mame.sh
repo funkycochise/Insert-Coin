@@ -800,6 +800,7 @@ dl "pontoon.zip"
 neo "shdancer.zip"
 dl "wwallyj.zip"
 dl "airass.zip"
+dl "tekipaki.zip"
 
 #special_echo "Downloading missing neogeo mame roms"
 neo "2020bb.zip"

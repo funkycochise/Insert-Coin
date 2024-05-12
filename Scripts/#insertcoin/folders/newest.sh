@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0512
+add "Teki Paki.mra" "_Teki Paki"
+
 #0503
 add "Boxy Boy (World, SB2).mra" "_Boxy Boy"
 add "Marchen Maze (Japan).mra" "_Marchen Maze"
