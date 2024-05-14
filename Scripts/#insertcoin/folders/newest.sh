@@ -32,7 +32,7 @@ function linkfolder {
 }
 
 #0514
-add "Air Assault (World, M107 hardware).mra" "_Air Assault"
+add "Air Assault (World).mra" "_Air Assault"
 
 #0512
 add "Teki Paki.mra" "_Teki Paki"
