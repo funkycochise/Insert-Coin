@@ -60,7 +60,7 @@ SECONDS=0
 ./folders/irem72.sh "$out"
 ./folders/irem92.sh "$out"
 ./folders/irem92t.sh "$out"
-#./folders/irem107.sh "$out"
+./folders/irem107.sh "$out"
 ./folders/jaleco.sh "$out"
 ./folders/Kiwako.sh "$out"
 ./folders/konami.sh "$out"
