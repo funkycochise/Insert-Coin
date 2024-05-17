@@ -93,8 +93,8 @@ COL=$(( $RANDOM % 12 + 1 ))
 
 ./update/banner.sh $COL
 
-if test -f "./update/install_neogeozip.sh"; then
-   ./update/install_neogeozip.sh
+if test -f "./update/install_local.sh"; then
+   ./update/install_local.sh
 fi
 
 #if test -f "/media/fat/Scripts/out.txt"; then
