@@ -1,10 +1,12 @@
- #!/bin/bash  
+#!/bin/bash
 source ./folders/functions.sh
-
-dir="_Rare"
-outdir=$1
 loadsetup
 
-add "$dir" "H"  "Battletoads.mgl" "_Battletoads" "" "BEA"
+res=$(exist "Battletoads.mgl")
+if [ "$res" == "1" ]; then
+   dir="_Rare"
+   outdir=$1
 
-dot
+   add "$dir" "H"  "Battletoads.mgl" "_Battletoads" "" "BEA"
+   dot
+fi

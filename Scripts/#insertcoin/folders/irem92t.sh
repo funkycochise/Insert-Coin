@@ -1,23 +1,24 @@
-
+#!/bin/bash
 source ./folders/functions.sh
-
-dir="_Irem M92 (Turbo)"
-outdir=$1
 loadsetup
 
-add "$dir" "V" "" "_Lethal Thunder (Turbo)" "" "STG"
+res=$(exist "In The Hunt (World).mra")
+if [ "$res" == "1" ]; then
+   dir="_Irem M92 (Turbo)"
+   outdir=$1
+   rep "$dir" "V" "" "_Lethal Thunder (Turbo)" "" "STG"
 
-dir "$dir" "H" "" "_Blade Master (Turbo)" "" "BEA"
-dir "$dir" "H" "" "_Dream Soccer '94 (Turbo)" "" "SPO"
-dir "$dir" "H" "" "_Gun Force II (Turbo)" "" "ACT"
-dir "$dir" "H" "" "_Gunforce - Battle Fire Engulfed Terror Island (Turbo)" "" "ACT"
-dir "$dir" "H" "" "_Hook (Turbo)" "" "BEA"
-dir "$dir" "H" "" "_In The Hunt (Turbo)" "" "STG"
-dir "$dir" "H" "" "_Lethal Thunder (Turbo)" "" "STG"
-dir "$dir" "H" "" "_Major Title 2 (Turbo)" "" "SPO"
-dir "$dir" "H" "" "_Mystic Riders (Turbo)" "" "STG"
-dir "$dir" "H" "" "_Ninja Baseball Bat Man (Turbo)" "" "BEA"
-dir "$dir" "H" "" "_R-Type Leo (Turbo)" "" "STG"
-dir "$dir" "H" "" "_Superior Soldiers (Turbo)" "" "VSF"
-dir "$dir" "H" "" "_Undercover Cops (Turbo)" "" "BEA"
-dot
+   rep "$dir" "H" "" "_Blade Master (Turbo)" "" "BEA"
+   rep "$dir" "H" "" "_Dream Soccer '94 (Turbo)" "" "SPO"
+   rep "$dir" "H" "" "_Gun Force II (Turbo)" "" "ACT"
+   rep "$dir" "H" "" "_Gunforce - Battle Fire Engulfed Terror Island (Turbo)" "" "ACT"
+   rep "$dir" "H" "" "_Hook (Turbo)" "" "BEA"
+   rep "$dir" "H" "" "_In The Hunt (Turbo)" "" "STG"
+   rep "$dir" "H" "" "_Major Title 2 (Turbo)" "" "SPO"
+   rep "$dir" "H" "" "_Mystic Riders (Turbo)" "" "STG"
+   rep "$dir" "H" "" "_Ninja Baseball Bat Man (Turbo)" "" "BEA"
+   rep "$dir" "H" "" "_R-Type Leo (Turbo)" "" "STG"
+   rep "$dir" "H" "" "_Superior Soldiers (Turbo)" "" "VSF"
+   rep "$dir" "H" "" "_Undercover Cops (Turbo)" "" "BEA"
+   dot
+fi

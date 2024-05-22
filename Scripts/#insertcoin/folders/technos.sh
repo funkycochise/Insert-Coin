@@ -1,18 +1,20 @@
-#!/bin/bash  
+#!/bin/bash
 source ./folders/functions.sh
-
-dir="_Technos"
-outdir=$1
 loadsetup
 
-add "$dir" "V" "XSleenaBA.mra" "_Xain'd Sleena" "" "ACT"
-add "$dir" "V" "XSleenaB.mra" "_Xain'd Sleena" "" "ACT"
+res=$(exist "Double Dragon (Japan).mra")
+if [ "$res" == "1" ]; then
+   dir="_Technos"
+   outdir=$1
 
-add "$dir" "H" "Double Dragon (Japan).mra" "_Double Dragon" "" "BEA"
-add "$dir" "H" "Double Dragon II The Revenge (World).mra" "_Double Dragon II The Revenge" "" "BEA"
-add "$dir" "H" "V'Ball (US) [bl].mra" "_V'Ball" "" "SPO"
-add "$dir" "H" "V'Ball (US).mra" "_V'Ball" "" "SPO"
-add "$dir" "H" "Renegade (US bootleg).mra" "_Renegade" "" "BEA"
-add "$dir" "H" "Renegade (US).mra" "_Renegade" "" "BEA"
+   add "$dir" "V" "XSleenaBA.mra" "_Xain'd Sleena" "" "ACT"
+   add "$dir" "V" "XSleenaB.mra" "_Xain'd Sleena" "" "ACT"
 
-dot
+   add "$dir" "H" "Double Dragon (Japan).mra" "_Double Dragon" "" "BEA"
+   add "$dir" "H" "Double Dragon II The Revenge (World).mra" "_Double Dragon II The Revenge" "" "BEA"
+   add "$dir" "H" "V'Ball (US) [bl].mra" "_V'Ball" "" "SPO"
+   add "$dir" "H" "V'Ball (US).mra" "_V'Ball" "" "SPO"
+   add "$dir" "H" "Renegade (US bootleg).mra" "_Renegade" "" "BEA"
+   add "$dir" "H" "Renegade (US).mra" "_Renegade" "" "BEA"
+   dot
+fi

@@ -4,6 +4,8 @@ clear
 launchdir=$(pwd)
 #echo "launchdir : $launchdir"
 
+
+
 #change this target folder name, it's the name that will be displayed in _Arcade
 targetfolder="_Insert_Coin"
 finalfolder="_Insert Coin"
@@ -97,9 +99,10 @@ if test -f "./update/install_local.sh"; then
    ./update/install_local.sh
 fi
 
-#if test -f "/media/fat/Scripts/out.txt"; then
-#   rm -r /media/fat/Scripts/out.txt
-#fi
+if test -f "/media/fat/Scripts/#insertcoin/out.txt"; 
+then
+   rm -r /media/fat/Scripts/#insertcoin/out.txt
+fi
 
 start_time=$SECONDS
 

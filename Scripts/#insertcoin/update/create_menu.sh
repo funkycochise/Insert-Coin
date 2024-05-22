@@ -84,7 +84,7 @@ SECONDS=0
 ./folders/segaoutrun.sh "$out"
 ./folders/segasys1.sh "$out"
 ./folders/segasys16.sh "$out"
-#./folders/segasys18.sh "$out"
+./folders/segasys18.sh "$out"
 ./folders/segasys2.sh "$out"
 ./folders/segasyse.sh "$out"
 ./folders/si.sh "$out"
