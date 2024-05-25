@@ -13,7 +13,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "V" "Dragon Spirit (new version (DS3)).mra" "_Dragon Spirit" "" "STG"
    add "$dir" "V" "Galaga '88.mra" "_Galaga '88" "" "STG"
    add "$dir" "V" "Pac-Mania.mra" "_Pac-Mania" "" "ACT"
-   add "$dir" "V" "Quester (Japan).mra" "_Quester" "" "ACT"
+   add "$dir" "V" "Quester (Japan).mra" "_Quester" "" "PUZ"
 
    add "$dir" "H" "Bakutotsu Kijuutei.mra" "_Bakutotsu Kijuutei" "" "STG"
    add "$dir" "H" "Chou Zetsurinjin Berabowman (Japan, Rev C).mra" "_Chou Zetsurinjin Berabowman" "" "ACT"

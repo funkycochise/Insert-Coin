@@ -31,6 +31,12 @@ function linkfolder {
    fi
 }
 
+#0525
+   add "Shadow Dancer (World).mra" "_Shadow Dancer"
+   add "Bloxeed (Japan) (FD1094 317-0139).mra" "_Bloxeed"
+   add "Quester (Japan).mra" "_Quester"
+   add "Chou Zetsurinjin Berabowman (Japan, Rev C).mra" "_Chou Zetsurinjin Berabowman"
+
 #0514
 add "Air Assault (World).mra" "_Air Assault"
 
