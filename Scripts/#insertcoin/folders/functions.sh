@@ -103,6 +103,17 @@ else
 fi
 }
 
+function altclean {
+sub="$1"
+if [ ! -z "$sub" ];
+then
+   if [ -d "$Alt/$sub/$sub" ]; then
+      #echo "rm "$Alt/$sub/$sub""
+      rm -r "$Alt/$sub/$sub"
+   fi
+fi
+}
+
 
 function add {
 
@@ -130,6 +141,11 @@ then
       sub="_$game"
    fi
    #echo "add() : sub is $sub"
+fi
+
+if [ ! -z "$sub" ];
+then
+   altclean "$sub"
 fi
 
 #if no rename, rename equals original sub name
@@ -218,16 +234,16 @@ if [ "$vertical" == "1" ]; then
          dir=""
       fi
       if [ ! -z "$dir" ]; then 
-         if [ ! -d "$outdir/$vert/$dir" ]; then
-            #echo "Creating $outdir/$vert/$dir"
-            mkdir "$outdir/$vert/$dir"
+         if [ ! -d "$outdir/$dir" ]; then
+            #echo "Creating $outdir/$dir"
+            mkdir "$outdir/$dir"
          fi
-         if [ ! -d "$outdir/$vert/$dir/$renamed" ]; then
-            ln -s "$Alt/$sub" "$outdir/$vert/$dir/$renamed"
+         if [ ! -d "$outdir/$dir/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$dir/$renamed"
          fi
       else
-         if [ ! -d "$outdir/$vert/$renamed" ]; then
-            ln -s "$Alt/$sub" "$outdir/$vert/$renamed"
+         if [ ! -d "$outdir/$horz/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$renamed"
          fi
       fi
    fi
@@ -422,6 +438,7 @@ sub="$4"
 renamed="$5"
 genre="$6"
 
+#echo "outdir: $outdir"
 #echo "dir: $dir"
 #echo "orientation: $orientation"
 #echo "mra: $mra"
@@ -434,12 +451,22 @@ then
 fi
 #echo "renamed: $renamed"
 
-#if [ ! -d "$outdir/$dir/$renamed" ] 
-#then
-#   ln -s "$Alt/$sub" "$outdir/$dir/$renamed"
-#fi
 
 #echo "dir() : $dir $orientation $renamed"
+
+
+if [ ! -d "$outdir/$dir" ]; then
+   #echo "Creating $outdir/$dir"
+   mkdir "$outdir/$dir"
+fi
+if [ "$manufacturer_subfolder" != "1" ]; then
+   dir=""
+fi
+if [ ! -z "$dir" ]; then 
+   if [ ! -d "$outdir/$dir/$renamed" ]; then
+      ln -s "$Alt/$mra" "$outdir/$dir/$renamed"
+   fi
+fi
 
 if [ "$vertical" == "1" ] && [ "$orientation" = "V" ]; then
    #echo "dir: $dir"

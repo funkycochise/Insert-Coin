@@ -12,7 +12,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "V" "Plus Alpha.mra" "_Plus Alpha"
    add "$dir" "V" "Psychic 5 (World).mra" "_Psychic 5" "" "ACT"
 
-   rep "$dir" "H" "" "_Avenging Spirit" "" "ACT"
+   rep "$dir" "H" "_Avenging Spirit"  "_Avenging Spirit" "" "ACT"
    add "$dir" "H" "chameleon.mra" "_Chameleon" "" "ACT"
    add "$dir" "H" "Iga Ninjyutsuden (Japan).mra" "_Ninja Kazan" "" "ACT"
    add "$dir" "H" "P-47 - The Freedom Fighter (Japan).mra" "_P-47 - The Freedom Fighter" "" "STG"

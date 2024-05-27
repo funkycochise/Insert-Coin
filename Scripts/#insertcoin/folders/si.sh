@@ -28,5 +28,6 @@ if [ "$res" == "1" ]; then
    add "$dir" "V" "Space Invaders Part II (Taito, Bigger ROMs).mra" "_Space Invaders"
    add "$dir" "V" "Space Invaders.mra" "_Space Invaders"
    add "$dir" "V" "Vortex.mra" "_Space Invaders"
+   altclean "_Space Invaders"
    dot
 fi

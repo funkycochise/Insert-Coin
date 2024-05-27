@@ -28,5 +28,6 @@ if [ "$res" == "1" ]; then
    add "$dir" "V"  "Tazz-Mania (Set 1).mra" "_Scramble"
    add "$dir" "V"  "The End.mra" "_Scramble" 
    add "$dir" "V"  "Turtles.mra" "_Scramble"
+   altclean "_Scramble"
    dot
 fi

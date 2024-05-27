@@ -7,8 +7,8 @@ if [ "$res" == "1" ]; then
    dir="_Technos"
    outdir=$1
 
-   add "$dir" "V" "XSleenaBA.mra" "_Xain'd Sleena" "" "ACT"
-   add "$dir" "V" "XSleenaB.mra" "_Xain'd Sleena" "" "ACT"
+   add "$dir" "V" "Xain'd Sleena (bootleg, bugfixed).mra" "_Xain'd Sleena" "" "ACT"
+   add "$dir" "V" "Xain'd Sleena (bootleg, set 1).mra" "_Xain'd Sleena" "" "ACT"
 
    add "$dir" "H" "Double Dragon (Japan).mra" "_Double Dragon" "" "BEA"
    add "$dir" "H" "Double Dragon II The Revenge (World).mra" "_Double Dragon II The Revenge" "" "BEA"
