@@ -87,7 +87,7 @@ SECONDS=0
 ./folders/segasys18.sh "$out"
 ./folders/segasys2.sh "$out"
 ./folders/segasyse.sh "$out"
-#./folders/si.sh "$out"
+./folders/si.sh "$out"
 ./folders/snk.sh "$out"
 ./folders/tad.sh "$out"
 ./folders/taito.sh "$out"
