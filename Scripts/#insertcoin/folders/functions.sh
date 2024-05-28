@@ -199,8 +199,7 @@ else
   fi
 fi
 #horizontal
-if [ "$horizontal" == "1" ]; then
-   if [ "$orientation" == "H" ]; then
+if [ "$horizontal" == "1" ] && [ "$orientation" == "H" ]; then
       if [ ! -d "$outdir/$horz" ]; then
          #echo "Creating $outdir/$horz"
          mkdir "$outdir/$horz"
@@ -221,11 +220,9 @@ if [ "$horizontal" == "1" ]; then
             ln -s "$Alt/$sub" "$outdir/$horz/$renamed"
          fi
       fi
-   fi
 fi
 #vertical
-if [ "$vertical" == "1" ]; then
-   if [ "$orientation" == "V" ]; then
+if [ "$vertical" == "1" ] && [ "$orientation" == "V" ]; then
       if [ ! -d "$outdir/$vert" ]; then
          #echo "Creating $outdir/$vert"
          mkdir "$outdir/$vert"
@@ -234,19 +231,18 @@ if [ "$vertical" == "1" ]; then
          dir=""
       fi
       if [ ! -z "$dir" ]; then 
-         if [ ! -d "$outdir/$dir" ]; then
-            #echo "Creating $outdir/$dir"
-            mkdir "$outdir/$dir"
+        if [ ! -d "$outdir/$vert/$dir" ]; then
+            #echo "Creating $outdir/$vert/$dir"
+            mkdir "$outdir/$vert/$dir"
          fi
-         if [ ! -d "$outdir/$dir/$renamed" ]; then
-            ln -s "$Alt/$sub" "$outdir/$dir/$renamed"
+         if [ ! -d "$outdir/$horz/$dir/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$vert/$dir/$renamed"
          fi
       else
-         if [ ! -d "$outdir/$horz/$renamed" ]; then
-            ln -s "$Alt/$sub" "$outdir/$renamed"
+         if [ ! -d "$outdir/$vert/$renamed" ]; then
+            ln -s "$Alt/$sub" "$outdir/$vert/$renamed"
          fi
       fi
-   fi
 fi
 if [ "$action" == "1" ]; then
    #action
