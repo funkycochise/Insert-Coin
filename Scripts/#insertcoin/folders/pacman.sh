@@ -4,7 +4,7 @@ loadsetup
 
 res=$(exist "Pac-Man (Midway).mra")
 if [ "$res" == "1" ]; then
-   dir="_Pacman"
+   dir=""
    outdir=$1
 
    add "$dir" "V"  "Ali Baba and 40 Thieves.mra" "_Pacman"
@@ -32,5 +32,6 @@ if [ "$res" == "1" ]; then
    add "$dir" "V"  "The Glob (Pac-Man Hardware).mra" "_Pacman"
    add "$dir" "V"  "Van-Van Car.mra" "_Pacman"
    add "$dir" "V"  "Woodpecker.mra" "_Pacman"
+   altclean "_Pacman"
    dot
 fi

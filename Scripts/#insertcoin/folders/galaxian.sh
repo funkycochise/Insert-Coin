@@ -4,7 +4,7 @@ loadsetup
 
 res=$(exist "Galaxian (Namco, Set 1).mra")
 if [ "$res" == "1" ]; then
-   dir="_Galaxian"
+   dir=""
    outdir=$1
    add "$dir" "V" "Moon Quasar.mra" "_Moon Quasar"
    add "$dir" "V" "Azurian Attack.mra" "_Galaxian"
@@ -25,5 +25,6 @@ if [ "$res" == "1" ]; then
    add "$dir" "V" "UniWar S.mra" "_Galaxian"
    add "$dir" "V" "Victory.mra" "_Galaxian"
    add "$dir" "V" "War of the Bugs.mra" "_Galaxian"
+   altclean "_Galaxian"
    dot
 fi
