@@ -7,6 +7,7 @@ if [ "$res" == "1" ]; then
    dir="_Konami"
    outdir=$1
    add "$dir" "V"  "Amidar (Scramble).mra" "_Amidar" "" "PUZ"
+   add "$dir" "V"  "Contra (US - Asia, set 1).mra" "_Contra" "" "STG"
    add "$dir" "V"  "Fast Lane.mra" "_Fast Lane"
    add "$dir" "V"  "Finalizer - Super Transformation (Set 1).mra" "_Finalizer - Super Transformation" "" "STG"
    add "$dir" "V"  "Finalizer - Super Transformation (Set 2) [bl].mra" "_Finalizer - Super Transformation" "" "STG"
