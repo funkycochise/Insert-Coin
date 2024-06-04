@@ -108,12 +108,11 @@ sub="$1"
 if [ ! -z "$sub" ];
 then
    if [ -d "$Alt/$sub/$sub" ]; then
-      #echo "rm "$Alt/$sub/$sub""
+      #echo "AltClean $Alt/$sub/$sub"
       rm -r "$Alt/$sub/$sub"
    fi
 fi
 }
-
 
 function add {
 
@@ -141,11 +140,6 @@ then
       sub="_$game"
    fi
    #echo "add() : sub is $sub"
-fi
-
-if [ ! -z "$sub" ];
-then
-   altclean "$sub"
 fi
 
 #if no rename, rename equals original sub name
@@ -420,6 +414,12 @@ if [ "$stg_v" == "1" ]; then
    fi
 fi
 
+if [ ! -z "$sub" ];
+then
+   altclean "$sub"
+fi
+
+
 #echo "------------------------------------------------"
 }
 
@@ -682,6 +682,12 @@ if [ "$stg_v" == "1" ]; then
       fi
    fi
 fi
+
+if [ ! -z "$sub" ];
+then
+   altclean "$sub"
+fi
+
 
 #echo "------------------------------------------------"
 }
