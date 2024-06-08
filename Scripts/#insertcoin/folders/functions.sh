@@ -418,7 +418,7 @@ genre="$6"
 if [ -z "$renamed" ]; then
    renamed=$sub
 fi
-echo "renamed: $renamed"
+#echo "renamed: $renamed"
 
 
 #echo "dir() : $dir $orientation $renamed"
@@ -651,7 +651,7 @@ then
 fi
 
 
-echo "------------------------------------------------"
+#echo "------------------------------------------------"
 }
 
 function dot {    
