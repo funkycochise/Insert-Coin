@@ -11,8 +11,8 @@ if [ "$res" == "1" ]; then
 #   add "$dir" "V" "Front Line.mra" "_Front Line"
    add "$dir" "V" "High Way Race.mra" "_High Way Race"
    add "$dir" "V" "Space Cruiser.mra" "_Space Cruiser"
-   add "$dir" "V" "Water Ski.mra" "_Water Ski""" "SPO"
-   add "$dir" "V" "Wild Western.mra" "_Wild Western" 
+   add "$dir" "V" "Water Ski.mra" "_Water Ski""" "" "SPO"
+   add "$dir" "V" "Wild Western.mra" "_Wild Western" "" "ACT"
 
 #   add "$dir" "H" "Jungle Hunt.mra" "_Jungle Hunt"
 #   add "$dir" "H" "Elevator Action.mra" "_Elevator Action" "" "ACT"

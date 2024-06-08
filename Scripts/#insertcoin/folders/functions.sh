@@ -123,6 +123,7 @@ sub="$4"
 renamed="$5"
 genre="$6"
 
+#echo "manufacturer_subfolder : $manufacturer_subfolder"
 #echo "dir: $dir"
 #echo "orientation: $orientation"
 #echo "mra: $mra"
@@ -198,10 +199,7 @@ if [ "$horizontal" == "1" ] && [ "$orientation" == "H" ]; then
          #echo "Creating $outdir/$horz"
          mkdir "$outdir/$horz"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$horz/$dir" ]; then
             #echo "Creating $outdir/$horz/$dir"
             mkdir "$outdir/$horz/$dir"
@@ -221,10 +219,7 @@ if [ "$vertical" == "1" ] && [ "$orientation" == "V" ]; then
          #echo "Creating $outdir/$vert"
          mkdir "$outdir/$vert"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
         if [ ! -d "$outdir/$vert/$dir" ]; then
             #echo "Creating $outdir/$vert/$dir"
             mkdir "$outdir/$vert/$dir"
@@ -245,10 +240,7 @@ if [ "$action" == "1" ]; then
          #echo "Creating $outdir/$genre_act"
          mkdir "$outdir/$genre_act"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_act/$dir" ]; then
             #echo "Creating $outdir/$genre_act/$dir"
             mkdir "$outdir/$genre_act/$dir"
@@ -270,10 +262,7 @@ if [ "$beat" == "1" ]; then
          #echo "Creating $outdir/$genre_bea"
          mkdir "$outdir/$genre_bea"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_bea/$dir" ]; then
             #echo "Creating $outdir/$genre_bea/$dir"
             mkdir "$outdir/$genre_bea/$dir"
@@ -295,10 +284,7 @@ if [ "$puzzle" == "1" ]; then
          #echo "Creating $outdir/$genre_puz"
          mkdir "$outdir/$genre_puz"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_puz/$dir" ]; then
             #echo "Creating $outdir/$genre_puz/$dir"
             mkdir "$outdir/$genre_puz/$dir"
@@ -320,10 +306,7 @@ if [ "$sport" == "1" ]; then
          #echo "Creating $outdir/$genre_spo"
          mkdir "$outdir/$genre_spo"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_spo/$dir" ]; then
             #echo "Creating $outdir/$genre_spo/$dir"
             mkdir "$outdir/$genre_spo/$dir"
@@ -345,10 +328,7 @@ if [ "$vsf" == "1" ]; then
          #echo "Creating $outdir/$genre_vsf"
          mkdir "$outdir/$genre_vsf"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_vsf/$dir" ]; then
             #echo "Creating $outdir/$genre_vsf/$dir"
             mkdir "$outdir/$genre_vsf/$dir"
@@ -370,10 +350,7 @@ if [ "$stg_h" == "1" ]; then
          #echo "Creating $outdir/$genre_stg_h"
          mkdir "$outdir/$genre_stg_h"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_stg_h/$dir" ]; then
             #echo "Creating $outdir/$genre_stg_h/$dir"
             mkdir "$outdir/$genre_stg_h/$dir"
@@ -395,10 +372,7 @@ if [ "$stg_v" == "1" ]; then
          #echo "Creating $outdir/$genre_stg_v"
          mkdir "$outdir/$genre_stg_v"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_stg_v/$dir" ]; then
             #echo "Creating $outdir/$genre_stg_v/$dir"
             mkdir "$outdir/$genre_stg_v/$dir"
@@ -441,25 +415,22 @@ genre="$6"
 #echo "sub: $sub"
 #echo "renamed: $renamed"
 #echo "genre $genre"
-if [ -z "$renamed" ];
-then
+if [ -z "$renamed" ]; then
    renamed=$sub
 fi
-#echo "renamed: $renamed"
+echo "renamed: $renamed"
 
 
 #echo "dir() : $dir $orientation $renamed"
 
 
-if [ ! -d "$outdir/$dir" ]; then
+if [ ! -z "$dir" ] && [ ! -d "$outdir/$dir" ]; then
    #echo "Creating $outdir/$dir"
    mkdir "$outdir/$dir"
 fi
-if [ "$manufacturer_subfolder" != "1" ]; then
-   dir=""
-fi
-if [ ! -z "$dir" ]; then 
+if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
    if [ ! -d "$outdir/$dir/$renamed" ]; then
+      #echo "creating $outdir/$dir/$renamed"
       ln -s "$Alt/$mra" "$outdir/$dir/$renamed"
    fi
 fi
@@ -472,10 +443,7 @@ if [ "$vertical" == "1" ] && [ "$orientation" = "V" ]; then
    #echo "renamed: $renamed"
    #echo "genre $genre"
    #echo "V : $outdir/$vert/$dir/$renamed"
-   if [ "$manufacturer_subfolder" != "1" ]; then
-      dir=""
-   fi
-   if [ ! -z "$dir" ]; then
+   if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
       if [ ! -d "$outdir/$vert/$dir" ]; then
          #echo "Creating $outdir/$vert/$dir"
          mkdir "$outdir/$vert/$dir"
@@ -483,6 +451,15 @@ if [ "$vertical" == "1" ] && [ "$orientation" = "V" ]; then
       if [ ! -d "$outdir/$vert/$dir/$renamed" ]; then
          #echo "$outdir/$vert/$dir/$renamed"
          ln -s "$Alt/$mra" "$outdir/$vert/$dir/$renamed"
+      fi
+   else
+      if [ ! -d "$outdir/$vert" ]; then
+         #echo "Creating $outdir/$vert"
+         mkdir "$outdir/$vert"
+      fi 
+      if [ ! -d "$outdir/$vert/$renamed" ]; then
+         #echo "$outdir/$vert/$renamed"
+         ln -s "$Alt/$mra" "$outdir/$vert/$renamed"
       fi
    fi
 elif [ "$horizontal" == "1" ] && [ "$orientation" = "H" ]; then
@@ -493,10 +470,7 @@ elif [ "$horizontal" == "1" ] && [ "$orientation" = "H" ]; then
    #echo "renamed: $renamed"
    #echo "genre $genre"
    #echo "H : $outdir/$horz/$dir/$renamed"
-   if [ "$manufacturer_subfolder" != "1" ]; then
-      dir=""
-   fi
-   if [ ! -z "$dir" ]; then
+   if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
       if [ ! -d "$outdir/$horz/$dir" ]; then
          #echo "Creating $outdir/$horz/$dir"
          mkdir "$outdir/$horz/$dir"
@@ -504,6 +478,15 @@ elif [ "$horizontal" == "1" ] && [ "$orientation" = "H" ]; then
       if [ ! -d "$outdir/$horz/$dir/$renamed" ]; then
          #echo "$outdir/$horz/$dir/$renamed"
          ln -s "$Alt/$mra" "$outdir/$horz/$dir/$renamed"
+      fi
+   else
+      if [ ! -d "$outdir/$horz" ]; then
+         #echo "Creating $outdir/$horz"
+         mkdir "$outdir/$horz"
+      fi 
+      if [ ! -d "$outdir/$horz/$renamed" ]; then
+         #echo "$outdir/$horz/$renamed"
+         ln -s "$Alt/$mra" "$outdir/$horz/$renamed"
       fi
    fi
 fi
@@ -514,10 +497,7 @@ if [ "$action" == "1" ]; then
          #echo "Creating $outdir/$genre_act"
          mkdir "$outdir/$genre_act"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_act/$dir" ]; then
             #echo "Creating $outdir/$genre_act/$dir"
             mkdir "$outdir/$genre_act/$dir"
@@ -539,10 +519,7 @@ if [ "$beat" == "1" ]; then
          #echo "Creating $outdir/$genre_bea"
          mkdir "$outdir/$genre_bea"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_bea/$dir" ]; then
             #echo "Creating $outdir/$genre_bea/$dir"
             mkdir "$outdir/$genre_bea/$dir"
@@ -564,10 +541,7 @@ if [ "$puzzle" == "1" ]; then
          #echo "Creating $outdir/$genre_puz"
          mkdir "$outdir/$genre_puz"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_puz/$dir" ]; then
             #echo "Creating $outdir/$genre_puz/$dir"
             mkdir "$outdir/$genre_puz/$dir"
@@ -589,10 +563,7 @@ if [ "$sport" == "1" ]; then
          #echo "Creating $outdir/$genre_spo"
          mkdir "$outdir/$genre_spo"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_spo/$dir" ]; then
             #echo "Creating $outdir/$genre_spo/$dir"
             mkdir "$outdir/$genre_spo/$dir"
@@ -614,10 +585,7 @@ if [ "$vsf" == "1" ]; then
          #echo "Creating $outdir/$genre_vsf"
          mkdir "$outdir/$genre_vsf"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_vsf/$dir" ]; then
             #echo "Creating $outdir/$genre_vsf/$dir"
             mkdir "$outdir/$genre_vsf/$dir"
@@ -639,10 +607,7 @@ if [ "$stg_h" == "1" ]; then
          #echo "Creating $outdir/$genre_stg_h"
          mkdir "$outdir/$genre_stg_h"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_stg_h/$dir" ]; then
             #echo "Creating $outdir/$genre_stg_h/$dir"
             mkdir "$outdir/$genre_stg_h/$dir"
@@ -664,10 +629,7 @@ if [ "$stg_v" == "1" ]; then
          #echo "Creating $outdir/$genre_stg_v"
          mkdir "$outdir/$genre_stg_v"
       fi
-      if [ "$manufacturer_subfolder" != "1" ]; then
-         dir=""
-      fi
-      if [ ! -z "$dir" ]; then 
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
          if [ ! -d "$outdir/$genre_stg_v/$dir" ]; then
             #echo "Creating $outdir/$genre_stg_v/$dir"
             mkdir "$outdir/$genre_stg_v/$dir"
@@ -689,7 +651,7 @@ then
 fi
 
 
-#echo "------------------------------------------------"
+echo "------------------------------------------------"
 }
 
 function dot {    
