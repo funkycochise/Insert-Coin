@@ -318,7 +318,7 @@ if [ "$puzzle" == "1" ] && [ "$genre" == "PUZ" ]; then
    rep_folder "$genre_puz"
 fi
 if [ "$sport" == "1" ] && [ "$genre" == "SPO" ]; then
-   rep_folder "$genre_spo"
+  rep_folder "$genre_spo"
 fi
 if [ "$vsf" == "1" ] && [ "$genre" == "VSF" ]; then
    rep_folder "$genre_vsf"
@@ -348,12 +348,16 @@ function rep_folder {
    #echo "genre $genre"
    #echo "V : $outdir/$folder/$dir/$renamed"
    if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
+      if [ ! -d "$outdir/$folder" ]; then
+         #echo "Creating $outdir/$folder"
+         mkdir "$outdir/$folder"
+      fi 
       if [ ! -d "$outdir/$folder/$dir" ]; then
          #echo "Creating $outdir/$folder/$dir"
          mkdir "$outdir/$folder/$dir"
       fi 
       if [ ! -d "$outdir/$folder/$dir/$renamed" ]; then
-         #echo "$outdir/$folder/$dir/$renamed"
+         #echo "linking $outdir/$folder/$dir/$renamed"
          ln -s "$Alt/$mra" "$outdir/$folder/$dir/$renamed"
       fi
    else
