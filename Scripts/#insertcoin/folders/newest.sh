@@ -31,6 +31,10 @@ function linkfolder {
    fi
 }
 
+#0614
+add "Clutch Hitter (US) (FD1094 317-0176).mra" "_Clutch Hitter"
+add "Tank Force (US, 2 Players).mra" "_Tank Force"
+
 #0531
 add "Alien Storm (World, 2 Players) (FD1094 317-0154).mra" "_Alien Storm"
 
