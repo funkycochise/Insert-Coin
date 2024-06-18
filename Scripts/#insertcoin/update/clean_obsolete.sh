@@ -73,6 +73,10 @@ then
   then
     rm -r "$CORE/SEGASYS1_20230315.rbf"
   fi
+  if [ -f "$CORE/SEGASYS1_20240602.rbf" ] 
+  then
+    rm -r "$CORE/SEGASYS1_20240602.rbf"
+  fi
 fi
 #clean DK previous version if newest exist
 if [ -f "$CORE/DonkeyKong_20231228.rbf" ] 
