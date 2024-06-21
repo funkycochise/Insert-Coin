@@ -67,15 +67,15 @@ fi
 cd /media/fat/_Arcade/cores
 #find . -maxdepth 1 -type f -name "SEGASYS1_*" ! -name "SEGASYS1_20210901.rbf*" -delete
 
-if [ -f "$CORE/SEGASYS1_20230418.rbf" ] 
+if [ -f "$CORE/SEGASYS1_20240602.rbf" ] 
 then
   if [ -f "$CORE/SEGASYS1_20230315.rbf" ] 
   then
     rm -r "$CORE/SEGASYS1_20230315.rbf"
   fi
-  if [ -f "$CORE/SEGASYS1_20240602.rbf" ] 
+  if [ -f "$CORE/SEGASYS1_20230418.rbf" ] 
   then
-    rm -r "$CORE/SEGASYS1_20240602.rbf"
+    rm -r "$CORE/SEGASYS1_20230418.rbf"
   fi
 fi
 #clean DK previous version if newest exist
