@@ -1,6 +1,6 @@
 <misterromdescription>
-	<name>Gonbee no I'm Sorry (315-5110, Japan)</name>
-	<region>JAP</region>
+	<name>I'm Sorry</name>
+	<region>USA</region>
 	<homebrew>no</homebrew>
 	<bootleg>no</bootleg>
 	<version>315-5110</version>
@@ -11,9 +11,9 @@
 	<manufacturer>Sega</manufacturer>
 	<category>Maze</category>
 
-	<setname>imsorryj</setname>
+	<setname>imsorry</setname>
 	<parent>imsorry</parent>
-	<mameversion>0229</mameversion>
+	<mameversion>0217</mameversion>
 	<rbf>segasys1</rbf>
 	<about author="MrX-8B" source="https://github.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer" twitter="@MrX_8B" webpage="https://patreon.com/MrX_8B"></about>
 
@@ -25,8 +25,8 @@
 	<joystick>8-way</joystick>
 	<special_controls></special_controls>
 	<num_buttons>2</num_buttons>
-	<buttons default="A,B,Start,Select,R,L"
-	         names="Punch,Jump,-,-,-,Start 1P,Start 2P,Coin,Pause"/>
+	<buttons default="A,B,Start,Select,R,C" names="Jump,Punch,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+
 	<switches default="FF,7E">
 		<dip bits="9" ids="On,Off" name="Demo Sound"></dip>
 		<dip bits="10,11" ids="Infinite,5,4,3" name="Lives"></dip>
@@ -34,74 +34,53 @@
 		</switches>
 
 	<rom index="1">
-		<part>04</part>
-	</rom>
-	<rom index="0" md5="none" zip="imsorry.zip">
-	        <!-- soundcpu, size: 0x8000 -->
-	        <part crc="25e3d685" name="epr-6656.120"/>
-	        <part crc="25e3d685" name="epr-6656.120"/>
-	        <part crc="25e3d685" name="epr-6656.120"/>
-	        <part crc="25e3d685" name="epr-6656.120"/>
+		<part>00</part>
+		</rom>
+	<rom index="0" md5="none" type="merged|nonmerged|split" zip="imsorry.zip|imsorryj.zip">
 
-	        <!-- maincpu, size: 0x18000 -->
-	        <part crc="cc5d915d" name="epr-6647.116"/>
-	        <part crc="37574d60" name="epr-6648.109"/>
-	        <part crc="5f59bdee" name="epr-6649.96"/>
-	        <part crc="5f59bdee" name="epr-6649.96"/>
-	        <part crc="5f59bdee" name="epr-6649.96"/>
-	        <part crc="5f59bdee" name="epr-6649.96"/>
+		<part crc="cc5d915d" name="epr-6647.116"></part>
+		<part crc="37574d60" name="epr-6648.109"></part>
+		<part crc="5f59bdee" name="epr-6649.96"></part>
 
-	        <!-- sprites, size: 0x20000 -->
-	        <part crc="1ba167ee" name="epr-6645.117"/>
-	        <part crc="edda7ad6" name="epr-6646.04"/>
-	        <part crc="1ba167ee" name="epr-6645.117"/>
-	        <part crc="edda7ad6" name="epr-6646.04"/>
-	        <part crc="1ba167ee" name="epr-6645.117"/>
-	        <part crc="edda7ad6" name="epr-6646.04"/>
-	        <part crc="1ba167ee" name="epr-6645.117"/>
-	        <part crc="edda7ad6" name="epr-6646.04"/>
+		<part crc="25e3d685" name="epr-6656.120"></part>
+		<part crc="25e3d685" name="epr-6656.120"></part>
 
-	        <!-- tiles, size: 0x18000 -->
-	        <part crc="be1f762f" name="epr-6655.62"/>
-	        <part crc="ed5f7fc8" name="epr-6654.61"/>
-	        <part crc="be1f762f" name="epr-6655.62"/>
-	        <part crc="ed5f7fc8" name="epr-6654.61"/>
-	        <part crc="8b4845a7" name="epr-6653.64"/>
-	        <part crc="001d68cb" name="epr-6652.63"/>
-	        <part crc="8b4845a7" name="epr-6653.64"/>
-	        <part crc="001d68cb" name="epr-6652.63"/>
-	        <part crc="4ee9b5e6" name="epr-6651.66"/>
-	        <part crc="3fca4414" name="epr-6650.65"/>
-	        <part crc="4ee9b5e6" name="epr-6651.66"/>
-	        <part crc="3fca4414" name="epr-6650.65"/>
+		<part crc="1ba167ee" name="epr-6645.117"></part>
+		<part crc="edda7ad6" name="epr-6646.04"></part>
+		<part crc="1ba167ee" name="epr-6645.117"></part>
+		<part crc="edda7ad6" name="epr-6646.04"></part>
 
-	        <!-- lookup_proms, size: 0x100 -->
-	        <part crc="648350b8" name="pr-5317.76"/>
-
-	        <!-- color_proms, size: 0x300 -->
-	        <part repeat="0x300">00</part>
-
-		<!-- encryption_device: 315-5110 -->
+		<part crc="be1f762f" name="epr-6655.62"></part>
+		<part crc="8b4845a7" name="epr-6653.64"></part>
+		<part crc="4ee9b5e6" name="epr-6651.66"></part>
+		<part crc="ed5f7fc8" name="epr-6654.61"></part>
+		<part crc="001d68cb" name="epr-6652.63"></part>
+		<part crc="3fca4414" name="epr-6650.65"></part>
+		<part crc="648350b8" name="pr-5317.76"></part>
 		<part>
-			88 08 80 00 00 20 80 a0 00 20 80 a0 88 08 80 00
-			88 08 a8 28 00 20 80 a0 00 20 80 a0 88 08 a8 28
-			00 20 80 a0 08 00 88 80 00 20 80 a0 20 28 a0 a8
-			20 28 a0 a8 00 20 80 a0 20 28 a0 a8 88 08 a8 28
-			88 08 80 00 08 00 88 80 08 00 88 80 88 08 80 00
-			08 28 00 20 08 28 00 20 88 08 80 00 08 28 00 20
-			08 28 00 20 08 00 88 80 08 28 00 20 20 28 a0 a8
-			20 28 a0 a8 08 28 00 20 20 28 a0 a8 08 28 00 20
+88 08 80 00 00 20 80 a0 00 20 80 a0 88 08 80 00 
+88 08 a8 28 00 20 80 a0 00 20 80 a0 88 08 a8 28 
+00 20 80 a0 08 00 88 80 00 20 80 a0 20 28 a0 a8 
+20 28 a0 a8 00 20 80 a0 20 28 a0 a8 88 08 a8 28 
+88 08 80 00 08 00 88 80 08 00 88 80 88 08 80 00 
+08 28 00 20 08 28 00 20 88 08 80 00 08 28 00 20 
+08 28 00 20 08 00 88 80 08 28 00 20 20 28 a0 a8 
+20 28 a0 a8 08 28 00 20 20 28 a0 a8 08 28 00 20 
 		</part>
-	</rom>
+		</rom>
 	<rom index="2"></rom>
 	<rom index="3" md5="none">
 		<part>
-			00 1F FF FF 00 FF 00 02 00 02 00 01 00 FF 00 00
-			00 00 C0 17 00 03 00 02 00 00 D3 00 00 A0 00 20
+		00 1F FF FF 00 FF 00 02 00 02 00 01 00 FF 00 00
+		00 00 C0 17 00 03 00 02
+		00 00 D3 00 00 A0 00 20
 		</part>
-	</rom>
+		</rom>
 	<rom index="4"></rom>
 
 	<nvram index="4" size="163"></nvram>
+
+	<remark></remark>
+
 	<mratimestamp>20210430005030</mratimestamp>
 </misterromdescription>
