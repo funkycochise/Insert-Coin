@@ -1,17 +1,10 @@
-# redirect stdout/stderr to a file
-#exec >run.txt 2>&1
-
-exec 3>&1
-special_echo () {
-    echo "$@" >&3
-}
-exec &>/dev/null
+#!/bin/bash
 
 TEMP=/media/fat/scripts/temp
 SD=/media/fat
 USB=/media/usb0
 CIFS=/media/fat/cifs
-ARCHIVE=https://ia802609.us.archive.org/5/items/gw_mister
+ARCHIVE=https://ia800304.us.archive.org/11/items/gw_mister/
 
 function identify_folder {
 
@@ -30,22 +23,20 @@ fi
 
 function dl {
 
-  identify_folder
+   identify_folder
 
    if ! test -d "$target"; then
-     #special_echo "creating $target"
+     echo "creating $target"
      mkdir "$target"
    fi
 
    FILE=$target$1
 
-   #special_echo "retrieve $FILE"
    if ! test -f "$FILE"; then
-      special_echo "downloading $1"
+      echo "downloading $1"
       #file doesn not exists
-      #special_echo "$1"
       #curl $ARCHIVE/$1 -O -k
-      wget "$ARCHIVE/$1"
+      wget "$ARCHIVE/$1" "$TEMP/$1" --quiet
       mv "$TEMP/$1" "$target/$1" 
     #else
     #  special_echo "$1 already exixts"
@@ -53,10 +44,11 @@ function dl {
 
 }
 
-special_echo "Updating game&watch"
+echo "Updating game&watch"
 
-#special_echo "$TEMP"
-mkdir $TEMP
+  if [ ! -d "$TEMP" ]; then
+     mkdir "$TEMP"
+  fi
 cd $TEMP
 
 dl "Altered Beast (Tiger).gnw"
@@ -97,7 +89,7 @@ dl "Tropical Fish.gnw"
 dl "Turtle Bridge.gnw"
 dl "Vermin.gnw"
 
-special_echo "Completed."
+echo "Completed."
 
 
 
