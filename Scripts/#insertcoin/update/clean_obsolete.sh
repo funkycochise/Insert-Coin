@@ -8,6 +8,7 @@ CORE=/media/fat/_Arcade/Cores
 CONSOLE=/media/fat/_Console
 
 echo "Cleaning obsolete/unwanted core"
+
 #echo "remove_other : $remove_other"
 if [ "$remove_other" == "1" ]; then
   if [ -d "/media/fat/_Other" ] 
@@ -16,7 +17,6 @@ if [ "$remove_other" == "1" ]; then
     rm -r "/media/fat/_Other"
   fi
 fi
-
 #remove previous G&W core
 if [ -f "$CONSOLE/GnW_20220606.rbf" ] 
 then
@@ -30,7 +30,6 @@ then
     rm -r "$CONSOLE/SNES_20230223.rbf"
   fi
 fi
-
 #Zaxxon
 if [ -d "$ALT/_Zaxxon" ] 
 then
@@ -150,5 +149,6 @@ if [ -f "$CORE/IremM92Turbo_20230521.rbf" ]
 then
     rm -r "$CORE/IremM92Turbo_20230521.rbf"
 fi
+
 
 echo -e "\\r${GREEN}${CHECK}${NC} Completed"
