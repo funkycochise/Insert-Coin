@@ -37,7 +37,7 @@ function dl {
       #curl $ARCHIVE_MERGED/$1 -O -k
       wget $ARCHIVE_MERGED/$1 --quiet
       mv $TEMP/$1 $mametarget/$1 
-      echo -e "\\r$1 ${BLUE}${CHECK}${NC}                           "
+      echo -e "\\r${BLUE}${CHECK}${NC} $1                           "
    #else
     # echo "$1 already exixts"
    fi
@@ -58,7 +58,7 @@ function neo {
       #curl $ARCHIVE_NEOGEO/$1 -O -k
       wget $ARCHIVE_NEOGEO/$1 --quiet
       mv $TEMP/$1 $mametarget/$1 
-      echo -e "\\r$1 ${BLUE}${CHECK}${NC}                           "
+      echo -e "\\r${BLUE}${CHECK}${NC} $1                           "
     #else
 #     echo "$1 already exixts"
    fi
