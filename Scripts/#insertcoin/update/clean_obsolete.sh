@@ -1,4 +1,5 @@
 #!/bin/bash
+source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 remove_other=$1
 
@@ -150,5 +151,4 @@ then
     rm -r "$CORE/IremM92Turbo_20230521.rbf"
 fi
 
-echo "Completed."
-echo ""
+echo -e "\\r${GREEN}${CHECK}${NC} Completed"

@@ -1,8 +1,7 @@
-# redirect stdout/stderr to a file
-#exec >run.txt 2>&1
+#!/bin/bash
+source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 launchdir=$1
-#special_echo "launchdir $launchdir"
 
 CONSOLE=/media/fat/_Console
 
@@ -41,5 +40,4 @@ fi
 #keep only latest SNES console core
 CleanSNES
 
-
-echo "Completed."
+echo -e "\\r${GREEN}${CHECK}${NC} Completed"

@@ -1,4 +1,5 @@
 #!/bin/bash
+source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 TEMP=/media/fat/scripts/temp
 SD=/media/fat
@@ -20,36 +21,35 @@ if ! [ -d "$target" ]; then
 fi
 }
 
-
 function dl {
 
-   identify_folder
+  identify_folder
 
    if ! test -d "$target"; then
-     echo "creating $target"
+     #special_echo "creating $target"
      mkdir "$target"
    fi
 
    FILE=$target$1
-
+   #special_echo "retrieve $FILE"
    if ! test -f "$FILE"; then
-      echo "downloading $1"
-      #file doesn not exists
+      echo -n "downloading $1"
       #curl $ARCHIVE/$1 -O -k
-      wget "$ARCHIVE/$1" "$TEMP/$1" --quiet
-      mv "$TEMP/$1" "$target/$1" 
-    #else
-    #  special_echo "$1 already exixts"
+      wget "$ARCHIVE/$1" --quiet
+      mv "$TEMP/$1" "$FILE" 
+      echo -e "\\r$1 ${BLUE}${CHECK}${NC}                           "
   fi
 
 }
 
-echo "Updating game&watch"
 
-  if [ ! -d "$TEMP" ]; then
-     mkdir "$TEMP"
-  fi
-cd $TEMP
+echo "Updating game&watch folder"
+
+if [ ! -d "$TEMP" ]; 
+then
+   mkdir "$TEMP"
+fi
+cd "$TEMP"
 
 dl "Altered Beast (Tiger).gnw"
 dl "Apollo 13 (Tiger).gnw"
@@ -89,8 +89,8 @@ dl "Tropical Fish.gnw"
 dl "Turtle Bridge.gnw"
 dl "Vermin.gnw"
 
-echo "Completed."
 
+echo -e "\\r${GREEN}${CHECK}${NC} Completed"
 
 
 

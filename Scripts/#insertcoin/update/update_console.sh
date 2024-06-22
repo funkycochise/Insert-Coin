@@ -1,6 +1,5 @@
 #!/bin/bash
-
-echo "Getting latest console cores"
+source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 CONSOLE=/media/fat/_Console
 
@@ -75,7 +74,8 @@ function PSX {
     fi
   done
   if [ "$installed" == "1" ]; then
-    echo -n -e "PSX "
+    echo -e "\\r${BLUE}${CHECK}${NC} PSX"
+    #echo -n -e "PSX "
   fi
 }
 
@@ -132,7 +132,7 @@ function Saturn {
     fi
   done
   if [ "$installed" == "1" ]; then
-    echo -n -e "Saturn "
+    echo -e "\\r${BLUE}${CHECK}${NC} Saturn"
   fi
 }
 
@@ -150,7 +150,7 @@ function S32X {
     touch $CONSOLE/$target >/dev/null
     #remove keep only latest
     find $CONSOLE -maxdepth 1 -type f -name "S32X*" ! -name "$target" -delete
-    echo -n -e "S32X "
+    echo -e "\\r${BLUE}${CHECK}${NC} S32X"
     #clean any file left
     if test -f "./$f"; then
       rm -r ./$f
@@ -172,7 +172,8 @@ function SGB {
     touch $CONSOLE/$target >/dev/null
     #remove keep only latest
     find $CONSOLE -maxdepth 1 -type f -name "SGB*" ! -name "$target" -delete
-    echo -n -e "SGB "
+    #echo -n -e "SGB "
+    echo -e "\\r${BLUE}${CHECK}${NC} SGB"
     #clean any file left
     if test -f "./$f"; then
       rm -r ./$f
@@ -194,7 +195,8 @@ function NeoGeo {
     touch $CONSOLE/$target >/dev/null
     #remove keep only latest
     find $CONSOLE -maxdepth 1 -type f -name "NeoGeo*" ! -name "$target" -delete
-    echo -n -e "NeoGeo "
+    #echo -n -e "NeoGeo "
+    echo -e "\\r${BLUE}${CHECK}${NC} Neogeo"
     #clean any file left
     if test -f "./$f"; then
       rm -r ./$f
@@ -276,8 +278,12 @@ function N64 {
     #  rm -r ./$f
     #fi
   done
-  echo -e "N64 "
+  #echo -e "N64 "
+  echo -e "\\r${BLUE}${CHECK}${NC} N64"
 }
+
+
+echo "Getting latest console cores"
 
 if [ "$psx" == "1" ]; then
   PSX
@@ -299,5 +305,5 @@ if [ "$n64" == "1" ]; then
   N64
 fi
 
-echo "Completed"
+echo -e "\\r${GREEN}${CHECK}${NC} Completed"
 echo ""

@@ -1,11 +1,5 @@
-# redirect stdout/stderr to a file
-#exec >run.txt 2>&1
-
-exec 3>&1
-special_echo () {
-    echo "$@" >&3
-}
-exec &>/dev/null
+#!/bin/bash
+source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 TEMP=/media/fat/scripts/temp
 SD=/media/fat
@@ -35,19 +29,17 @@ function dl {
 
   identify_folder
 
-#special_echo "mametarget $mametarget"
-
     FILE=$mametarget/$1
-    #special_echo "retrieve $FILE"
     if ! test -f "$FILE"; then
-      special_echo "downloading $1"
+      echo -n "downloading $1"
       #file doesn not exists
-      #special_echo "$1"
+      #echo "$1"
       #curl $ARCHIVE_MERGED/$1 -O -k
-      wget $ARCHIVE_MERGED/$1
+      wget $ARCHIVE_MERGED/$1 --quiet
       mv $TEMP/$1 $mametarget/$1 
+      echo -e "\\r$1 ${BLUE}${CHECK}${NC}                           "
    #else
-    # special_echo "$1 already exixts"
+    # echo "$1 already exixts"
    fi
 
 }
@@ -56,19 +48,19 @@ function neo {
 
   identify_folder
 
-#special_echo "mametarget $mametarget"
+#echo "mametarget $mametarget"
 
     FILE=$mametarget/$1
-    #special_echo "retrieve $FILE"
+    #echo "retrieve $FILE"
     if ! test -f "$FILE"; then
-      special_echo "downloading $1"
+      echo -n "downloading $1"
       #file doesn not exists
-      #special_echo "$1"
       #curl $ARCHIVE_NEOGEO/$1 -O -k
-      wget $ARCHIVE_NEOGEO/$1
+      wget $ARCHIVE_NEOGEO/$1 --quiet
       mv $TEMP/$1 $mametarget/$1 
+      echo -e "\\r$1 ${BLUE}${CHECK}${NC}                           "
     #else
-#     special_echo "$1 already exixts"
+#     echo "$1 already exixts"
    fi
 
 }
@@ -83,13 +75,14 @@ function clean {
 }
 
 
-special_echo "Updating mame folder"
+echo "Updating mame folder"
 
-#special_echo "$TEMP"
-mkdir $TEMP
+if [ ! -d "$TEMP" ] 
+then
+   mkdir $TEMP
+fi 
 cd $TEMP
 #dl "extrmatn.zip"
-#special_echo "pwd : $(pwd)"
 clean "amidaru.zip"
 clean "atetrisc.zip"
 clean "atetrisc2.zip"
@@ -994,7 +987,7 @@ neo "pollen_angel.zip"
 cd /media/fat
 rm -r "$TEMP"
 
-special_echo "Completed."
+echo -e "\\r${GREEN}${CHECK}${NC} Completed"
 
 
 

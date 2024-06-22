@@ -14,6 +14,10 @@ LIGHTBLUE='\033[1;34m'
 LIGHTPURPLE='\033[1;35m'       
 LIGHTCYAN='\033[1;36m'        
 WHITE='\033[1;37m'
+NC='\033[0m' # No Color
+
+CHECK="\xE2\x9C\x94"
+CROSS="\xE2\x9D\x8C"
 
 Arcade=/media/fat/_Arcade
 Alt=/media/fat/_Arcade/_alternatives
