@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0622
+add "Super Locomotive.mra" "_Super Locomotive"
+
 #0614
 add "Clutch Hitter (US) (FD1094 317-0176).mra" "_Clutch Hitter"
 add "Tank Force (US, 2 Players).mra" "_Tank Force"

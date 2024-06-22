@@ -15,5 +15,6 @@ if [ "$res" == "1" ]; then
    add "$dir" "V" "Zaxxon (Set 1, Rev D).mra" "_Zaxxon" "" "ACT"
 
    add "$dir" "H" "BankPanic.mra" "_BankPanic"
+   add "$dir" "H" "Super Locomotive.mra" "_Super Locomotive" "" "ACT"
    dot
 fi
