@@ -1,7 +1,7 @@
 <misterromdescription>
     <name>Sega Ninja (US) [315-5102]</name>
     <setname>seganinj</setname>
-    <rbf>segasys1</rbf>
+    <rbf>segasys2</rbf>
     <mameversion>0229</mameversion>
     <year>1985</year>
     <manufacturer>Sega</manufacturer>
