@@ -9,7 +9,7 @@
 	<joystick>8-way</joystick>
 	<rotation>horizontal</rotation>
 	<category>Shooter</category>
-	<rbf>segasys1</rbf>
+	<rbf>segasys2</rbf>
 	<buttons names="Shoot,Bomb,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,Start,Select,R,C"/>
 	<switches default="FF,7C">
 		<!-- SWA -->
