@@ -6,7 +6,7 @@
 	<year>1986</year>
 	<manufacturer>bootleg (Game Electronics)</manufacturer>
 	<category>Shooter</category>
-	<rbf>segasys1</rbf>
+	<rbf>segasys2</rbf>
 	<switches default="2F,FF">
 		<!-- SWA -->
 		<dip name="Coin A" bits="0,1" ids="2 Coins/1 Credit,1 Coin /3 Credits,1 Coin /2 Credits,1 Coin /1 Credit "/>
