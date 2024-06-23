@@ -5,7 +5,7 @@
 	<mratimestamp>20210810000000</mratimestamp>
 	<year>1987</year>
 	<manufacturer>Sega</manufacturer>
-	<rbf>segasys1</rbf>
+	<rbf>segasys2</rbf>
 	<switches base="8" default="fc,ff">
 		<!-- SWA -->
 		<!--
