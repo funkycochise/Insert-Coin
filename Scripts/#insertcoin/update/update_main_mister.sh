@@ -1,11 +1,8 @@
-#!/bin/bash
-source /media/fat/Scripts/#insertcoin/folders/functions.sh
-
 cd /media/fat
 MF=MiSTer
 
 echo "Installing custom Main"
-if [ -f "/media/fat/Mister_" ]; then
+if [ -d "/media/fat/Mister_" ]; then
    rm /media/fat/Mister_
 fi
 #echo "Renaming current main mister."
@@ -15,7 +12,7 @@ rm /media/fat/Mister
 #echo "Downloading latest main mister."
 curl https://raw.githubusercontent.com/funkycochise/Main_MiSTer/master/releases/$MF -O -k -s
 if test -f "/media/fat/Mister"; then
-   echo -e "\r${GREEN}${CHECK}${NC} installed"
+   echo "Main Mister installed."
    rm /media/fat/Mister_
 else
    echo "Something went wrong while trying to download main Mister."

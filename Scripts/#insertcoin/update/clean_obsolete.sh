@@ -4,7 +4,7 @@ source /media/fat/Scripts/#insertcoin/folders/functions.sh
 loadsetup
 
 echo "Cleaning obsolete/unwanted core"
-
+#echo "remove_other : $remove_other"
 if [ "$remove_other" == "1" ]; then
   if [ -d "/media/fat/_Other" ] 
   then
@@ -35,6 +35,7 @@ if [ -d "$ALT/_Future Spy" ]
 then
    rm -r "$ALT/_Future Spy"
 fi
+
 #Tetris Clean up
 if [ -d "$ALT/_Tetris" ] 
 then
@@ -56,27 +57,55 @@ then
   mv "$ALT/_Boulder Dash/Boulder Dash Part 2/Boulder Dash - Boulder Dash Part 2 (Japan).mra" "$ALT/_Boulder Dash"
   rm -r "$ALT/_Boulder Dash/Boulder Dash Part 2"
 fi
-#vimana core
-if [ -f "$CORE/vimana_20230606.rbf" ] 
+#clean sega system 1 previous version
+
+cd /media/fat/_Arcade/cores
+#find . -maxdepth 1 -type f -name "SEGASYS1_*" ! -name "SEGASYS1_20210901.rbf*" -delete
+
+if [ -f "$CORE/SEGASYS1_20240602.rbf" ] 
 then
-  if [ -f "$CORE/vimana_20230526.rbf" ] 
+  if [ -f "$CORE/SEGASYS1_20230315.rbf" ] 
   then
-    rm -r "$CORE/vimana_20230526.rbf"
+    rm -r "$CORE/SEGASYS1_20230315.rbf"
+  fi
+  if [ -f "$CORE/SEGASYS1_20230418.rbf" ] 
+  then
+    rm -r "$CORE/SEGASYS1_20230418.rbf"
   fi
 fi
-if [ -f "$CORE/IremM92Turbo_20230521.rbf" ] 
+#clean DK previous version if newest exist
+if [ -f "$CORE/DonkeyKong_20231228.rbf" ] 
 then
-    rm -r "$CORE/IremM92Turbo_20230521.rbf"
+  if [ -f "$CORE/DonkeyKong_20230314.rbf" ] 
+  then
+    rm -r "$CORE/DonkeyKong_20230314.rbf"
+  fi
 fi
-#_Varth  Operation Thunderstorm
-if [ -d "$ALT/_Varth  Operation Thunderstorm" ]
+#clean Arkanoid alternative folder
+if [ -f "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (Japan bootleg).mra" ]
 then
-   rm -r "$ALT/_Varth  Operation Thunderstorm"
+  rm -r "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (Japan bootleg).mra"
 fi
-#_Ring of Destruction Slam Masters II
-if [ -d "$ALT/_Ring of Destruction Slam Masters II" ]
+if [ -f "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (Japan).mra" ] 
 then
-   rm -r "$ALT/_Ring of Destruction Slam Masters II"
+   rm -r "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (Japan).mra"
+fi
+if [ -f "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (US).mra" ] 
+then
+   rm -r "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (US).mra"
+fi
+#clean double dragon obsolete mra
+if [ -d "$ALT/_Double Dragon" ] 
+then
+  if [ -f "$ALT/_Double Dragon/Double Dragon.mra" ] 
+  then
+    rm -r "$ALT/_Double Dragon/Double Dragon.mra"
+  fi
+fi
+#clean double dragon II obsolete folder
+if [ -d "$ALT/_Double Dragon II - The Revenge" ] 
+then
+   rm -r "$ALT/_Double Dragon II - The Revenge"
 fi
 #clean previous M.I.A folder
 if [ -d "$ALT/_M.I.A" ]
@@ -93,51 +122,28 @@ if [ -d "$ALT/_Metal Slug 2" ]
 then
    rm -r "$ALT/_Metal Slug 2"
 fi
-#clean double dragon obsolete mra
-if [ -d "$ALT/_Double Dragon" ] 
+#_Varth  Operation Thunderstorm
+if [ -d "$ALT/_Varth  Operation Thunderstorm" ]
 then
-  if [ -f "$ALT/_Double Dragon/Double Dragon.mra" ] 
+   rm -r "$ALT/_Varth  Operation Thunderstorm"
+fi
+#_Ring of Destruction Slam Masters II
+if [ -d "$ALT/_Ring of Destruction Slam Masters II" ]
+then
+   rm -r "$ALT/_Ring of Destruction Slam Masters II"
+fi
+#vimana core
+if [ -f "$CORE/vimana_20230606.rbf" ] 
+then
+  if [ -f "$CORE/vimana_20230526.rbf" ] 
   then
-    rm -r "$ALT/_Double Dragon/Double Dragon.mra"
+    rm -r "$CORE/vimana_20230526.rbf"
   fi
 fi
-#clean double dragon II obsolete folder
-if [ -d "$ALT/_Double Dragon II - The Revenge" ] 
+if [ -f "$CORE/IremM92Turbo_20230521.rbf" ] 
 then
-   rm -r "$ALT/_Double Dragon II - The Revenge"
+    rm -r "$CORE/IremM92Turbo_20230521.rbf"
 fi
-#clean Arkanoid alternative folder
-if [ -f "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (Japan bootleg).mra" ]
-then
-  rm -r "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (Japan bootleg).mra"
-fi
-if [ -f "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (Japan).mra" ] 
-then
-   rm -r "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (Japan).mra"
-fi
-if [ -f "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (US).mra" ] 
-then
-   rm -r "$ALT/_Arkanoid/Arkanoid - Revenge of DOH (US).mra"
-fi
-#clean DK previous version if newest exist
-if [ -f "$CORE/DonkeyKong_20231228.rbf" ] 
-then
-  if [ -f "$CORE/DonkeyKong_20230314.rbf" ] 
-  then
-    rm -r "$CORE/DonkeyKong_20230314.rbf"
-  fi
-fi
-#clean sega system 1 previous version
-if [ -f "$CORE/SEGASYS1_20240602.rbf" ] 
-then
-  if [ -f "$CORE/SEGASYS1_20230315.rbf" ] 
-  then
-    rm -r "$CORE/SEGASYS1_20230315.rbf"
-  fi
-  if [ -f "$CORE/SEGASYS1_20230418.rbf" ] 
-  then
-    rm -r "$CORE/SEGASYS1_20230418.rbf"
-  fi
-fi
+
 
 echo -e "\\r${GREEN}${CHECK}${NC} Completed"
