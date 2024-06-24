@@ -8,7 +8,7 @@ echo "Cleaning obsolete/unwanted core"
 if [ "$remove_other" == "1" ]; then
   if [ -d "/media/fat/_Other" ] 
   then
-    echo "removing _Other"
+    #echo "removing _Other"
     rm -r "/media/fat/_Other"
   fi
 fi
