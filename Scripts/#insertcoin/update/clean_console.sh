@@ -1,7 +1,7 @@
 #!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
-launchdir=$1
+loadsetup
 
 CONSOLE=/media/fat/_Console
 
