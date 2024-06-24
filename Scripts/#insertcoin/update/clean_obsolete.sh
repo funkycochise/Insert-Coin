@@ -1,14 +1,9 @@
 #!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
-remove_other=$1
-
-ALT=/media/fat/_Arcade/_alternatives
-CORE=/media/fat/_Arcade/Cores
-CONSOLE=/media/fat/_Console
+loadsetup
 
 echo "Cleaning obsolete/unwanted core"
-
 #echo "remove_other : $remove_other"
 if [ "$remove_other" == "1" ]; then
   if [ -d "/media/fat/_Other" ] 

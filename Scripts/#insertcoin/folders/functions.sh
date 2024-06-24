@@ -19,8 +19,10 @@ NC='\033[0m' # No Color
 CHECK="\xE2\x9C\x94"
 CROSS="\xE2\x9D\x8C"
 
-Arcade=/media/fat/_Arcade
-Alt=/media/fat/_Arcade/_alternatives
+ARCADE=/media/fat/_Arcade
+ALT=/media/fat/_Arcade/_alternatives
+CORE=/media/fat/_Arcade/Cores
+CONSOLE=/media/fat/_Console
 
 genre_act="__Action"
 genre_bea="__Beat'em up"
@@ -95,11 +97,65 @@ if [ "$debug" == "1" ]; then
    echo "newest: $newest" >> /media/fat/Scripts/#insertcoin/out.txt
 fi
 
+source <(grep mame_rom $ini)
+mame_rom=${mame_rom:0:1}
+#echo "mame_rom: $mame_rom"
+source <(grep gnw_rom $ini)
+gnw_rom=${gnw_rom:0:1}
+#echo "gnw_rom: $gnw_rom"
+source <(grep console_mgl $ini)
+console_mgl=${console_mgl:0:1}
+#echo "console_mgl: $console_mgl"
+source <(grep obsolete_core $ini)
+obsolete_core=${obsolete_core:0:1}
+#echo "obsolete_core: $obsolete_core"
+source <(grep remove_other $ini)
+remove_other=${remove_other:0:1}
+#echo "remove_other: $remove_other"
+source <(grep console_core $ini)
+console_core=${console_core:0:1}
+#echo "console_core: $console_core"
+source <(grep dualsdram $ini)
+dualsdram=${dualsdram:0:1}
+#echo "dualsdram: $dualsdram"
+source <(grep main_mister $ini)
+main_mister=${main_mister:0:1}
+#echo "main_mister: $main_mister"
+
+source <(grep psx $ini)
+psx=${psx:0:1}
+#echo "psx: $psx"
+source <(grep s32x $ini)
+s32x=${s32x:0:1}
+#echo "s32x: $s32x"
+source <(grep saturn $ini)
+saturn=${saturn:0:1}
+#echo "saturn: $saturn"
+source <(grep sgb $ini)
+sgb=${sgb:0:1}
+#echo "sgb: $sgb"
+source <(grep neogeo $ini)
+neogeo=${neogeo:0:1}
+#echo "neogeo: $neogeo"
+source <(grep n64 $ini)
+n64=${n64:0:1}
+#echo "n64: $n64"
+source <(grep folder_name $ini)
+#echo "folder_name: $folder_name"
+folder_name=${folder_name:0:${#folder_name}}
+#echo "folder_name: $folder_name"
+#if [ -z "$folder_name" ]; then
+#  folder_name=$finalfolder
+#fi
+#echo "folder_name: $folder_name"
+
+
+
 }
 
 function exist {
 mra=$1
-if [ -f "$Arcade/$mra" ];
+if [ -f "$ARCADE/$mra" ];
 then
    echo "1"
 else
@@ -111,9 +167,9 @@ function altclean {
 sub="$1"
 if [ ! -z "$sub" ];
 then
-   if [ -d "$Alt/$sub/$sub" ]; then
-      #echo "AltClean $Alt/$sub/$sub"
-      rm -r "$Alt/$sub/$sub"
+   if [ -d "$ALT/$sub/$sub" ]; then
+      #echo "AltClean $ALT/$sub/$sub"
+      rm -r "$ALT/$sub/$sub"
    fi
 fi
 }
@@ -167,34 +223,34 @@ then
    fi
 fi
 
-if [ -f "$Arcade/$mra" ];
+if [ -f "$ARCADE/$mra" ];
 then
-   if [ ! -d "$Alt/$sub" ] 
+   if [ ! -d "$ALT/$sub" ] 
    then
-      #echo "Creating $Alt/$sub"
-      mkdir "$Alt/$sub"
+      #echo "Creating $ALT/$sub"
+      mkdir "$ALT/$sub"
    fi
-   #echo "Creating $Alt/$sub/$mra"
-   if [ ! -f "$Alt/$sub/$mra" ];
+   #echo "Creating $ALT/$sub/$mra"
+   if [ ! -f "$ALT/$sub/$mra" ];
    then
-      ln -s "$Arcade/$mra" "$Alt/$sub/$mra"
+      ln -s "$ARCADE/$mra" "$ALT/$sub/$mra"
    fi
    if [ ! -z "$dir" ];
    then 
       if [ ! -d "$outdir/$dir/$renamed" ] 
       then
-         ln -s "$Alt/$sub" "$outdir/$dir/$renamed"
+         ln -s "$ALT/$sub" "$outdir/$dir/$renamed"
       fi
    else
       if [ ! -d "$outdir/$renamed" ] 
       then
-         ln -s "$Alt/$sub" "$outdir/$renamed"
+         ln -s "$ALT/$sub" "$outdir/$renamed"
       fi
    fi
 else
   if [ ! -z "$mra" ];
   then
-    echo -e "NF $Arcade/$mra\r" >> /media/fat/Scripts/#insertcoin/out.txt
+    echo -e "NF $ARCADE/$mra\r" >> /media/fat/Scripts/#insertcoin/out.txt
   fi
 fi
 #horizontal
@@ -249,11 +305,11 @@ folder="$1"
             mkdir "$outdir/$folder/$dir"
          fi
          if [ ! -d "$outdir/$folder/$dir/$renamed" ]; then
-            ln -s "$Alt/$sub" "$outdir/$folder/$dir/$renamed"
+            ln -s "$ALT/$sub" "$outdir/$folder/$dir/$renamed"
          fi
       else
          if [ ! -d "$outdir/$folder/$renamed" ]; then
-            ln -s "$Alt/$sub" "$outdir/$folder/$renamed"
+            ln -s "$ALT/$sub" "$outdir/$folder/$renamed"
          fi
       fi
 
@@ -289,7 +345,7 @@ fi
 if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
    if [ ! -d "$outdir/$dir/$renamed" ]; then
       #echo "creating $outdir/$dir/$renamed"
-      ln -s "$Alt/$mra" "$outdir/$dir/$renamed"
+      ln -s "$ALT/$mra" "$outdir/$dir/$renamed"
    fi
 else
    #echo "rep() else"
@@ -303,7 +359,7 @@ else
 
    if [ ! -d "rep() : $outdir/$dir/$renamed" ]; then
       #echo "$outdir/$dir/$renamed"
-      ln -s "$Alt/$mra" "$outdir/$dir/$renamed"
+      ln -s "$ALT/$mra" "$outdir/$dir/$renamed"
    fi
 fi
 
@@ -362,7 +418,7 @@ function rep_folder {
       fi 
       if [ ! -d "$outdir/$folder/$dir/$renamed" ]; then
          #echo "linking $outdir/$folder/$dir/$renamed"
-         ln -s "$Alt/$mra" "$outdir/$folder/$dir/$renamed"
+         ln -s "$ALT/$mra" "$outdir/$folder/$dir/$renamed"
       fi
    else
       if [ ! -d "$outdir/$folder" ]; then
@@ -371,7 +427,7 @@ function rep_folder {
       fi 
       if [ ! -d "$outdir/$folder/$mra" ]; then
          #echo "$outdir/$folder/$mra"
-         ln -s "$Alt/$mra" "$outdir/$folder/$mra"
+         ln -s "$ALT/$mra" "$outdir/$folder/$mra"
       fi
    fi
 

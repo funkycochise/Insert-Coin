@@ -27,7 +27,7 @@ function linkfolder {
    if [[ "$counter" -lt 100 ]]; then
       #echo "$counter - $1"
       formated=$(printf "%02d" $counter)
-      ln -s "$Alt/$1"  "$outdir/$dir/_$formated$1"
+      ln -s "$ALT/$1"  "$outdir/$dir/_$formated$1"
    fi
 }
 
