@@ -1,22 +1,7 @@
 #!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
-CONSOLE=/media/fat/_Console
-
-dualsdram=$1
-psx=$2
-s32x=$3
-saturn=$4
-sgb=$5
-neogeo=$6
-n64=$7
-
-#echo "psx: $psx"
-#echo "s32x: $s32x"
-#echo "saturn: $saturn"
-#echo "sgb: $sgb"
-#echo "neogeo: $neogeo"
-#echo "N64: $n64"
+loadsetup
 
 function PSX {
   curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/PSX.zip -O -k -s --output /media/fat/Scripts/temp/PSX.zip
