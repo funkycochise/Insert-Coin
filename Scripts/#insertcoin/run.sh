@@ -1,6 +1,7 @@
 #!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
+./update/pre.sh
 loadsetup
 
 clear
@@ -11,7 +12,6 @@ launchdir=$(pwd)
 targetfolder="_Insert_Coin"
 finalfolder="_Insert Coin"
 
-./update/pre.sh
 
 #clean of existing folders
 folder="/media/fat/_Arcade/finalfolder"
