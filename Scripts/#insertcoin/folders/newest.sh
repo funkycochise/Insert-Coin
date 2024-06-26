@@ -13,7 +13,7 @@ if ([ -z "$1" ]);
 then 
    linkfolder "$2"
 else
-   if  test -f "$Arcade/$1" ; then
+   if  test -f "$ARCADE/$1" ; then
       linkfolder "$2"
    fi
 fi
