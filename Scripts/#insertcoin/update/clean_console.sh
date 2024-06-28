@@ -19,7 +19,11 @@ function CleanSNES {
   find $CONSOLE -maxdepth 1 -type f -name "SNES*" ! -name "$target" -delete
 }
 
-echo "Cleaning console mgl"
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
+echo -e "Cleaning console mgl"
 
 #gameboy color ? remove
 if [ -f "/media/fat/_Console/GameboyColor.mgl" ] 
@@ -40,4 +44,8 @@ fi
 #keep only latest SNES console core
 CleanSNES
 
-echo -e "\\r${GREEN}${CHECK}${NC} Completed"
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
+echo -e "${GREEN}${CHECK}${NC} Completed"

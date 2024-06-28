@@ -6,7 +6,11 @@ source=$addon/_Arcade/_alternatives
 
 if [ -d "$addon" ];
 then
-   echo "installing $addon"
+   if [ "$TERM" == "linux" ]; then
+      #GUI
+      echo -n -e "   "
+   fi
+   echo "Installing $addon/"
    #ls $addon/_Arcade/*.mra
    #ls $addon/_Arcade/cores/*.rbf
    cp $addon/_Arcade/*.mra $ARCADE/

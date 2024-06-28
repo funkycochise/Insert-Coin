@@ -2,24 +2,6 @@
 
 source ./folders/functions.sh
 
-NC='\033[0m' # No Color
-BLACK='\033[0;30m'
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-LIGHTGRAY='\033[0;37m'
-DARKGRAY='\033[1;30m'
-LIGHTRED='\033[1;31m'
-LIGHTGREEN='\033[1;32m'
-YELLOW='\033[1;33m'
-LIGHTBLUE='\033[1;34m'
-LIGHTPURPLE='\033[1;35m'
-LIGHTCYAN='\033[1;36m'
-WHITE='\033[1;37m'
-
 launchdir=$1
 #echo "launchdir: $launchdir"
 targetdir=$2
@@ -30,6 +12,11 @@ fi
 COL=$3
 
 out="/media/fat/_Arcade/$targetdir"
+
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
 echo "Creating $out/"
 if [ -d "$out" ]; then
    rm -r "$out" >/dev/null
@@ -40,6 +27,11 @@ echo ""
 loadsetup
 
 SECONDS=0
+
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
 
 ./folders/alpha.sh "$out"
 ./folders/atari.sh "$out"

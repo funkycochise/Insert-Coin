@@ -3,7 +3,11 @@ source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 loadsetup
 
-echo "Cleaning obsolete/unwanted core"
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
+echo -e "Cleaning obsolete/unwanted core"
 #echo "remove_other : $remove_other"
 if [ "$remove_other" == "1" ]; then
   if [ -d "/media/fat/_Other" ] 
@@ -144,6 +148,8 @@ if [ -f "$CORE/IremM92Turbo_20230521.rbf" ]
 then
     rm -r "$CORE/IremM92Turbo_20230521.rbf"
 fi
-
-
-echo -e "\\r${GREEN}${CHECK}${NC} Completed"
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
+echo -e "${GREEN}${CHECK}${NC} Completed"

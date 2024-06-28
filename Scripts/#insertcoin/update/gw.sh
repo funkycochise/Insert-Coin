@@ -42,8 +42,11 @@ function dl {
 
 }
 
-
-echo "Updating game&watch folder"
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
+echo -e "Updating game&watch folder"
 
 if [ ! -d "$TEMP" ]; 
 then
@@ -89,8 +92,11 @@ dl "Tropical Fish.gnw"
 dl "Turtle Bridge.gnw"
 dl "Vermin.gnw"
 
-
-echo -e "\\r${GREEN}${CHECK}${NC} Completed"
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
+echo -e "${GREEN}${CHECK}${NC} Completed"
 
 
 

@@ -20,7 +20,7 @@ if [ "$TERM" == "xterm" ]; then
    CHECK="✓"
    TAB=""
 else
-   #CHECK="•"
+   CHECK="•"
    #CHECK="»"
    TAB="  "
 fi

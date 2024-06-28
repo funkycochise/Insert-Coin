@@ -59,8 +59,11 @@ function PSX {
     fi
   done
   if [ "$installed" == "1" ]; then
-    echo -e "\\r${BLUE}${CHECK}${NC} PSX"
-    #echo -n -e "PSX "
+     if [ "$TERM" == "linux" ]; then
+        #GUI
+        echo -n -e "   "
+     fi
+     echo -e "${BLUE}${CHECK}${NC} PSX"
   fi
 }
 
@@ -117,7 +120,11 @@ function Saturn {
     fi
   done
   if [ "$installed" == "1" ]; then
-    echo -e "\\r${BLUE}${CHECK}${NC} Saturn"
+     if [ "$TERM" == "linux" ]; then
+        #GUI
+        echo -n -e "   "
+     fi
+     echo -e "${BLUE}${CHECK}${NC} Saturn"
   fi
 }
 
@@ -135,7 +142,11 @@ function S32X {
     touch $CONSOLE/$target >/dev/null
     #remove keep only latest
     find $CONSOLE -maxdepth 1 -type f -name "S32X*" ! -name "$target" -delete
-    echo -e "\\r${BLUE}${CHECK}${NC} S32X"
+    if [ "$TERM" == "linux" ]; then
+       #GUI
+       echo -n -e "   "
+    fi
+    echo -e "${BLUE}${CHECK}${NC} S32X"
     #clean any file left
     if test -f "./$f"; then
       rm -r ./$f
@@ -157,8 +168,11 @@ function SGB {
     touch $CONSOLE/$target >/dev/null
     #remove keep only latest
     find $CONSOLE -maxdepth 1 -type f -name "SGB*" ! -name "$target" -delete
-    #echo -n -e "SGB "
-    echo -e "\\r${BLUE}${CHECK}${NC} SGB"
+    if [ "$TERM" == "linux" ]; then
+       #GUI
+       echo -n -e "   "
+    fi
+    echo -e "${BLUE}${CHECK}${NC} SGB"
     #clean any file left
     if test -f "./$f"; then
       rm -r ./$f
@@ -180,8 +194,11 @@ function NeoGeo {
     touch $CONSOLE/$target >/dev/null
     #remove keep only latest
     find $CONSOLE -maxdepth 1 -type f -name "NeoGeo*" ! -name "$target" -delete
-    #echo -n -e "NeoGeo "
-    echo -e "\\r${BLUE}${CHECK}${NC} Neogeo"
+    if [ "$TERM" == "linux" ]; then
+       #GUI
+       echo -n -e "   "
+    fi
+    echo -e "${BLUE}${CHECK}${NC} Neogeo"
     #clean any file left
     if test -f "./$f"; then
       rm -r ./$f
@@ -263,12 +280,18 @@ function N64 {
     #  rm -r ./$f
     #fi
   done
-  #echo -e "N64 "
-  echo -e "\\r${BLUE}${CHECK}${NC} N64"
+  if [ "$TERM" == "linux" ]; then
+     #GUI
+     echo -n -e "   "
+  fi
+  echo -e "${BLUE}${CHECK}${NC} N64"
 }
 
-
-echo "Getting latest console cores"
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
+echo -e "Getting latest console cores"
 
 if [ "$psx" == "1" ]; then
   PSX
@@ -290,5 +313,8 @@ if [ "$n64" == "1" ]; then
   N64
 fi
 
-echo -e "\\r${GREEN}${CHECK}${NC} Completed"
-echo ""
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
+echo -e "${GREEN}${CHECK}${NC} Completed"

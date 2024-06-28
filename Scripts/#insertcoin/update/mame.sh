@@ -74,8 +74,12 @@ function clean {
    fi
 }
 
-
-echo "Updating mame folder"
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo "   Updating mame folder"
+else
+   echo "Updating mame folder"
+fi 
 
 if [ ! -d "$TEMP" ] 
 then
@@ -988,7 +992,11 @@ neo "pollen_angel.zip"
 cd /media/fat
 rm -r "$TEMP"
 
-echo -e "\\r${GREEN}${CHECK}${NC} Completed"
+   if [ "$TERM" == "linux" ]; then
+     #GUI
+     echo -n -e "   "
+   fi
+   echo -e "${GREEN}${CHECK}${NC} Completed"
 
 
 
