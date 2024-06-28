@@ -1,6 +1,8 @@
 #!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
+export LANG=C.UTF-8
+
 ./update/pre.sh
 loadsetup
 
