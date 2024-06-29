@@ -31,6 +31,10 @@ function linkfolder {
    fi
 }
 
+#0628
+   add "Bakutotsu Kijuutei.mra" "_Bakutotsu Kijuutei"
+   add "Rompers (Japan, new version (Rev B)).mra" "_Rompers"
+
 #0622
 add "Super Locomotive.mra" "_Super Locomotive"
 
