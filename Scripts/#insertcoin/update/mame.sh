@@ -27,16 +27,24 @@ fi
 
 function dl {
 
-  identify_folder
+    identify_folder
 
     FILE=$mametarget/$1
     if ! test -f "$FILE"; then
+      if [ "$TERM" == "linux" ]; then
+         #GUI
+         echo -n -e "   "
+      fi
       echo -n "downloading $1"
       #file doesn not exists
       #echo "$1"
       #curl $ARCHIVE_MERGED/$1 -O -k
       wget $ARCHIVE_MERGED/$1 --quiet
       mv $TEMP/$1 $mametarget/$1 
+      if [ "$TERM" == "linux" ]; then
+         #GUI
+         echo -n -e "   "
+      fi
       echo -e "\\r${BLUE}${CHECK}${NC} $1                           "
    #else
     # echo "$1 already exixts"
