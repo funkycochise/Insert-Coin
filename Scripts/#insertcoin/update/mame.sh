@@ -33,9 +33,10 @@ function dl {
     if ! test -f "$FILE"; then
       if [ "$TERM" == "linux" ]; then
          #GUI
-         echo -n -e "   "
+         echo -n "   downloading $1"
+      else
+         echo -n "downloading $1"   
       fi
-      echo -n "downloading $1"
       #file doesn not exists
       #echo "$1"
       #curl $ARCHIVE_MERGED/$1 -O -k
@@ -43,9 +44,10 @@ function dl {
       mv $TEMP/$1 $mametarget/$1 
       if [ "$TERM" == "linux" ]; then
          #GUI
-         echo -n -e "   "
+         echo -e "\r   ${BLUE}${CHECK}${NC} $1                                            "
+      else
+         echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
       fi
-      echo -e "\\r${BLUE}${CHECK}${NC} $1                           "
    #else
     # echo "$1 already exixts"
    fi
@@ -61,12 +63,23 @@ function neo {
     FILE=$mametarget/$1
     #echo "retrieve $FILE"
     if ! test -f "$FILE"; then
-      echo -n "downloading $1"
+      if [ "$TERM" == "linux" ]; then
+         #GUI
+         echo -n "   downloading $1"
+      else
+         echo -n "downloading $1"         
+      fi
+
       #file doesn not exists
       #curl $ARCHIVE_NEOGEO/$1 -O -k
       wget $ARCHIVE_NEOGEO/$1 --quiet
       mv $TEMP/$1 $mametarget/$1 
-      echo -e "\\r${BLUE}${CHECK}${NC} $1                           "
+      if [ "$TERM" == "linux" ]; then
+         #GUI
+         echo -e "\r   ${BLUE}${CHECK}${NC} $1                                            "
+      else
+         echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
+      fi
     #else
 #     echo "$1 already exixts"
    fi
