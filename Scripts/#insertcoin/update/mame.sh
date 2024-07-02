@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 TEMP=/media/fat/scripts/temp
@@ -40,7 +40,7 @@ function dl {
       #file doesn not exists
       #echo "$1"
       #curl $ARCHIVE_MERGED/$1 -O -k
-      wget $ARCHIVE_MERGED/$1 --quiet
+      wget $ARCHIVE_MERGED/$1 $TEMP/$1 -q
       mv $TEMP/$1 $mametarget/$1 
       if [ "$TERM" == "linux" ]; then
          #GUI
@@ -72,7 +72,7 @@ function neo {
 
       #file doesn not exists
       #curl $ARCHIVE_NEOGEO/$1 -O -k
-      wget $ARCHIVE_NEOGEO/$1 --quiet
+      wget $ARCHIVE_NEOGEO/$1 $TEMP/$1 -q
       mv $TEMP/$1 $mametarget/$1 
       if [ "$TERM" == "linux" ]; then
          #GUI
