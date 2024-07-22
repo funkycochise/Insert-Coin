@@ -51,6 +51,10 @@ then
    rm -r /media/fat/Scripts/#insertcoin/out.txt
 fi
 
+if test -f "./update/install_res.sh"; then
+   ./update/install_res.sh
+fi
+
 start_time=$SECONDS
 
 
@@ -87,4 +91,9 @@ if [ "$main_mister" == "1" ]; then
 fi
 
 #echo -n -e "Creation process completed in $elapsed sec.\n"
+
+if test -f "/media/fat/Scripts/#insertcoin/out.txt"; 
+then
+   cat /media/fat/Scripts/#insertcoin/out.txt
+fi
 
