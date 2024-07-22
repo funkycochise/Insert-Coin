@@ -26,7 +26,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "H"  "Mega Man The Power Battle (CPS1, USA 951006).mra" "_Mega Man  The Power Battle -CPS1" "" "VSF"
    add "$dir" "H"  "Mega Twins (World 900619).mra" "_Mega Twins" "" "ACT"
    add "$dir" "H"  "Nemo (World 901130).mra" "_Nemo" "" "ACT"
-   add "$dir" "H"  "Pang! 3 -Euro 950601-.mra" "_Pang! 3"
+   add "$dir" "H"  "Pang! 3 (Euro 950601).mra" "_Pang! 3"
    add "$dir" "H"  "Pnickies (Japan 940608).mra" "_Pnickies"
    add "$dir" "H"  "Pokonyan! Balloon (Japan 940322).mra" "_Pokonyan! Balloon"
    add "$dir" "H"  "Quiz & Dragons Capcom Quiz Game (USA 920701).mra" "_Quiz & Dragons  Capcom Quiz Game"

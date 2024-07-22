@@ -32,6 +32,6 @@ if [ "$res" == "1" ]; then
    add "$dir" "H"  "Street Fighter (US, set 1).mra" "_Street Fighter" "" "VSF"
    add "$dir" "H"  "Super Pang (World 900914).mra" "_Super Pang" "" "ACT"
    add "$dir" "H"  "Tiger Road (US).mra" "_Tiger Road" "" "ACT"
-   add "$dir" "H"  "Trojan (Romstar).mra" "_Trojan" "" "ACT"
+   add "$dir" "H"  "Trojan (US set 1).mra" "_Trojan" "" "ACT"
    dot
 fi

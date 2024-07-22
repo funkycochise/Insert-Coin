@@ -31,7 +31,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "V"  "Super Glob (Pac-Man, German) [bl].mra" "_Super Glob"
    add "$dir" "V"  "The Glob (Pac-Man Hardware).mra" "_The Glob"
    add "$dir" "V"  "Van-Van Car.mra" "_Van-Van Car"
-   add "$dir" "V"  "Woodpecker.mra" "_Woodpecker"
+   add "$dir" "V"  "Woodpecker (Set 1).mra" "_Woodpecker"
    altclean "_Pacman"
    dot
 fi
