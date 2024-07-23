@@ -64,5 +64,3 @@ then
    #removing res dir
    rm -r "$res"
 fi
-
-fi
