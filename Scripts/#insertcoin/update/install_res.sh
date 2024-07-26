@@ -6,6 +6,9 @@ res="/media/fat/Scripts/#insertcoin/res"
 mra=$res/_Arcade
 cores=$res/_Arcade/cores
 altdir=$res/_Arcade/_alternatives
+config=$res/config
+games=$res/games
+
 
 function getres {
 
@@ -20,11 +23,12 @@ fi
       
 curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output /media/fat/Scripts/temp/res.zip >/dev/null
 unzip -qq /media/fat/Scripts/temp/res.zip -d /media/fat/Scripts/#insertcoin/res 
+rm -r /media/fat/Scripts/temp/res.zip
 
 }
 
 function installres {
-echo "Installing Insert-coin resources."
+#echo "Installing Insert-coin resources."
 if [ -d "$res" ];
 then
    if [ "$TERM" == "linux" ]; then
@@ -76,6 +80,38 @@ then
             f=$(basename -- "$file")
             #echo "$ALT/$dir/$f"
             cp "$altdir/$dir/$f" "$ALT/$dir/$f"
+         done
+      fi
+   done
+
+   #echo "config"
+   for file in $config/*; do
+   f=$(basename -- "$file")
+   if [ ! -f "/media/fat/config/$f" ];
+   then
+      cp "$config/$f" "/media/fat/config/$f"
+   fi
+   done
+
+   #echo "games"
+   for file in $games/*; do
+      #echo "$file"
+      dir=$(basename -- "$file")
+      if [ -d "$file" ];
+      then
+         #echo "file: $file"
+         #echo "dir: $dir"
+         if [ ! -d "$GAMES/$dir" ];
+         then
+            #echo "Creating $GAMES/$dir"
+            mkdir "$GAMES/$dir"
+         fi
+         #echo "copying in $GAMES/$dir"
+
+         for file in "$games/$dir"/*; do
+            f=$(basename -- "$file")
+            #echo "$GAMES/$dir/$f"
+            cp "$games/$dir/$f" "$GAMES/$dir/$f"
          done
       fi
    done
