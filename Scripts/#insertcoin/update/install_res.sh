@@ -2,29 +2,56 @@
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 icmainres=https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/
+#sources
 res="/media/fat/Scripts/#insertcoin/res"
 mra=$res/_Arcade
 cores=$res/_Arcade/cores
 altdir=$res/_Arcade/_alternatives
 config=$res/config
 games=$res/games
+#target
+SD=/media/fat
+USB=/media/usb0
+CIFS=/media/fat/cifs
+
+
+function identify_folder {
+
+if [ -d "$USB/games" ]; then
+  GAMES=$USB/games
+  ARCADE=$USB/_Arcade
+  ALT=$USB/_Arcade/_alternatives
+  CORE=$USB/_Arcade/Cores
+  CONFIF=$USB/config
+elif [ -d "$CIFS/games" ]; then
+  GAMES=$CIFS/gamesS
+  ARCADE=$CIFS/_Arcade
+  ALT=$CIFS/_Arcade/_alternatives
+  CORE=$CIFS/_Arcade/Cores
+  CONFIF=$CIFS/config
+else
+  GAMES=$SD/games
+  ARCADE=$SD/_Arcade
+  ALT=$SD/_Arcade/_alternatives
+  CORE=$SD/_Arcade/Cores
+  CONFIG=$SD/config
+fi
+}
 
 
 function getres {
 
-if [ -d "/media/fat/Scripts/#insertcoin/res" ] 
+if [ -d "$res" ] 
 then
-   rm -r /media/fat/Scripts/#insertcoin/res
+   rm -r "$res"
 fi
 if [ -f "/media/fat/Scripts/temp/res.zip" ] 
 then
    rm -r /media/fat/Scripts/temp/res.zip
 fi
-      
 curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output /media/fat/Scripts/temp/res.zip >/dev/null
 unzip -qq /media/fat/Scripts/temp/res.zip -d /media/fat/Scripts/#insertcoin/res 
 rm -r /media/fat/Scripts/temp/res.zip
-
 }
 
 function installres {
@@ -36,10 +63,6 @@ then
       echo -n -e "   "
    fi
    echo "Installing $res/"
-   #ls $res/_Arcade/*.mra
-   #ls $res/_Arcade/cores/*.rbf
-   #cp $res/_Arcade/*.mra $ARCADE/
-   #cp $res/_Arcade/cores/*.rbf $ARCADE/cores
 
    #echo "mra"
    for file in $mra/*; do
@@ -87,9 +110,9 @@ then
    #echo "config"
    for file in $config/*; do
    f=$(basename -- "$file")
-   if [ ! -f "/media/fat/config/$f" ];
+   if [ ! -f "$CONFIG/$f" ];
    then
-      cp "$config/$f" "/media/fat/config/$f"
+      cp "$config/$f" "$CONFIG/$f"
    fi
    done
 
@@ -122,5 +145,6 @@ fi
 echo "Completed."
 }
 
+identify_folder
 getres
 installres

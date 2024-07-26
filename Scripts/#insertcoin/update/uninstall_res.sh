@@ -2,12 +2,40 @@
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 icmainres=https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/
+#sources
 res="/media/fat/Scripts/#insertcoin/res"
 mra=$res/_Arcade
 cores=$res/_Arcade/cores
 altdir=$res/_Arcade/_alternatives
 config=$res/config
 games=$res/games
+#target
+SD=/media/fat
+USB=/media/usb0
+CIFS=/media/fat/cifs
+
+function identify_folder {
+if [ -d "$USB/games" ]; then
+  GAMES=$USB/games
+  ARCADE=$USB/_Arcade
+  ALT=$USB/_Arcade/_alternatives
+  CORE=$USB/_Arcade/Cores
+  CONFIF=$USB/config
+elif [ -d "$CIFS/games" ]; then
+  GAMES=$CIFS/gamesS
+  ARCADE=$CIFS/_Arcade
+  ALT=$CIFS/_Arcade/_alternatives
+  CORE=$CIFS/_Arcade/Cores
+  CONFIF=$CIFS/config
+else
+  GAMES=$SD/games
+  ARCADE=$SD/_Arcade
+  ALT=$SD/_Arcade/_alternatives
+  CORE=$SD/_Arcade/Cores
+  CONFIG=$SD/config
+fi
+}
+
 
 function getres {
 
@@ -83,8 +111,8 @@ then
    f=$(basename -- "$file")
    if [ -f "/media/fat/config/$f" ];
    then
-      echo "removing /media/fat/config/$f"
-      rm -r "/media/fat/config/$f"
+      echo "removing $CONFIG/$f"
+      rm -r "$CONFIG/$f"
    fi
    done
 
@@ -109,5 +137,6 @@ fi
 
 }
 
+identify_folder
 getres
 uninstallres
