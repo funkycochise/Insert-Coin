@@ -1,11 +1,30 @@
 #!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
+icmainres=https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/
 res="/media/fat/Scripts/#insertcoin/res"
 mra=$res/_Arcade
 cores=$res/_Arcade/cores
 altdir=$res/_Arcade/_alternatives
 
+function getres {
+
+if [ -d "/media/fat/Scripts/#insertcoin/res" ] 
+then
+   rm -r /media/fat/Scripts/#insertcoin/res
+fi
+if [ -f "/media/fat/Scripts/temp/res.zip" ] 
+then
+   rm -r /media/fat/Scripts/temp/res.zip
+fi
+      
+curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output /media/fat/Scripts/temp/res.zip >/dev/null
+unzip -qq /media/fat/Scripts/temp/res.zip -d /media/fat/Scripts/#insertcoin/res 
+
+}
+
+function installres {
+echo "Installing Insert-coin resources."
 if [ -d "$res" ];
 then
    if [ "$TERM" == "linux" ]; then
@@ -64,3 +83,8 @@ then
    #removing res dir
    rm -r "$res"
 fi
+echo "Completed."
+}
+
+getres
+installres
