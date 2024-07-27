@@ -92,8 +92,8 @@ fi
 
 #echo -n -e "Creation process completed in $elapsed sec.\n"
 
-if test -f "/media/fat/Scripts/#insertcoin/out.txt"; 
-then
-   cat /media/fat/Scripts/#insertcoin/out.txt
-fi
+#if test -f "/media/fat/Scripts/#insertcoin/out.txt"; 
+#then
+#   cat /media/fat/Scripts/#insertcoin/out.txt
+#fi
 
