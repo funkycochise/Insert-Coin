@@ -1,63 +1,67 @@
 #!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
+TEMP=/media/fat/Scripts/temp
+SD=/media/fat
+USB=/media/usb0
+CIFS=/media/fat/cifs
+
 icmainres=https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/
-#sources
 res="/media/fat/Scripts/#insertcoin/res"
 mra=$res/_Arcade
 cores=$res/_Arcade/cores
 altdir=$res/_Arcade/_alternatives
 config=$res/config
 games=$res/games
-#target
-SD=/media/fat
-USB=/media/usb0
-CIFS=/media/fat/cifs
 
 source <(grep setup_res $ini)
+setup_res="${setup_res:0:3}"
 #echo "setup_res: $setup_res"
-
 
 function identify_folder {
 
 if [ "$setup_mame" == "USB" ]; then
-   GAMES=$USB/games
-   ARCADE=$USB/_Arcade
-   ALT=$USB/_Arcade/_alternatives
-   CORE=$USB/_Arcade/Cores
-   CONFIG=$USB/config
-elif [ "$setup_mame" == "CIFS" ]; then
-   GAMES=$CIFS/gamesS
-   ARCADE=$CIFS/_Arcade
-   ALT=$CIFS/_Arcade/_alternatives
-   CORE=$CIFS/_Arcade/Cores
-   CONFIG=$CIFS/config
+  des_games=$USB/games
+  des_mame=$des_games/mame
+  des_arcade=$USB/_Arcade
+  des_core=$des_arcade/cores
+  des_alt=$des_arcade/_alternatives
+  des_config=$SD/config
+elif [ "$setup_mame" == "CIF" ]; then
+  des_games=$CIFS/games
+  des_mame=$des_games/mame
+  des_arcade=$CIFS/_Arcade
+  des_core=$des_arcade/cores
+  des_alt=$des_arcade/_alternatives
+  des_config=$SD/config
 else
-   GAMES=$SD/games
-   ARCADE=$SD/_Arcade
-   ALT=$SD/_Arcade/_alternatives
-   CORE=$SD/_Arcade/Cores
-   CONFIG=$SD/config
+  des_games=$SD/games
+  des_mame=$des_games/mame
+  des_arcade=$SD/_Arcade
+  des_core=$des_arcade/cores
+  des_alt=$des_arcade/_alternatives
+  des_config=$SD/config
+
 fi
-if [ ! -d "$ARCADE" ] && [ ! "$setup_res" == "NONE" ];  then
-   mkdir $ARCADE
-fi
+
 }
 
 
 function getres {
 
-if [ -d "$res" ] 
+if [ -d "/media/fat/Scripts/#insertcoin/res" ] 
 then
-   rm -r "$res"
+   rm -r /media/fat/Scripts/#insertcoin/res
 fi
 if [ -f "/media/fat/Scripts/temp/res.zip" ] 
 then
    rm -r /media/fat/Scripts/temp/res.zip
 fi
+      
 curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output /media/fat/Scripts/temp/res.zip >/dev/null
 unzip -qq /media/fat/Scripts/temp/res.zip -d /media/fat/Scripts/#insertcoin/res 
 rm -r /media/fat/Scripts/temp/res.zip
+
 }
 
 function installres {
@@ -76,9 +80,9 @@ then
       f=$(basename -- "$file")
       if [ -f "$file" ];
       then
-         #echo "$ARCADE/$f"
+         #echo "$des_arcade/$f"
 
-         cp "$file" "$ARCADE/$f"
+         cp "$file" "$des_arcade/$f"
       fi
    done
 
@@ -88,8 +92,8 @@ then
       f=$(basename -- "$file")
       if [ -f "$file" ];
       then
-         #echo "$CORE/$f"
-         cp "$file" "$CORE/$f"
+         #echo "$des_core/$f"
+         cp "$file" "$des_core/$f"
       fi
    done
 
@@ -99,16 +103,16 @@ then
       dir=$(basename -- "$file")
       if [ -d "$file" ];
       then
-         if [ ! -d "$ALT/$dir" ];
+         if [ ! -d "$des_alt/$dir" ];
          then
-            mkdir "$ALT/$dir"
+            mkdir "$des_alt/$dir"
          fi
          #echo "copying in $ALT/$dir"
 
          for file in "$altdir/$dir"/*; do
             f=$(basename -- "$file")
-            #echo "$ALT/$dir/$f"
-            cp "$altdir/$dir/$f" "$ALT/$dir/$f"
+            #echo "$des_alt/$dir/$f"
+            cp "$altdir/$dir/$f" "$des_alt/$dir/$f"
          done
       fi
    done
@@ -116,9 +120,9 @@ then
    #echo "config"
    for file in $config/*; do
    f=$(basename -- "$file")
-   if [ ! -f "$CONFIG/$f" ];
+   if [ ! -f "$des_config/$f" ];
    then
-      cp "$config/$f" "$CONFIG/$f"
+      cp "$config/$f" "$des_config/$f"
    fi
    done
 
@@ -130,17 +134,17 @@ then
       then
          #echo "file: $file"
          #echo "dir: $dir"
-         if [ ! -d "$GAMES/$dir" ];
+         if [ ! -d "$des_games/$dir" ];
          then
-            #echo "Creating $GAMES/$dir"
-            mkdir "$GAMES/$dir"
+            #echo "Creating $des_games/$dir"
+            mkdir "$des_games/$dir"
          fi
-         #echo "copying in $GAMES/$dir"
+         #echo "copying in $des_games/$dir"
 
          for file in "$games/$dir"/*; do
             f=$(basename -- "$file")
-            #echo "$GAMES/$dir/$f"
-            cp "$games/$dir/$f" "$GAMES/$dir/$f"
+            #echo "$des_games/$dir/$f"
+            cp "$games/$dir/$f" "$des_games/$dir/$f"
          done
       fi
    done
@@ -152,7 +156,5 @@ echo "Completed."
 }
 
 identify_folder
-if [ ! "$setup_res" == "NONE" ];  then
-   getres
-   installres
-fi
+getres
+installres

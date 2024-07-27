@@ -1,40 +1,51 @@
 #!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
+TEMP=/media/fat/Scripts/temp
+SD=/media/fat
+USB=/media/usb0
+CIFS=/media/fat/cifs
+
 icmainres=https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/
-#sources
 res="/media/fat/Scripts/#insertcoin/res"
 mra=$res/_Arcade
 cores=$res/_Arcade/cores
 altdir=$res/_Arcade/_alternatives
 config=$res/config
 games=$res/games
-#target
-SD=/media/fat
-USB=/media/usb0
-CIFS=/media/fat/cifs
+
+source <(grep setup_res $ini)
+setup_res="${setup_res:0:3}"
+#echo "setup_res: $setup_res"
 
 function identify_folder {
-if [ -d "$USB/games" ]; then
-  GAMES=$USB/games
-  ARCADE=$USB/_Arcade
-  ALT=$USB/_Arcade/_alternatives
-  CORE=$USB/_Arcade/Cores
-  CONFIF=$USB/config
-elif [ -d "$CIFS/games" ]; then
-  GAMES=$CIFS/gamesS
-  ARCADE=$CIFS/_Arcade
-  ALT=$CIFS/_Arcade/_alternatives
-  CORE=$CIFS/_Arcade/Cores
-  CONFIF=$CIFS/config
+
+if [ "$setup_mame" == "USB" ]; then
+  des_games=$USB/games
+  des_mame=$des_games/mame
+  des_arcade=$USB/_Arcade
+  des_core=$des_arcade/cores
+  des_alt=$des_arcade/_alternatives
+  des_config=$SD/config
+elif [ "$setup_mame" == "CIF" ]; then
+  des_games=$CIFS/games
+  des_mame=$des_games/mame
+  des_arcade=$CIFS/_Arcade
+  des_core=$des_arcade/cores
+  des_alt=$des_arcade/_alternatives
+  des_config=$SD/config
 else
-  GAMES=$SD/games
-  ARCADE=$SD/_Arcade
-  ALT=$SD/_Arcade/_alternatives
-  CORE=$SD/_Arcade/Cores
-  CONFIG=$SD/config
+  des_games=$SD/games
+  des_mame=$des_games/mame
+  des_arcade=$SD/_Arcade
+  des_core=$des_arcade/cores
+  des_alt=$des_arcade/_alternatives
+  des_config=$SD/config
+
 fi
+
 }
+
 
 
 function getres {
@@ -69,10 +80,10 @@ then
       f=$(basename -- "$file")
       if [ -f "$file" ];
       then
-         if [ -f "$ARCADE/$f" ];
+         if [ -f "$des_arcade/$f" ];
          then
-            echo "removing $ARCADE/$f"
-            rm -r "$ARCADE/$f"
+            echo "removing $des_arcade/$f"
+            rm -r "$des_arcade/$f"
          fi
       fi
    done
@@ -83,11 +94,11 @@ then
       f=$(basename -- "$file")
       if [ -f "$file" ];
       then
-         if [ -f "$CORE/$f" ];
+         if [ -f "$des_core/$f" ];
          then
-            echo "$CORE/$f"
+            echo "$des_core/$f"
 
-            rm -r "$CORE/$f"
+            rm -r "$des_core/$f"
          fi
       fi
    done
@@ -98,10 +109,10 @@ then
       dir=$(basename -- "$file")
       if [ -d "$file" ];
       then
-         if [ -d "$ALT/$dir" ];
+         if [ -d "$des_alt/$dir" ];
          then
-            echo "removing $ALT/$dir"
-            rm -r "$ALT/$dir"
+            echo "removing $des_alt/$dir"
+            rm -r "$des_alt/$dir"
          fi
       fi
    done
@@ -109,10 +120,10 @@ then
    #echo "config"
    for file in $config/*; do
    f=$(basename -- "$file")
-   if [ -f "/media/fat/config/$f" ];
+   if [ -f "$des_config/$f" ];
    then
-      echo "removing $CONFIG/$f"
-      rm -r "$CONFIG/$f"
+      echo "removing $des_config/$f"
+      rm -r "$des_config/$f"
    fi
    done
 
@@ -124,8 +135,8 @@ then
       then
          if [ -d "$games/$dir" ];
          then
-            echo "removing $GAMES/$dir"
-            rm -r "$GAMES/$dir"
+            echo "removing $des_games/$dir"
+            rm -r "$des_games/$dir"
          fi
       fi
    done
