@@ -7,38 +7,44 @@ USB=/media/usb0
 CIFS=/media/fat/cifs
 ARCHIVE=https://ia800304.us.archive.org/11/items/gw_mister/
 
-function identify_folder {
+source <(grep setup_gw $ini)
+#echo "setup_gw: $setup_gw"
 
-if [ -d "$USB/games" ]; then
-  target=$USB/games/"Game and Watch"/
-elif [ -d "$CIFS/games" ]; then
-  target=$CIFS/games/"Game and Watch"/
+function identify_folder {
+if [ "$setup_mame" == "USB" ]; then
+   target=$USB/games/"Game and Watch"/
+elif [ "$setup_mame" == "CIFS" ]; then
+   target=$CIFS/games/"Game and Watch"/
 else
-  target=$SD/games/"Game and Watch"/
+   target=$SD/games/"Game and Watch"/
 fi
-if ! [ -d "$target" ]; then
+
+if [ ! -d "$target" ] && [ ! "$setup_gw" == "NONE" ]; then
   mkdir $target
 fi
 }
 
 function dl {
 
-  identify_folder
+   identify_folder
 
-   if ! test -d "$target"; then
-     #special_echo "creating $target"
-     mkdir "$target"
+   if [ ! "$setup_gw" == "NONE" ];  then
+
+     if ! test -d "$target"; then
+        #special_echo "creating $target"
+        mkdir "$target"
+     fi
+
+     FILE=$target$1
+     #special_echo "retrieve $FILE"
+     if ! test -f "$FILE"; then
+        echo -n "downloading $1"
+        #curl $ARCHIVE/$1 -O -k
+        wget "$ARCHIVE/$1" --quiet
+        mv "$TEMP/$1" "$FILE" 
+        echo -e "\\r$1 ${BLUE}${CHECK}${NC}                           "
+     fi
    fi
-
-   FILE=$target$1
-   #special_echo "retrieve $FILE"
-   if ! test -f "$FILE"; then
-      echo -n "downloading $1"
-      #curl $ARCHIVE/$1 -O -k
-      wget "$ARCHIVE/$1" --quiet
-      mv "$TEMP/$1" "$FILE" 
-      echo -e "\\r$1 ${BLUE}${CHECK}${NC}                           "
-  fi
 
 }
 

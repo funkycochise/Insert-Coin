@@ -14,27 +14,33 @@ SD=/media/fat
 USB=/media/usb0
 CIFS=/media/fat/cifs
 
+source <(grep setup_res $ini)
+#echo "setup_res: $setup_res"
+
 
 function identify_folder {
 
-if [ -d "$USB/games" ]; then
-  GAMES=$USB/games
-  ARCADE=$USB/_Arcade
-  ALT=$USB/_Arcade/_alternatives
-  CORE=$USB/_Arcade/Cores
-  CONFIF=$USB/config
-elif [ -d "$CIFS/games" ]; then
-  GAMES=$CIFS/gamesS
-  ARCADE=$CIFS/_Arcade
-  ALT=$CIFS/_Arcade/_alternatives
-  CORE=$CIFS/_Arcade/Cores
-  CONFIF=$CIFS/config
+if [ "$setup_mame" == "USB" ]; then
+   GAMES=$USB/games
+   ARCADE=$USB/_Arcade
+   ALT=$USB/_Arcade/_alternatives
+   CORE=$USB/_Arcade/Cores
+   CONFIG=$USB/config
+elif [ "$setup_mame" == "CIFS" ]; then
+   GAMES=$CIFS/gamesS
+   ARCADE=$CIFS/_Arcade
+   ALT=$CIFS/_Arcade/_alternatives
+   CORE=$CIFS/_Arcade/Cores
+   CONFIG=$CIFS/config
 else
-  GAMES=$SD/games
-  ARCADE=$SD/_Arcade
-  ALT=$SD/_Arcade/_alternatives
-  CORE=$SD/_Arcade/Cores
-  CONFIG=$SD/config
+   GAMES=$SD/games
+   ARCADE=$SD/_Arcade
+   ALT=$SD/_Arcade/_alternatives
+   CORE=$SD/_Arcade/Cores
+   CONFIG=$SD/config
+fi
+if [ ! -d "$ARCADE" ] && [ ! "$setup_res" == "NONE" ];  then
+   mkdir $ARCADE
 fi
 }
 
@@ -146,5 +152,7 @@ echo "Completed."
 }
 
 identify_folder
-getres
-installres
+if [ ! "$setup_res" == "NONE" ];  then
+   getres
+   installres
+fi

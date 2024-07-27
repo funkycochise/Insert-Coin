@@ -8,12 +8,15 @@ CIFS=/media/fat/cifs
 ARCHIVE_MERGED=https://ia902504.us.archive.org/1/items/mame-merged/mame-merged/
 ARCHIVE_NEOGEO=https://ia904607.us.archive.org/28/items/mister-neogeo-pack
 
+source <(grep setup_mame $ini)
+#echo "setup_mame: $setup_mame"
+
 function identify_folder {
 
-if [ -d "$USB/games" ]; then
+if [ "$setup_mame" == "USB" ]; then
   mametarget=$USB/games/mame
   arcade=$USB/_Arcade
-elif [ -d "$CIFS/games" ]; then
+elif [ "$setup_mame" == "CIFS" ]; then
   mametarget=$CIFS/games/mame
   arcade=$CIFS/games/_Arcade
 else
@@ -30,7 +33,8 @@ function dl {
     identify_folder
 
     FILE=$mametarget/$1
-    if ! test -f "$FILE"; then
+    if [ ! -f "$FILE" ] && [ ! "$setup_mame" == "NONE" ]; then
+    #if ! test -f "$FILE"; then
       if [ "$TERM" == "linux" ]; then
          #GUI
          echo -n "   downloading $1"
@@ -62,7 +66,8 @@ function neo {
 
     FILE=$mametarget/$1
     #echo "retrieve $FILE"
-    if ! test -f "$FILE"; then
+    if [ ! -f "$FILE" ] && [ ! "$setup_mame" == "NONE" ]; then
+    #if ! test -f "$FILE"; then
       if [ "$TERM" == "linux" ]; then
          #GUI
          echo -n "   downloading $1"
