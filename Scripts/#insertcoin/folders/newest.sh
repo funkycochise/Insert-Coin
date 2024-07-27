@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0728
+   add "Sunset Riders (4 Players ver EAC).mra" "_Sunset Riders"
+
 #0712
    add "Michael Jackson's Moonwalker (World) (FD1094-8751 317-0159).mra" "_Michael Jackson's Moonwalker"
 
