@@ -20,14 +20,14 @@ setup_res="${setup_res:0:3}"
 
 function identify_folder {
 
-if [ "$setup_mame" == "USB" ]; then
+if [ "$setup_res" == "USB" ]; then
   des_games=$USB/games
   des_mame=$des_games/mame
   des_arcade=$USB/_Arcade
   des_core=$des_arcade/cores
   des_alt=$des_arcade/_alternatives
   des_config=$SD/config
-elif [ "$setup_mame" == "CIF" ]; then
+elif [ "$setup_res" == "CIF" ]; then
   des_games=$CIFS/games
   des_mame=$des_games/mame
   des_arcade=$CIFS/_Arcade
@@ -41,14 +41,18 @@ else
   des_core=$des_arcade/cores
   des_alt=$des_arcade/_alternatives
   des_config=$SD/config
-
 fi
+#echo "identify_folder : $des_arcade"
 
+if [ ! -d "$TEMP" ] 
+then
+   mkdir $TEMP
+fi 
 }
 
-
-
 function getres {
+
+echo "Getting res reference /media/fat/Scripts/#insertcoin/res for uninstallation"
 
 if [ -d "/media/fat/Scripts/#insertcoin/res" ] 
 then
@@ -82,7 +86,7 @@ then
       then
          if [ -f "$des_arcade/$f" ];
          then
-            echo "removing $des_arcade/$f"
+            #echo "removing $des_arcade/$f"
             rm -r "$des_arcade/$f"
          fi
       fi
@@ -96,7 +100,7 @@ then
       then
          if [ -f "$des_core/$f" ];
          then
-            echo "$des_core/$f"
+            #echo "$des_core/$f"
 
             rm -r "$des_core/$f"
          fi
@@ -111,7 +115,7 @@ then
       then
          if [ -d "$des_alt/$dir" ];
          then
-            echo "removing $des_alt/$dir"
+            #echo "removing $des_alt/$dir"
             rm -r "$des_alt/$dir"
          fi
       fi
@@ -122,7 +126,7 @@ then
    f=$(basename -- "$file")
    if [ -f "$des_config/$f" ];
    then
-      echo "removing $des_config/$f"
+      #echo "removing $des_config/$f"
       rm -r "$des_config/$f"
    fi
    done
@@ -135,19 +139,21 @@ then
       then
          if [ -d "$games/$dir" ];
          then
-            echo "removing $des_games/$dir"
+            #echo "removing $des_games/$dir"
             rm -r "$des_games/$dir"
          fi
       fi
    done
    #removing res dir
    rm -r "$res"
-   echo "Completed."
+   echo -e "${GREEN}${CHECK}${NC} Completed"
 
 fi
 
 }
 
 identify_folder
-getres
-uninstallres
+if [ ! "$setup_res" == "NON" ]; then
+   getres
+   uninstallres
+fi

@@ -1,6 +1,10 @@
 #!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
+source <(grep setup_res $ini)
+setup_res="${setup_res:0:3}"
+#echo "setup_res: $setup_res"
+
 TEMP=/media/fat/Scripts/temp
 SD=/media/fat
 USB=/media/usb0
@@ -14,20 +18,16 @@ altdir=$res/_Arcade/_alternatives
 config=$res/config
 games=$res/games
 
-source <(grep setup_res $ini)
-setup_res="${setup_res:0:3}"
-#echo "setup_res: $setup_res"
-
 function identify_folder {
 
-if [ "$setup_mame" == "USB" ]; then
+if [ "$setup_res" == "USB" ]; then
   des_games=$USB/games
   des_mame=$des_games/mame
   des_arcade=$USB/_Arcade
   des_core=$des_arcade/cores
   des_alt=$des_arcade/_alternatives
-  des_config=$SD/config
-elif [ "$setup_mame" == "CIF" ]; then
+  des_config=$USB/config
+elif [ "$setup_res" == "CIF" ]; then
   des_games=$CIFS/games
   des_mame=$des_games/mame
   des_arcade=$CIFS/_Arcade
@@ -41,13 +41,35 @@ else
   des_core=$des_arcade/cores
   des_alt=$des_arcade/_alternatives
   des_config=$SD/config
-
 fi
+#echo "identify_folder : $des_arcade"
 
+if ! [ -d "$des_arcade" ]; then
+   #echo "creating $des_arcade"
+   mkdir $des_arcade
+fi
+if ! [ -d "$des_core" ]; then
+   #echo "creating $des_core"
+   mkdir $des_core
+fi
+if ! [ -d "$des_alt" ]; then
+   #echo "creating $des_alt"
+   mkdir $des_alt
+fi
+if ! [ -d "$des_config" ]; then
+   #echo "creating $des_config"
+   mkdir $des_config
+fi
+if [ ! -d "$TEMP" ] 
+then
+   mkdir $TEMP
+fi 
 }
 
 
 function getres {
+
+echo "Getting res /media/fat/Scripts/#insertcoin/res "
 
 if [ -d "/media/fat/Scripts/#insertcoin/res" ] 
 then
@@ -65,14 +87,15 @@ rm -r /media/fat/Scripts/temp/res.zip
 }
 
 function installres {
-#echo "Installing Insert-coin resources."
+#echo "Installing $des_arcade."
 if [ -d "$res" ];
 then
    if [ "$TERM" == "linux" ]; then
       #GUI
       echo -n -e "   "
    fi
-   echo "Installing $res/"
+
+   echo "Installing $des_arcade"
 
    #echo "mra"
    for file in $mra/*; do
@@ -80,9 +103,10 @@ then
       f=$(basename -- "$file")
       if [ -f "$file" ];
       then
-         #echo "$des_arcade/$f"
-
-         cp "$file" "$des_arcade/$f"
+         if [ ! -f "$des_arcade/$f" ]; then
+            #echo -e "\r$des_arcade/$f                                                   "
+            cp "$file" "$des_arcade/$f"
+         fi
       fi
    done
 
@@ -92,8 +116,10 @@ then
       f=$(basename -- "$file")
       if [ -f "$file" ];
       then
-         #echo "$des_core/$f"
-         cp "$file" "$des_core/$f"
+         if [ ! -f "$des_core/$f" ]; then
+            #echo -e "\r$des_core/$f                                                   "
+            cp "$file" "$des_core/$f"
+         fi
       fi
    done
 
@@ -111,17 +137,20 @@ then
 
          for file in "$altdir/$dir"/*; do
             f=$(basename -- "$file")
-            #echo "$des_alt/$dir/$f"
-            cp "$altdir/$dir/$f" "$des_alt/$dir/$f"
+            if [ ! -f "$des_alt/$dir/$f" ]; then
+               #echo -e "\r$des_alt/$dir/$f                                                   "
+               cp "$altdir/$dir/$f" "$des_alt/$dir/$f"
+            fi
          done
       fi
    done
 
    #echo "config"
+   echo "Installing $des_config"
    for file in $config/*; do
    f=$(basename -- "$file")
-   if [ ! -f "$des_config/$f" ];
-   then
+   if [ ! -f "$des_config/$f" ]; then
+      #echo -e "\r$des_config/$f                                                   "
       cp "$config/$f" "$des_config/$f"
    fi
    done
@@ -143,8 +172,10 @@ then
 
          for file in "$games/$dir"/*; do
             f=$(basename -- "$file")
-            #echo "$des_games/$dir/$f"
-            cp "$games/$dir/$f" "$des_games/$dir/$f"
+            if [ ! -f "$des_games/$dir/$f" ]; then
+               #echo "$des_games/$dir/$f"
+               cp "$games/$dir/$f" "$des_games/$dir/$f"
+            fi
          done
       fi
    done
@@ -152,9 +183,12 @@ then
    #removing res dir
    rm -r "$res"
 fi
-echo "Completed."
+echo -e "${GREEN}${CHECK}${NC} Completed"
 }
 
 identify_folder
-getres
-installres
+
+if [ ! "$setup_res" == "NON" ]; then
+   getres
+   installres
+fi
