@@ -7,23 +7,39 @@ USB=/media/usb0
 CIFS=/media/fat/cifs
 ARCHIVE=https://ia800304.us.archive.org/11/items/gw_mister/
 
+source <(grep setup_gw $ini)
+setup_gw="${setup_gw:0:3}"
+#echo "setup_gw: $setup_gw"
+
 function identify_folder {
 
-if [ -d "$USB/games" ]; then
-  target=$USB/games/"Game and Watch"/
-elif [ -d "$CIFS/games" ]; then
-  target=$CIFS/games/"Game and Watch"/
+if [ "$setup_gw" == "USB" ]; then
+   des_games=$USB/games
+   target=$des_games/"Game and Watch"/
+elif [ "$setup_gw" == "CIF" ]; then
+   des_games=$CIFS/games
+   target=$des_games/"Game and Watch"/
 else
-  target=$SD/games/"Game and Watch"/
+   des_games=$SD/games
+   target=$des_games/"Game and Watch"/
 fi
+
+if ! [ -d "$des_games" ]; then
+   mkdir "$des_games"
+fi
+if ! [ -d "$target" ]; then
+   mkdir "$target"
+fi
+if [ ! -d "$TEMP" ] 
+then
+   mkdir $TEMP
+fi 
 if ! [ -d "$target" ]; then
   mkdir $target
 fi
 }
 
 function dl {
-
-  identify_folder
 
    if ! test -d "$target"; then
      #special_echo "creating $target"
@@ -35,24 +51,30 @@ function dl {
    if ! test -f "$FILE"; then
       echo -n "downloading $1"
       #curl $ARCHIVE/$1 -O -k
-      wget "$ARCHIVE/$1" --quiet
+      wget "$ARCHIVE/$1" -P $TEMP -q
       mv "$TEMP/$1" "$FILE" 
-      echo -e "\\r$1 ${BLUE}${CHECK}${NC}                           "
+      if [ "$TERM" == "linux" ]; then
+         #GUI
+         echo -e "\r   ${BLUE}${CHECK}${NC} $1                                            "
+      else
+         echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
+      fi
   fi
 
 }
+
+identify_folder
 
 if [ "$TERM" == "linux" ]; then
    #GUI
    echo -n -e "   "
 fi
-echo -e "Updating game&watch folder"
+echo -e "Updating game&watch folder $target"
 
 if [ ! -d "$TEMP" ]; 
 then
    mkdir "$TEMP"
 fi
-cd "$TEMP"
 
 dl "Altered Beast (Tiger).gnw"
 dl "Apollo 13 (Tiger).gnw"

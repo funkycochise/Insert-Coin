@@ -8,6 +8,10 @@ CIFS=/media/fat/cifs
 ARCHIVE_MERGED=https://ia804504.us.archive.org/4/items/mame-merged/mame-merged
 ARCHIVE_NEOGEO=https://ia904607.us.archive.org/28/items/mister-neogeo-pack
 
+source <(grep setup_mame $ini)
+setup_mame="${setup_mame:0:3}"
+#echo "setup_mame: $setup_mame"
+
 function identify_folder {
 
 if [ "$setup_mame" == "USB" ]; then
@@ -17,7 +21,7 @@ elif [ "$setup_mame" == "CIF" ]; then
    des_games=$CIFS/games
    des_mame=$des_games/mame
 else
-   des_games=$CIFS/games
+   des_games=$SD/games
    des_mame=$des_games/mame
 fi
 if ! [ -d "$des_games" ]; then
@@ -100,19 +104,15 @@ function clean {
    fi
 }
 
-source <(grep setup_mame $ini)
-setup_mame="${setup_mame:0:3}"
-echo "setup_mame: $setup_mame"
+identify_folder
+#echo "des_mame $des_mame"
 
 if [ "$TERM" == "linux" ]; then
    #GUI
-   echo "   Updating mame folder"
+   echo "   Updating mame folder $des_mame"
 else
-   echo "Updating mame folder"
+   echo "Updating mame folder $des_mame"
 fi 
-
-identify_folder
-#echo "des_mame $des_mame"
 
 clean "amidaru.zip"
 clean "atetrisc.zip"
