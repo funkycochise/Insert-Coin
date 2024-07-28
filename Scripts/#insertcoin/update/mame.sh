@@ -1,35 +1,42 @@
- #!/bin/bash
+ # !/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 TEMP=/media/fat/scripts/temp
 SD=/media/fat
 USB=/media/usb0
 CIFS=/media/fat/cifs
-ARCHIVE_MERGED=https://ia902504.us.archive.org/1/items/mame-merged/mame-merged/
+ARCHIVE_MERGED=https://ia804504.us.archive.org/4/items/mame-merged/mame-merged
 ARCHIVE_NEOGEO=https://ia904607.us.archive.org/28/items/mister-neogeo-pack
 
 function identify_folder {
 
-if [ -d "$USB/games" ]; then
-  mametarget=$USB/games/mame
-  arcade=$USB/_Arcade
-elif [ -d "$CIFS/games" ]; then
-  mametarget=$CIFS/games/mame
-  arcade=$CIFS/games/_Arcade
+if [ "$setup_mame" == "USB" ]; then
+   des_games=$USB/games
+   des_mame=$des_games/mame
+elif [ "$setup_mame" == "CIF" ]; then
+   des_games=$CIFS/games
+   des_mame=$des_games/mame
 else
-  mametarget=$SD/games/mame
-  arcade=$SD/_Arcade
+   des_games=$CIFS/games
+   des_mame=$des_games/mame
 fi
-if ! [ -d "$mametarget" ]; then
-mkdir $mametarget
+if ! [ -d "$des_games" ]; then
+   mkdir $des_games
 fi
+if ! [ -d "$des_mame" ]; then
+   mkdir $des_mame
+fi
+if [ ! -d "$TEMP" ] 
+then
+   mkdir $TEMP
+fi 
 }
 
 function dl {
 
-    identify_folder
+    FILE=$des_mame/$1
+    #echo "dl : $des_mame/$1"
 
-    FILE=$mametarget/$1
     if ! test -f "$FILE"; then
       if [ "$TERM" == "linux" ]; then
          #GUI
@@ -40,8 +47,8 @@ function dl {
       #file doesn not exists
       #echo "$1"
       #curl $ARCHIVE_MERGED/$1 -O -k
-      wget $ARCHIVE_MERGED/$1 $TEMP/$1 -q
-      mv $TEMP/$1 $mametarget/$1 
+      wget $ARCHIVE_MERGED/$1 -P $TEMP -q
+      mv $TEMP/$1 $des_mame/$1 
       if [ "$TERM" == "linux" ]; then
          #GUI
          echo -e "\r   ${BLUE}${CHECK}${NC} $1                                            "
@@ -56,11 +63,9 @@ function dl {
 
 function neo {
 
-  identify_folder
+    #echo "des_mame $des_mame"
 
-#echo "mametarget $mametarget"
-
-    FILE=$mametarget/$1
+    FILE=$des_mame/$1
     #echo "retrieve $FILE"
     if ! test -f "$FILE"; then
       if [ "$TERM" == "linux" ]; then
@@ -72,8 +77,8 @@ function neo {
 
       #file doesn not exists
       #curl $ARCHIVE_NEOGEO/$1 -O -k
-      wget $ARCHIVE_NEOGEO/$1 $TEMP/$1 -q
-      mv $TEMP/$1 $mametarget/$1 
+      wget $ARCHIVE_NEOGEO/$1 -P $TEMP -q
+      mv $TEMP/$1 $des_mame/$1 
       if [ "$TERM" == "linux" ]; then
          #GUI
          echo -e "\r   ${BLUE}${CHECK}${NC} $1                                            "
@@ -89,11 +94,15 @@ function neo {
 function clean {
    identify_folder
 
-   FILE=$mametarget/$1
+   FILE=$des_mame/$1
    if test -f "$FILE"; then
       rm $FILE
    fi
 }
+
+source <(grep setup_mame $ini)
+setup_mame="${setup_mame:0:3}"
+echo "setup_mame: $setup_mame"
 
 if [ "$TERM" == "linux" ]; then
    #GUI
@@ -102,12 +111,9 @@ else
    echo "Updating mame folder"
 fi 
 
-if [ ! -d "$TEMP" ] 
-then
-   mkdir $TEMP
-fi 
-cd $TEMP
-#dl "extrmatn.zip"
+identify_folder
+#echo "des_mame $des_mame"
+
 clean "amidaru.zip"
 clean "atetrisc.zip"
 clean "atetrisc2.zip"
@@ -122,7 +128,6 @@ clean "rushatck.zip"
 clean "solomonj.zip"
 clean "sprint2.zip"
 clean "victorycb.zip"
-dl "1941.zip"
 dl "1941.zip"
 dl "1942.zip"
 dl "1943.zip"
@@ -1014,13 +1019,8 @@ neo "pollen_angel.zip"
 cd /media/fat
 rm -r "$TEMP"
 
-   if [ "$TERM" == "linux" ]; then
-     #GUI
-     echo -n -e "   "
-   fi
-   echo -e "${GREEN}${CHECK}${NC} Completed"
-
-
-
-
-
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
+echo -e "${GREEN}${CHECK}${NC} Completed"
