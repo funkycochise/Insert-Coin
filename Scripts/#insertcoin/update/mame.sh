@@ -826,6 +826,7 @@ dl "zigzagb.zip"
 dl "zzyzzyxx.zip"
 neo "shdancer.zip"
 neo "vendetta.zip"
+dl "tmnt2.zip"
 
 #special_echo "Downloading missing neogeo mame roms"
 neo "2020bb.zip"
