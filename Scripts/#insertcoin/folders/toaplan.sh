@@ -8,7 +8,7 @@ if [ "$res" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"
-   add "$dir" "V" "Out Zone.mra" "_Out Zone" "" "STG"
+   add "$dir" "V" "Out Zone.mra" "_Out Zone" "" "RNG"
    add "$dir" "V" "Performan (Japan).mra" "_Performan"
    add "$dir" "V" "Rally Bike - Dash Yarou.mra" "_Rally Bike"
    add "$dir" "V" "Same! Same! Same! (2P Set).mra" "_Fire Shark" "" "STG"
@@ -17,7 +17,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "V" "Truxton II - Tatsujin Oh.mra" "_Truxton II" "" "STG"
    add "$dir" "V" "Vimana (Japan).mra" "_Vimana" "" "STG"
 
-   add "$dir" "H" "Demons World - Horror Story (Set 3).mra" "_Demon's World" "" "ACT"
+   add "$dir" "H" "Demons World - Horror Story (Set 3).mra" "_Demon's World" "" "RNG"
    add "$dir" "H" "Hellfire (2P set).mra" "_Hellfire" "" "STG"
    add "$dir" "H" "Pipi & Bibis - Whoopee!! (Z80 sound cpu, set 1).mra" "_Pipi & Bibis" "" "ACT"
    add "$dir" "H" "Snow Bros. 2 - With New Elves - Otenki Paradise (Hanafram).mra" "_Snow Bros. 2"

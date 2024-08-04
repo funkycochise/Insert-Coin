@@ -11,9 +11,9 @@ if [ "$res" == "1" ]; then
    add "$dir" "V"  "1943 The Battle of Midway (Euro).mra" "_1943 The Battle of Midway" "" "STG"
    add "$dir" "V"  "1943 The Battle of Midway Mark II (US).mra" "_1943 The Battle of Midway" "" "STG"
    add "$dir" "V"  "Block Block (World 911219 Joystick).mra" "_Block Block"
-   add "$dir" "V"  "Commando (World).mra" "_Commando" "" "STG"
+   add "$dir" "V"  "Commando (World).mra" "_Commando" "" "RNG"
    add "$dir" "V"  "Exed Exes.mra" "_Exed Exes" "" "STG"
-   add "$dir" "V"  "Gun.Smoke (World, 1985-11-15).mra" "_Gun.Smoke" "" "STG"
+   add "$dir" "V"  "Gun.Smoke (World, 1985-11-15).mra" "_Gun.Smoke" "" "RNG"
    add "$dir" "V"  "Legendary Wings (US set 1).mra" "_Legendary Wings" "" "STG"
    add "$dir" "V"  "The Speed Rumbler (set 1).mra" "_The Speed Rumbler" "" "ACT"
    add "$dir" "V"  "Vulgus (set 1).mra" "_Vulgus" "" "STG"
@@ -32,6 +32,6 @@ if [ "$res" == "1" ]; then
    add "$dir" "H"  "Street Fighter (US, set 1).mra" "_Street Fighter" "" "VSF"
    add "$dir" "H"  "Super Pang (World 900914).mra" "_Super Pang" "" "ACT"
    add "$dir" "H"  "Tiger Road (US).mra" "_Tiger Road" "" "ACT"
-   add "$dir" "H"  "Trojan (US set 1).mra" "_Trojan" "" "ACT"
+   add "$dir" "H"  "Trojan (US set 1).mra" "_Trojan" "" "RNG"
    dot
 fi

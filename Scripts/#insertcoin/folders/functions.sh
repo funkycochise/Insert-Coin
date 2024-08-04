@@ -40,6 +40,8 @@ genre_puz="__Puzzle"
 genre_vsf="__Vs Fighting"
 genre_stg_h="__STG_H"
 genre_stg_v="__STG_V"
+genre_rng_h="__Run'n'Gun_H"
+genre_rng_v="__Run'n'Gun_V"
 vert="__Vertical"
 horz="__Horizontal"
 
@@ -91,6 +93,16 @@ stg_v=${stg_v:0:1}
 if [ "$debug" == "1" ]; then
    echo "stg_v: $stg_v" >> /media/fat/Scripts/#insertcoin/out.txt
 fi
+source <(grep rng_h $ini)
+rng_h=${rng_h:0:1}
+if [ "$debug" == "1" ]; then
+   echo "rng_h: $rng_h" >> /media/fat/Scripts/#insertcoin/out.txt
+fi
+source <(grep rng_v $ini)
+rng_v=${rng_v:0:1}
+if [ "$debug" == "1" ]; then
+   echo "rng_v: $rng_v" >> /media/fat/Scripts/#insertcoin/out.txt
+fi
 
 source <(grep horizontal $ini)
 horizontal=${horizontal:0:1}
@@ -106,6 +118,9 @@ if [ "$debug" == "1" ]; then
    echo "newest: $newest" >> /media/fat/Scripts/#insertcoin/out.txt
 fi
 
+
+source <(grep add_resources $ini)
+add_resources=${add_resources:0:1}
 source <(grep mame_rom $ini)
 mame_rom=${mame_rom:0:1}
 #echo "mame_rom: $mame_rom"
@@ -157,8 +172,6 @@ folder_name=${folder_name:0:${#folder_name}}
 #  folder_name=$finalfolder
 #fi
 #echo "folder_name: $folder_name"
-
-
 
 }
 
@@ -291,6 +304,12 @@ fi
 if [ "$stg_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "STG" ]; then
       add_folder "$genre_stg_v"
 fi
+if [ "$rng_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "RNG" ]; then
+      add_folder "$genre_rng_h"
+fi
+if [ "$rng_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "RNG" ]; then
+      add_folder "$genre_rng_v"
+fi
 
 if [ ! -z "$sub" ];
 then
@@ -303,6 +322,8 @@ fi
 
 function add_folder {
 folder="$1"
+
+
 
       if [ ! -d "$outdir/$folder" ]; then
          #echo "Creating $outdir/$folder"
@@ -397,6 +418,12 @@ if [ "$stg_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "STG" ]; th
 fi
 if [ "$stg_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "STG" ]; then
    rep_folder "$genre_stg_v"
+fi
+if [ "$rng_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "RNG" ]; then
+   rep_folder "$genre_rng_h"
+fi
+if [ "$rng_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "RNG" ]; then
+   rep_folder "$genre_rng_v"
 fi
 
 if [ ! -z "$sub" ];

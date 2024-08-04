@@ -10,8 +10,8 @@ if [ "$res" == "1" ]; then
 
    add "$dir" "H" "Blade Master (World).mra" "_Blade Master" "" "BEA"
    add "$dir" "H" "Dream Soccer '94 (Japan, M92 hardware).mra" "_Dream Soccer '94" "" "SPO"
-   add "$dir" "H" "Gun Force II (US).mra" "_Gun Force II" "" "ACT"
-   add "$dir" "H" "Gunforce - Battle Fire Engulfed Terror Island (World).mra" "_Gunforce - Battle Fire Engulfed Terror Island" "" "ACT"
+   add "$dir" "H" "Gun Force II (US).mra" "_Gun Force II" "" "RNG"
+   add "$dir" "H" "Gunforce - Battle Fire Engulfed Terror Island (World).mra" "_Gunforce - Battle Fire Engulfed Terror Island" "" "RNG"
    add "$dir" "H" "Hook (World).mra" "_Hook" "" "BEA"
    add "$dir" "H" "In The Hunt (World).mra" "_In The Hunt" "" "STG"
    add "$dir" "H" "Major Title 2 (World, set 1).mra" "_Major Title 2" "" "SPO"
