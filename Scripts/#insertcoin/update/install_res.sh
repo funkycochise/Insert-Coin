@@ -129,7 +129,7 @@ then
       fi
    done
 
-   echo "alternatives"
+   #echo "alternatives"
    for file in $altdir/*; do
       #echo "$file"
       dir=$(basename -- "$file")
@@ -137,14 +137,14 @@ then
       then
          if [ ! -d "$des_alt/$dir" ];
          then
-            echo "Creating $des_alt/$dir"
+            #echo "Creating $des_alt/$dir"
             mkdir "$des_alt/$dir"
          fi
 
          for file in "$altdir/$dir"/*; do
             f=$(basename -- "$file")
             if [ ! -f "$des_alt/$dir/$f" ]; then
-               echo -e "\r$des_alt/$dir/$f                                                   "
+               #echo -e "\r$des_alt/$dir/$f                                                   "
                cp "$altdir/$dir/$f" "$des_alt/$dir/$f"
             fi
          done
