@@ -356,12 +356,12 @@ function clean_mame {
 
 identify_folder
 echo "Cleaning mra replaced by mgl in $des_arcade"
-cleanmra
 if [ -f "$des_mame/mslug.zip" ]; then
    echo "Moving all neogeo roms from $des_mame to $des_neogeo"
    cleanrom
    clean_mame
 fi
+cleanmra
 addon
 echo -e "${GREEN}${CHECK}${NC} Completed"
 #remove temporary
