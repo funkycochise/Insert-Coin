@@ -92,7 +92,6 @@ fi
 ./folders/upl.sh "$out"
 ./folders/williams.sh "$out"
 
-
 if [ "$newest" == "1" ]; then
   ./folders/newest.sh "$out"
 fi

@@ -35,8 +35,12 @@ then
      done
    done
 
-   if test -f "$addon/neogeo.zip"; then
-      cp $addon/neogeo.zip /media/fat/games/mame
+   if test -f "$addon/uni-bios.rom"; then
+      cp $addon/uni-bios.rom /media/fat/games/NEOGEO
+      #echo "local Uni-bios deployed"
    fi
-   cp $addon/games/mame/jtbeta.zip /media/fat/games/mame
+   if test -f "$addon/games/mame/jtbeta.zip"; then
+      cp "$addon/games/mame/jtbeta.zip" /media/fat/games/mame
+      #echo "local jtbeta.zip deployed"
+   fi
 fi

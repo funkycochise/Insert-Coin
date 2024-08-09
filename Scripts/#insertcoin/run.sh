@@ -70,6 +70,9 @@ elapsed=$(( SECONDS - start_time ))
 
 if [ "$mame_rom" == "1" ]; then
   ./update/mame.sh
+
+  ./update/neogeofix.sh
+
 fi
 if [ "$gnw_rom" == "1" ]; then
   ./update/gw.sh

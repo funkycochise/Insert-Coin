@@ -217,7 +217,7 @@ then
    #echo "add() : empty sub for $mra"
    game=${mra:0:${#mra}-4}
    suf=${mra:${#mra}-3}
-   if  [ "$suf" = "mra" ];
+   if  [ "$suf" = "mra" ] || [ "$suf" = "mgl" ];
    then
       #default game folder name in _alternatives
       sub="_$game"

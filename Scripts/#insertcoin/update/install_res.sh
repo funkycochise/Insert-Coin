@@ -12,7 +12,9 @@ CIFS=/media/fat/cifs
 
 icmainres=https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/
 res="/media/fat/Scripts/#insertcoin/res"
+temp="/media/fat/Scripts/temp"
 mra=$res/_Arcade
+mgl=$res/mgl
 cores=$res/_Arcade/cores
 altdir=$res/_Arcade/_alternatives
 config=$res/config
@@ -71,23 +73,22 @@ function getres {
 
 echo "Getting res /media/fat/Scripts/#insertcoin/res "
 
-if [ -d "/media/fat/Scripts/#insertcoin/res" ] 
+if [ -d "$res" ] 
 then
-   rm -r /media/fat/Scripts/#insertcoin/res
+   rm -r "$res"
 fi
 if [ -f "/media/fat/Scripts/temp/res.zip" ] 
 then
-   rm -r /media/fat/Scripts/temp/res.zip
+   rm -r $temp/res.zip
 fi
       
-curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output /media/fat/Scripts/temp/res.zip >/dev/null
-unzip -qq /media/fat/Scripts/temp/res.zip -d /media/fat/Scripts/#insertcoin/res 
-rm -r /media/fat/Scripts/temp/res.zip
+curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output $temp/res.zip >/dev/null
+unzip -qq $temp/res.zip -d $res
+rm -r $temp/res.zip
 
 }
 
 function installres {
-#echo "Installing $des_arcade."
 if [ -d "$res" ];
 then
    if [ "$TERM" == "linux" ]; then
@@ -97,33 +98,38 @@ then
 
    echo "Installing $des_arcade"
 
+   #echo "mgl"
+   for file in $mgl/*.mgl; do
+      #echo "$file"
+      f=$(basename -- "$file")
+      if [ -f "$file" ];
+      then
+         mraeq="${f:0:${#f} -4 }.mra"
+         #echo "mraeq: $mraeq"
+         if [ ! -f "$des_arcade/$f" ]; then
+            echo -e "\r$des_arcade/$f                                                   "
+            cp "$file" "$des_arcade/$f"
+         fi
+         #if [ -f "$des_arcade/$mraeq" ]; then
+         #   echo -e "\to delete mra: $des_arcade/$mraeq                                             "
+         #fi
+      fi
+   done
+
    #echo "mra"
-   for file in $mra/*; do
+   for file in $mra/*.mra; do
       #echo "$file"
       f=$(basename -- "$file")
       if [ -f "$file" ];
       then
          if [ ! -f "$des_arcade/$f" ]; then
-            #echo -e "\r$des_arcade/$f                                                   "
+            echo -e "\r$des_arcade/$f                                                   "
             cp "$file" "$des_arcade/$f"
          fi
       fi
    done
 
-   #echo "cores"
-   for file in $cores/*; do
-      #echo "$file"
-      f=$(basename -- "$file")
-      if [ -f "$file" ];
-      then
-         if [ ! -f "$des_core/$f" ]; then
-            #echo -e "\r$des_core/$f                                                   "
-            cp "$file" "$des_core/$f"
-         fi
-      fi
-   done
-
-   #echo "alternatives"
+   echo "alternatives"
    for file in $altdir/*; do
       #echo "$file"
       dir=$(basename -- "$file")
@@ -131,63 +137,40 @@ then
       then
          if [ ! -d "$des_alt/$dir" ];
          then
+            echo "Creating $des_alt/$dir"
             mkdir "$des_alt/$dir"
          fi
-         #echo "copying in $ALT/$dir"
 
          for file in "$altdir/$dir"/*; do
             f=$(basename -- "$file")
             if [ ! -f "$des_alt/$dir/$f" ]; then
-               #echo -e "\r$des_alt/$dir/$f                                                   "
+               echo -e "\r$des_alt/$dir/$f                                                   "
                cp "$altdir/$dir/$f" "$des_alt/$dir/$f"
             fi
          done
       fi
    done
 
-   #echo "config"
-   echo "Installing $des_config"
+   echo "config"
    for file in $config/*; do
    f=$(basename -- "$file")
-   if [ ! -f "$des_config/$f" ]; then
-      #echo -e "\r$des_config/$f                                                   "
-      cp "$config/$f" "$des_config/$f"
+   if [ ! -f "$des_config/$f" ];
+   then
+      echo -e "\r$des_config/$f                                                   "
+      cp "$file" "$des_config/$f"
    fi
    done
 
-   #echo "games"
-   for file in $games/*; do
-      #echo "$file"
-      dir=$(basename -- "$file")
-      if [ -d "$file" ];
-      then
-         #echo "file: $file"
-         #echo "dir: $dir"
-         if [ ! -d "$des_games/$dir" ];
-         then
-            #echo "Creating $des_games/$dir"
-            mkdir "$des_games/$dir"
-         fi
-         #echo "copying in $des_games/$dir"
+   echo "alternatives"
 
-         for file in "$games/$dir"/*; do
-            f=$(basename -- "$file")
-            if [ ! -f "$des_games/$dir/$f" ]; then
-               #echo "$des_games/$dir/$f"
-               cp "$games/$dir/$f" "$des_games/$dir/$f"
-            fi
-         done
-      fi
-   done
 
    #removing res dir
-   rm -r "$res"
+   #rm -r "$res"
 fi
-echo -e "${GREEN}${CHECK}${NC} Completed"
+#echo -e "${GREEN}${CHECK}${NC} Completed"
 }
 
 identify_folder
-
 if [ ! "$setup_res" == "NON" ]; then
    getres
    installres
