@@ -98,6 +98,19 @@ then
 
    echo "Installing $des_arcade"
 
+   #echo "mra"
+   for file in $mra/*.mra; do
+      #echo "$file"
+      f=$(basename -- "$file")
+      if [ -f "$file" ];
+      then
+         if [ ! -f "$des_arcade/$f" ]; then
+            #echo -e "\rcopying $des_arcade/$f                                                   "
+            cp "$file" "$des_arcade/$f"
+         fi
+      fi
+   done
+
    #echo "mgl"
    for file in $mgl/*.mgl; do
       #echo "$file"
@@ -107,26 +120,24 @@ then
          mraeq="${f:0:${#f} -4 }.mra"
          #echo "mraeq: $mraeq"
          if [ ! -f "$des_arcade/$f" ]; then
-            echo -e "\r$des_arcade/$f                                                   "
+            #echo -e "\rcopying $des_arcade/$f                                                   "
             cp "$file" "$des_arcade/$f"
          fi
-         #if [ -f "$des_arcade/$mraeq" ]; then
-         #   echo -e "\to delete mra: $des_arcade/$mraeq                                             "
-         #fi
+         if [ -f "$des_arcade/$mraeq" ]; then
+            #echo -e "\rdeleting $des_arcade/$mraeq                                             "
+            rm -r "$des_arcade/$mraeq"
+         fi
       fi
    done
 
-   #echo "mra"
-   for file in $mra/*.mra; do
-      #echo "$file"
-      f=$(basename -- "$file")
-      if [ -f "$file" ];
-      then
-         if [ ! -f "$des_arcade/$f" ]; then
-            echo -e "\r$des_arcade/$f                                                   "
-            cp "$file" "$des_arcade/$f"
-         fi
-      fi
+   #echo "config"
+   for file in $config/*; do
+   f=$(basename -- "$file")
+   if [ ! -f "$des_config/$f" ];
+   then
+      #echo -e "\rcopying $des_config/$f                                                   "
+      cp "$file" "$des_config/$f"
+   fi
    done
 
    #echo "alternatives"
@@ -144,25 +155,12 @@ then
          for file in "$altdir/$dir"/*; do
             f=$(basename -- "$file")
             if [ ! -f "$des_alt/$dir/$f" ]; then
-               #echo -e "\r$des_alt/$dir/$f                                                   "
+               #echo -e "\rcopying $des_alt/$dir/$f                                                   "
                cp "$altdir/$dir/$f" "$des_alt/$dir/$f"
             fi
          done
       fi
    done
-
-   echo "config"
-   for file in $config/*; do
-   f=$(basename -- "$file")
-   if [ ! -f "$des_config/$f" ];
-   then
-      echo -e "\r$des_config/$f                                                   "
-      cp "$file" "$des_config/$f"
-   fi
-   done
-
-   echo "alternatives"
-
 
    #removing res dir
    #rm -r "$res"

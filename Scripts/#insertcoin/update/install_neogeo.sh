@@ -63,104 +63,12 @@ fi
 
 }
 
-function cleanmra {
+function process {
 
-   #echo "Cleaning mra replaced by mgl in $des_arcade"
-
-   if [ "$TERM" == "linux" ]; then
-      #GUI
-      echo -n -e "   "
-   fi
-
-   #list every mgl and look for existing matching mra
-   for file in $des_arcade/*.mgl; do
-      #echo "$file"
-      f=$(basename -- "$file")
-      if [ -f "$file" ];
-      then
-         mraeq="${f:0:${#f} -4 }.mra"
-         #echo "mraeq: $mraeq"
-         #if [ ! -f "$des_arcade/$f" ]; then
-         #   echo -e "\r$des_arcade/$f                                                   "
-         #fi
-         if [ -f "$des_arcade/$mraeq" ]; then
-            echo -e "\rdeleting mra: $des_arcade/$mraeq                                             "
-            rm -r "$des_arcade/$mraeq"
-         fi
-      fi
-   done
-   #echo -e "${GREEN}${CHECK}${NC} Completed"
-}
-
-
-function neo {
-    romzip=$1
-
-    FILE=$des_neogeo/$romzip
-    if ! test -f "$des_neogeo/$romzip"; then
-       if test -f "$des_mame/$romzip"; then
-          mv $des_mame/$romzip $des_neogeo/$romzip
-          if [ "$TERM" == "linux" ]; then
-             #GUI
-             echo -e "\r   ${BLUE}${CHECK}${NC} $romzip                                            "
-          else
-             echo -e "\r${BLUE}${CHECK}${NC} $romzip                                            "
-          fi
-       else
-          if [ "$TERM" == "linux" ]; then
-             #GUI
-             echo -n "   downloading $romzip"
-          else
-             echo -n "downloading $romzip"    
-          fi
-          if ! test -f "$des_neogeo/$romzip"; then
-             #echo "$des_neogeo/$romzip doesn't exist"
-             wget $ARCHIVE_NEOGEO/$romzip -P $TEMP -q
-             mv $TEMP/$romzip $des_neogeo/$romzip
-             if [ "$TERM" == "linux" ]; then
-                #GUI
-                echo -e "\r   ${BLUE}${CHECK}${NC} $romzip                                            "
-             else
-                echo -e "\r${BLUE}${CHECK}${NC} $romzip                                            "
-             fi
-          fi
-       fi
-    fi
-}
-
-#add adds the needed files to make neogeo core to work
-function addon {
-#echo "NeoGeo Addon installation"
-
-romzip="neo.zip"
-rm -r  /media/fat/Scripts/temp
-mkdir /media/fat/Scripts/temp
-wget $ARCHIVE_NEOGEO/$romzip -P $TEMP -q
-unzip -qq /media/fat/Scripts/temp/neo.zip -d /media/fat/Scripts/temp
-rm -r /media/fat/Scripts/temp/neo.zip
-cd /media/fat/Scripts/temp
-for f in $(ls ./*)
-do
-   target="${f:2:${#f}}"
-   #echo "target: $target"
-   if ! test -f "$des_neogeo/$target"; then
-      mv "$TEMP/$target" "$des_neogeo/$target"
-   fi
-done
-
-#echo -e "${GREEN}${CHECK}${NC} Completed"
-}
-
-function cleanrom {
-
-   #echo "Cleaning neogeo roms in in $neogeo"
-
-   if ! test -d "$des_games"; then
-      mkdir "$des_games"
-   fi
-   if ! test -d "$des_neogeo"; then
+   if [ ! -d "$des_neogeo" ] 
+   then
       mkdir "$des_neogeo"
-   fi
+   fi 
 
    neo "2020bb.zip"
    neo "3countb.zip"
@@ -334,6 +242,96 @@ function cleanrom {
    neo "zupapa.zip"
 }
 
+function cleanmra {
+
+   #echo "Cleaning mra replaced by mgl in $des_arcade"
+
+   if [ "$TERM" == "linux" ]; then
+      #GUI
+      echo -n -e "   "
+   fi
+
+   #list every mgl and look for existing matching mra
+   for file in $des_arcade/*.mgl; do
+      #echo "$file"
+      f=$(basename -- "$file")
+      if [ -f "$file" ];
+      then
+         mraeq="${f:0:${#f} -4 }.mra"
+         #echo "mraeq: $mraeq"
+         #if [ ! -f "$des_arcade/$f" ]; then
+         #   echo -e "\r$des_arcade/$f                                                   "
+         #fi
+         if [ -f "$des_arcade/$mraeq" ]; then
+            echo -e "\rdeleting mra: $des_arcade/$mraeq                                             "
+            rm -r "$des_arcade/$mraeq"
+         fi
+      fi
+   done
+   #echo -e "${GREEN}${CHECK}${NC} Completed"
+}
+
+
+function neo {
+    romzip=$1
+
+    FILE=$des_neogeo/$romzip
+    if ! test -f "$des_neogeo/$romzip"; then
+       if test -f "$des_mame/$romzip"; then
+          echo copying "$des_mame/$romzip"
+          mv $des_mame/$romzip $des_neogeo/$romzip
+          if [ "$TERM" == "linux" ]; then
+             #GUI
+             echo -e "\r   ${BLUE}${CHECK}${NC} $romzip                                            "
+          else
+             echo -e "\r${BLUE}${CHECK}${NC} $romzip                                            "
+          fi
+       else
+          if [ "$TERM" == "linux" ]; then
+             #GUI
+             echo -n "   downloading $romzip"
+          else
+             echo -n "downloading $romzip"    
+          fi
+          if ! test -f "$des_neogeo/$romzip"; then
+             #echo "$des_neogeo/$romzip doesn't exist"
+             wget $ARCHIVE_NEOGEO/$romzip -P $TEMP -q
+             mv $TEMP/$romzip $des_neogeo/$romzip
+             if [ "$TERM" == "linux" ]; then
+                #GUI
+                echo -e "\r   ${BLUE}${CHECK}${NC} $romzip                                            "
+             else
+                echo -e "\r${BLUE}${CHECK}${NC} $romzip                                            "
+             fi
+          fi
+       fi
+    fi
+}
+
+#add adds the needed files to make neogeo core to work
+function addon {
+#echo "NeoGeo Addon installation"
+
+romzip="neo.zip"
+rm -r  /media/fat/Scripts/temp
+mkdir /media/fat/Scripts/temp
+wget $ARCHIVE_NEOGEO/$romzip -P $TEMP -q
+unzip -qq /media/fat/Scripts/temp/neo.zip -d /media/fat/Scripts/temp
+rm -r /media/fat/Scripts/temp/neo.zip
+cd /media/fat/Scripts/temp
+for f in $(ls ./*)
+do
+   target="${f:2:${#f}}"
+   #echo "target: $target"
+   if ! test -f "$des_neogeo/$target"; then
+      mv "$TEMP/$target" "$des_neogeo/$target"
+   fi
+done
+#remove temporary
+rm -r /media/fat/Scripts/temp
+#echo -e "${GREEN}${CHECK}${NC} Completed"
+}
+
 
 function clean_mame {
    #echo "Cleaning neogeo roms in $des_mame"
@@ -354,16 +352,11 @@ function clean_mame {
    #echo -e "${GREEN}${CHECK}${NC} Completed"
 }
 
+echo "Installing Neogeo"
 identify_folder
-echo "Cleaning mra replaced by mgl in $des_arcade"
-if [ -f "$des_mame/mslug.zip" ]; then
-   echo "Moving all neogeo roms from $des_mame to $des_neogeo"
-   cleanrom
-   clean_mame
-fi
-cleanmra
 addon
+process
+clean_mame
 echo -e "${GREEN}${CHECK}${NC} Completed"
-#remove temporary
-rm -r /media/fat/Scripts/temp
+
 
