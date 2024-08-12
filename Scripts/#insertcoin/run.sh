@@ -54,9 +54,6 @@ fi
 if test -f "./update/install_res.sh"; then
    ./update/install_res.sh
 fi
-if test -f "./update/install_neogeo.sh"; then
-   ./update/install_neogeo.sh
-fi
 
 start_time=$SECONDS
 
