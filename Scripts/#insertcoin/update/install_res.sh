@@ -111,25 +111,6 @@ then
       fi
    done
 
-   #echo "mgl"
-   for file in $mgl/*.mgl; do
-      #echo "$file"
-      f=$(basename -- "$file")
-      if [ -f "$file" ];
-      then
-         mraeq="${f:0:${#f} -4 }.mra"
-         #echo "mraeq: $mraeq"
-         if [ ! -f "$des_arcade/$f" ]; then
-            #echo -e "\rcopying $des_arcade/$f                                                   "
-            cp "$file" "$des_arcade/$f"
-         fi
-         if [ -f "$des_arcade/$mraeq" ]; then
-            #echo -e "\rdeleting $des_arcade/$mraeq                                             "
-            rm -r "$des_arcade/$mraeq"
-         fi
-      fi
-   done
-
    #echo "config"
    for file in $config/*; do
    f=$(basename -- "$file")
@@ -137,6 +118,16 @@ then
    then
       #echo -e "\rcopying $des_config/$f                                                   "
       cp "$file" "$des_config/$f"
+   fi
+   done
+
+   #echo "cores"
+   for file in $cores/*.rbf; do
+   f=$(basename -- "$file")
+   if [ ! -f "$des_config/$f" ];
+   then
+      #echo -e "\rcopying $des_core/$f                                                   "
+      cp "$file" "$des_core/$f"
    fi
    done
 
