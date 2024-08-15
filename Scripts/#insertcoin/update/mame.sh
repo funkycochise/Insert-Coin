@@ -5,7 +5,7 @@ TEMP=/media/fat/scripts/temp
 SD=/media/fat
 USB=/media/usb0
 CIFS=/media/fat/cifs
-ARCHIVE_MERGED=https://ia804504.us.archive.org/4/items/mame-merged/mame-merged
+ARCHIVE_MERGED=https://ia904504.us.archive.org/4/items/mame-merged/mame-merged
 ARCHIVE_NEOGEO=https://ia904607.us.archive.org/28/items/mister-neogeo-pack
 
 source <(grep setup_mame $ini)
@@ -42,19 +42,18 @@ function dl {
     #echo "dl : $des_mame/$1"
 
     if ! test -f "$FILE"; then
+      #file doesn not exists
       if [ "$TERM" == "linux" ]; then
          #GUI
          echo -n "   downloading $1"
       else
          echo -n "downloading $1"   
       fi
-      #file doesn not exists
-      #echo "$1"
-      #curl $ARCHIVE_MERGED/$1 -O -k
-      wget $ARCHIVE_MERGED/$1 -P $TEMP -q
-      mv $TEMP/$1 $des_mame/$1 
+      curl $ARCHIVE_MERGED/$1 -o $des_mame/$1 -k -s
+      #wget $ARCHIVE_MERGED/$1 -P $TEMP -q
+      #mv $TEMP/$1 $des_mame/$1 
       if [ "$TERM" == "linux" ]; then
-         #GUI
+        #GUI
          echo -e "\r   ${BLUE}${CHECK}${NC} $1                                            "
       else
          echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
@@ -825,8 +824,8 @@ dl "zaxxon.zip"
 dl "zerowing.zip"
 dl "zigzagb.zip"
 dl "zzyzzyxx.zip"
-neo "shdancer.zip"
-neo "vendetta.zip"
+dl "shdancer.zip"
+dl "vendetta.zip"
 
 #special_echo "Downloading missing neogeo mame roms"
 neo "2020bb.zip"
