@@ -8,6 +8,7 @@ if [ "$res" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"
+   add "$dir" "V" "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra" "" "STG"
    add "$dir" "V" "Out Zone.mra" "_Out Zone" "" "RNG"
    add "$dir" "V" "Performan (Japan).mra" "_Performan"
    add "$dir" "V" "Rally Bike - Dash Yarou.mra" "_Rally Bike"

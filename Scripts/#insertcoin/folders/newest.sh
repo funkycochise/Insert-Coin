@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0818
+   add "Salamander (version D).mra" "_Salamander"
+
 #0728
    add "Sunset Riders (4 Players ver EAC).mra" "_Sunset Riders"
 
