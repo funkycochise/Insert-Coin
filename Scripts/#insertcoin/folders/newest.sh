@@ -33,6 +33,7 @@ function linkfolder {
 
 #0818
    add "Salamander (version D).mra" "_Salamander"
+   add "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra"
 
 #0728
    add "Sunset Riders (4 Players ver EAC).mra" "_Sunset Riders"
