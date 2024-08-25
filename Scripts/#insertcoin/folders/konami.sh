@@ -40,6 +40,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "V"  "Top Gunner (US) [bl].mra" "_Jackal" "" "RNG"
    add "$dir" "V"  "Top Gunner (US).mra" "_Jackal" "" "RNG"
    add "$dir" "V"  "Trick Trap (World).mra" "_Labyrinth Runner" "" "STG"
+   add "$dir" "V"  "Circus Charlie (level select, set 1).mra" "_Circus Charlie" "" "ACT"
 
    add "$dir" "H"  "Aliens (World set 1).mra" "_Aliens" "" "BEA"
    add "$dir" "H"  "Combat School (joystick).mra" "_Combat School" "" "ACT"

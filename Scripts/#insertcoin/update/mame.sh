@@ -828,6 +828,7 @@ dl "shdancer.zip"
 dl "vendetta.zip"
 dl "twincobr.zip"
 dl "salamand.zip"
+dl "circusc.zip"
 
 #special_echo "Downloading missing neogeo mame roms"
 neo "2020bb.zip"
