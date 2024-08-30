@@ -5,8 +5,8 @@ loadsetup
 res=$(exist "Combat School (joystick).mra")
 if [ "$res" == "1" ]; then
    dir="_Konami"
-   outdir=$1
    add "$dir" "V"  "Amidar (Scramble).mra" "_Amidar" "" "PUZ"
+   add "$dir" "V"  "Circus Charlie (level select, set 1).mra" "_Circus Charlie" "" "ACT"
    add "$dir" "V"  "Contra (US - Asia, set 1).mra" "_Contra" "" "RNG"
    add "$dir" "V"  "Fast Lane.mra" "_Fast Lane" "" "ACT"
    add "$dir" "V"  "Finalizer - Super Transformation (Set 1).mra" "_Finalizer - Super Transformation" "" "STG"
@@ -40,7 +40,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "V"  "Top Gunner (US) [bl].mra" "_Jackal" "" "RNG"
    add "$dir" "V"  "Top Gunner (US).mra" "_Jackal" "" "RNG"
    add "$dir" "V"  "Trick Trap (World).mra" "_Labyrinth Runner" "" "STG"
-   add "$dir" "V"  "Circus Charlie (level select, set 1).mra" "_Circus Charlie" "" "ACT"
+   outdir=$1
 
    add "$dir" "H"  "Aliens (World set 1).mra" "_Aliens" "" "BEA"
    add "$dir" "H"  "Combat School (joystick).mra" "_Combat School" "" "ACT"

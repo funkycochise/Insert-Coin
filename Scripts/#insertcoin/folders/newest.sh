@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0830
+   add "Circus Charlie (level select, set 1).mra" "_Circus Charlie"
+
 #0818
    add "Salamander (version D).mra" "_Salamander"
    add "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra"
