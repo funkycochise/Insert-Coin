@@ -2,7 +2,7 @@
 source ./folders/functions.sh
 loadsetup
 
-res=$(exist "Black Tiger.mra")
+res=$(exist "DoDonPachi.mra")
 if [ "$res" == "1" ]; then
    dir="_Cave"
    outdir=$1
