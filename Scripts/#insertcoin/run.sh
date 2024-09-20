@@ -68,12 +68,12 @@ then
 fi
 elapsed=$(( SECONDS - start_time ))
 
-#if [ "$mame_rom" == "1" ]; then
-#  ./update/mame.sh
+if [ "$mame_rom" == "1" ]; then
+  ./update/mame.sh
 
   #./update/neogeofix.sh
 
-#fi
+fi
 if [ "$gnw_rom" == "1" ]; then
   ./update/gw.sh
 fi
