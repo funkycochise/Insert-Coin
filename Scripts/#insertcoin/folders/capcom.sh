@@ -6,6 +6,7 @@ res=$(exist "Black Tiger.mra")
 if [ "$res" == "1" ]; then
    dir="_Capcom-Mitchell"
    outdir=$1
+   add "$dir" "V"  "Avengers (US, revision C).mra" "_Avengers" "" "BEA"
    add "$dir" "V"  "1942 (Revision B).mra" "_1942" "" "STG"
    add "$dir" "V"  "1943 Kai Midway Kaisen (Japan).mra" "_1943 The Battle of Midway" "" "STG"
    add "$dir" "V"  "1943 The Battle of Midway (Euro).mra" "_1943 The Battle of Midway" "" "STG"
