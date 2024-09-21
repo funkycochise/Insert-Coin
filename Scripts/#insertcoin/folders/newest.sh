@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0920
+   add "Avengers (US, revision C).mra" "_Avengers"
+
 #0830
    add "Circus Charlie (level select, set 1).mra" "_Circus Charlie"
 
