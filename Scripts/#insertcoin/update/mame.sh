@@ -64,6 +64,20 @@ function dl {
 
 }
 
+function dlf {
+
+    FILE=$des_mame/$1
+    #echo "dl : $des_mame/$1"
+
+    if ! test -f "$FILE"; then
+       rm -r "$FILE"
+    fi
+    curl $ARCHIVE_MERGED/$1 -o $des_mame/$1 -k -s
+    #wget $ARCHIVE_MERGED/$1 -P $TEMP -q
+    #mv $TEMP/$1 $des_mame/$1
+
+}
+
 function neo {
 
     #echo "des_mame $des_mame"
@@ -127,7 +141,6 @@ clean "rushatck.zip"
 clean "solomonj.zip"
 clean "sprint2.zip"
 clean "victorycb.zip"
-clean "neogeo.zip"
 dl "1941.zip"
 dl "1942.zip"
 dl "1943.zip"
@@ -827,7 +840,7 @@ dl "ffightae.zip"
 dl "ffightae_cps2_gfx.zip"
 dl "ffightae_cps2_smp.zip"
 dl "megaman_cps15.zip"
-dl "neogeo.zip"
+dlf "neogeo.zip"
 dl "s16mcu_alt.zip"
 dl "sf2acc.zip"
 dl "sf2acca.zip"
