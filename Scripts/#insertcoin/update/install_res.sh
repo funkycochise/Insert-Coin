@@ -14,7 +14,7 @@ icmainres=https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/
 res="/media/fat/Scripts/#insertcoin/res"
 temp="/media/fat/Scripts/temp"
 mra=$res/_Arcade
-mgl=$res/mgl
+mgl=$res/_Arcade
 cores=$res/_Arcade/cores
 altdir=$res/_Arcade/_alternatives
 config=$res/config
@@ -100,6 +100,19 @@ then
 
    #echo "mra"
    for file in $mra/*.mra; do
+      #echo "$file"
+      f=$(basename -- "$file")
+      if [ -f "$file" ];
+      then
+         if [ ! -f "$des_arcade/$f" ]; then
+            #echo -e "\rcopying $des_arcade/$f                                                   "
+            cp "$file" "$des_arcade/$f"
+         fi
+      fi
+   done
+
+   #echo "mgl"
+   for file in $mgl/*.mgl; do
       #echo "$file"
       f=$(basename -- "$file")
       if [ -f "$file" ];
