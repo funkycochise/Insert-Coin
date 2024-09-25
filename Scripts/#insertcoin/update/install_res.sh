@@ -172,8 +172,27 @@ fi
 #echo -e "${GREEN}${CHECK}${NC} Completed"
 }
 
+function cleanneomra {
+
+   for file in $des_arcade/*.mgl; do
+      #echo "$file"
+      f=$(basename -- "$file")
+      #echo "$f"
+      game=${f:0:${#f}-4}
+      suf=${f:${#f}-3}
+      mraeq="$des_arcade/$game.mra"
+      #echo "$mraeq"
+      if [ -f "$mraeq" ]; then
+          #echo "delete: $mraeq"
+          rm -r "$mraeq"
+      fi
+   done
+}
+
+
 identify_folder
 if [ ! "$setup_res" == "NON" ]; then
    getres
    installres
+   cleanneomra
 fi
