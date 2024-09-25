@@ -2,7 +2,7 @@
 source ./folders/functions.sh
 loadsetup
 
-res=$(exist "Metal Slug - Super Vehicle-001.mra")
+res=$(exist "Metal Slug - Super Vehicle-001.mgl")
 if [ "$res" == "1" ]; then
    dir="_Neo-geo"
    outdir=$1
