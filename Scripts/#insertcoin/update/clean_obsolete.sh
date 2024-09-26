@@ -148,6 +148,10 @@ if [ -f "$CORE/IremM92Turbo_20230521.rbf" ]
 then
     rm -r "$CORE/IremM92Turbo_20230521.rbf"
 fi
+if [ -f "$CORE/NeoGeo-MVS_20220218.rbf" ] 
+then
+    rm -r "$CORE/NeoGeo-MVS_20220218.rbf"
+fi
 if [ "$TERM" == "linux" ]; then
    #GUI
    echo -n -e "   "
