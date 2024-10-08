@@ -1,6 +1,6 @@
 #!/bin/bash
 
-neededversion="4"
+neededversion="5"
 dl="0"
 
 #get setup settings
