@@ -48,9 +48,15 @@ horz="__Horizontal"
 #get setup settings
 ini=/media/fat/Scripts/#insertcoin/setup.ini
 
-debug="0"
+debug="1"
 
 function loadsetup {
+
+source <(grep root_symlink $ini)
+root_symlink=${root_symlink:0:1}
+if [ "$debug" == "1" ]; then
+   echo "root_symlink: $root_symlink" >> /media/fat/Scripts/#insertcoin/out.txt
+fi
 
 source <(grep manufacturer_subfolder $ini)
 manufacturer_subfolder=${manufacturer_subfolder:0:1}
