@@ -71,8 +71,6 @@ elapsed=$(( SECONDS - start_time ))
 if [ "$mame_rom" == "1" ]; then
   ./update/mame.sh
 
-  #./update/neogeofix.sh
-
 fi
 if [ "$gnw_rom" == "1" ]; then
   ./update/gw.sh
@@ -86,6 +84,9 @@ fi
 if [ "$console_core" == "1" ]; then
   ./update/update_console.sh
 fi
+
+./update/create_shortcut.sh
+
 sh ./update/post.sh
 
 if [ "$main_mister" == "1" ]; then
