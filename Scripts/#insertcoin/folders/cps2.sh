@@ -48,8 +48,8 @@ if [ "$res" == "1" ]; then
    add "$dir" "H" "Vampire Hunter 2 Darkstalkers Revenge (Japan 970929).mra" "_Vampire Hunter 2 Darkstalkers Revenge" "" "VSF"
    add "$dir" "H" "Vampire Savior 2 The Lord of Vampire (Japan 970913).mra" "_Vampire Savior 2 The Lord of Vampire" "" "VSF"
    add "$dir" "H" "Vampire Savior The Lord of Vampire (Euro 970519).mra" "_Vampire Savior The Lord of Vampire" "" "VSF"
-   add "$dir" "H" "X-Men Children of the Atom (Euro 950331).mra" "_X-Men Children of the Atom" "" "BEA"
-   add "$dir" "H" "X-Men Vs. Street Fighter (Euro 961004).mra" "_X-Men Vs. Street Fighter" "" "BEA"
+   add "$dir" "H" "X-Men Children of the Atom (Euro 950331).mra" "_X-Men Children of the Atom" "" "VSF"
+   add "$dir" "H" "X-Men Vs. Street Fighter (Euro 961004).mra" "_X-Men Vs. Street Fighter" "" "VSF"
    add "$dir" "H" "Final Fight AE CPS2 Patch.mra" "_Final Fight AE" "" "BEA"
    dot
 fi
