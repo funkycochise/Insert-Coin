@@ -85,7 +85,7 @@ if [ "$console_core" == "1" ]; then
   ./update/update_console.sh
 fi
 
-./update/create_shortcut.sh
+#./update/create_shortcut.sh
 
 sh ./update/post.sh
 
