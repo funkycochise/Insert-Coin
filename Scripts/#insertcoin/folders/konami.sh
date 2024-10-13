@@ -68,7 +68,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "H"  "Track & Field.mra" "_Track & Field" "" "SPO"
    add "$dir" "H"  "Vendetta (World, 4 Players, ver. T).mra" "_Vendetta" "" "BEA"
    add "$dir" "H"  "Yie Ar Kung-Fu (program code I).mra" "_Yie Ar Kung-Fu" "" "ACT"
-#   add "$dir" "H"  "Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA).mra" "_Teenage Mutant Hero Turtles - Turtles in Time" "" "BEA
-#   add "$dir" "H"  "X-Men (4 Players ver EBA).mra" "_X-Men" "" "BEA"
+   add "$dir" "H"  "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra" "_Teenage Mutant Ninja Turtles" "" "BEA"
+   add "$dir" "H"  "X-Men (4 Players ver EBA).mra" "_X-Men" "" "BEA"
    dot
 fi
