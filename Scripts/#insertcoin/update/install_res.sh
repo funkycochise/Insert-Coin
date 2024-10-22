@@ -71,6 +71,10 @@ fi
 
 function getres {
 
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
 echo "Getting res /media/fat/Scripts/#insertcoin/res "
 
 if [ -d "$res" ] 
