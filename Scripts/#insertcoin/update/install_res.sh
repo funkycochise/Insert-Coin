@@ -108,10 +108,10 @@ then
       f=$(basename -- "$file")
       if [ -f "$file" ];
       then
-         if [ ! -f "$des_arcade/$f" ]; then
-            #echo -e "\rcopying $des_arcade/$f                                                   "
-            cp "$file" "$des_arcade/$f"
-         fi
+         #if [ ! -f "$des_arcade/$f" ]; then
+         #   #echo -e "\rcopying $des_arcade/$f                                                   "
+            cp -f "$file" "$des_arcade/$f"
+         #fi
       fi
    done
 
@@ -162,10 +162,10 @@ then
 
          for file in "$altdir/$dir"/*; do
             f=$(basename -- "$file")
-            if [ ! -f "$des_alt/$dir/$f" ]; then
-               #echo -e "\rcopying $des_alt/$dir/$f                                                   "
-               cp "$altdir/$dir/$f" "$des_alt/$dir/$f"
-            fi
+            #if [ ! -f "$des_alt/$dir/$f" ]; then
+            #   #echo -e "\rcopying $des_alt/$dir/$f                                                   "
+               cp -f "$altdir/$dir/$f" "$des_alt/$dir/$f"
+            #fi
          done
       fi
    done
