@@ -30,7 +30,8 @@ function linkfolder {
       ln -s "$ALT/$1"  "$outdir/$dir/_$formated$1"
    fi
 }
-
+#1024
+   add "Lifeforce (US).mra" "_Lifeforce"
 #1011
    add "X-Men (4 Players ver EBA).mra" "_X-Men"
 #0920
