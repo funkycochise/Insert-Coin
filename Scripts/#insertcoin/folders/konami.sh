@@ -51,6 +51,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "H"  "Iron Horse (Ver. K).mra" "_Iron Horse" "" "RNG"
    add "$dir" "H"  "Jailbreak.mra" "_JailBreak" "" "RNG"
    add "$dir" "H"  "Konami's Ping-Pong.mra" "_Konami's Ping-Pong" "" "SPO"
+   add "$dir" "H"  "Lifeforce (US).mra" "_Lifeforce" "" "STG"
    add "$dir" "H"  "M.I.A. - Missing in Action (version T).mra" "_M.I.A. - Missing in Action" "" "RNG"
    add "$dir" "H"  "Manhattan 24 Bunsyo (J).mra" "_JailBreak" "" "ACT"
    add "$dir" "H"  "Mr. Goemon.mra" "_Mr. Goemon" "" "ACT"
@@ -63,12 +64,12 @@ if [ "$res" == "1" ]; then
    add "$dir" "H"  "Splatter House (World, new version (SH3)).mra" "_Splatter House" "" "ACT"
    add "$dir" "H"  "Sunset Riders (4 Players ver EAC).mra" "_Sunset Riders" "" "BEA"
    add "$dir" "H"  "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra" "_Teenage Mutant Ninja Turtles" "" "BEA"
+   add "$dir" "H"  "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra" "_Teenage Mutant Ninja Turtles" "" "BEA"
    add "$dir" "H"  "The Simpsons (4 Players World, set 1).mra" "_The Simpsons" "" "BEA"
    add "$dir" "H"  "Thunder Cross (set 1).mra" "_Thunder Cross" "" "STG"
    add "$dir" "H"  "Track & Field.mra" "_Track & Field" "" "SPO"
    add "$dir" "H"  "Vendetta (World, 4 Players, ver. T).mra" "_Vendetta" "" "BEA"
-   add "$dir" "H"  "Yie Ar Kung-Fu (program code I).mra" "_Yie Ar Kung-Fu" "" "ACT"
-   add "$dir" "H"  "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra" "_Teenage Mutant Ninja Turtles" "" "BEA"
    add "$dir" "H"  "X-Men (4 Players ver EBA).mra" "_X-Men" "" "BEA"
+   add "$dir" "H"  "Yie Ar Kung-Fu (program code I).mra" "_Yie Ar Kung-Fu" "" "ACT"
    dot
 fi
