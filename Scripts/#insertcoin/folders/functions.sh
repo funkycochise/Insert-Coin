@@ -48,7 +48,7 @@ horz="__Horizontal"
 #get setup settings
 ini=/media/fat/Scripts/#insertcoin/setup.ini
 
-debug="1"
+debug="0"
 
 function loadsetup {
 
