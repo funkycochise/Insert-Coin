@@ -7,7 +7,7 @@ if [ "$res" == "1" ]; then
    dir="_Taito"
    outdir=$1
 
-   add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight"
+   add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"
    add "$dir" "V" "Arkanoid - Revenge of DOH (World).mra" "_Arkanoid II"
    add "$dir" "V" "Arkanoid (JP).mra" "_Arkanoid"
    add "$dir" "V" "Arkanoid (Unl. lives) [hb].mra" "_Arkanoid"
@@ -18,7 +18,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "V" "Crazy Balloon.mra" "_Crazy Balloon"
    add "$dir" "V" "Dr. Toppel's Adventure (World).mra" "_Dr. Toppel's Adventure"
    add "$dir" "V" "Extermination (World).mra" "_Extermination"
-   add "$dir" "V" "Kageki (World).mra" "_Kageki" "" "VSF"
+   add "$dir" "V" "Kageki (World).mra" "_Kageki" "" "BEA"
    add "$dir" "V" "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra" "" "STG"
    add "$dir" "V" "Lunar Rescue.mra" "_Lunar Rescue"
    add "$dir" "V" "Lupin III (Set 2).mra" "_Lupin III"
