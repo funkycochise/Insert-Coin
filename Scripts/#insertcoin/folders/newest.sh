@@ -30,6 +30,12 @@ function linkfolder {
       ln -s "$ALT/$1"  "$outdir/$dir/_$formated$1"
    fi
 }
+
+#1106
+   add "Bomber Man - Dyna Blaster.mra" "_Bomber Man"
+   add "Bomber Man World - New Dyna Blaster - Global Quest.mra" "_Bomber Man World"
+   add "Risky Challenge.mra" "_Risky Challenge"
+   
 #1024
    add "Lifeforce (US).mra" "_Lifeforce"
 #1011
