@@ -2,14 +2,14 @@
 source ./folders/functions.sh
 loadsetup
 
-res=$(exist "Air Assault (World).mra")
+res=$(exist "Bomber Man - Dyna Blaster.mra")
 if [ "$res" == "1" ]; then
-   dir="_Irem M107"
+   dir="_Irem M190"
    outdir=$1
 
-   add "$dir" "V" "Air Assault (World).mra" "_Air Assault" "" "STG"
-
-   add "$dir" "H" "Dream Soccer '94 (World, M107 hardware).mra" "_Dream Soccer '94 M107" "" "SPO"
+   add "$dir" "H" "Bomber Man - Dyna Blaster.mra" "_Bomber Man" "" "ACT"
+   add "$dir" "H" "Bomber Man World - New Dyna Blaster - Global Quest.mra" "_Bomber Man World" "" "ACT"
+   add "$dir" "H" "Risky Challenge.mra" "_Risky Challenge" "" "ACT"
    dot
 fi
 
