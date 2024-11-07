@@ -50,6 +50,7 @@ fi
 ./folders/irem.sh "$out"
 ./folders/irem62.sh "$out"
 ./folders/irem72.sh "$out"
+./folders/irem90.sh "$out"
 ./folders/irem92.sh "$out"
 ./folders/irem92t.sh "$out"
 ./folders/irem107.sh "$out"
