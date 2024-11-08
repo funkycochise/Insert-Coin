@@ -152,6 +152,10 @@ if [ -f "$CORE/NeoGeo-MVS_20220218.rbf" ]
 then
     rm -r "$CORE/NeoGeo-MVS_20220218.rbf"
 fi
+if [ -f "$CORE/IremM90_20241107.rbf" ] 
+then
+    find $CORE -maxdepth 1 -type f -name "IremM90_*" ! -name "IremM90_20241107.rbf" -delete
+fi
 if [ "$TERM" == "linux" ]; then
    #GUI
    echo -n -e "   "
