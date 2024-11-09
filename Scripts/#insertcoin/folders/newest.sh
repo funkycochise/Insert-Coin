@@ -34,6 +34,8 @@ function linkfolder {
 #1108
    add "Tehkan World Cup (set 1).mra" "_Tehkan World Cup"
    add "Gradius.mra" "_Gradius"
+   add "TwinBee.mra" "_TwinBee"
+   add "Galactic Warriors.mra" "_Galactic Warriors"
 
 #1106
    add "Bomber Man - Dyna Blaster.mra" "_Bomber Man"
