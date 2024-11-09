@@ -17,5 +17,6 @@ if [ "$res" == "1" ]; then
    add "$dir" "H" "Rygar.mra" "_Rygar" "" "ACT"
    add "$dir" "H" "Silkworm.mra" "_Silkworm" "" "STG"
    add "$dir" "H" "Solomon's Key.mra" "_Solomons Key" "" "PUZ"
+   add "$dir" "H" "Tehkan World Cup (set 1).mra" "_Tehkan World Cup" "" "SPO"
    dot
 fi
