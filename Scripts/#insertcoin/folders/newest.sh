@@ -31,6 +31,10 @@ function linkfolder {
    fi
 }
 
+#1108
+   add "Tehkan World Cup (set 1).mra" "_Tehkan World Cup"
+   add "Gradius.mra" "_Gradius"
+
 #1106
    add "Bomber Man - Dyna Blaster.mra" "_Bomber Man"
    add "Bomber Man World - New Dyna Blaster - Global Quest.mra" "_Bomber Man World"
