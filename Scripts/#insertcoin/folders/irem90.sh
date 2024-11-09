@@ -4,7 +4,7 @@ loadsetup
 
 res=$(exist "Bomber Man - Dyna Blaster.mra")
 if [ "$res" == "1" ]; then
-   dir="_Irem M190"
+   dir="_Irem M90"
    outdir=$1
 
    add "$dir" "H" "Bomber Man - Dyna Blaster.mra" "_Bomber Man" "" "ACT"
