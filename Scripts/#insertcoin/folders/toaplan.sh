@@ -18,7 +18,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "V" "Truxton II - Tatsujin Oh.mra" "_Truxton II" "" "STG"
    add "$dir" "V" "Vimana (Japan).mra" "_Vimana" "" "STG"
 
-   add "$dir" "H" "Demons World - Horror Story (Set 3).mra" "_Demon's World" "" "RNG"
+   add "$dir" "H" "Demon's World - Horror Story (Set 3).mra" "_Demon's World" "" "RNG"
    add "$dir" "H" "Hellfire (2P set).mra" "_Hellfire" "" "STG"
    add "$dir" "H" "Pipi & Bibis - Whoopee!! (Z80 sound cpu, set 1).mra" "_Pipi & Bibis" "" "ACT"
    add "$dir" "H" "Snow Bros. 2 - With New Elves - Otenki Paradise (Hanafram).mra" "_Snow Bros. 2"
