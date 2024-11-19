@@ -843,7 +843,7 @@ dl "hasamu.zip"
 dl "gridiron.zip"
 dl "tehkanwc.zip"
 dl "teedoff.zip"
-dl "riskchal.zip
+dl "riskchal.zip"
 
 dl "ffightae.zip"
 dl "ffightae_cps2_gfx.zip"
