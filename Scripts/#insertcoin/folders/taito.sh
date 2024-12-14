@@ -39,5 +39,11 @@ if [ "$res" == "1" ]; then
    add "$dir" "H" "Plump Pop (Japan).mra" "_Plump Pop"
    add "$dir" "H" "Rastan (World Rev 1).mra" "_Rastan" "" "ACT"
    add "$dir" "H" "The NewZealand Story (World, new version) (P0-043A PCB).mra" "_The NewZealand Story" "" "ACT"
+   add "$dir" "H" "Onna Sanshirou - Typhoon Gal.mra" "_Onna Sanshirou" "" "_Onna Sanshirou" "" "VSF"
+   add "$dir" "H" "Rumba Lumber.mra" "_Rumba Lumber" "" ""
+   add "$dir" "H" "The FairyLand Story.mra" "_The FairyLand Story" "" "ACT"
+   add "$dir" "H" "Victorious Nine.mra" "_Victorious Nine" "" "SPO"
+
+
    dot
 fi

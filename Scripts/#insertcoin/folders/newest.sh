@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#1214
+   add "The FairyLand Story.mra" "_The FairyLand Story"
+
 #1108
    add "Tehkan World Cup (set 1).mra" "_Tehkan World Cup"
    add "Gradius.mra" "_Gradius"
