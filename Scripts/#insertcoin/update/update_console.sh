@@ -256,16 +256,9 @@ function N64 {
       #fi
       rm -r ./$f
     elif [ "${target:0:3}" == "N64" ]; then
-      echo "N64: $target"
+      #echo "N64: $target"
       mv $f $CONSOLE/$target
       touch $CONSOLE/$target
-      #if [ -f "/media/fat/_Console/N64_20240322.rbf" ] 
-      #then
-      #  if [ -f "/media/fat/_Console/N64_20240323.rbf" ] 
-      #  then
-      #    mv "/media/fat/_Console/N64_20240323.rbf" "/media/fat/_Console/N64_Turbo_20240323.rbf"
-      #  fi
-      #fi
       if [ "${#target}" -lt 22 ]; then
          if [ "${target:0:3}" == "N64" ]; then
             find $CONSOLE -maxdepth 1 -type f -name "N64*" ! -name "$target" -delete
