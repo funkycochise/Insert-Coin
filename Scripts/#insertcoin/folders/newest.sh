@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0103
+   add "Shadow Warriors (World, set 1).mra" "_Shadow Warriors"
+
 #1214
    add "The FairyLand Story.mra" "_The FairyLand Story"
 
