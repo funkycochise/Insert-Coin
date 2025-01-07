@@ -47,7 +47,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "H"  "Aliens (World set 1).mra" "_Aliens" "" "BEA"
    add "$dir" "H"  "Combat School (joystick).mra" "_Combat School" "" "ACT"
    add "$dir" "H"  "Crime Fighters (World 2 players).mra" "_Crime Fighters"  "" "BEA"
-   add "$dir" "H"  "Gradius (Bubble System).mra" "_Gradius" "" "STG"
+   add "$dir" "H"  "Gradius.mra" "_Gradius" "" "STG"
    add "$dir" "H"  "Green Beret.mra" "_Green Beret" "" "RNG"
    add "$dir" "H"  "Haunted Castle (version M).mra" "_Haunted Castle" "" "ACT"
    add "$dir" "H"  "Hyper Sports.mra" "_Hyper Sports" "" "SPO"
