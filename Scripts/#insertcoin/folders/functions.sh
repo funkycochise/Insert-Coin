@@ -344,8 +344,14 @@ folder="$1"
             ln -s "$ALT/$sub" "$outdir/$folder/$dir/$renamed"
          fi
       else
-         if [ ! -d "$outdir/$folder/$renamed" ]; then
-            ln -s "$ALT/$sub" "$outdir/$folder/$renamed"
+         if [ -d "$ALT/$sub" ]; then
+            if [ ! -d "$outdir/$folder/$renamed" ]; then
+               ln -s "$ALT/$sub" "$outdir/$folder/$renamed"
+               if [ !  $? -eq 0 ]; then
+                  echo "ln5 FAIL"
+                  echo "ln -s \"$ALT/$sub\" \"$outdir/$folder/$renamed\""
+               fi
+            fi
          fi
       fi
 
