@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0117
+   add "Vulcan Venture (New).mra" "_Vulcan Venture"
+
 #0103
    add "Shadow Warriors (World, set 1).mra" "_Shadow Warriors"
 
