@@ -57,6 +57,10 @@ fi
 
 start_time=$SECONDS
 
+if test -f "./update/key.sh"; then
+   ./update/key.sh
+fi
+
 
 ./update/create_menu.sh $launchdir "$targetfolder" $COL
 
