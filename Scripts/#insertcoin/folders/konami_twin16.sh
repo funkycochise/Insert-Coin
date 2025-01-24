@@ -6,7 +6,7 @@ res=$(exist "The Final Round (version M).mra")
 if [ "$res" == "1" ]; then
    dir="_Konami Twin16"
    outdir=$1
-   #rep "$dir" "H" "_Cue Brick" "_Cue Brick" "" "PUZ"
+   rep "$dir" "H" "_Cuebrick" "_Cuebrick" "" "PUZ"
    add "$dir" "H"  "M.I.A. - Missing in Action (version T).mra" "_M.I.A. - Missing in Action" "" "RNG"
    add "$dir" "H" "Devil World.mra" "_Devil World" "" "RNG"
    add "$dir" "H" "Shadow Warriors (World, set 1).mra" "_Shadow Warriors" "" "BEA"
