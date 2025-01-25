@@ -170,6 +170,33 @@ then
       fi
    done
 
+   #echo "games"
+   for file in $games/*; do
+      #echo "$file"
+      dir=$(basename -- "$file")
+      if [ -d "$file" ];
+      then
+         #echo "Games : $dir"
+         if [ ! -d "$des_games/$dir" ];
+         then
+            #echo "Creating : $des_games/$dir"
+            mkdir "$des_games/$dir"
+            if [ -d "$des_games/$dir" ];
+            then
+               echo "$des_games/$dir"
+            fi
+         fi
+         for file in "$games/$dir"/*; do
+            f=$(basename -- "$file")
+            #echo "File $f"
+            if [ ! -f "$des_games/$dir/$f" ]; then
+               echo -e "$games/$dir/$f                                                   "
+               cp -f "$games/$dir/$f" "$des_games/$dir/$f"
+            fi
+         done
+      fi
+   done
+
    #removing res dir
    #rm -r "$res"
 fi
@@ -200,3 +227,8 @@ if [ ! "$setup_res" == "NON" ]; then
    installres
    cleanneomra
 fi
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
+echo -e "${GREEN}${CHECK}${NC} Completed"
