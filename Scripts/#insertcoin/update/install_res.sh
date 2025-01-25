@@ -88,7 +88,10 @@ fi
       
 curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output $temp/res.zip >/dev/null
 unzip -qq $temp/res.zip -d $res
+curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output $temp/res2.zip >/dev/null
+unzip -qq $temp/res2.zip -d $res
 rm -r $temp/res.zip
+rm -r $temp/res2.zip
 
 }
 
