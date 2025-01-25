@@ -88,7 +88,7 @@ fi
       
 curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output $temp/res.zip >/dev/null
 unzip -qq $temp/res.zip -d $res
-curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output $temp/res2.zip >/dev/null
+curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res2.zip -O -k -s --output $temp/res2.zip >/dev/null
 unzip -qq $temp/res2.zip -d $res
 rm -r $temp/res.zip
 rm -r $temp/res2.zip
@@ -136,7 +136,7 @@ then
    f=$(basename -- "$file")
    if [ ! -f "$des_config/$f" ];
    then
-      #echo -e "\rcopying $des_config/$f                                                   "
+      #echo -e "$des_config/$f                                                   "
       cp "$file" "$des_config/$f"
    fi
    done
@@ -184,24 +184,25 @@ then
          then
             #echo "Creating : $des_games/$dir"
             mkdir "$des_games/$dir"
-            if [ -d "$des_games/$dir" ];
-            then
-               echo "$des_games/$dir"
-            fi
+            #if [ -d "$des_games/$dir" ];
+            #then
+            #   echo "$des_games/$dir"
+            #fi
          fi
          for file in "$games/$dir"/*; do
             f=$(basename -- "$file")
             #echo "File $f"
             if [ ! -f "$des_games/$dir/$f" ]; then
-               echo -e "$games/$dir/$f                                                   "
+               #echo -e "$games/$dir/$f                                                   "
                cp -f "$games/$dir/$f" "$des_games/$dir/$f"
+               touch "$des_games/$dir/$f"
             fi
          done
       fi
    done
 
    #removing res dir
-   #rm -r "$res"
+   rm -r "$res"
 fi
 #echo -e "${GREEN}${CHECK}${NC} Completed"
 }
