@@ -8,7 +8,7 @@ function Jaguar {
   #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Jaguar.zip --quiet
   unzip -qq /media/fat/Scripts/temp/Jaguar.zip -d /media/fat/Scripts/temp
   rm -r /media/fat/Scripts/temp/Jaguar.zip
-  rm -r /media/fat/_Console/Jaguar*
+  rm -r /media/fat/_Console/Jaguar* >/dev/null
   cd /media/fat/Scripts/temp
   installed="0"
   for f in $(ls ./*.rbf)
