@@ -7,8 +7,15 @@ function Jaguar {
   curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Jaguar.zip -O -k -s --output /media/fat/Scripts/temp/Jaguar.zip
   #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Jaguar.zip --quiet
   unzip -qq /media/fat/Scripts/temp/Jaguar.zip -d /media/fat/Scripts/temp
-  rm -r /media/fat/Scripts/temp/Jaguar.zip
-  rm -r /media/fat/_Console/Jaguar* >/dev/null
+  rm -r /media/fat/Scripts/temp/Jaguar.zip 
+
+  #echo "remove previous jaguar cores"
+  for f in $(ls /media/fat/_Console/Jaguar*.rbf )
+  do
+     #echo "file $f"
+     rm -r $f
+  done
+
   cd /media/fat/Scripts/temp
   installed="0"
   for f in $(ls ./*.rbf)
