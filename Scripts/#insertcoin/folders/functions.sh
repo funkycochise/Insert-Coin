@@ -52,11 +52,6 @@ debug="0"
 
 function loadsetup {
 
-source <(grep root_symlink $ini)
-root_symlink=${root_symlink:0:1}
-if [ "$debug" == "1" ]; then
-   echo "root_symlink: $root_symlink" >> /media/fat/Scripts/#insertcoin/out.txt
-fi
 
 source <(grep manufacturer_subfolder $ini)
 manufacturer_subfolder=${manufacturer_subfolder:0:1}
@@ -170,6 +165,9 @@ neogeo=${neogeo:0:1}
 source <(grep n64 $ini)
 n64=${n64:0:1}
 #echo "n64: $n64"
+source <(grep jaguar $ini)
+jaguar=${jaguar:0:1}
+#echo "jaguar: $jaguar"
 source <(grep folder_name $ini)
 #echo "folder_name: $folder_name"
 folder_name=${folder_name:0:${#folder_name}}
