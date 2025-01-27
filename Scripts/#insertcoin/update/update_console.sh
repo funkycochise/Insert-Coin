@@ -3,6 +3,69 @@ source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 loadsetup
 
+function Jaguar {
+  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Jaguar.zip -O -k -s --output /media/fat/Scripts/temp/Jaguar.zip
+  #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Jaguar.zip --quiet
+  unzip -qq /media/fat/Scripts/temp/Jaguar.zip -d /media/fat/Scripts/temp
+  rm -r /media/fat/Scripts/temp/Jaguar.zip
+  rm -r /media/fat/_Console/Jaguar*
+  cd /media/fat/Scripts/temp
+  installed="0"
+  for f in $(ls ./*.rbf)
+  do
+    #echo "file: $f"
+    if [ "$dualsdram" == "0" ]; then
+      if [ ! "${f:2:4}" == "Dual" ]; then
+        target="${f:2:${#f}}"
+        #echo "target: $target"
+        target=$f
+        mv $f $CONSOLE/$target
+        touch $CONSOLE/$target >/dev/null
+        installed="1"
+      fi
+    elif [ "$dualsdram" == "1" ]; then
+      if [ "${f:2:4}" == "Dual" ]; then
+        #echo "Dual sdram"
+        target="Jaguar_Dual${f:13:${#f}}"
+        echo "target: $target"
+        mv $f $CONSOLE/$target
+        touch $CONSOLE/$target >/dev/null
+        installed="1"
+      fi
+
+    elif [ "$dualsdram" == "2" ]; then
+      #echo "Both core for SDRAM"
+      #echo "source: $f"
+      if [ "${f:2:4}" == "Dual" ]; then
+        target="Jaguar_Dual${f:13:${#f}}"
+        echo "target: $target"
+        mv $f $CONSOLE/$target
+        touch $CONSOLE/$target >/dev/null
+        installed="1"
+      else
+        target="${f:2:${#f}}"
+        #echo "target: $target"
+        target=$f
+        mv $f $CONSOLE/$target
+        touch $CONSOLE/$target >/dev/null
+        installed="1"
+      fi
+    fi
+    #clean any file left
+    if test -f "./$f"; then
+      rm -r ./$f
+    fi
+  done
+  if [ "$installed" == "1" ]; then
+     if [ "$TERM" == "linux" ]; then
+        #GUI
+        echo -n -e "   "
+     fi
+     echo -e "${BLUE}${CHECK}${NC} Jaguar"
+  fi
+}
+
+
 function PSX {
   curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/PSX.zip -O -k -s --output /media/fat/Scripts/temp/PSX.zip
   #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/PSX.zip --quiet
@@ -310,9 +373,11 @@ fi
 if [ "$neogeo" == "1" ]; then
   NeoGeo
 fi
-#as N64 is now official, I suspend its update through insert coin
 if [ "$n64" == "1" ]; then
   N64
+fi
+if [ "$jaguar" == "1" ]; then
+  Jaguar
 fi
 
 if [ "$TERM" == "linux" ]; then
