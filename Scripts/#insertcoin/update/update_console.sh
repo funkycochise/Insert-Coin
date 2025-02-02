@@ -78,7 +78,12 @@ function PSX {
   #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/PSX.zip --quiet
   unzip -qq /media/fat/Scripts/temp/PSX.zip -d /media/fat/Scripts/temp
   rm -r /media/fat/Scripts/temp/PSX.zip
-  rm -r /media/fat/_Console/PSX*
+  #echo "remove previous PSX cores"
+  for f in $(ls /media/fat/_Console/PSX*.rbf )
+  do
+     #echo "file $f"
+     rm -r $f
+  done
   cd /media/fat/Scripts/temp
   installed="0"
   for f in $(ls ./*.rbf)
@@ -142,7 +147,12 @@ function Saturn {
   #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Saturn.zip --quiet
   unzip -qq /media/fat/Scripts/temp/Saturn.zip -d /media/fat/Scripts/temp
   rm -r /media/fat/Scripts/temp/Saturn.zip
-  rm -r /media/fat/_Console/Saturn*
+ #echo "remove previous Saturn cores"
+  for f in $(ls /media/fat/_Console/Saturn*.rbf )
+  do
+     #echo "file $f"
+     rm -r $f
+  done
   cd /media/fat/Scripts/temp
   installed="0"
   for f in $(ls ./*.rbf)
