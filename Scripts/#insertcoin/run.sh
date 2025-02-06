@@ -93,15 +93,19 @@ fi
 
 sh ./update/post.sh
 
-if [ "$main_mister" == "1" ]; then
-   ./update/update_main_mister.sh
-   reboot
-fi
 
 #echo -n -e "Creation process completed in $elapsed sec.\n"
 
 #if test -f "/media/fat/Scripts/#insertcoin/out.txt"; 
 #then
+#   echo "Not found mras :"
 #   cat /media/fat/Scripts/#insertcoin/out.txt
 #fi
+echo "Updated _Console cores :"
+find /media/fat/_Console/*.rbf  -mtime 0 -printf '%p\n' 2>/dev/null | sort -r | more
 
+if [ "$main_mister" == "1" ]; then
+   ./update/update_main_mister.sh
+   reboot
+   #echo "main Mister"
+fi
