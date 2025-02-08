@@ -44,6 +44,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "H" "The FairyLand Story.mra" "_The FairyLand Story" "" "ACT"
    add "$dir" "H" "Victorious Nine.mra" "_Victorious Nine" "" "SPO"
 
+   add "$dir" "H" "Onna Sanshirou - Typhoon Gal.mra" "_Onna Sanshirou" "" "VSF"
 
    dot
 fi

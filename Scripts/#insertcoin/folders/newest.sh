@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0208
+   add "Onna Sanshirou - Typhoon Gal.mra" "_Onna Sanshirou"
+
 #0124
    add "The Combatribes (US, Rev 2, Set 1).mra" "_The Combatribes"
    add "Double Dragon 3 The Rosetta Stone (US).mra" "_Double Dragon 3 The Rosetta Stone"
