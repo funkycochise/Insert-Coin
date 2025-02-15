@@ -168,6 +168,9 @@ n64=${n64:0:1}
 source <(grep jaguar $ini)
 jaguar=${jaguar:0:1}
 #echo "jaguar: $jaguar"
+source <(grep cdi $ini)
+cdi=${cdi:0:1}
+#echo "cdi: $cdi"
 source <(grep folder_name $ini)
 #echo "folder_name: $folder_name"
 folder_name=${folder_name:0:${#folder_name}}
