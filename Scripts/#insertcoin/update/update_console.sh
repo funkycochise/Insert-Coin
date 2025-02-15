@@ -3,6 +3,45 @@ source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 loadsetup
 
+function CDi {
+  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/CDi.zip -O -k -s --output /media/fat/Scripts/temp/CDi.zip
+  #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/CDi.zip --quiet
+  unzip -qq /media/fat/Scripts/temp/CDi.zip -d /media/fat/Scripts/temp
+  rm -r /media/fat/Scripts/temp/CDi.zip 
+
+  #echo "remove previous jaguar cores"
+  for f in $(ls /media/fat/_Console/CDi*.rbf )
+  do
+     #echo "file $f"
+     rm -r $f
+  done
+
+  cd /media/fat/Scripts/temp
+  installed="0"
+  for f in $(ls ./*.rbf)
+  do
+    #echo "file: $f"
+    target="${f:2:${#f}}"
+    #echo "target: $target"
+    target=$f
+    mv $f $CONSOLE/$target
+    touch $CONSOLE/$target >/dev/null
+    installed="1"
+    #clean any file left
+    if test -f "./$f"; then
+      rm -r ./$f
+    fi
+  done
+  if [ "$installed" == "1" ]; then
+     if [ "$TERM" == "linux" ]; then
+        #GUI
+        echo -n -e "   "
+     fi
+     echo -e "${BLUE}${CHECK}${NC} CDi"
+  fi
+}
+
+
 function Jaguar {
   curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Jaguar.zip -O -k -s --output /media/fat/Scripts/temp/Jaguar.zip
   #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Jaguar.zip --quiet
@@ -395,6 +434,9 @@ if [ "$n64" == "1" ]; then
 fi
 if [ "$jaguar" == "1" ]; then
   Jaguar
+fi
+if [ "$cdi" == "1" ]; then
+  CDi
 fi
 
 if [ "$TERM" == "linux" ]; then
