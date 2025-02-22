@@ -1,10 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
+loadsetup "force"
 
 res=$(exist "Shienryu (JUET 961226 V1.000).mra")
 if [ "$res" == "1" ]; then
-	dir="_Sega-STV"
+	dir="_Sega-Titan Video"
 	outdir=$1
 
 	add "$dir" "V" "Shienryu (JUET 961226 V1.000).mra" "_Shienryu" "" "STG"
@@ -69,5 +69,6 @@ if [ "$res" == "1" ]; then
 	add "$dir" "H" "Virtual Mahjong 2 - My Fair Lady (J 980608 V1.000).mra" "_Virtual Mahjong 2 - My Fair Lady"
 	add "$dir" "H" "Winter Heat (JUET 971012 V1.000).mra" "_Winter Heat"
 	add "$dir" "H" "Zen Nippon Pro-Wrestling Featuring Virtua (J 971123 V1.000).mra" "_Zen Nippon Pro-Wrestling Featuring Virtua"
+
 	dot
 fi

@@ -52,6 +52,7 @@ debug="0"
 
 function loadsetup {
 
+forcemode=$1
 
 source <(grep manufacturer_subfolder $ini)
 manufacturer_subfolder=${manufacturer_subfolder:0:1}
@@ -203,6 +204,22 @@ then
 fi
 }
 
+function remove {
+
+dir="$1"
+orientation="$2"
+mra="$3"
+sub="$4"
+renamed="$5"
+genre="$6"
+
+if ! [ -z "$sub" ];
+then
+   rm -r "$ALT/$sub"
+fi
+
+}
+
 function add {
 
 dir="$1"
@@ -218,6 +235,7 @@ genre="$6"
 #echo "mra: $mra"
 #echo "sub: $sub"
 #echo "renamed: $renamed"
+
 
 if [ -z "$sub" ];
 then
@@ -260,6 +278,11 @@ then
       mkdir "$ALT/$sub"
    fi
    #echo "Creating $ALT/$sub/$mra"
+
+   if [ "$forcemode" == "force" ] && [  -f "$ALT/$sub/$mra" ]; then
+      #echo "removing $ALT/$sub/$mra"
+      rm -r "$ALT/$sub/$mra"
+   fi
    if [ ! -f "$ALT/$sub/$mra" ];
    then
       ln -s "$ARCADE/$mra" "$ALT/$sub/$mra"

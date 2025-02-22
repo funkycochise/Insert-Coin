@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0222
+   add "Victorious Nine.mra" "_Victorious Nine"
+
 #0208
    add "Onna Sanshirou - Typhoon Gal.mra" "_Onna Sanshirou"
 
