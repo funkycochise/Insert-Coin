@@ -192,10 +192,27 @@ function Saturn {
      #echo "file $f"
      rm -r $f
   done
+  stv="0"
+  for f in $(ls $CORE/Saturn*.rbf )
+  do
+     #echo "file $f"
+     rm -r $f
+     stv="1"
+  done
+
   cd /media/fat/Scripts/temp
   installed="0"
   for f in $(ls ./*.rbf)
   do
+    if [ "$stv" == "1" ]; then
+      if [ ! "${f:2:4}" == "Dual" ]; then
+        target="${f:2:${#f}}"
+        #echo "target: $target"
+        target=$f
+        cp $f $CORE/$target
+        touch $CORE/$target >/dev/null
+      fi
+    fi
     if [ "$dualsdram" == "0" ]; then
       if [ ! "${f:2:4}" == "Dual" ]; then
         target="${f:2:${#f}}"
