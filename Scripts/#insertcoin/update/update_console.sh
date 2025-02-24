@@ -204,10 +204,10 @@ function Saturn {
   installed="0"
   for f in $(ls ./*.rbf)
   do
-    echo "f : $f"
+    #echo "f : $f"
     if [ "${f:2:3}" == "STV" ]; then
        target="Saturn_STV${f:12:${#f}}"
-       echo "target : $target"
+       #echo "target : $target"
        if [ "$stv" == "1" ]; then
           echo "stv detected"
           mv $f $CORE/$target
