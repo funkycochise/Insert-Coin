@@ -193,7 +193,7 @@ function Saturn {
      rm -r $f
   done
   stv="0"
-  for f in $(ls $CORE/Saturn*.rbf )
+  for f in $(ls $CORE/Saturn_*.rbf )
   do
      #echo "file $f"
      rm -r $f
@@ -204,51 +204,52 @@ function Saturn {
   installed="0"
   for f in $(ls ./*.rbf)
   do
-    if [ "$stv" == "1" ]; then
-      if [ ! "${f:2:4}" == "Dual" ]; then
-        target="${f:2:${#f}}"
-        #echo "target: $target"
-        target=$f
-        cp $f $CORE/$target
-        touch $CORE/$target >/dev/null
-      fi
+    echo "f : $f"
+    if [ "${f:2:3}" == "STV" ]; then
+       target="Saturn_STV${f:12:${#f}}"
+       echo "target : $target"
+       if [ "$stv" == "1" ]; then
+          echo "stv detected"
+          mv $f $CORE/$target
+          touch $CORE/$target >/dev/null
+          installed="1"
+       fi
     fi
     if [ "$dualsdram" == "0" ]; then
-      if [ ! "${f:2:4}" == "Dual" ]; then
-        target="${f:2:${#f}}"
-        #echo "target: $target"
-        target=$f
-        mv $f $CONSOLE/$target
-        touch $CONSOLE/$target >/dev/null
-        installed="1"
-      fi
+       if [ ! "${f:2:4}" == "Dual" ] && [ ! "${f:2:3}" == "STV" ]; then
+          target="${f:2:${#f}}"
+          #echo "target: $target"
+          target=$f
+          mv $f $CONSOLE/$target
+          touch $CONSOLE/$target >/dev/null
+          installed="1"
+       fi
     elif [ "$dualsdram" == "1" ]; then
-      if [ "${f:2:4}" == "Dual" ]; then
-        #echo "Dual sdram"
-        target="Saturn_Dual${f:13:${#f}}"
-        #echo "target: $target"
-        mv $f $CONSOLE/$target
-        touch $CONSOLE/$target >/dev/null
-        installed="1"
-      fi
-
+       if [ "${f:2:4}" == "Dual" ] && [ ! "${f:2:3}" == "STV" ]; then
+          #echo "Dual sdram"
+          target="Saturn_Dual${f:13:${#f}}"
+          #echo "target: $target"
+          mv $f $CONSOLE/$target
+          touch $CONSOLE/$target >/dev/null
+          installed="1"
+       fi
     elif [ "$dualsdram" == "2" ]; then
-      #echo "Both core for SDRAM"
-      #echo "source: $f"
-      if [ "${f:2:4}" == "Dual" ]; then
-        target="Saturn_Dual${f:13:${#f}}"
-        #echo "target: $target"
-        mv $f $CONSOLE/$target
-        touch $CONSOLE/$target >/dev/null
-        installed="1"
-      else
-        target="${f:2:${#f}}"
-        #echo "target: $target"
-        target=$f
-        mv $f $CONSOLE/$target
-        touch $CONSOLE/$target >/dev/null
-        installed="1"
-      fi
+       #echo "Both core for SDRAM"
+       #echo "source: $f"
+       if [ "${f:2:4}" == "Dual" ] && [ ! "${f:2:3}" == "STV" ]; then
+          target="Saturn_Dual${f:13:${#f}}"
+          #echo "target: $target"
+          mv $f $CONSOLE/$target
+          touch $CONSOLE/$target >/dev/null
+          installed="1"
+       else
+          target="${f:2:${#f}}"
+          #echo "target: $target"
+          target=$f
+          mv $f $CONSOLE/$target
+          touch $CONSOLE/$target >/dev/null
+          installed="1"
+       fi
     fi
     #clean any file left
     if test -f "./$f"; then
