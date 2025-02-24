@@ -209,7 +209,7 @@ function Saturn {
        target="Saturn_STV${f:12:${#f}}"
        #echo "target : $target"
        if [ "$stv" == "1" ]; then
-          echo "stv detected"
+          #echo "stv detected"
           mv $f $CORE/$target
           touch $CORE/$target >/dev/null
           installed="1"
