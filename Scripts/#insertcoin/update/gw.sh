@@ -16,9 +16,6 @@ function identify_folder {
 if [ "$setup_gw" == "USB" ]; then
    des_games=$USB/games
    target=$des_games/"Game and Watch"/
-elif [ "$setup_gw" == "CIF" ]; then
-   des_games=$CIFS/games
-   target=$des_games/"Game and Watch"/
 else
    des_games=$SD/games
    target=$des_games/"Game and Watch"/
