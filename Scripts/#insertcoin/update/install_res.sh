@@ -29,13 +29,6 @@ if [ "$setup_res" == "USB" ]; then
   des_core=$des_arcade/cores
   des_alt=$des_arcade/_alternatives
   des_config=$USB/config
-elif [ "$setup_res" == "CIF" ]; then
-  des_games=$CIFS/games
-  des_mame=$des_games/mame
-  des_arcade=$CIFS/_Arcade
-  des_core=$des_arcade/cores
-  des_alt=$des_arcade/_alternatives
-  des_config=$SD/config
 else
   des_games=$SD/games
   des_mame=$des_games/mame
