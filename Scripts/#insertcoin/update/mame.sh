@@ -17,9 +17,6 @@ function identify_folder {
 if [ "$setup_mame" == "USB" ]; then
    des_games=$USB/games
    des_mame=$des_games/mame
-elif [ "$setup_mame" == "CIF" ]; then
-   des_games=$CIFS/games
-   des_mame=$des_games/mame
 else
    des_games=$SD/games
    des_mame=$des_games/mame
