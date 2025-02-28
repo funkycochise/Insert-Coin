@@ -73,7 +73,7 @@ function Jaguar {
       if [ "${f:2:4}" == "Dual" ]; then
         #echo "Dual sdram"
         target="Jaguar_Dual${f:13:${#f}}"
-        echo "target: $target"
+        #echo "target: $target"
         mv $f $CONSOLE/$target
         touch $CONSOLE/$target >/dev/null
         installed="1"
@@ -84,7 +84,7 @@ function Jaguar {
       #echo "source: $f"
       if [ "${f:2:4}" == "Dual" ]; then
         target="Jaguar_Dual${f:13:${#f}}"
-        echo "target: $target"
+        #echo "target: $target"
         mv $f $CONSOLE/$target
         touch $CONSOLE/$target >/dev/null
         installed="1"
@@ -127,6 +127,7 @@ function PSX {
   installed="0"
   for f in $(ls ./*.rbf)
   do
+    #echo "$f"
     if [ "$dualsdram" == "0" ]; then
       if [ ! "${f:2:4}" == "Dual" ]; then
         target="${f:2:${#f}}"
@@ -187,9 +188,9 @@ function Saturn {
   unzip -qq /media/fat/Scripts/temp/Saturn.zip -d /media/fat/Scripts/temp
   rm -r /media/fat/Scripts/temp/Saturn.zip
  #echo "remove previous Saturn cores"
-  for f in $(ls /media/fat/_Console/Saturn*.rbf )
+  for f in $(ls $CONSOLE/Saturn*.rbf )
   do
-     #echo "file $f"
+     #echo "rm $f"
      rm -r $f
   done
   stv="0"
@@ -204,57 +205,33 @@ function Saturn {
   installed="0"
   for f in $(ls ./*.rbf)
   do
-    #echo "f : $f"
-    if [ "${f:2:3}" == "STV" ]; then
+    #echo "found : $f"
+    if [ "${f:2:3}" == "STV" ];  then
        target="Saturn_STV${f:12:${#f}}"
-       #echo "target : $target"
        if [ "$stv" == "1" ]; then
-          #echo "stv detected"
-          mv $f $CORE/$target
+          #echo "move to $CORE/$target"
+          cp $f $CORE/$target
           touch $CORE/$target >/dev/null
-          installed="1"
        fi
-    fi
-    if [ "$dualsdram" == "0" ]; then
-       if [ ! "${f:2:4}" == "Dual" ] && [ ! "${f:2:3}" == "STV" ]; then
+    elif [ "${f:2:6}" == "Saturn" ];  then
+       if [ "$dualsdram" == "0" ] || [ "$dualsdram" == "2" ]; then
           target="${f:2:${#f}}"
-          #echo "target: $target"
-          target=$f
-          mv $f $CONSOLE/$target
+          #echo "move to $CONSOLE/$target"
+          cp $f $CONSOLE/$target
           touch $CONSOLE/$target >/dev/null
           installed="1"
        fi
-    elif [ "$dualsdram" == "1" ]; then
-       if [ "${f:2:4}" == "Dual" ] && [ ! "${f:2:3}" == "STV" ]; then
-          #echo "Dual sdram"
+    elif [ "${f:2:4}" == "Dual" ];  then
+       #echo "$dualsdram"
+       if [ "$dualsdram" == "1" ] || [ "$dualsdram" == "2" ]; then
           target="Saturn_Dual${f:13:${#f}}"
-          #echo "target: $target"
-          mv $f $CONSOLE/$target
-          touch $CONSOLE/$target >/dev/null
-          installed="1"
-       fi
-    elif [ "$dualsdram" == "2" ]; then
-       #echo "Both core for SDRAM"
-       #echo "source: $f"
-       if [ "${f:2:4}" == "Dual" ] && [ ! "${f:2:3}" == "STV" ]; then
-          target="Saturn_Dual${f:13:${#f}}"
-          #echo "target: $target"
-          mv $f $CONSOLE/$target
-          touch $CONSOLE/$target >/dev/null
-          installed="1"
-       else
-          target="${f:2:${#f}}"
-          #echo "target: $target"
-          target=$f
-          mv $f $CONSOLE/$target
+          #echo "move to $CONSOLE/$target"
+          cp $f $CONSOLE/$target
           touch $CONSOLE/$target >/dev/null
           installed="1"
        fi
     fi
-    #clean any file left
-    if test -f "./$f"; then
-      rm -r ./$f
-    fi
+    rm -r $f
   done
   if [ "$installed" == "1" ]; then
      if [ "$TERM" == "linux" ]; then
