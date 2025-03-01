@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0301
+   add "N.Y. Captor.mra" "_N.Y. Captor"
+
 #0222
    add "Victorious Nine.mra" "_Victorious Nine"
 

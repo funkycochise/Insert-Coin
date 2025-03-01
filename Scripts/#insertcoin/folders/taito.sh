@@ -43,6 +43,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "H" "The FairyLand Story.mra" "_The FairyLand Story" "" "ACT"
    add "$dir" "H" "The NewZealand Story (World, new version) (P0-043A PCB).mra" "_The NewZealand Story" "" "ACT"
    add "$dir" "H" "Victorious Nine.mra" "_Victorious Nine" "" "SPO"
+   add "$dir" "H" "N.Y. Captor.mra" "_N.Y. Captor"
 
    dot
 fi
