@@ -60,47 +60,25 @@ function Jaguar {
   for f in $(ls ./*.rbf)
   do
     #echo "file: $f"
-    if [ "$dualsdram" == "0" ]; then
-      if [ ! "${f:2:4}" == "Dual" ]; then
-        target="${f:2:${#f}}"
-        #echo "target: $target"
-        target=$f
-        mv $f $CONSOLE/$target
-        touch $CONSOLE/$target >/dev/null
-        installed="1"
-      fi
-    elif [ "$dualsdram" == "1" ]; then
-      if [ "${f:2:4}" == "Dual" ]; then
-        #echo "Dual sdram"
-        target="Jaguar_Dual${f:13:${#f}}"
-        #echo "target: $target"
-        mv $f $CONSOLE/$target
-        touch $CONSOLE/$target >/dev/null
-        installed="1"
-      fi
-
-    elif [ "$dualsdram" == "2" ]; then
-      #echo "Both core for SDRAM"
-      #echo "source: $f"
-      if [ "${f:2:4}" == "Dual" ]; then
-        target="Jaguar_Dual${f:13:${#f}}"
-        #echo "target: $target"
-        mv $f $CONSOLE/$target
-        touch $CONSOLE/$target >/dev/null
-        installed="1"
-      else
-        target="${f:2:${#f}}"
-        #echo "target: $target"
-        target=$f
-        mv $f $CONSOLE/$target
-        touch $CONSOLE/$target >/dev/null
-        installed="1"
-      fi
+    if [ "${f:2:6}" == "Jaguar" ];  then
+       if [ "$dualsdram" == "0" ] || [ "$dualsdram" == "2" ]; then
+          target="${f:2:${#f}}"
+          #echo "move to $CONSOLE/$target"
+          cp $f $CONSOLE/$target
+          touch $CONSOLE/$target >/dev/null
+          installed="1"
+       fi
+    elif [ "${f:2:4}" == "Dual" ];  then
+       #echo "$dualsdram"
+       if [ "$dualsdram" == "1" ] || [ "$dualsdram" == "2" ]; then
+          target="Jaguar_Dual${f:13:${#f}}"
+          #echo "move to $CONSOLE/$target"
+          cp $f $CONSOLE/$target
+          touch $CONSOLE/$target >/dev/null
+          installed="1"
+       fi
     fi
-    #clean any file left
-    if test -f "./$f"; then
-      rm -r ./$f
-    fi
+    rm -r $f
   done
   if [ "$installed" == "1" ]; then
      if [ "$TERM" == "linux" ]; then
@@ -127,51 +105,25 @@ function PSX {
   installed="0"
   for f in $(ls ./*.rbf)
   do
-    #echo "$f"
-    if [ "$dualsdram" == "0" ]; then
-      if [ ! "${f:2:4}" == "Dual" ]; then
-        target="${f:2:${#f}}"
-        #echo "target: $target"
-        #ls /media/fat/Scripts/temp/$target
-        mv /media/fat/Scripts/temp/$target /media/fat/_Console/$target
-        touch /media/fat/_Console/$target >/dev/null
-        installed="1"
-      fi
-    elif [ "$dualsdram" == "1" ]; then
-      if [ "${f:2:4}" == "Dual" ]; then
-        target="PSX_Dual${f:10:${#f}}"
-        #echo "target: $target"
-        mv $f /media/fat/Scripts/temp/$target
-        #ls /media/fat/Scripts/temp/$target
-        mv /media/fat/Scripts/temp/$target /media/fat/_Console/$target
-        touch /media/fat/_Console/$target >/dev/null
-        installed="1"
-      fi
-    elif [ "$dualsdram" == "2" ]; then
-      #echo "Both core for SDRAM"
-      #echo "source: $f"
-      if [ "${f:2:4}" == "Dual" ]; then
-        target="PSX_Dual${f:10:${#f}}"
-        #echo "target: $target"
-        mv $f /media/fat/Scripts/temp/$target
-        #ls /media/fat/Scripts/temp/$target
-        mv /media/fat/Scripts/temp/$target /media/fat/_Console/$target
-        touch /media/fat/_Console/$target >/dev/null
-        installed="1"
-      else
-        target="${f:2:${#f}}"
-        #echo "target: $target"
-        #ls /media/fat/Scripts/temp/$target
-        mv /media/fat/Scripts/temp/$target /media/fat/_Console/$target
-        touch /media/fat/_Console/$target >/dev/null
-        installed="1"
-      fi
+    if [ "${f:2:3}" == "PSX" ];  then
+       if [ "$dualsdram" == "0" ] || [ "$dualsdram" == "2" ]; then
+          target="${f:2:${#f}}"
+          #echo "move to $CONSOLE/$target"
+          cp $f $CONSOLE/$target
+          touch $CONSOLE/$target >/dev/null
+          installed="1"
+       fi
+    elif [ "${f:2:4}" == "Dual" ];  then
+       #echo "$dualsdram"
+       if [ "$dualsdram" == "1" ] || [ "$dualsdram" == "2" ]; then
+          target="PSX_Dual${f:13:${#f}}"
+          #echo "move to $CONSOLE/$target"
+          cp $f $CONSOLE/$target
+          touch $CONSOLE/$target >/dev/null
+          installed="1"
+       fi
     fi
-
-    #clean any file left
-    if test -f "./$f"; then
-      rm -r ./$f
-    fi
+    rm -r $f
   done
   if [ "$installed" == "1" ]; then
      if [ "$TERM" == "linux" ]; then
