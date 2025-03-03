@@ -37,22 +37,6 @@ then run update_all_insertcoin
 if you want to install custom main mister, run
 <br>
 `Scripts/#insertcoin/main_mister/install.sh`
-<br>
-<br>
-if you change your mind run 
-<br>
-`Scripts/#insertcoin/main_mister/uninstall.sh`
-<br>
-<br>
-if you want to install latest console core version, run
-<br>
-`Scripts/#insertcoin/console/install.sh`
-<br>
-<br>
-to uninstall run 
-<br>
-`Scripts/#insertcoin/console/uninstall.sh`
-<br>
 
 
 
