@@ -33,11 +33,9 @@ In downloader.ini add the following :
 <br>
 Run update_all : you will notice insert coin in the log.
 then run update_all_insertcoin
-<br>
-if you want to install custom main mister, run
-<br>
-`Scripts/#insertcoin/main_mister/install.sh`
 
+script will download a default /media/fat/Scripts/#insertcoin/setup.ini 
+you could custimize later
 
 
 
