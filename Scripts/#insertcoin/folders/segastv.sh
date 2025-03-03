@@ -9,7 +9,7 @@ if [ "$res" == "1" ]; then
 
 	add "$dir" "V" "Shienryu (JUET 961226 V1.000).mra" "_Shienryu" "" "STG"
 
-	add "$dir" "H" "Astra SuperStars (J 980514 V1.002).mra" "_Astra SuperStars"
+	add "$dir" "H" "Astra SuperStars (J 980514 V1.002).mra" "_Astra SuperStars" "" "VSF"
 	add "$dir" "H" "Baku Baku Animal (J 950407 V1.000).mra" "_Baku Baku Animal"
 	add "$dir" "H" "Batman Forever (JUE 960507 V1.000).mra" "_Batman Forever"
 	add "$dir" "H" "Columns '97 (JET 961209 V1.000).mra" "_Columns '97"
@@ -62,7 +62,7 @@ if [ "$res" == "1" ]; then
 	add "$dir" "H" "Taisen Tanto-R Sashissu!! (J 980216 V1.000).mra" "_DaeJeon! SanJeon SuJeon"
 	add "$dir" "H" "Technical Bowling (J 971212 V1.000).mra" "_Technical Bowling"
 	add "$dir" "H" "Tecmo World Cup '98 (JUET 980410 V1.000).mra" "_Tecmo World Cup '98"
-	add "$dir" "H" "Touryuu Densetsu Elan-Doree - Elan Doree - Legend of Dragoon (JUET 980922 V1.006).mra" "_Elan Doree - Legend of Dragoon"
+	add "$dir" "H" "Touryuu Densetsu Elan-Doree - Elan Doree - Legend of Dragoon (JUET 980922 V1.006).mra" "_Elan Doree - Legend of Dragoon" "" "VSF"
 	add "$dir" "H" "Virtua Fighter Kids (JUET 960319 V0.000).mra" "_Virtua Fighter Kids"
 	add "$dir" "H" "Virtua Fighter Remix (JUETBKAL 950428 V1.000).mra" "_Virtua Fighter Remix" 
 	add "$dir" "H" "Virtual Mahjong (J 961214 V1.000).mra" "_Virtual Mahjong"
