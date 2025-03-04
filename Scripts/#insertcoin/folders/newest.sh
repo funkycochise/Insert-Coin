@@ -31,7 +31,10 @@ function linkfolder {
    fi
 }
 
-#0301
+#1002
+#   add "Wild Fang - Tecmo Knight.mra" "_Wild Fang"
+
+#0302
    add "N.Y. Captor.mra" "_N.Y. Captor"
 
 #0222
