@@ -31,7 +31,8 @@ function linkfolder {
    fi
 }
 
-
+#1403
+   add "Raiga - Strato Fighter (US).mra" "_Raiga"
 #0703
    add "Wild Fang - Tecmo Knight.mra" "_Wild Fang"
 
