@@ -11,6 +11,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "V" "Plus Alpha.mra" "_Plus Alpha"
    add "$dir" "V" "Psychic 5 (World).mra" "_Psychic 5" "" "ACT"
    add "$dir" "V" "Psychic 5 (Japan).mra" "_Psychic 5" "" "ACT"
+   add "$dir" "V" "Naughty Boy (Jaleco).mra" "_Naughty Boy" "" "ACT"
 
    rep "$dir" "H" "_Avenging Spirit"  "_Avenging Spirit" "" "ACT"
    add "$dir" "H" "chameleon.mra" "_Chameleon" "" "ACT"
