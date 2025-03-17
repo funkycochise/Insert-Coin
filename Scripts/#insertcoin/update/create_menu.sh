@@ -65,6 +65,7 @@ fi
 ./folders/midwayy.sh "$out"
 ./folders/namco.sh "$out"
 ./folders/namco_sys1.sh "$out"
+#./folders/namco_sys86.sh "$out"
 ./folders/neogeo.sh "$out"
 ./folders/nichibutsu.sh "$out"
 ./folders/nintendo.sh "$out"
