@@ -21,9 +21,12 @@ if [ "$res" == "1" ]; then
    add "$dir" "V" "Guwange.mra" "_Guwange" "" "STG"
    add "$dir" "V" "Guwange (Special).mra" "_Guwange" "" "STG"
    add "$dir" "V" "Hotdog Storm.mra" "_Hotdog Storm" "" "STG"
+   add "$dir" "V" "Mazinger Z (Japan).mra" "_Mazinger Z" "" "STG"
+
    add "$dir" "H" "Gaia Crusaders.mra" "_Gaia Crusaders"
    add "$dir" "H" "Puzzle Uo Poko.mra" "_Puzzle Uo Poko" "" "PUZ"
    add "$dir" "H" "Puzzle Uo Poko (Japan).mra" "_Puzzle Uo Poko" "" "PUZ"
    add "$dir" "H" "Thunder Heroes.mra" "_Thunder Heroes"
+
    dot
 fi

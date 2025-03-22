@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#2203
+   add "Mazinger Z (Japan).mra" "_Mazinger Z"
+
 #1403
    add "Raiga - Strato Fighter (US).mra" "_Raiga"
 #0703
