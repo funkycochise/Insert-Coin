@@ -81,10 +81,12 @@ fi
       
 curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output $temp/res.zip >/dev/null
 unzip -qq $temp/res.zip -d $res
+rm -r $temp/res.zip
+
 curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res2.zip -O -k -s --output $temp/res2.zip >/dev/null
 unzip -qq $temp/res2.zip -d $res
-rm -r $temp/res.zip
 rm -r $temp/res2.zip
+
 
 }
 
@@ -115,20 +117,18 @@ then
    for file in $mgl/*.mgl; do
       #echo "$file"
       f=$(basename -- "$file")
-      if [ -f "$file" ];
-      then
-         if [ ! -f "$des_arcade/$f" ]; then
+      if [ -f "$file" ]; then
+         #if [ ! -f "$des_arcade/$f" ]; then
             #echo -e "\rcopying $des_arcade/$f                                                   "
             cp "$file" "$des_arcade/$f"
-         fi
+         #fi
       fi
    done
 
    #echo "config"
    for file in $config/*; do
    f=$(basename -- "$file")
-   if [ ! -f "$des_config/$f" ];
-   then
+   if [ ! -f "$des_config/$f" ]; then
       #echo -e "$des_config/$f                                                   "
       cp "$file" "$des_config/$f"
    fi
@@ -137,8 +137,7 @@ then
    #echo "cores"
    for file in $cores/*.rbf; do
    f=$(basename -- "$file")
-   if [ ! -f "$des_config/$f" ];
-   then
+   if [ ! -f "$des_config/$f" ]; then
       #echo -e "\rcopying $des_core/$f                                                   "
       cp "$file" "$des_core/$f"
    fi
