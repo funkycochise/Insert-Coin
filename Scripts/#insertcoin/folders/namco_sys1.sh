@@ -24,7 +24,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "H" "Pistol Daimyo no Bouken (Japan).mra" "_Pistol Daimyo no Bouken" "" "STG"
    add "$dir" "H" "Pro Tennis World Court (Japan).mra" "_Pro Tennis World Court" "" "SPO"
    add "$dir" "H" "Pro Yakyuu World Stadium (Japan).mra" "_Pro Yakyuu World Stadium" "" "SPO"
-   add "$dir" "H" "Shadowland (YD3).mra" "_Shadowland" "" "ACT"
+   add "$dir" "H" "Shadowland (YD3).mra" "_Shadowland" "_Youkai Douchuuki" "ACT"
    add "$dir" "H" "Splatter House (World, new version (SH3)).mra" "_Splatter House" "" "ACT"
    add "$dir" "H" "Tank Force (US, 2 Players).mra" "_Tank Force" "" "ACT"
    dot
