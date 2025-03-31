@@ -2,7 +2,7 @@
 source ./folders/functions.sh
 loadsetup
 
-res=$(exist "Sorcer Striker.mra")
+res=$(exist "Armed Police Batrider Special Ver. (USA) (Fri Feb 13 1998).mra")
 if [ "$res" == "1" ]; then
    dir="_Raizing-8ing"
    outdir=$1
