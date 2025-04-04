@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0404
+   add "Bronx.mra" "_Bronx"
+
 #2203
    add "Mazinger Z (Japan).mra" "_Mazinger Z"
 

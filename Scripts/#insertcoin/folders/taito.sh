@@ -14,6 +14,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "V" "Arkanoid (US).mra" "_Arkanoid"
    add "$dir" "V" "Arkanoid (W).mra" "_Arkanoid"
    add "$dir" "V" "Balloon Bomber.mra" "_Balloon Bomber"
+   add "$dir" "V" "Bronx.mra" "_Bronx"
    add "$dir" "V" "Colony 7 (Set 1).mra" "_Colony7" "" "ACT"
    add "$dir" "V" "Crazy Balloon.mra" "_Crazy Balloon"
    add "$dir" "V" "Dr. Toppel's Adventure (World).mra" "_Dr. Toppel's Adventure"
