@@ -87,6 +87,7 @@ fi
 ./folders/stern.sh "$out"
 ./folders/tad.sh "$out"
 ./folders/taito.sh "$out"
+#./folders/taitof2.sh "$out"
 ./folders/taitosj.sh "$out"
 ./folders/technos.sh "$out"
 ./folders/technos16.sh "$out"
