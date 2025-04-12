@@ -42,9 +42,6 @@ COL=$(( $RANDOM % 12 + 1 ))
 
 ./update/banner.sh $COL
 
-if test -f "./update/install_local.sh"; then
-   ./update/install_local.sh
-fi
 
 if test -f "/media/fat/Scripts/#insertcoin/out.txt"; 
 then
@@ -61,8 +58,11 @@ if test -f "./update/key.sh"; then
    ./update/key.sh
 fi
 
-
 ./update/create_menu.sh $launchdir "$targetfolder" $COL
+
+if test -f "./update/install_local.sh"; then
+   ./update/install_local.sh "$launchdir" "$targetfolder"
+fi
 
 if test -d "/media/fat/_Arcade/$targetfolder"; 
 then
