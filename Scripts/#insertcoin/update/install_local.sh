@@ -4,6 +4,9 @@ source /media/fat/Scripts/#insertcoin/folders/functions.sh
 addon="/media/fat/Scripts/#local/addon"
 source=$addon/_Arcade/_alternatives
 
+launchdir=$1
+targetdir=$2
+
 if [ -d "$addon" ];
 then
    if [ "$TERM" == "linux" ]; then
@@ -46,5 +49,23 @@ then
    if test -f "$addon/games/mame/jtbeta.zip"; then
       cp "$addon/games/mame/jtbeta.zip" /media/fat/games/mame
       #echo "local jtbeta.zip deployed"
+   fi
+   if test -d "$addon/_ic/"; then
+      #echo "ic exists"
+      if test -d "$addon/_ic/_#Pce"; then
+         #echo "#Pce exists"
+         if test -d "/media/fat/_Arcade/$targetdir"; then
+            echo "/media/fat/_Arcade/$targetdir exists"
+            cp -r "$addon/_ic/_#Pce" "/media/fat/_Arcade/$targetdir"
+         fi
+      fi
+      if test -d "$addon/_ic/_#Saturn"; then
+         #echo "#Saturn exists"
+         if test -d "/media/fat/_Arcade/$targetdir"; then
+            echo "/media/fat/_Arcade/$targetdir exists"
+            cp -r "$addon/_ic/_#Saturn" "/media/fat/_Arcade/$targetdir"
+         fi
+      fi
+
    fi
 fi
