@@ -55,14 +55,14 @@ then
       if test -d "$addon/_ic/_#Pce"; then
          #echo "#Pce exists"
          if test -d "/media/fat/_Arcade/$targetdir"; then
-            echo "/media/fat/_Arcade/$targetdir exists"
+            #echo "/media/fat/_Arcade/$targetdir exists"
             cp -r "$addon/_ic/_#Pce" "/media/fat/_Arcade/$targetdir"
          fi
       fi
       if test -d "$addon/_ic/_#Saturn"; then
          #echo "#Saturn exists"
          if test -d "/media/fat/_Arcade/$targetdir"; then
-            echo "/media/fat/_Arcade/$targetdir exists"
+            #echo "/media/fat/_Arcade/$targetdir exists"
             cp -r "$addon/_ic/_#Saturn" "/media/fat/_Arcade/$targetdir"
          fi
       fi
