@@ -2,7 +2,7 @@
 source ./folders/functions.sh
 
 loadsetup
-res=$(exist "Elevator Action Bootleg.mra")
+res=$(exist "Liquid Kids.mra")
 if [ "$res" == "1" ]; then
    dir="_Taito-F2"
    outdir=$1
