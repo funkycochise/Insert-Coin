@@ -5,7 +5,7 @@ TEMP=/media/fat/scripts/temp
 SD=/media/fat
 USB=/media/usb0
 CIFS=/media/fat/cifs
-ARCHIVE_MERGED=https://ia600802.us.archive.org/30/items/insertcoin_res_mame
+ARCHIVE_MAME=https://ia601909.us.archive.org/6/items/insert_coin_mame
 ARCHIVE_NEOGEO=https://ia904607.us.archive.org/28/items/mister-neogeo-pack
 
 source <(grep setup_mame $ini)
@@ -46,8 +46,8 @@ function dl {
       else
          echo -n "downloading $1"   
       fi
-      curl $ARCHIVE_MERGED/$1 -o $des_mame/$1 -k -s
-      #wget $ARCHIVE_MERGED/$1 -P $TEMP -q
+      curl $ARCHIVE_MAME/$1 -o $des_mame/$1 -k -s
+      #wget $ARCHIVE_MAME/$1 -P $TEMP -q
       #mv $TEMP/$1 $des_mame/$1 
       if [ "$TERM" == "linux" ]; then
         #GUI
@@ -69,8 +69,8 @@ function dlf {
     if ! test -f "$FILE"; then
        rm -r "$FILE"
     fi
-    curl $ARCHIVE_MERGED/$1 -o $des_mame/$1 -k -s
-    #wget $ARCHIVE_MERGED/$1 -P $TEMP -q
+    curl $ARCHIVE_MAME/$1 -o $des_mame/$1 -k -s
+    #wget $ARCHIVE_MAME/$1 -P $TEMP -q
     #mv $TEMP/$1 $des_mame/$1
 
 }
@@ -138,52 +138,52 @@ fi
 #clean "solomonj.zip"
 #clean "sprint2.zip"
 #clean "victorycb.zip"
-#dl "1941.zip"
-#dl "1942.zip"
-#dl "1943.zip"
-#dl "1943kai.zip"
-#dl "1943mii.zip"
-#dl "1944.zip"
-#dl "19xx.zip"
-#dl "280zzzap.zip"
-#dl "3wonders.zip"
-#dl "4dwarrio.zip"
-#dl "aceattac.zip"
-#dl "afighter.zip"
-#dl "airass.zip"
-#dl "airduel.zip"
-#dl "alcon.zip"
-#dl "alexkidd.zip"
-#dl "alibaba.zip"
-#dl "alienar.zip"
-#dl "aliens.zip"
-#dl "aliensyn.zip"
-#dl "alpha1v.zip"
-#dl "alpine.zip"
-#dl "altbeast.zip"
-#dl "amazon.zip"
+dl "1941.zip"
+dl "1942.zip"
+dl "1943.zip"
+dl "1943kai.zip"
+dl "1943mii.zip"
+dl "1944.zip"
+dl "19xx.zip"
+dl "280zzzap.zip"
+dl "3wonders.zip"
+dl "4dwarrio.zip"
+dl "aceattac.zip"
+dl "afighter.zip"
+dl "airass.zip"
+dl "airduel.zip"
+dl "alcon.zip"
+dl "alexkidd.zip"
+dl "alibaba.zip"
+dl "alienar.zip"
+dl "aliens.zip"
+dl "aliensyn.zip"
+dl "alpha1v.zip"
+dl "alpine.zip"
+dl "altbeast.zip"
+dl "amazon.zip"
 #dl "amidar.zip"
-#dl "anteater.zip"
+dl "anteater.zip"
 #dl "arkanoid.zip"
-#dl "arknoid2.zip"
-#dl "armedf.zip"
-#dl "armorcar.zip"
-#dl "armwar.zip"
-#dl "aso.zip"
-#dl "astdelux.zip"
+dl "arknoid2.zip"
+dl "armedf.zip"
+dl "armorcar.zip"
+dl "armwar.zip"
+dl "aso.zip"
+dl "astdelux.zip"
 #dl "asteroid.zip"
-#dl "astorm.zip"
-#dl "astyanax.zip"
-#dl "atarisy1.zip"
+dl "astorm.zip"
+dl "astyanax.zip"
+dl "atarisy1.zip"
 #dl "atetris.zip"
-#dl "athena.zip"
-#dl "atlantis.zip"
-#dl "attackfc.zip"
-#dl "aurail.zip"
-#dl "avengers.zip"
-#dl "avsp.zip"
-#dl "avspirit.zip"
-#dl "azurian.zip"
+dl "athena.zip"
+dl "atlantis.zip"
+dl "attackfc.zip"
+dl "aurail.zip"
+dl "avengers.zip"
+dl "avsp.zip"
+dl "avspirit.zip"
+dl "azurian.zip"
 #dl "baddudes.zip"
 #dl "bagman.zip"
 #dl "bakutotu.zip"
@@ -852,12 +852,7 @@ fi
 #dl "devilw.zip"
 #dl "vulcan.zip"
 
-dl "ffightae.zip"
-dl "ffightae_cps2_gfx.zip"
-dl "ffightae_cps2_smp.zip"
-dl "megaman_cps15.zip"
-dlf "neogeo.zip"
-dl "s16mcu_alt.zip"
+#dlf "neogeo.zip"
 #dl "sf2acc.zip"
 #dl "sf2acca.zip"
 #dl "sf2ceea.zip"
@@ -865,6 +860,17 @@ dl "s16mcu_alt.zip"
 #dl "sf2v004.zip"
 #dl "sfzch_cps15.zip"
 #dl "pollen_angel.zip"
+
+dl "ctribe.zip"
+dl "ddragon3.zip"
+dl "ffightae.zip "
+dl "ffightae_cps2_gfx.zip "
+dl "ffightae_cps2_smp.zip"
+dl "mazingerd.zip"
+dl "megaman_cps15.zip"
+dl "s16mcu_alt.zip"
+dl "sf2prime.zip"
+dl "wwfwfest.zip "
 
 #special_echo "Downloading missing neogeo mame roms"
 neo "2020bb.zip"
