@@ -31,6 +31,10 @@ function linkfolder {
    fi
 }
 
+#1804
+
+   add "Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA).mra" "_Teenage Mutant Ninja Turtles - Turtles in Time"
+
 #0404
    add "Bronx.mra" "_Bronx"
 

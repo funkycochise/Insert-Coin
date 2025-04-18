@@ -67,6 +67,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "H"  "Splatter House (World, new version (SH3)).mra" "_Splatter House" "" "ACT"
    add "$dir" "H"  "Sunset Riders (4 Players ver EAC).mra" "_Sunset Riders" "" "BEA"
    add "$dir" "H"  "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra" "_Teenage Mutant Ninja Turtles" "" "BEA"
+   add "$dir" "H"  "Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA).mra" "_Teenage Mutant Ninja Turtles - Turtles in Time" "" "BEA"
    add "$dir" "H"  "The Simpsons (4 Players World, set 1).mra" "_The Simpsons" "" "BEA"
    add "$dir" "H"  "Thunder Cross (set 1).mra" "_Thunder Cross" "" "STG"
    add "$dir" "H"  "Track & Field.mra" "_Track & Field" "" "SPO"
