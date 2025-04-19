@@ -8,7 +8,7 @@ This folder is named "_Insert Coin" and contains several Systems and Editors:
 
 The folder is built according to the existing mra inside _Arcade folder.
 So if beta cores are installed manually, they can be recognized if supported.
-rndmnkiii, pierco, jotego, raki
+rndmnkiii, pierco, jotego, raki, coinop collection, wickerwaka
 
 2. Custom Main Mister feature.
 Running insertcoin will install a custom Mister will provide the ability to hide rom loading progress bar.
