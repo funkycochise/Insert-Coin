@@ -63,6 +63,10 @@ if test -f "./update/key.sh"; then
    ./update/key.sh
 fi
 
+if test -f "./update/update_local_mgl.sh"; then
+   ./update/update_local_mgl.sh
+fi
+
 if test -f "./update/install_local.sh"; then
    ./update/install_local.sh "$launchdir" "$targetfolder"
 fi
