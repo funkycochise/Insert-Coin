@@ -4,6 +4,9 @@ source /media/fat/Scripts/#insertcoin/folders/functions.sh
 addon="/media/fat/Scripts/#local/addon"
 source=$addon/_Arcade/_alternatives
 
+launchdir=$1
+targetfolder=$2
+
 if [ -d "$addon" ];
 then
    if [ "$TERM" == "linux" ]; then
@@ -47,4 +50,17 @@ then
       cp "$addon/key.sh" /media/fat/Scripts/#insertcoin/update
       #echo "local key.sh deployed"
    fi
+   if test -d "$addon/_ic"; then
+       #echo "ic detected"
+       if test -d "$addon/_ic/_#Pce"; then
+          cp -r "$addon/_ic/_#Pce" "/media/fat/_Arcade/$targetfolder"
+          echo -e "${GREEN}${CHECK}${NC} /media/fat/_Arcade/$targetfolder/_#Pce"
+
+       fi
+       if test -d "$addon/_ic/_#Saturn"; then
+          cp -r "$addon/_ic/_#Saturn" "/media/fat/_Arcade/$targetfolder"
+          echo -e "${GREEN}${CHECK}${NC} /media/fat/_Arcade/$targetfolder/_#Saturn"
+       fi
+   fi
+
 fi
