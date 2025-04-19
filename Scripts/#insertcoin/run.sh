@@ -59,12 +59,12 @@ start_time=$SECONDS
 
 ./update/create_menu.sh $launchdir "$targetfolder" $COL
 
-if test -f "./update/install_local.sh"; then
-   ./update/install_local.sh "$launchdir" "$targetfolder"
-fi
-
 if test -f "./update/key.sh"; then
    ./update/key.sh
+fi
+
+if test -f "./update/install_local.sh"; then
+   ./update/install_local.sh "$launchdir" "$targetfolder"
 fi
 
 if test -d "/media/fat/_Arcade/$targetfolder"; 
@@ -92,8 +92,6 @@ if [ "$console_core" == "1" ]; then
   ./update/update_console.sh
 fi
 
-./update/create_shortcut.sh
-
 sh ./update/post.sh
 
 
@@ -104,10 +102,11 @@ sh ./update/post.sh
 #   echo "Not found mras :"
 #   cat /media/fat/Scripts/#insertcoin/out.txt
 #fi
-echo -e "${BLUE}${CHECK}${NC} Latest updated _Console cores :"
-find /media/fat/_Console/*.rbf  -mtime 0 -printf '%p\n' 2>/dev/null | sort -r | more
-echo -e "${BLUE}${CHECK}${NC} Latest updated _Arcade cores :"
-find /media/fat/_Arcade/cores/*.rbf  -mtime 0 -printf '%p\n' 2>/dev/null | sort -r | more
+
+#echo -e "${BLUE}${CHECK}${NC} Latest updated _Console cores :"
+#find /media/fat/_Console/*.rbf  -mtime 0 -printf '%p\n' 2>/dev/null | sort -r | more
+#echo -e "${BLUE}${CHECK}${NC} Latest updated _Arcade cores :"
+#find /media/fat/_Arcade/cores/*.rbf  -mtime 0 -printf '%p\n' 2>/dev/null | sort -r | more
 
 if [ "$main_mister" == "1" ]; then
    ./update/update_main_mister.sh
