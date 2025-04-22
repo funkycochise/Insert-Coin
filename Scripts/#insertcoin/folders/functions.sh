@@ -172,6 +172,9 @@ jaguar=${jaguar:0:1}
 source <(grep cdi $ini)
 cdi=${cdi:0:1}
 #echo "cdi: $cdi"
+source <(grep pce $ini)
+pce=${cdi:0:1}
+#echo "pce: $pce"
 source <(grep folder_name $ini)
 #echo "folder_name: $folder_name"
 folder_name=${folder_name:0:${#folder_name}}
