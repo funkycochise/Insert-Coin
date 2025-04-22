@@ -107,10 +107,10 @@ sh ./update/post.sh
 #   cat /media/fat/Scripts/#insertcoin/out.txt
 #fi
 
-#echo -e "${BLUE}${CHECK}${NC} Latest updated _Console cores :"
-#find /media/fat/_Console/*.rbf  -mtime 0 -printf '%p\n' 2>/dev/null | sort -r | more
-#echo -e "${BLUE}${CHECK}${NC} Latest updated _Arcade cores :"
-#find /media/fat/_Arcade/cores/*.rbf  -mtime 0 -printf '%p\n' 2>/dev/null | sort -r | more
+echo -e "${BLUE}${CHECK}${NC} Latest updated _Console cores :"
+find /media/fat/_Console/*.rbf  -mtime 0 -printf '%p\n' 2>/dev/null | sort -r | more
+echo -e "${BLUE}${CHECK}${NC} Latest updated _Arcade cores :"
+find /media/fat/_Arcade/cores/*.rbf  -mtime 0 -printf '%p\n' 2>/dev/null | sort -r | more
 
 if [ "$main_mister" == "1" ]; then
    ./update/update_main_mister.sh
