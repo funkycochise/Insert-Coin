@@ -41,6 +41,44 @@ function CDi {
   fi
 }
 
+function pce {
+  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/TurboGrafx16.zip -O -k -s --output /media/fat/Scripts/temp/TurboGrafx16.zip
+  #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/TurboGrafx16.zip --quiet
+  unzip -qq /media/fat/Scripts/temp/TurboGrafx16.zip -d /media/fat/Scripts/temp
+  rm -r /media/fat/Scripts/temp/TurboGrafx16.zip 
+
+  #echo "remove previous jaguar cores"
+  for f in $(ls /media/fat/_Console/TurboGrafx16*.rbf )
+  do
+     #echo "file $f"
+     rm -r $f
+  done
+
+  cd /media/fat/Scripts/temp
+  installed="0"
+  for f in $(ls ./*.rbf)
+  do
+    #echo "file: $f"
+    target="${f:2:${#f}}"
+    #echo "TurboGrafx16 target: $target"
+    target=$f
+    mv $f $CONSOLE/$target
+    touch $CONSOLE/$target >/dev/null
+    installed="1"
+    #clean any file left
+    if test -f "./$f"; then
+      rm -r ./$f
+    fi
+  done
+  if [ "$installed" == "1" ]; then
+     if [ "$TERM" == "linux" ]; then
+        #GUI
+        echo -n -e "   "
+     fi
+     echo -e "${BLUE}${CHECK}${NC} TurboGrafx16"
+  fi
+}
+
 
 function Jaguar {
   curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Jaguar.zip -O -k -s --output /media/fat/Scripts/temp/Jaguar.zip
@@ -384,6 +422,9 @@ if [ "$jaguar" == "1" ]; then
 fi
 if [ "$cdi" == "1" ]; then
   CDi
+fi
+if [ "$pce" == "1" ]; then
+  pce
 fi
 
 if [ "$TERM" == "linux" ]; then
