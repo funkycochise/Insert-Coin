@@ -7,7 +7,6 @@ if [ "$res" == "1" ]; then
    dir="_Namco_System86"
    outdir=$1
 
-
    add "$dir" "H" "Rolling Thunder (rev 3).mra" "_Rolling Thunder" "" "ACT"
    add "$dir" "H" "Sky Kid Deluxe (set 1).mra" "_Sky Kid Deluxe" "" "ACT"
    add "$dir" "H" "Genpei ToumaDen.mra" "_Genpei ToumaDen" "" "ACT"
