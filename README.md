@@ -16,7 +16,7 @@ For more details: https://github.com/funkycochise/Main_MiSTer/wiki
 
 3. Additional arcade cores and mras.
 Running insertcoin will install additional arcade cores.
-In example SEGASYS1 and NEOGEO from black wine.
+In example SEGASYS1/SEGASYS2 from black wine.
 
 3. Download of arcade mame roms.
 Running insertcoin will download mame roms and neogeo if they are missing.
