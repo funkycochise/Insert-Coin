@@ -271,7 +271,6 @@ if [ "$res" == "1" ]; then
 
    add "$dir" "H" "Penguin-Kun_Wars.mra" "_Penguin-Kun Wars" "" "ACT"
 
-   add "$dir" "H" "Alex Kidd The Lost Stars (Set 2, World, S16A) [No Protection].mra" "_Alex Kidd The Lost Stars"
    add "$dir" "H" "Alien Syndrome (set 4, System 16B, unprotected).mra" "_Alien Syndrome" "" "ACT"
    add "$dir" "H" "Altered Beast (set 8) (8751 317-0078).mra" "_Altered Beast" "" "BEA"
    add "$dir" "H" "Cotton (set 4, World) (FD1094 317-0181a).mra" "_Cotton" "" "STG"
