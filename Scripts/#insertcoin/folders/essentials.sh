@@ -31,7 +31,6 @@ if [ "$res" == "1" ]; then
    add "$dir" "V"  "Top Gunner (US).mra" "_Jackal" "" "RNG"
    add "$dir" "V"  "TwinBee (Bubble System).mra" "_TwinBee" "" "STG"
 
-   add "$dir" "V"  "Avengers (US, revision C).mra" "_Avengers" "" "BEA"
    add "$dir" "V"  "1942 (Revision B).mra" "_1942" "" "STG"
    add "$dir" "V"  "1943 Kai Midway Kaisen (Japan).mra" "_1943 The Battle of Midway" "" "STG"
    add "$dir" "V"  "1943 The Battle of Midway (Euro).mra" "_1943 The Battle of Midway" "" "STG"
@@ -51,12 +50,9 @@ if [ "$res" == "1" ]; then
    add "$dir" "V"  "Gaplus (GP2 Rev B).mra" "_Gaplus" "" "STG"
 
    add "$dir" "V"  "Mappy (US).mra" "_Mappy" "" "ACT"
-   add "$dir" "V"  "Motos.mra" "_Motos" "" "ACT"
    add "$dir" "V"  "Ms. Pac-Man.mra" "_Ms.Pacman" "" "ACT"
    add "$dir" "V"  "New Rally-X.mra" "_RallyX" "" "ACT"
-   add "$dir" "V"  "Pac & Pal.mra" "_Pac & Pal" "" "ACT"
    add "$dir" "V"  "Puck Man (JP, Set 1).mra" "_Pacman" "" "ACT"
-   add "$dir" "V"  "Rally-X (32k Ver).mra" "_RallyX" "" "ACT"
    add "$dir" "V"  "Xevious.mra" "_Xevious" "" "STG"
 
    add "$dir" "V" "Galaga '88.mra" "_Galaga '88" "" "STG"
