@@ -145,7 +145,6 @@ if [ "$res" == "1" ]; then
    add "$dir" "H"  "Ghosts'n Goblins (World Set 1).mra" "_Ghosts'n Goblins" "" "ACT"
    add "$dir" "H"  "Pang (World).mra" "_Pang" "" "ACT"
    add "$dir" "H"  "Side Arms - Hyper Dyne (World, 861129).mra" "_Side Arms" "" "STG"
-   add "$dir" "H"  "Street Fighter (US, set 1).mra" "_Street Fighter" "" "VSF"
    add "$dir" "H"  "Super Pang (World 900914).mra" "_Super Pang" "" "ACT"
    add "$dir" "H"  "Tiger Road (US).mra" "_Tiger Road" "" "ACT"
    add "$dir" "H"  "Trojan (US set 1).mra" "_Trojan" "" "RNG"
@@ -220,7 +219,6 @@ if [ "$res" == "1" ]; then
    add "$dir" "H" "Alien vs. Predator (Euro 940520).mra" "_Alien vs. Predator" "" "BEA"
    add "$dir" "H" "Hyper Street Fighter II The Anniversary Edition (USA 040202).mra" "_Hyper Street Fighter II The Anniversary Edition" "" "VSF"
    add "$dir" "H" "Mighty! Pang (Euro 001010).mra" "_Mighty! Pang" "" "ACT"
-   add "$dir" "H" "Night Warriors Darkstalkers' Revenge (Euro 950316).mra" "_Night Warriors Darkstalkers' Revenge" "" "VSF"
    add "$dir" "H" "Progear (USA 010117).mra" "_Progear" "" "STG"
    add "$dir" "H" "Puzz Loop 2 (Euro 010302).mra" "_Puzz Loop 2" "" "PUZ"
    add "$dir" "H" "Street Fighter Alpha 2 (Euro 960229).mra" "_Street Fighter Alpha 2" "" "VSF"
@@ -281,7 +279,6 @@ if [ "$res" == "1" ]; then
 
    add "$dir" "H" "Quartet 2 (World, S16A) [No Protection].mra" "_Quartet" "" "ACT"
    add "$dir" "H" "Shinobi (Set 6, World, S16A) [No Protection].mra" "_Shinobi" "" "ACT"
-   add "$dir" "H" "Tough Turf (set 1, US) (8751 317-0099).mra" "_Tough Turf" "" "BEA"
    add "$dir" "H" "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098).mra" "_Wonder Boy III" "" "ACT"
    rep "$dir" "H" "_Sega Tetris"  "_Tetris" "" "PUZ"
 
@@ -300,6 +297,25 @@ if [ "$res" == "1" ]; then
    add "$dir" "H" "Super Hang-On (sitdown-upright) (unprotected).mra" "_Super Hang-On"
    add "$dir" "H" "Out Run (sitdown-upright, Rev B).mra" "_Out Run"
    add "$dir" "H" "Turbo Out Run (Out Run upgrade) (FD1094 317-0118).mra" "_Turbo Out Run"
+
+   add "$dir" "H"  "Aero Fighters 2.mgl" "" "" "STG"
+   add "$dir" "H"  "Aero Fighters 3.mgl" "" "" "STG"
+   add "$dir" "H"  "Magical Drop II.mgl" "" "" "PUZ"
+   add "$dir" "H"  "Magical Drop III.mgl" "" "" "PUZ"
+   add "$dir" "H"  "Metal Slug - Super Vehicle-001.mgl" "_Metal Slug" "_Metal Slug" "RNG"
+   add "$dir" "H"  "Metal Slug 2 - Super Vehicle-001-II.mgl" "_Metal Slug_2" "_Metal Slug 2" "RNG"
+   add "$dir" "H"  "Metal Slug 2 Turbo.mgl" "_Metal Slug_2" "_Metal Slug 2" "RNG"
+   add "$dir" "H"  "Metal Slug 3.mgl" "_Metal Slug 3" "_Metal Slug 3" "RNG"
+   add "$dir" "H"  "Metal Slug 4.mgl" "_Metal Slug 4" "_Metal Slug 4" "RNG"
+   add "$dir" "H"  "Metal Slug 5.mgl" "_Metal Slug 5" "_Metal Slug 5" "RNG"
+   add "$dir" "H"  "Metal Slug X - Super Vehicle-001.mgl" "_Metal Slug X" "_Metal Slug X" "RNG"
+   add "$dir" "H"  "NAM-1975.mgl" "" "" "ACT"
+   add "$dir" "H"  "Puzzle Bobble - Bust-A-Move.mgl"  "" "" "PUZ"
+   add "$dir" "H"  "Puzzle Bobble 2 - Bust-A-Move Again.mgl" ""  "" "PUZ"
+   add "$dir" "H"  "Spin Master - Miracle Adventure.mgl" "" "" "ACT"
+   add "$dir" "H"  "Strikers 1945 Plus.mgl" "" "" "STG"
+   add "$dir" "H"  "Windjammers.mgl" "" "" "SPO"
+   add "$dir" "H"  "Zupapa!.mgl" "" "" "ACT"
 
    dot
 fi
