@@ -31,6 +31,13 @@ function linkfolder {
    fi
 }
 
+#1605
+   add "Hopping Mappy.mra" "_Hopping Mappy" 
+   add "Wonder Momo.mra" "_Wonder Momo"
+
+#1005
+   add "Sky Kid Deluxe (set 1).mra" "_Sky Kid Deluxe"
+
 #2504
    add "Rolling Thunder (rev 3).mra" "_Rolling Thunder" 
 
