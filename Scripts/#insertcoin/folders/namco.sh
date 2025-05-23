@@ -31,6 +31,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "V"  "Xevious.mra" "_Xevious" "" "STG"
 
    add "$dir" "H"  "Bosconian - Star Destroyer (new version).mra" "_Bosconian" "" "STG"
+   add "$dir" "H"  "Pac-Land.mra" "_Pac-Land" "" "ACT"
 
    dot
 fi
