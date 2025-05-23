@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#2305
+   add "Pac-Land.mra" "_Pac-Land" 
+
 #1605
    add "Hopping Mappy.mra" "_Hopping Mappy" 
    add "Wonder Momo.mra" "_Wonder Momo"
