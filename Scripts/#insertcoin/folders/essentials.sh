@@ -255,6 +255,7 @@ if [ "$res" == "1" ]; then
 
    add "$dir" "H" "The Combatribes (US, Rev 2, Set 1).mra" "_The Combatribes" "" "BEA"
 
+   add "$dir" "H"  "Pac-Land (World).mra" "_Pac-Land" "" "ACT"
 
    add "$dir" "H" "Rygar.mra" "_Rygar" "" "ACT"
    add "$dir" "H" "Shadow Warriors (World, set 1).mra" "_Shadow Warriors" "" "BEA"
