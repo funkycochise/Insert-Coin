@@ -4,7 +4,7 @@ source ./folders/functions.sh
 loadsetup
 res=$(exist "Liquid Kids.mra")
 if [ "$res" == "1" ]; then
-   dir="_Taito-F1/F2"
+   dir="_Taito-F2"
    outdir=$1
 #  add "$dir" "V" "Gun Frontier.mra" "_Gun Frontier" "" "STG"
 #   add "$dir" "V" "Majestic Twelve.mra" "_Majestic Twelve" "" "STG"
