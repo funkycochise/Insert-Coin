@@ -6,39 +6,53 @@ res=$(exist "Liquid Kids (World).mra")
 if [ "$res" == "1" ]; then
    dir="_Taito-F2"
    outdir=$1
+   
+   #add "$dir" "V" "Gun Frontier (Japan).mra" "_Gun Frontier" "" "STG"
    add "$dir" "V" "Gun & Frontier (World).mra" "_Gun Frontier" "" "STG"
-   add "$dir" "V" "Gun Frontier (Japan).mra" "_Gun Frontier" "" "STG"
 
-#   add "$dir" "V" "Majestic Twelve.mra" "_Majestic Twelve" "" "STG"
+   #add "$dir" "V" "Majestic Twelve - The Space Invaders Part IV (Japan).mra" "_Super Space Invaders '91" "" "STG"
+   #add "$dir" "V" "Majestic Twelve - The Space Invaders Part IV (US, earlier code base).mra" "_Super Space Invaders '91" "" "STG"
+   #add "$dir" "V" "Majestic Twelve - The Space Invaders Part IV (US, revised code).mra" "_Super Space Invaders '91" "" "STG"
+   #add "$dir" "V" "Majestic Twelve - The Space Invaders Part IV (US, revised code, Rev 1).mra" "_Super Space Invaders '91" "" "STG"
+   #add "$dir" "V" "Super Space Invaders '91 (World, earlier code base).mra" "_Super Space Invaders '91" "" "STG"
+   #add "$dir" "V" "Super Space Invaders '91 (World, revised code).mra" "_Super Space Invaders '91" "" "STG"
+   add "$dir" "V" "Super Space Invaders '91 (World, revised code, Rev 1).mra" "_Super Space Invaders '91" "" "STG"
+
     add "$dir" "V" "Drift Out (Europe).mra" "_Drift Out" "" "SPO"
-    add "$dir" "V" "Drift Out (Japan).mra" "_Drift Out" "" "SPO"
+    #add "$dir" "V" "Drift Out (Japan).mra" "_Drift Out" "" "SPO"
 
-    add "$dir" "H" "Cameltry (Japan, YM2610).mra" "_Cameltry" "" "PUZ"
-    add "$dir" "H" "Cameltry (US, YM2610).mra" "_Cameltry" "" "PUZ"
-    add "$dir" "H" "Cameltry (World, YM2610).mra" "_Cameltry" "" "PUZ"
+   #add "$dir" "H" "Cameltry (Japan, YM2610).mra" "_Cameltry" "" "PUZ"
+   #add "$dir" "H" "Cameltry (US, YM2610).mra" "_Cameltry" "" "PUZ"
+   add "$dir" "H" "Cameltry (World, YM2610).mra" "_Cameltry" "" "PUZ"
 
-    add "$dir" "H" "Dino Rex (Japan).mra" "_Dino Rex" "" "VSF"
-    add "$dir" "H" "Dino Rex (US).mra" "_Dino Rex" "" "VSF"
+    #add "$dir" "H" "Dino Rex (Japan).mra" "_Dino Rex" "" "VSF"
+    #add "$dir" "H" "Dino Rex (US).mra" "_Dino Rex" "" "VSF"
     add "$dir" "H" "Dino Rex (World).mra" "_Dino Rex" "" "VSF"
 
-    add "$dir" "H" "Don Doko Don (Japan, rev 1).mra" "_Don Doko Don" "" "ACT"
-    add "$dir" "H" "Don Doko Don (US, rev 1).mra" "_Don Doko Don" "" "ACT"
+    #add "$dir" "H" "Don Doko Don (Japan, rev 1).mra" "_Don Doko Don" "" "ACT"
+    #add "$dir" "H" "Don Doko Don (US, rev 1).mra" "_Don Doko Don" "" "ACT"
     add "$dir" "H" "Don Doko Don (World, rev 1).mra" "_Don Doko Don" "" "ACT"
-    add "$dir" "H" "Final Blow (Japan).mra" "_Final Blow" "" "SPO"
-    add "$dir" "H" "Final Blow (US, rev 1).mra" "_Final Blow" "" "SPO"
+
+    #add "$dir" "H" "Final Blow (Japan).mra" "_Final Blow" "" "SPO"
+    #add "$dir" "H" "Final Blow (US, rev 1).mra" "_Final Blow" "" "SPO"
     add "$dir" "H" "Final Blow (World).mra" "_Final Blow" "" "SPO"
-    add "$dir" "H" "Growl (US).mra" "_Growl" "" "BEA"
-    add "$dir" "H" "Growl (World).mra" "_Growl" "" "BEA"
-    add "$dir" "H" "Growl (World, prototype).mra" "_Growl" "" "BEA"
+
+    #add "$dir" "H" "Growl (US).mra" "_Growl" "" "BEA"
+    #add "$dir" "H" "Growl (World, prototype).mra" "_Growl" "" "BEA"
+    #add "$dir" "H" "Growl (World).mra" "_Growl" "" "BEA"
+    #add "$dir" "H" "Runark (Japan).mra" "_Growl" "" "BEA"
     add "$dir" "H" "Growl (World, Rev 1).mra" "_Growl" "" "BEA"
-    add "$dir" "H" "Runark (Japan).mra" "_Growl" "" "BEA"
-    add "$dir" "H" "Liquid Kids (US).mra" "_Liquid Kids" "" "ACT"
+
+    #add "$dir" "H" "Liquid Kids (US).mra" "_Liquid Kids" "" "ACT"
+    #add "$dir" "H" "Mizubaku Daibouken (Japan).mra" "_Liquid Kids" "" "ACT"
     add "$dir" "H" "Liquid Kids (World).mra" "_Liquid Kids" "" "ACT"
-    add "$dir" "H" "Mizubaku Daibouken (Japan).mra" "_Liquid Kids" "" "ACT"
-    add "$dir" "H" "Mega Blast (Japan).mra" "_Mega Blast" "" "STG"
-    add "$dir" "H" "Mega Blast (US).mra" "_Mega Blast" "" "STG"
+    
+    #add "$dir" "H" "Mega Blast (Japan).mra" "_Mega Blast" "" "STG"
+    #add "$dir" "H" "Mega Blast (US).mra" "_Mega Blast" "" "STG"
     add "$dir" "H" "Mega Blast (World).mra" "_Mega Blast" "" "STG"
+
     add "$dir" "H" "Solitary Fighter (World).mra" "_Solitary Fighter" "" "VSF"
+
 
 #unreleased mras :
 #   add "$dir" "H" "Ah Eikou no Koshien.mra" "_Ah Eikou no Koshien" "" "SPO"
