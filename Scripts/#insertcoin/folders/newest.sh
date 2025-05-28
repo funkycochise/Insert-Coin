@@ -31,6 +31,18 @@ function linkfolder {
    fi
 }
 
+#2805
+add "Gun & Frontier (World).mra" "_Gun Frontier"
+add "Super Space Invaders '91 (World, revised code, Rev 1).mra" "_Super Space Invaders '91"
+add "Cameltry (World, YM2610).mra" "_Cameltry"
+add "Dino Rex (World).mra" "_Dino Rex"
+add "Don Doko Don (World, rev 1).mra" "_Don Doko Don"
+add "Final Blow (World).mra" "_Final Blow"
+add "Growl (World).mra" "_Growl"
+add "Liquid Kids (World).mra" "_Liquid Kids"
+add "Mega Blast (World).mra" "_Mega Blast"
+add "Solitary Fighter (World).mra" "_Solitary Fighter"
+
 #2305
    add "Pac-Land (World).mra" "_Pac-Land" 
 
