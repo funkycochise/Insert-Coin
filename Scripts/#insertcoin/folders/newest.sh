@@ -42,6 +42,7 @@ add "Growl (World, Rev 1).mra" "_Growl"
 add "Liquid Kids (World).mra" "_Liquid Kids"
 add "Mega Blast (World).mra" "_Mega Blast"
 add "Solitary Fighter (World).mra" "_Solitary Fighter"
+add "Metro-Cross.mra" "_Metro-Cross"
 
 #2305
    add "Pac-Land (World).mra" "_Pac-Land" 

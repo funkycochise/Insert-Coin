@@ -4,7 +4,7 @@ loadsetup
 
 res=$(exist "Rolling Thunder (rev 3).mra")
 if [ "$res" == "1" ]; then
-   dir="_Namco_System86"
+   dir="_Namco-System-86"
    outdir=$1
 
    add "$dir" "H" "Rolling Thunder (rev 3).mra" "_Rolling Thunder" "" "ACT"

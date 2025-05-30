@@ -4,7 +4,7 @@ loadsetup
 
 res=$(exist "Galaga '88.mra")
 if [ "$res" == "1" ]; then
-   dir="_Namco_System1"
+   dir="_Namco-System-1"
    outdir=$1
 
    add "$dir" "V" "Bakutotsu Kijuutei.mra" "_Bakutotsu Kijuutei" "" "STG"
