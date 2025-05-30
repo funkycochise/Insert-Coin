@@ -52,7 +52,7 @@ if [ "$res" == "1" ]; then
     add "$dir" "H" "Mega Blast (World).mra" "_Mega Blast" "" "STG"
 
     add "$dir" "H" "Solitary Fighter (World).mra" "_Solitary Fighter" "" "VSF"
-
+    add "$dir" "H" "The Ninja Kids (World).mra" "_The Ninja Kids" "" "ACT"
 
 #unreleased mras :
 #   add "$dir" "H" "Ah Eikou no Koshien.mra" "_Ah Eikou no Koshien" "" "SPO"
@@ -70,7 +70,7 @@ if [ "$res" == "1" ]; then
 #   add "$dir" "H" "Quiz Jinsei Gekijoh.mra" "_Quiz Jinsei Gekijoh" "" ""
 #   add "$dir" "H" "Quiz Quest.mra" "_Quiz Quest" "" ""
 #   add "$dir" "H" "Quiz Torimonochou.mra" "_Quiz Torimonochou" "" ""
-#   add "$dir" "H" "The Ninja Kids.mra" "_The Ninja Kids" "" "ACT"
+
 #   add "$dir" "H" "Thunder Fox.mra" "_Thunder Fox" "" "RNG"
 #   add "$dir" "H" "Yes-No Sinri Tokimeki Chart.mra" "_Yes-No Sinri Tokimeki Chart" "" ""
 #   add "$dir" "H" "YuuYu no Quiz de Go!Go!.mra" "_YuuYu no Quiz de Go!Go!" "" ""
