@@ -12,6 +12,7 @@ if [ "$res" == "1" ]; then
 
    add "$dir" "H" "Genpei ToumaDen.mra" "_Genpei ToumaDen" "" "ACT"
    add "$dir" "H" "Hopping Mappy.mra" "_Hopping Mappy" "" "ACT"
+   add "$dir" "H" "Genpei ToumaDen.mra" "_Genpei ToumaDen"
    add "$dir" "H" "The Return of Ishtar.mra" "_The Return of Ishtar"
    add "$dir" "H" "Wonder Momo.mra" "_Wonder Momo" "" "ACT"
    dot

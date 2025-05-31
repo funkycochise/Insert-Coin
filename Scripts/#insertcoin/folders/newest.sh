@@ -31,6 +31,10 @@ function linkfolder {
    fi
 }
 
+#3105
+add "Genpei ToumaDen.mra" "_Genpei ToumaDen"
+add "The Return of Ishtar.mra" "_The Return of Ishtar"
+
 #2805
 add "Gun & Frontier (World).mra" "_Gun Frontier"
 add "Super Space Invaders '91 (World, revised code, Rev 1).mra" "_Super Space Invaders '91"
