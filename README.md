@@ -1,56 +1,42 @@
-# Custom Database Template for the MiSTer Downloader
+Insert-Coin script for Mister FPGA
 
-By following these instructions, you'll create your own [Custom Database for the MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/custom-databases.md). This database can be integrated in MiSTer FPGA by just editing the `downloader.ini` file at the root of the SD.
+Aims of the projet : 
 
-Once your database is up, adding files to it is very simple. You'll only have to upload files to your repository on GitHub, and after that, your users will fetch these files directly in their devices, by just running *downloader* or *update_all*.
+1. First Main goal is to build a custom folder inside _Arcade Folder. 
+This folder is named "_Insert Coin" and contains several Systems and Editors:
+![image](https://user-images.githubusercontent.com/29161585/202754827-3752611c-086f-493e-a91a-ae759f3b3fe3.png)
 
-## How to generate your own Custom Database for the MiSTer Downloader:
-1. Make sure you are logged in into your GitHub account. Or register a new account if you don't have any yet.
-2. Then click on
-    <a style="margin-top:100px;" href="https://github.com/theypsilon/DB-Template_MiSTer/generate">
-        <img src="https://img.shields.io/badge/Use_this_template-2ea44f" 
-            alt="Use this template"
-            title="Create repository from this template"></a>
-button to create your own public Custom Database repository on GitHub.
-3. After less than 5 minutes, you're database file will be generated at `https://raw.githubusercontent.com/<YOUR GITHUB USER>/<YOUR GITHUB REPOSITORY>/db/db.json.zip` (replacing the <> fields accordingly) and will be ready to be used. For example, if your GitHub user is `jose` and your repository name is `game_wallpapers`, the url will be: `https://raw.githubusercontent.com/jose/game_wallpapers/db/db.json.zip`
-4. To integrate it in a MiSTer device, add the following section to the end of to the file `downloader.ini` that should be placed at the root of the SD (if it doesn't exist, you may create it for this purpose):
-```ini
-[<YOUR GITHUB USER>/<YOUR GITHUB REPOSITORY>]
-db_url = https://raw.githubusercontent.com/<YOUR GITHUB USER>/<YOUR GITHUB REPOSITORY>/db/db.json.zip
-```
-5. After that, run *downloader* or *update_all* as usual. It will try to fetch the files from your newly created database. If your database is still empty -which is your case if you followed these instructions-, obviously it won't download any file yet, but it will show up in the logs. For adding files to the database check the next section.
+The folder is built according to the existing mra inside _Arcade folder.
+So if beta cores are installed manually, they can be recognized if supported.
+rndmnkiii, pierco, jotego, raki, coinop collection, wickerwaka
 
-## How to add files to your already working Custom Database:
+2. Custom Main Mister feature.
+Running insertcoin will install a custom Mister will provide the ability to hide rom loading progress bar.
+For more details: https://github.com/funkycochise/Main_MiSTer/wiki
 
-Once you have your database up and running (check previous section to figure out how to set it up), adding files is very straightforward.
+3. Additional arcade cores and mras.
+Running insertcoin will install additional arcade cores.
+In example SEGASYS1 and NEOGEO from black wine.
 
-Just upload any file to your repository by using GitHub UI (Add File > Upload files), or via git. Once the files show up in your repository, they'll also be added to your database automatically. You may see the *Actions* tab in your repository to see how the automation did its magic if you are curious. **NEW:** If you want to add files without uploading them to the repository, you may use the [external_files.csv](external_files.csv) file for that.
+3. Download of arcade mame roms.
+Running insertcoin will download mame roms and neogeo if they are missing.
 
-A couple of things to consider when uploading files:
+4. Update of latest console core version (nightlies)
 
-- When a user fetches the files via *downloader* or *update_all*, the downloaded file structure will mirror 1:1 the file structure you have in your repository at GitHub. This means, if you have a folder `_Cores/` containing some files in your repository, an identical `_Cores` folder will show up in MiSTer containing the exact same files.
+How to Install:
+Insert Coin is using update_all to perform core, mras and script installation.
+In downloader.ini add the following :
 
-- The files `README.md`, `LICENSE`, and the `.github` folder won't be included in your database. Just ignore them, they won't be installed in the devices. The file `external_files.csv` won't show up on your device either, but the files listed inside it will.
+`[funkycochise/Insert-Coin]`
+<br>
+`db_url = https://raw.githubusercontent.com/funkycochise/Insert-Coin/db/db.json.zip`
+<br>
+Run update_all : you will notice insert coin in the log.
+then run update_all_insertcoin
 
-- You may upload as many files as you want as long as they don't violate GitHub constraints (100mb is max size per file).
+script will download a default /media/fat/Scripts/#insertcoin/setup.ini 
+you could custimize later
 
-- You should avoid full path clashes between your files and the files from other databases so that your users don't run into issues when using multiple databases at the same time.
 
-## How your users will integrate your Custom Database in their MiSTers:
 
-Your users will just have to do the **step 4** of the "How to generate" section. So you should add those lines to your documentation replacing the placeholders with the correct GitHub user and repository name.
 
-For example, assuming GitHub user is "jose" and the repository is called "game_wallpapers", your users will have to add these lines to the bottom of `downloader.ini`:
-
-```ini
-[jose/game_wallpapers]
-db_url = https://raw.githubusercontent.com/jose/game_wallpapers/db/db.json.zip
-```
-
-This needs to be done just once by your users. After that, whenever they run *downloader* or *update_all* they'll also be installing your updated files.
-
-## Modifying README.md
-
-After you have your own repository based on this template, a good idea would be to edit your `README.md` describing the content of your database and how to use it. That way users will learn about your Database and will integrate it into their MiSTer's easily.
-
-Feel free to remove any reference to the original template there.
