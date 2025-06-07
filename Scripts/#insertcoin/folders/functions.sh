@@ -54,6 +54,12 @@ function loadsetup {
 
 forcemode=$1
 
+source <(grep essential $ini)
+essential=${essential:0:1}
+#if [ "$debug" == "1" ]; then
+#   echo "essential: $essential" >> /media/fat/Scripts/#insertcoin/out.txt
+#fi
+
 source <(grep manufacturer_subfolder $ini)
 manufacturer_subfolder=${manufacturer_subfolder:0:1}
 #if [ "$debug" == "1" ]; then

@@ -24,7 +24,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "H" "Janpai Puzzle Choukou (Japan 010820).mra" "_Janpai Puzzle Choukou"
    add "$dir" "H" "Jyangokushi Haoh no Saihai (Japan 990527).mra" "_Jyangokushi Haoh no Saihai"
    add "$dir" "H" "Mars Matrix Hyper Solid Shooting (USA 000412).mra" "_Mars Matrix Hyper Solid Shooting" "" "STG"
-   add "$dir" "H" "Marvel Super Heroes (Euro 951024).mra" "_Marvel Super Heroes" "" "BEA"
+   add "$dir" "H" "Marvel Super Heroes (Euro 951024).mra" "_Marvel Super Heroes" "" "VSF"
    add "$dir" "H" "Marvel Super Heroes Vs. Street Fighter (Euro 970625).mra" "_Marvel Super Heroes Vs. Street Fighter"
    add "$dir" "H" "Marvel Vs. Capcom Clash of Super Heroes (Euro 980123).mra" "_Marvel Vs. Capcom Clash of Super Heroes"
    add "$dir" "H" "Mega Man 2 The Power Fighters (USA 960708).mra" "_Mega Man 2 The Power Fighters" "" "VSF"
