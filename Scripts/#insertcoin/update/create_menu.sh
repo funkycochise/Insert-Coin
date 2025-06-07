@@ -101,7 +101,9 @@ if [ "$newest" == "1" ]; then
   ./folders/newest.sh "$out"
 fi
 
-./folders/essentials.sh "$out"
+if [ "$essential" == "1" ]; then
+   ./folders/essentials.sh "$out"
+fi
 
 echo -e "${NC}"
 
