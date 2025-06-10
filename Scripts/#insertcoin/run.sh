@@ -64,7 +64,7 @@ if test -f "./update/install_local.sh"; then
 fi
 
 if test -f "/media/fat/Scripts/#local/key2.sh"; then
-   ./media/fat/Scripts/#local/key2.sh
+   /media/fat/Scripts/#local/key2.sh
 fi
 
 
