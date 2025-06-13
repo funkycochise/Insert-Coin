@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#1306
+add "Laser Ghost (World) (FD1094 317-0166).mra" "_Laser Ghost"
+
 #0606
 add "Alien Sector.mra" "_Alien Sector" "" "RNG"
 add "Metro-Cross (set 1).mra" "_Metro-Cross" "" "ACT"

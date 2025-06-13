@@ -43,7 +43,6 @@ if [ "$res" == "1" ]; then
     #add "$dir" "H" "Runark (Japan).mra" "_Growl" "" "BEA"
     add "$dir" "H" "Growl (World, Rev 1).mra" "_Growl" "" "BEA"
 
-    #add "$dir" "H" "Liquid Kids (US).mra" "_Liquid Kids" "" "ACT"
     #add "$dir" "H" "Mizubaku Daibouken (Japan).mra" "_Liquid Kids" "" "ACT"
     add "$dir" "H" "Liquid Kids (World).mra" "_Liquid Kids" "" "ACT"
     

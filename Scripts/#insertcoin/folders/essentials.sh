@@ -149,7 +149,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "H"  "Tiger Road (US).mra" "_Tiger Road" "" "ACT"
    add "$dir" "H"  "Trojan (US set 1).mra" "_Trojan" "" "RNG"
 
-   add "$dir" "H" "Liquid Kids (World)" "_Liquid Kids" "" "ACT"
+   add "$dir" "H" "Liquid Kids (World).mra" "_Liquid Kids" "" "ACT"
 
    add "$dir" "H" "Splatter House (World, new version (SH3)).mra" "_Splatter House" "" "ACT"
    add "$dir" "H" "Rolling Thunder (rev 3).mra" "_Rolling Thunder" "" "ACT"
