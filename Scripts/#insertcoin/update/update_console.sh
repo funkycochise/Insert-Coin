@@ -184,7 +184,7 @@ function Saturn {
      rm -r $f
   done
   stv="0"
-  for f in $(ls $CORE/Saturn_*.rbf )
+  for f in $(ls $CORE/ST-V_*.rbf )
   do
      #echo "file $f"
      rm -r $f
@@ -195,9 +195,9 @@ function Saturn {
   installed="0"
   for f in $(ls ./*.rbf)
   do
-    #echo "found : $f"
+    echo "found : $f"
     if [ "${f:2:3}" == "STV" ];  then
-       target="Saturn_STV${f:12:${#f}}"
+       target="ST-V${f:12:${#f}}"
        if [ "$stv" == "1" ]; then
           #echo "move to $CORE/$target"
           cp $f $CORE/$target
