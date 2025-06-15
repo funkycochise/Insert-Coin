@@ -154,7 +154,7 @@ function PSX {
     elif [ "${f:2:4}" == "Dual" ];  then
        #echo "$dualsdram"
        if [ "$dualsdram" == "1" ] || [ "$dualsdram" == "2" ]; then
-          target="PSX_Dual${f:13:${#f}}"
+          target="PSX_Dual_${f:11:${#f}}"
           #echo "move to $CONSOLE/$target"
           cp $f $CONSOLE/$target
           touch $CONSOLE/$target >/dev/null
@@ -195,7 +195,7 @@ function Saturn {
   installed="0"
   for f in $(ls ./*.rbf)
   do
-    echo "found : $f"
+    #echo "found : $f"
     if [ "${f:2:3}" == "STV" ];  then
        target="ST-V${f:12:${#f}}"
        if [ "$stv" == "1" ]; then
