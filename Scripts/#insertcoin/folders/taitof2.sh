@@ -71,7 +71,7 @@ if [ "$res" == "1" ]; then
 #   add "$dir" "H" "Quiz Quest.mra" "_Quiz Quest" "" ""
 #   add "$dir" "H" "Quiz Torimonochou.mra" "_Quiz Torimonochou" "" ""
 
-#   add "$dir" "H" "Thunder Fox.mra" "_Thunder Fox" "" "RNG"
+   add "$dir" "H" "Thunder Fox (World, rev 1).mra" "_Thunder Fox" "" "RNG"
 #   add "$dir" "H" "Yes-No Sinri Tokimeki Chart.mra" "_Yes-No Sinri Tokimeki Chart" "" ""
 #   add "$dir" "H" "YuuYu no Quiz de Go!Go!.mra" "_YuuYu no Quiz de Go!Go!" "" ""
 

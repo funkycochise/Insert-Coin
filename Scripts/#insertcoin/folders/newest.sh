@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#&за-
+add "Thunder Fox (World, rev 1).mra" "_Thunder Fox"
+
 #1306
 add "Laser Ghost (World) (FD1094 317-0166).mra" "_Laser Ghost"
 
