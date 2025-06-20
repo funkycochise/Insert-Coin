@@ -32,8 +32,8 @@ function linkfolder {
 }
 
 #2006
-add "Thunder Fox (World, rev 1).mra" "_Thunder Fox"
 add "Desert Breaker (World) (FD1094 317-0196).mra" "_Desert Breaker"
+add "Thunder Fox (World, rev 1).mra" "_Thunder Fox"
 
 #1306
 add "Laser Ghost (World) (FD1094 317-0166).mra" "_Laser Ghost"
