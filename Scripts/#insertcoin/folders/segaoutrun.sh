@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Sega-Outrun"
+if [ "$merge_system" == "1" ]; then
+      dir="_Sega"
+fi
 
 res=$(exist "Super Hang-On (sitdown-upright) (unprotected).mra")
 if [ "$res" == "1" ]; then
-   dir="_Sega-Outrun"
    outdir=$1
 
    add "$dir" "H" "Super Hang-On (sitdown-upright) (unprotected).mra" "_Super Hang-On"

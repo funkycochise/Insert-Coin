@@ -2,9 +2,10 @@
 source ./folders/functions.sh
 loadsetup
 
+dir="_Sega"
+
 res=$(exist "Pulsar.mra")
 if [ "$res" == "1" ]; then
-   dir="_Sega"
    outdir=$1
 
    add "$dir" "V" "Carnival.mra" "_Carnival" "" "ACT"

@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Capcom-Mitchell"
+if [ "$merge_system" == "1" ]; then
+      dir="_Capcom"
+fi
 
 res=$(exist "Black Tiger.mra")
 if [ "$res" == "1" ]; then
-   dir="_Capcom-Mitchell"
    outdir=$1
    add "$dir" "V"  "Avengers (US, revision C).mra" "_Avengers" "" "BEA"
    add "$dir" "V"  "1942 (Revision B).mra" "_1942" "" "STG"

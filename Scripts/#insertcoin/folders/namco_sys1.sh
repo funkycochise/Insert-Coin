@@ -2,9 +2,13 @@
 source ./folders/functions.sh
 loadsetup
 
+dir="_Namco-System-1"
+if [ "$merge_system" == "1" ]; then
+      dir="_Namco"
+fi
+
 res=$(exist "Galaga '88.mra")
 if [ "$res" == "1" ]; then
-   dir="_Namco-System-1"
    outdir=$1
 
    add "$dir" "V" "Bakutotsu Kijuutei.mra" "_Bakutotsu Kijuutei" "" "STG"

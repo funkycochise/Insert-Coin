@@ -2,9 +2,13 @@
 source ./folders/functions.sh
 loadsetup
 
+dir="_CPS2"
+if [ "$merge_system" == "1" ]; then
+      dir="_Capcom"
+fi
+
 res=$(exist "Alien vs. Predator (Euro 940520).mra")
 if [ "$res" == "1" ]; then
-   dir="_CPS2"
    outdir=$1
    add "$dir" "V" "19XX The War Against Destiny (Euro 960104).mra" "_19XX The War Against Destiny" "" "STG"
    add "$dir" "V" "Dimahoo (Euro 000121).mra" "_Dimahoo" "" "STG"

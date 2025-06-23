@@ -2,9 +2,13 @@
 source ./folders/functions.sh
 loadsetup
 
+dir="_CPS1"
+if [ "$merge_system" == "1" ]; then
+      dir="_Capcom"
+fi
+
 res=$(exist "Ghouls'n Ghosts (World).mra")
 if [ "$res" == "1" ]; then
-   dir="_CPS1"
    outdir=$1
 
    add "$dir" "V"  "1941 Counter Attack (World 900227).mra" "_1941 Counter Attack" "" "STG"

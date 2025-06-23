@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Irem M92"
+if [ "$merge_system" == "1" ]; then
+      dir="_Irem"
+fi
 
 res=$(exist "In The Hunt (World).mra")
 if [ "$res" == "1" ]; then
-   dir="_Irem M92"
    outdir=$1
    add "$dir" "V" "Lethal Thunder (World).mra" "_Lethal Thunder" "" "STG"
 

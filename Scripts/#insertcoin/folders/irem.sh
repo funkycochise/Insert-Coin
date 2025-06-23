@@ -1,10 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Irem"
 
 res=$(exist "Moon Patrol.mra")
 if [ "$res" == "1" ]; then
-   dir="_Irem"
    outdir=$1
    add "$dir" "V" "Shot Rider (B-Board 89624B-1).mra" "_Shot Rider" "" "ACT"
    add "$dir" "V" "Traverse USA- Zippy Race (US).mra" "_Traverse USA" "" "ACT"

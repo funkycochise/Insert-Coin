@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Sega-System-E"
+if [ "$merge_system" == "1" ]; then
+      dir="_Sega"
+fi
 
 res=$(exist "Opa Opa.mra")
 if [ "$res" == "1" ]; then
-   dir="_Sega-System-E"
    outdir=$1
 
    add "$dir" "V" "Megumi Rescue (Japan).mra" "_SystemE_Megumi Rescue" "_Megumi Rescue"

@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Sega-System-1"
+if [ "$merge_system" == "1" ]; then
+      dir="_Sega"
+fi
 
 res=$(exist "Mister Viking (315-5041).mra")
 if [ "$res" == "1" ]; then
-   dir="_Sega-System-1"
    outdir=$1
    add "$dir" "V" "Block Gal.mra" "_Block Gal"
    add "$dir" "V" "Gardia (317-0006).mra" "_Gardia" "" "STG"

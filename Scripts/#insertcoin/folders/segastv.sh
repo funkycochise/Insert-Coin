@@ -2,9 +2,13 @@
 source ./folders/functions.sh
 loadsetup "force"
 
+dir="_Sega-Titan Video"
+if [ "$merge_system" == "1" ]; then
+      dir="_Sega"
+fi
+
 res=$(exist "Shienryu (JUET 961226 V1.000).mra")
 if [ "$res" == "1" ]; then
-	dir="_Sega-Titan Video"
 	outdir=$1
 
 	add "$dir" "V" "Shienryu (JUET 961226 V1.000).mra" "_Shienryu" "" "STG"
@@ -19,13 +23,13 @@ if [ "$res" == "1" ]; then
 	add "$dir" "H" "DaeJeon! SanJeon SuJeon (AJTUE 990412 V1.000).mra" "_DaeJeon! SanJeon SuJeon"
 	add "$dir" "H" "Danchi de Hanafuda (J 990607 V1.400).mra" "_Danchi de Hanafuda"
 	add "$dir" "H" "Danchi de Quiz Okusan Yontaku Desuyo! (J 001128 V1.200).mra" "_Danchi de Quiz Okusan Yontaku Desuyo!"
-	add "$dir" "H" "Decathlete (JUET 960424 V1.000).mra" "_Decathlete"
+	#add "$dir" "H" "Decathlete (JUET 960424 V1.000).mra" "_Decathlete"
 	add "$dir" "H" "Decathlete (JUET 960709 V1.001).mra" "_Decathlete"
 	add "$dir" "H" "Die Hard Arcade (UET 960515 V1.000).mra" "_Die Hard Arcade"
 	add "$dir" "H" "Dynamite Deka (J 960515 V1.000).mra" "_Die Hard Arcade"
 	add "$dir" "H" "Ejihon Tantei Jimusyo (J 950613 V1.000).mra" "_Ejihon Tantei Jimusyo"
 	add "$dir" "H" "Final Arch (J 950714 V1.001).mra" "_Super Major League"
-	add "$dir" "H" "Final Fight Revenge - Final Revenge (JUET 990714 V1.000).mra" "_Final Fight Revenge"
+	#add "$dir" "H" "Final Fight Revenge - Final Revenge (JUET 990714 V1.000).mra" "_Final Fight Revenge"
 	add "$dir" "H" "Final Fight Revenge - Final Revenge (JUET 990930 V1.100).mra" "_Final Fight Revenge"
 	add "$dir" "H" "Find Love (J 971212 V1.000).mra" "_Find Love"
 	add "$dir" "H" "Funky Head Boxers (JUETBKAL 951218 V1.000).mra" "_Funky Head Boxers"
@@ -48,9 +52,9 @@ if [ "$res" == "1" ]; then
 	add "$dir" "H" "Print Club Pokemon B (U 991126 V1.000).mra" "_Print Club Pokemon B"
 	add "$dir" "H" "Pro Mahjong Kiwame S (J 951020 V1.208).mra" "_Pro Mahjong Kiwame S "
 	add "$dir" "H" "Puyo Puyo Sun (J 961115 V0.001).mra" "_Puyo Puyo Sun" "" "PUZ"
-	add "$dir" "H" "Puzzle & Action_ BoMulEul Chajara (JUET 970125 V2.00K).mra" "_Puzzle & Action_ BoMulEul Chajara"
-	add "$dir" "H" "Puzzle & Action_ Sando-R (J 951114 V1.000).mra" "_Puzzle & Action_ Sando-R"
-	add "$dir" "H" "Puzzle & Action_ Treasure Hunt (JUET 970901 V2.00E).mra" "_Puzzle & Action_ Treasure Hunt"
+	add "$dir" "H" "Puzzle & Action- BoMulEul Chajara (JUET 970125 V2.00K).mra" "_Puzzle & Action_ BoMulEul Chajara"
+	add "$dir" "H" "Puzzle & Action- Sando-R (J 951114 V1.000).mra" "_Puzzle & Action_ Sando-R"
+	add "$dir" "H" "Puzzle & Action- Treasure Hunt (JUET 970901 V2.00E).mra" "_Puzzle & Action_ Treasure Hunt"
 	add "$dir" "H" "Radiant Silvergun (JUET 980523 V1.000).mra" "_Radiant Silvergun" "" "STG"
 	add "$dir" "H" "Sea Bass Fishing (JUET 971110 V0.001).mra" "_Sea Bass Fishing"
 	add "$dir" "H" "Shanghai - The Great Wall - Shanghai Triple Threat (JUE 950623 V1.005).mra" "_Shanghai - The Great Wall - Shanghai Triple Threat"

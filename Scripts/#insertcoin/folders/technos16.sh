@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Technos16"
+if [ "$merge_system" == "1" ]; then
+      dir="_Technos"
+fi
 
 res=$(exist "The Combatribes (US, Rev 2, Set 1).mra")
 if [ "$res" == "1" ]; then
-   dir="_Technos16"
    outdir=$1
 
    add "$dir" "H" "Double Dragon 3 The Rosetta Stone (US).mra" "_Double Dragon 3 The Rosetta Stone" "" "BEA"

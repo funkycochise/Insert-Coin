@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Irem M72"
+if [ "$merge_system" == "1" ]; then
+      dir="_Irem"
+fi
 
 res=$(exist "R-Type (World).mra")
 if [ "$res" == "1" ]; then
-   dir="_Irem M72"
    outdir=$1
 
    add "$dir" "V" "Air Duel (Japan, M72 hardware).mra" "_Air Duel" "" "STG"

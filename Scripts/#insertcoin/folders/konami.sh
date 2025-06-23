@@ -1,10 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Konami"
 
 res=$(exist "Combat School (joystick).mra")
 if [ "$res" == "1" ]; then
-   dir="_Konami"
    outdir=$1
    add "$dir" "V"  "Amidar (Scramble).mra" "_Amidar" "" "PUZ"
    add "$dir" "V"  "Circus Charlie (level select, set 1).mra" "_Circus Charlie" "" "ACT"

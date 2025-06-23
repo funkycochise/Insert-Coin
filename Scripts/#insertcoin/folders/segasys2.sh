@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Sega-System-2"
+if [ "$merge_system" == "1" ]; then
+      dir="_Sega"
+fi
 
 res=$(exist "Choplifter (unprotected).mra")
 if [ "$res" == "1" ]; then
-   dir="_Sega-System-2"
    outdir=$1
    add "$dir" "V" "Toki no Senshi - Chrono Soldier [MC-8123, 317-0040].mra" "_Toki no Senshi" "" "ACT"
 

@@ -2,10 +2,13 @@
 source ./folders/functions.sh
 
 loadsetup
+dir="_Sega-System-18"
+if [ "$merge_system" == "1" ]; then
+      dir="_Sega"
+fi
 
 res=$(exist "Shadow Dancer (World).mra")
 if [ "$res" == "1" ]; then
-   dir="_Sega-System-18"
    outdir=$1
    add "$dir" "H" "Alien Storm (World, 2 Players) (FD1094 317-0154).mra" "_Alien Storm" "" "BEA"
    add "$dir" "H" "Bloxeed (Japan) (FD1094 317-0139).mra" "_Bloxeed" "" "PUZ"

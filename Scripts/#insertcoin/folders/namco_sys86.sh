@@ -2,9 +2,13 @@
 source ./folders/functions.sh
 loadsetup
 
+dir="_Namco-System-86"
+if [ "$merge_system" == "1" ]; then
+      dir="_Namco"
+fi
+
 res=$(exist "Rolling Thunder (rev 3).mra")
 if [ "$res" == "1" ]; then
-   dir="_Namco-System-86"
    outdir=$1
 
    add "$dir" "H" "Alien Sector.mra" "_Alien Sector" "" "RNG"

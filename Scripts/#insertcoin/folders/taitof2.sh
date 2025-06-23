@@ -2,9 +2,13 @@
 source ./folders/functions.sh
 
 loadsetup
+dir="_Taito-F2"
+if [ "$merge_system" == "1" ]; then
+      dir="_Taito"
+fi
+
 res=$(exist "Liquid Kids (World).mra")
 if [ "$res" == "1" ]; then
-   dir="_Taito-F2"
    outdir=$1
    
    #add "$dir" "V" "Gun Frontier (Japan).mra" "_Gun Frontier" "" "STG"

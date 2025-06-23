@@ -50,6 +50,36 @@ ini=/media/fat/Scripts/#insertcoin/setup.ini
 
 debug="0"
 
+function names {
+
+names=/media/fat/Scripts/#insertcoin/names.ini
+
+   if [ -f "$names" ];
+   then
+      source <(grep genre_act $names)
+      source <(grep genre_bea $names)
+      source <(grep genre_spo $names)
+      source <(grep genre_puz $names)
+      source <(grep genre_vsf $names)
+      source <(grep genre_stg_h $names)
+      source <(grep genre_stg_v $names)
+      source <(grep genre_rng_h $names)
+      source <(grep genre_rng_v $names)
+      source <(grep vert $names)
+      source <(grep horz $names)
+   fi
+   #echo "genre_act: $genre_act"
+   #echo "genre_bea: $genre_bea"
+   #echo "genre_spo: $genre_spo"
+   #echo "genre_puz: $genre_puz"
+   #echo "genre_vsf: $genre_vsf"
+   #echo "genre_stg_h: $genre_stg_h"
+   #echo "genre_stg_v: $genre_stg_v"
+   #echo "genre_rng_h: $genre_rng_h"
+   #echo "vert: $vert"
+   #echo "horz: $horz"
+}
+
 function loadsetup {
 
 forcemode=$1
@@ -58,6 +88,22 @@ source <(grep essential $ini)
 essential=${essential:0:1}
 #if [ "$debug" == "1" ]; then
 #   echo "essential: $essential" >> /media/fat/Scripts/#insertcoin/out.txt
+#fi
+
+source <(grep merge_system $ini)
+merge_system=${merge_system:0:1}
+#if [ "$debug" == "1" ]; then
+#   echo "merge_system: $merge_system" >> /media/fat/Scripts/#insertcoin/out.txt
+#fi
+source <(grep show_system $ini)
+show_system=${show_system:0:1}
+#if [ "$debug" == "1" ]; then
+#   echo "show_system: $show_system" >> /media/fat/Scripts/#insertcoin/out.txt
+#fi
+source <(grep show_genre $ini)
+show_genre=${show_genre:0:1}
+#if [ "$debug" == "1" ]; then
+#   echo "show_genre: $show_genre" >> /media/fat/Scripts/#insertcoin/out.txt
 #fi
 
 source <(grep manufacturer_subfolder $ini)
@@ -225,6 +271,8 @@ folder_name=${folder_name:0:${#folder_name}}
 #   echo "folder_name: $folder_name"
 #fi
 
+names
+
 }
 
 function exist {
@@ -305,7 +353,7 @@ then
    #echo "Creating $outdir"
    mkdir "$outdir" 
 fi
-if [ ! -d "$outdir/$dir" ];
+if [ ! -d "$outdir/$dir" ] && [ "$show_system" == "1" ];
 then
    if [ ! -z "$dir" ];
    then 
@@ -333,12 +381,12 @@ then
    fi
    if [ ! -z "$dir" ];
    then 
-      if [ ! -d "$outdir/$dir/$renamed" ] 
+      if [ ! -d "$outdir/$dir/$renamed" ] && [ "$show_system" == "1" ]
       then
          ln -s "$ALT/$sub" "$outdir/$dir/$renamed"
       fi
    else
-      if [ ! -d "$outdir/$renamed" ] 
+      if [ ! -d "$outdir/$renamed" ] && [ "$show_system" == "1" ]
       then
          ln -s "$ALT/$sub" "$outdir/$renamed"
       fi
@@ -349,40 +397,44 @@ else
     echo -e "NF $ARCADE/$mra\r" >> /media/fat/Scripts/#insertcoin/out.txt
   fi
 fi
-#horizontal
-if [ "$horizontal" == "1" ] && [ "$orientation" == "H" ]; then
-   add_folder "$horz"
-fi
-#vertical
-if [ "$vertical" == "1" ] && [ "$orientation" == "V" ]; then
-   add_folder "$vert"
-fi
-if [ "$action" == "1" ] && [ "$genre" == "ACT" ]; then
-   add_folder "$genre_act"
-fi
-if [ "$beat" == "1" ] && [ "$genre" == "BEA" ]; then
-   add_folder "$genre_bea"
-fi
-if [ "$puzzle" == "1" ] && [ "$genre" == "PUZ" ]; then
-   add_folder "$genre_puz"
-fi
-if [ "$sport" == "1" ] && [ "$genre" == "SPO" ]; then
-   add_folder "$genre_spo"
-fi
-if [ "$vsf" == "1" ] && [ "$genre" == "VSF" ]; then
+
+if [ "$show_genre" == "1" ]; then
+
+   #horizontal
+   if [ "$horizontal" == "1" ] && [ "$orientation" == "H" ]; then
+      add_folder "$horz"
+   fi
+   #vertical
+   if [ "$vertical" == "1" ] && [ "$orientation" == "V" ]; then
+      add_folder "$vert"
+   fi
+   if [ "$action" == "1" ] && [ "$genre" == "ACT" ]; then
+      add_folder "$genre_act"
+   fi
+   if [ "$beat" == "1" ] && [ "$genre" == "BEA" ]; then
+      add_folder "$genre_bea"
+   fi
+   if [ "$puzzle" == "1" ] && [ "$genre" == "PUZ" ]; then
+      add_folder "$genre_puz"
+   fi
+   if [ "$sport" == "1" ] && [ "$genre" == "SPO" ]; then
+      add_folder "$genre_spo"
+   fi
+   if [ "$vsf" == "1" ] && [ "$genre" == "VSF" ]; then
       add_folder "$genre_vsf"
-fi
-if [ "$stg_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "STG" ]; then
+   fi
+   if [ "$stg_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "STG" ]; then
       add_folder "$genre_stg_h"
-fi
-if [ "$stg_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "STG" ]; then
+   fi
+   if [ "$stg_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "STG" ]; then
       add_folder "$genre_stg_v"
-fi
-if [ "$rng_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "RNG" ]; then
+   fi
+   if [ "$rng_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "RNG" ]; then
       add_folder "$genre_rng_h"
-fi
-if [ "$rng_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "RNG" ]; then
+   fi
+   if [ "$rng_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "RNG" ]; then
       add_folder "$genre_rng_v"
+   fi
 fi
 
 if [ ! -z "$sub" ];
@@ -448,11 +500,13 @@ if [ -z "$renamed" ]; then
 fi
 #echo "renamed: $renamed"
 
-if [ ! -z "$dir" ] && [ ! -d "$outdir/$dir" ]; then
+if [ ! -z "$dir" ] && [ ! -d "$outdir/$dir" ] && [ "$show_system" == "1" ];
+then
    #echo "Creating $outdir/$dir"
    mkdir "$outdir/$dir"
 fi
-if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then 
+if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ] && [ "$show_system" == "1" ] 
+then 
    if [ ! -d "$outdir/$dir/$renamed" ]; then
       #echo "creating $outdir/$dir/$renamed"
       ln -s "$ALT/$mra" "$outdir/$dir/$renamed"
@@ -467,43 +521,49 @@ else
    #echo "renamed: $renamed"
    #echo "genre $genre"
 
-   if [ ! -d "rep() : $outdir/$dir/$renamed" ]; then
+   if [ ! -d "rep() : $outdir/$dir/$renamed" ] && [ "$show_system" == "1" ] 
+   then
       #echo "$outdir/$dir/$renamed"
       ln -s "$ALT/$mra" "$outdir/$dir/$renamed"
    fi
 fi
 
-if [ "$vertical" == "1" ] && [ "$orientation" = "V" ]; then
-   rep_folder "$vert"
-elif [ "$horizontal" == "1" ] && [ "$orientation" = "H" ]; then
-   rep_folder "$horz"
-fi
-if [ "$action" == "1" ] && [ "$genre" == "ACT" ]; then
-   rep_folder "$genre_act"
-fi
-if [ "$beat" == "1" ] && [ "$genre" == "BEA" ]; then
-   rep_folder "$genre_bea"
-fi
-if [ "$puzzle" == "1" ] && [ "$genre" == "PUZ" ]; then
-   rep_folder "$genre_puz"
-fi
-if [ "$sport" == "1" ] && [ "$genre" == "SPO" ]; then
-  rep_folder "$genre_spo"
-fi
-if [ "$vsf" == "1" ] && [ "$genre" == "VSF" ]; then
-   rep_folder "$genre_vsf"
-fi
-if [ "$stg_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "STG" ]; then
-   rep_folder "$genre_stg_h"
-fi
-if [ "$stg_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "STG" ]; then
-   rep_folder "$genre_stg_v"
-fi
-if [ "$rng_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "RNG" ]; then
-   rep_folder "$genre_rng_h"
-fi
-if [ "$rng_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "RNG" ]; then
-   rep_folder "$genre_rng_v"
+if [ "$show_genre" == "1" ]; then
+
+
+   if [ "$vertical" == "1" ] && [ "$orientation" = "V" ]; then
+      rep_folder "$vert"
+   elif [ "$horizontal" == "1" ] && [ "$orientation" = "H" ]; then
+      rep_folder "$horz"
+   fi
+   if [ "$action" == "1" ] && [ "$genre" == "ACT" ]; then
+      rep_folder "$genre_act"
+   fi
+   if [ "$beat" == "1" ] && [ "$genre" == "BEA" ]; then
+      rep_folder "$genre_bea"
+   fi
+   if [ "$puzzle" == "1" ] && [ "$genre" == "PUZ" ]; then
+      rep_folder "$genre_puz"
+   fi
+   if [ "$sport" == "1" ] && [ "$genre" == "SPO" ]; then
+     rep_folder "$genre_spo"
+   fi
+   if [ "$vsf" == "1" ] && [ "$genre" == "VSF" ]; then
+      rep_folder "$genre_vsf"
+   fi
+   if [ "$stg_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "STG" ]; then
+      rep_folder "$genre_stg_h"
+   fi
+   if [ "$stg_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "STG" ]; then
+      rep_folder "$genre_stg_v"
+   fi
+   if [ "$rng_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "RNG" ]; then
+      rep_folder "$genre_rng_h"
+   fi
+   if [ "$rng_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "RNG" ]; then
+      rep_folder "$genre_rng_v"
+   fi
+
 fi
 
 if [ ! -z "$sub" ];

@@ -2,9 +2,12 @@
 source ./folders/functions.sh
 
 loadsetup
+dir="_Sega-System-16"
+if [ "$merge_system" == "1" ]; then
+      dir="_Sega"
+fi
 res=$(exist "Shinobi (Set 6, World, S16A) [No Protection].mra")
 if [ "$res" == "1" ]; then
-   dir="_Sega-System-16"
    outdir=$1
 
    add "$dir" "V" "Ace Attacker (Japan, S16A) [FD1094 317-0060].mra" "_Ace Attacker" "" "SPO"

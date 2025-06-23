@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Irem M62"
+if [ "$merge_system" == "1" ]; then
+      dir="_Irem"
+fi
 
 res=$(exist "Kung-Fu Master (W).mra")
 if [ "$res" == "1" ]; then
-   dir="_Irem M62"
    outdir=$1
    add "$dir" "V" "The Battle-Road.mra" "_Battle Road"
    add "$dir" "V" "Youjyuden (JP).mra" "_Youjyuden"

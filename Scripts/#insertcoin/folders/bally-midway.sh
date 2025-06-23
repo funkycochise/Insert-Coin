@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Bally-midway"
+if [ "$merge_system" == "1" ]; then
+      dir="_Midway"
+fi
 
 res=$(exist "Pac-Man (Midway).mra")
 if [ "$res" == "1" ]; then
-   dir="_Bally-midway"
    outdir=$1
 
    add "$dir" "H" "Bosconian - Star Destroyer (Midway, new version).mra" "_Bosconian" "" "STG"

@@ -2,9 +2,13 @@
 source ./folders/functions.sh
 loadsetup
 
+dir="_CPS1.5"
+if [ "$merge_system" == "1" ]; then
+      dir="_Capcom"
+fi
+
 res=$(exist "The Punisher (World 930422).mra")
 if [ "$res" == "1" ]; then
-   dir="_CPS1.5"
    outdir=$1
    add "$dir" "H"  "Cadillacs and Dinosaurs (World 930201).mra" "_Cadillacs and Dinosaurs" "" "BEA"
    add "$dir" "H"  "Muscle Bomber Duo Ultimate Team Battle (World 931206).mra" "_Muscle Bomber Duo" "" "VSF"

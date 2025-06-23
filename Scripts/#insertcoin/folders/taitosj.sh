@@ -2,9 +2,12 @@
 source ./folders/functions.sh
 
 loadsetup
+dir="_Taito-SJ"
+if [ "$merge_system" == "1" ]; then
+      dir="_Taito"
+fi
 res=$(exist "Elevator Action Bootleg.mra")
 if [ "$res" == "1" ]; then
-   dir="_Taito-SJ"
    outdir=$1
    add "$dir" "V" "Alpine Ski.mra" "_Alpine Ski" "" "SPO"
    add "$dir" "V" "Bio Attack.mra" "_Bio Attack"

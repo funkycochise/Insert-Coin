@@ -1,11 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
+dir="_Midway_MCR2"
+if [ "$merge_system" == "1" ]; then
+      dir="_Midway"
+fi
 
 res=$(exist "Tron.mra")
 if [ "$res" == "1" ]; then
-
-   dir="_Midway_MCR2"
    outdir=$1
    add "$dir" "V"  "Satan's Hollow (Set 1).mra" "_Satan's Hollow"
    add "$dir" "V"  "Tron.mra" "_Tron"
