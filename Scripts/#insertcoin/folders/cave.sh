@@ -27,6 +27,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "H" "Puzzle Uo Poko.mra" "_Puzzle Uo Poko" "" "PUZ"
    add "$dir" "H" "Puzzle Uo Poko (Japan).mra" "_Puzzle Uo Poko" "" "PUZ"
    add "$dir" "H" "Thunder Heroes.mra" "_Thunder Heroes"
+   add "$dir" "H" "Bishoujo Senshi Sailor Moon (Version 95-03-22B, Japan).mra" "_Pretty Soldier Sailor Moon" "" "BEA"
 
    dot
 fi
