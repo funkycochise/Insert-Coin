@@ -30,6 +30,8 @@ function linkfolder {
       ln -s "$ALT/$1"  "$outdir/$dir/_$formated$1"
    fi
 }
+#2506
+add "Bishoujo Senshi Sailor Moon (Version 95-03-22B, Japan).mra" "_Pretty Soldier Sailor Moon" "" "BEA"
 
 #2006
 add "Desert Breaker (World) (FD1094 317-0196).mra" "_Desert Breaker"
