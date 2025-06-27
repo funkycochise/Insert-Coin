@@ -911,6 +911,7 @@ dl "zzyzzyxx.zip"
 dlf "ninjak.zip"
 dl "sailormn.zip"
 dl "sailormnd.zip"
+dl "lgtnfght.zip"
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
