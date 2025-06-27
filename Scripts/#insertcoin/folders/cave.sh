@@ -4,7 +4,7 @@ loadsetup
 
 res=$(exist "DoDonPachi.mra")
 if [ "$res" == "1" ]; then
-   dir="_Cave"
+   dir="_Cave 68000"
    outdir=$1
 
    add "$dir" "V" "Dangun Feveron.mra" "_Dangun Feveron" "" "STG"
