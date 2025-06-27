@@ -6,6 +6,7 @@ dir="_Konami"
 res=$(exist "Combat School (joystick).mra")
 if [ "$res" == "1" ]; then
    outdir=$1
+
    add "$dir" "V"  "Amidar (Scramble).mra" "_Amidar" "" "PUZ"
    add "$dir" "V"  "Circus Charlie (level select, set 1).mra" "_Circus Charlie" "" "ACT"
    add "$dir" "V"  "Contra (US - Asia, set 1).mra" "_Contra" "" "RNG"
@@ -22,6 +23,7 @@ if [ "$res" == "1" ]; then
    add "$dir" "V"  "Jackal (W).mra" "_Jackal" "" "RNG"
    add "$dir" "V"  "Jackal (W, Rotary).mra" "_Jackal" "" "RNG"
    add "$dir" "V"  "Kicker.mra" "_Kicker" "" "ACT"
+   add "$dir" "V"  "Lightning Fighters (World).mra" "_Lightning Fighters" "" "STG"
    add "$dir" "V"  "Mikie.mra" "_Mikie" "" "ACT"
    add "$dir" "V"  "MX5000.mra" "_MX5000" "" "STG"
    add "$dir" "V"  "Pooyan.mra" "_Pooyan" "" "ACT"
