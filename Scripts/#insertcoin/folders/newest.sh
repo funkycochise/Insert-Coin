@@ -31,6 +31,9 @@ function linkfolder {
    fi
 }
 
+#0407
+add "Ajax.mra" "_Ajax"
+
 #2706
 add "Lightning Fighters (World).mra" "_Lightning Fighters"
 
