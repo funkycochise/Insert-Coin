@@ -8,6 +8,7 @@ if [ "$res" == "1" ]; then
    outdir=$1
 
    add "$dir" "V"  "Amidar (Scramble).mra" "_Amidar" "" "PUZ"
+   add "$dir" "V"  "Ajax.mra" "_Ajax" "" "STG"
    add "$dir" "V"  "Circus Charlie (level select, set 1).mra" "_Circus Charlie" "" "ACT"
    add "$dir" "V"  "Contra (US - Asia, set 1).mra" "_Contra" "" "RNG"
    add "$dir" "V"  "Fast Lane.mra" "_Fast Lane" "" "ACT"
