@@ -31,7 +31,7 @@ function linkfolder {
    fi
 }
 
-#0407
+#0704
 add "Ajax.mra" "_Ajax"
 
 #2706
