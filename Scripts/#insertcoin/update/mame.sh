@@ -46,8 +46,9 @@ function dl {
          echo -n "downloading $1"   
       fi
       curl $ARCHIVE_MAME/$1 -o $des_mame/$1 -k -s
+      touch $des_mame/$1
       #wget $ARCHIVE_MAME/$1 -P $TEMP -q
-      #mv $TEMP/$1 $des_mame/$1 
+      #mv $TEMP/$1 $des_mame/$1
       if [ "$TERM" == "linux" ]; then
         #GUI
          echo -e "\r   ${BLUE}${CHECK}${NC} $1                                            "
