@@ -1,7 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Konami"
+
+if [ -f "$names" ]; then
+   source <(grep konami $names)
+else
+   konami="_Konami"
+fi
+dir=$konami
 
 resh=$(exist "Combat School (joystick).mra")
 resv=$(exist "Contra (US - Asia, set 1).mra")

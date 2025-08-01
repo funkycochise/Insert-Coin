@@ -2,9 +2,16 @@
 source ./folders/functions.sh
 loadsetup
 
+names=/media/fat/Scripts/#insertcoin/names.ini
+if [ -f "$names" ]; then
+   source <(grep bagman $names)
+else
+   bagman="_Bagman"
+fi
+dir=$bagman
+
 res=$(exist "Bagman.mra")
 if [ "$res" == "1" ]; then
-   dir="_Bagman"
    outdir=$1
 
    add "$dir" "H" "Squash.mra" "_Squash"

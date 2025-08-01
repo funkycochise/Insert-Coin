@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Technos16"
-if [ "$merge_system" == "1" ]; then
-      dir="_Technos"
+
+if [ -f "$names" ]; then
+   source <(grep technos16 $names)
+else
+   technos16="_Technos16"
 fi
+dir=$technos16
 
 res=$(exist "The Combatribes (US, Rev 2, Set 1).mra")
 if [ "$res" == "1" ]; then

@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Midway_MCR2"
-if [ "$merge_system" == "1" ]; then
-      dir="_Midway"
+
+if [ -f "$names" ]; then
+   source <(grep mcr2 $names)
+else
+   mcr2="_Midway_MCR2"
 fi
+dir=$mcr2
 
 res=$(exist "Tron.mra")
 if [ "$res" == "1" ]; then

@@ -1,7 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Irem"
+
+if [ -f "$names" ]; then
+   source <(grep irem $names)
+else
+   irem="_Irem"
+fi
+dir=$irem
 
 res=$(exist "Moon Patrol.mra")
 if [ "$res" == "1" ]; then

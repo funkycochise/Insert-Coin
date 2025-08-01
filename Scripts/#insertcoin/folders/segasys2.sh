@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Sega-System-2"
-if [ "$merge_system" == "1" ]; then
-      dir="_Sega"
+
+if [ -f "$names" ]; then
+   source <(grep segasys2 $names)
+else
+   segasys2="_Sega-System-2"
 fi
+dir=$segasys2
 
 res=$(exist "Choplifter (unprotected).mra")
 if [ "$res" == "1" ]; then

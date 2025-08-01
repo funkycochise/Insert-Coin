@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep deco $names)
+else
+   deco="_DataEast-Deco"
+fi
+dir=$deco
+
 res=$(exist "Chelnov - Atomic Runner (World).mra")
 if [ "$res" == "1" ]; then
-   dir="_DataEast-Deco"
    outdir=$1
    add "$dir" "V" "Burger Time (Set 1).mra" "_Burger Time" "" "ACT"
    add "$dir" "V" "Burnin' Rubber.mra" "_Burning Rubber" "" "ACT"

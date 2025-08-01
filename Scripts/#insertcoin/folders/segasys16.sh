@@ -2,10 +2,14 @@
 source ./folders/functions.sh
 
 loadsetup
-dir="_Sega-System-16"
-if [ "$merge_system" == "1" ]; then
-      dir="_Sega"
+
+if [ -f "$names" ]; then
+   source <(grep segasys16 $names)
+else
+   segasys16="_Sega-System-16"
 fi
+dir=$segasys16
+
 res=$(exist "Shinobi (Set 6, World, S16A) [No Protection].mra")
 if [ "$res" == "1" ]; then
    outdir=$1

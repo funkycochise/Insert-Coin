@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep upl $names)
+else
+   upl="_Upl"
+fi
+dir=$upl
+
 res=$(exist "Ninjakun.mra")
 if [ "$res" == "1" ]; then
-   dir="_Upl"
    outdir=$1
 
    #addgame "Combat Hawk.mra" "_Combat Hawk"

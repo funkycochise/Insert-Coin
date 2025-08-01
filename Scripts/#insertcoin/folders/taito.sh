@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep taito $names)
+else
+   taito="_Taito"
+fi
+dir=$taito
+
 res=$(exist "Bubble Bobble (Japan, Ver 0.1).mra")
 if [ "$res" == "1" ]; then
-   dir="_Taito"
    outdir=$1
 
    add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"

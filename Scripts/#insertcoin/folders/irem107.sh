@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Irem M107"
-if [ "$merge_system" == "1" ]; then
-      dir="_Irem"
+
+if [ -f "$names" ]; then
+   source <(grep irem107 $names)
+else
+   irem107="_Irem M107"
 fi
+dir=$irem107
 
 res=$(exist "Air Assault (World).mra")
 if [ "$res" == "1" ]; then

@@ -2,10 +2,12 @@
 source ./folders/functions.sh
 loadsetup
 
-dir="_CPS2"
-if [ "$merge_system" == "1" ]; then
-      dir="_Capcom"
+if [ -f "$names" ]; then
+   source <(grep cps2 $names)
+else
+   cps2="_CPS2"
 fi
+dir=$cps2
 
 res=$(exist "Alien vs. Predator (Euro 940520).mra")
 if [ "$res" == "1" ]; then

@@ -1,11 +1,26 @@
 #!/bin/bash  
 source ./folders/functions.sh
 
-dir="_#Newest"
 outdir=$1
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep newest $names)
+else
+   newest="_#Recent"
+fi
+dir=$newest
+
 mkdir "$outdir/$dir"
+
+function linkfolder {
+   counter=$((counter+1))
+   if [[ "$counter" -lt 100 ]]; then
+      #echo "$counter - $1"
+      formated=$(printf "%02d" $counter)
+      ln -s "$ALT/$1"  "$outdir/$dir/_$formated$1"
+   fi
+}
 
 function add {
 
@@ -22,14 +37,7 @@ fi
 
 counter=0
 
-function linkfolder {
-   counter=$((counter+1))
-   if [[ "$counter" -lt 100 ]]; then
-      #echo "$counter - $1"
-      formated=$(printf "%02d" $counter)
-      ln -s "$ALT/$1"  "$outdir/$dir/_$formated$1"
-   fi
-}
+
 
 #0730
 add "StarForce.mra" "_StarForce"

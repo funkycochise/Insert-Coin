@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Irem M62"
-if [ "$merge_system" == "1" ]; then
-      dir="_Irem"
+
+if [ -f "$names" ]; then
+   source <(grep irem62 $names)
+else
+   irem62="_Irem M62"
 fi
+dir=$irem62
 
 res=$(exist "Kung-Fu Master (W).mra")
 if [ "$res" == "1" ]; then

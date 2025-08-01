@@ -28,56 +28,49 @@ fi
 #CHECK="\xE2\x9C\x94"
 #CROSS="\xE2\x9D\x8C"
 
+names=/media/fat/Scripts/#insertcoin/names.ini
+
 ARCADE=/media/fat/_Arcade
 ALT=/media/fat/_Arcade/_alternatives
 CORE=/media/fat/_Arcade/Cores
 CONSOLE=/media/fat/_Console
 
-genre_act="__Action"
-genre_bea="__Beat'em up"
-genre_spo="__Sport"
-genre_puz="__Puzzle"
-genre_vsf="__Vs Fighting"
-genre_stg_h="__STG_H"
-genre_stg_v="__STG_V"
-genre_rng_h="__Run'n'Gun_H"
-genre_rng_v="__Run'n'Gun_V"
-vert="__Vertical"
-horz="__Horizontal"
 
 #get setup settings
 ini=/media/fat/Scripts/#insertcoin/setup.ini
 
 debug="0"
 
-function names {
+function loadnames {
 
 names=/media/fat/Scripts/#insertcoin/names.ini
 
    if [ -f "$names" ];
    then
-      source <(grep genre_act $names)
-      source <(grep genre_bea $names)
-      source <(grep genre_spo $names)
-      source <(grep genre_puz $names)
+      source <(grep genre_action $names)
+      source <(grep genre_beat $names)
+      source <(grep genre_sport $names)
+      source <(grep genre_puzzle $names)
       source <(grep genre_vsf $names)
       source <(grep genre_stg_h $names)
       source <(grep genre_stg_v $names)
       source <(grep genre_rng_h $names)
       source <(grep genre_rng_v $names)
-      source <(grep vert $names)
-      source <(grep horz $names)
+      source <(grep genre_horizontal $names)
+      source <(grep genre_vertical $names)
+
    fi
-   #echo "genre_act: $genre_act"
-   #echo "genre_bea: $genre_bea"
-   #echo "genre_spo: $genre_spo"
-   #echo "genre_puz: $genre_puz"
+   #echo "genre_horizontal: $genre_horizontal"
+   #echo "genre_vertical: $genre_vertical"
+   #echo "genre_act: $genre_action"
+   #echo "genre_beat: $genre_beat"
+   #echo "genre_sport: $genre_sport"
+   #echo "genre_puzzle: $genre_puzzle"
    #echo "genre_vsf: $genre_vsf"
    #echo "genre_stg_h: $genre_stg_h"
    #echo "genre_stg_v: $genre_stg_v"
    #echo "genre_rng_h: $genre_rng_h"
-   #echo "vert: $vert"
-   #echo "horz: $horz"
+   #echo "genre_rng_v: $genre_rng_v"
 }
 
 function loadsetup {
@@ -271,7 +264,7 @@ folder_name=${folder_name:0:${#folder_name}}
 #   echo "folder_name: $folder_name"
 #fi
 
-names
+loadnames
 
 }
 
@@ -402,23 +395,23 @@ if [ "$show_genre" == "1" ]; then
 
    #horizontal
    if [ "$horizontal" == "1" ] && [ "$orientation" == "H" ]; then
-      add_folder "$horz"
+      add_folder "$genre_horizontal"
    fi
    #vertical
    if [ "$vertical" == "1" ] && [ "$orientation" == "V" ]; then
-      add_folder "$vert"
+      add_folder "$genre_vertical"
    fi
    if [ "$action" == "1" ] && [ "$genre" == "ACT" ]; then
-      add_folder "$genre_act"
+      add_folder "$genre_action"
    fi
    if [ "$beat" == "1" ] && [ "$genre" == "BEA" ]; then
-      add_folder "$genre_bea"
+      add_folder "$genre_beat"
    fi
    if [ "$puzzle" == "1" ] && [ "$genre" == "PUZ" ]; then
-      add_folder "$genre_puz"
+      add_folder "$genre_puzzle"
    fi
    if [ "$sport" == "1" ] && [ "$genre" == "SPO" ]; then
-      add_folder "$genre_spo"
+      add_folder "$genre_sport"
    fi
    if [ "$vsf" == "1" ] && [ "$genre" == "VSF" ]; then
       add_folder "$genre_vsf"
@@ -532,21 +525,21 @@ if [ "$show_genre" == "1" ]; then
 
 
    if [ "$vertical" == "1" ] && [ "$orientation" = "V" ]; then
-      rep_folder "$vert"
+      rep_folder "$genre_vertical"
    elif [ "$horizontal" == "1" ] && [ "$orientation" = "H" ]; then
-      rep_folder "$horz"
+      rep_folder "$genre_horizontal"
    fi
    if [ "$action" == "1" ] && [ "$genre" == "ACT" ]; then
-      rep_folder "$genre_act"
+      rep_folder "$genre_action"
    fi
    if [ "$beat" == "1" ] && [ "$genre" == "BEA" ]; then
-      rep_folder "$genre_bea"
+      rep_folder "$genre_beat"
    fi
    if [ "$puzzle" == "1" ] && [ "$genre" == "PUZ" ]; then
-      rep_folder "$genre_puz"
+      rep_folder "$genre_puzzle"
    fi
    if [ "$sport" == "1" ] && [ "$genre" == "SPO" ]; then
-     rep_folder "$genre_spo"
+     rep_folder "$genre_sport"
    fi
    if [ "$vsf" == "1" ] && [ "$genre" == "VSF" ]; then
       rep_folder "$genre_vsf"

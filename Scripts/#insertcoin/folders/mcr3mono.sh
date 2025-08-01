@@ -2,6 +2,13 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep mcr3mono $names)
+else
+   mcr3mono="_Midway_MCR3Mono"
+fi
+dir=$mcr3mono
+
 res=$(exist "Demolition Derby (MCR-3 Mono Board Version).mra")
 if [ "$res" == "1" ]; then
    dir="_MCR3Mono"

@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep alpha $names)
+else
+   alpha="_Alpha"
+fi
+dir=$alpha
+
 res=$(exist "Sky Adventure (World).mra")
 if [ "$res" == "1" ]; then
-   dir="_Alpha"
    outdir=$1
 
    add "$dir" "H" "Gang Wars.mra" "_Gang Wars" "" "BEA"

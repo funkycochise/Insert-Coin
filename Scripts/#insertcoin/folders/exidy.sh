@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep exidy $names)
+else
+   exidy="_Exidy"
+fi
+dir=$exidy
+
 res=$(exist "TARG.mra")
 if [ "$res" == "1" ]; then
-   dir="_Exidy"
    outdir=$1
    add "$dir" "H" "Venture Revision 5.mra" "_Venture"
    add "$dir" "H" "TARG.mra" "_TARG"

@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep neogeo $names)
+else
+   neogeo="_Neo-geo"
+fi
+dir=$neogeo
+
 res=$(exist "Metal Slug - Super Vehicle-001.mgl")
 if [ "$res" == "1" ]; then
-   dir="_Neo-geo"
    outdir=$1
 
    #add "$dir" "H" "Columns.mra" 

@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Irem M90"
-if [ "$merge_system" == "1" ]; then
-      dir="_Irem"
+
+if [ -f "$names" ]; then
+   source <(grep irem90 $names)
+else
+   irem90="_Irem M90"
 fi
+dir=$irem90
 
 res=$(exist "Bomber Man - Dyna Blaster.mra")
 if [ "$res" == "1" ]; then

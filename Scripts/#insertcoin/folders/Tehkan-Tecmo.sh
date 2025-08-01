@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep tecmo $names)
+else
+   tecmo="_Tehkan-Tecmo"
+fi
+dir=$tecmo
+
 res=$(exist "Bomb Jack.mra")
 if [ "$res" == "1" ]; then
-   dir="_Tehkan-Tecmo"
    outdir=$1
 
    add "$dir" "V" "Bomb Jack.mra" "_Bomb Jack"

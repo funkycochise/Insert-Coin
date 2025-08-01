@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Capcom-Mitchell"
-if [ "$merge_system" == "1" ]; then
-      dir="_Capcom"
+
+if [ -f "$names" ]; then
+   source <(grep capcom $names)
+else
+   capcom="_Capcom-Mitchell"
 fi
+dir=$capcom
 
 res=$(exist "Black Tiger.mra")
 if [ "$res" == "1" ]; then

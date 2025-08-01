@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Sega-System-1"
-if [ "$merge_system" == "1" ]; then
-      dir="_Sega"
+
+if [ -f "$names" ]; then
+   source <(grep segasys1 $names)
+else
+   segasys1="_Sega-System-1"
 fi
+dir=$segasys1
 
 res=$(exist "Mister Viking (315-5041).mra")
 if [ "$res" == "1" ]; then

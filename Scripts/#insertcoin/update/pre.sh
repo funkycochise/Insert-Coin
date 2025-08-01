@@ -6,6 +6,11 @@ dl="0"
 #get setup settings
 ini=/media/fat/Scripts/#insertcoin/setup.ini
 
+if [ ! -f "/media/fat/Scripts/#insertcoin/names.ini" ]; then
+   curl "https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/names.ini" --insecure -o "/media/fat/Scripts/#insertcoin/names.ini" 
+fi
+
+
 if [ -f "$ini" ] 
 then
    source <(grep version $ini)

@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep nichibutsu $names)
+else
+   nichibutsu="_Nihon Bussan-Nichibutsu"
+fi
+dir=$nichibutsu
+
 res=$(exist "Terra Cresta (YM3526 set 1).mra")
 if [ "$res" == "1" ]; then
-   dir="_Nihon Bussan-Nichibutsu"
    outdir=$1
    add "$dir" "V"  "Armed F (Japan).mra" "_Formation Armed F" "" "STG"
    add "$dir" "V"  "Cosmo Police Galivan (12-26-1985).mra" "_Galivan" "" "ACT"

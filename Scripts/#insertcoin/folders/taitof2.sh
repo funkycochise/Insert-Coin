@@ -2,10 +2,14 @@
 source ./folders/functions.sh
 
 loadsetup
-dir="_Taito-F2"
-if [ "$merge_system" == "1" ]; then
-      dir="_Taito"
+
+if [ -f "$names" ]; then
+   source <(grep taitof2 $names)
+else
+   taitof2="_Taito-F2"
 fi
+dir=$taitof2
+
 
 res=$(exist "Liquid Kids (World).mra")
 if [ "$res" == "1" ]; then

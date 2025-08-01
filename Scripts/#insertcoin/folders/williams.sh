@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep williams $names)
+else
+   williams="_Williams"
+fi
+dir=$williams
+
 res=$(exist "Joust.mra")
 if [ "$res" == "1" ]; then
-   dir="_Williams"
    outdir=$1
 
    add "$dir" "H" "Alien Arena (Stargate upgrade).mra" "_Alien Arena"

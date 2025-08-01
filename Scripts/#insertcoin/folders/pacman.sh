@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
-res=$(exist "Pac-Man (Midway).mra")
+if [ -f "$names" ]; then
+   source <(grep pacman $names)
+else
+   pacman="_Pacman"
+fi
+dir=$pacman
+
+res=$(exist "Ms. Pac-Man.mra")
 if [ "$res" == "1" ]; then
-   dir="_Pacman"
    outdir=$1
 
    add "$dir" "V"  "Ali Baba and 40 Thieves.mra" "_Pacman"

@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep stern $names)
+else
+   stern="_Stern"
+fi
+dir=$stern
+
 res=$(exist "Berzerk.mra")
 if [ "$res" == "1" ]; then
-   dir="_Stern"
    outdir=$1
 
    add "$dir" "V" "Armored Car.mra" "_Armored Car" "" "ACT"

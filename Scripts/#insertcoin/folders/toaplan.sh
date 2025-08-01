@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep toaplan $names)
+else
+   toaplan="_Toaplan"
+fi
+dir=$toaplan
+
 res=$(exist "Truxton - Tatsujin.mra")
 if [ "$res" == "1" ]; then
-   dir="_Toaplan"
    outdir=$1
 
    add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"

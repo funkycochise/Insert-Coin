@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
-res=$(exist "Galaga 3 (GP3 Rev D).mra")
+if [ -f "$names" ]; then
+   source <(grep namco $names)
+else
+   namco="_Namco"
+fi
+dir=$namco
+
+res=$(exist "Galaga 3 - Gaplus (GP2 Rev B).mra")
 if [ "$res" == "1" ]; then
-   dir="_Namco"
    outdir=$1
    add "$dir" "V"  "Dig Dug (Rev 2).mra" "_Dig Dug" "" "ACT"
    add "$dir" "V"  "Dig Dug II (New Ver).mra" "_Dig Dug II" "" "ACT"

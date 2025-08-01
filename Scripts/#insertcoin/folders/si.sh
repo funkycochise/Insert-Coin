@@ -2,6 +2,13 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep si $names)
+else
+   si="_Space Invaders"
+fi
+dir=$si
+
 res=$(exist "Space Invaders.mra")
 if [ "$res" == "1" ]; then
    dir=""

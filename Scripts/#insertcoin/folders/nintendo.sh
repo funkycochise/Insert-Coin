@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep nintendo $names)
+else
+   nintendo="_Nintendo"
+fi
+dir=$nintendo
+
 res=$(exist "Donkey Kong (US, Set 1).mra")
 if [ "$res" == "1" ]; then
-   dir="_Nintendo"
    outdir=$1
    add "$dir" "V"  "Donkey Kong (US, Set 1).mra" "_Donkey Kong" "" "ACT"
    add "$dir" "V"  "Donkey Kong 3 (US).mra" "_Donkey Kong 3" "" "ACT"

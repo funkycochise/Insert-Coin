@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep gottlieb $names)
+else
+   gottlieb="_Gottlieb"
+fi
+dir=$gottlieb
+
 res=$(exist "Q'bert (US, Set 1).mra")
 if [ "$res" == "1" ]; then
-   dir="_Gottlieb"
    outdir=$1
 
    add "$dir" "V" "Curve Ball.mra" "_Curve Ball"

@@ -2,6 +2,13 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep galaxian $names)
+else
+   galaxian="_Galaxian"
+fi
+dir=$galaxian
+
 res=$(exist "Galaxian (Namco, Set 1).mra")
 if [ "$res" == "1" ]; then
    dir="_Galaxian"

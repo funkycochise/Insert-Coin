@@ -2,10 +2,14 @@
 source ./folders/functions.sh
 
 loadsetup
-dir="_Taito-SJ"
-if [ "$merge_system" == "1" ]; then
-      dir="_Taito"
+
+if [ -f "$names" ]; then
+   source <(grep taitosj $names)
+else
+   taitosj="_Taito-SJ"
 fi
+dir=$taitosj
+
 res=$(exist "Elevator Action Bootleg.mra")
 if [ "$res" == "1" ]; then
    outdir=$1

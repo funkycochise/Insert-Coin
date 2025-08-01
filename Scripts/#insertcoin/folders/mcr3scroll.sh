@@ -2,6 +2,13 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep mcr3scroll $names)
+else
+   mcr3scroll="_Midway_MCR3Scroll"
+fi
+dir=$mcr3scroll
+
 res=$(exist "Spy Hunter.mra")
 if [ "$res" == "1" ]; then
    dir="_MCR3Scroll"

@@ -2,10 +2,12 @@
 source ./folders/functions.sh
 loadsetup
 
-dir="_Namco-System-86"
-if [ "$merge_system" == "1" ]; then
-      dir="_Namco"
+if [ -f "$names" ]; then
+   source <(grep namco_sys86 $names)
+else
+   namco_sys86="_Namco-System-86"
 fi
+dir=$namco_sys86
 
 res=$(exist "Rolling Thunder (rev 3).mra")
 if [ "$res" == "1" ]; then

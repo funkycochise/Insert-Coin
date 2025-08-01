@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep raizing $names)
+else
+   raizing="_Raizing-8ing"
+fi
+dir=$raizing
+
 res=$(exist "Armed Police Batrider (Japan, B Version) (Fri Feb 13 1998).mra")
 if [ "$res" == "1" ]; then
-   dir="_Raizing-8ing"
    outdir=$1
    add "$dir" "V"  "Armed Police Batrider (Japan, B Version) (Fri Feb 13 1998).mra" "_Armed Police Batrider" "" "STG"
    add "$dir" "V"  "Battle Bakraid - Unlimited Version (Japan) (Tue Jun 8 1999).mra" "_Battle Bakraid" "" "STG"

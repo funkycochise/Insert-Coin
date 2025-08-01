@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep cave $names)
+else
+   cave="_Cave 68000"
+fi
+dir=$cave
+
 res=$(exist "DoDonPachi.mra")
 if [ "$res" == "1" ]; then
-   dir="_Cave 68000"
    outdir=$1
 
    add "$dir" "V" "Dangun Feveron.mra" "_Dangun Feveron" "" "STG"

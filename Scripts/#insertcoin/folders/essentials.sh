@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep essential $names)
+else
+   essential="_#Essentiels"
+fi
+dir=$essential
+
 res=$(exist "Combat School (joystick).mra")
 if [ "$res" == "1" ]; then
-   dir="_#Essentials"
    outdir=$1
    add "$dir" "V"  "Amidar (Scramble).mra" "_Amidar" "" "PUZ"
    add "$dir" "V"  "Circus Charlie (level select, set 1).mra" "_Circus Charlie" "" "ACT"

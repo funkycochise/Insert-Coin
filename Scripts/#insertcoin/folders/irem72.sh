@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Irem M72"
-if [ "$merge_system" == "1" ]; then
-      dir="_Irem"
+
+if [ -f "$names" ]; then
+   source <(grep irem72 $names)
+else
+   irem72="_Irem M72"
 fi
+dir=$irem72
 
 res=$(exist "R-Type (World).mra")
 if [ "$res" == "1" ]; then

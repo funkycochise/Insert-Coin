@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep snk $names)
+else
+   snk="_SNK"
+fi
+dir=$snk
+
 res=$(exist "Ikari Warriors.mra")
 if [ "$res" == "1" ]; then
-   dir="_SNK"
    outdir=$1
 
    add "$dir" "V" "ASO.mra" "_ASO"

@@ -2,10 +2,12 @@
 source ./folders/functions.sh
 loadsetup
 
-dir="_CPS1"
-if [ "$merge_system" == "1" ]; then
-      dir="_Capcom"
+if [ -f "$names" ]; then
+   source <(grep cps1 $names)
+else
+   cps1="_CPS1"
 fi
+dir=$cps1
 
 res=$(exist "Ghouls'n Ghosts (World).mra")
 if [ "$res" == "1" ]; then

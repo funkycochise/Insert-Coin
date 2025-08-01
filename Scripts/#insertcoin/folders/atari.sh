@@ -2,6 +2,13 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep atari $names)
+else
+   atari="_Atari"
+fi
+dir=$atari
+
 res=$(exist "Centipede (Rev 4).mra")
 if [ "$res" == "1" ]; then
    dir="_Atari"

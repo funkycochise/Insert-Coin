@@ -2,7 +2,12 @@
 source ./folders/functions.sh
 loadsetup
 
-dir="_Sega"
+if [ -f "$names" ]; then
+   source <(grep sega $names)
+else
+   sega="_Sega"
+fi
+dir=$sega
 
 res=$(exist "Pulsar.mra")
 if [ "$res" == "1" ]; then

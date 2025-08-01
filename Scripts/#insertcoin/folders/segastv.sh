@@ -2,10 +2,12 @@
 source ./folders/functions.sh
 loadsetup "force"
 
-dir="_Sega-Titan Video"
-if [ "$merge_system" == "1" ]; then
-      dir="_Sega"
+if [ -f "$names" ]; then
+   source <(grep segastv $names)
+else
+   segastv="_Sega-Titan Video"
 fi
+dir=$segastv
 
 res=$(exist "Shienryu (JUET 961226 V1.000).mra")
 if [ "$res" == "1" ]; then

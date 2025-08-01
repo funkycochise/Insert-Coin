@@ -2,6 +2,13 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep universal $names)
+else
+   universal="_Universal"
+fi
+dir=$universal
+
 res=$(exist "Mr. Do!.mra")
 if [ "$res" == "1" ]; then
    dir="_Universal"

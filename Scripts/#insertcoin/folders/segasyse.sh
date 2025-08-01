@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Sega-System-E"
-if [ "$merge_system" == "1" ]; then
-      dir="_Sega"
+
+if [ -f "$names" ]; then
+   source <(grep segasyse $names)
+else
+   segasyse="_Sega-System-E"
 fi
+dir=$segasyse
 
 res=$(exist "Opa Opa.mra")
 if [ "$res" == "1" ]; then

@@ -2,9 +2,15 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep scramble $names)
+else
+   scramble="_Scramble"
+fi
+dir=$scramble
+
 res=$(exist "Scramble (Stern, Set 1).mra")
 if [ "$res" == "1" ]; then
-   dir="_Scramble"
    outdir=$1
 
    add "$dir" "V"  "Amidar (Scramble).mra" "_Amidar"

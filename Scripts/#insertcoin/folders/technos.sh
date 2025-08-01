@@ -2,6 +2,13 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep technos $names)
+else
+   technos="_Technos"
+fi
+dir=$technos
+
 res=$(exist "Double Dragon (Japan).mra")
 if [ "$res" == "1" ]; then
    dir="_Technos"

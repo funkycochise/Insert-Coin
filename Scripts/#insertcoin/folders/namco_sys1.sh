@@ -2,10 +2,12 @@
 source ./folders/functions.sh
 loadsetup
 
-dir="_Namco-System-1"
-if [ "$merge_system" == "1" ]; then
-      dir="_Namco"
+if [ -f "$names" ]; then
+   source <(grep namco_sys1 $names)
+else
+   namco_sys1="_Namco-System-1"
 fi
+dir=$namco_sys1
 
 res=$(exist "Galaga '88.mra")
 if [ "$res" == "1" ]; then

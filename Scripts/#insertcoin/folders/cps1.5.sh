@@ -2,10 +2,12 @@
 source ./folders/functions.sh
 loadsetup
 
-dir="_CPS1.5"
-if [ "$merge_system" == "1" ]; then
-      dir="_Capcom"
+if [ -f "$names" ]; then
+   source <(grep cps15 $names)
+else
+   cps15="_CPS15"
 fi
+dir=$cps15
 
 res=$(exist "The Punisher (World 930422).mra")
 if [ "$res" == "1" ]; then

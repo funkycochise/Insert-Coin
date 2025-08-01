@@ -1,10 +1,13 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-dir="_Konami Twin16"
-if [ "$merge_system" == "1" ]; then
-      dir="_Konami"
+
+if [ -f "$names" ]; then
+   source <(grep konamitwin16 $names)
+else
+   konamitwin16="_Konami Twin16"
 fi
+dir=$konamitwin16
 
 res=$(exist "The Final Round (version M).mra")
 if [ "$res" == "1" ]; then

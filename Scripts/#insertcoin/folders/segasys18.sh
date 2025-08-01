@@ -2,10 +2,13 @@
 source ./folders/functions.sh
 
 loadsetup
-dir="_Sega-System-18"
-if [ "$merge_system" == "1" ]; then
-      dir="_Sega"
+
+if [ -f "$names" ]; then
+   source <(grep segasys18 $names)
+else
+   segasys18="_Sega-System-18"
 fi
+dir=$segasys18
 
 res=$(exist "Shadow Dancer (World).mra")
 if [ "$res" == "1" ]; then
