@@ -83,11 +83,6 @@ essential=${essential:0:1}
 #   echo "essential: $essential" >> /media/fat/Scripts/#insertcoin/out.txt
 #fi
 
-source <(grep merge_system $ini)
-merge_system=${merge_system:0:1}
-#if [ "$debug" == "1" ]; then
-#   echo "merge_system: $merge_system" >> /media/fat/Scripts/#insertcoin/out.txt
-#fi
 source <(grep show_system $ini)
 show_system=${show_system:0:1}
 #if [ "$debug" == "1" ]; then
@@ -392,38 +387,39 @@ fi
 if [ "$show_genre" == "1" ]; then
 
    #horizontal
-   if [ "$horizontal" == "1" ] && [ "$orientation" == "H" ]; then
+   if [ "$horizontal" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "H" ]; then
       add_folder "$genre_horizontal"
    fi
    #vertical
-   if [ "$vertical" == "1" ] && [ "$orientation" == "V" ]; then
+   if [ "$vertical" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "V" ]; then
       add_folder "$genre_vertical"
    fi
-   if [ "$action" == "1" ] && [ "$genre" == "ACT" ]; then
+   
+   if [ "$action" == "1" ] && [ "$show_genre" == "1" ] && [ "$genre" == "ACT" ]; then
       add_folder "$genre_action"
    fi
-   if [ "$beat" == "1" ] && [ "$genre" == "BEA" ]; then
+   if [ "$beat" == "1" ] && [ "$show_genre" == "1" ] && [ "$genre" == "BEA" ]; then
       add_folder "$genre_beat"
    fi
-   if [ "$puzzle" == "1" ] && [ "$genre" == "PUZ" ]; then
+   if [ "$puzzle" == "1" ] && [ "$show_genre" == "1" ] && [ "$genre" == "PUZ" ]; then
       add_folder "$genre_puzzle"
    fi
-   if [ "$sport" == "1" ] && [ "$genre" == "SPO" ]; then
+   if [ "$sport" == "1" ] && [ "$show_genre" == "1" ] && [ "$genre" == "SPO" ]; then
       add_folder "$genre_sport"
    fi
-   if [ "$vsf" == "1" ] && [ "$genre" == "VSF" ]; then
+   if [ "$vsf" == "1" ] && [ "$show_genre" == "1" ] && [ "$genre" == "VSF" ]; then
       add_folder "$genre_vsf"
    fi
-   if [ "$stg_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "STG" ]; then
+   if [ "$stg_h" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "STG" ]; then
       add_folder "$genre_stg_h"
    fi
-   if [ "$stg_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "STG" ]; then
+   if [ "$stg_v" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "STG" ]; then
       add_folder "$genre_stg_v"
    fi
-   if [ "$rng_h" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "RNG" ]; then
+   if [ "$rng_h" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "RNG" ]; then
       add_folder "$genre_rng_h"
    fi
-   if [ "$rng_v" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "RNG" ]; then
+   if [ "$rng_v" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "RNG" ]; then
       add_folder "$genre_rng_v"
    fi
 fi
