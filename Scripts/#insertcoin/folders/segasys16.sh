@@ -10,8 +10,9 @@ else
 fi
 dir=$segasys16
 
-res=$(exist "Shinobi (Set 6, World, S16A) [No Protection].mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Shinobi (Set 6, World, S16A) [No Protection].mra")
+resv=$(exist "Sonic Boom (FD1094 317-0053).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Ace Attacker (Japan, S16A) [FD1094 317-0060].mra" "_Ace Attacker" "" "SPO"

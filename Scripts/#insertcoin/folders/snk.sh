@@ -9,8 +9,9 @@ else
 fi
 dir=$snk
 
-res=$(exist "Ikari Warriors.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "P.O.W. - Prisoners of War (US Version 1).mra")
+resv=$(exist "Ikari Warriors.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "ASO.mra" "_ASO"

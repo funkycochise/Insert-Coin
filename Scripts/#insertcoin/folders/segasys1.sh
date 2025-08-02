@@ -9,8 +9,9 @@ else
 fi
 dir=$segasys1
 
-res=$(exist "Mister Viking (315-5041).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Wonder Boy (Set 1, 315-5177).mra")
+resv=$(exist "Mister Viking (315-5041).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V" "Block Gal.mra" "_Block Gal"
    add "$dir" "V" "Gardia (317-0006).mra" "_Gardia" "" "STG"

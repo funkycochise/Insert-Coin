@@ -9,8 +9,8 @@ else
 fi
 dir=$exidy
 
-res=$(exist "TARG.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "TARG.mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "H" "Venture Revision 5.mra" "_Venture"
    add "$dir" "H" "TARG.mra" "_TARG"

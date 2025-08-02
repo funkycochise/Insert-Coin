@@ -9,8 +9,9 @@ else
 fi
 dir=$ladybug
 
-res=$(exist "Lady Bug.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Snap Jack.mra")
+resv=$(exist "Lady Bug.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V" "Cosmic Avenger.mra" "_Cosmic Avenger"
    add "$dir" ""$out"" "Dorodon (Set 1).mra" "_Dorodon"

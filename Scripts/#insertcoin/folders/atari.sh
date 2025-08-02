@@ -9,9 +9,9 @@ else
 fi
 dir=$atari
 
-res=$(exist "Centipede (Rev 4).mra")
-if [ "$res" == "1" ]; then
-   dir="_Atari"
+resh=$(exist "Gauntlet (rev 14).mra")
+resv=$(exist "Centipede (Rev 4).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Breakout (TTL).mra" "_Breakout"

@@ -9,8 +9,9 @@ else
 fi
 dir=$taito
 
-res=$(exist "Bubble Bobble (Japan, Ver 0.1).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Bubble Bobble (Japan, Ver 0.1).mra")
+resv=$(exist "Arkanoid (W).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"

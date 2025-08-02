@@ -269,9 +269,7 @@ loadnames
 }
 
 function exist {
-mra=$1
-if [ -f "$ARCADE/$mra" ];
-then
+if [ -f "$ARCADE/$1" ] || [ -d "$ALT/$1" ]; then
    echo "1"
 else
    echo "0"

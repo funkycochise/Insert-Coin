@@ -9,9 +9,9 @@ else
 fi
 dir=$universal
 
-res=$(exist "Mr. Do!.mra")
-if [ "$res" == "1" ]; then
-   dir="_Universal"
+resh=$(exist "Snap Jack.mra")
+resv=$(exist "Mr. Do!.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Cosmic Alien.mra" "_Cosmic Alien"

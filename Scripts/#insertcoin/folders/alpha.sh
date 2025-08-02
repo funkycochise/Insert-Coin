@@ -9,8 +9,9 @@ else
 fi
 dir=$alpha
 
-res=$(exist "Sky Adventure (World).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Gang Wars.mra")
+resv=$(exist "Sky Adventure (World).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "H" "Gang Wars.mra" "_Gang Wars" "" "BEA"

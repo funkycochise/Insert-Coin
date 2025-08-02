@@ -9,9 +9,8 @@ else
 fi
 dir=$mcr3scroll
 
-res=$(exist "Spy Hunter.mra")
-if [ "$res" == "1" ]; then
-   dir="_MCR3Scroll"
+resh=$(exist "Spy Hunter.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "H"  "Crater Raider.mra" "_Crater Raider"
    add "$dir" "H"  "Spy Hunter.mra" "_Spy Hunter"

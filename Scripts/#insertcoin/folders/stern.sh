@@ -9,8 +9,9 @@ else
 fi
 dir=$stern
 
-res=$(exist "Berzerk.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Berzerk.mra")
+resv=$(exist "Armored Car.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Armored Car.mra" "_Armored Car" "" "ACT"

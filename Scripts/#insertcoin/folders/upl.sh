@@ -9,8 +9,8 @@ else
 fi
 dir=$upl
 
-res=$(exist "Ninjakun.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Ninjakun.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    #addgame "Combat Hawk.mra" "_Combat Hawk"

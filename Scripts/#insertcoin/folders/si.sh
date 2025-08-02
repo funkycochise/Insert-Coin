@@ -9,8 +9,8 @@ else
 fi
 dir=$si
 
-res=$(exist "Space Invaders.mra")
-if [ "$res" == "1" ]; then
+resv=$(exist "Space Invaders.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    dir=""
    outdir=$1
 

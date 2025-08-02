@@ -9,8 +9,8 @@ else
 fi
 dir=$scramble
 
-res=$(exist "Scramble (Stern, Set 1).mra")
-if [ "$res" == "1" ]; then
+resv=$(exist "Scramble (Stern, Set 1).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V"  "Amidar (Scramble).mra" "_Amidar"

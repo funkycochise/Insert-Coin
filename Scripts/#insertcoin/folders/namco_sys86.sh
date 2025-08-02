@@ -9,8 +9,8 @@ else
 fi
 dir=$namco_sys86
 
-res=$(exist "Rolling Thunder (rev 3).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Rolling Thunder (rev 3).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    #add "$dir" "H" "Alien Sector.mra" "_Alien Sector" "" "RNG"

@@ -10,8 +10,9 @@ else
 fi
 dir=$taitosj
 
-res=$(exist "Elevator Action Bootleg.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Elevator Action Bootleg.mra")
+resv=$(exist "Front Line.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V" "Alpine Ski.mra" "_Alpine Ski" "" "SPO"
    add "$dir" "V" "Bio Attack.mra" "_Bio Attack"

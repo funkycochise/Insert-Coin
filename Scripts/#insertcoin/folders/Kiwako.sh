@@ -9,8 +9,8 @@ else
 fi
 dir=$kiwako
 
-res=$(exist "Mr. Jong.mra")
-if [ "$res" == "1" ]; then
+resv=$(exist "Mr. Jong.mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V" "Mr. Jong.mra" "_CrazyBlocks"
    add "$dir" "V" "BlockBuster.mra" "_CrazyBlocks"

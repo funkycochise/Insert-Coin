@@ -9,8 +9,9 @@ else
 fi
 dir=$deco
 
-res=$(exist "Chelnov - Atomic Runner (World).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Chelnov - Atomic Runner (World).mra")
+resv=$(exist "Burger Time (Set 1).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V" "Burger Time (Set 1).mra" "_Burger Time" "" "ACT"
    add "$dir" "V" "Burnin' Rubber.mra" "_Burning Rubber" "" "ACT"

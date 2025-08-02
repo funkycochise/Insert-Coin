@@ -9,8 +9,8 @@ else
 fi
 dir=$irem90
 
-res=$(exist "Bomber Man - Dyna Blaster.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Bomber Man - Dyna Blaster.mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "H" "Bomber Man - Dyna Blaster.mra" "_Bomber Man" "" "ACT"

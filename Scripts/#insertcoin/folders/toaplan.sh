@@ -9,8 +9,9 @@ else
 fi
 dir=$toaplan
 
-res=$(exist "Truxton - Tatsujin.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Demon's World - Horror Story (Set 3).mra")
+resv=$(exist "Truxton - Tatsujin.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"

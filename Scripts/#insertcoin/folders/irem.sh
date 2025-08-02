@@ -9,8 +9,9 @@ else
 fi
 dir=$irem
 
-res=$(exist "Moon Patrol.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Vigilante (World, Rev E).mra")
+resv=$(exist "Shot Rider (B-Board 89624B-1).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V" "Shot Rider (B-Board 89624B-1).mra" "_Shot Rider" "" "ACT"
    add "$dir" "V" "Traverse USA- Zippy Race (US).mra" "_Traverse USA" "" "ACT"

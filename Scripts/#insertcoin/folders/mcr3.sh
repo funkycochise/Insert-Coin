@@ -9,8 +9,9 @@ else
 fi
 dir=$mcr3
 
-res=$(exist "Journey.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Discs of Tron.mra")
+resv=$(exist "Journey.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V"  "Journey.mra" "_Journey"
 

@@ -9,8 +9,9 @@ else
 fi
 dir=$namco_sys1
 
-res=$(exist "Galaga '88.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Splatter House (World, new version (SH3)).mra")
+resv=$(exist "Galaga '88.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Bakutotsu Kijuutei.mra" "_Bakutotsu Kijuutei" "" "STG"

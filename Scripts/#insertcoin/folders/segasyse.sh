@@ -9,8 +9,9 @@ else
 fi
 dir=$segasyse
 
-res=$(exist "Opa Opa.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Opa Opa.mra")
+resv=$(exist "Megumi Rescue (Japan).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Megumi Rescue (Japan).mra" "_SystemE_Megumi Rescue" "_Megumi Rescue"

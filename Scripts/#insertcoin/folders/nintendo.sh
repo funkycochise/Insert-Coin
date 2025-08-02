@@ -9,8 +9,9 @@ else
 fi
 dir=$nintendo
 
-res=$(exist "Donkey Kong (US, Set 1).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Sky Skipper.mra")
+resv=$(exist "Donkey Kong (US, Set 1).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V"  "Donkey Kong (US, Set 1).mra" "_Donkey Kong" "" "ACT"
    add "$dir" "V"  "Donkey Kong 3 (US).mra" "_Donkey Kong 3" "" "ACT"

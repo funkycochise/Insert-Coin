@@ -9,8 +9,9 @@ else
 fi
 dir=$segasys2
 
-res=$(exist "Choplifter (unprotected).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Choplifter (unprotected).mra")
+resv=$(exist "Toki no Senshi - Chrono Soldier [MC-8123, 317-0040].mra" "_Toki no Senshi")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V" "Toki no Senshi - Chrono Soldier [MC-8123, 317-0040].mra" "_Toki no Senshi" "" "ACT"
 

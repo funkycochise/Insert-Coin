@@ -9,8 +9,9 @@ else
 fi
 dir=$irem92t
 
-res=$(exist "In The Hunt (World).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "_In The Hunt (Turbo)")
+resv=$(exist "_Lethal Thunder (Turbo)")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    rep "$dir" "V" "_Lethal Thunder (Turbo)"  "_Lethal Thunder (Turbo)" "" "STG"
 

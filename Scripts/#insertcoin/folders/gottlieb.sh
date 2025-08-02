@@ -9,8 +9,8 @@ else
 fi
 dir=$gottlieb
 
-res=$(exist "Q'bert (US, Set 1).mra")
-if [ "$res" == "1" ]; then
+resv=$(exist "Q'bert (US, Set 1).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Curve Ball.mra" "_Curve Ball"

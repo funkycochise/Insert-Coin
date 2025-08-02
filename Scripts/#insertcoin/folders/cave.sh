@@ -9,8 +9,9 @@ else
 fi
 dir=$cave
 
-res=$(exist "DoDonPachi.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Puzzle Uo Poko.mra")
+resv=$(exist "DoDonPachi.mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Dangun Feveron.mra" "_Dangun Feveron" "" "STG"

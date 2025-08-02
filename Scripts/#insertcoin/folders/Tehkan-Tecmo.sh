@@ -9,8 +9,9 @@ else
 fi
 dir=$tecmo
 
-res=$(exist "Bomb Jack.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Rygar.mra")
+resv=$(exist "Bomb Jack.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Bomb Jack.mra" "_Bomb Jack"

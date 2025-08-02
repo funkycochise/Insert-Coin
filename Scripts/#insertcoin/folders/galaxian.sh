@@ -9,9 +9,8 @@ else
 fi
 dir=$galaxian
 
-res=$(exist "Galaxian (Namco, Set 1).mra")
-if [ "$res" == "1" ]; then
-   dir="_Galaxian"
+resv=$(exist "Galaxian (Namco, Set 1).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V" "Moon Quasar.mra" "_Moon Quasar"
    add "$dir" "V" "Azurian Attack.mra" "_Azurian Attack"

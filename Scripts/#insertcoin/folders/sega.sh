@@ -9,8 +9,9 @@ else
 fi
 dir=$sega
 
-res=$(exist "Pulsar.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Super Locomotive.mra")
+resv=$(exist "Pulsar.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Carnival.mra" "_Carnival" "" "ACT"

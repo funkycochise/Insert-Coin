@@ -9,8 +9,8 @@ else
 fi
 dir=$pacman
 
-res=$(exist "Ms. Pac-Man.mra")
-if [ "$res" == "1" ]; then
+resv=$(exist "Ms. Pac-Man.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V"  "Ali Baba and 40 Thieves.mra" "_Pacman"

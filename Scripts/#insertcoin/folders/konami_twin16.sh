@@ -9,8 +9,8 @@ else
 fi
 dir=$konamitwin16
 
-res=$(exist "The Final Round (version M).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "The Final Round (version M).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    rep "$dir" "H" "_Cuebrick" "_Cuebrick" "" "PUZ"
    add "$dir" "H"  "M.I.A. - Missing in Action (version T).mra" "_M.I.A. - Missing in Action" "" "RNG"

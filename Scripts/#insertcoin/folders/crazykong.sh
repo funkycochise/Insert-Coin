@@ -9,8 +9,8 @@ else
 fi
 dir=$crazykong
 
-res=$(exist "Crazy Kong (Kyoei).mra")
-if [ "$res" == "1" ]; then
+resv=$(exist "Crazy Kong (Kyoei).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Big Kong.mra" "_Crazy Kong"

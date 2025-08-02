@@ -9,8 +9,9 @@ else
 fi
 dir=$irem72
 
-res=$(exist "R-Type (World).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "R-Type (World).mra")
+resv=$(exist "Air Duel (World, M72 hardware).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Air Duel (World, M72 hardware).mra" "_Air Duel" "" "STG"

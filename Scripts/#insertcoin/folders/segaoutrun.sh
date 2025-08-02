@@ -9,8 +9,8 @@ else
 fi
 dir=$outrun
 
-res=$(exist "Super Hang-On (sitdown-upright) (unprotected).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Super Hang-On (sitdown-upright) (unprotected).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "H" "Super Hang-On (sitdown-upright) (unprotected).mra" "_Super Hang-On"

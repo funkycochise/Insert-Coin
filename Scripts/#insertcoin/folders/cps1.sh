@@ -9,8 +9,9 @@ else
 fi
 dir=$cps1
 
-res=$(exist "Ghouls'n Ghosts (World).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Ghouls'n Ghosts (World).mra")
+resv=$(exist "1941 Counter Attack (World 900227).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V"  "1941 Counter Attack (World 900227).mra" "_1941 Counter Attack" "" "STG"

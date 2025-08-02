@@ -9,8 +9,6 @@ else
 fi
 dir=$essential
 
-res=$(exist "Combat School (joystick).mra")
-if [ "$res" == "1" ]; then
    outdir=$1
    add "$dir" "V"  "Amidar (Scramble).mra" "_Amidar" "" "PUZ"
    add "$dir" "V"  "Circus Charlie (level select, set 1).mra" "_Circus Charlie" "" "ACT"
@@ -322,4 +320,3 @@ if [ "$res" == "1" ]; then
    add "$dir" "H"  "Zupapa!.mgl" "" "" "ACT"
 
    dot
-fi

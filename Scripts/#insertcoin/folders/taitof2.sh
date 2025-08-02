@@ -11,8 +11,9 @@ fi
 dir=$taitof2
 
 
-res=$(exist "Liquid Kids (World).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Liquid Kids (World).mra")
+resv=$(exist "Gun & Frontier (World).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    
    #add "$dir" "V" "Gun Frontier (Japan).mra" "_Gun Frontier" "" "STG"

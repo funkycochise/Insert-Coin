@@ -9,8 +9,8 @@ else
 fi
 dir=$mcr1
 
-res=$(exist "Kick.mra")
-if [ "$res" == "1" ]; then
+resv=$(exist "Kick.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V"  "Kick.mra" "_Kick"
    add "$dir" "V"  "Kick-Man.mra" "_Kick-Man"

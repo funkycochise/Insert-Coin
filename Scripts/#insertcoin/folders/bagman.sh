@@ -10,8 +10,9 @@ else
 fi
 dir=$bagman
 
-res=$(exist "Bagman.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Squash.mra")
+resv=$(exist "Bagman.mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "H" "Squash.mra" "_Squash"

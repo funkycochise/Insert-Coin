@@ -9,8 +9,9 @@ else
 fi
 dir=$irem62
 
-res=$(exist "Kung-Fu Master (W).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Kung-Fu Master (W).mra")
+resv=$(exist "Youjyuden (JP).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V" "The Battle-Road.mra" "_Battle Road"
    add "$dir" "V" "Youjyuden (JP).mra" "_Youjyuden"

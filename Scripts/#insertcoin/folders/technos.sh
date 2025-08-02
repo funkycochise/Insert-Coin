@@ -9,9 +9,9 @@ else
 fi
 dir=$technos
 
-res=$(exist "Double Dragon (Japan).mra")
-if [ "$res" == "1" ]; then
-   dir="_Technos"
+resh=$(exist "Double Dragon (Japan).mra")
+resv=$(exist "Xain'd Sleena (bootleg, bugfixed).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Xain'd Sleena (bootleg, bugfixed).mra" "_Xain'd Sleena" "" "RNG"

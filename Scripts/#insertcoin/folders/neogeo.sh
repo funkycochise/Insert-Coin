@@ -9,8 +9,8 @@ else
 fi
 dir=$neogeo
 
-res=$(exist "Metal Slug - Super Vehicle-001.mgl")
-if [ "$res" == "1" ]; then
+resh=$(exist "Metal Slug - Super Vehicle-001.mgl")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    #add "$dir" "H" "Columns.mra" 

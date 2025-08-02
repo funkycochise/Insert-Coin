@@ -9,8 +9,8 @@ else
 fi
 dir=$midwayy
 
-res=$(exist "Mortal Kombat (rev 4.0 09-28-92).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Mortal Kombat (rev 4.0 09-28-92).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "H"  "High Impact Football (rev LA5 02-15-91).mra" "_High Impact Football"
    add "$dir" "H"  "Mortal Kombat (rev 4.0 09-28-92).mra" "_Mortal Kombat"

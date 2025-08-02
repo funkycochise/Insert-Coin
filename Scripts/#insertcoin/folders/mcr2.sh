@@ -9,8 +9,9 @@ else
 fi
 dir=$mcr2
 
-res=$(exist "Tron.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Wacko.mra")
+resv=$(exist "Tron.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V"  "Satan's Hollow (Set 1).mra" "_Satan's Hollow"
    add "$dir" "V"  "Tron.mra" "_Tron"

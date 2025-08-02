@@ -9,9 +9,8 @@ else
 fi
 dir=$mcr3mono
 
-res=$(exist "Demolition Derby (MCR-3 Mono Board Version).mra")
-if [ "$res" == "1" ]; then
-   dir="_MCR3Mono"
+resh=$(exist "Demolition Derby (MCR-3 Mono Board Version).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "H" "Demolition Derby (MCR-3 Mono Board Version).mra" "_Demolition Derby"
    add "$dir" "H" "Max RPM (v2).mra" "_Max RPM"

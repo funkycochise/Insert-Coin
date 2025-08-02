@@ -9,8 +9,9 @@ else
 fi
 dir=$namco
 
-res=$(exist "Galaga 3 - Gaplus (GP2 Rev B).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Pac-Land (World).mra")
+resv=$(exist "_Gaplus")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V"  "Dig Dug (Rev 2).mra" "_Dig Dug" "" "ACT"
    add "$dir" "V"  "Dig Dug II (New Ver).mra" "_Dig Dug II" "" "ACT"

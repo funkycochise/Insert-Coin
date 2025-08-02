@@ -10,8 +10,8 @@ else
 fi
 dir=$segasys18
 
-res=$(exist "Shadow Dancer (World).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Shadow Dancer (World).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "H" "Alien Storm (World, 2 Players) (FD1094 317-0154).mra" "_Alien Storm" "" "BEA"
    add "$dir" "H" "Bloxeed (Japan) (FD1094 317-0139).mra" "_Bloxeed" "" "PUZ"

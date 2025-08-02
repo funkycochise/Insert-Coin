@@ -9,8 +9,8 @@ else
 fi
 dir=$rare
 
-res=$(exist "Battletoads.mgl")
-if [ "$res" == "1" ]; then
+resh=$(exist "Battletoads.mgl")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "H"  "Battletoads.mgl" "_Battletoads" "" "BEA"

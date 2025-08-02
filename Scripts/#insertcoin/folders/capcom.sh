@@ -9,8 +9,9 @@ else
 fi
 dir=$capcom
 
-res=$(exist "Black Tiger.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Black Tiger.mra")
+resv=$(exist "1942 (Revision B).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V"  "Avengers (US, revision C).mra" "_Avengers" "" "BEA"
    add "$dir" "V"  "1942 (Revision B).mra" "_1942" "" "STG"

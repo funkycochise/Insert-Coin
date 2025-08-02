@@ -9,8 +9,9 @@ else
 fi
 dir=$williams
 
-res=$(exist "Joust.mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Joust.mra")
+resv=$(exist "Sinistar.mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "H" "Alien Arena (Stargate upgrade).mra" "_Alien Arena"

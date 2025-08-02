@@ -9,8 +9,8 @@ else
 fi
 dir=$technos16
 
-res=$(exist "The Combatribes (US, Rev 2, Set 1).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "The Combatribes (US, Rev 2, Set 1).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "H" "Double Dragon 3 The Rosetta Stone (US).mra" "_Double Dragon 3 The Rosetta Stone" "" "BEA"

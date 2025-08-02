@@ -9,8 +9,9 @@ else
 fi
 dir=$segastv
 
-res=$(exist "Shienryu (JUET 961226 V1.000).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Die Hard Arcade (UET 960515 V1.000).mra")
+resv=$(exist "Shienryu (JUET 961226 V1.000).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 	outdir=$1
 
 	add "$dir" "V" "Shienryu (JUET 961226 V1.000).mra" "_Shienryu" "" "STG"

@@ -9,8 +9,8 @@ else
 fi
 dir=$tad
 
-res=$(exist "Toki (World, set 1).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "Toki (World, set 1).mra")
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "H" "Toki (World, set 1).mra" "_Toki" "" "ACT"

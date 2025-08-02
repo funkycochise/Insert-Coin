@@ -9,8 +9,8 @@ else
 fi
 dir=$cps15
 
-res=$(exist "The Punisher (World 930422).mra")
-if [ "$res" == "1" ]; then
+resh=$(exist "The Punisher (World 930422).mra")
+if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "H"  "Cadillacs and Dinosaurs (World 930201).mra" "_Cadillacs and Dinosaurs" "" "BEA"
    add "$dir" "H"  "Muscle Bomber Duo Ultimate Team Battle (World 931206).mra" "_Muscle Bomber Duo" "" "VSF"
