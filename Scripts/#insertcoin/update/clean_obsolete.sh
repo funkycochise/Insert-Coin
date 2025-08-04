@@ -152,6 +152,8 @@ if [ -f "$CORE/NeoGeo-MVS_20220218.rbf" ]
 then
     rm -r "$CORE/NeoGeo-MVS_20220218.rbf"
 fi
+#tar Force
+find $CORE -maxdepth 1 -type f -name "StarForce_*" ! -name "StarForce_20250803.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "NaughtyBoy_*" ! -name "NaughtyBoy_20250424.rbf" -delete
 
