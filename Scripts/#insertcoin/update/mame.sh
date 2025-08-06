@@ -916,6 +916,7 @@ dl "lgtnfght.zip"
 dl "ajax.zip"
 dl "starforc.zip"
 dl "baluba.zip"
+dl "agalletd.zip"
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
