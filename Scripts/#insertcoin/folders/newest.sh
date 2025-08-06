@@ -37,7 +37,8 @@ fi
 
 counter=0
 
-
+#0805
+add "Akuu Gallet (Japan).mra" "_Air Gallet"
 
 #0730
 add "StarForce.mra" "_StarForce"
