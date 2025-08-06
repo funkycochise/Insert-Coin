@@ -14,6 +14,7 @@ resv=$(exist "DoDonPachi.mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
+   add "$dir" "V" "Akuu Gallet (Japan).mra" "_Air Gallet" "" "STG"
    add "$dir" "V" "Dangun Feveron.mra" "_Dangun Feveron" "" "STG"
    add "$dir" "V" "Fever SOS.mra" "_Dangun Feveron" "" "STG"
    add "$dir" "V" "DoDonPachi.mra" "_DoDonPachi" "" "STG"
