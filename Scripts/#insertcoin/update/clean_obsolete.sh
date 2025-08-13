@@ -157,6 +157,22 @@ find $CORE -maxdepth 1 -type f -name "StarForce_*" ! -name "StarForce_20250803.r
 
 find $CORE -maxdepth 1 -type f -name "NaughtyBoy_*" ! -name "NaughtyBoy_20250424.rbf" -delete
 
+if [ -f "$CORE/mazinger_mister_20250804.rbf" ] 
+then
+  if [ -f "$CORE/mazinger_mister.rbf" ] 
+  then
+    rm -r "$CORE/mazinger_mister.rbf"
+  fi
+fi
+if [ -f "$CORE/sailormn_mister_20250805.rbf" ] 
+then
+  if [ -f "$CORE/sailormn_mister.rbf" ] 
+  then
+    rm -r "$CORE/sailormn_mister.rbf"
+  fi
+fi
+
+
 if [ -f "$CORE/IremM90_20241107.rbf" ] 
 then
     find $CORE -maxdepth 1 -type f -name "IremM90_*" ! -name "IremM90_20241107.rbf" -delete
