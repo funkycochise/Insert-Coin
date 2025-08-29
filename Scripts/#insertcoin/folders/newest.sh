@@ -37,7 +37,8 @@ fi
 
 counter=0
 
-add    add "Surprise Attack (Japan ver. M).mra" "_Surprise Attack"
+#0829
+   add "Surprise Attack (Japan ver. M).mra" "_Surprise Attack"
 
 #0805
 add "Akuu Gallet (Japan).mra" "_Air Gallet"
