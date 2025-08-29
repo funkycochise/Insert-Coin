@@ -81,5 +81,6 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Vendetta (World, 4 Players, ver. T).mra" "_Vendetta" "" "BEA"
    add "$dir" "H"  "X-Men (4 Players ver EBA).mra" "_X-Men" "" "BEA"
    add "$dir" "H"  "Yie Ar Kung-Fu (program code I).mra" "_Yie Ar Kung-Fu" "" "ACT"
+   add "$dir" "H"  "Surprise Attack (Japan ver. M).mra" "_Surprise Attack" "" "ACT"
    dot
 fi
