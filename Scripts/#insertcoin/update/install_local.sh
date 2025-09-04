@@ -18,12 +18,29 @@ then
      cp $addon/neogeo.zip /media/fat/games/mame
      #echo "local Uni-bios deployed in mame folder"
   fi
-if test -d "$addon/_ic/_#Saturn"; then
-   cp -r "$addon/_ic/_#Saturn" "$targetfolder"
+#if test -d "$addon/_ic/_#Saturn"; then
+#   echo  "$addon/_ic/_#Saturn to $targetfolder"
+#   cp -r "$addon/_ic/_#Saturn" "$targetfolder"
+#fi
+#if test -d "$addon/_ic/_#Pce"; then
+#   echo "$addon/_ic/_#Pce to $targetfolder"
+#   cp -r "$addon/_ic/_#Pce" "$targetfolder"
+#fi
+if [ ! -d "$targetfolder" ];then
+   mkdir $targetfolder
 fi
-if test -d "$addon/_ic/_#Pce"; then
-   cp -r "$addon/_ic/_#Pce" "$targetfolder"
-fi
+for dir in $addon/_ic/*; do
+   f=$(basename -- "$dir")
+    echo "$f"
+    mkdir $targetfolder/$f
+    cp -r "$addon/_ic/$f/" "$targetfolder/$f" 
+done
+
+#for f in $(find  /media/fat/Scripts/#local/addon/_ic/ -mindepth 1 -maxdepth 1 -type d)
+#do
+#   echo "$f"
+#   cp -r $f $targetfolder
+#done
 fi
    if [ -d "$addon/_Arcade/" ];then
 
