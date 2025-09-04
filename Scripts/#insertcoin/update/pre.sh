@@ -1,34 +1,35 @@
 #!/bin/bash
 
-neededversion="B"
+function dl {
+name=$1
+file=$2
+neededversion=$3
 dl="0"
 
-#get setup settings
-ini=/media/fat/Scripts/#insertcoin/setup.ini
+#echo "name $name"
+#echo "file $file"
+#echo "neededversion $neededversion"
 
-if [ ! -f "/media/fat/Scripts/#insertcoin/names.ini" ]; then
-   curl "https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/names.ini" --insecure -o "/media/fat/Scripts/#insertcoin/names.ini" 
-fi
-
-
-if [ -f "$ini" ] 
+if [ -f "$file" ] 
 then
-   source <(grep version $ini)
+   source <(grep version $file)
    version=${version:0:1}
 
    if [ ! "$version" == "$neededversion" ]; then
       dl="1"
-      rm -r /media/fat/Scripts/#insertcoin/setup.ini
+      rm -r "$file"
    fi
 else 
    dl="1"
 fi
-
 if [ "$dl" == "1" ]; then
-#then
-  echo "Getting latest default Insert-Coin setup.ini : $ini"
-  curl "https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/setup.ini" --insecure -o "/media/fat/Scripts/#insertcoin/setup.ini" 
-  #wget https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/setup.ini /media/fat/Scripts/#insertcoin/setup.ini
+  echo "Getting latest default Insert-Coin $name"
+  curl "https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/$name" --insecure -o "$2" 
 fi
 
 
+
+}
+
+dl "setup.ini" "/media/fat/Scripts/#insertcoin/setup.ini" "C"
+dl "names.ini" "/media/fat/Scripts/#insertcoin/names.ini" "B"

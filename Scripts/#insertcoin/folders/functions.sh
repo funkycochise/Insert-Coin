@@ -82,6 +82,11 @@ essential=${essential:0:1}
 #if [ "$debug" == "1" ]; then
 #   echo "essential: $essential" >> /media/fat/Scripts/#insertcoin/out.txt
 #fi
+source <(grep rootfolder $ini)
+rootfolder=${rootfolder:0:1}
+#if [ "$debug" == "1" ]; then
+#   echo "rootfolder: $rootfolder" >> /media/fat/Scripts/#insertcoin/out.txt
+#fi
 
 source <(grep show_system $ini)
 show_system=${show_system:0:1}
@@ -552,6 +557,7 @@ function add_genre {
       if [ ! -d "$outdir/$genre" ]; then
          mkdir "$outdir/$genre"
       fi 
+      #echo "manufacturer_subfolder: $manufacturer_subfolder"
       ln -s -f "$ALT/$sub" "$outdir/$genre/$renamed"
       if [ !  $? -eq 0 ]; then
          echo "lngenre FAIL"
