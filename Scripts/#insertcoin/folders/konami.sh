@@ -69,7 +69,6 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Parodius Da! Shinwa kara Owarai e (World, set 1).mra" "_Parodius Da! Shinwa kara Owarai e" "" "STG"
    add "$dir" "H"  "Punk Shot (US 4 Players).mra" "_Punk Shot" "" "SPO"
    add "$dir" "H"  "River Patrol (JP, Unprotected).mra" "_River Patrol" "" "ACT"
-   rep "$dir" "H" "_Atari Tetris"  "_Tetris" "" "PUZ"
    add "$dir" "H"  "Salamander (version D).mra" "_Salamander" "STG"
    add "$dir" "H"  "Splatter House (World, new version (SH3)).mra" "_Splatter House" "" "ACT"
    add "$dir" "H"  "Sunset Riders (4 Players ver EAC).mra" "_Sunset Riders" "" "RNG"

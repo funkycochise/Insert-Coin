@@ -283,7 +283,7 @@ dir=$essential
    add "$dir" "H" "Quartet 2 (World, S16A) [No Protection].mra" "_Quartet" "" "ACT"
    add "$dir" "H" "Shinobi (Set 6, World, S16A) [No Protection].mra" "_Shinobi" "" "ACT"
    add "$dir" "H" "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098).mra" "_Wonder Boy III" "" "ACT"
-   rep "$dir" "H" "_Sega Tetris"  "_Tetris" "" "PUZ"
+   rep "$dir" "H" "_Tetris"  "_Tetris (Sega)" "" "PUZ"
 
 
    add "$dir" "H" "Alien Storm (World, 2 Players) (FD1094 317-0154).mra" "_Alien Storm" "" "BEA"

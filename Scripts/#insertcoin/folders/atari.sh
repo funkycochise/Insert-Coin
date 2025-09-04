@@ -8,11 +8,11 @@ else
    atari="_Atari"
 fi
 dir=$atari
+outdir=$1
 
 resh=$(exist "Gauntlet (rev 14).mra")
 resv=$(exist "Centipede (Rev 4).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
 
    add "$dir" "V" "Breakout (TTL).mra" "_Breakout"
    add "$dir" "V" "Centipede (Rev 4).mra" "_Centipede"
@@ -48,6 +48,6 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Sprint 2.mra" "_Sprint 2" "" "SPO"
    add "$dir" "H" "Subs.mra" "_Subs"
    add "$dir" "H" "Vindicators Part II (rev 3).mra" "_Vindicators part II"
-   rep "$dir" "V" "_Atari Tetris"  "_Tetris" "" "PUZ"
+   rep "$dir" "V" "_Tetris (Atari)"  "" "" "PUZ"
    dot
 fi

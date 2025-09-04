@@ -40,6 +40,11 @@ if [ -f "/media/fat/_Console/GnW_20220606.rbf" ]
 then
    rm -r "/media/fat/_Console/GnW_20220606.rbf"
 fi
+if [ -f "/media/fat/_Console/NeoGeo_20250206.rbf" ];then
+   if [ -f "/media/fat/_Console/NeoGeo_20250105.rbf" ];then  
+      rm -r "/media/fat/_Console/NeoGeo_20250105.rbf"
+   fi
+fi
 
 #keep only latest SNES console core
 CleanSNES
