@@ -22,6 +22,13 @@ if [ "$TERM" == "linux" ]; then
    echo -n -e "   "
 fi
 
+function linkcores {
+#echo "Linking cores"
+if [ ! -d "$targetdir/cores" ]; then
+ln -s "$arcade/cores" "$targetdir/cores"
+fi 
+}
+
 ./folders/alpha.sh "$targetdir"
 ./folders/atari.sh "$targetdir"
 ./folders/bagman.sh "$targetdir" 
@@ -95,6 +102,12 @@ fi
 if [ "$essential" == "1" ]; then
    ./folders/essentials.sh "$targetdir"
 fi
+
+#cores in insert coin
+if [ "$rootfolder" == "1" ]; then
+   linkcores
+fi
+
 
 echo -e "${NC}"
 
