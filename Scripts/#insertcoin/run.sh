@@ -12,33 +12,24 @@ clear
 launchdir=$(pwd)
 #echo "launchdir : $launchdir"
 
-#change this target folder name, it's the name that will be displayed in _Arcade
-targetfolder="_Insert_Coin"
-finalfolder="_Insert Coin"
+if [ -f "$names" ]; then
+   source <(grep insertcoin $names)
+else
+   insertcoin="_#Insert-Coin"
+fi
 
+if [ "$rootfolder" != "1" ]; then
+   targetfolder="/media/fat/_Arcade/$insertcoin"
+else
+   targetfolder="/media/fat/$insertcoin"
+fi
+if [ -d "$folder" ]; then
+   rm -r "$targetfolder"
+fi
 
-#clean of existing folders
-folder="/media/fat/_Arcade/finalfolder"
-#echo "$folder"
-if [ -d "$folder" ] 
-then
-  #echo "Removing $folder"
-  rm -r "$folder"
-fi 
-
-folder="/media/fat/_Arcade/$finalfolder"
-#echo "$folder"
-if [ -d "$folder" ] 
-then
-  #echo "Removing $folder"
-  rm -r "$folder"
-fi 
-folder="/media/fat/_Arcade/$targetfolder"
-if [ -d "$folder" ] 
-then
-  #echo "Removing $folder"
-  rm -r "$folder"
-fi 
+if [ ! -d "$targetfolder" ]; then
+   mkdir $targetfolder
+fi
 
 COL=$(( $RANDOM % 12 + 1 ))
 
@@ -48,9 +39,16 @@ else
 ./update/banner.sh $COL
 fi
 
+#echo "targetfolder : $targetfolder"
+
 if test -f "/media/fat/Scripts/#insertcoin/out.txt"; 
 then
    rm -r /media/fat/Scripts/#insertcoin/out.txt
+fi
+
+#clean of existing folders
+if test -f "./update/sweep.sh"; then
+  ./update/sweep.sh
 fi
 
 if [ "$skip_res_local" != "1" ]; then
@@ -59,12 +57,16 @@ if [ "$skip_res_local" != "1" ]; then
    fi
 fi
 
-
 start_time=$SECONDS
 
+if [ "$skip_res_local" != "1" ]; then
+   if test -f "./update/install_local.sh"; then
+      ./update/install_local.sh "$targetfolder"
+      echo ""
+   fi
+fi
+
 ./update/create_menu.sh $launchdir "$targetfolder" $COL
-
-
 
 if [ "$skip_res_local" != "1" ]; then
    if test -f "/media/fat/Scripts/#local/key2.sh"; then
@@ -72,22 +74,10 @@ if [ "$skip_res_local" != "1" ]; then
    fi
 fi
 
-if test -d "/media/fat/_Arcade/$targetfolder"; 
-then
-  #echo "$targetfolder to $finalfolder"
-
-  mv "/media/fat/_Arcade/$targetfolder" "/media/fat/_Arcade/$finalfolder"
-fi
-
-elapsed=$(( SECONDS - start_time ))
-
-
-
 if [ "$skip_res_local" != "1" ]; then
    if [ "$mame_rom" == "1" ]; then
      ./update/mame.sh
    fi
-
    if [ "$gnw_rom" == "1" ]; then
      ./update/gw.sh
    fi
@@ -102,14 +92,10 @@ if [ "$skip_res_local" != "1" ]; then
    fi
 fi
 
-if [ "$skip_res_local" != "1" ]; then
-   if test -f "./update/install_local.sh"; then
-      ./update/install_local.sh
-   fi
-fi
+elapsed=$(( SECONDS - start_time ))
+
 
 sh ./update/post.sh
-
 
 #echo -n -e "Creation process completed in $elapsed sec.\n"
 
@@ -118,7 +104,6 @@ sh ./update/post.sh
 #   echo "Not found mras :"
 #   cat /media/fat/Scripts/#insertcoin/out.txt
 #fi
-
 #if [ "$skip_res_local" != "1" ]; then
 #echo -e "${BLUE}${CHECK}${NC} Latest updated _Console cores :"
 #find /media/fat/_Console/*.rbf  -mtime 0 -printf '%p\n' 2>/dev/null | sort -r | more

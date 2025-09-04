@@ -174,7 +174,6 @@ function PSX {
 
 function Saturn {
   curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Saturn.zip -O -k -s --output /media/fat/Scripts/temp/Saturn.zip
-  #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Saturn.zip --quiet
   unzip -qq /media/fat/Scripts/temp/Saturn.zip -d /media/fat/Scripts/temp
   rm -r /media/fat/Scripts/temp/Saturn.zip
  #echo "remove previous Saturn cores"
