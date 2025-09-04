@@ -25,7 +25,7 @@ fi
 function linkcores {
 #echo "Linking cores"
 if [ ! -d "$targetdir/cores" ]; then
-ln -s "$arcade/cores" "$targetdir/cores"
+ln -s "$ARCADE/cores" "$targetdir/cores"
 fi 
 }
 
