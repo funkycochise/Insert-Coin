@@ -59,18 +59,18 @@ fi
 
 start_time=$SECONDS
 
-if [ "$skip_res_local" != "1" ]; then
-   if test -f "./update/install_local.sh"; then
-      ./update/install_local.sh "$targetfolder"
-      echo ""
-   fi
-fi
-
 ./update/create_menu.sh $launchdir "$targetfolder" $COL
 
 if [ "$skip_res_local" != "1" ]; then
    if test -f "/media/fat/Scripts/#local/key2.sh"; then
       /media/fat/Scripts/#local/key2.sh
+   fi
+fi
+
+if [ "$skip_res_local" != "1" ]; then
+   if test -f "./update/install_local.sh"; then
+      ./update/install_local.sh "$targetfolder"
+      echo ""
    fi
 fi
 
