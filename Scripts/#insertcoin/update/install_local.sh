@@ -2,7 +2,7 @@
 source /media/fat/Scripts/#insertcoin/folders/functions.sh
 addon="/media/fat/Scripts/#local/addon"
 
-echo "Installing local resources in $targetfolder"
+#echo "Installing local resources in $targetfolder"
 
 targetfolder=$1
 
