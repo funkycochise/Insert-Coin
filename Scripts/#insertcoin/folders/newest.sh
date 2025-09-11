@@ -37,6 +37,11 @@ fi
 
 counter=0
 
+#0911
+   add "Dead Connection (World).mra" "_Dead Connection"
+   add "Metal Black (World).mra" "_Metal Black"
+   add "Thunder Fox (World, rev 1).mra" "_Thunder Fox" 
+
 #0829
    add "Surprise Attack (World ver. K).mra" "_Surprise Attack"
 
