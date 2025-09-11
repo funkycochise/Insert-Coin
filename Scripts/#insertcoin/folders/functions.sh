@@ -446,8 +446,6 @@ then
    altclean "$sub"
 fi
 
-
-#echo "------------------------------------------------"
 }
 
 function add_folder {
@@ -517,7 +515,6 @@ if [ !  $? -eq 0 ]; then
    echo "ln FAIL"
    echo "ln -s \"$ALT/$sub\" \"$outdir/$dir/$renamed\""
 fi
-#echo "-------------------------"
 
 if [ "$show_genre" == "1" ]; then
 
