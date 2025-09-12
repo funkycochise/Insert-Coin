@@ -919,6 +919,7 @@ dl "baluba.zip"
 dl "agallet.zip"
 dl "agalletd.zip"
 dl "suratk.zip"
+dl "glfgreat.zip"
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
