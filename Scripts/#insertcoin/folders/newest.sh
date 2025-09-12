@@ -37,6 +37,9 @@ fi
 
 counter=0
 
+#0912
+   add "Golfing Greats (World, version L).mra" "_Golfing Greats"
+
 #0911
    add "Dead Connection (World).mra" "_Dead Connection"
    add "Metal Black (World).mra" "_Metal Black"
