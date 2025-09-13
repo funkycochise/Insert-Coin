@@ -21,6 +21,7 @@ if [ "$TERM" == "linux" ]; then
    #GUI
    echo -n -e "   "
 fi
+echo "Creating $targetdir"
 
 function linkcores {
 #echo "Linking cores"
