@@ -7,7 +7,17 @@ if [ -f "$names" ]; then
 else
    irem62="_Irem M62"
 fi
-dir=$irem62
+if [ -f "$names" ]; then
+   source <(grep irem $names)
+else
+   irem="_Irem"
+fi
+dir=$irem
+if [ "$show_system" == "1" ]; then
+   dir=$irem62
+else
+   dir=$irem
+fi
 
 resh=$(exist "Kung-Fu Master (W).mra")
 resv=$(exist "Youjyuden (JP).mra")

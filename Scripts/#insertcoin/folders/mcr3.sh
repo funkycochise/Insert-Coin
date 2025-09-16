@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    mcr3="_Midway_MCR3"
 fi
-dir=$mcr3
+if [ -f "$names" ]; then
+   source <(grep bally_midway $names)
+else
+   bally_midway="_Bally-midway"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$mcr3
+else
+   dir=$bally_midway
+fi
 
 resh=$(exist "Discs of Tron.mra")
 resv=$(exist "Journey.mra")

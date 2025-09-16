@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    segasys2="_Sega-System-2"
 fi
-dir=$segasys2
+if [ -f "$names" ]; then
+   source <(grep sega $names)
+else
+   sega="_Sega"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$segasys2
+else
+   dir=$sega
+fi
 
 resh=$(exist "Choplifter (unprotected).mra")
 resv=$(exist "Toki no Senshi - Chrono Soldier [MC-8123, 317-0040].mra" "_Toki no Senshi")

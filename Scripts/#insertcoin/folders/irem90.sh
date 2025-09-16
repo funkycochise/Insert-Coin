@@ -7,7 +7,17 @@ if [ -f "$names" ]; then
 else
    irem90="_Irem M90"
 fi
-dir=$irem90
+if [ -f "$names" ]; then
+   source <(grep irem $names)
+else
+   irem="_Irem"
+fi
+dir=$irem
+if [ "$show_system" == "1" ]; then
+   dir=$irem90
+else
+   dir=$irem
+fi
 
 resh=$(exist "Bomber Man - Dyna Blaster.mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then

@@ -7,7 +7,17 @@ if [ -f "$names" ]; then
 else
    irem72="_Irem M72"
 fi
-dir=$irem72
+if [ -f "$names" ]; then
+   source <(grep irem $names)
+else
+   irem="_Irem"
+fi
+dir=$irem
+if [ "$show_system" == "1" ]; then
+   dir=$irem72
+else
+   dir=$irem
+fi
 
 resh=$(exist "R-Type (World).mra")
 resv=$(exist "Air Duel (World, M72 hardware).mra")

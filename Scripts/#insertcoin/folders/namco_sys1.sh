@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    namco_sys1="_Namco-System-1"
 fi
-dir=$namco_sys1
+if [ -f "$names" ]; then
+   source <(grep namco $names)
+else
+   namco="_Namco"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$namco_sys1
+else
+   dir=$namco
+fi
 
 resh=$(exist "Splatter House (World, new version (SH3)).mra")
 resv=$(exist "Galaga '88.mra")

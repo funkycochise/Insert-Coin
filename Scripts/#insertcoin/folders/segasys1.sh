@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    segasys1="_Sega-System-1"
 fi
-dir=$segasys1
+if [ -f "$names" ]; then
+   source <(grep sega $names)
+else
+   sega="_Sega"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$segasys1
+else
+   dir=$sega
+fi
 
 resh=$(exist "Wonder Boy (Set 1, 315-5177).mra")
 resv=$(exist "Mister Viking (315-5041).mra")

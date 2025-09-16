@@ -8,6 +8,16 @@ else
    konamitwin16="_Konami Twin16"
 fi
 dir=$konamitwin16
+if [ -f "$names" ]; then
+   source <(grep konami $names)
+else
+   konami="_Konami"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$konamitwin16
+else
+   dir=$konami
+fi
 
 resh=$(exist "The Final Round (version M).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then

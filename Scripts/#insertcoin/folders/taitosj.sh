@@ -8,7 +8,16 @@ if [ -f "$names" ]; then
 else
    taitosj="_Taito-SJ"
 fi
-dir=$taitosj
+if [ -f "$names" ]; then
+   source <(grep taito $names)
+else
+   taito="_Taito"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$taitosj
+else
+   dir=$taito
+fi
 
 resh=$(exist "Elevator Action Bootleg.mra")
 resv=$(exist "Front Line.mra")

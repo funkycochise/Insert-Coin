@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    mcr3scroll="_Midway_MCR3Scroll"
 fi
-dir=$mcr3scroll
+if [ -f "$names" ]; then
+   source <(grep bally_midway $names)
+else
+   bally_midway="_Bally-midway"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$mcr3scroll
+else
+   dir=$bally_midway
+fi
 
 resh=$(exist "Spy Hunter.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then

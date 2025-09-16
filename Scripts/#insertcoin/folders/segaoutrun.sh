@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    outrun="_Sega-Outrun"
 fi
-dir=$outrun
+if [ -f "$names" ]; then
+   source <(grep sega $names)
+else
+   sega="_Sega"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$outrun
+else
+   dir=$sega
+fi
 
 resh=$(exist "Super Hang-On (sitdown-upright) (unprotected).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then

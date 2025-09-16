@@ -8,7 +8,26 @@ if [ -f "$names" ]; then
 else
    segasys16="_Sega-System-16"
 fi
-dir=$segasys16
+if [ -f "$names" ]; then
+   source <(grep sega $names)
+else
+   sega="_Sega"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$segasys16
+else
+   dir=$sega
+fi
+if [ -f "$names" ]; then
+   source <(grep sega $names)
+else
+   sega="_Sega"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$segasys16
+else
+   dir=$sega
+fi
 
 resh=$(exist "Shinobi (Set 6, World, S16A) [No Protection].mra")
 resv=$(exist "Sonic Boom (FD1094 317-0053).mra")

@@ -8,7 +8,26 @@ if [ -f "$names" ]; then
 else
    segasys18="_Sega-System-18"
 fi
-dir=$segasys18
+if [ -f "$names" ]; then
+   source <(grep sega $names)
+else
+   sega="_Sega"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$segasys16
+else
+   dir=$sega
+fi
+if [ -f "$names" ]; then
+   source <(grep sega $names)
+else
+   sega="_Sega"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$segasys18
+else
+   dir=$sega
+fi
 
 resh=$(exist "Shadow Dancer (World).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then

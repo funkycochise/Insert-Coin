@@ -1,7 +1,6 @@
 #!/bin/bash
 source ./folders/functions.sh
 loadsetup
-
 if [ -f "$names" ]; then
    source <(grep irem $names)
 else

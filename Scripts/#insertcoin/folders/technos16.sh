@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    technos16="_Technos16"
 fi
-dir=$technos16
+if [ -f "$names" ]; then
+   source <(grep technos $names)
+else
+   technos="_Technos"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$technos16
+else
+   dir=$technos
+fi
 
 resh=$(exist "The Combatribes (US, Rev 2, Set 1).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then

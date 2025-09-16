@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    mcr3mono="_Midway_MCR3Mono"
 fi
-dir=$mcr3mono
+if [ -f "$names" ]; then
+   source <(grep bally_midway $names)
+else
+   bally_midway="_Bally-midway"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$mcr3mono
+else
+   dir=$bally_midway
+fi
 
 resh=$(exist "Demolition Derby (MCR-3 Mono Board Version).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then

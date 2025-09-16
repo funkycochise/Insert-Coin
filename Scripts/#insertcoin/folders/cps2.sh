@@ -7,7 +7,17 @@ if [ -f "$names" ]; then
 else
    cps2="_CPS2"
 fi
-dir=$cps2
+
+if [ -f "$names" ]; then
+   source <(grep capcom $names)
+else
+   capcom="_Capcom-Mitchell"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$cps2
+else
+   dir=$capcom
+fi
 
 resh=$(exist "Alien vs. Predator (Euro 940520).mra")
 resv=$(exist "19XX The War Against Destiny (Euro 960104).mra")

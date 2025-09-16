@@ -7,7 +7,17 @@ if [ -f "$names" ]; then
 else
    irem92t="_Irem M92t"
 fi
-dir=$irem92t
+if [ -f "$names" ]; then
+   source <(grep irem $names)
+else
+   irem="_Irem"
+fi
+dir=$irem
+if [ "$show_system" == "1" ]; then
+   dir=$irem92t
+else
+   dir=$irem
+fi
 
 resh=$(exist "_In The Hunt (Turbo)")
 resv=$(exist "_Lethal Thunder (Turbo)")

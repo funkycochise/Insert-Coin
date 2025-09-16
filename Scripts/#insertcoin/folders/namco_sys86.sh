@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    namco_sys86="_Namco-System-86"
 fi
-dir=$namco_sys86
+if [ -f "$names" ]; then
+   source <(grep namco $names)
+else
+   namco="_Namco"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$namco_sys86
+else
+   dir=$namco
+fi
 
 resh=$(exist "Rolling Thunder (rev 3).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then

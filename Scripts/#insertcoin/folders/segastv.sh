@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    segastv="_Sega-Titan Video"
 fi
-dir=$segastv
+if [ -f "$names" ]; then
+   source <(grep sega $names)
+else
+   sega="_Sega"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$segastv
+else
+   dir=$sega
+fi
 
 resh=$(exist "Die Hard Arcade (UET 960515 V1.000).mra")
 resv=$(exist "Shienryu (JUET 961226 V1.000).mra")

@@ -7,7 +7,17 @@ if [ -f "$names" ]; then
 else
    irem107="_Irem M107"
 fi
-dir=$irem107
+if [ -f "$names" ]; then
+   source <(grep irem $names)
+else
+   irem="_Irem"
+fi
+dir=$irem
+if [ "$show_system" == "1" ]; then
+   dir=$irem107
+else
+   dir=$irem
+fi
 
 resh=$(exist "Dream Soccer '94 (World, M107 hardware).mra")
 resv=$(exist "Air Assault (World).mra")

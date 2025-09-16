@@ -344,8 +344,7 @@ then
    #echo "Creating $outdir"
    mkdir "$outdir" 
 fi
-if [ ! -d "$outdir/$dir" ] && [ "$show_system" == "1" ];
-then
+if [ ! -d "$outdir/$dir" ];then
    if [ ! -z "$dir" ];
    then 
       #echo "Creating $outdir/$dir"
@@ -376,8 +375,7 @@ then
    fi
    if [ ! -z "$dir" ];
    then 
-      if [ ! -d "$outdir/$dir/$renamed" ] && [ "$show_system" == "1" ]
-      then
+      if [ ! -d "$outdir/$dir/$renamed" ];then
          ln -s "$ALT/$sub" "$outdir/$dir/$renamed"
          if [ !  $? -eq 0 ]; then
             echo "ln FAIL"
@@ -385,8 +383,7 @@ then
          fi
       fi
    else
-      if [ ! -d "$outdir/$renamed" ] && [ "$show_system" == "1" ]
-      then
+      if [ ! -d "$outdir/$renamed" ];then
          ln -s "$ALT/$sub" "$outdir/$renamed"
          if [ !  $? -eq 0 ]; then
             echo "ln FAIL"

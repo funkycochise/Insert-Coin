@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    cps15="_CPS15"
 fi
-dir=$cps15
+if [ -f "$names" ]; then
+   source <(grep capcom $names)
+else
+   capcom="_Capcom-Mitchell"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$cps15
+else
+   dir=$capcom
+fi
 
 resh=$(exist "The Punisher (World 930422).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then

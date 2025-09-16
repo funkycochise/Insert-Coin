@@ -7,7 +7,26 @@ if [ -f "$names" ]; then
 else
    segasyse="_Sega-System-E"
 fi
-dir=$segasyse
+if [ -f "$names" ]; then
+   source <(grep sega $names)
+else
+   sega="_Sega"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$segasys16
+else
+   dir=$sega
+fi
+if [ -f "$names" ]; then
+   source <(grep sega $names)
+else
+   sega="_Sega"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$segasyse
+else
+   dir=$sega
+fi
 
 resh=$(exist "Opa Opa.mra")
 resv=$(exist "Megumi Rescue (Japan).mra")

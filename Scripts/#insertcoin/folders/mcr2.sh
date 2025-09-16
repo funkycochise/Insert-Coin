@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    mcr2="_Midway_MCR2"
 fi
-dir=$mcr2
+if [ -f "$names" ]; then
+   source <(grep bally_midway $names)
+else
+   bally_midway="_Bally-midway"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$mcr2
+else
+   dir=$bally_midway
+fi
 
 resh=$(exist "Wacko.mra")
 resv=$(exist "Tron.mra")

@@ -8,8 +8,16 @@ if [ -f "$names" ]; then
 else
    taitof2="_Taito-F2"
 fi
-dir=$taitof2
-
+if [ -f "$names" ]; then
+   source <(grep taito $names)
+else
+   taito="_Taito"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$taitof2
+else
+   dir=$taito
+fi
 
 resh=$(exist "Liquid Kids (World).mra")
 resv=$(exist "Gun & Frontier (World).mra")

@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    mcr1="_Midway_MCR1"
 fi
-dir=$mcr1
+if [ -f "$names" ]; then
+   source <(grep bally_midway $names)
+else
+   bally_midway="_Bally-midway"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$mcr1
+else
+   dir=$bally_midway
+fi
 
 resv=$(exist "Kick.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then

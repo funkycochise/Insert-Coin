@@ -7,7 +7,16 @@ if [ -f "$names" ]; then
 else
    cps1="_CPS1"
 fi
-dir=$cps1
+if [ -f "$names" ]; then
+   source <(grep capcom $names)
+else
+   capcom="_Capcom-Mitchell"
+fi
+if [ "$show_system" == "1" ]; then
+   dir=$cps1
+else
+   dir=$capcom
+fi
 
 resh=$(exist "Ghouls'n Ghosts (World).mra")
 resv=$(exist "1941 Counter Attack (World 900227).mra")
