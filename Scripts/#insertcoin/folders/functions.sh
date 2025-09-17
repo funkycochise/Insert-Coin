@@ -520,6 +520,7 @@ fi
 
 #echo "$ALT/$sub"
 #echo "$outdir/$dir/$renamed"
+#echo "---------------------"
 ln -s "$ALT/$sub" "$outdir/$dir/$renamed"
 if [ !  $? -eq 0 ]; then
    echo "ln FAIL"
@@ -564,12 +565,28 @@ function add_genre {
       if [ ! -d "$outdir/$genre" ]; then
          mkdir "$outdir/$genre"
       fi 
-      #echo "manufacturer_subfolder: $manufacturer_subfolder"
-      ln -s -f "$ALT/$sub" "$outdir/$genre/$renamed"
-      if [ !  $? -eq 0 ]; then
-         echo "lngenre FAIL"
-         echo "ln -s \"\"$ALT/$sub\""
-         echo "\"$outdir/$genre/$renamed\""
+      if [ ! -z "$dir" ] && [ "$manufacturer_subfolder" == "1" ]; then
+         if [ ! -d "$outdir/$genre/$dir" ]; then
+            #echo "Creating $outdir/$genre/$dir"
+            mkdir "$outdir/$genre/$dir"
+         fi
+         if [ ! -d "$outdir/$genre/$dir/$renamed" ]; then
+            ln -s "$ALT/$sub" "$outdir/$genre/$dir/$renamed"
+            if [ !  $? -eq 0 ]; then
+               echo "ln FAIL 1"
+               echo "ln -s \"$ALT/$sub\" \"$outdir/$genre/$renamed\""
+            fi
+         fi
+      else
+         if [ -d "$ALT/$sub" ]; then
+            if [ ! -d "$outdir/$genre/$renamed" ]; then
+               ln -s "$ALT/$sub" "$outdir/$genre/$renamed"
+               if [ !  $? -eq 0 ]; then
+                  echo "ln FAIL 2"
+                  echo "ln -s \"$ALT/$sub\" \"$outdir/$genre/$renamed\""
+               fi
+            fi
+         fi
       fi
 }
 
