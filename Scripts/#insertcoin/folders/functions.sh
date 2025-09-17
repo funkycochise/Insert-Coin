@@ -333,6 +333,7 @@ then
    #echo "add() : sub is $sub"
 fi
 
+
 #if no rename, rename equals original sub name
 if ([ -z "$renamed" ]); then 
    renamed=$sub
@@ -398,7 +399,10 @@ else
   fi
 fi
 
+
 if [ "$show_genre" == "1" ]; then
+
+   
 
    #horizontal
    if [ "$horizontal" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "H" ]; then
@@ -438,6 +442,7 @@ if [ "$show_genre" == "1" ]; then
    fi
 fi
 
+
 if [ ! -z "$sub" ];
 then
    altclean "$sub"
@@ -445,10 +450,17 @@ fi
 
 }
 
+
+
 function add_folder {
 folder="$1"
 
+      if [ -f "$names" ]; then
+        source <(grep essential $names)
+      fi
 
+#ignore essential list
+if [ "$dir" != "$essential" ];then
 
       if [ ! -d "$outdir/$folder" ]; then
          #echo "Creating $outdir/$folder"
@@ -477,6 +489,7 @@ folder="$1"
             fi
          fi
       fi
+fi
 
 }
 
