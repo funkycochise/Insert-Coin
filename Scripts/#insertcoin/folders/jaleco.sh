@@ -25,7 +25,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "P-47 - The Freedom Fighter (Japan).mra" "_P-47 - The Freedom Fighter" "" "STG"
    add "$dir" "H" "Rod-Land (World, set 1).mra" "_Rod-Land" "" "ACT"
    add "$dir" "H" "Saint Dragon (Set 1).mra" "_Saint Dragon" "" "STG"
-   add "$dir" "H" "Soldam.mra" "_Soldam" "" "ACT"
+   add "$dir" "H" "Soldam.mra" "_Soldam" "" "PUZ"
    add "$dir" "H" "The Lord of King (Japan).mra" "_The Astyanax" "" "ACT"
    add "$dir" "H" "Hachoo.mra" "_Hachoo" "" "ACT"
    add "$dir" "H" "In Your Face (US, Prototype).mra" "_In Your Face" "" "ACT"
