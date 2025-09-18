@@ -47,7 +47,7 @@ function pce {
   unzip -qq /media/fat/Scripts/temp/TurboGrafx16.zip -d /media/fat/Scripts/temp
   rm -r /media/fat/Scripts/temp/TurboGrafx16.zip 
 
-  #echo "remove previous jaguar cores"
+  #echo "remove previous pce cores"
   for f in $(ls /media/fat/_Console/TurboGrafx16*.rbf )
   do
      #echo "file $f"
@@ -76,6 +76,44 @@ function pce {
         echo -n -e "   "
      fi
      echo -e "${BLUE}${CHECK}${NC} TurboGrafx16"
+  fi
+}
+
+function nes {
+  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/NES.zip -O -k -s --output /media/fat/Scripts/temp/NES.zip
+  #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/NES.zip --quiet
+  unzip -qq /media/fat/Scripts/temp/NES.zip -d /media/fat/Scripts/temp
+  rm -r /media/fat/Scripts/temp/NES.zip 
+
+  #echo "remove previous nes cores"
+  for f in $(ls /media/fat/_Console/NES*.rbf )
+  do
+     #echo "file $f"
+     rm -r $f
+  done
+
+  cd /media/fat/Scripts/temp
+  installed="0"
+  for f in $(ls ./*.rbf)
+  do
+    #echo "file: $f"
+    target="${f:2:${#f}}"
+    #echo "NES target: $target"
+    target=$f
+    mv $f $CONSOLE/$target
+    touch $CONSOLE/$target >/dev/null
+    installed="1"
+    #clean any file left
+    if test -f "./$f"; then
+      rm -r ./$f
+    fi
+  done
+  if [ "$installed" == "1" ]; then
+     if [ "$TERM" == "linux" ]; then
+        #GUI
+        echo -n -e "   "
+     fi
+     echo -e "${BLUE}${CHECK}${NC} NES"
   fi
 }
 
@@ -424,6 +462,9 @@ if [ "$cdi" == "1" ]; then
 fi
 if [ "$pce" == "1" ]; then
   pce
+fi
+if [ "$nes" == "1" ]; then
+  nes
 fi
 
 if [ "$TERM" == "linux" ]; then
