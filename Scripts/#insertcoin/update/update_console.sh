@@ -120,7 +120,7 @@ function installSaturn {
         echo -n -e "   "
      fi
     #remove other core for the system
-    echo "find for Saturn $sattarget"
+    #echo "find for Saturn $sattarget"
     find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" ! -name "$sattarget" -delete
     echo -e "${BLUE}${CHECK}${NC} Saturn"
   fi
