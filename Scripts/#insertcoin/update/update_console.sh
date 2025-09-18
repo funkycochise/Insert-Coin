@@ -81,19 +81,6 @@ function installSaturn {
   curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Saturn.zip -O -k -s --output /media/fat/Scripts/temp/Saturn.zip
   unzip -qq /media/fat/Scripts/temp/Saturn.zip -d /media/fat/Scripts/temp
   rm -r /media/fat/Scripts/temp/Saturn.zip
- #echo "remove previous Saturn cores"
- #for f in $(ls $CONSOLE/Saturn*.rbf )
- #do
- #    #echo "rm $f"
- #     rm -r $f
- # done
- # stv="0"
- # for f in $(ls $CORE/ST-V_*.rbf )
- # do
- #    #echo "file $f"
- #    rm -r $f
- #    stv="1"
- # done
 
   cd /media/fat/Scripts/temp
   installed="0"
@@ -109,10 +96,10 @@ function installSaturn {
        fi
     elif [ "${f:2:6}" == "Saturn" ];  then
        if [ "$dualsdram" == "0" ] || [ "$dualsdram" == "2" ]; then
-          target="${f:2:${#f}}"
-          #echo "move to $CONSOLE/$target"
-          cp $f $CONSOLE/$target
-          touch $CONSOLE/$target >/dev/null
+          sattarget="${f:2:${#f}}"
+          #echo "move to $CONSOLE/$sattarget"
+          cp $f $CONSOLE/$sattarget
+          touch $CONSOLE/$sattarget >/dev/null
           installed="1"
        fi
     elif [ "${f:2:4}" == "Dual" ];  then
@@ -133,8 +120,8 @@ function installSaturn {
         echo -n -e "   "
      fi
     #remove other core for the system
-    #echo "find for Saturn"
-    find $CONSOLE -maxdepth 1 -type f -name "Saturn*" ! -name "$target" -delete
+    echo "find for Saturn $sattarget"
+    find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" ! -name "$sattarget" -delete
     echo -e "${BLUE}${CHECK}${NC} Saturn"
   fi
 }
