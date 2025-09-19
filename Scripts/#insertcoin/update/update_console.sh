@@ -89,11 +89,14 @@ function installSaturn {
     #echo "found : $f"
     if [ "${f:2:3}" == "STV" ];  then
        target="ST-V${f:12:${#f}}"
-       if [ "$stv" == "1" ]; then
+       #echo "STV $target"
+       #echo "stv $stv"
+       #if [ "$stv" == "1" ]; then
           #echo "move to $CORE/$target"
           cp $f $CORE/$target
           touch $CORE/$target >/dev/null
-       fi
+          find $CORE -maxdepth 1 -type f -name "ST-V*.rbf" ! -name "$target" -delete
+       #fi
     elif [ "${f:2:6}" == "Saturn" ];  then
        if [ "$dualsdram" == "0" ] || [ "$dualsdram" == "2" ]; then
           sattarget="${f:2:${#f}}"
