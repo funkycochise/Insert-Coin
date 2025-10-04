@@ -86,17 +86,29 @@ if [ -f "/media/fat/Scripts/temp/res3.zip" ]
 then
    rm -r $temp/res3.zip
 fi
-     
+
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi     
 echo -e "${BLUE}${CHECK}${NC} res" 
 curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output $temp/res.zip >/dev/null
 unzip -qq $temp/res.zip -d $res
 rm -r $temp/res.zip
 
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
 echo -e "${BLUE}${CHECK}${NC} res2" 
 curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res2.zip -O -k -s --output $temp/res2.zip >/dev/null
 unzip -qq $temp/res2.zip -d $res
 rm -r $temp/res2.zip
 
+if [ "$TERM" == "linux" ]; then
+   #GUI
+   echo -n -e "   "
+fi
 echo -e "${BLUE}${CHECK}${NC} res3" 
 curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res3.zip -O -k -s --output $temp/res3.zip >/dev/null
 unzip -qq $temp/res3.zip -d $res
