@@ -226,6 +226,7 @@ dir=$essential
    add "$dir" "H" "R-Type II (World).mra" "_R-Type II" "" "STG"
    add "$dir" "H" "R-Type Leo (World).mra" "_R-Type Leo" "" "STG"
    add "$dir" "H" "Rygar.mra" "_Rygar" "" "ACT"
+   add "$dir" "H"  "Salamander (version D).mra" "_Salamander" "" "STG"
    add "$dir" "H" "Saint Dragon (Set 1).mra" "_Saint Dragon" "" "STG"
    add "$dir" "H" "Secret Agent (World, revision 3).mra" "_Secret Agent" "" "RNG"
    add "$dir" "H" "Sega Ninja (315-5102).mra" "_Sega Ninja" "" "RNG"
