@@ -91,12 +91,12 @@ function installSaturn {
        target="ST-V${f:12:${#f}}"
        #echo "STV $target"
        #echo "stv $stv"
-       #if [ "$stv" == "1" ]; then
+       if [ "$stv" == "1" ]; then
           #echo "move to $CORE/$target"
           cp $f $CORE/$target
           touch $CORE/$target >/dev/null
           find $CORE -maxdepth 1 -type f -name "ST-V*.rbf" ! -name "$target" -delete
-       #fi
+       fi
     elif [ "${f:2:6}" == "Saturn" ];  then
        if [ "$dualsdram" == "0" ] || [ "$dualsdram" == "2" ]; then
           sattarget="${f:2:${#f}}"
@@ -106,7 +106,7 @@ function installSaturn {
           installed="1"
        fi
     elif [ "${f:2:4}" == "Dual" ];  then
-       #echo "$dualsdram"
+       echo "$dualsdram $f"
        if [ "$dualsdram" == "1" ] || [ "$dualsdram" == "2" ]; then
           target="Saturn_Dual${f:13:${#f}}"
           #echo "move to $CONSOLE/$target"
@@ -125,6 +125,7 @@ function installSaturn {
     #remove other core for the system
     #echo "find for Saturn $sattarget"
     find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" ! -name "$sattarget" -delete
+    #find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" ! -name "$sattarget" -delete
     echo -e "${BLUE}${CHECK}${NC} Saturn"
   fi
 }
