@@ -103,9 +103,9 @@ fi
 if [ "$essential" == "1" ]; then
    ./folders/essentials.sh "$targetdir"
 fi
-if test -f "./update/favorites.sh"; then
-   ./update/favorites.sh "$targetdir"
-fi
+#if test -f "./update/favorites.sh"; then
+#   ./update/favorites.sh "$targetdir"
+#fi
 
 #cores in insert coin
 if [ "$rootfolder" == "1" ]; then
