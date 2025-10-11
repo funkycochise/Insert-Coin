@@ -37,6 +37,9 @@ fi
 
 counter=0
 
+#1010
+   add "Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA).mra" "_Teenage Mutant Ninja Turtles 2" 
+
 #0912
    add "Golfing Greats (World, version L).mra" "_Golfing Greats"
 
