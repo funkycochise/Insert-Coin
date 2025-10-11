@@ -14,11 +14,21 @@ dir=$newest
 mkdir "$outdir/$dir"
 
 function linkfolder {
+
+   #echo "1: $1"
+   #echo "2: $2"
+   #echo "3: $3"
+
    counter=$((counter+1))
    if [[ "$counter" -lt 100 ]]; then
       #echo "$counter - $1"
       formated=$(printf "%02d" $counter)
-      ln -s "$ALT/$1"  "$outdir/$dir/_$formated$1"
+
+      if (! [ -z "$2" ]);then
+         ln -s "$ALT/$1"  "$outdir/$dir/_$formated$2"
+      else
+         ln -s "$ALT/$1"  "$outdir/$dir/_$formated$1"
+      fi
    fi
 }
 
@@ -29,7 +39,7 @@ then
    linkfolder "$2"
 else
    if  test -f "$ARCADE/$1" ; then
-      linkfolder "$2"
+      linkfolder "$2" "$3"
    fi
 fi
 
@@ -38,7 +48,7 @@ fi
 counter=0
 
 #1010
-   add "Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA).mra" "_Teenage Mutant Ninja Turtles 2" 
+   add "Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA).mra" "_Teenage Mutant Ninja Turtles 2" "_TMNT2 (Jotego)"
 
 #0912
    add "Golfing Greats (World, version L).mra" "_Golfing Greats"
