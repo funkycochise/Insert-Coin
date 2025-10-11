@@ -84,6 +84,7 @@ function installSaturn {
 
   cd /media/fat/Scripts/temp
   installed="0"
+  find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" -delete
   for f in $(ls ./*.rbf)
   do
     #echo "found : $f"
@@ -104,8 +105,6 @@ function installSaturn {
              installed="1"
           fi
     elif [ "${f:2:4}" == "Dual" ];  then
-       trunc="${f:2:4}"
-       echo "$trunc"
        if [ "$dualsdram" == "1" ] || [ "$dualsdram" == "2" ]; then
           dualsat="Saturn_Dual${f:13:${#f}}"
           #echo "cp $f to $CONSOLE/$dualsat"
@@ -118,10 +117,15 @@ function installSaturn {
     rm -r $f
   done
   if [ "$installed" == "1" ]; then
-     #echo "sattarget=$sattarget"
+     echo "sattarget=$sattarget"
      #echo "dualsat=$dualsat"
+     #if [ "$dualsdram" == "0" ]; then
+     #   find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" ! -name $sattarget -delete
+     #else
+     #   find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" ! -name $sattarget ! -name $dualsat -delete
+     #fi 
      #find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf"
-     find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" ! -name $sattarget ! -name $dualsat -delete
+     
 
      if [ "$TERM" == "linux" ]; then
         #GUI
