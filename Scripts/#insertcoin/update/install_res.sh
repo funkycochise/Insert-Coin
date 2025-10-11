@@ -33,8 +33,11 @@ if [ -d "$TMNT" ]; then
 fi
 
 find "$TMNT2" -maxdepth 1 -type f -name "*.mra" ! -name "*Turtles in Time*.mra" -delete
+echo "TMNT2"
+ls "$TMNT2"
 find "$TMNT" -maxdepth 1 -type f -name "*Time*" -delete 
-#ls "$TMNT2"
+echo "TMNT"
+ls "$TMNT"
 
 }
 
