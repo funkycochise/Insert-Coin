@@ -20,6 +20,24 @@ altdir=$res/_Arcade/_alternatives
 config=$res/config
 games=$res/games
 
+function tmnt2 {
+
+TMNT="/media/fat/_Arcade/_alternatives/_Teenage Mutant Ninja Turtles"
+TMNT2="/media/fat/_Arcade/_alternatives/_Teenage Mutant Ninja Turtles 2"
+
+rm -r "$TMNT2"
+if [ -d "$TMNT" ]; then
+   if [ ! -d "$TMNT2" ]; then
+      cp -r "$TMNT" "$TMNT2"
+   fi
+fi
+
+find "$TMNT2" -maxdepth 1 -type f -name "*.mra" ! -name "*Turtles in Time*.mra" -delete
+find "$TMNT" -maxdepth 1 -type f -name "*Time*" -delete 
+#ls "$TMNT2"
+
+}
+
 function identify_folder {
 
 if [ "$setup_res" == "USB" ]; then
@@ -220,6 +238,8 @@ then
 
    #removing res dir
    rm -r "$res"
+
+   tmnt2
 fi
 #echo -e "${GREEN}${CHECK}${NC} Completed"
 }

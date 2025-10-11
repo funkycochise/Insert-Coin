@@ -89,11 +89,11 @@ function installSaturn {
     #echo "found : $f"
     if [ "${f:2:3}" == "STV" ];  then
        target="ST-V${f:12:${#f}}"
-       echo "STV:$stv $target"
-          #echo "cp $f to $CORE/$target"
-          cp $f $CORE/$target
-          touch $CORE/$target >/dev/null
-          find $CORE -maxdepth 1 -type f -name "ST-V*.rbf" ! -name "$target" -delete
+       #echo "STV:$stv $target"
+       #echo "cp $f to $CORE/$target"
+       cp $f $CORE/$target
+       touch $CORE/$target >/dev/null
+       find $CORE -maxdepth 1 -type f -name "ST-V*.rbf" ! -name "$target" -delete
     elif [ "${f:2:6}" == "Saturn" ];  then
           if [ "$dualsdram" == "0" ] || [ "$dualsdram" == "2" ]; then
 
@@ -118,8 +118,8 @@ function installSaturn {
     rm -r $f
   done
   if [ "$installed" == "1" ]; then
-     echo "sattarget=$sattarget"
-     echo "dualsat=$dualsat"
+     #echo "sattarget=$sattarget"
+     #echo "dualsat=$dualsat"
      #find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf"
      find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" ! -name $sattarget ! -name $dualsat -delete
 
