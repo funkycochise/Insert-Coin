@@ -89,45 +89,48 @@ function installSaturn {
     #echo "found : $f"
     if [ "${f:2:3}" == "STV" ];  then
        target="ST-V${f:12:${#f}}"
-       #echo "STV $target"
-       #echo "stv $stv"
-       if [ "$stv" == "1" ]; then
-          #echo "move to $CORE/$target"
+       echo "STV:$stv $target"
+          #echo "cp $f to $CORE/$target"
           cp $f $CORE/$target
           touch $CORE/$target >/dev/null
           find $CORE -maxdepth 1 -type f -name "ST-V*.rbf" ! -name "$target" -delete
-       fi
     elif [ "${f:2:6}" == "Saturn" ];  then
-       if [ "$dualsdram" == "0" ] || [ "$dualsdram" == "2" ]; then
-          sattarget="${f:2:${#f}}"
-          #echo "move to $CONSOLE/$sattarget"
-          cp $f $CONSOLE/$sattarget
-          touch $CONSOLE/$sattarget >/dev/null
-          installed="1"
-       fi
+          if [ "$dualsdram" == "0" ] || [ "$dualsdram" == "2" ]; then
+
+             sattarget="${f:2:${#f}}"
+             #echo "cp $f to $CONSOLE/$sattarget"
+             cp $f $CONSOLE/$sattarget
+             touch $CONSOLE/$sattarget >/dev/null
+             installed="1"
+          fi
     elif [ "${f:2:4}" == "Dual" ];  then
-       echo "$dualsdram $f"
+       trunc="${f:2:4}"
+       echo "$trunc"
        if [ "$dualsdram" == "1" ] || [ "$dualsdram" == "2" ]; then
-          target="Saturn_Dual${f:13:${#f}}"
-          #echo "move to $CONSOLE/$target"
-          cp $f $CONSOLE/$target
-          touch $CONSOLE/$target >/dev/null
+          dualsat="Saturn_Dual${f:13:${#f}}"
+          #echo "cp $f to $CONSOLE/$dualsat"
+          cp $f $CONSOLE/$dualsat
+          touch $CONSOLE/$dualsat >/dev/null
           installed="1"
        fi
     fi
+
     rm -r $f
   done
   if [ "$installed" == "1" ]; then
+     echo "sattarget=$sattarget"
+     echo "dualsat=$dualsat"
+     #find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf"
+     find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" ! -name $sattarget ! -name $dualsat -delete
+
      if [ "$TERM" == "linux" ]; then
         #GUI
         echo -n -e "   "
      fi
-    #remove other core for the system
     #echo "find for Saturn $sattarget"
-    find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" ! -name "$sattarget" -delete
-    #find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" ! -name "$sattarget" -delete
     echo -e "${BLUE}${CHECK}${NC} Saturn"
   fi
+  
 }
 
 function installSGB {
