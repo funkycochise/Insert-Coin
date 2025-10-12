@@ -24,8 +24,8 @@ Running insertcoin will download mame roms and neogeo if they are missing.
 4. Update of latest console core version (nightlies)
 
 How to Install:
-Insert Coin is using update_all to perform core, mras and script installation.
-In downloader.ini add the following :
+Insert Coin relies on update_all to perform core, mras and script installation.
+In downloader.ini add the following entry :
 
 `[funkycochise/Insert-Coin]`
 <br>
