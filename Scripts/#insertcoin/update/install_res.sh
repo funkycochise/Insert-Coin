@@ -48,7 +48,7 @@ function tmnt2 {
 TMNT="/media/fat/_Arcade/_alternatives/_Teenage Mutant Ninja Turtles"
 TMNT2="/media/fat/_Arcade/_alternatives/_Teenage Mutant Ninja Turtles 2"
 
-rm -r "$TMNT2"
+rm -r "$TMNT2" /dev/null
 if [ -d "$TMNT" ]; then
    if [ ! -d "$TMNT2" ]; then
       cp -r "$TMNT" "$TMNT2"
