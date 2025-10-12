@@ -31,6 +31,7 @@ In downloader.ini add the following entry :
 <br>
 `db_url = https://raw.githubusercontent.com/funkycochise/Insert-Coin/db/db.json.zip`
 <br>
+<br>
 Run update_all : you will notice insert coin in the log.
 then run update_all_insertcoin
 
