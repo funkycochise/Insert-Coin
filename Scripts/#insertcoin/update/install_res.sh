@@ -20,6 +20,29 @@ altdir=$res/_Arcade/_alternatives
 config=$res/config
 games=$res/games
 
+function arkanoid {
+
+ARKNOID="/media/fat/_Arcade/_alternatives/_Arkanoid"
+ARKNOID2="/media/fat/_Arcade/_alternatives/_Arkanoid II"
+
+if [ -d "$ARKNOID2" ]; then
+   rm -r "$ARKNOID2"
+fi
+if [ -d "$ARKNOID" ]; then
+   if [ ! -d "$ARKNOID2" ]; then
+      cp -r "$ARKNOID" "$ARKNOID2"
+   fi
+fi
+
+find "$ARKNOID2" -maxdepth 1 -type f -name "*.mra" ! -name "*Revenge of DOH*.mra" -delete
+echo "ARKNOID2"
+ls "$ARKNOID2" -l
+
+find "$ARKNOID" -maxdepth 1 -type f -name "*Revenge of DOH*" -delete 
+echo "ARKNOID"
+ls "$ARKNOID" -l
+}
+
 function tmnt2 {
 
 TMNT="/media/fat/_Arcade/_alternatives/_Teenage Mutant Ninja Turtles"
@@ -242,6 +265,7 @@ then
    #removing res dir
    rm -r "$res"
 
+   arkanoid
    tmnt2
 fi
 #echo -e "${GREEN}${CHECK}${NC} Completed"
