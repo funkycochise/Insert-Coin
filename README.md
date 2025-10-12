@@ -35,8 +35,11 @@ Run update_all : you will notice insert coin in the log.
 then run update_all_insertcoin
 
 script will download a default /media/fat/Scripts/#insertcoin/setup.ini 
+<br>
 you can custimize later
+<br>
 script will download a default /media/fat/Scripts/#insertcoin/names.ini
+<br>
 you can customize folder names 
 
 
