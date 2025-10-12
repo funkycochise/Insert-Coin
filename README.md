@@ -36,7 +36,7 @@ then run update_all_insertcoin
 
 script will download a default /media/fat/Scripts/#insertcoin/setup.ini 
 <br>
-you can custimize later
+you can custimize later for set up how insert-coin script will behave
 <br>
 script will download a default /media/fat/Scripts/#insertcoin/names.ini
 <br>
