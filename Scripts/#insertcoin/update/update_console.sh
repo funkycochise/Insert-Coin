@@ -117,7 +117,7 @@ function installSaturn {
     rm -r $f
   done
   if [ "$installed" == "1" ]; then
-     echo "sattarget=$sattarget"
+     #echo "sattarget=$sattarget"
      #echo "dualsat=$dualsat"
      #if [ "$dualsdram" == "0" ]; then
      #   find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf" ! -name $sattarget -delete
