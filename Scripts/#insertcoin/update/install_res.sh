@@ -24,6 +24,7 @@ function arkanoid {
 
 ARKNOID="/media/fat/_Arcade/_alternatives/_Arkanoid"
 ARKNOID2="/media/fat/_Arcade/_alternatives/_Arkanoid II"
+CORE="/media/fat/_Arcade/cores"
 
 if [ -d "$ARKNOID2" ]; then
    rm -r "$ARKNOID2"
@@ -64,6 +65,13 @@ find "$TMNT" -maxdepth 1 -type f -name "*Time*" -delete
 echo "TMNT"
 ls "$TMNT"
 
+#coc TMNT2 core , remove previously installed
+if [ -f "$CORE/tmnt2_mister_20251012.rbf" ] 
+then
+  if [ -f "$CORE/tmnt2_mister_20251007.rbf" ] 
+  then
+    rm -r "$CORE/tmnt2_mister_20251007.rbf"
+  fi
 }
 
 function identify_folder {
