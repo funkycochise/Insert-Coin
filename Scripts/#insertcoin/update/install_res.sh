@@ -66,12 +66,11 @@ echo "TMNT"
 ls "$TMNT"
 
 #coc TMNT2 core , remove previously installed
-if [ -f "$CORE/tmnt2_mister_20251012.rbf" ] 
-then
-  if [ -f "$CORE/tmnt2_mister_20251007.rbf" ] 
-  then
+if [ -f "$CORE/tmnt2_mister_20251012.rbf" ]; then
+  if [ -f "$CORE/tmnt2_mister_20251007.rbf" ]; then
     rm -r "$CORE/tmnt2_mister_20251007.rbf"
   fi
+fi
 }
 
 function identify_folder {
