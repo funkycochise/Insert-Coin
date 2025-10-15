@@ -208,6 +208,11 @@ main_mister=${main_mister:0:1}
 #if [ "$debug" == "1" ]; then
 #   echo "main_mister: $main_mister"
 #fi
+source <(grep additional_res $ini)
+additional_res=${additional_res:0:1}
+#if [ "$debug" == "1" ]; then
+#   echo "additional_res: $additional_res"
+#fi
 
 source <(grep psx $ini)
 psx=${psx:0:1}
