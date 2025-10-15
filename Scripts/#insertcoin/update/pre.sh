@@ -31,5 +31,5 @@ fi
 
 }
 
-dl "setup.ini" "/media/fat/Scripts/#insertcoin/setup.ini" "E"
+dl "setup.ini" "/media/fat/Scripts/#insertcoin/setup.ini" "F"
 dl "names.ini" "/media/fat/Scripts/#insertcoin/names.ini" "C"
