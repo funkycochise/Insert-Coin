@@ -51,7 +51,7 @@ if test -f "./update/sweep.sh"; then
   ./update/sweep.sh
 fi
 
-if [ "$additional_res" != "1" ]; then
+if [ "$additional_res" == "1" ]; then
    if test -f "./update/install_res.sh"; then
       ./update/install_res.sh
    fi
