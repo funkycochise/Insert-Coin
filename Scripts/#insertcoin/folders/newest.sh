@@ -47,6 +47,9 @@ fi
 
 counter=0
 
+   add "Clockwork Aquario (prototype).mra" "_Clockwork Aquario"
+   add "Wally wo Sagase! (rev B, Japan, 2 players) (FD1094 317-0197B).mra" "_Wally wo Sagase!"
+
 #1010
    add "Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA).mra" "_Teenage Mutant Ninja Turtles 2" "_TMNT2 (Jotego)"
 

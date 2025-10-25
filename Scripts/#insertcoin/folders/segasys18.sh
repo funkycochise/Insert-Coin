@@ -43,6 +43,6 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Michael Jackson's Moonwalker (World) (FD1094-8751 317-0159).mra" "_Michael Jackson's Moonwalker" "" "ACT"
    #add "$dir" "H" "Pontoon (FD1094 317-0153).mra" "_Pontoon"
    add "$dir" "H" "Shadow Dancer (World).mra" "_Shadow Dancer" "" "ACT"
-   #add "$dir" "H" "Wally wo Sagase! (rev B, Japan, 2 players) (FD1094 317-0197B).mra" "_Wally wo Sagase!"
+   add "$dir" "H" "Wally wo Sagase! (rev B, Japan, 2 players) (FD1094 317-0197B).mra" "_Wally wo Sagase!" "" "PUZ"
    dot
 fi
