@@ -36,12 +36,12 @@ if [ -d "$ARKNOID" ]; then
 fi
 
 find "$ARKNOID2" -maxdepth 1 -type f -name "*.mra" ! -name "*Revenge of DOH*.mra" -delete
-echo "ARKANOID2"
-ls "$ARKNOID2" -l
+#echo "ARKANOID2"
+#ls "$ARKNOID2" -l
 
 find "$ARKNOID" -maxdepth 1 -type f -name "*Revenge of DOH*" -delete 
-echo "ARKANOID"
-ls "$ARKNOID" -l
+#echo "ARKANOID"
+#ls "$ARKNOID" -l
 }
 
 function tmnt2 {
@@ -59,11 +59,11 @@ if [ -d "$TMNT" ]; then
 fi
 
 find "$TMNT2" -maxdepth 1 -type f -name "*.mra" ! -name "*Turtles in Time*.mra" -delete
-echo "TMNT2"
-ls "$TMNT2"
+#echo "TMNT2"
+#ls "$TMNT2"
 find "$TMNT" -maxdepth 1 -type f -name "*Time*" -delete 
-echo "TMNT"
-ls "$TMNT"
+#echo "TMNT"
+#ls "$TMNT"
 
 #coc TMNT2 core , remove previously installed
 if [ -f "$CORE/tmnt2_mister_20251012.rbf" ]; then
