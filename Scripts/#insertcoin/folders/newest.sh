@@ -47,6 +47,7 @@ fi
 
 counter=0
 
+#2510
    add "Clockwork Aquario (prototype).mra" "_Clockwork Aquario"
    add "Wally wo Sagase! (rev B, Japan, 2 players) (FD1094 317-0197B).mra" "_Wally wo Sagase!"
 
