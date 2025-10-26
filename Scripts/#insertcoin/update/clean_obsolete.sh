@@ -41,10 +41,10 @@ then
 fi
 
 #Tetris Clean up
-if [ -d "$ALT/_Tetris" ] 
-then
-  rm -r "$ALT/_Tetris"
-fi
+#if [ -d "$ALT/_Tetris" ] 
+#then
+#  rm -r "$ALT/_Tetris"
+#fi
 #Alex Kidd clean up
 if [ -d "$ALT/_Alex Kidd" ] 
 then
