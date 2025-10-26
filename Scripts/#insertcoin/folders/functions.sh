@@ -544,44 +544,6 @@ if [ -d "$source" ]; then
    fi
 fi
 
-
-
-}
-
-function rep_legacy {
-
-dir="$1"
-orientation="$2"
-sub="$3"
-renamed="$4"
-genre="$6"
-
-#echo "rep()"
-#echo "dir: $dir"
-#echo "orientation: $orientation"
-#echo "sub: $sub"
-#echo "renamed: $renamed"
-#echo "genre: $genre"
-if [ -z "$renamed" ]; then
-   renamed=$sub
-fi
-#echo "renamed: $renamed"
-#echo "outdir $outdir"
-
-if [ ! -d "$outdir/$dir" ];then
-   #echo "Creating $outdir/$dir"
-   mkdir "$outdir/$dir"
-fi
-
-#echo "$ALT/$sub"
-#echo "$outdir/$dir/$renamed"
-#echo "---------------------"
-ln -s "$ALT/$sub" "$outdir/$dir/$renamed"
-if [ !  $? -eq 0 ]; then
-   echo "ln FAIL"
-   echo "ln -s \"$ALT/$sub\" \"$outdir/$dir/$renamed\""
-fi
-
 if [ "$show_genre" == "1" ]; then
 
    if [ "$vertical" == "1" ] && [ "$orientation" = "V" ]; then
