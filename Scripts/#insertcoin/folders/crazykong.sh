@@ -13,7 +13,7 @@ resv=$(exist "Crazy Kong (Kyoei).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
-   rep "$dir" "V" "_Crazy Kong" "_Crazy Kong" "" "ACT"
-   rep "$dir" "V" "_Crazy Kong Part II" "_Crazy Kong Part II" "" "ACT"
+   add_rep "$dir" "V" "_Crazy Kong" "_Crazy Kong" "" "ACT"
+   add_rep "$dir" "V" "_Crazy Kong Part II" "_Crazy Kong Part II" "" "ACT"
    dot
 fi

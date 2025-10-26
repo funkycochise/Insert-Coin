@@ -94,10 +94,12 @@ dir=$essential
    add "$dir" "V" "Vimana (Japan).mra" "_Vimana" "" "STG"
    add "$dir" "V" "Xain'd Sleena (bootleg, bugfixed).mra" "_Xain'd Sleena" "" "RNG"
    add "$dir" "V" "Zaxxon (Set 1, Rev D).mra" "_Zaxxon" "" "ACT"
-   rep "$dir" "H" "_Gaplus"  "_Gaplus" "" "STG"
-   rep "$dir" "V" "_Kingdom Grandprix"  "_Kingdom Grandprix" "" "STG"
-   rep "$dir" "V" "_Sorcer Striker"  "_Sorcer Striker" "" "STG"
+   add_rep "$dir" "V" "_Kingdom Grandprix"  "_Kingdom Grandprix" "" "STG"
+   add_rep "$dir" "V" "_Sorcer Striker"  "_Sorcer Striker" "" "STG"
+   add "$dir" "H" "Tetris (Set 4, Japan, S16A) [FD1094 317-0093].mra" "_Tetris" "_Tetris (Sega)" "PUZ"
+   add_rep "$dir" "H" "_Gaplus"  "_Gaplus" "" "STG"
 
+   add "$dir" "H"  "Green Beret.mra" "_Green Beret" "" "RNG"
    add "$dir" "H"  "Aero Fighters 2.mgl" "" "" "STG"
    add "$dir" "H"  "Aero Fighters 3.mgl" "" "" "STG"
    add "$dir" "H"  "Aliens (World set 1).mra" "_Aliens" "" "BEA"
@@ -263,7 +265,5 @@ dir=$essential
    add "$dir" "H" "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098).mra" "_Wonder Boy III" "" "ACT"
    add "$dir" "H" "Wonder Boy in Monster Land (Japan New Ver., MC-8123, 317-0043).mra" "_Wonder Boy in Monster Land" "" "ACT"
    add "$dir" "H" "Zero Wing (2P set).mra" "_Zero Wing" "" "STG"
-   rep "$dir" "H" "_Green Beret"  "_Green Beret" "" "RNG"
-   rep "$dir" "H" "_Tetris"  "_Tetris (Sega)" "" "PUZ"
 
    dot

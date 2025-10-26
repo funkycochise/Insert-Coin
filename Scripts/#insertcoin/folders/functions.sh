@@ -503,7 +503,64 @@ fi
 
 }
 
-function rep {
+function add_mra {
+
+mra="$1"
+sub="$2"
+
+source="$ARCADE/$mra"
+target="$ALT/$sub"
+if [  -f "$source" ] && [  -d "$target" ]; then
+   echo "add_mra $target" >> /media/fat/Scripts/#insertcoin/add_rep.txt
+   cp "$source" "$target"
+fi
+}
+
+function add_rep {
+
+dir="$1"
+orientation="$2"
+sub="$3"
+renamed="$4"
+genre="$6"
+
+#echo "add_rep()"
+#echo "dir: $dir"
+#echo "orientation: $orientation"
+#echo "sub: $sub"
+#echo "renamed: $renamed"
+#echo "genre: $genre"
+if [ -z "$renamed" ]; then
+   renamed=$sub
+fi
+#echo "renamed: $renamed"
+#echo "outdir $outdir"
+#echo "----------------------------------"
+source="$ALT/$sub"
+target="$outdir/$dir/$renamed"
+
+if [ ! -d "$outdir/$dir" ];then
+   #echo "Creating $outdir/$dir"
+   mkdir "$outdir/$dir"
+fi
+
+if [ -d "$source" ]; then
+
+   if [ ! -d "$target" ]; then
+      echo "ln -s \"$source\" \"$target\"" >> /media/fat/Scripts/#insertcoin/add_rep.txt
+      ln -s "$source" "$target"
+      if [ !  $? -eq 0 ]; then
+         echo "ln FAIL"
+         echo "ln -s \"$source\" \"$target\""
+      fi
+   fi
+fi
+
+
+
+}
+
+function rep_legacy {
 
 dir="$1"
 orientation="$2"

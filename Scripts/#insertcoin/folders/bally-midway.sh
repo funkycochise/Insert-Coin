@@ -13,7 +13,8 @@ resh=$(exist "Bosconian - Star Destroyer (new version).mra")
 resv=$(exist "Galaxian (Namco, Set 1).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
-   rep "$dir" "V" "_Gaplus"  "" "" "STG"
+   add_rep "$dir" "V" "_Gaplus"  "" "" "STG"
+   add_rep "$dir" "V" "_Pac-Man" "" "" "STG"
    add "$dir" "V" "Galaxian (Namco, Set 1).mra" "_Galaxian" "" "STG"
 
    add "$dir" "V" "Gorf.mra" "_Gorf" "" "STG"
@@ -21,7 +22,6 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Kick.mra" "_Kick"
    add "$dir" "V" "Kick-Man.mra" "_Kick-Man"
    add "$dir" "V" "Ms. Pac-Man.mra" "_Ms.Pacman" "" "ACT"
-   rep "$dir" "V" "_Pac-Man" "" "" "STG"
    add "$dir" "V" "Pac-Man Plus.mra" "_Pacman Plus" "" "ACT"
    add "$dir" "V" "Satan's Hollow (Set 1).mra" "_Satan's Hollow" "" "ACT"
    add "$dir" "V" "Sea Wolf (Set 1).mra" "_Sea Wolf"

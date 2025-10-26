@@ -16,7 +16,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V"  "Dig Dug (Rev 2).mra" "_Dig Dug" "" "ACT"
    add "$dir" "V"  "Dig Dug II (New Ver).mra" "_Dig Dug II" "" "ACT"
    add "$dir" "V"  "Galaga (Midway, Set 1).mra" "_Galaga" "" "STG"
-   rep "$dir" "V" "_Gaplus"  "_Gaplus" "" "STG"
+   add_rep "$dir" "V" "_Gaplus"  "_Gaplus" "" "STG"
 
    add "$dir" "V"  "Galaga (Midway, Set 1).mra" "_Galaga" "" "STG"
    add "$dir" "V"  "Galaxian (Namco, Set 1).mra" "_Galaxian" "" "STG"

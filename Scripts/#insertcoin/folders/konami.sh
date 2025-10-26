@@ -56,7 +56,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Combat School (joystick).mra" "_Combat School" "" "ACT"
    add "$dir" "H"  "Crime Fighters (World 2 players).mra" "_Crime Fighters"  "" "BEA"
    add "$dir" "H"  "Gradius.mra" "_Gradius" "" "STG"
-   rep "$dir" "H" "_Green Beret"  "_Green Beret" "" "RNG"
+   add "$dir" "H"  "Green Beret.mra" "_Green Beret" "" "RNG"
    add "$dir" "H"  "Haunted Castle (version M).mra" "_Haunted Castle" "" "ACT"
    add "$dir" "H"  "Hyper Sports.mra" "_Hyper Sports" "" "SPO"
    add "$dir" "H"  "Iron Horse (Ver. K).mra" "_Iron Horse" "" "RNG"

@@ -19,7 +19,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Plus Alpha.mra" "_Plus Alpha"
    add "$dir" "V" "Psychic 5 (World).mra" "_Psychic 5" "" "ACT"
 
-   rep "$dir" "H" "_Avenging Spirit"  "_Avenging Spirit" "" "ACT"
+   add_rep "$dir" "H" "_Avenging Spirit"  "_Avenging Spirit" "" "ACT"
    add "$dir" "H" "chameleon.mra" "_Chameleon" "" "ACT"
    add "$dir" "H" "Iga Ninjyutsuden (Japan).mra" "_Ninja Kazan" "" "ACT"
    add "$dir" "H" "P-47 - The Freedom Fighter (Japan).mra" "_P-47 - The Freedom Fighter" "" "STG"
@@ -29,7 +29,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "The Lord of King (Japan).mra" "_The Astyanax" "" "ACT"
    add "$dir" "H" "Hachoo.mra" "_Hachoo" "" "ACT"
    add "$dir" "H" "In Your Face (US, Prototype).mra" "_In Your Face" "" "ACT"
-   rep "$dir" "H" "_E.D.F. - Earth Defense Force"  "_E.D.F. - Earth Defense Force" "" "ACT"
+   add_rep "$dir" "H" "_E.D.F. - Earth Defense Force"  "_E.D.F. - Earth Defense Force" "" "ACT"
    add "$dir" "H" "Jitsuryoku!! Pro Yakyuu (Japan).mra" "_Jitsuryoku!! Pro Yakyuu" "" "ACT"
    dot
 fi

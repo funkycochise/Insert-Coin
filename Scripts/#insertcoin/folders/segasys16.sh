@@ -71,6 +71,8 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Tough Turf (set 1, US) (8751 317-0099).mra" "_Tough Turf" "" "BEA"
    add "$dir" "H" "Waku Waku Ultraman Racing.mra" "_Waku Waku Ultraman Racing"
    add "$dir" "H" "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098).mra" "_Wonder Boy III" "" "ACT"
-   rep "$dir" "H" "_Tetris"  "_Tetris (Sega)" "" "PUZ"
+   add "$dir" "H" "Toryumon.mra" "_Toryumon" ""
+   #add "$dir" "H" "Tetris (Set 4, Japan, S16A) [FD1094 317-0093].mra" "_Tetris" "_Tetris (Sega)" "PUZ"
+
    dot
 fi

@@ -48,6 +48,6 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Sprint 2.mra" "_Sprint 2" "" "SPO"
    add "$dir" "H" "Subs.mra" "_Subs"
    add "$dir" "H" "Vindicators Part II (rev 3).mra" "_Vindicators part II"
-   rep "$dir" "V" "_Tetris (Atari)"  "" "" "PUZ"
+   add_rep "$dir" "V" "_Tetris (Atari)"  "" "" "PUZ"
    dot
 fi
