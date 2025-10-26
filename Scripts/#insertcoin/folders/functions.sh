@@ -503,18 +503,6 @@ fi
 
 }
 
-function add_mra {
-
-mra="$1"
-sub="$2"
-
-source="$ARCADE/$mra"
-target="$ALT/$sub"
-if [  -f "$source" ] && [  -d "$target" ]; then
-   echo "add_mra $target" >> /media/fat/Scripts/#insertcoin/add_rep.txt
-   cp "$source" "$target"
-fi
-}
 
 function add_rep {
 
@@ -547,7 +535,7 @@ fi
 if [ -d "$source" ]; then
 
    if [ ! -d "$target" ]; then
-      echo "ln -s \"$source\" \"$target\"" >> /media/fat/Scripts/#insertcoin/add_rep.txt
+      #echo "ln -s \"$source\" \"$target\"" >> /media/fat/Scripts/#insertcoin/add_rep.txt
       ln -s "$source" "$target"
       if [ !  $? -eq 0 ]; then
          echo "ln FAIL"
