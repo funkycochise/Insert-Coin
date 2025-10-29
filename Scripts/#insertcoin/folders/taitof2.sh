@@ -77,19 +77,17 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
     add "$dir" "H" "Dead Connection (World).mra" "_Dead Connection" "" "ACT"
     add "$dir" "H" "Metal Black (World).mra" "_Metal Black" "" "STG"
 
+   add "$dir" "H" "Quiz Chikyu Bouei Gun (Japan).mra" "_Quiz Chikyu Bouei Gun" "" ""
+   add "$dir" "H" "Quiz Crayon Shinchan (Japan).mra" "_Quiz Crayon Shinchan" "" ""
+   add "$dir" "H" "Quiz H.Q. (Japan).mra" "_Quiz H.Q." "" ""
+   add "$dir" "H" "Quiz Jinsei Gekijoh (Japan).mra" "_Quiz Jinsei Gekijoh" "" ""
+   add "$dir" "H" "Quiz Quest - Hime to Yuusha no Monogatari (Japan).mra" "_Quiz Quest - Hime to Yuusha no Monogatari" "" ""
+   add "$dir" "H" "Quiz Torimonochou (Japan).mra" "_Quiz Torimonochou" "" ""
+
 #unreleased mras :
-#   add "$dir" "H" "Euro Champ '92.mra" "_Euro Champ '92" "" "SPO"
 #   add "$dir" "H" "Hat Trick Hero.mra" "_Hat Trick Hero" "" "SPO"
 #   add "$dir" "H" "Mahjong Quest.mra" "_Mahjong Quest" "" ""
 #   add "$dir" "H" "Pu.Li.Ru.La.mra" "_Pu.Li.Ru.La" "" ""
-#   add "$dir" "H" "Quiz Chikyu Bouei Gun.mra" "_Quiz Chikyu Bouei Gun" "" ""
-#   add "$dir" "H" "Quiz Crayon Shinchan.mra" "_Quiz Crayon Shinchan" "" ""
-#   add "$dir" "H" "Quiz Crayon Shinchan Orato Asobo.mra" "_Quiz Crayon Shinchan Orato Asobo" "" ""
-#   add "$dir" "H" "Quiz H.Q..mra" "_Quiz H.Q." "" ""
-#   add "$dir" "H" "Quiz Jinsei Gekijoh.mra" "_Quiz Jinsei Gekijoh" "" ""
-#   add "$dir" "H" "Quiz Quest.mra" "_Quiz Quest" "" ""
-#   add "$dir" "H" "Quiz Torimonochou.mra" "_Quiz Torimonochou" "" ""
-
 #   add "$dir" "H" "Yes-No Sinri Tokimeki Chart.mra" "_Yes-No Sinri Tokimeki Chart" "" ""
 #   add "$dir" "H" "YuuYu no Quiz de Go!Go!.mra" "_YuuYu no Quiz de Go!Go!" "" ""
 
