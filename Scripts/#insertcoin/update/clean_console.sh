@@ -47,7 +47,8 @@ if [ -f "/media/fat/_Console/NeoGeo_20250206.rbf" ];then
 fi
 
 #keep only latest SNES console core
-CleanSNES
+#disabled for instance
+#CleanSNES
 
 if [ "$TERM" == "linux" ]; then
    #GUI
