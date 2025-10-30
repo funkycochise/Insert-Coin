@@ -264,6 +264,11 @@ nes=${nes:0:1}
 #if [ "$debug" == "1" ]; then
 #   echo "nes: $nes"
 #fi
+source <(grep snes $ini)
+snes=${snes:0:1}
+#if [ "$debug" == "1" ]; then
+#   echo "snes: $snes"
+#fi
 source <(grep folder_name $ini)
 #echo "folder_name: $folder_name"
 folder_name=${folder_name:0:${#folder_name}}
