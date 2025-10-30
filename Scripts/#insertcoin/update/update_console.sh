@@ -443,6 +443,49 @@ function installNES {
   fi
 }
 
+function installSNES {
+
+  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/SNES.zip -O -k -s --output /media/fat/Scripts/temp/NES.zip
+  #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/NES.zip --quiet
+  unzip -qq /media/fat/Scripts/temp/SNES.zip -d /media/fat/Scripts/temp
+  rm -r /media/fat/Scripts/temp/SNES.zip 
+
+  #echo "remove previous snes cores"
+  #for f in $(ls /media/fat/_Console/SNES*.rbf )
+  #do
+  #   #echo "file $f"
+  #   rm -r $f
+  #done
+
+  cd /media/fat/Scripts/temp
+  installed="0"
+  for f in $(ls ./*.rbf)
+  do
+    #echo "file: $f"
+    target="${f:2:${#f}}"
+    #echo "SNES target: $target"
+    target=$f
+    mv $f $CONSOLE/$target
+    touch $CONSOLE/$target >/dev/null
+    installed="1"
+    #clean any file left
+    if test -f "./$f"; then
+      rm -r ./$f
+    fi
+  done
+  if [ "$installed" == "1" ]; then
+     if [ "$TERM" == "linux" ]; then
+        #GUI
+        echo -n -e "   "
+     fi
+     #remove other core for the system
+     #echo "find for SNES"
+     target="${f:2:${#f}}"
+     #echo "target: $target"
+     find $CONSOLE -maxdepth 1 -type f -name "NES*" ! -name "$target" -delete
+     echo -e "${BLUE}${CHECK}${NC} SNES"
+  fi
+}
 
 
 if [ "$TERM" == "linux" ]; then
@@ -480,6 +523,9 @@ if [ "$pce" == "1" ]; then
 fi
 if [ "$nes" == "1" ]; then
   installNES
+fi
+if [ "$snes" == "1" ]; then
+  installSNES
 fi
 
 if [ "$TERM" == "linux" ]; then
