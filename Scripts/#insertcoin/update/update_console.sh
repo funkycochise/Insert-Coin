@@ -445,8 +445,8 @@ function installNES {
 
 function installSNES {
 
-  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/SNES.zip -O -k -s --output /media/fat/Scripts/temp/NES.zip
-  #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/NES.zip --quiet
+  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/SNES.zip -O -k -s --output /media/fat/Scripts/temp/SNES.zip
+  #wget /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/SNES.zip --quiet
   unzip -qq /media/fat/Scripts/temp/SNES.zip -d /media/fat/Scripts/temp
   rm -r /media/fat/Scripts/temp/SNES.zip 
 
