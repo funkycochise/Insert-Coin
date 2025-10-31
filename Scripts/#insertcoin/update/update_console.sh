@@ -482,7 +482,7 @@ function installSNES {
      #echo "find for SNES"
      target="${f:2:${#f}}"
      #echo "target: $target"
-     find $CONSOLE -maxdepth 1 -type f -name "NES*" ! -name "$target" -delete
+     find $CONSOLE -maxdepth 1 -type f -name "SNES*" ! -name "$target" -delete
      echo -e "${BLUE}${CHECK}${NC} SNES"
   fi
 }
