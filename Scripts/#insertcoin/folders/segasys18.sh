@@ -38,7 +38,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Clockwork Aquario (prototype).mra" "_Clockwork Aquario" "" "ACT"
    add "$dir" "H" "Clutch Hitter (US) (FD1094 317-0176).mra" "_Clutch Hitter" "" "SPO"
    #add "$dir" "H" "D. D. Crew (World, 3 Players) (FD1094 317-0190).mra" "_D. D. Crew" "" "BEA"
-   #add "$dir" "H" "Hammer Away (Japan, prototype).mra" "_Hammer Away"
+   add "$dir" "H" "Hammer Away (Japan, prototype).mra" "_Hammer Away" "" "STG"
    add "$dir" "H" "Laser Ghost (World) (FD1094 317-0166).mra" "_Laser Ghost"
    add "$dir" "H" "Michael Jackson's Moonwalker (World) (FD1094-8751 317-0159).mra" "_Michael Jackson's Moonwalker" "" "ACT"
    #add "$dir" "H" "Pontoon (FD1094 317-0153).mra" "_Pontoon"

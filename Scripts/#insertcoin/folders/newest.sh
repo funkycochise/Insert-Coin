@@ -47,6 +47,10 @@ fi
 
 counter=0
 
+#3110
+   add "D. D. Crew (World, 3 Players) (FD1094 317-0190).mra" "_D. D. Crew"
+   add "Hammer Away (Japan, prototype).mra" "_Hammer Away"
+
 #2510
    add "Clockwork Aquario (prototype).mra" "_Clockwork Aquario"
    add "Wally wo Sagase! (rev B, Japan, 2 players) (FD1094 317-0197B).mra" "_Wally wo Sagase!"
