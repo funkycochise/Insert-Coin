@@ -49,6 +49,7 @@ counter=0
 
 #0711
    add "Bang Bang Busters 2 (demo).mgl" "_Bang Bang Busters 2"
+   add "Run and Gun (ver EAA 1993 10.8).mra" "_Run and Gun"
 
 #3110
    add "D. D. Crew (World, 3 Players) (FD1094 317-0190).mra" "_D. D. Crew"
