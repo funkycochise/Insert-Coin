@@ -48,7 +48,7 @@ fi
 counter=0
 
 #0711
-   add "Bang Bang Busters 2.mgl" "_"Bang Bang Busters 2"
+   add "Bang Bang Busters 2 (demo).mgl" "_Bang Bang Busters 2"
 
 #3110
    add "D. D. Crew (World, 3 Players) (FD1094 317-0190).mra" "_D. D. Crew"
