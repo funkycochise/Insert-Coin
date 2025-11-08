@@ -51,9 +51,10 @@ function installPSX {
 }
 
 function installS32X {
-  wget https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/S32X.zip --quiet
+  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/S32X.zip -O -k -s --output /media/fat/Scripts/temp/S32X.zip
+  #wget https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/S32X.zip --quiet
   unzip -qq S32X.zip
-  rm -r S32X.zip
+  #rm -r S32X.zip
 
   for f in $(ls ./*.rbf)
   do
