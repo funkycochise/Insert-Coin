@@ -47,6 +47,9 @@ fi
 
 counter=0
 
+#1112
+   add "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra"
+
 #0711
    add "Bang Bang Busters 2 (demo).mgl" "_Bang Bang Busters 2"
    add "Run and Gun (ver EAA 1993 10.8).mra" "_Run and Gun"
@@ -194,7 +197,7 @@ add "PuLiRuLa (World, dual PCB).mra" "_PuLiRuLa"
    add "Circus Charlie (level select, set 1).mra" "_Circus Charlie"
 #0818
    add "Salamander (version D).mra" "_Salamander"
-   add "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra"
+#   add "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra"
 #0728
    add "Sunset Riders (4 Players ver EAC).mra" "_Sunset Riders"
 #0712
