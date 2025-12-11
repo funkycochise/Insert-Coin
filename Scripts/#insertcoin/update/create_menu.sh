@@ -92,6 +92,7 @@ fi
 ./folders/technos16.sh "$targetdir"
 ./folders/Tehkan-Tecmo.sh "$targetdir"
 ./folders/toaplan.sh "$targetdir"
+./folders/toaplan_stg.sh "$targetdir"
 ./folders/universal.sh "$targetdir"
 ./folders/upl.sh "$targetdir"
 ./folders/williams.sh "$targetdir"
