@@ -23,5 +23,6 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Truxton - Tatsujin.mra" "_Truxton" "" "STG"
    add "$dir" "V" "Truxton II - Tatsujin Oh.mra" "_Truxton II" "" "STG"
    add "$dir" "V" "Vimana (Japan).mra" "_Vimana" "" "STG"
+   add "$dir" "H" "Zero Wing (2P set).mra" "_Zero Wing" "" "STG"
 dot
 fi
