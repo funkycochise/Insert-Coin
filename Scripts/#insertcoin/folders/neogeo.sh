@@ -35,6 +35,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Bakatonosama Mahjong Manyuuki.mgl"  
    add "$dir" "H"  "Bang Bang Busters (2010 NCI release).mgl" "_Bang Bang Busters" "" "ACT"
    add "$dir" "H"  "Bang Bang Busters 2 (demo).mgl" "_Bang Bang Busters 2" "" "ACT"
+   add "$dir" "H"  "Bang Bang Busters 2 (demo 2).mgl" "_Bang Bang Busters 2" "" "ACT"
    add "$dir" "H"  "Bang Bead.mgl" "" "" "SPO"
    add "$dir" "H"  "Baseball Stars 2.mgl" "" "" "SPO"
    add "$dir" "H"  "Baseball Stars Professional.mgl" "" "" "SPO"
