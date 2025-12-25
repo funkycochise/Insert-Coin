@@ -7,9 +7,8 @@ loadsetup
 #else
 #   vs="_Nintendo Vs."
 #fi
-vs="_Vs."
+vs="_Nintendo Vs."
 dir=$vs
-
 
 resh=$(exist "Metal Slug - Super Vehicle-001.mgl")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
