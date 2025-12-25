@@ -923,6 +923,8 @@ dl "zzyzzyxx.zip"
 dlf "ninjak.zip"
 dl "rungun.zip"
 dl "calibr50.zip"
+dl "kikikai.zip"
+dl "snowbros.zip"
 
 #vs system roms:
 dl "rbibb.zip"
