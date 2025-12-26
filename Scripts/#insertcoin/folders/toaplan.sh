@@ -16,6 +16,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "H" "Demon's World - Horror Story (Set 3).mra" "_Demon's World" "" "RNG"
    add "$dir" "H" "Pipi & Bibis - Whoopee!! (Z80 sound cpu, set 1).mra" "_Pipi & Bibis" "" "ACT"
+   add "$dir" "H" "Snow Bros. - Nick & Tom (Japan).mra" "_Snow Bros. - Nick & Tom"
    add "$dir" "H" "Snow Bros. 2 - With New Elves - Otenki Paradise (Hanafram).mra" "_Snow Bros. 2"
    add "$dir" "H" "Teki Paki.mra" "_Teki Paki" "" "PUZ"
    add "$dir" "V" "Performan (Japan).mra" "_Performan"
