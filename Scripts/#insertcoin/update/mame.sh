@@ -964,6 +964,7 @@ dl "goonies.zip"
 dl "topgun.zip"
 dl "vs_urban.zip"
 dl "wrecking.zip"
+dl "vs_urban.zip"
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
