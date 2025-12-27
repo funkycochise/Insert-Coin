@@ -47,6 +47,9 @@ fi
 
 counter=0
 
+#1227
+   add "Snow Bros. - Nick & Tom (Japan).mra" "_Snow Bros. - Nick & Tom"
+
 #1112
    add "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra"
 
