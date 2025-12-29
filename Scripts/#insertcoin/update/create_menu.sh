@@ -95,7 +95,7 @@ fi
 ./folders/toaplan_stg.sh "$targetdir"
 ./folders/universal.sh "$targetdir"
 ./folders/upl.sh "$targetdir"
-#./folders/vs.sh "$targetdir"
+./folders/vs.sh "$targetdir"
 ./folders/williams.sh "$targetdir"
 
 if [ "$newest" == "1" ]; then
