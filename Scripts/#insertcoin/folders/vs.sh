@@ -2,12 +2,12 @@
 source ./folders/functions.sh
 loadsetup
 
-#if [ -f "$names" ]; then
-#   source <(grep vs $names)
-#else
-#   vs="_Nintendo Vs."
-#fi
-vs="_Nintendo Vs."
+if [ -f "$names" ]; then
+   source <(grep vs $names)
+else
+   vs="_Nintendo Vs."
+fi
+#vs="_Nintendo Vs."
 dir=$vs
 
 resh=$(exist "Metal Slug - Super Vehicle-001.mgl")
@@ -40,35 +40,35 @@ add "$dir" "H"  "Vs. Atari R.B.I. Baseball  (set 1).mra" "_Vs. Atari R.B.I. Base
 	add "$dir" "H"  "Vs. Mach Rider (Endurance Course Version).mra" "_Vs. Mach Rider" ""
 	add "$dir" "H"  "Vs. Mach Rider (Fighting Course Version).mra" "_Vs. Mach Rider" ""
 	add "$dir" "H"  "Vs. Mahjong (Japan).mra" "_Vs. Mahjong" ""
-	add "$dir" "H"  "Vs.  Mighty Bomb Jack (Japan).mra" "_Vs.  ighty Bomb Jack" ""
-	add "$dir" "H"  "Vs.  Ninja Jajamaru Kun (Japan).mra" "_Vs. Ninja Jajamaru Kun" ""
-	add "$dir" "H"  "Vs.  Pinball (E-1 Set).mra" "_Vs. Pinball" ""
-	add "$dir" "H"  "Vs.  Pinball (Japan).mra" "_Vs. Pinball" ""
-	add "$dir" "H"  "Vs.  Platoon.mra" "_Vs. Platoon" ""
-	add "$dir" "H"  "Vs.  Raid on Bungeling Bay (RD4-2 B).mra" "_Vs. Raid on Bungeling Bay" ""
-	add "$dir" "H"  "Vs.  Skate Kids (Two-Bit Score).mra" "_Vs. Skate Kids" ""
-	add "$dir" "H"  "Vs.  Slalom.mra" "_Vs.  Slalom" ""
-	add "$dir" "H"  "Vs.  Soccer (set SC4-2 A).mra" "_Vs. Soccer" ""
-	add "$dir" "H"  "Vs.  Soccer (set SC4-3).mra" "_Vs. Soccer" ""
-	add "$dir" "H"  "Vs.  Star Luster.mra" "_Star Luster" ""
-	add "$dir" "H"  "Vs.  Stroke & Match Golf (Japan, Men Version).mra" "_Vs. Stroke & Match Golf" ""
-	add "$dir" "H"  "Vs.  Stroke & Match Golf (Ladies Version).mra" "_Vs. Stroke & Match Golf" ""
-	add "$dir" "H"  "Vs.  Stroke & Match Golf (Ladies Version, set E).mra" "_Vs. Stroke & Match Golf" ""
-	add "$dir" "H"  "Vs.  Stroke & Match Golf (Men Version).mra" "_Vs. Stroke & Match Golf" ""
-	add "$dir" "H"  "Vs.  Stroke & Match Golf (Men Version, set GF4-2).mra" "_Vs. Stroke & Match Golf" ""
-	add "$dir" "H"  "Vs.  Super Mario Bros. (set harder).mra" "Vs. Super Mario Bros." ""
-	add "$dir" "H"  "Vs.  Super Mario Bros. (set SM4-4 E).mra" "Vs. Super Mario Bros." ""
-	add "$dir" "H"  "Vs.  Super SkyKid.mra" "_Vs. Super SkyKid" ""
-	add "$dir" "H"  "Vs.  Super Xevious.mra" "_Vs. Super Xevious" ""
-	add "$dir" "H"  "Vs.  Tennis (Japan USA, set 2).mra" "_Vs. Tennis" ""
-	add "$dir" "H"  "Vs.  Tennis (Japan USA, set 3).mra" "_Vs. Tennis" ""
-	add "$dir" "H"  "Vs.  Tennis (Japan USA, set TE A-3).mra" "_Vs. Tennis" ""
-	add "$dir" "H"  "Vs.  Tetris.mra" "_Vs. Tetris" ""
-	add "$dir" "H"  "Vs.  The Goonies (set E).mra" "_Vs. The Goonies" ""
-	add "$dir" "H"  "Vs.  T.K.O. Boxing.mra" "_Vs. T.K.O. Boxing" ""
-	add "$dir" "H"  "Vs.  Top Gun.mra" "_Vs. Top Gun" ""
-	add "$dir" "H"  "Vs.  Urban Champion.mra" "_Vs. Urban Champion" ""
-	add "$dir" "H"  "Vs.  Wrecking Crew.mra" "_Vs. Wrecking Crew" ""
+	add "$dir" "H"  "Vs. Mighty Bomb Jack (Japan).mra" "_Vs.  ighty Bomb Jack" ""
+	add "$dir" "H"  "Vs. Ninja Jajamaru Kun (Japan).mra" "_Vs. Ninja Jajamaru Kun" ""
+	add "$dir" "H"  "Vs. Pinball (E-1 Set).mra" "_Vs. Pinball" ""
+	add "$dir" "H"  "Vs. Pinball (Japan).mra" "_Vs. Pinball" ""
+	add "$dir" "H"  "Vs. Platoon.mra" "_Vs. Platoon" ""
+	add "$dir" "H"  "Vs. Raid on Bungeling Bay (RD4-2 B).mra" "_Vs. Raid on Bungeling Bay" ""
+	add "$dir" "H"  "Vs. Skate Kids (Two-Bit Score).mra" "_Vs. Skate Kids" ""
+	add "$dir" "H"  "Vs. Slalom.mra" "_Vs.  Slalom" ""
+	add "$dir" "H"  "Vs. Soccer (set SC4-2 A).mra" "_Vs. Soccer" ""
+	add "$dir" "H"  "Vs. Soccer (set SC4-3).mra" "_Vs. Soccer" ""
+	add "$dir" "H"  "Vs. Star Luster.mra" "_Star Luster" ""
+	add "$dir" "H"  "Vs. Stroke & Match Golf (Japan, Men Version).mra" "_Vs. Stroke & Match Golf" ""
+	add "$dir" "H"  "Vs. Stroke & Match Golf (Ladies Version).mra" "_Vs. Stroke & Match Golf" ""
+	add "$dir" "H"  "Vs. Stroke & Match Golf (Ladies Version, set E).mra" "_Vs. Stroke & Match Golf" ""
+	add "$dir" "H"  "Vs. Stroke & Match Golf (Men Version).mra" "_Vs. Stroke & Match Golf" ""
+	add "$dir" "H"  "Vs. Stroke & Match Golf (Men Version, set GF4-2).mra" "_Vs. Stroke & Match Golf" ""
+	add "$dir" "H"  "Vs. Super Mario Bros. (set harder).mra" "Vs. Super Mario Bros." ""
+	add "$dir" "H"  "Vs. Super Mario Bros. (set SM4-4 E).mra" "Vs. Super Mario Bros." ""
+	add "$dir" "H"  "Vs. Super SkyKid.mra" "_Vs. Super SkyKid" ""
+	add "$dir" "H"  "Vs. Super Xevious.mra" "_Vs. Super Xevious" ""
+	add "$dir" "H"  "Vs. Tennis (Japan USA, set 2).mra" "_Vs. Tennis" ""
+	add "$dir" "H"  "Vs. Tennis (Japan USA, set 3).mra" "_Vs. Tennis" ""
+	add "$dir" "H"  "Vs. Tennis (Japan USA, set TE A-3).mra" "_Vs. Tennis" ""
+	add "$dir" "H"  "Vs. Tetris.mra" "_Vs. Tetris" ""
+	add "$dir" "H"  "Vs. The Goonies (set E).mra" "_Vs. The Goonies" ""
+	add "$dir" "H"  "Vs. T.K.O. Boxing.mra" "_Vs. T.K.O. Boxing" ""
+	add "$dir" "H"  "Vs. Top Gun.mra" "_Vs. Top Gun" ""
+	add "$dir" "H"  "Vs. Urban Champion.mra" "_Vs. Urban Champion" ""
+	add "$dir" "H"  "Vs. Wrecking Crew.mra" "_Vs. Wrecking Crew" ""
 
    dot
 fi

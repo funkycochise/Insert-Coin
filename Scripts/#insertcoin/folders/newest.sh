@@ -32,6 +32,7 @@ function linkfolder {
    fi
 }
 
+
 function add {
 
 if ([ -z "$1" ]); 
