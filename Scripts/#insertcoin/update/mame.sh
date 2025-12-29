@@ -948,7 +948,7 @@ dl "vsmahjng.zip"
 dl "nvs_mightybj.zip"
 dl "jajamaru.zip"
 dl "vspinbal.zip"
-dl "nvs_platoon.zip"*
+dl "nvs_platoon.zip"
 dl "bnglngby.zip"
 dl "vsslalom.zip"
 dl "vssoccer.zip"
