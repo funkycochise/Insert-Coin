@@ -46,10 +46,38 @@ fi
 
 }
 
+function additem {
+
+   #echo "outdir: $outdir"
+   #echo "dir: $dir"
+   #echo "1: $1"
+
+   counter=$((counter+1))
+   if [[ "$counter" -lt 100 ]]; then
+      #echo "$counter - $1"
+      formated=$(printf "%02d" $counter)
+
+      #echo "formated: _$formated$1"
+      #echo "location: $outdir/$1"
+      if [ -d "$outdir/$1" ]; then
+         ln -s "$outdir/$1" "$outdir/$dir/_$formated$1"
+      fi
+   fi
+}
+
+
 counter=0
 
 #1227
    add "Snow Bros. - Nick & Tom (Japan).mra" "_Snow Bros. - Nick & Tom"
+
+if [ -f "$names" ]; then
+   source <(grep vs $names)
+else
+   vs="_Nintendo Vs."
+fi
+
+   additem "$vs"
 
 #1112
    add "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra"
