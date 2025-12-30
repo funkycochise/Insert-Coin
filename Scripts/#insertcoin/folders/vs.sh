@@ -25,7 +25,7 @@ add "$dir" "H"  "Vs. Atari R.B.I. Baseball  (set 1).mra" "_Vs. Atari R.B.I. Base
 	add "$dir" "H"  "Vs. Castlevania.mra" "_Vs. Castlevania" ""
 	add "$dir" "H"  "Vs. Clu Clu Land.mra" "_Vs. Clu Clu Land" ""
 	add "$dir" "H"  "Vs. Dr. Mario.mra" "_Vs. Dr. Mario" ""
-	add "$dir" "H"  "Vs. Duck Hunt (set DH3 E).mra" "_Vs. Duck Hunt (set DH3 E)" ""
+	add "$dir" "H"  "Vs. Duck Hunt (set DH3 E).mra" "_Vs. Duck Hunt" ""
 	add "$dir" "H"  "Vs. Excitebike (set EB4-3 E).mra" "_Vs. Excitebike" ""
 	add "$dir" "H"  "Vs. Excitebike (set EB4-3).mra" "_Vs. Excitebike" ""
 	add "$dir" "H"  "Vs. Excitebike (set EB4-4 A).mra" "_Vs. Excitebike" ""
