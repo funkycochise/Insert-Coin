@@ -68,6 +68,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Mr. Goemon.mra" "_Mr. Goemon" "" "ACT"
    add "$dir" "H"  "Nemesis (ROM Version).mra" "_Nemesis" "" "STG"
    add "$dir" "H"  "Parodius Da! Shinwa kara Owarai e (World, set 1).mra" "_Parodius Da! Shinwa kara Owarai e" "" "STG"
+   add "$dir" "H"  "Premier Soccer (ver EAB).mra" "_Premier Soccer" "" "SPO"
    add "$dir" "H"  "Punk Shot (US 4 Players).mra" "_Punk Shot" "" "SPO"
    add "$dir" "H"  "River Patrol (JP, Unprotected).mra" "_River Patrol" "" "ACT"
    add "$dir" "H"  "Run and Gun (ver EAA 1993 10.8).mra" "_Run and Gun" "" "SPO"

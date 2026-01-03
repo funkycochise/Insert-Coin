@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0102
+   add "Premier Soccer (ver EAB).mra" "_Premier Soccer"
+
 #1227
    add "Snow Bros. - Nick & Tom (Japan).mra" "_Snow Bros. - Nick & Tom"
 
