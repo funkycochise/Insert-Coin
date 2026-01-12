@@ -613,11 +613,11 @@ function add_genre {
 }
 
 function dot {    
-    #echo -n -e "${RED}█" >/dev/tty
-
-    if [ -e /dev/tty ] && [ -t 0 ]; then
-        printf "${RED}█" > /dev/tty
+    if [ "$TERM" == "xterm" ]; then
+       printf "${RED}█" > /dev/tty
     else
-        printf "${RED}█"
+       echo -n -e "${RED}█"
     fi
+
+    #echo -n -e "${RED}█" >/dev/tty
 }
