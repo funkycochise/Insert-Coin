@@ -613,5 +613,11 @@ function add_genre {
 }
 
 function dot {    
-echo -n -e "${RED}█" >/dev/tty
+    #echo -n -e "${RED}█" >/dev/tty
+
+    if [ -e /dev/tty ] && [ -t 0 ]; then
+        printf "${RED}█" > /dev/tty
+    else
+        printf "${RED}█"
+    fi
 }
