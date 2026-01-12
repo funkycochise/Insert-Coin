@@ -612,6 +612,6 @@ function add_genre {
       fi
 }
 
-function dot {    
-echo -n -e "${RED}█"
+function dot {
+printf "${RED}█" > /dev/tty
 }
