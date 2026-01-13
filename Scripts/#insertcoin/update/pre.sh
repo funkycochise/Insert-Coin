@@ -33,3 +33,9 @@ fi
 
 #dl "setup.ini" "/media/fat/Scripts/#insertcoin/setup.ini" "G"
 #dl "names.ini" "/media/fat/Scripts/#insertcoin/names.ini" "E"
+
+#clean 
+if [ -d "/media/fat/#insertcoin" ] 
+then
+   rm -r "/media/fat/#insertcoin"
+fi
