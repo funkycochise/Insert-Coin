@@ -318,27 +318,18 @@ def run_setup_menu(stdscr):
             if mode == "key" and keys[current_key] != "Exit":
                toggle_value(sec, keys[current_key])
 
-def do_run():
+def choose_run():
     # Libère le terminal pour que Bash puisse écrire dessus
     curses.endwin()
 
-    # Lance le script et lit stdout en temps réel
-    process = subprocess.Popen(
-    ["stdbuf", "-o0", "-e0"] + RUN_CMD,  # flush immédiat stdout/stderr
-    stdout=subprocess.PIPE,
-    stderr=subprocess.STDOUT,
-    text=True,
-    bufsize=1
-    )
-    # Affiche chaque ligne dès qu'elle arrive
-    for line in process.stdout:
-        print(line, end='', flush=True)
-
-    # Attend la fin du script
-    process.wait()
-
-    # Pause pour que l'utilisateur puisse voir la fin
-    input("press enter to continue")
+    # retourne 0 si Run choisi
+    sys.exit(0)
+    #return 0
+    
+def choose_exit():
+    curses.endwin()
+    sys.exit(1)
+    #return 1         # 1 = quitter sans lancer    
     
 # --- Menu Principal ---
 def main(stdscr):
@@ -381,7 +372,7 @@ def main(stdscr):
             countdown -= 1
             if countdown <= 0:
                 # Timeout atteint → exécution Run
-                do_run()
+                choose_run()
                 return
                 
             continue  # prochaine seconde
@@ -397,11 +388,9 @@ def main(stdscr):
             elif key in [10, 13, 32]:  # Enter / Space
                 sel = main_menu[current_selection]
                 if sel == "Exit":
-                    break
+                    choose_exit()
                 elif sel == "Run":
-                    curses.endwin()
-                    do_run()
-                    return                    
+                    choose_run()          
                 elif sel == "Setup":
                     run_setup_menu(stdscr)
                 elif sel == "Save":
