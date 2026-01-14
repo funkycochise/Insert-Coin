@@ -247,7 +247,7 @@ def run_setup_menu(stdscr):
 
     while True:
         stdscr.clear()
-        stdscr.addstr(0, 0, "↑/↓ browse, Enter/Space/←/→ toggle, Esc exit", curses.color_pair(1))
+        stdscr.addstr(0, 0, "↑/↓ browse, Enter/Space toggle, Esc exit", curses.color_pair(1))
 
         if mode == "section":
             stdscr.addstr(2, 0, "Select section:", curses.color_pair(1))
@@ -313,23 +313,28 @@ def run_setup_menu(stdscr):
                     current_key = 0
                 else:
                     toggle_value(sec, keys[current_key])
-                    
-        elif key in [curses.KEY_LEFT, curses.KEY_RIGHT]:
-            if mode == "key" and keys[current_key] != "Exit":
-               toggle_value(sec, keys[current_key])
 
-def choose_run():
+def do_run():
     # Libère le terminal pour que Bash puisse écrire dessus
     curses.endwin()
 
-    # retourne 0 si Run choisi
-    sys.exit(0)
-    #return 0
-    
-def choose_exit():
-    curses.endwin()
-    sys.exit(1)
-    #return 1         # 1 = quitter sans lancer    
+    # Lance le script et lit stdout en temps réel
+    process = subprocess.Popen(
+    ["stdbuf", "-o0", "-e0"] + RUN_CMD,  # flush immédiat stdout/stderr
+    stdout=subprocess.PIPE,
+    stderr=subprocess.STDOUT,
+    text=True,
+    bufsize=1
+    )
+    # Affiche chaque ligne dès qu'elle arrive
+    for line in process.stdout:
+        print(line, end='', flush=True)
+
+    # Attend la fin du script
+    process.wait()
+
+    # Pause pour que l'utilisateur puisse voir la fin
+    input("\press enter to continue")
     
 # --- Menu Principal ---
 def main(stdscr):
@@ -351,7 +356,7 @@ def main(stdscr):
         banner_height = len(BANNER)
         for i, line in enumerate(BANNER):
             stdscr.addstr(i, 0, line, curses.color_pair(3))
-        stdscr.addstr(banner_height, 0, "↑/↓ browse, Enter/Space/←/→ toggle, Esc exit", curses.color_pair(1))
+        stdscr.addstr(banner_height, 0, "↑/↓ browse, Enter/Space select, Esc exit", curses.color_pair(1))
 
         # Affiche le menu
         for i, item in enumerate(main_menu):
@@ -372,7 +377,7 @@ def main(stdscr):
             countdown -= 1
             if countdown <= 0:
                 # Timeout atteint → exécution Run
-                choose_run()
+                do_run()
                 return
                 
             continue  # prochaine seconde
@@ -388,9 +393,11 @@ def main(stdscr):
             elif key in [10, 13, 32]:  # Enter / Space
                 sel = main_menu[current_selection]
                 if sel == "Exit":
-                    choose_exit()
+                    break
                 elif sel == "Run":
-                    choose_run()          
+                    curses.endwin()
+                    do_run()
+                    return                    
                 elif sel == "Setup":
                     run_setup_menu(stdscr)
                 elif sel == "Save":
