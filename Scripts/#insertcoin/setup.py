@@ -247,7 +247,7 @@ def run_setup_menu(stdscr):
 
     while True:
         stdscr.clear()
-        stdscr.addstr(0, 0, "↑/↓ browse, Enter/Space toggle, Esc exit", curses.color_pair(1))
+        stdscr.addstr(0, 0, "↑/↓ browse, Enter/Space/←/→ toggle, Esc exit", curses.color_pair(1))
 
         if mode == "section":
             stdscr.addstr(2, 0, "Select section:", curses.color_pair(1))
@@ -313,6 +313,10 @@ def run_setup_menu(stdscr):
                     current_key = 0
                 else:
                     toggle_value(sec, keys[current_key])
+                    
+        elif key in [curses.KEY_LEFT, curses.KEY_RIGHT]:
+            if mode == "key" and keys[current_key] != "Exit":
+               toggle_value(sec, keys[current_key])
 
 def do_run():
     # Libère le terminal pour que Bash puisse écrire dessus
@@ -334,7 +338,7 @@ def do_run():
     process.wait()
 
     # Pause pour que l'utilisateur puisse voir la fin
-    input("\press enter to continue")
+    input("press enter to continue")
     
 # --- Menu Principal ---
 def main(stdscr):
@@ -356,7 +360,7 @@ def main(stdscr):
         banner_height = len(BANNER)
         for i, line in enumerate(BANNER):
             stdscr.addstr(i, 0, line, curses.color_pair(3))
-        stdscr.addstr(banner_height, 0, "↑/↓ browse, Enter/Space select, Esc exit", curses.color_pair(1))
+        stdscr.addstr(banner_height, 0, "↑/↓ browse, Enter/Space/←/→ toggle, Esc exit", curses.color_pair(1))
 
         # Affiche le menu
         for i, item in enumerate(main_menu):
