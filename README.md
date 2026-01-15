@@ -45,6 +45,8 @@ you can customize folder names
 <br>
 New version (january 2026 : involves a python setup/launcher application)
 this will allow to configure and run the script easily.
+the application will create setup.ini and names.ini if not existing, and update them if necessary,
+so your previous setup won't be overwritten anymore.
 
 
 
