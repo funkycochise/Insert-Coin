@@ -42,6 +42,10 @@ you can custimize later for set up how insert-coin script will behave
 script will download a default /media/fat/Scripts/#insertcoin/names.ini
 <br>
 you can customize folder names 
+<br>
+New version (january 2026 : involves a python setup/launcher application)
+this will allow to configure and run the script easily.
+
 
 
 
