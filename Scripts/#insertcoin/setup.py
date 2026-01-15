@@ -5,6 +5,7 @@ import os
 import subprocess
 
 # --- Banner ---
+VERSION="py 1.0"
 BANNER = [   
 " ██▓███▄    █  ██████▓█████ ██▀███ ▄▄▄█████▓    ▄████▄  ▒█████  ██▓███▄    █",
 "▓██▒██ ▀█   █▒██    ▒▓█   ▀▓██ ▒ ██▓  ██▒ ▓▒   ▒██▀ ▀█ ▒██▒  ██▓██▒██ ▀█   █",
@@ -256,7 +257,7 @@ def main(stdscr):
         banner_height = len(BANNER)
         for i, line in enumerate(BANNER):
             stdscr.addstr(i, 0, line, curses.color_pair(3))
-        stdscr.addstr(banner_height, 0, "↑/↓ browse, Enter/Space/←→ toggle, Esc exit", curses.color_pair(1))
+        stdscr.addstr(banner_height, 0, "↑/↓ browse, Enter/Space/←→ toggle, Esc exit - Version "+VERSION, curses.color_pair(1))
 
         for i, item in enumerate(menu):
             style = curses.A_REVERSE if i == current else 0
