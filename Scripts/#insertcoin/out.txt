@@ -1,0 +1,3 @@
+NF /media/fat/_Arcade/BlockBuster.mra - /media/fat/_#Insert-Coin/_Kiwako
+NF /media/fat/_Arcade/Crazy Blocks.mra - /media/fat/_#Insert-Coin/_Kiwako
+NF /media/fat/_Arcade/Plump Pop (Japan).mra - /media/fat/_#Insert-Coin/_Taito
