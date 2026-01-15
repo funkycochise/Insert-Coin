@@ -926,6 +926,7 @@ dl "calibr50.zip"
 dl "kikikai.zip"
 dl "snowbros.zip"
 dl "prmrsocr.zip"
+dl "fshark.zip"
 
 #vs system roms:
 dl "rbibb.zip"

@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0115
+   add "Hishou Zame (Japan).mra" "_Flying Shark"
+
 #0102
    add "Premier Soccer (ver EAB).mra" "_Premier Soccer"
 

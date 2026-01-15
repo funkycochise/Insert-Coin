@@ -21,5 +21,6 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Teki Paki.mra" "_Teki Paki" "" "PUZ"
    add "$dir" "V" "Performan (Japan).mra" "_Performan"
    add "$dir" "V" "Rally Bike - Dash Yarou.mra" "_Rally Bike"
+   add "$dir" "V" "Hishou Zame (Japan).mra" "_Flying Shark" "" "STG"
 dot
 fi
