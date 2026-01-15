@@ -22,7 +22,6 @@ BANNER = [
 
 # --- INI files ---
 INI_FILE = "setup.ini"
-NAMES_INI_FILE = "names.ini"
 IGNORE_SECTIONS = ["setup", "reserved"]
 
 RUN_CMD = ["bash", "/media/fat/Scripts/#insertcoin/run.sh"]
@@ -35,13 +34,15 @@ DEFAULT_CONFIG = {
     "folder": {"essential": "1","rootfolder": "0","show_system": "1","show_genre": "1","manufacturer_subfolder": "0","action": "1","beat": "1","horizontal": "1","newest": "1","puzzle": "1","sport": "1","stg_h": "1","stg_v": "1","vertical": "1","vsf": "1","rng_h": "1","rng_v": "1"}
 }
 
-# --- Tooltips main menu ---
+# --- Tooltips ---
 MAIN_TOOLTIPS = {
     "Run":   "Run the script using current configuration",
     "Setup": "Configure options and features",
     "Save":  "Save current configuration to setup.ini",
     "Reset": "Restore default configuration",
+    "About": f"Version: {VERSION}",
     "Exit":  "Exit without running"
+    
 }
 
 DUALSDRAM_DESC = {"0": "single SDRAM core", "1": "Dual SDRAM core", "2": "Both Single and Dual SDRAM cores"}
@@ -246,18 +247,18 @@ def main(stdscr):
     curses.init_pair(2, curses.COLOR_CYAN, curses.COLOR_BLACK)
     curses.init_pair(3, curses.COLOR_RED, curses.COLOR_BLACK)
 
-    menu = ["Run", "Setup", "Save", "Reset", "Exit"]
+    menu = ["Run", "Setup", "Save", "Reset", "About", "Exit"]
     current = 0
     countdown = 5
     autorun_active = True
-    stdscr.timeout(1000)
+    stdscr.timeout(1000)  # 1 seconde pour le compte à rebours
 
     while True:
         stdscr.clear()
         banner_height = len(BANNER)
         for i, line in enumerate(BANNER):
             stdscr.addstr(i, 0, line, curses.color_pair(3))
-        stdscr.addstr(banner_height, 0, "↑/↓ browse, Enter/Space/←→ toggle, Esc exit - Version "+VERSION, curses.color_pair(1))
+        stdscr.addstr(banner_height, 0, "↑/↓ browse, Enter/Space/←→ toggle, Esc exit", curses.color_pair(1))
 
         for i, item in enumerate(menu):
             style = curses.A_REVERSE if i == current else 0
@@ -268,31 +269,37 @@ def main(stdscr):
         # Tooltip
         draw_tooltip(stdscr, MAIN_TOOLTIPS.get(menu[current], ""))
 
-        # Countdown AutoRun
-        stdscr.addstr(curses.LINES - 1, 0, f"AutoRun in {countdown} sec : Any arrow key to abort", curses.color_pair(1))
-        stdscr.refresh()
-        key = stdscr.getch()
+        # --- Countdown AutoRun : seulement sur Run ---
+        if menu[current] == "Run":
+            if not autorun_active:
+                autorun_active = True
+                countdown = 5
+            stdscr.addstr(curses.LINES - 1, 0, f"AutoRun in {countdown} sec : Any arrow key to abort", curses.color_pair(1))
 
-        if key == -1:
-            if autorun_active and menu[current] == "Run":
+            if autorun_active:
                 countdown -= 1
                 if countdown <= 0:
                     do_run()
                     return
-            continue
         else:
-            stdscr.timeout(-1)
-            if key == 27:
+            # Efface la ligne si on n'est pas sur Run
+            stdscr.move(curses.LINES - 1, 0)
+            stdscr.clrtoeol()
+
+        stdscr.refresh()
+        key = stdscr.getch()
+
+        if key != -1:
+            stdscr.timeout(1000)  # remettre le timeout pour continuer le countdown
+            if key == 27:  # ESC
                 break
             elif key == curses.KEY_UP:
                 current = (current - 1) % len(menu)
                 autorun_active = False
-                countdown = 5
             elif key == curses.KEY_DOWN:
                 current = (current + 1) % len(menu)
                 autorun_active = False
-                countdown = 5
-            elif key in [10, 13, 32]:
+            elif key in [10, 13, 32]:  # Enter/Space
                 sel = menu[current]
                 if sel == "Exit":
                     break
@@ -305,7 +312,7 @@ def main(stdscr):
                     save_config()
                 elif sel == "Reset":
                     reset_config()
-            # Reset countdown si l'utilisateur navigue
-            countdown = 5
+                elif sel == "About":
+                    pass  # ne fait rien, juste le tooltip s'affiche
 
 curses.wrapper(main)
