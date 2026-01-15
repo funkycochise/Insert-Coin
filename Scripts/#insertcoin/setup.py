@@ -5,8 +5,8 @@ import os
 import subprocess
 
 # --- Banner ---
-VERSION="py 1.0"
-BANNER = [   
+VERSION = "py 1.0"
+BANNER = [
 " ██▓███▄    █  ██████▓█████ ██▀███ ▄▄▄█████▓    ▄████▄  ▒█████  ██▓███▄    █",
 "▓██▒██ ▀█   █▒██    ▒▓█   ▀▓██ ▒ ██▓  ██▒ ▓▒   ▒██▀ ▀█ ▒██▒  ██▓██▒██ ▀█   █",
 "▒██▓██  ▀█ ██░ ▓██▄  ▒███  ▓██ ░▄█ ▒ ▓██░ ▒░   ▒▓█    ▄▒██░  ██▒██▓██  ▀█ ██▒",
@@ -23,7 +23,6 @@ BANNER = [
 # --- INI files ---
 INI_FILE = "setup.ini"
 IGNORE_SECTIONS = ["setup", "reserved"]
-
 RUN_CMD = ["bash", "/media/fat/Scripts/#insertcoin/run.sh"]
 
 # --- Default config ---
@@ -38,11 +37,8 @@ DEFAULT_CONFIG = {
 MAIN_TOOLTIPS = {
     "Run":   "Run the script using current configuration",
     "Setup": "Configure options and features",
-    "Save":  "Save current configuration to setup.ini",
-    "Reset": "Restore default configuration",
     "About": f"Version: {VERSION}",
     "Exit":  "Exit without running"
-    
 }
 
 DUALSDRAM_DESC = {"0": "single SDRAM core", "1": "Dual SDRAM core", "2": "Both Single and Dual SDRAM cores"}
@@ -51,7 +47,9 @@ SECTION_TOOLTIPS = {
     "update": "Settings for Update",
     "console": "Settings for Console Cores",
     "clean": "Settings for Cleaning obsolete cores and useless files",
-    "folder": "Settings for folders to create"
+    "folder": "Settings for folders to create",
+    "Save configuration": "Save current configuration to setup.ini",
+    "Reset configuration": "Restore default configuration"
 }
 
 KEY_TOOLTIPS = {
@@ -135,8 +133,8 @@ def get_section_tooltip(sec):
     return SECTION_TOOLTIPS.get(sec, "")
 
 def get_key_tooltip(sec, key):
-    if key == "Exit":
-        return "Back to menu"
+    if key in ["Exit", "Save configuration", "Reset configuration"]:
+        return get_section_tooltip(key)
     return KEY_TOOLTIPS.get(sec, {}).get(key, "")
 
 def draw_tooltip(stdscr, text):
@@ -154,11 +152,12 @@ def run_setup_menu(stdscr):
     current_section = 0
     current_key = 0
     mode = "section"
-    main_menu = sections + ["Exit"]
+    # Nouveau menu Setup : sections + Save + Reset + Exit
+    main_menu = sections + ["Save configuration", "Reset configuration", "Exit"]
 
     while True:
         stdscr.clear()
-        stdscr.addstr(0, 0, "↑/↓ browse, Enter/Space/←/→ toggle, Esc exit", curses.color_pair(1))
+        stdscr.addstr(0, 0, "↑/↓ browse, Enter/Space/←→ toggle, Esc exit", curses.color_pair(1))
 
         if mode == "section":
             stdscr.addstr(2, 0, "Select section:", curses.color_pair(1))
@@ -170,11 +169,15 @@ def run_setup_menu(stdscr):
             tooltip = get_section_tooltip(main_menu[current_section])
         else:  # key mode
             sec = main_menu[current_section]
-            keys = list(config.get(sec, {}).keys()) + ["Exit"]
+            if sec in ["Save configuration", "Reset configuration", "Exit"]:
+                keys = [sec]
+            else:
+                keys = list(config.get(sec, {}).keys()) + ["Exit"]
+
             stdscr.addstr(2, 0, f"Options in [{sec}]:", curses.color_pair(1))
             for i, k in enumerate(keys):
-                if k == "Exit":
-                    line = "Exit"
+                if k in ["Exit", "Save configuration", "Reset configuration"]:
+                    line = k
                 elif k == "dualsdram":
                     val = config[sec][k]
                     line = f"{k} = {val} ({DUALSDRAM_DESC.get(val, '')})"
@@ -184,7 +187,7 @@ def run_setup_menu(stdscr):
                 stdscr.addstr(3 + i, 0,
                               "> " + line if i == current_key else "  " + line,
                               curses.color_pair(1) | style if i == current_key else curses.color_pair(2))
-            tooltip = get_key_tooltip(sec, keys[current_key]) if keys[current_key] != "Exit" else "Back to menu"
+            tooltip = get_key_tooltip(sec, keys[current_key])
 
         draw_tooltip(stdscr, tooltip)
         stdscr.refresh()
@@ -208,19 +211,31 @@ def run_setup_menu(stdscr):
                 current_key = (current_key + 1) % len(keys)
         elif key in [10, 13, 32]:  # Enter / Space
             if mode == "section":
-                if main_menu[current_section] == "Exit":
-                    return
+                sel = main_menu[current_section]
+                if sel in ["Save configuration", "Reset configuration", "Exit"]:
+                    # Exécute directement
+                    if sel == "Save configuration":
+                        save_config()
+                    elif sel == "Reset configuration":
+                        reset_config()
+                    elif sel == "Exit":
+                        return
                 else:
                     mode = "key"
                     current_key = 0
             else:
-                if keys[current_key] == "Exit":
+                k = keys[current_key]
+                if k in ["Exit", "Save configuration", "Reset configuration"]:
+                    if k == "Save configuration":
+                        save_config()
+                    elif k == "Reset configuration":
+                        reset_config()
                     mode = "section"
                     current_key = 0
                 else:
-                    toggle_value(sec, keys[current_key])
+                    toggle_value(sec, k)
         elif key in [curses.KEY_LEFT, curses.KEY_RIGHT]:
-            if mode == "key" and keys[current_key] != "Exit":
+            if mode == "key" and keys[current_key] not in ["Exit", "Save configuration", "Reset configuration"]:
                 toggle_value(sec, keys[current_key])
 
 # --- Run script ---
@@ -247,7 +262,7 @@ def main(stdscr):
     curses.init_pair(2, curses.COLOR_CYAN, curses.COLOR_BLACK)
     curses.init_pair(3, curses.COLOR_RED, curses.COLOR_BLACK)
 
-    menu = ["Run", "Setup", "Save", "Reset", "About", "Exit"]
+    menu = ["Run", "Setup", "About", "Exit"]
     current = 0
     countdown = 5
     autorun_active = True
@@ -308,11 +323,7 @@ def main(stdscr):
                     return
                 elif sel == "Setup":
                     run_setup_menu(stdscr)
-                elif sel == "Save":
-                    save_config()
-                elif sel == "Reset":
-                    reset_config()
                 elif sel == "About":
-                    pass  # ne fait rien, juste le tooltip s'affiche
+                    pass  # tooltip suffit
 
 curses.wrapper(main)
