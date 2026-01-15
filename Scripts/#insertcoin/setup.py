@@ -158,7 +158,7 @@ def run_setup_menu(stdscr):
 
     while True:
         stdscr.clear()
-        stdscr.addstr(0, 0, "↑/↓ browse, Enter/Space/←→ toggle, Esc exit", curses.color_pair(1))
+        stdscr.addstr(0, 0, "↑/↓ browse, Enter/Space/←/→ toggle, Esc exit", curses.color_pair(1))
 
         if mode == "section":
             stdscr.addstr(2, 0, "Select section:", curses.color_pair(1))
