@@ -53,12 +53,21 @@ so your previous setup won't be overwritten anymore.
 
 > **Warning:** ` update_all_insertcoin.sh doesn't work when launched from analogue output.
 therefore, if you have to bypass the GUI, use update_all_insertcoin_legacy.sh instead.
+### Resources added
 
-> **Ressources added:** `Neogeo mgl games
-Battletoads
-Irem M92 dedicated turbo version
-Coin op collection games (ctribe, ddragon§3, agallet, mazinger, sailormoon, tmnt2, twincobra, wwfwfest)
-Sega System 2 fixed games
-VsNES arcade version of NES games.
-various mras for other arcade games
+- Neogeo MGL games
+- Battletoads
+- Irem M92 (dedicated turbo version)
+- Coin-Op collection games:
+  - ctribe
+  - ddragon3
+  - agallet
+  - mazinger
+  - sailormoon
+  - tmnt2
+  - twincobra
+  - wwfwfest
+- Sega System 2 fixed games
+- VsNES arcade version of NES games
+- Various MRAs for other arcade games
 
