@@ -50,6 +50,8 @@ so your previous setup won't be overwritten anymore.
 <br>
 ![Capture de l'application](https://github.com/funkycochise/Insert-Coin_Res/blob/main/py2.png)
 
+Warning : update_all_insertcoin.sh isn't working when lunnched from analogue output.
+therefor, if you have to bypass the GUI, use update_all_insertcoin_legacy.sh instead.
 
 
 
