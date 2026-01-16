@@ -67,5 +67,6 @@ Coin op collection games (ctribe, ddragon§3, agallet, mazinger, sailormoon, tmn
 Sega System 2 fixed games
 <br>
 VsNES arcade version of NES games.
+<br>
 various mras for other arcade games
 
