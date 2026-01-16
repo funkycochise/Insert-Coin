@@ -48,7 +48,7 @@ this will allow to configure and run the script easily.
 the application will create setup.ini and names.ini if not existing, and update them if necessary,
 so your previous setup won't be overwritten anymore.
 <br>
-![Capture de l'application](py2.png)
+![Capture de l'application](https://github.com/funkycochise/Insert-Coin_Res/blob/main/py2.png)
 
 
 
