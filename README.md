@@ -54,7 +54,7 @@ so your previous setup won't be overwritten anymore.
 > **Warning:** ` update_all_insertcoin.sh doesn't work when launched from analogue output.
 therefore, if you have to bypass the GUI, use update_all_insertcoin_legacy.sh instead.
 
-Ressources added:
+> **Ressources added:** `
 <br>
 Neogeo mgl games 
 <br>
