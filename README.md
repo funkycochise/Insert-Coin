@@ -58,15 +58,7 @@ therefore, if you have to bypass the GUI, use update_all_insertcoin_legacy.sh in
 - Neogeo MGL games
 - Battletoads
 - Irem M92 (dedicated turbo version)
-- Coin-Op collection games:
-  - ctribe
-  - ddragon3
-  - agallet
-  - mazinger
-  - sailormoon
-  - tmnt2
-  - twincobra
-  - wwfwfest
+- Coin-Op collection games (ctribe, ddragon3, agallet, mazinger, sailormoon, tmnt2, twincobra, wwfwfest)
 - Sega System 2 fixed games
 - VsNES arcade version of NES games
 - Various MRAs for other arcade games
