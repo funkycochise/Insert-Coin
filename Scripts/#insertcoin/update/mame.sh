@@ -4,9 +4,6 @@ source /media/fat/Scripts/#insertcoin/folders/functions.sh
 TEMP=/media/fat/scripts/temp
 SD=/media/fat
 USB=/media/usb0
-ARCHIVE_MAME=https://ia601909.us.archive.org/6/items/insert_coin_mame
-#ARCHIVE_NEOGEO=https://ia904607.us.archive.org/28/items/mister-neogeo-pack
-ARCHIVE_NEOGEO=https://ia601809.us.archive.org/1/items/mister-neogeo-pack
 
 source <(grep setup_mame $ini)
 setup_mame="${setup_mame:0:3}"
@@ -46,10 +43,9 @@ function dl {
       else
          echo -n "downloading $1"   
       fi
-      curl $ARCHIVE_MAME/$1 -o $des_mame/$1 -k -s
-      touch $des_mame/$1
-      #wget $ARCHIVE_MAME/$1 -P $TEMP -q
-      #mv $TEMP/$1 $des_mame/$1
+      wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/mister-neogeo-pack/$1
+      touch /media/fat/Scripts/temp/$1
+      mv /media/fat/Scripts/temp/$1 $des_mame/$1
       if [ "$TERM" == "linux" ]; then
         #GUI
          echo -e "\r   ${BLUE}${CHECK}${NC} $1                                            "
@@ -67,13 +63,9 @@ function dlf {
     FILE=$des_mame/$1
     #echo "dl : $des_mame/$1"
 
-    if ! test -f "$FILE"; then
-       rm -r "$FILE"
-    fi
-    curl $ARCHIVE_MAME/$1 -o $des_mame/$1 -k -s
-    #wget $ARCHIVE_MAME/$1 -P $TEMP -q
-    #mv $TEMP/$1 $des_mame/$1
-
+    wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/mister-neogeo-pack/$1
+    touch /media/fat/Scripts/temp/$1
+    mv /media/fat/Scripts/temp/$1 $des_mame/$1
 }
 
 function neo {
@@ -90,10 +82,10 @@ function neo {
          echo -n "downloading $1"         
       fi
 
-      #file doesn not exists
-      #curl $ARCHIVE_NEOGEO/$1 -O -k
-      wget $ARCHIVE_NEOGEO/$1 -P $TEMP -q
-      mv $TEMP/$1 $des_mame/$1 
+      wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/insert_coin_mame/$1
+      touch /media/fat/Scripts/temp/$1
+      mv /media/fat/Scripts/temp/$1 $des_mame/$1
+
       if [ "$TERM" == "linux" ]; then
          #GUI
          echo -e "\r   ${BLUE}${CHECK}${NC} $1                                            "
@@ -241,6 +233,7 @@ dl "bullet.zip"
 dl "bullfgt.zip"
 dl "bwidow.zip"
 dl "bzone.zip"
+dl "calibr50.zip"
 dl "calipso.zip"
 dl "cameltry.zip"
 dl "canyon.zip"
@@ -378,6 +371,7 @@ dl "frenzy.zip"
 dl "frogger.zip"
 dl "frontlin.zip"
 dl "fround.zip"
+dl "fshark.zip"
 dl "futspy.zip"
 dl "gaia.zip"
 dl "galactic.zip"
@@ -478,6 +472,7 @@ dl "kick.zip"
 dl "kicker.zip"
 dl "kicknrun.zip"
 dl "kidniki.zip"
+dl "kikikai.zip"
 dl "kikstart.zip"
 dl "kingball.zip"
 dl "kingdmgp.zip"
@@ -631,6 +626,7 @@ dl "popeye.zip"
 dl "pow.zip"
 dl "powerdrv.zip"
 dl "prehisle.zip"
+dl "prmrsocr.zip"
 dl "progear.zip"
 dl "psychic5.zip"
 dl "puckman.zip"
@@ -686,6 +682,7 @@ dl "rtype.zip"
 dl "rtype2.zip"
 dl "rtypeleo.zip"
 dl "rumba.zip"
+dl "rungun.zip"
 dl "rygar.zip"
 dl "ryukyu.zip"
 dl "s16mcu_alt.zip"
@@ -751,6 +748,7 @@ dl "slapshtr.zip"
 dl "smashtv.zip"
 dl "snapjack.zip"
 dl "snowbro2.zip"
+dl "snowbros.zip"
 dl "solarfox.zip"
 dl "soldam.zip"
 dl "solfigtr.zip"
@@ -922,12 +920,6 @@ dl "zerowing.zip"
 dl "zigzagb.zip"
 dl "zzyzzyxx.zip"
 dlf "ninjak.zip"
-dl "rungun.zip"
-dl "calibr50.zip"
-dl "kikikai.zip"
-dl "snowbros.zip"
-dl "prmrsocr.zip"
-dl "fshark.zip"
 
 #vs system roms:
 dl "rbibb.zip"
