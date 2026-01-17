@@ -5,7 +5,8 @@ TEMP=/media/fat/scripts/temp
 SD=/media/fat
 USB=/media/usb0
 ARCHIVE_MAME=https://ia601909.us.archive.org/6/items/insert_coin_mame
-ARCHIVE_NEOGEO=https://ia904607.us.archive.org/28/items/mister-neogeo-pack
+#ARCHIVE_NEOGEO=https://ia904607.us.archive.org/28/items/mister-neogeo-pack
+ARCHIVE_NEOGEO=https://ia601809.us.archive.org/1/items/mister-neogeo-pack
 
 source <(grep setup_mame $ini)
 setup_mame="${setup_mame:0:3}"
