@@ -27,7 +27,25 @@ DEFAULT_CONFIG = {
     "update": {"main_mister": "0","mame_rom": "0","gnw_rom": "0","additional_res": "0","console_core": "0","dualsdram": "0"},
     "console": {"psx": "0","s32x": "0","saturn": "0","sgb": "0","neogeo": "0","n64": "0","jaguar": "0","cdi": "0","pce": "0","nes": "0","snes": "0"},
     "clean": {"console_mgl": "0","obsolete_core": "0","remove_other": "0"},
-    "folder": {"essential": "1","rootfolder": "0","show_system": "1","show_genre": "1","manufacturer_subfolder": "0"}
+    "folder": {
+    "essential": "1",
+    "rootfolder": "1",
+    "show_system": "1",
+    "show_genre": "1",
+    "manufacturer_subfolder": "0",
+    "action": "1",
+    "beat": "1",
+    "horizontal": "1",
+    "newest": "1",
+    "puzzle": "1",
+    "sport": "1",
+    "stg_h": "1",
+    "stg_v": "1",
+    "vertical": "1",
+    "vsf": "1",
+    "rng_h": "1",
+    "rng_v": "1"
+}
 }
 
 DUALSDRAM_DESC = {"0": "single SDRAM core","1": "Dual SDRAM core","2": "Both Single and Dual SDRAM cores"}
@@ -49,6 +67,19 @@ MAIN_MENU_TOOLTIPS = {
 }
 
 # --- Fonctions INI ---
+def normalize_ini(filename):
+    """Force le format key=value sans espaces pour compatibilité bash."""
+    with open(filename, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+
+    with open(filename, "w", encoding="utf-8") as f:
+        for line in lines:
+            if "=" in line and not line.lstrip().startswith("#"):
+                k, v = line.split("=", 1)
+                f.write(f"{k.strip()}={v.strip()}\n")
+            else:
+                f.write(line)
+
 def ensure_ini(filename, default_config):
     if not os.path.exists(filename):
         parser = configparser.ConfigParser()
@@ -56,6 +87,7 @@ def ensure_ini(filename, default_config):
             parser[sec] = opts
         with open(filename, "w", encoding="utf-8") as f:
             parser.write(f)
+        normalize_ini(filename)
 
 ensure_ini(INI_FILE, DEFAULT_CONFIG)
 
@@ -83,6 +115,7 @@ def save_config():
             parser.set(sec, k, v)
     with open(INI_FILE, "w", encoding="utf-8") as f:
         parser.write(f)
+    normalize_ini(filename)
 
 def reset_config():
     global config
