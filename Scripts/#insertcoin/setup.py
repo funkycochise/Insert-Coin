@@ -10,7 +10,7 @@ NAMES_FILE = "names.ini"
 
 DEFAULT_CONFIG = {
     "update": {"main_mister": "0","mame_rom": "0","gnw_rom": "0","additional_res": "0","console_core": "0","dualsdram": "0"},
-    "console": {"psx": "0","s32x": "0","saturn": "0","sgb": "0","neogeo": "0","n64": "0","jaguar": "0","cdi": "0","pce": "0","nes": "0","snes": "0"},
+    "console": {"psx": "1","s32x": "1","saturn": "1","sgb": "1","neogeo": "1","n64": "1","jaguar": "1","cdi": "1","pce": "1","nes": "1","snes": "1"},
     "clean": {"console_mgl": "0","obsolete_core": "0","remove_other": "0"},
     "folder": {
         "essential": "1",
