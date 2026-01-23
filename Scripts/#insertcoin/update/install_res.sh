@@ -149,38 +149,52 @@ if [ "$TERM" == "linux" ]; then
    echo -n -e "   "
 fi     
 echo -e "${BLUE}${CHECK}${NC} res" 
-curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output $temp/res.zip >/dev/null
-unzip -qq $temp/res.zip -d $res
-rm -r $temp/res.zip
+rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output $temp/res.zip >/dev/null)
+if [[ "$rcode" -ne 0 ]]; then
+    echo "Failed to download file res"
+else
+    unzip -qq $temp/res.zip -d $res
+    rm -r $temp/res.zip
+fi
 
 if [ "$TERM" == "linux" ]; then
    #GUI
    echo -n -e "   "
 fi
 echo -e "${BLUE}${CHECK}${NC} res2" 
-curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res2.zip -O -k -s --output $temp/res2.zip >/dev/null
-unzip -qq $temp/res2.zip -d $res
-rm -r $temp/res2.zip
+rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res2.zip -O -k -s --output $temp/res2.zip >/dev/null)
+if [[ "$rcode" -ne 0 ]]; then
+    echo "Failed to download file res2"
+else
+    unzip -qq $temp/res2.zip -d $res
+    rm -r $temp/res2.zip
+fi
 
 if [ "$TERM" == "linux" ]; then
    #GUI
    echo -n -e "   "
 fi
 echo -e "${BLUE}${CHECK}${NC} res3" 
-curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res3.zip -O -k -s --output $temp/res3.zip >/dev/null
-unzip -qq $temp/res3.zip -d $res
-rm -r $temp/res3.zip
+rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res3.zip -O -k -s --output $temp/res3.zip >/dev/null)
+if [[ "$rcode" -ne 0 ]]; then
+    echo "Failed to download file res3"
+else
+    unzip -qq $temp/res3.zip -d $res
+    rm -r $temp/res3.zip
+fi
 
 if [ "$TERM" == "linux" ]; then
    #GUI
    echo -n -e "   "
 fi
 echo -e "${BLUE}${CHECK}${NC} res4" 
-curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res4.zip -O -k -s --output $temp/res4.zip >/dev/null
-unzip -qq $temp/res4.zip -d $res
-rm -r $temp/res4.zip
-
-
+rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res4.zip -O -k -s --output $temp/res4.zip >/dev/null)
+if [[ "$rcode" -ne 0 ]]; then
+    echo "Failed to download file res4"
+else
+    unzip -qq $temp/res4.zip -d $res
+    rm -r $temp/res4.zip
+fi
 
 }
 
