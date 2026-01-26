@@ -82,9 +82,13 @@ if [ -f "$names" ]; then
 else
    vs="_Nintendo Vs."
 fi
-   echo "names: $names"
-   echo "vs: $vs"
-   additem "$vs"
+if [ ! -z "$vs" ]; then
+   vs="_Nintendo Vs."
+fi
+echo "names: $names"
+echo "vs: $vs"
+
+additem "$vs"
 
 #1112
    add "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra"
