@@ -57,8 +57,8 @@ function additem {
       #echo "$counter - $1"
       formated=$(printf "%02d" $counter)
 
-      #echo "formated: _$formated$1"
-      #echo "location: $outdir/$1"
+      echo "source: $outdir/$1"
+      echo "formated: _$formated$1"      
       if [ -d "$outdir/$1" ]; then
          ln -s "$outdir/$1" "$outdir/$dir/_$formated$1"
       fi
