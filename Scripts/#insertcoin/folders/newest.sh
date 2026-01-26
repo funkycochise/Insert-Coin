@@ -48,17 +48,17 @@ fi
 
 function additem {
 
-   echo "outdir: $outdir"
-   echo "dir: $dir"
-   echo "1: $1"
+   #echo "outdir: $outdir"
+   #echo "dir: $dir"
+   #echo "1: $1"
 
    counter=$((counter+1))
    if [[ "$counter" -lt 100 ]]; then
       #echo "$counter - $1"
       formated=$(printf "%02d" $counter)
 
-      echo "source: $outdir/$1"
-      echo "formated: _$formated$1"      
+      #echo "source: $outdir/$1"
+      #echo "formated: _$formated$1"      
       if [ -d "$outdir/$1" ]; then
          ln -s "$outdir/$1" "$outdir/$dir/_$formated$1"
       fi
@@ -85,8 +85,8 @@ fi
 if [ ! -z "$vs" ]; then
    vs="_Nintendo Vs."
 fi
-echo "names: $names"
-echo "vs: $vs"
+#echo "names: $names"
+#echo "vs: $vs"
 
 additem "$vs"
 
