@@ -48,9 +48,9 @@ fi
 
 function additem {
 
-   #echo "outdir: $outdir"
-   #echo "dir: $dir"
-   #echo "1: $1"
+   echo "outdir: $outdir"
+   echo "dir: $dir"
+   echo "1: $1"
 
    counter=$((counter+1))
    if [[ "$counter" -lt 100 ]]; then
