@@ -82,7 +82,8 @@ if [ -f "$names" ]; then
 else
    vs="_Nintendo Vs."
 fi
-
+   echo "names: $names"
+   echo "vs: $vs"
    additem "$vs"
 
 #1112
