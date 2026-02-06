@@ -16,6 +16,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "H" "Hellfire (2P set).mra" "_Hellfire" "" "STG"
    add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"
+   add "$dir" "V" "Hishou Zame (Japan).mra" "_Flying Shark" "" "STG"
    add "$dir" "V" "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra" "" "STG"
    add "$dir" "V" "Out Zone.mra" "_Out Zone" "" "RNG"
    add "$dir" "V" "Same! Same! Same! (2P Set).mra" "_Fire Shark" "" "STG"
