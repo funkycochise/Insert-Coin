@@ -130,7 +130,7 @@ def normalize_ini(filename):
             else:
                 f.write(line)
 
-def ensure_setup(filename, default_config):
+def ensure_ini(filename, default_config):
     if not os.path.exists(filename):
         parser = configparser.ConfigParser()
         for sec, opts in default_config.items():
@@ -140,44 +140,12 @@ def ensure_setup(filename, default_config):
         normalize_ini(filename)
 
 def ensure_names():
-    """
-    Crée names.ini s'il n'existe pas, ou ajoute les clés manquantes
-    depuis RAW_NAMES_CONTENT sans écraser les clés existantes.
-    Les options de chaque section sont écrites dans l'ordre alphabétique.
-    """
-    parser = configparser.ConfigParser()
-    parser.optionxform = str  # conserver la casse des clés
+    if not os.path.exists(NAMES_FILE):
+        with open(NAMES_FILE, "w", encoding="utf-8") as f:
+            f.write(RAW_NAMES_CONTENT)
 
-    # Si names.ini existe déjà, le lire
-    if os.path.exists(NAMES_FILE):
-        parser.read(NAMES_FILE, encoding="utf-8")
-
-    # Lire RAW_NAMES_CONTENT dans un parser temporaire
-    temp_parser = configparser.ConfigParser()
-    temp_parser.optionxform = str
-    temp_parser.read_string(RAW_NAMES_CONTENT)
-
-    # Ajouter les sections et options manquantes
-    for section in temp_parser.sections():
-        if not parser.has_section(section):
-            parser.add_section(section)
-        for key, val in temp_parser[section].items():
-            if key not in parser[section]:
-                parser.set(section, key, val)
-
-    # Trier les options de chaque section avant écriture
-    for section in parser.sections():
-        sorted_items = sorted(parser.items(section))  # trie par clé
-        parser.remove_section(section)
-        parser.add_section(section)
-        for key, val in sorted_items:
-            parser.set(section, key, val)
-
-    # Écrire le fichier mis à jour ou créé
-    with open(NAMES_FILE, "w", encoding="utf-8") as f:
-        parser.write(f)
 # --- Initialisation INI ---
-ensure_setup(INI_FILE, DEFAULT_CONFIG)
+ensure_ini(INI_FILE, DEFAULT_CONFIG)
 ensure_names()
 
 parser = configparser.ConfigParser()
