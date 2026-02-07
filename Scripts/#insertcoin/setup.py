@@ -3,6 +3,7 @@ import configparser
 import textwrap
 import os
 import sys
+from collections import OrderedDict
 
 # ------------------- Fichiers INI -------------------
 INI_FILE = "setup.ini"
@@ -140,10 +141,47 @@ def ensure_ini(filename, default_config):
         normalize_ini(filename)
 
 def ensure_names():
-    if not os.path.exists(NAMES_FILE):
-        with open(NAMES_FILE, "w", encoding="utf-8") as f:
-            f.write(RAW_NAMES_CONTENT)
+    """
+    Crée ou met à jour names.ini en conservant l'ordre original des clés.
+    - Si le fichier n'existe pas, il est créé avec tout le contenu de RAW_NAMES_CONTENT.
+    - Si des clés sont manquantes, elles sont ajoutées à la position exacte de RAW_NAMES_CONTENT.
+    - Les valeurs existantes ne sont jamais modifiées.
+    """
+    # Lire le fichier existant dans un OrderedDict
+    parser = configparser.ConfigParser(dict_type=OrderedDict)
+    parser.optionxform = str  # Conserver la casse
+    existing_sections = OrderedDict()
 
+    if os.path.exists(NAMES_FILE):
+        parser.read(NAMES_FILE, encoding="utf-8")
+        for sec in parser.sections():
+            existing_sections[sec] = OrderedDict(parser.items(sec))
+
+    # Lire RAW_NAMES_CONTENT dans un parser temporaire avec OrderedDict
+    temp_parser = configparser.ConfigParser(dict_type=OrderedDict)
+    temp_parser.optionxform = str
+    temp_parser.read_string(RAW_NAMES_CONTENT)
+
+    # Construire le fichier final en conservant l'ordre original et ajoutant les clés manquantes
+    final_parser = configparser.ConfigParser(dict_type=OrderedDict)
+    final_parser.optionxform = str
+
+    for sec in temp_parser.sections():
+        final_parser.add_section(sec)
+        temp_keys = temp_parser.items(sec)
+        existing_keys = existing_sections.get(sec, OrderedDict())
+
+        for key, val in temp_keys:
+            if key in existing_keys:
+                # Utiliser la valeur existante
+                final_parser.set(sec, key, existing_keys[key])
+            else:
+                # Ajouter la clé manquante avec la valeur par défaut
+                final_parser.set(sec, key, val)
+
+    # Écrire le fichier mis à jour
+    with open(NAMES_FILE, "w", encoding="utf-8") as f:
+        final_parser.write(f)        
 # --- Initialisation INI ---
 ensure_ini(INI_FILE, DEFAULT_CONFIG)
 ensure_names()
