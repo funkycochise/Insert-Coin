@@ -9,6 +9,7 @@ from collections import OrderedDict
 INI_FILE = "setup.ini"
 NAMES_FILE = "names.ini"
 
+# ------------------- Config par défaut -------------------
 DEFAULT_CONFIG = {
     "update": {"main_mister": "0","mame_rom": "0","gnw_rom": "0","additional_res": "0","console_core": "0","dualsdram": "0"},
     "console": {"psx": "1","s32x": "1","saturn": "1","sgb": "1","neogeo": "1","n64": "1","jaguar": "1","cdi": "1","pce": "1","nes": "1","snes": "1"},
@@ -34,6 +35,7 @@ DEFAULT_CONFIG = {
     }
 }
 
+# ------------------- Contenu par défaut de names.ini -------------------
 RAW_NAMES_CONTENT = """[folder]
 essential="_#Essentials"
 newest="_#Newest"
@@ -121,7 +123,7 @@ williams="_Williams"
 
 # ------------------- Fonctions INI -------------------
 def normalize_ini(filename):
-    """Supprime les espaces inutiles autour des '=' pour setup.ini"""
+    """Supprime les espaces inutiles autour des '='"""
     with open(filename, "r", encoding="utf-8") as f:
         lines = f.readlines()
     with open(filename, "w", encoding="utf-8") as f:
@@ -138,6 +140,21 @@ def ensure_ini(filename, default_config):
         parser = configparser.ConfigParser()
         for sec, opts in default_config.items():
             parser[sec] = opts
+        with open(filename, "w", encoding="utf-8") as f:
+            parser.write(f)
+        normalize_ini(filename)
+
+def clean_unused_sections(filename):
+    """Supprime définitivement [reserved] et [setup] si elles existent"""
+    parser = configparser.ConfigParser()
+    parser.optionxform = str
+    parser.read(filename, encoding="utf-8")
+    modified = False
+    for sec in ["reserved", "setup"]:
+        if parser.has_section(sec):
+            parser.remove_section(sec)
+            modified = True
+    if modified:
         with open(filename, "w", encoding="utf-8") as f:
             parser.write(f)
         normalize_ini(filename)
@@ -191,8 +208,9 @@ def ensure_names():
                 f.write(f"{key}={val}\n")
             f.write("\n")
 
-# --- Initialisation ---
+# ------------------- Initialisation -------------------
 ensure_ini(INI_FILE, DEFAULT_CONFIG)
+clean_unused_sections(INI_FILE)
 ensure_names()
 
 parser = configparser.ConfigParser()
@@ -261,7 +279,7 @@ def do_Exit():
 
 # ------------------- Menu Setup -------------------
 def run_setup_menu(stdscr):
-    menu = sections + ["Save", "Reset", "Exit"]
+    menu = [s for s in sections if s not in ["reserved","setup"]] + ["Save", "Reset", "Exit"]
     current = 0
     mode = "section"
     key_index = 0
