@@ -113,14 +113,15 @@ taitosj="_Taito-SJ"
 technos="_Technos"
 technos16="_Technos16"
 tecmo="_Tehkan-Tecmo"
-toaplan="_Toaplan"
-toaplan_stg="_Toaplan_STG"
+toaplan="_Toaplan_STG"
 universal="_Universal"
 upl="_Upl"
 williams="_Williams"
 """
 
+# ------------------- Fonctions INI -------------------
 def normalize_ini(filename):
+    """Supprime les espaces inutiles autour des '=' pour setup.ini"""
     with open(filename, "r", encoding="utf-8") as f:
         lines = f.readlines()
     with open(filename, "w", encoding="utf-8") as f:
@@ -132,6 +133,7 @@ def normalize_ini(filename):
                 f.write(line)
 
 def ensure_ini(filename, default_config):
+    """Créer setup.ini si absent"""
     if not os.path.exists(filename):
         parser = configparser.ConfigParser()
         for sec, opts in default_config.items():
@@ -142,47 +144,54 @@ def ensure_ini(filename, default_config):
 
 def ensure_names():
     """
-    Crée ou met à jour names.ini en conservant l'ordre original des clés.
-    - Si le fichier n'existe pas, il est créé avec tout le contenu de RAW_NAMES_CONTENT.
-    - Si des clés sont manquantes, elles sont ajoutées à la position exacte de RAW_NAMES_CONTENT.
-    - Les valeurs existantes ne sont jamais modifiées.
+    Crée ou met à jour names.ini :
+    - ajoute les clés manquantes
+    - conserve l'ordre original
+    - pas d'espaces autour du '='
+    - ligne vide après 'newest'
     """
-    # Lire le fichier existant dans un OrderedDict
-    parser = configparser.ConfigParser(dict_type=OrderedDict)
-    parser.optionxform = str  # Conserver la casse
-    existing_sections = OrderedDict()
-
+    import re
+    existing = OrderedDict()
     if os.path.exists(NAMES_FILE):
-        parser.read(NAMES_FILE, encoding="utf-8")
-        for sec in parser.sections():
-            existing_sections[sec] = OrderedDict(parser.items(sec))
+        with open(NAMES_FILE, "r", encoding="utf-8") as f:
+            section = None
+            for line in f:
+                m = re.match(r"\s*\[(.+?)\]", line)
+                if m:
+                    section = m.group(1)
+                    existing[section] = OrderedDict()
+                    continue
+                if section and "=" in line:
+                    key, val = line.split("=", 1)
+                    key = key.strip()
+                    if key not in existing[section]:
+                        existing[section][key] = val.rstrip("\n").strip()
 
-    # Lire RAW_NAMES_CONTENT dans un parser temporaire avec OrderedDict
-    temp_parser = configparser.ConfigParser(dict_type=OrderedDict)
-    temp_parser.optionxform = str
-    temp_parser.read_string(RAW_NAMES_CONTENT)
+    # RAW_NAMES_CONTENT
+    raw_parser = configparser.ConfigParser()
+    raw_parser.optionxform = str
+    raw_parser.read_string(RAW_NAMES_CONTENT)
+    updated = OrderedDict()
 
-    # Construire le fichier final en conservant l'ordre original et ajoutant les clés manquantes
-    final_parser = configparser.ConfigParser(dict_type=OrderedDict)
-    final_parser.optionxform = str
-
-    for sec in temp_parser.sections():
-        final_parser.add_section(sec)
-        temp_keys = temp_parser.items(sec)
-        existing_keys = existing_sections.get(sec, OrderedDict())
-
-        for key, val in temp_keys:
-            if key in existing_keys:
-                # Utiliser la valeur existante
-                final_parser.set(sec, key, existing_keys[key])
+    for section in raw_parser.sections():
+        updated[section] = OrderedDict()
+        for key, val in raw_parser[section].items():
+            if section in existing and key in existing[section]:
+                updated[section][key] = existing[section][key]
             else:
-                # Ajouter la clé manquante avec la valeur par défaut
-                final_parser.set(sec, key, val)
+                updated[section][key] = val
 
-    # Écrire le fichier mis à jour
+    # Écriture avec format exact
     with open(NAMES_FILE, "w", encoding="utf-8") as f:
-        final_parser.write(f)        
-# --- Initialisation INI ---
+        for section, opts in updated.items():
+            f.write(f"[{section}]\n")
+            for idx, (key, val) in enumerate(opts.items()):
+                if idx == 2:  # ligne vide après 'newest'
+                    f.write("\n")
+                f.write(f"{key}={val}\n")
+            f.write("\n")
+
+# --- Initialisation ---
 ensure_ini(INI_FILE, DEFAULT_CONFIG)
 ensure_names()
 
@@ -214,7 +223,8 @@ def save_config():
 def reset_config():
     global config
     config = {sec: dict(opts) for sec, opts in DEFAULT_CONFIG.items()}
-    
+
+# ------------------- Tooltips -------------------
 MAIN_TOOLTIPS = {
     "Run": "Run Insert-Coin",
     "Setup": "Change parameters",
@@ -271,7 +281,7 @@ def run_setup_menu(stdscr):
             sec = menu[current]
             keys = list(config[sec].keys()) + ["Exit"]
             for i, k in enumerate(keys):
-                line = f"{k} = {config[sec][k]}" if k != "Exit" else "Exit"
+                line = f"{k}={config[sec][k]}" if k != "Exit" else "Exit"
                 style = curses.A_REVERSE if i == key_index else 0
                 stdscr.addstr(2+i, 0,
                     ("> " if i == key_index else "  ") + line,
