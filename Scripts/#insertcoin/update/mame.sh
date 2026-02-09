@@ -43,7 +43,7 @@ function dl {
       else
          echo -n "downloading $1"   
       fi
-      wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/mister-neogeo-pack/$1
+      wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/insert_coin_mame/$1
       touch /media/fat/Scripts/temp/$1
       mv /media/fat/Scripts/temp/$1 $des_mame/$1
       if [ "$TERM" == "linux" ]; then
@@ -63,7 +63,7 @@ function dlf {
     FILE=$des_mame/$1
     #echo "dl : $des_mame/$1"
 
-    wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/mister-neogeo-pack/$1
+    wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/insert_coin_mame/$1
     touch /media/fat/Scripts/temp/$1
     mv /media/fat/Scripts/temp/$1 $des_mame/$1
 }
@@ -82,7 +82,7 @@ function neo {
          echo -n "downloading $1"         
       fi
 
-      wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/insert_coin_mame/$1
+      wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/mister-neogeo-pack/$1
       touch /media/fat/Scripts/temp/$1
       mv /media/fat/Scripts/temp/$1 $des_mame/$1
 
