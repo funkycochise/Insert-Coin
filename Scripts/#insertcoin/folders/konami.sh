@@ -50,6 +50,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V"  "Top Gunner (US) [bl].mra" "_Jackal" "" "RNG"
    add "$dir" "V"  "Top Gunner (US).mra" "_Jackal" "" "RNG"
    add "$dir" "V"  "Trick Trap (World).mra" "_Labyrinth Runner" "" "STG"
+    add "$dir" "V" "Tutankham.mra" "_Tutankham" "" ""
    add "$dir" "V"  "TwinBee (Bubble System).mra" "_TwinBee" "" "STG"
 
    add "$dir" "H"  "Aliens (World set 1).mra" "_Aliens" "" "BEA"
