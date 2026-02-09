@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0209
+   add "Tutankham.mra" "_Tutankham"
+
 #0115
    add "Hishou Zame (Japan).mra" "_Flying Shark"
 
