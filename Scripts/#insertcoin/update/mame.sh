@@ -117,6 +117,9 @@ else
    echo "Updating mame folder $des_mame"
 fi 
 
+#delete all zero file in games/mame
+find "/media/fat/games/mame" -size 0 -delete
+
 #clean "amidaru.zip"
 #clean "atetrisc.zip"
 #clean "atetrisc2.zip"
