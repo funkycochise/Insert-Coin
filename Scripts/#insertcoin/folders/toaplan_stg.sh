@@ -2,11 +2,11 @@
 source ./folders/functions.sh
 loadsetup
 
-#if [ -f "$names" ]; then
+if [ -f "$names" ]; then
 #   source <(grep toaplan_stg $names)
-#else
+else
    toaplan_stg="_Toaplan_STG"
-#fi
+fi
 dir=$toaplan_stg
 
 resh=$(exist "Kyukyoku Tiger (Japan, 2P Co-op).mra")
