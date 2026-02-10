@@ -12,8 +12,9 @@ dir=$kiwako
 resv=$(exist "Mr. Jong.mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
-   add "$dir" "V" "Mr. Jong.mra" "_CrazyBlocks"
-   add "$dir" "V" "BlockBuster.mra" "_CrazyBlocks"
-   add "$dir" "V" "Crazy Blocks.mra" "_CrazyBlocks"
+   add "$dir" "V" "Mr. Jong.mra" "_Mr. Jong"
+   #both following are available in alternatives
+   #add "$dir" "V" "BlockBuster.mra" "_Mr. Jong"
+   #add "$dir" "V" "Crazy Blocks.mra" "_Mr. Jong"
    dot
 fi
