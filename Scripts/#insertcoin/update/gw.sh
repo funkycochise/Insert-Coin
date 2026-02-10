@@ -14,14 +14,14 @@ setup_gw="${setup_gw:0:3}"
 function identify_folder {
 
 #detection of plugged USB drive
-if [ -d "$USB" ]; then
-   #USB plugged becomes the target drive instead of SD card
-   des_games=$USB/games
-   target=$des_games/"Game and Watch"/
-else
+#if [ -d "$USB" ]; then
+#   #USB plugged becomes the target drive instead of SD card
+#   des_games=$USB/games
+#   target=$des_games/"Game and Watch"/
+#else
    des_games=$SD/games
    target=$des_games/"Game and Watch"/
-fi
+#fi
 
 if ! [ -d "$des_games" ]; then
    mkdir "$des_games"
