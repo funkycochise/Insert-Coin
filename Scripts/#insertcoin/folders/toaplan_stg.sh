@@ -3,7 +3,7 @@ source ./folders/functions.sh
 loadsetup
 
 if [ -f "$names" ]; then
-#   source <(grep toaplan_stg $names)
+   source <(grep toaplan_stg $names)
 else
    toaplan_stg="_Toaplan_STG"
 fi
