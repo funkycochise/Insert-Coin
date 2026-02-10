@@ -76,22 +76,22 @@ fi
 function identify_folder {
 
 #detection of plugged USB drive
-if [ -d "$USB" ]; then
-   #USB plugged becomes the target drive instead of SD card
-   des_games=$USB/games
-   des_mame=$des_games/mame
-   des_arcade=$USB/_Arcade
-   des_core=$des_arcade/cores
-   des_alt=$des_arcade/_alternatives
-   des_config=$USB/config
-else
+#if [ -d "$USB" ]; then
+#   #USB plugged becomes the target drive instead of SD card
+#   des_games=$USB/games
+#   des_mame=$des_games/mame
+#   des_arcade=$USB/_Arcade
+#   des_core=$des_arcade/cores
+#   des_alt=$des_arcade/_alternatives
+#   des_config=$USB/config
+#else
   des_games=$SD/games
   des_mame=$des_games/mame
   des_arcade=$SD/_Arcade
   des_core=$des_arcade/cores
   des_alt=$des_arcade/_alternatives
   des_config=$SD/config
-fi
+#fi
 #echo "identify_folder : $des_arcade"
 
 if ! [ -d "$des_arcade" ]; then
