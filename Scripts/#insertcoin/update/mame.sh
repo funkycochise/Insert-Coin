@@ -11,7 +11,9 @@ setup_mame="${setup_mame:0:3}"
 
 function identify_folder {
 
-if [ "$setup_mame" == "USB" ]; then
+#detection of plugged USB drive
+if [ -d "$USB" ]; then
+   #USB plugged becomes the target drive instead of SD card
    des_games=$USB/games
    des_mame=$des_games/mame
 else
