@@ -44,6 +44,7 @@ fi
 ./folders/exidy.sh "$targetdir"
 ./folders/galaxian.sh "$targetdir"
 ./folders/gottlieb.sh "$targetdir"
+#./folders/igspgm.sh "$targetdir"
 ./folders/irem.sh "$targetdir"
 ./folders/irem62.sh "$targetdir"
 ./folders/irem72.sh "$targetdir"
