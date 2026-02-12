@@ -248,7 +248,7 @@ def reset_config():
 MAIN_TOOLTIPS = {
     "Run": "Run Insert-Coin",
     "Setup": "Change parameters",
-    "About": "Insert-Coin for mister FPGA\n",
+    "About": "Insert-Coin for mister FPGA https://github.com/funkycochise",
     "Exit": "Exit application"
 }
 
