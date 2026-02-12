@@ -262,11 +262,21 @@ SECTION_TOOLTIPS = {
     "Exit": "Back to main menu"
 }
 
+OPTION_TOOLTIPS = {
+    "dualsdram": (
+        "0=Single SDRAM core\n"
+        "1=Dual SDRAM core\n"
+        "2=Both single and dual core"
+    ),
+}
+
 def draw_tooltip(stdscr, text):
     if not text:
         return
     h, w = stdscr.getmaxyx()
-    lines = textwrap.wrap(text, w-2)
+    lines = []
+    for raw_line in text.splitlines():
+        lines.extend(textwrap.wrap(raw_line, w-2) or [""])
     y = h - len(lines) - 2
     stdscr.hline(y, 0, curses.ACS_HLINE, w)
     for i, line in enumerate(lines):
@@ -306,7 +316,11 @@ def run_setup_menu(stdscr):
                 stdscr.addstr(2+i, 0,
                     ("> " if i == key_index else "  ") + line,
                     curses.color_pair(1)|style if i == key_index else curses.color_pair(2))
-            draw_tooltip(stdscr, "Toggle option value")
+            key = keys[key_index]
+            if key == "Exit":
+                draw_tooltip(stdscr, "Return to section menu")
+            else:
+                draw_tooltip(stdscr, OPTION_TOOLTIPS.get(key,"0=OFF\n1=ON"))
 
         stdscr.refresh()
         k = stdscr.getch()
