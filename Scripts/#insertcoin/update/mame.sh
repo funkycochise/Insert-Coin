@@ -39,21 +39,12 @@ function dl {
 
     if ! test -f "$FILE"; then
       #file doesn not exists
-      if [ "$TERM" == "linux" ]; then
-         #GUI
-         echo -n "   downloading $1"
-      else
-         echo -n "downloading $1"   
-      fi
+      echo -n "downloading $1"   
       wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/insert_coin_mame/$1
       touch /media/fat/Scripts/temp/$1
       mv /media/fat/Scripts/temp/$1 $des_mame/$1
-      if [ "$TERM" == "linux" ]; then
-        #GUI
-         echo -e "\r   ${BLUE}${CHECK}${NC} $1                                            "
-      else
-         echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
-      fi
+      echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
+
    #else
     # echo "$1 already exixts"
    fi
@@ -77,24 +68,13 @@ function neo {
     FILE=$des_mame/$1
     #echo "retrieve $FILE"
     if ! test -f "$FILE"; then
-      if [ "$TERM" == "linux" ]; then
-         #GUI
-         echo -n "   downloading $1"
-      else
-         echo -n "downloading $1"         
-      fi
+      echo -n "downloading $1"         
 
       wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/mister-neogeo-pack/$1
       touch /media/fat/Scripts/temp/$1
       mv /media/fat/Scripts/temp/$1 $des_mame/$1
 
-      if [ "$TERM" == "linux" ]; then
-         #GUI
-         echo -e "\r   ${BLUE}${CHECK}${NC} $1                                            "
-      else
-         echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
-      fi
-    #else
+      echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
 #     echo "$1 already exixts"
    fi
 
@@ -112,12 +92,7 @@ function clean {
 identify_folder
 #echo "des_mame $des_mame"
 
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo "   Updating mame folder $des_mame"
-else
-   echo "Updating mame folder $des_mame"
-fi 
+echo "Updating mame folder $des_mame"
 
 #delete all zero file in games/mame
 find "/media/fat/games/mame" -size 0 -delete
@@ -1196,8 +1171,4 @@ neo "zupapa.zip"
 cd /media/fat
 rm -r "$TEMP"
 
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo -e "${GREEN}${CHECK}${NC} Completed"

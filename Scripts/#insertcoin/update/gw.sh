@@ -52,22 +52,14 @@ function dl {
       #curl $ARCHIVE/$1 -O -k
       wget "$ARCHIVE/$1" -P $TEMP -q
       mv "$TEMP/$1" "$FILE" 
-      if [ "$TERM" == "linux" ]; then
-         #GUI
-         echo -e "\r   ${BLUE}${CHECK}${NC} $1                                            "
-      else
-         echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
-      fi
+      echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
+      
   fi
 
 }
 
 identify_folder
 
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo -e "Updating game&watch folder $target"
 
 if [ ! -d "$TEMP" ]; 
@@ -113,10 +105,6 @@ dl "Tropical Fish.gnw"
 dl "Turtle Bridge.gnw"
 dl "Vermin.gnw"
 
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo -e "${GREEN}${CHECK}${NC} Completed"
 
 

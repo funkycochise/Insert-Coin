@@ -2,7 +2,7 @@
 function removedir {
 
    if [ -d "$1" ];then
-      echo "removing $1"
+      echo "Removing $1"
       rm -r "$1"
    fi
 }

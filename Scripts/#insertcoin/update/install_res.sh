@@ -119,10 +119,6 @@ fi
 
 function getres {
 
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo "Getting res /media/fat/Scripts/#insertcoin/res "
 
 if [ -d "$res" ] 
@@ -145,11 +141,7 @@ if [ -f "/media/fat/Scripts/temp/res4.zip" ]
 then
    rm -r $temp/res4.zip
 fi
-
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi     
+  
 echo -e "${BLUE}${CHECK}${NC} res" 
 rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output $temp/res.zip >/dev/null)
 if [[ "$rcode" -ne 0 ]]; then
@@ -159,10 +151,6 @@ else
     rm -r $temp/res.zip
 fi
 
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo -e "${BLUE}${CHECK}${NC} res2" 
 rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res2.zip -O -k -s --output $temp/res2.zip >/dev/null)
 if [[ "$rcode" -ne 0 ]]; then
@@ -172,10 +160,6 @@ else
     rm -r $temp/res2.zip
 fi
 
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo -e "${BLUE}${CHECK}${NC} res3" 
 rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res3.zip -O -k -s --output $temp/res3.zip >/dev/null)
 if [[ "$rcode" -ne 0 ]]; then
@@ -185,10 +169,6 @@ else
     rm -r $temp/res3.zip
 fi
 
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo -e "${BLUE}${CHECK}${NC} res4" 
 rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res4.zip -O -k -s --output $temp/res4.zip >/dev/null)
 if [[ "$rcode" -ne 0 ]]; then
@@ -203,10 +183,6 @@ fi
 function installres {
 if [ -d "$res" ];
 then
-   if [ "$TERM" == "linux" ]; then
-      #GUI
-      echo -n -e "   "
-   fi
 
    echo "Installing $des_arcade"
 
@@ -303,7 +279,7 @@ then
       fi
    done
 
-   #removing res dir
+   #delete res dir
    rm -r "$res"
 
    arkanoid
@@ -335,9 +311,5 @@ if [ ! "$setup_res" == "NON" ]; then
    getres
    installres
    cleanneomra
-fi
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
 fi
 echo -e "${GREEN}${CHECK}${NC} Completed"

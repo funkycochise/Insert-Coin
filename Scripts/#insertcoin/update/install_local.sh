@@ -12,7 +12,7 @@ function processlocal {
    echo "$2"
    folder="$1/$2"
    if [ -d "$folder" ]; then
-      #echo "removing $folder"
+      #echo "rm $folder"
       rm -r "$folder"
    fi
    mkdir "$folder"

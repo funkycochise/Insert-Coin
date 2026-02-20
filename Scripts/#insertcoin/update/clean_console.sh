@@ -5,11 +5,6 @@ loadsetup
 
 CONSOLE=/media/fat/_Console
 
-
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo -e "Cleaning console mgl"
 
 #gameboy color ? remove
@@ -33,9 +28,4 @@ if [ -f "/media/fat/_Console/NeoGeo_20250206.rbf" ];then
    fi
 fi
 
-
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo -e "${GREEN}${CHECK}${NC} Completed"

@@ -42,10 +42,6 @@ function installPSX {
      #remove other core for the system
      #echo "find for PSX"
      find $CONSOLE -maxdepth 1 -type f -name "PSX*" ! -name "$target" -delete
-     if [ "$TERM" == "linux" ]; then
-        #GUI
-        echo -n -e "   "
-     fi
      echo -e "${BLUE}${CHECK}${NC} PSX"
   fi
 }
@@ -63,10 +59,6 @@ function installS32X {
     #echo "target: $target"
     mv $f $CONSOLE/$target --force
     touch $CONSOLE/$target >/dev/null
-    if [ "$TERM" == "linux" ]; then
-       #GUI
-       echo -n -e "   "
-    fi
     #remove other core for the system
     #echo "find for S32X"
     find $CONSOLE -maxdepth 1 -type f -name "S32X*" ! -name "$target" -delete
@@ -128,10 +120,6 @@ function installSaturn {
      #find $CONSOLE -maxdepth 1 -type f -name "Saturn*.rbf"
      
 
-     if [ "$TERM" == "linux" ]; then
-        #GUI
-        echo -n -e "   "
-     fi
     #echo "find for Saturn $sattarget"
     echo -e "${BLUE}${CHECK}${NC} Saturn"
   fi
@@ -150,10 +138,6 @@ function installSGB {
     #echo "target: $target"
     mv $f $CONSOLE/$target --force
     touch $CONSOLE/$target >/dev/null
-    if [ "$TERM" == "linux" ]; then
-       #GUI
-       echo -n -e "   "
-    fi
     #remove other core for the system
     #echo "find for SGB"
     find $CONSOLE -maxdepth 1 -type f -name "SGB*" ! -name "$target" -delete
@@ -177,10 +161,6 @@ function installNeoGeo {
     #echo "target: $target"
     mv $f $CONSOLE/$target --force
     touch $CONSOLE/$target >/dev/null
-    if [ "$TERM" == "linux" ]; then
-       #GUI
-       echo -n -e "   "
-    fi
     #remove other core for the system
     #echo "find for Neogeo"
     find $CONSOLE -maxdepth 1 -type f -name "NeoGeo*" ! -name "$target" -delete
@@ -268,10 +248,6 @@ function installN64 {
     #  rm -r ./$f
     #fi
   done
-  if [ "$TERM" == "linux" ]; then
-     #GUI
-     echo -n -e "   "
-  fi
   echo -e "${BLUE}${CHECK}${NC} N64"
 }
 
@@ -307,10 +283,6 @@ function installJaguar {
     rm -r $f
   done
   if [ "$installed" == "1" ]; then
-     if [ "$TERM" == "linux" ]; then
-        #GUI
-        echo -n -e "   "
-     fi
      #remove other core for the system
      #echo "find for Jaguar"
      find $CONSOLE -maxdepth 1 -type f -name "Jaguar*" ! -name "$target" -delete
@@ -342,11 +314,6 @@ function installCDi {
     fi
   done
   if [ "$installed" == "1" ]; then
-     #echo "target: $target"
-     if [ "$TERM" == "linux" ]; then
-        #GUI
-        echo -n -e "   "
-     fi
      #remove other core for the system
      #echo "find for CDi"
      target="${f:2:${#f}}"
@@ -387,10 +354,6 @@ function installPCE {
     fi
   done
   if [ "$installed" == "1" ]; then
-     if [ "$TERM" == "linux" ]; then
-        #GUI
-        echo -n -e "   "
-     fi
      #remove other core for the system
      #echo "find for TurboGrafx16"
      target="${f:2:${#f}}"
@@ -431,10 +394,6 @@ function installNES {
     fi
   done
   if [ "$installed" == "1" ]; then
-     if [ "$TERM" == "linux" ]; then
-        #GUI
-        echo -n -e "   "
-     fi
      #remove other core for the system
      #echo "find for NES"
      target="${f:2:${#f}}"
@@ -475,10 +434,6 @@ function installSNES {
     fi
   done
   if [ "$installed" == "1" ]; then
-     if [ "$TERM" == "linux" ]; then
-        #GUI
-        echo -n -e "   "
-     fi
      #remove other core for the system
      #echo "find for SNES"
      target="${f:2:${#f}}"
@@ -488,11 +443,6 @@ function installSNES {
   fi
 }
 
-
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo -e "Getting latest console cores"
 
 if [ "$psx" == "1" ]; then
@@ -529,8 +479,4 @@ if [ "$snes" == "1" ]; then
   installSNES
 fi
 
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo -e "${GREEN}${CHECK}${NC} Completed"

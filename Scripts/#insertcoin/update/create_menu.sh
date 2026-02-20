@@ -8,19 +8,10 @@ targetdir=$2
 #echo "targetdir: $targetdir"
 COL=$3
 
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
-
 loadsetup
 
 SECONDS=0
 
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo "Creating $targetdir"
 
 function linkcores {

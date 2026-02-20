@@ -3,16 +3,12 @@ source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 loadsetup
 
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
-fi
 echo -e "Cleaning obsolete/unwanted core"
 #echo "remove_other : $remove_other"
 if [ "$remove_other" == "1" ]; then
   if [ -d "/media/fat/_Other" ] 
   then
-    #echo "removing _Other"
+    #echo "rm _Other"
     rm -r "/media/fat/_Other"
   fi
 fi
@@ -176,9 +172,5 @@ fi
 if [ -f "$CORE/IremM90_20241107.rbf" ] 
 then
     find $CORE -maxdepth 1 -type f -name "IremM90_*" ! -name "IremM90_20241107.rbf" -delete
-fi
-if [ "$TERM" == "linux" ]; then
-   #GUI
-   echo -n -e "   "
 fi
 echo -e "${GREEN}${CHECK}${NC} Completed"
