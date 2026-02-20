@@ -2,9 +2,14 @@
 source ./folders/functions.sh
 loadsetup
 
+if [ -f "$names" ]; then
+   source <(grep toaplanstg $names)
+fi
+if [ -z "$toaplanstg" ]; then
+   toaplanstg="_Toaplan_STG"
+fi
+dir=$toaplanstg
 
-toaplan_stg="_Toaplan_STG"
-dir=$toaplan_stg
 
 resh=$(exist "Kyukyoku Tiger (Japan, 2P Co-op).mra")
 resv=$(exist "Truxton - Tatsujin.mra")
