@@ -3,12 +3,23 @@ source ./folders/functions.sh
 loadsetup
 
 if [ -f "$names" ]; then
+   source <(grep toaplan $names)
+fi
+if [ -z "$toaplan" ]; then
+   toaplan="_Toaplan"
+fi
+if [ -f "$names" ]; then
    source <(grep toaplanstg $names)
 fi
 if [ -z "$toaplanstg" ]; then
    toaplanstg="_Toaplan_STG"
 fi
 dir=$toaplanstg
+if [ "$show_system" == "1" ]; then
+   dir=$toaplanstg
+else
+   dir=$toaplan
+fi
 
 
 resh=$(exist "Kyukyoku Tiger (Japan, 2P Co-op).mra")
