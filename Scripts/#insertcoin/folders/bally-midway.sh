@@ -17,6 +17,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add_rep "$dir" "V" "_Pac-Man" "" "" "STG"
    add "$dir" "V" "Galaxian (Namco, Set 1).mra" "_Galaxian" "" "STG"
 
+   add "$dir" "V" "Blue Print (Midway).mra" "_Blue Print" "" ""
    add "$dir" "V" "Gorf.mra" "_Gorf" "" "STG"
    add "$dir" "V" "Journey.mra" "_Journey"
    add "$dir" "V" "Kick.mra" "_Kick"

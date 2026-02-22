@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0222
+   add "Blue Print (Midway).mra" "_Blue Print"
+
 #0209
    add "Tutankham.mra" "_Tutankham"
 
