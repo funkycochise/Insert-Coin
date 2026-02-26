@@ -15,9 +15,11 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Exerion (Taito).mra" "_Exerion" "" "STG"
+   add "$dir" "V" "Grasspin (Jaleco).mra" "_Grasspin" "" ""
    add "$dir" "V" "Naughty Boy (Jaleco).mra" "_Naughty Boy" "" "ACT"
    add "$dir" "V" "Plus Alpha.mra" "_Plus Alpha"
    add "$dir" "V" "Psychic 5 (World).mra" "_Psychic 5" "" "ACT"
+   add "$dir" "V" "Saturn (Zilec).mra" "_Saturn" "" "STG"
 
    add_rep "$dir" "H" "_Avenging Spirit"  "_Avenging Spirit" "" "ACT"
    add "$dir" "H" "chameleon.mra" "_Chameleon" "" "ACT"
