@@ -70,6 +70,9 @@ counter=0
 
 #0222
    add "Blue Print (Midway).mra" "_Blue Print"
+   add "Saturn (Zilec).mra" "_Saturn"
+   add "Grasspin (Jaleco).mra" "_Grasspin"
+   add "Juno First.mra" "_Juno First"
 
 #0209
    add "Tutankham.mra" "_Tutankham"
