@@ -182,7 +182,7 @@ if test -f "/media/fat/Scripts/#local/res.sh"; then
       /media/fat/Scripts/#local/res.sh
 fi
 
-echo -e "${BLUE}${CHECK}${NC} local res" 
+#echo -e "${BLUE}${CHECK}${NC} local res" 
 if [ -f "/media/fat/Scripts/#local/res.zip" ]; then
   unzip -qq /media/fat/Scripts/#local/res.zip -d $res
   rm -r /media/fat/Scripts/#local/res.zip

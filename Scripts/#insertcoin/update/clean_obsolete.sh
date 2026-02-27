@@ -173,4 +173,16 @@ if [ -f "$CORE/IremM90_20241107.rbf" ]
 then
     find $CORE -maxdepth 1 -type f -name "IremM90_*" ! -name "IremM90_20241107.rbf" -delete
 fi
+
+if [ -f "$CORE/hellfire_mister_20251211.rbf" ] && [ -f "$CORE/outzone_mister_20251212.rbf" ] && [ -f "$CORE/truxton_mister_20251211.rbf" ] 
+then
+   if [ -f "$CORE/zerowing_20240404.rbf" ]
+   then 
+      rm -r "$CORE/zerowing_20240404.rbf"
+   fi
+fi
+
+
 echo -e "${GREEN}${CHECK}${NC} Completed"
+
+
