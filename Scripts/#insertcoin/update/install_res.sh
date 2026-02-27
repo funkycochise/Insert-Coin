@@ -178,6 +178,17 @@ else
     rm -r $temp/res4.zip
 fi
 
+if test -f "/media/fat/Scripts/#local/res.sh"; then
+      /media/fat/Scripts/#local/res.sh
+fi
+
+echo -e "${BLUE}${CHECK}${NC} local res" 
+if [ -f "/media/fat/Scripts/#local/res.zip" ]; then
+  unzip -qq /media/fat/Scripts/#local/res.zip -d $res
+  rm -r /media/fat/Scripts/#local/res.zip
+  echo -e "${GREEN}${CHECK}${NC} Completed"
+fi
+
 }
 
 function installres {
