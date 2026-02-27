@@ -22,6 +22,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Vimana (Japan).mra" "_Vimana" "" "STG"
 
    add "$dir" "H" "Baluba-louk no Densetsu (Japan).mra" "_Baluba-louk no Densetsu"
+   add "$dir" "H" "Back Fire (Tecmo).mra" "_Back Fire" "" "STG"
    add "$dir" "H" "Raiga - Strato Fighter (US).mra" "_Raiga" "" "STG"
    add "$dir" "H" "Rygar.mra" "_Rygar" "" "ACT"
    add "$dir" "H" "Shadow Warriors (World, set 1).mra" "_Shadow Warriors" "" "BEA"

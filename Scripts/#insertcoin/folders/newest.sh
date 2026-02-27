@@ -73,6 +73,7 @@ counter=0
    add "Saturn (Zilec).mra" "_Saturn"
    add "Grasspin (Jaleco).mra" "_Grasspin"
    add "Juno First.mra" "_Juno First"
+   add "Back Fire (Tecmo).mra" "_Back Fire"
 
 #0209
    add "Tutankham.mra" "_Tutankham"
