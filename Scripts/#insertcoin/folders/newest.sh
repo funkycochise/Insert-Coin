@@ -68,9 +68,10 @@ function additem {
 
 counter=0
 
-#0222
+#0303
+   add "Vastar.mra" "_Vastar.mra"
 
-   
+#0222   
    add "Back Fire (Tecmo).mra" "_Back Fire"
    add "Blue Print (Midway).mra" "_Blue Print"
    add "Saturn (Zilec).mra" "_Saturn"
