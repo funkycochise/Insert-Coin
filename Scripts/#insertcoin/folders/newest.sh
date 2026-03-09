@@ -70,6 +70,8 @@ counter=0
 
 #0303
    add "Vastar.mra" "_Vastar.mra"
+   add "The Legend of Kage (Rev 2).mra" "_The Legend of Kage"
+   add "KiKi KaiKai (Japan).mra" "_KiKi KaiKai"
 
 #0222   
    add "Back Fire (Tecmo).mra" "_Back Fire"
