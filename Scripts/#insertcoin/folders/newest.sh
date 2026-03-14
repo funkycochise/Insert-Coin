@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0313
+   add "Caliber 50 (Ver. 1.01).mra" "_Caliber 50"
+
 #0303
    add "Vastar.mra" "_Vastar"
    add "Planet Probe.mra" "_Planet Probe"
