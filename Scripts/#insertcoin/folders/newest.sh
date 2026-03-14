@@ -69,7 +69,8 @@ function additem {
 counter=0
 
 #0303
-   add "Vastar.mra" "_Vastar.mra"
+   add "Vastar.mra" "_Vastar"
+   add "Planet Probe.mra" "_Planet Probe"
    add "The Legend of Kage (Rev 2).mra" "_The Legend of Kage"
    add "KiKi KaiKai (Japan).mra" "_KiKi KaiKai"
 
