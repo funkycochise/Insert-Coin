@@ -29,6 +29,6 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Silkworm.mra" "_Silkworm" "" "STG"
    add "$dir" "H" "Solomon's Key.mra" "_Solomons Key" "" "PUZ"
    add "$dir" "H" "Tehkan World Cup (set 1).mra" "_Tehkan World Cup" "" "SPO"
-   add "$dir" "H" "Wild Fang - Tecmo Knight.mra" "_Wild Fang" "" "BEA"
+   add "$dir" "H" "Wild Fang - Tecmo Knight (World).mra" "_Wild Fang" "" "BEA"
    dot
 fi

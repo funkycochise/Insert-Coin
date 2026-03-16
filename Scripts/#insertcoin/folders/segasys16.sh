@@ -52,7 +52,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Cotton (set 4, World) (FD1094 317-0181a).mra" "_Cotton" "" "STG"
    add "$dir" "H" "Dunk Shot (Rev C, FD1089A 317-0022).mra" "_Dunk Shot" "" "SPO"
    add "$dir" "H" "Dynamite Dux (set 3, World) (FD1094 317-0096).mra" "_Dynamite Dux" "" "BEA"
-   add "$dir" "H" "E-Swat - Cyber Police (set 4, World) (FD1094 317-0130).mra" "_E-Swat" "" "ACT"
+   add "$dir" "H" "Cyber Police ESWAT (set 4, World) (FD1094 317-0130).mra" "_E-Swat" "" "ACT"
    add "$dir" "H" "Excite League (FD1094 317-0079).mra" "_Excite League"
    add "$dir" "H" "Fantasy Zone (Rev A, World, S16A) [No Protection].mra" "_Fantasy Zone" "" "STG"
    add "$dir" "H" "Fantasy Zone II - The Tears of Opa-Opa (System 16C version).mra" "_Fantasy Zone II" "" "STG"

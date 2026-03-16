@@ -21,7 +21,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Arkanoid (US).mra" "_Arkanoid"
    add "$dir" "V" "Arkanoid (W).mra" "_Arkanoid"
    add "$dir" "V" "Balloon Bomber.mra" "_Balloon Bomber"
-   add "$dir" "V" "Bronx.mra" "_Bronx"
+   add "$dir" "V" "Bronx (bootleg of Cycle Shooting).mra" "_Bronx"
    add "$dir" "V" "Colony 7 (Set 1).mra" "_Colony7" "" "ACT"
    add "$dir" "V" "Crazy Balloon.mra" "_Crazy Balloon"
    add "$dir" "V" "Dr. Toppel's Adventure (World).mra" "_Dr. Toppel's Adventure"
@@ -44,15 +44,15 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Insector X (World).mra" "_Insector X" "" "STG"
    add "$dir" "H" "Kick And Run.mra" "_Kick And Run"
    add "$dir" "H" "KiKi KaiKai (Japan).mra" "_KiKi KaiKai" "" "ACT"
-   add "$dir" "H" "Onna Sanshirou - Typhoon Gal.mra" "_Onna Sanshirou" "" "VSF"
+   add "$dir" "H" "Onna Sanshirou - Typhoon Gal (rev 1).mra" "_Onna Sanshirou" "" "VSF"
    add "$dir" "H" "Plump Pop (Japan).mra" "_Plump Pop"
    add "$dir" "H" "Rastan (World Rev 1).mra" "_Rastan" "" "ACT"
-   add "$dir" "H" "Rumba Lumber.mra" "_Rumba Lumber" "" ""
+   add "$dir" "H" "Rumba Lumber (rev 1).mra" "_Rumba Lumber" "" ""
    add "$dir" "H" "The FairyLand Story.mra" "_The FairyLand Story" "" "ACT"
    add "$dir" "H" "The Legend of Kage (Rev 2).mra" "_The Legend of Kage" "" "ACT"
    add "$dir" "H" "The NewZealand Story (World, new version) (P0-043A PCB).mra" "_The NewZealand Story" "" "ACT"
    add "$dir" "H" "Victorious Nine.mra" "_Victorious Nine" "" "SPO"
-   add "$dir" "H" "N.Y. Captor.mra" "_N.Y. Captor"
+   add "$dir" "H" "N.Y. Captor (rev 2).mra" "_N.Y. Captor"
 
    dot
 fi
