@@ -180,7 +180,7 @@ dir=$essential
    add "$dir" "H" "Double Dragon (World set 1).mra" "_Double Dragon" "" "BEA"
    add "$dir" "H" "Double Dragon II The Revenge (World).mra" "_Double Dragon II The Revenge" "" "BEA"
    add "$dir" "H" "Dragon Breed (Japan, M72 hardware).mra" "_Dragon Breed" "" "STG"
-   add "$dir" "H" "Elevator Action Bootleg.mra" "_Elevator Action" "" "ACT"
+   add "$dir" "H" "Elevator Action.mra" "_Elevator Action" "" "ACT"
    add "$dir" "H" "Cyber Police ESWAT (set 4, World) (FD1094 317-0130).mra" "_Cyber Police ESWAT" "" "ACT"
    add "$dir" "H" "Express Raider.mra" "_Express Raider" "" "RNG"
    add "$dir" "H" "Fantasy Zone (Rev A, World, S16A) [No Protection].mra" "_Fantasy Zone" "" "STG"

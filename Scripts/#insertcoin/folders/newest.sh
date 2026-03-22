@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0321
+   add "Adventure Canoe.mra" "_Adventure Canoe"
+
 #0313
    add "Caliber 50 (Ver. 1.01).mra" "_Caliber 50"
 
