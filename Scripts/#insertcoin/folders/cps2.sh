@@ -18,9 +18,10 @@ if [ "$show_system" == "1" ]; then
 else
    dir=$capcom
 fi
-
-resh=$(exist "Alien vs. Predator (Euro 940520).mra")
-resv=$(exist "19XX The War Against Destiny (Euro 960104).mra")
+mrah="Alien vs. Predator (Euro 940520).mra"
+mrav="19XX The War Against Destiny (Euro 960104).mra"
+resh=$(exist $mrah)
+resv=$(exist $mrav)
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V" "19XX The War Against Destiny (Europe 960104).mra" "_19XX The War Against Destiny" "" "STG"
@@ -69,4 +70,6 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "X-Men Vs. Street Fighter (Euro 961004).mra" "_X-Men Vs. Street Fighter" "" "VSF"
    add "$dir" "H" "Final Fight AE CPS2 Patch.mra" "_Final Fight AE" "" "BEA"
    dot
+else
+   echo "either $mrah or $mrav doesn't exist : abort $dir creation"
 fi
