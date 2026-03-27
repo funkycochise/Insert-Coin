@@ -71,5 +71,5 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Final Fight AE CPS2 Patch.mra" "_Final Fight AE" "" "BEA"
    dot
 else
-   echo "either $mrah or $mrav doesn't exist : abort $dir creation"
+   echo "either $mrah or $mrav doesn't exist : abort $dir creation" >> /media/fat/Scripts/#insertcoin/out.txt
 fi
