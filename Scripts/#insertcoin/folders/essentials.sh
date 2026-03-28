@@ -196,7 +196,7 @@ dir=$essential
    add "$dir" "H" "Hyper Street Fighter II The Anniversary Edition (USA 040202).mra" "_Hyper Street Fighter II The Anniversary Edition" "" "VSF"
    add "$dir" "H" "In The Hunt (World).mra" "_In The Hunt" "" "STG"
    add "$dir" "H" "Insector X (World).mra" "_Insector X" "" "STG"
-   add "$dir" "H" "Jungle King.mra" "_Jungle King"
+   add "$dir" "H" "Jungle King Japan.mra" "_Jungle King"
    add "$dir" "H" "Karnov (US, rev 6).mra" "_Karnov" "" "RNG"
    add "$dir" "H" "Kung-Fu Master (W).mra" "_Kung-Fu Master" "" "ACT"
    add "$dir" "H" "Legend of Hero Tonma (Japan).mra" "_Legend of Hero Tonma"
