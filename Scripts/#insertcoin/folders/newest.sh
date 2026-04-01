@@ -68,6 +68,10 @@ function additem {
 
 counter=0
 
+#0401
+   add "Mat Mania.mra" "_Mat Mania"
+   add "Mania Challenge (Set 1).mra" "_Mania Challenge"
+
 #0321
    add "Adventure Canoe.mra" "_Adventure Canoe"
 
