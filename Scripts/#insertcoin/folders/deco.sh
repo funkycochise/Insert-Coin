@@ -28,5 +28,6 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Secret Agent (World, revision 3).mra" "_Secret Agent" "" "RNG"
    add "$dir" "H" "Express Raider.mra" "_Express Raider" "" "RNG"
    add "$dir" "H" "Western Express (Japan, rev 4).mra" "_Express Raider" "" "RNG"
+   add "$dir" "H" "Tumble Pop (World).mra" "_Tumble Pop" "" "ACT"
    dot
 fi

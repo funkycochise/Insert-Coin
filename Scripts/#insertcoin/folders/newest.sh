@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0402
+   add "Tumble Pop (World).mra" "_Tumble Pop"
+
 #0401
    add "Mat Mania.mra" "_Mat Mania"
    add "Mania Challenge (Set 1).mra" "_Mania Challenge"
