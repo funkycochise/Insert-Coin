@@ -12,7 +12,7 @@ NAMES_FILE = "names.ini"
 # ------------------- Config par défaut -------------------
 DEFAULT_CONFIG = {
     "update": {"main_mister": "0","mame_rom": "0","gnw_rom": "0","additional_res": "0","console_core": "0","dualsdram": "0"},
-    "console": {"psx": "1","s32x": "1","saturn": "1","sgb": "1","neogeo": "1","n64": "1","jaguar": "1","cdi": "1","pce": "1","nes": "1","snes": "1"},
+    "console": {"psx": "1","s32x": "1","saturn": "1","sgb": "1","neogeo": "1","n64": "1","jaguar": "1","cdi": "1","pce": "1","nes": "1","snes": "1","megadrive": "1","virtualboy": "1"},
     "clean": {"console_mgl": "0","obsolete_core": "0","remove_other": "0"},
     "folder": {
         "essential": "1",
@@ -99,6 +99,7 @@ rare="_Rare"
 robotron="_Robotron"
 scramble="_Scramble"
 sega="_Sega"
+seta="_Seta"
 outrun="_Sega-Outrun"
 segasys1="_Sega-System-1"
 segasys2="_Sega-System-2"
@@ -137,11 +138,30 @@ def normalize_ini(filename):
                 f.write(line)
 
 def ensure_ini(filename, default_config):
-    """Créer setup.ini si absent"""
-    if not os.path.exists(filename):
-        parser = configparser.ConfigParser()
-        for sec, opts in default_config.items():
-            parser[sec] = opts
+    """
+    Crée setup.ini si absent
+    et ajoute automatiquement les sections / clés manquantes
+    sans écraser les valeurs existantes.
+    """
+    parser = configparser.ConfigParser()
+    parser.optionxform = str  # conserve la casse
+
+    if os.path.exists(filename):
+        parser.read(filename, encoding="utf-8")
+
+    modified = False
+
+    for sec, opts in default_config.items():
+        if not parser.has_section(sec):
+            parser.add_section(sec)
+            modified = True
+
+        for key, value in opts.items():
+            if not parser.has_option(sec, key):
+                parser.set(sec, key, value)
+                modified = True
+
+    if modified or not os.path.exists(filename):
         with open(filename, "w", encoding="utf-8") as f:
             parser.write(f)
         normalize_ini(filename)
