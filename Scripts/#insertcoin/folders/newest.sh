@@ -70,6 +70,7 @@ counter=0
 
 #0402
    add "Tumble Pop (World).mra" "_Tumble Pop"
+   add "Kangaroo.mra" "_Kangaroo"
 
 #0401
    add "Mat Mania.mra" "_Mat Mania"
