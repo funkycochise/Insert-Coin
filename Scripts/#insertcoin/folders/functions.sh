@@ -269,6 +269,17 @@ snes=${snes:0:1}
 #if [ "$debug" == "1" ]; then
 #   echo "snes: $snes"
 #fi
+source <(grep megadrive $ini)
+megadrive=${megadrive:0:1}
+#if [ "$debug" == "1" ]; then
+#   echo "megadrive: $megadrive"
+#fi
+source <(grep virtualboy $ini)
+virtualboy=${virtualboy:0:1}
+#if [ "$debug" == "1" ]; then
+#   echo "virtualboy: $virtualboy"
+#fi
+
 source <(grep folder_name $ini)
 #echo "folder_name: $folder_name"
 folder_name=${folder_name:0:${#folder_name}}
@@ -330,7 +341,7 @@ genre="$6"
 #echo "manufacturer_subfolder : $manufacturer_subfolder"
 #echo "dir: $dir"
 #echo "orientation: $orientation"
-#echo "mra: $mra"
+#echo "mra: $mra" 
 #echo "sub: $sub"
 #echo "renamed: $renamed"
 
