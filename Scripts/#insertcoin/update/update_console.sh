@@ -462,6 +462,93 @@ function installSNES {
   fi
 }
 
+function installMegadrive {
+
+  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/Megadrive.zip -O -k -s --output /media/fat/Scripts/temp/Megadrive.zip
+  if [ -f "/media/fat/Scripts/temp/Megadrive.zip" ];
+  then
+    unzip -qq /media/fat/Scripts/temp/Megadrive.zip -d /media/fat/Scripts/temp
+    rm -r /media/fat/Scripts/temp/Megadrive.zip 
+
+    #echo "remove previous Megadrive cores"
+    #for f in $(ls /media/fat/_Console/Megadrive*.rbf )
+    #do
+    #   #echo "file $f"
+    #   rm -r $f
+    #done
+
+    cd /media/fat/Scripts/temp
+    installed="0"
+    for f in $(ls ./*.rbf)
+    do
+      #echo "file: $f"
+      target="${f:2:${#f}}"
+      #echo "Megadrive target: $target"
+      target=$f
+      mv $f $CONSOLE/$target
+      touch $CONSOLE/$target >/dev/null
+      installed="1"
+      #clean any file left
+      if test -f "./$f"; then
+        rm -r ./$f
+      fi
+    done
+    if [ "$installed" == "1" ]; then
+       #remove other core for the system
+       #echo "find for Megadrive"
+       target="${f:2:${#f}}"
+       #echo "target: $target"
+       
+       find $CONSOLE -maxdepth 1 -type f -name "MegaDrive*" ! -name "$target" -delete
+       echo -e "${BLUE}${CHECK}${NC} MegaDrive"
+    fi
+  fi
+}
+
+function installVirtualBoy {
+
+  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/VirtualBoy.zip -O -k -s --output /media/fat/Scripts/temp/VirtualBoy.zip
+  if [ -f "/media/fat/Scripts/temp/VirtualBoy.zip" ];
+  then
+    unzip -qq /media/fat/Scripts/temp/VirtualBoy.zip -d /media/fat/Scripts/temp
+    rm -r /media/fat/Scripts/temp/VirtualBoy.zip 
+
+    #echo "remove previous VirtualBoy cores"
+    #for f in $(ls /media/fat/_Console/VirtualBoy*.rbf )
+    #do
+    #   #echo "file $f"
+    #   rm -r $f
+    #done
+
+    cd /media/fat/Scripts/temp
+    installed="0"
+    for f in $(ls ./*.rbf)
+    do
+      #echo "file: $f"
+      target="${f:2:${#f}}"
+      #echo "VirtualBoy target: $target"
+      target=$f
+      mv $f $CONSOLE/$target
+      touch $CONSOLE/$target >/dev/null
+      installed="1"
+      #clean any file left
+      if test -f "./$f"; then
+        rm -r ./$f
+      fi
+    done
+    if [ "$installed" == "1" ]; then
+       #remove other core for the system
+       #echo "find for VirtualBoy"
+       target="${f:2:${#f}}"
+       #echo "target: $target"
+       
+       find $CONSOLE -maxdepth 1 -type f -name "VirtualBoy*" ! -name "$target" -delete
+       echo -e "${BLUE}${CHECK}${NC} VirtualBoy"
+    fi
+  fi
+}
+
+
 echo -e "Getting latest console cores"
 
 if [ "$psx" == "1" ]; then
@@ -497,5 +584,12 @@ fi
 if [ "$snes" == "1" ]; then
   installSNES
 fi
+if [ "$megadrive" == "1" ]; then
+  installMegadrive
+fi
+if [ "$virtualboy" == "1" ]; then
+  installVirtualBoy
+fi
+
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
