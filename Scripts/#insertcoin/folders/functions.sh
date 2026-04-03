@@ -279,6 +279,11 @@ virtualboy=${virtualboy:0:1}
 #if [ "$debug" == "1" ]; then
 #   echo "virtualboy: $virtualboy"
 #fi
+source <(grep pana3do $ini)
+pana3do=${pana3do:0:1}
+#if [ "$debug" == "1" ]; then
+#   echo "pana3do: $pana3do"
+#fi
 
 source <(grep folder_name $ini)
 #echo "folder_name: $folder_name"
