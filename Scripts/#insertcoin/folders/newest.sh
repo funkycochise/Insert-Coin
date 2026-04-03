@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0403
+   add "Psycho-Nics Oscar (World).mra" "_Psycho-Nics Oscar"
+
 #0402
    add "Tumble Pop (World).mra" "_Tumble Pop"
    add "Kangaroo.mra" "_Kangaroo"
