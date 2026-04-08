@@ -69,7 +69,7 @@ function additem {
 counter=0
 
 #0404
-   add "Darius.mra" "_Darius"
+   add "Darius (World).mra" "_Darius"
 
 #0403
    add "Psycho-Nics Oscar (World).mra" "_Psycho-Nics Oscar"
