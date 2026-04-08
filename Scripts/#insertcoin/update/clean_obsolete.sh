@@ -178,10 +178,7 @@ then
   then
     rm -r "$ARCADE/Darius.mra"
   fi
-  if [ -f "$ALT/_Darius/Darius.mra" ] 
-  then
-    rm -r "$ALT/_Darius/Darius.mra"
-  fi
+  rm -r "$ALT/_Darius/Darius.mra" > /dev/null 2>&1
 fi
 
 
