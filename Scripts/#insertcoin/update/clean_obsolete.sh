@@ -178,6 +178,10 @@ then
   then
     rm -r "$ARCADE/Darius.mra"
   fi
+  if [ -f "$ALT/_Darius/Darius.mra" ] 
+  then
+    rm -r "$ALT/_Darius/Darius.mra"
+  fi
 fi
 
 
