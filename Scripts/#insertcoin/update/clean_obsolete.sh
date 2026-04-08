@@ -168,6 +168,18 @@ then
   fi
 fi
 
+if [ -f "$CORE/Darius_20260407.rbf" ] 
+then
+  if [ -f "$CORE/Darius_20260404.rbf" ] 
+  then
+    rm -r "$CORE/Darius_20260404.rbf"
+  fi
+  if [ -f "$ARCADE/Darius.mra" ] 
+  then
+    rm -r "$ARCADE/Darius.mra"
+  fi
+fi
+
 
 if [ -f "$CORE/IremM90_20241107.rbf" ] 
 then
