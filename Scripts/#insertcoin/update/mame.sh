@@ -950,6 +950,7 @@ dl "matmania.zip"
 dl "maniach.zip"
 dl "tumblep.zip"
 dl "darius.zip"
+dl "turfmastscot.zip"
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
