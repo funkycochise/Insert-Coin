@@ -548,6 +548,50 @@ function installVirtualBoy {
   fi
 }
 
+function installpana3DO {
+
+  curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/3DO.zip -O -k -s --output /media/fat/Scripts/temp/3DO.zip
+  if [ -f "/media/fat/Scripts/temp/3DO.zip" ];
+  then
+    unzip -qq /media/fat/Scripts/temp/3DO.zip -d /media/fat/Scripts/temp
+    rm -r /media/fat/Scripts/temp/3DO.zip 
+
+    #echo "remove previous 3DO cores"
+    #for f in $(ls /media/fat/_Console/3DO*.rbf )
+    #do
+    #   #echo "file $f"
+    #   rm -r $f
+    #done
+
+    cd /media/fat/Scripts/temp
+    installed="0"
+    for f in $(ls ./*.rbf)
+    do
+      #echo "file: $f"
+      target="${f:2:${#f}}"
+      #echo "3DO target: $target"
+      target=$f
+      mv $f $CONSOLE/$target
+      touch $CONSOLE/$target >/dev/null
+      installed="1"
+      #clean any file left
+      if test -f "./$f"; then
+        rm -r ./$f
+      fi
+    done
+    if [ "$installed" == "1" ]; then
+       #remove other core for the system
+       #echo "find for VirtualBoy"
+       target="${f:2:${#f}}"
+       #echo "target: $target"
+       
+       find $CONSOLE -maxdepth 1 -type f -name "3DO*" ! -name "$target" -delete
+       echo -e "${BLUE}${CHECK}${NC} 3DO"
+    fi
+  fi
+}
+
+
 
 echo -e "Getting latest console cores"
 
@@ -590,6 +634,11 @@ fi
 if [ "$virtualboy" == "1" ]; then
   installVirtualBoy
 fi
+if [ "$pana3do" == "1" ]; then
+  installpana3DO
+fi
+3do
+
 
 
 echo -e "${GREEN}${CHECK}${NC} Completed"

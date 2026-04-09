@@ -168,17 +168,12 @@ then
   fi
 fi
 
-if [ -f "$CORE/Darius_20260407.rbf" ] 
+if [ -f "$CORE/Darius_20260409.rbf" ] 
 then
-  if [ -f "$CORE/Darius_20260404.rbf" ] 
-  then
-    rm -r "$CORE/Darius_20260404.rbf"
-  fi
-  if [ -f "$ARCADE/Darius.mra" ] 
-  then
-    rm -r "$ARCADE/Darius.mra"
-  fi
-  rm -r "$ALT/_Darius/Darius.mra" > /dev/null 2>&1
+    rm -r "$CORE/Darius_20260407.rbf" > /dev/null 2>&1
+    rm -r "$CORE/Darius_20260404.rbf" > /dev/null 2>&1
+    rm -r "$ARCADE/Darius.mra" > /dev/null 2>&1
+    rm -r "$ALT/_Darius/Darius.mra" > /dev/null 2>&1
 fi
 
 
