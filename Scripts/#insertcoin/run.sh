@@ -77,6 +77,7 @@ fi
 if [ "$skip_res_local" != "1" ]; then
    if [ "$mame_rom" == "1" ]; then
      ./update/mame.sh
+     ./update/neogeo.sh
    fi
    if [ "$gnw_rom" == "1" ]; then
      ./update/gw.sh
@@ -84,9 +85,9 @@ if [ "$skip_res_local" != "1" ]; then
    if [ "$console_mgl" == "1" ]; then
      ./update/clean_console.sh
    fi
-   if [ "$obsolete_core" == "1" ]; then
+   #if [ "$obsolete_core" == "1" ]; then
      ./update/clean_obsolete.sh
-   fi 
+   #fi 
    if [ "$console_core" == "1" ]; then
      ./update/update_console.sh
    fi
