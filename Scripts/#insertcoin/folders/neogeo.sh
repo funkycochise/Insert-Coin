@@ -102,6 +102,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Neo Drift Out - New Technology.mgl" "" "" "SPO"
    add "$dir" "H"  "Neo Mr. Do!.mgl" "" "" "PUZ"
    add "$dir" "H"  "Neo Turf Masters.mgl" "" "" "SPO"
+   add "$dir" "H"  "Big Tournament Golf (Hack Scotland Course from CD).mgl" "" "" "SPO"
    add "$dir" "H"  "Neo-Geo Cup '98 - The Road to the Victory.mgl" "" "" "SPO"
    add "$dir" "H"  "Nightmare in the Dark.mgl" "" "" "ACT"
    add "$dir" "H"  "Ninja Combat.mgl" "" "" "BEA"
