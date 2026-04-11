@@ -950,7 +950,7 @@ dl "matmania.zip"
 dl "maniach.zip"
 dl "tumblep.zip"
 dl "darius.zip"
-dl "turfmastscot.zip"
+
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
@@ -1177,6 +1177,7 @@ neo "wjammers.zip"
 neo "zedblade.zip"
 neo "zintrckb.zip"
 neo "zupapa.zip"
+neo "turfmastscot.zip"
 
 
 cd /media/fat
