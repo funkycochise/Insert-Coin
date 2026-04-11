@@ -34,7 +34,7 @@ ARCADE=/media/fat/_Arcade
 ALT=/media/fat/_Arcade/_alternatives
 CORE=/media/fat/_Arcade/Cores
 CONSOLE=/media/fat/_Console
-
+NEOGEO=/media/fat/games/NEOGEO
 
 #get setup settings
 ini=/media/fat/Scripts/#insertcoin/setup.ini
