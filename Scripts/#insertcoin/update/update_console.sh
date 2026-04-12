@@ -637,7 +637,6 @@ fi
 if [ "$pana3do" == "1" ]; then
   installpana3DO
 fi
-3do
 
 
 
