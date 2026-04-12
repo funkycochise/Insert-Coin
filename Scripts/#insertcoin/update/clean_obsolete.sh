@@ -168,7 +168,7 @@ then
   fi
 fi
 
-if [ -f "$CORE/Darius_20260409.rbf" ] 
+if [ -f "$CORE/Darius_20260411.rbf" ] 
 then
     rm -r "$CORE/Darius_20260407.rbf" > /dev/null 2>&1
     rm -r "$CORE/Darius_20260404.rbf" > /dev/null 2>&1
