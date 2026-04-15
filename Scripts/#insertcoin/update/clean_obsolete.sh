@@ -149,9 +149,11 @@ then
     rm -r "$CORE/NeoGeo-MVS_20220218.rbf"
 fi
 #tar Force
-find $CORE -maxdepth 1 -type f -name "StarForce_*" ! -name "StarForce_20250803.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "StarForce_*" ! -name "Starforce_20260414.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "NaughtyBoy_*" ! -name "NaughtyBoy_20250424.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "NaughtyBoy_*" ! -name "NaughtyBoy_20250428.rbf" -delete
+
+find $CORE -maxdepth 1 -type f -name "Darius_*" ! -name "Darius_20260411.rbf" -delete
 
 if [ -f "$CORE/mazinger_mister_20250804.rbf" ] 
 then
@@ -176,10 +178,7 @@ then
     rm -r "$ALT/_Darius/Darius.mra" > /dev/null 2>&1
 fi
 
-if [ -f "$CORE/Starforce_20260414.rbf" ] 
-then
-    rm -r "$CORE/StarForce_20250803.rbf.rbf" > /dev/null 2>&1
-fi
+
 
 
 if [ -f "$CORE/IremM90_20241107.rbf" ] 
