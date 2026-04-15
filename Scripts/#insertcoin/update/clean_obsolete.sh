@@ -176,6 +176,11 @@ then
     rm -r "$ALT/_Darius/Darius.mra" > /dev/null 2>&1
 fi
 
+if [ -f "$CORE/Starforce_20260414.rbf" ] 
+then
+    rm -r "$CORE/StarForce_20250803.rbf.rbf" > /dev/null 2>&1
+fi
+
 
 if [ -f "$CORE/IremM90_20241107.rbf" ] 
 then
