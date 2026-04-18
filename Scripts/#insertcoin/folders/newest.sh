@@ -68,6 +68,11 @@ function additem {
 
 counter=0
 
+#0418
+   add "Mortal Kombat (Rev. 4.0 09-28-92).mra" "_Mortal Kombat"
+   add "Smash T.V. (Rev. 8.00).mra" "_Smash TV"
+   add "NARC (Rev. 7.00).mra" "_NARC"
+
 #0404
    add "Darius (World).mra" "_Darius"
 
