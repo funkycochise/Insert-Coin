@@ -7,11 +7,10 @@ if [ -f "$names" ]; then
 else
    midwayy="_Midway_Y-Z-Units"
 fi
+midwayy="_Midway_Y-Z-Units"
 dir=$midwayy
 
-midwayy="_Midway_Y-Z-Units"
-
-resh=$(exist "Mortal Kombat (rev 4.0 09-28-92).mra")
+resh=$(exist "Mortal Kombat (Rev. 4.0 09-28-92).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "H"  "High Impact Football (rev LA5 02-15-91).mra" "_High Impact Football"
