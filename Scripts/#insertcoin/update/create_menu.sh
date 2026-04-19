@@ -53,7 +53,7 @@ fi
 ./folders/mcr3.sh "$targetdir"
 ./folders/mcr3mono.sh "$targetdir"
 ./folders/mcr3scroll.sh "$targetdir"
-./foldersmidwayyz.sh "$targetdir"
+./folders/midwayyz.sh "$targetdir"
 ./folders/namco.sh "$targetdir"
 ./folders/namco_sys1.sh "$targetdir"
 ./folders/namco_sys86.sh "$targetdir"
