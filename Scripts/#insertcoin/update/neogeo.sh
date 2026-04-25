@@ -69,11 +69,12 @@ rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycoch
 if [[ "$rcode" -ne 0 ]]; then
     echo "Failed to download file romsets.xml"
 else
-   if [ -f "$NEOGEO/romsets.xml" ];
-   then
+   if [ -f "$NEOGEO/romsets.xml" ]; then
       #backup
-      echo "backup created $NEOGEO/romsets.bak"
-      mv "$NEOGEO/romsets.xml" "$NEOGEO/romsets.bak"
+      if ! [ -f "$NEOGEO/romsets.bak" ]; then
+         echo "backup created $NEOGEO/romsets.bak"
+         mv "$NEOGEO/romsets.xml" "$NEOGEO/romsets.bak"
+      fi
    fi
    mv $TEMP/romsets.xml $NEOGEO/romsets.xml
    touch $NEOGEO/romsets.xml
@@ -88,22 +89,27 @@ function neo {
 
     FILE=$des_mame/$1
     FILENEO=$NEOGEO/$1 
-    #echo "retrieve $FILE"
-    if ! test -f "$FILE"; then
-      echo -n "downloading $1"         
-      wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/mister-neogeo-pack/$1
-      touch /media/fat/Scripts/temp/$1
-      mv /media/fat/Scripts/temp/$1 $des_mame/$1
+    #echo "retrieving $FILENEO"
 
-      echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
-    fi
     if ! test -f "$FILENEO"; then
-      cp $FILE $FILENEO
-      echo -n "copying $FILENEO"
-      echo -e "\r${BLUE}${CHECK}${NC} $FILENEO                                            "
-      touch $FILENEO
+       if test -f "$FILE"; then
+          echo -n "copying $FILENEO"   
+          mv "$FILE" "$FILENEO"
+       else
+         echo -n "downloading $1"         
+         wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/mister-neogeo-pack/$1
+         touch /media/fat/Scripts/temp/$1
+         echo -e "\r${BLUE}${CHECK}${NC} $FILENEO                                            "
+         touch $FILENEO
+         mv /media/fat/Scripts/temp/$1 $FILENEO
+       fi
     fi
-
+    #final cleanup for mame folder
+    
+    if test -f "$FILE"; then
+      rm -r $FILE
+      echo -n "removing $FILE"
+    fi
 
 }
 
