@@ -77,8 +77,11 @@ fi
 if [ "$skip_res_local" != "1" ]; then
    if [ "$mame_rom" == "1" ]; then
      ./update/mame.sh
+   fi
+   if [ "$neogeo_rom" == "1" ]; then
      ./update/neogeo.sh
    fi
+
    if [ "$gnw_rom" == "1" ]; then
      ./update/gw.sh
    fi
