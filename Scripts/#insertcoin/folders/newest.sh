@@ -68,6 +68,10 @@ function additem {
 
 counter=0
 
+#0425
+   add "Darius II (Japan, rev 1).mra" "_Darius II"
+   add "The Ninja Warriors (Japan).mra" "_The Ninja Warriors"
+
 #0418
    add "Mortal Kombat (Rev. 4.0 09-28-92).mra" "_Mortal Kombat"
    add "Smash T.V. (Rev. 8.00).mra" "_Smash TV"
@@ -75,7 +79,7 @@ counter=0
 
 #0404
    add "Darius (World).mra" "_Darius"
-   add "Big Tournament Golf (Hack Scotland Course from CD).mgl" "_Neo Turf Masters"
+   add "Big Tournament Golf (Hack Scotland Course from CD).mgl" "_Neo Turf Masters" "_Big Tournament Golf (Hack Scotland Course from CD)"
 
 #0403
    add "Psycho-Nics Oscar (World).mra" "_Psycho-Nics Oscar"
