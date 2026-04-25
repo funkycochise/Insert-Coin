@@ -290,6 +290,8 @@ neo "zedblade.zip"
 neo "zintrckb.zip"
 neo "zupapa.zip"
 neo "turfmastscot.zip"
+neo "TTE_shinobi.zip"
+neo "TTE_goldenaxe.zip"
 
 xml
 

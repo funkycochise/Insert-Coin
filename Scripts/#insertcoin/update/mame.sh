@@ -934,6 +934,8 @@ dl "maniach.zip"
 dl "tumblep.zip"
 dl "darius.zip"
 dl "narc.zip"
+dl "darius2.zip"
+dl "ninjaw.zip"
 
 
 #special_echo "Downloading missing STV mame roms"
