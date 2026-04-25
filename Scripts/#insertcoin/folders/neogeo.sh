@@ -1,197 +1,300 @@
-#!/bin/bash
-source ./folders/functions.sh
-loadsetup
+ # !/bin/bash
+source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
-if [ -f "$names" ]; then
-   source <(grep neogeo $names)
+TEMP=/media/fat/Scripts/temp
+SD=/media/fat
+USB=/media/usb0
+
+source <(grep setup_mame $ini)
+setup_mame="${setup_mame:0:3}"
+#echo "setup_mame: $setup_mame"
+
+function identify_folder {
+
+#detection of plugged USB drive
+#if [ -d "$USB" ]; then
+#   #USB plugged becomes the target drive instead of SD card
+#   des_games=$USB/games
+#   des_mame=$des_games/mame
+#else
+   des_games=$SD/games
+   des_mame=$des_games/mame
+#fi
+if ! [ -d "$des_games" ]; then
+   mkdir $des_games
+fi
+if ! [ -d "$des_mame" ]; then
+   mkdir $des_mame
+fi
+if [ ! -d "$TEMP" ] 
+then
+   mkdir $TEMP
+fi 
+}
+
+
+function dlf {
+
+    FILE=$des_mame/$1
+    #echo "dl : $des_mame/$1"
+
+    wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/insert_coin_mame/$1
+    touch /media/fat/Scripts/temp/$1
+    mv /media/fat/Scripts/temp/$1 $des_mame/$1
+}
+
+function dl {
+
+    FILE=$des_mame/$1
+    #echo "dl : $des_mame/$1"
+
+    if ! test -f "$FILE"; then
+      #file doesn not exists
+      echo -n "downloading $1"   
+      wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/insert_coin_mame/$1
+      touch /media/fat/Scripts/temp/$1
+      mv /media/fat/Scripts/temp/$1 $des_mame/$1
+      echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
+
+   #else
+    # echo "$1 already exixts"
+   fi
+
+}
+
+function xml {
+echo "$TEMP"
+echo -e "${BLUE}${CHECK}${NC} romsets.xml" 
+rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/romsets.xml -O -k -s --output $TEMP/romsets.xml >/dev/null)
+if [[ "$rcode" -ne 0 ]]; then
+    echo "Failed to download file romsets.xml"
 else
-   neogeo="_Neo-geo"
+   if [ -f "$NEOGEO/romsets.xml" ]; then
+      #backup
+      if ! [ -f "$NEOGEO/romsets.bak" ]; then
+         echo "backup created $NEOGEO/romsets.bak"
+         mv "$NEOGEO/romsets.xml" "$NEOGEO/romsets.bak"
+      fi
+   fi
+   mv $TEMP/romsets.xml $NEOGEO/romsets.xml
+   touch $NEOGEO/romsets.xml
+   echo -e "\r${BLUE}${CHECK}${NC} $NEOGEO/romsets.xml"
 fi
-dir=$neogeo
+}
 
-resh=$(exist "Metal Slug - Super Vehicle-001.mgl")
-if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
 
-   #add "$dir" "H" "Columns.mra" 
-   #add "$dir" "H" "Frog Feast.mra" 
-   #add "$dir" "H" "NeoTRIS (free beta version).mra" 
-   #add "$dir" "H" "Quiz Daisousa Sen - The Last Count Down.mra" 
-   #add "$dir" "H" "Tetris.mra" 
-   #add "$dir" "H" "NeoTRIS (free beta version).mra" 
-   #add "$dir" "H"  "Neo Fight.mra" 
-   #add "$dir" "H"  "Neo Thunder.mra" 
+function neo {
 
-   add "$dir" "H"  "3 Count Bout.mgl" "" "" "SPO"
-   add "$dir" "H"  "2020 Super Baseball.mgl" "" "" "SPO"
-   add "$dir" "H"  "Aero Fighters 2.mgl" "" "" "STG"
-   add "$dir" "H"  "Aero Fighters 3.mgl" "" "" "STG"
-   add "$dir" "H"  "Aggressors of Dark Kombat.mgl" "" "" "VSF"
-   add "$dir" "H"  "Alpha Mission II.mgl" "" "" "STG"
-   add "$dir" "H"  "Andro Dunos.mgl" "" "" "STG"
-   add "$dir" "H"  "Art of Fighting 2.mgl" "" "" "VSF"
-   add "$dir" "H"  "Art of Fighting 3.mgl" "" "" "VSF"
-   add "$dir" "H"  "Art of Fighting.mgl" "" "" "VSF"
-   add "$dir" "H"  "Bakatonosama Mahjong Manyuuki.mgl"  
-   add "$dir" "H"  "Bang Bang Busters (2010 NCI release).mgl" "_Bang Bang Busters" "" "ACT"
-   add "$dir" "H"  "Bang Bang Busters 2 (demo).mgl" "_Bang Bang Busters 2" "" "ACT"
-   add "$dir" "H"  "Bang Bang Busters 2 (demo 2).mgl" "_Bang Bang Busters 2" "" "ACT"
-   add "$dir" "H"  "Bang Bead.mgl" "" "" "SPO"
-   add "$dir" "H"  "Baseball Stars 2.mgl" "" "" "SPO"
-   add "$dir" "H"  "Baseball Stars Professional.mgl" "" "" "SPO"
-   add "$dir" "H"  "Battle Flip Shot.mgl" "" "" "SPO"
-   add "$dir" "H"  "Blazing Star.mgl" "" "" "STG"
-   add "$dir" "H"  "Blue's Journey.mgl" "" "" "ACT"
-   add "$dir" "H"  "Breakers Revenge.mgl" "" "" "VSF"
-   add "$dir" "H"  "Breakers.mgl" "" "" "VSF"
-   add "$dir" "H"  "Burning Fight.mgl" "" "" "BEA"
-   add "$dir" "H"  "Cabal.mgl" "" "" "ACT"
-   add "$dir" "H"  "Captain Tomaday.mgl" "" "" "STG"
-   add "$dir" "H"  "Chibi Maruko-chan; Maruko Deluxe Quiz.mgl"
-   add "$dir" "H"  "Choutetsu Brikin'ger.mgl"
-   add "$dir" "H"  "Crossed Swords 2.mgl" "" "" "ACT"
-   add "$dir" "H"  "Crossed Swords.mgl" "" "" "ACT"
-   add "$dir" "H"  "Cyber-Lip.mgl" "" "" "ACT"
-   add "$dir" "H"  "Digger Man (prototype).mgl" "" "" "PUZ"
-   add "$dir" "H"  "Double Dragon (Neo-Geo).mgl" "" "" "VSF"
-   add "$dir" "H"  "Dragon's Heaven (development board).mgl" 
-   add "$dir" "H"  "Eight Man.mgl" "" "" "BEA"
-   add "$dir" "H"  "Far East of Eden - Kabuki Klash.mgl" "" "" "VSF"
-   add "$dir" "H"  "Fatal Fury - King of Fighters.mgl" "" "" "VSF"
-   add "$dir" "H"  "Fatal Fury 2.mgl" "" "" "VSF"
-   add "$dir" "H"  "Fatal Fury 3 - Road to the Final Victory.mgl" "" "" "VSF"
-   add "$dir" "H"  "Fatal Fury Special.mgl" "" "" "VSF"
-   add "$dir" "H"  "Fight Fever.mgl" "" "" "VSF"
-   add "$dir" "H"  "Football Frenzy.mgl" "" "" "SPO"
-   add "$dir" "H"  "Galaxy Fight - Universal Warriors.mgl" "" "" "VSF"
-   add "$dir" "H"  "Ganryu.mgl" "" "" "BEA"
-   add "$dir" "H"  "Garou - Mark of the Wolves.mgl" "" "" "VSF"
-   add "$dir" "H"  "Ghost Pilots.mgl" "" "" "STG"
-   add "$dir" "H"  "Ghostlop.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Goal! Goal! Goal!.mgl" "" "" "SPO"
-   add "$dir" "H"  "Gururin.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Idol Mahjong Final Romance 2.mgl" 
-   add "$dir" "H"  "Ironclad.mgl" "" "" "STG"
-   add "$dir" "H"  "Janshin Densetsu - Quest of Jongmaster.mgl" 
-   add "$dir" "H"  "Jockey Grand Prix.mgl" 
-   add "$dir" "H"  "Karnov's Revenge.mgl" "" "" "VSF"
-   add "$dir" "H"  "King of the Monsters 2 - The Next Thing.mgl" "" "" "BEA"
-   add "$dir" "H"  "King of the Monsters.mgl" "" "" "BEA"
-   add "$dir" "H"  "Kizuna Encounter - Super Tag Battle.mgl" "" "" "VSF"
-   add "$dir" "H"  "Last Hope.mgl" "" "" "STG"
-   add "$dir" "H"  "Last Resort.mgl" "" "" "STG"
-   add "$dir" "H"  "League Bowling.mgl" "" "" "SPO"
-   add "$dir" "H"  "Legend of Success Joe.mgl" "" "" "BEA"
-   add "$dir" "H"  "Magical Drop II.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Magical Drop III.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Magician Lord.mgl" "" "" "ACT"
-   add "$dir" "H"  "Mahjong Kyo Retsuden.mgl"
-   add "$dir" "H"  "Matrimelee.mgl" "" "" "VSF"
-   add "$dir" "H"  "Metal Slug - Super Vehicle-001.mgl" "_Metal Slug" "_Metal Slug" "RNG"
-   add "$dir" "H"  "Metal Slug 2 - Super Vehicle-001-II.mgl" "_Metal Slug_2" "_Metal Slug 2" "RNG"
-   add "$dir" "H"  "Metal Slug 2 Turbo.mgl" "_Metal Slug_2" "_Metal Slug 2" "RNG"
-   add "$dir" "H"  "Metal Slug 3.mgl" "_Metal Slug 3" "_Metal Slug 3" "RNG"
-   add "$dir" "H"  "Metal Slug 4.mgl" "_Metal Slug 4" "_Metal Slug 4" "RNG"
-   add "$dir" "H"  "Metal Slug 5.mgl" "_Metal Slug 5" "_Metal Slug 5" "RNG"
-   add "$dir" "H"  "Metal Slug X - Super Vehicle-001.mgl" "_Metal Slug X" "_Metal Slug X" "RNG"
-   add "$dir" "H"  "Minasan no Okagesamadesu! Dai Sugoroku Taikai.mgl" 
-   add "$dir" "H"  "Money Puzzle Exchanger - Money Idol Exchanger.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Mutation Nation.mgl" "" "" "BEA"
-   add "$dir" "H"  "NAM-1975.mgl" "" "" "ACT"
-   add "$dir" "H"  "Neo Bomberman.mgl" "" "" "ACT"
-   add "$dir" "H"  "Neo Drift Out - New Technology.mgl" "" "" "SPO"
-   add "$dir" "H"  "Neo Mr. Do!.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Neo Turf Masters.mgl" "" "" "SPO"
-   add "$dir" "H"  "Big Tournament Golf (Hack Scotland Course from CD).mgl" "_Neo Turf Masters" "" "SPO"
-   add "$dir" "H"  "Neo-Geo Cup '98 - The Road to the Victory.mgl" "" "" "SPO"
-   add "$dir" "H"  "Nightmare in the Dark.mgl" "" "" "ACT"
-   add "$dir" "H"  "Ninja Combat.mgl" "" "" "BEA"
-   add "$dir" "H"  "Ninja Commando.mgl" "" "" "RNG"
-   add "$dir" "H"  "Ninja Master's - Haoh-ninpo-cho.mgl" "" "" "VSF"
-   add "$dir" "H"  "Over Top.mgl" "" "" "SPO"
-   add "$dir" "H"  "Pae Wang Jeon Seol.mgl" "" "" "VSF"
-   add "$dir" "H"  "Panic Bomber.mgl" "" "" "ACT"
-   add "$dir" "H"  "Pleasure Goal.mgl" "" "" "SPO"
-   add "$dir" "H"  "Pochi and Nyaa.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Pop 'n Bounce.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Power Spikes II.mgl" "" "" "SPO"
-   add "$dir" "H"  "Prehistoric Isle 2.mgl" "" "" "STG"
-   add "$dir" "H"  "Pulstar.mgl" "" "" "STG"
-   add "$dir" "H"  "Puzzle Bobble - Bust-A-Move.mgl"  "" "" "PUZ"
-   add "$dir" "H"  "Puzzle Bobble 2 - Bust-A-Move Again.mgl" ""  "" "PUZ"
-   add "$dir" "H"  "Puzzle De Pon! R!.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Puzzle De Pon!.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Puzzled - Joy Joy Kid.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Quiz Daisousa Sen - The Last Count Down.mgl" 
-   add "$dir" "H"  "Quiz King of Fighters.mgl" 
-   add "$dir" "H"  "Quiz Meitantei Neo & Geo - Quiz Daisousa Sen part 2.mgl" 
-   add "$dir" "H"  "Rage of the Dragons.mgl" "" "" "VSF"
-   add "$dir" "H"  "Ragnagard.mgl" "" "" "VSF"
-   add "$dir" "H"  "Real Bout Fatal Fury 2 - The Newcomers.mgl" "" "" "VSF"
-   add "$dir" "H"  "Real Bout Fatal Fury Special.mgl" "" "" "VSF"
-   add "$dir" "H"  "Real Bout Fatal Fury.mgl" "" "" "VSF"
-   add "$dir" "H"  "Riding Hero.mgl" "" "" "SPO"
-   add "$dir" "H"  "Robo Army.mgl" "" "" "BEA"
-   add "$dir" "H"  "Samurai Shodown II.mgl" "" "" "VSF"
-   add "$dir" "H"  "Samurai Shodown III.mgl" "" "" "VSF"
-   add "$dir" "H"  "Samurai Shodown IV - Amakusa's Revenge.mgl" "" "" "VSF"
-   add "$dir" "H"  "Samurai Shodown V Perfect.mgl" "" "" "VSF"
-   add "$dir" "H"  "Samurai Shodown V Special.mgl" "" "" "VSF"
-   add "$dir" "H"  "Samurai Shodown V.mgl" "" "" "VSF"
-   add "$dir" "H"  "Samurai Shodown.mgl" "" "" "VSF"
-   add "$dir" "H"  "Savage Reign.mgl" "" "" "VSF"
-   add "$dir" "H"  "Sengoku 2.mgl" "" "" "BEA"
-   add "$dir" "H"  "Sengoku 3.mgl" "" "" "BEA"
-   add "$dir" "H"  "Sengoku.mgl" "" "" "BEA"
-   add "$dir" "H"  "Shock Troopers - 2nd Squad.mgl" "" "" "RNG"
-   add "$dir" "H"  "Shock Troopers.mgl" "" "" "RNG"
-   add "$dir" "H"  "Shougi no Tatsujin - Master of Shougi.mgl"
-   add "$dir" "H"  "SNK vs. Capcom - SVC Chaos.mgl" "" "" "VSF"
-   add "$dir" "H"  "Soccer Brawl.mgl" "" "" "SPO"
-   add "$dir" "H"  "Spin Master - Miracle Adventure.mgl" "" "" "ACT"
-   add "$dir" "H"  "Stakes Winner 2.mgl" "" "" "SPO"
-   add "$dir" "H"  "Stakes Winner.mgl" "" "" "SPO"
-   add "$dir" "H"  "Street Hoop.mgl" "" "" "SPO"
-   add "$dir" "H"  "Strikers 1945 Plus.mgl" "" "" "STG"
-   add "$dir" "H"  "Super Bubble Pop.mgl" "" ""  "PUZ"
-   add "$dir" "H"  "Super Dodge Ball.mgl" "" "" "SPO"
-   add "$dir" "H"  "Super Sidekicks 2 - The World Championship.mgl" "" "" "SPO"
-   add "$dir" "H"  "Super Sidekicks 3 - The Next Glory.mgl" "" "" "SPO"
-   add "$dir" "H"  "Super Sidekicks.mgl" "" "" "SPO"
-   add "$dir" "H"  "Tecmo World Soccer '96.mgl" "" "" "SPO"
-   add "$dir" "H"  "The Eye of Typhoon - Tsunami Edition.mgl" 
-   add "$dir" "H"  "The Irritating Maze.mgl" 
-   add "$dir" "H"  "The King of Fighters '94.mgl" "" "" "VSF"
-   add "$dir" "H"  "The King of Fighters '95.mgl" "" "" "VSF"
-   add "$dir" "H"  "The King of Fighters '96.mgl" "" "" "VSF"
-   add "$dir" "H"  "The King of Fighters '97.mgl" "" "" "VSF"
-   add "$dir" "H"  "The King of Fighters '98 - The Slugfest.mgl" "" "" "VSF"
-   add "$dir" "H"  "The King of Fighters '99 - Millennium Battle.mgl" "" "" "VSF"
-   add "$dir" "H"  "The King of Fighters 2000.mgl" "" "" "VSF"
-   add "$dir" "H"  "The King of Fighters 2001.mgl" "" "" "VSF"
-   add "$dir" "H"  "The King of Fighters 2002.mgl" "" "" "VSF"
-   add "$dir" "H"  "The King of Fighters 2003.mgl" "" "" "VSF"
-   add "$dir" "H"  "The Last Blade 2.mgl" "" "" "VSF"
-   add "$dir" "H"  "The Last Blade.mgl" "" "" "" "VSF"
-   add "$dir" "H"  "The Super Spy.mgl" "" "" "ACT"
-   add "$dir" "H"  "The Ultimate 11 - The SNK Football Championship.mgl" "" "" "SPO"
-   add "$dir" "H"  "Thrash Rally.mgl" "" "" "SPO"
-   add "$dir" "H"  "Top Hunter - Roddy & Cathy.mgl" "" "" "ACT"
-   add "$dir" "H"  "Top Player's Golf.mgl" "" "" "SPO"
-   add "$dir" "H"  "Treasure of the Caribbean.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Twinkle Star Sprites.mgl" "" "" "STG"
-   add "$dir" "H"  "Viewpoint.mgl" "" "" "STG"
-   add "$dir" "H"  "Voltage Fighter - Gowcaizer.mgl" "" "" "VSF"
-   add "$dir" "H"  "Waku Waku 7.mgl" "" "" "VSF"
-   add "$dir" "H"  "Windjammers.mgl" "" "" "SPO"
-   add "$dir" "H"  "World Heroes 2 Jet.mgl" "" "" "VSF"
-   add "$dir" "H"  "World Heroes 2.mgl" "" "" "VSF"
-   add "$dir" "H"  "World Heroes Perfect.mgl" "" "" "VSF"
-   add "$dir" "H"  "World Heroes.mgl" "" "" "VSF"
-   add "$dir" "H"  "Xeno Crisis.mgl" "" "" "ACT"
-   add "$dir" "H"  "Zed Blade - Operation Ragnarok.mgl" "" "" "STG"
-   add "$dir" "H"  "Zintrick.mgl" "" "" "PUZ"
-   add "$dir" "H"  "Zupapa!.mgl" "" "" "ACT"
+    #echo "des_mame $des_mame"
 
-   dot
-fi
+    FILE=$des_mame/$1
+    FILENEO=$NEOGEO/$1 
+    #echo "retrieving $FILENEO"
+
+    if ! test -f "$FILENEO"; then
+       if test -f "$FILE"; then
+          echo -n "copying $FILENEO"   
+          mv "$FILE" "$FILENEO"
+       else
+         echo -n "downloading $1"         
+         wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/mister-neogeo-pack/$1
+         touch /media/fat/Scripts/temp/$1
+         echo -e "\r${BLUE}${CHECK}${NC} $FILENEO                                            "
+         touch $FILENEO
+         mv /media/fat/Scripts/temp/$1 $FILENEO
+       fi
+    fi
+    #final cleanup for mame folder
+    
+    if test -f "$FILE"; then
+      rm -r $FILE
+      echo -n "removing $FILE"
+    fi
+
+}
+
+identify_folder
+
+echo "Updating neogeo roms $des_mame"
+
+#delete all zero file in games/mame
+find "/media/fat/games/mame" -size 0 -delete
+
+
+#dlf "neogeo.zip"
+neo "2020bb.zip"
+neo "3countb.zip"
+neo "alpham2.zip"
+neo "androdun.zip"
+
+neo "aodk.zip"
+neo "aof.zip"
+neo "aof2.zip"
+neo "aof3.zip"
+neo "b2b.zip"
+neo "b2b2.zip"
+neo "b2b2d.zip"
+neo "bakatono.zip"
+neo "bangbead.zip"
+neo "bjourney.zip"
+neo "blazstar.zip"
+neo "breakers.zip"
+neo "breakrev.zip"
+neo "bstars.zip"
+neo "bstars2.zip"
+neo "burningf.zip"
+neo "Cabalng.zip"
+neo "crsword.zip"
+neo "crswd2bl.zip"
+neo "ctomaday.zip"
+neo "cyberlip.zip"
+neo "diggerma.zip"
+neo "doubledr.zip"
+neo "dragonsh.zip"
+neo "eightman.zip"
+neo "fatfury1.zip"
+neo "fatfury2.zip"
+neo "fatfury3.zip"
+neo "fatfursp.zip"
+neo "fbfrenzy.zip"
+neo "fightfev.zip"
+neo "flipshot.zip"
+neo "froman2b.zip"
+neo "galaxyfg.zip"
+neo "ganryu.zip"
+neo "garou.zip"
+neo "ghostlop.zip"
+neo "gpilots.zip"
+neo "goalx3.zip"
+neo "gowcaizr.zip"
+neo "gururin.zip"
+neo "ironclad.zip"
+neo "irrmaze.zip"
+neo "janshin.zip"
+neo "joyjoy.zip"
+neo "kabukikl.zip"
+neo "karnovr.zip"
+neo "kizuna.zip"
+neo "kof2000.zip"
+neo "kof2001.zip"
+neo "kof2002.zip"
+neo "kof2003.zip"
+neo "kof94.zip"
+neo "kof95.zip"
+neo "kof96.zip"
+neo "kof97.zip"
+neo "kof98.zip"
+neo "kof99.zip"
+neo "kotm.zip"
+neo "kotm2.zip"
+neo "lastblad.zip"
+neo "lastbld2.zip"
+neo "lasthope.zip"
+neo "lbowling.zip"
+neo "legendos.zip"
+neo "lresort.zip"
+neo "magdrop2.zip"
+neo "magdrop3.zip"
+neo "maglord.zip"
+neo "matrim.zip"
+neo "miexchng.zip"
+neo "moshougi.zip"
+neo "mslug.zip"
+neo "mslug2.zip"
+neo "mslug2t.zip"
+neo "mslug3.zip"
+neo "mslug4.zip"
+neo "mslug5.zip"
+neo "mslugx.zip"
+neo "mutnat.zip"
+neo "nam1975.zip"
+neo "ncombat.zip"
+neo "ncommand.zip"
+neo "neobombe.zip"
+neo "neocup98.zip"
+neo "neodrift.zip"
+neo "neomrdo.zip"
+neo "neothund.zip"
+neo "ninjamas.zip"
+neo "nitd.zip"
+neo "overtop.zip"
+neo "panicbom.zip"
+neo "pbobbl2n.zip"
+neo "pbobblen.zip"
+neo "pgoal.zip"
+neo "pnyaa.zip"
+neo "popbounc.zip"
+neo "preisle2.zip"
+neo "pspikes2.zip"
+neo "pulstar.zip"
+neo "puzzldpr.zip"
+neo "puzzledp.zip"
+neo "quizdai2.zip"
+neo "quizdais.zip"
+neo "quizdask.zip"
+neo "quizkof.zip"
+neo "quizkofk.zip"
+neo "ragnagrd.zip"
+neo "rbff1a.zip"
+neo "rbff2.zip"
+neo "rbffspec.zip"
+neo "ridhero.zip"
+neo "roboarmy.zip"
+neo "rotd.zip"
+neo "s1945p.zip"
+neo "samsho.zip"
+neo "samsho2.zip"
+neo "samsho3.zip"
+neo "samsho4.zip"
+neo "samsho4k.zip"
+neo "samsho5.zip"
+neo "samsh5pf.zip"
+neo "samsh5sp.zip"
+neo "savagere.zip"
+neo "sbp.zip"
+neo "sdodgeb.zip"
+neo "sengoku.zip"
+neo "sengoku2.zip"
+neo "sengoku3.zip"
+neo "shocktr2.zip"
+neo "shocktro.zip"
+neo "socbrawl.zip"
+neo "sonicwi2.zip"
+neo "sonicwi3.zip"
+neo "spinmast.zip"
+neo "ssideki.zip"
+neo "ssideki2.zip"
+neo "ssideki3.zip"
+neo "ssideki4.zip"
+neo "stakwin.zip"
+neo "stakwin2.zip"
+neo "strhoop.zip"
+neo "superspy.zip"
+neo "svc.zip"
+neo "teot.zip"
+neo "tophuntr.zip"
+neo "totc.zip"
+neo "tpgolf.zip"
+neo "trally.zip"
+neo "turfmast.zip"
+neo "twinspri.zip"
+neo "tws96.zip"
+neo "viewpoin.zip"
+neo "wakuwak7.zip"
+neo "wh1.zip"
+neo "wh2.zip"
+neo "wh2j.zip"
+neo "whp.zip"
+neo "wjammers.zip"
+neo "zedblade.zip"
+neo "zintrckb.zip"
+neo "zupapa.zip"
+neo "turfmastscot.zip"
+
+xml
+
+
+cd /media/fat
+rm -r "$TEMP"
+
+echo -e "${GREEN}${CHECK}${NC} Completed"
