@@ -75,7 +75,7 @@ counter=0
 
 #0404
    add "Darius (World).mra" "_Darius"
-   add "Big Tournament Golf (Hack Scotland Course from CD).mgl"
+   add "Big Tournament Golf (Hack Scotland Course from CD).mgl" "_Neo Turf Masters"
 
 #0403
    add "Psycho-Nics Oscar (World).mra" "_Psycho-Nics Oscar"
