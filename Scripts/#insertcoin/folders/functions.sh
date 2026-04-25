@@ -173,6 +173,12 @@ mame_rom=${mame_rom:0:1}
 #if [ "$debug" == "1" ]; then
 #   echo "mame_rom: $mame_rom"
 #fi
+source <(grep neogeo_rom $ini)
+neogeo_rom=${neogeo_rom:0:1}
+#if [ "$debug" == "1" ]; then
+#   echo "neogeo_rom: $neogeo_rom"
+#fi
+
 source <(grep gnw_rom $ini)
 gnw_rom=${gnw_rom:0:1}
 #if [ "$debug" == "1" ]; then
