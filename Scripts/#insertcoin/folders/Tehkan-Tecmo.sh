@@ -18,7 +18,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Gemini Wing.mra" "_Gemini Wing" "" "STG"
    #add "$dir" "V" "Pleiads (Centuri).mra" "_Pleiads" "" "STG"
    add "$dir" "V" "Pleiads (Tehkan).mra" "_Pleiads" "" "STG"
-   add "$dir" "V" "StarForce.mra" "_StarForce" "" "STG"
+   add "$dir" "V" "Star Force.mra" "_StarForce" "" "STG"
    add "$dir" "V" "Vimana (Japan).mra" "_Vimana" "" "STG"
 
    add "$dir" "H" "Baluba-louk no Densetsu (Japan).mra" "_Baluba-louk no Densetsu"
