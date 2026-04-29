@@ -64,7 +64,7 @@ function dl {
 
 function xml {
 #echo "$TEMP"
-echo -e "${BLUE}${CHECK}${NC} romsets.xml" 
+#echo -e "${BLUE}${CHECK}${NC} romsets.xml" 
 rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/romsets.xml -O -k -s --output $TEMP/romsets.xml >/dev/null)
 if [[ "$rcode" -ne 0 ]]; then
     echo "Failed to download file romsets.xml"
