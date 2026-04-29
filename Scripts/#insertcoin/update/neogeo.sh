@@ -115,7 +115,7 @@ function neo {
 
 identify_folder
 
-echo "Updating neogeo roms $des_mame"
+echo "Updating neogeo roms $NEOGEO"
 
 #delete all zero file in games/mame
 find "/media/fat/games/mame" -size 0 -delete
