@@ -55,7 +55,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "N.Y. Captor (rev 2).mra" "_N.Y. Captor"
    add "$dir" "H" "Darius (World).mra" "_Darius" "" "STG"
    add "$dir" "H" "Darius II (Japan, rev 1).mra" "_Darius II" "" "STG"
-   add "$dir" "H" "The Ninja Warriors (Japan).mra" "_The Ninja Warriors" "" "ACT"
+   add "$dir" "H" "The Ninja Warriors (World).mra" "_The Ninja Warriors" "" "ACT"
    add "$dir" "H" "Qix (set 1).mra" "_Qix" "" "PUZ"
    add "$dir" "H" "Complex X.mra" "_Complex X" "" ""
    add "$dir" "H" "Kram.mra" "_Kram" "" ""

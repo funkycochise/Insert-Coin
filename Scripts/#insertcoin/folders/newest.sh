@@ -70,7 +70,7 @@ counter=0
 
 #0425
    add "Darius II (Japan, rev 1).mra" "_Darius II"
-   add "The Ninja Warriors (Japan).mra" "_The Ninja Warriors"
+   add "The Ninja Warriors (World).mra" "_The Ninja Warriors"
 
 #0418
    add "Mortal Kombat (Rev. 4.0 09-28-92).mra" "_Mortal Kombat"
