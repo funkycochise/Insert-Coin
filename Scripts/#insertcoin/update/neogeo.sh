@@ -5,6 +5,9 @@ TEMP=/media/fat/Scripts/temp
 SD=/media/fat
 USB=/media/usb0
 
+verbose="1"
+
+
 source <(grep setup_mame $ini)
 setup_mame="${setup_mame:0:3}"
 #echo "setup_mame: $setup_mame"
@@ -33,34 +36,6 @@ fi
 }
 
 
-function dlf {
-
-    FILE=$des_mame/$1
-    #echo "dl : $des_mame/$1"
-
-    wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/insert_coin_mame/$1
-    touch /media/fat/Scripts/temp/$1
-    mv /media/fat/Scripts/temp/$1 $des_mame/$1
-}
-
-function dl {
-
-    FILE=$des_mame/$1
-    #echo "dl : $des_mame/$1"
-
-    if ! test -f "$FILE"; then
-      #file doesn not exists
-      echo -n "downloading $1"   
-      wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/insert_coin_mame/$1
-      touch /media/fat/Scripts/temp/$1
-      mv /media/fat/Scripts/temp/$1 $des_mame/$1
-      echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
-
-   #else
-    # echo "$1 already exixts"
-   fi
-
-}
 
 function xml {
 #echo "$TEMP"
@@ -89,11 +64,14 @@ function neo {
 
     FILE=$des_mame/$1
     FILENEO=$NEOGEO/$1 
-    #echo "retrieving $FILENEO"
+
+    if [ "$verbose" == "1" ]; then
+       echo "retrieving $FILENEO"
+    fi
 
     if ! test -f "$FILENEO"; then
        if test -f "$FILE"; then
-          echo -n "copying $FILENEO"   
+          echo "copying $FILENEO"   
           mv "$FILE" "$FILENEO"
        else
          echo -n "downloading $1"         
@@ -103,12 +81,16 @@ function neo {
          touch $FILENEO
          mv /media/fat/Scripts/temp/$1 $FILENEO
        fi
+    else
+       if [ "$verbose" == "1" ]; then
+          echo "$FILENEO detected"
+       fi
     fi
     #final cleanup for mame folder
     
     if test -f "$FILE"; then
       rm -r $FILE
-      echo -n "removing $FILE"
+      echo "removing $FILE"
     fi
 
 }
@@ -120,8 +102,6 @@ echo "Updating neogeo roms $NEOGEO"
 #delete all zero file in games/mame
 find "/media/fat/games/mame" -size 0 -delete
 
-
-#dlf "neogeo.zip"
 neo "2020bb.zip"
 neo "3countb.zip"
 neo "alpham2.zip"

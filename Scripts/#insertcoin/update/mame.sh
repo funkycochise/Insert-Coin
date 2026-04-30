@@ -936,6 +936,12 @@ dl "darius.zip"
 dl "narc.zip"
 dl "darius2.zip"
 dl "ninjaw.zip"
+dl "fantasyu.zip"
+dl "nibbler.zip"
+dl "pballoon.zip"
+dl "sasuke.zip"
+dl "satansat.zip"
+dl "vanguard.zip"
 
 
 #special_echo "Downloading missing STV mame roms"
