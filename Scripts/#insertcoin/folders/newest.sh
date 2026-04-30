@@ -68,6 +68,14 @@ function additem {
 
 counter=0
 
+#0430
+   add "Fantasy.mra" "_Fantasy"
+   add "Nibbler (Set 9).mra" "_Nibbler"
+   add "Pioneer Balloon.mra" "_Pioneer Balloon" 
+   add "Sasuke.mra" "_Sasuke.mra"
+   add "Satan Of Saturn.mra" "_Satan Of Saturn"
+   add "Vanguard.mra" "_Vanguard"
+
 #0425
    add "Darius II (Japan, rev 1).mra" "_Darius II"
    add "The Ninja Warriors (World).mra" "_The Ninja Warriors"

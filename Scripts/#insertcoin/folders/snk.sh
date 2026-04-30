@@ -15,14 +15,20 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "ASO.mra" "_ASO"
+   add "$dir" "V" "Fantasy.mra" "_Fantasy" "" "STG"
    add "$dir" "V" "Fighting Golf.mra" "_Fighting Golf"
    add "$dir" "V" "Ikari Warriors.mra" "_Ikari Warriors" "" "RNG"
+   add "$dir" "V" "Nibbler (Set 9).mra" "_Nibbler" "" "PUZ"
    add "$dir" "V" "Paddle Mania.mra" "_Paddle Mania"
+   add "$dir" "V" "Pioneer Balloon.mra" "_Pioneer Balloon" "" "STG"
    add "$dir" "V" "SAR - Search And Rescue (World).mra" "_S.A.R. - Search and Rescue" "" "RNG"
+   add "$dir" "V" "Sasuke.mra" "_Sasuke.mra" "" "STG"
+   add "$dir" "V" "Satan Of Saturn.mra" "_Satan Of Saturn" "" "STG"
    add "$dir" "V" "Sky Soldiers (US).mra" "_Sky Soldiers"
    add "$dir" "V" "The Next Space (Japan).mra" "_The Next Space"
    add "$dir" "V" "Time Soldiers (US Rev 3).mra" "_Time Soldiers"
    add "$dir" "V" "TNKIII.mra" "_TNKIII"
+   add "$dir" "V" "Vanguard.mra" "_Vanguard" "" "STG"
    add "$dir" "V" "Victory Road.mra" "_Victory Road" "" "RNG"
 
    add "$dir" "H" "Athena.mra" "_Athena"
@@ -31,5 +37,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Street Smart (US Version 2).mra" "_Street Smart"
    add "$dir" "H" "P.O.W. - Prisoners of War (US Version 1).mra" "_P.O.W. - Prisoners of War" "" "BEA"
    add "$dir" "H" "Ikari III - The Rescue (World Version 1, 8-Way Joystick).mra" "_Ikari III - The Rescue" "" "RNG"
+
+
    dot
 fi
