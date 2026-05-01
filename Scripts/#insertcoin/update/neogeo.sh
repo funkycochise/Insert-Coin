@@ -5,7 +5,7 @@ TEMP=/media/fat/Scripts/temp
 SD=/media/fat
 USB=/media/usb0
 
-verbose="1"
+verbose="0"
 
 
 source <(grep setup_mame $ini)
