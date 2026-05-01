@@ -942,6 +942,7 @@ dl "pballoon.zip"
 dl "sasuke.zip"
 dl "satansat.zip"
 dl "vanguard.zip"
+dl "chinagat.zip"
 
 
 #special_echo "Downloading missing STV mame roms"
