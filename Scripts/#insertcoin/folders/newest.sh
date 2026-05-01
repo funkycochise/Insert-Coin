@@ -68,6 +68,10 @@ function additem {
 
 counter=0
 
+#0501
+
+   add "China Gate (US).mra" "_China Gate"
+
 #0430
    add "Fantasy.mra" "_Fantasy"
    add "Nibbler (Set 9).mra" "_Nibbler"

@@ -16,7 +16,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "V" "Xain'd Sleena (bootleg, bugfixed).mra" "_Xain'd Sleena" "" "RNG"
 
-   add "$dir" "H" "China Gate (US).mra" "_China Gate"
+   add "$dir" "H" "China Gate (US).mra" "_China Gate" "" "ACT"
    add "$dir" "H" "Double Dragon (World set 1).mra" "_Double Dragon" "" "BEA"
    add "$dir" "H" "Double Dragon II The Revenge (World).mra" "_Double Dragon II The Revenge" "" "BEA"
    add "$dir" "H" "Mat Mania.mra" "_Mat Mania" "" "SPO"
