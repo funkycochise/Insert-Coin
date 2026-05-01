@@ -157,7 +157,7 @@ find $CORE -maxdepth 1 -type f -name "Darius_*" ! -name "Darius_20260411.rbf" -d
 
 find $CORE -maxdepth 1 -type f -name "Darius2*" ! -name "Darius2_20260430.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "ChinaGate*" ! -name "ChinaGate_20260501.rbf.rbf" -delete
+#find $CORE -maxdepth 1 -type f -name "ChinaGate*" ! -name "ChinaGate_20260501.rbf" -delete
 
 if [ -f "$CORE/mazinger_mister_20250804.rbf" ] 
 then
