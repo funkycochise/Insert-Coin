@@ -22,7 +22,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Paddle Mania.mra" "_Paddle Mania"
    add "$dir" "V" "Pioneer Balloon.mra" "_Pioneer Balloon" "" "STG"
    add "$dir" "V" "SAR - Search And Rescue (World).mra" "_S.A.R. - Search and Rescue" "" "RNG"
-   add "$dir" "V" "Sasuke.mra" "_Sasuke.mra" "" "STG"
+   add "$dir" "V" "Sasuke.mra" "_Sasuke" "" "STG"
    add "$dir" "V" "Satan Of Saturn.mra" "_Satan Of Saturn" "" "STG"
    add "$dir" "V" "Sky Soldiers (US).mra" "_Sky Soldiers"
    add "$dir" "V" "The Next Space (Japan).mra" "_The Next Space"
