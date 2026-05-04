@@ -23,6 +23,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add_rep "$dir" "H" "_Avenging Spirit"  "_Avenging Spirit" "" "ACT"
    add "$dir" "H" "chameleon.mra" "_Chameleon" "" "ACT"
+   add "$dir" "H" "City Connection (set 1).mra" "_City Connection" "" "ACT"
    add "$dir" "H" "Iga Ninjyutsuden (Japan).mra" "_Ninja Kazan" "" "ACT"
    add "$dir" "H" "P-47 - The Freedom Fighter (Japan).mra" "_P-47 - The Freedom Fighter" "" "STG"
    add "$dir" "H" "Rod-Land (World, set 1).mra" "_Rod-Land" "" "ACT"
