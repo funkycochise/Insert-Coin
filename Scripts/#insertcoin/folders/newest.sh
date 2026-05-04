@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0504
+   add "City Connection (set 1).mra" "_City Connection"
+
 #0501
 
    add "China Gate (US).mra" "_China Gate"
