@@ -944,7 +944,7 @@ dl "satansat.zip"
 dl "vanguard.zip"
 dl "chinagat.zip"
 dl "citycon.zip"
-
+dl "ket.zip"
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
