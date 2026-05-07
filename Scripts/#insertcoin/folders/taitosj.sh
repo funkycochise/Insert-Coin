@@ -36,6 +36,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Wild Western.mra" "_Wild Western" "" "ACT"
 #   add "$dir" "V" "Front Line.mra" "_Front Line"
 
+   add "$dir" "H" "jetpac_sj.mra" "_jetpac_sj"
    add "$dir" "H" "Jungle Hunt US.mra" "_Jungle Hunt"
    #add "$dir" "V" "Elevator Action Bootleg.mra" "_Elevator Action" "" "ACT"
    add "$dir" "H" "Jungle King Japan.mra" "_Jungle King"
