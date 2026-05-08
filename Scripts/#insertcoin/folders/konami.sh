@@ -58,6 +58,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Crime Fighters (World 2 players).mra" "_Crime Fighters"  "" "BEA"
    add "$dir" "H"  "Golfing Greats (World, version L).mra" "_Golfing Greats" "" "SPO"
    add "$dir" "H"  "Gradius.mra" "_Gradius" "" "STG"
+   add "$dir" "H"  "Gradius III (World, version R).mra" "_Gradius III" "" "STG"
    add "$dir" "H"  "Green Beret.mra" "_Green Beret" "" "RNG"
    add "$dir" "H"  "Haunted Castle (version M).mra" "_Haunted Castle" "" "ACT"
    add "$dir" "H"  "Hyper Sports.mra" "_Hyper Sports" "" "SPO"

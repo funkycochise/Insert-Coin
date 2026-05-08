@@ -14,6 +14,7 @@ resv=$(exist "Psychic 5 (World).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
+   add "$dir" "V" "Argus.mra" "_Argus" "" "STG"
    add "$dir" "V" "Exerion (Taito).mra" "_Exerion" "" "STG"
    add "$dir" "V" "Grasspin (Jaleco).mra" "_Grasspin" "" ""
    add "$dir" "V" "Naughty Boy (Jaleco).mra" "_Naughty Boy" "" "ACT"

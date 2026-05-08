@@ -68,8 +68,12 @@ function additem {
 
 counter=0
 
+
+
 #0504
    add "City Connection (set 1).mra" "_City Connection"
+   add "Argus.mra" "_Argus" 
+   add "Gradius III (World, version R).mra" "_Gradius III"
 
 #0501
 
