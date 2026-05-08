@@ -944,8 +944,9 @@ dl "satansat.zip"
 dl "vanguard.zip"
 dl "chinagat.zip"
 dl "citycon.zip"
-dl "ket.zip"
-dl "jetpac_sj.zip"
+dl "argus.zip"
+dl "gradius3.zip"
+
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
