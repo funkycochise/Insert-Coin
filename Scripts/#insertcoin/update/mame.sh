@@ -946,7 +946,8 @@ dl "chinagat.zip"
 dl "citycon.zip"
 dl "argus.zip"
 dl "gradius3.zip"
-
+dl "mk.zip"
+dl "mk2.zip"
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
