@@ -3,12 +3,12 @@ source ./folders/functions.sh
 loadsetup
 
 if [ -f "$names" ]; then
-   source <(grep midwayy $names)
+   source <(grep midwaytyz $names)
 else
-   midwayy="_Midway_Y-Z-Units"
+   midwaytyz="_Midway_TYZUnit"
 fi
-midwayy="_Midway_Y-Z-Units"
-dir=$midwayy
+midwaytyz="_Midway_TYZUnit"
+dir=$midwaytyz
 
 resh=$(exist "Mortal Kombat (Rev. 4.0 09-28-92).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
