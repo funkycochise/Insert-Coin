@@ -68,7 +68,8 @@ function additem {
 
 counter=0
 
-
+#0509
+   add "Mortal Kombat II (Rev. L3.1).mra" "_Mortal Kombat II"
 
 #0504
    add "City Connection (set 1).mra" "_City Connection"
