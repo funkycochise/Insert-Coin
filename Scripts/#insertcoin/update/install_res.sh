@@ -240,7 +240,7 @@ then
    f=$(basename -- "$file")
    if [ ! -f "$des_config/$f" ]; then
       #echo -e "$des_config/$f                                                   "
-      cp "$file" "$des_config/$f"
+      cp -r "$file" "$des_config/$f"
    fi
    done
 
