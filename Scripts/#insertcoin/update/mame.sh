@@ -948,6 +948,7 @@ dl "argus.zip"
 dl "gradius3.zip"
 dl "mk.zip"
 dl "mk2.zip"
+dl "cobracom.zip"
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
