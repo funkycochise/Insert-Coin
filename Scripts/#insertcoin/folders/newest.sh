@@ -70,6 +70,7 @@ counter=0
 
 #0510
    add "Cobra-Command (World, Rev. 5).mra" "_Cobra-Command"
+   add "The Real Ghostbusters (US 2 Players, Revision 2).mra" "_The Real Ghostbusters"
 
 #0509
    add "Mortal Kombat II (Rev. L3.1).mra" "_Mortal Kombat II"
