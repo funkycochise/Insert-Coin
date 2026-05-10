@@ -15,6 +15,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V" "Burger Time (Set 1).mra" "_Burger Time" "" "ACT"
    add "$dir" "V" "Burnin' Rubber.mra" "_Burning Rubber" "" "ACT"
+      add "$dir" "H" "Cobra-Command (World, Rev. 5).mra" "_Cobra-Command" "" "STG"
    add "$dir" "V" "Heavy Barrel (World).mra" "_Heavy Barrel" "" "RNG"
    add "$dir" "V" "Karate Champ (US).mra" "_Karate Champ" "" "SPO"
    add "$dir" "V" "Wonder Planet (Japan).mra" "_Wonder Planet" "" "STG"
@@ -30,5 +31,6 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Western Express (Japan, rev 4).mra" "_Express Raider" "" "RNG"
    add "$dir" "H" "Tumble Pop (World).mra" "_Tumble Pop" "" "ACT"
    add "$dir" "H" "Psycho-Nics Oscar (World).mra" "_Psycho-Nics Oscar" "" "RNG"
+
    dot
 fi
