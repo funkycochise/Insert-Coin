@@ -153,7 +153,7 @@ find $CORE -maxdepth 1 -type f -name "StarForce_*" ! -name "Starforce_20260414.r
 
 find $CORE -maxdepth 1 -type f -name "NaughtyBoy_*" ! -name "NaughtyBoy_20250428.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "Darius_*" ! -name "Darius_20260411.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "Darius_*" ! -name "Darius_20260502.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "Darius2*" ! -name "Darius2_20260430.rbf" -delete
 
