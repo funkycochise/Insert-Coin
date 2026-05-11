@@ -74,6 +74,7 @@ fi
 ./folders/segasys2.sh "$targetdir"
 ./folders/segasyse.sh "$targetdir"
 ./folders/segastv.sh "$targetdir"
+./folders/segag80.sh "$targetdir"
 ./folders/seta.sh "$targetdir"
 ./folders/si.sh "$targetdir"
 ./folders/snk.sh "$targetdir"
