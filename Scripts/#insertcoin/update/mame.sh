@@ -1013,7 +1013,8 @@ dl "vfremix.zip"
 dl "vmahjong.zip"
 dl "winterht.zip"
 dl "znpwfv.zip"
-
+dl "ket.zip"
+dl "espgal.zip"
 
 cd /media/fat
 rm -r "$TEMP"
