@@ -955,6 +955,8 @@ dl "monsterb.zip"
 dl "pignewt.zip"
 dl "sindbadm.zip"
 dl "spaceod.zip"
+dl "orlegend.zip"
+dl "bloodbro.zip"
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
