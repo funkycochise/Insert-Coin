@@ -88,7 +88,7 @@ counter=0
    add "Fantasy.mra" "_Fantasy"
    add "Nibbler (Set 9).mra" "_Nibbler"
    add "Pioneer Balloon.mra" "_Pioneer Balloon" 
-   add "Sasuke.mra" "_Sasuke.mra"
+   add "Sasuke.mra" "_Sasuke"
    add "Satan Of Saturn.mra" "_Satan Of Saturn"
    add "Vanguard.mra" "_Vanguard"
 
