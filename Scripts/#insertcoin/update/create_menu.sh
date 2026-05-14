@@ -25,6 +25,7 @@ fi
 ./folders/atari.sh "$targetdir"
 ./folders/bagman.sh "$targetdir" 
 ./folders/bally-midway.sh "$targetdir"
+./folders/banspresto.sh "$targetdir"
 ./folders/capcom.sh "$targetdir"
 ./folders/cave.sh "$targetdir" 
 ./folders/cps1.5.sh "$targetdir" 
