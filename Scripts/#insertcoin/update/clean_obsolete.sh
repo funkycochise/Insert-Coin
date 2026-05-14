@@ -155,15 +155,23 @@ find $CORE -maxdepth 1 -type f -name "NaughtyBoy_*" ! -name "NaughtyBoy_20250428
 
 find $CORE -maxdepth 1 -type f -name "Darius_*" ! -name "Darius_20260502.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "Darius2*" ! -name "Darius2_20260430.rbf" -delete
-
 find $CORE -maxdepth 1 -type f -name "ChinaGate*" ! -name "ChinaGate_20260506.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "jtgrad3_*" ! -name "jtgrad3_20260503.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "jtargus_*" ! -name "jtargus_20260502.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "Darius2_*" ! -name "Darius2_20260510.rbf" -delete
+if [ -f "$CORE/Darius2_20260430.rbf" ] && [ ! -f "$CORE/Darius2_20260510.rbf" ]; then
+   find /media/fat/_Arcade/cores  -maxdepth 1 -type f -name "Darius2_*" ! -name "Darius2_20260430.rbf" -delete
+fi
+if [ ! -f "$CORE/Darius2_20260430.rbf" ] && [ -f "$CORE/Darius2_20260510.rbf" ]; then
+   find /media/fat/_Arcade/cores  -maxdepth 1 -type f -name "Darius2_*" ! -name "Darius2_20260510.rbf" -delete
+fi
+if [ -f "$CORE/Darius2_20260430.rbf" ] && [ -f "$CORE/Darius2_20260510.rbf" ]; then
+   find /media/fat/_Arcade/cores  -maxdepth 1 -type f -name "Darius2_*" ! -name "Darius2_20260510.rbf" -delete
+fi
+
+
 
 
 if [ -f "$CORE/mazinger_mister_20250804.rbf" ] 

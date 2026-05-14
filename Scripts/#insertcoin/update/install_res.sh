@@ -195,13 +195,6 @@ if test -f "/media/fat/Scripts/#local/res.sh"; then
       /media/fat/Scripts/#local/res.sh
 fi
 
-#echo -e "${BLUE}${CHECK}${NC} local res" 
-if [ -f "/media/fat/Scripts/#local/res.zip" ]; then
-  unzip -qq -o /media/fat/Scripts/#local/res.zip -d $res
-  rm -r /media/fat/Scripts/#local/res.zip
-  echo -e "${GREEN}${CHECK}${NC} Completed"
-fi
-
 }
 
 function installres {
@@ -217,7 +210,7 @@ then
       if [ -f "$file" ];
       then
          #if [ ! -f "$des_arcade/$f" ]; then
-         #   #echo -e "\rcopying $des_arcade/$f                                                   "
+            #echo -e "\rcopying $des_arcade/$f                                                   "
             cp -f "$file" "$des_arcade/$f"
          #fi
       fi
@@ -248,7 +241,7 @@ then
    for file in $cores/*.rbf; do
    f=$(basename -- "$file")
    if [ ! -f "$des_config/$f" ]; then
-      #echo -e "\rcopying $des_core/$f                                                   "
+      echo -e "\rcopying $des_core/$f                                                   "
       cp "$file" "$des_core/$f"
    fi
    done
