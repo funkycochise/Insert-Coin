@@ -68,6 +68,10 @@ function additem {
 
 counter=0
 
+#0514
+   add "Blood Bros.mra" "_Blood Bros"
+   add "SD Gundam Psycho Salamander no Kyoui.mra" "_SD Gundam Psycho Salamander no Kyoui"
+
 #0510
    add "Cobra-Command (World, Rev. 5).mra" "_Cobra-Command"
    add "The Real Ghostbusters (US 2 Players, Revision 2).mra" "_The Real Ghostbusters"

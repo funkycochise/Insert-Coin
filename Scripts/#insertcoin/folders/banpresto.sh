@@ -18,7 +18,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Mazinger Z (Japan).mra" "_Mazinger Z" "" "STG"
 
    add "$dir" "H" "Bishoujo Senshi Sailor Moon (Version 95-03-22B, Japan).mra" "_Pretty Soldier Sailor Moon" "" "BEA"
-   add "$dir" "H" "SD Gundam Psycho Salamander no Kyoui.mra" "_SD Gundam Psycho Salamander no Kyoui" "ACT" 
+   add "$dir" "H" "SD Gundam Psycho Salamander no Kyoui.mra" "_SD Gundam Psycho Salamander no Kyoui" "" "ACT" 
 
    dot
 fi
