@@ -80,6 +80,7 @@ fi
 ./folders/si.sh "$targetdir"
 ./folders/snk.sh "$targetdir"
 ./folders/stern.sh "$targetdir"
+./folders/success.sh "$targetdir"
 ./folders/tad.sh "$targetdir"
 ./folders/taito.sh "$targetdir"
 ./folders/taitof2.sh "$targetdir"
