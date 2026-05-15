@@ -195,6 +195,10 @@ if test -f "/media/fat/Scripts/#local/res.sh"; then
       /media/fat/Scripts/#local/res.sh
 fi
 
+if test -f "/media/fat/Scripts/#local/dk3.sh"; then
+      /media/fat/Scripts/#local/dk3.sh
+fi
+
 }
 
 function installres {
@@ -241,7 +245,7 @@ then
    for file in $cores/*.rbf; do
    f=$(basename -- "$file")
    if [ ! -f "$des_config/$f" ]; then
-      echo -e "\rcopying $des_core/$f                                                   "
+      #echo -e "\rcopying $des_core/$f                                                   "
       cp "$file" "$des_core/$f"
    fi
    done
