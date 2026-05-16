@@ -157,7 +157,7 @@ find $CORE -maxdepth 1 -type f -name "Darius_*" ! -name "Darius_20260502.rbf" -d
 
 find $CORE -maxdepth 1 -type f -name "ChinaGate*" ! -name "ChinaGate_20260506.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "jtgrad3_*" ! -name "jtgrad3_20260516.rbf.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "jtgrad3_*" ! -name "jtgrad3_20260516.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "jtargus_*" ! -name "jtargus_20260502.rbf" -delete
 
