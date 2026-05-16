@@ -68,6 +68,10 @@ function additem {
 
 counter=0
 
+#0516
+   add "D-Con.mra" "_D-Con"
+   add "Millipede.mra" "_Millipede"
+
 #0514
    add "Blood Bros.mra" "_Blood Bros"
    add "SD Gundam Psycho Salamander no Kyoui.mra" "_SD Gundam Psycho Salamander no Kyoui"
