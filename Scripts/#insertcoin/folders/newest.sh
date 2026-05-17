@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0517
+   add "Warrior Blade (Japan).mra" "_Warrior Blade"
+
 #0516
    add "D-Con.mra" "_D-Con"
    add "Millipede.mra" "_Millipede"

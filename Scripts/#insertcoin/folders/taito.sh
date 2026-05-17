@@ -61,6 +61,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Kram.mra" "_Kram" "" ""
    add "$dir" "H" "Qix II (Tournament).mra" "_Qix" "" "PUZ"
    add "$dir" "H" "Space Dungeon.mra" "_Space Dungeon" "" ""
+   add "$dir" "H" "Warrior Blade (Japan).mra" "_Warrior Blade" "" "ACT"
 
    dot
 fi
