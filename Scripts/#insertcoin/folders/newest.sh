@@ -70,6 +70,7 @@ counter=0
 
 #0517
    add "Warrior Blade (Japan).mra" "_Warrior Blade"
+   add "Gradius III (World, version R).mra" "_Gradius III"
 
 #0516
    add "D-Con.mra" "_D-Con"
@@ -89,7 +90,6 @@ counter=0
 #0504
    add "City Connection (set 1).mra" "_City Connection"
    add "Argus.mra" "_Argus" 
-   add "Gradius III (World, version R).mra" "_Gradius III"
 
 #0501
 
