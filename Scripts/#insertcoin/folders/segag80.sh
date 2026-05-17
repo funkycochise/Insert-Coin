@@ -17,7 +17,7 @@ if [ "$show_system" == "1" ]; then
 else
    dir=$sega
 fi
-
+#echo "$dir"
 resh=$(exist "005.mra")
 resv=$(exist "Astro Blaster.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
