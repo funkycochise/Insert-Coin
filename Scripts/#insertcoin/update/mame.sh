@@ -961,6 +961,7 @@ dl "sdgndmps.zip"
 dl "milliped.zip"
 dl "dcon.zip"
 dl "warriorb.zip"
+dl "spacefb.zip"
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
