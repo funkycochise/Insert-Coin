@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0518
+   add "Space Firebird.mra" "_Space Firebird"
+
 #0517
    add "Warrior Blade (Japan).mra" "_Warrior Blade"
    add "Gradius III (World, version R).mra" "_Gradius III"

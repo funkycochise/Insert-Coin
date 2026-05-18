@@ -18,6 +18,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V"  "Donkey Kong Junior (US, Set F-2).mra" "_Donkey Kong Junior" "" "ACT"
    add "$dir" "V"  "Mario Bros. (US, Rev G).mra" "_Mario Bros" "" "ACT"
    add "$dir" "V"  "Radar Scope (rev. D).mra" "_Radar Scope" "" "STG"
+   add "$dir" "V"  "Space Firebird.mra" "_Space Firebird" "" "STG"
 
    add "$dir" "H"  "Popeye (Rev D).mra" "_Popeye" "" "ACT"
    add "$dir" "H"  "Sky Skipper.mra" "_Sky Skipper" "" "ACT"
