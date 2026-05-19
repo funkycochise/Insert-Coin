@@ -170,6 +170,7 @@ fi
 if [ -f "$CORE/Darius2_20260430.rbf" ] && [ -f "$CORE/Darius2_20260510.rbf" ]; then
    find /media/fat/_Arcade/cores  -maxdepth 1 -type f -name "Darius2_*" ! -name "Darius2_20260510.rbf" -delete
 fi
+find $CORE -maxdepth 1 -type f -name "Millipede_*" ! -name "Millipede_20260518.rbf" -delete
 
 
 
