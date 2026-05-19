@@ -60,7 +60,6 @@ fi
 #clean sega system 1 previous version
 
 cd /media/fat/_Arcade/cores
-#find . -maxdepth 1 -type f -name "SEGASYS1_*" ! -name "SEGASYS1_20210901.rbf*" -delete
 
 if [ -f "$CORE/SEGASYS1_20240602.rbf" ] 
 then
