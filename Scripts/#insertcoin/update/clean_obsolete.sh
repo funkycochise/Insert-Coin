@@ -171,7 +171,7 @@ if [ -f "$CORE/Darius2_20260430.rbf" ] && [ -f "$CORE/Darius2_20260510.rbf" ]; t
 fi
 find $CORE -maxdepth 1 -type f -name "Millipede_*" ! -name "Millipede_20260518.rbf" -delete
 
-
+find $CORE -maxdepth 1 -type f -name "DCon_*" ! -name "DCon_20260515.rbf" -delete
 
 
 if [ -f "$CORE/mazinger_mister_20250804.rbf" ] 
