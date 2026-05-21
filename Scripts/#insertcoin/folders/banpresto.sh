@@ -15,7 +15,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "V" "Akuu Gallet (Japan).mra" "_Air Gallet" "" "STG"
-   add "$dir" "V" "Macross.mra" "_Macross" "" "STG"
+   add "$dir" "V" "Super Dimension Fortress Macross.mra" "_ Super Dimension Fortress Macross" "" "STG"
    add "$dir" "V" "Mazinger Z (Japan).mra" "_Mazinger Z" "" "STG"
 
    add "$dir" "H" "Bishoujo Senshi Sailor Moon (Version 95-03-22B, Japan).mra" "_Pretty Soldier Sailor Moon" "" "BEA"
