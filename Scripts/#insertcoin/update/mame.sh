@@ -963,6 +963,8 @@ dl "dcon.zip"
 dl "warriorb.zip"
 dl "spacefb.zip"
 dl "raiden.zip"
+dl "nmk004.zip"
+dl "macross.zip"
 
 #special_echo "Downloading missing STV mame roms"
 dl "astrass.zip"
