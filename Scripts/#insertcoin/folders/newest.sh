@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0520
+   add "macross.mra" "_Macross"
+
 #0518
    add "Space Firebird.mra" "_Space Firebird"
 
