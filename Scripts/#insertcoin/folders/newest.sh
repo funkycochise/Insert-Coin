@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0522
+   add "US AAF Mustang (25th May. 1990).mra" "_US AAF Mustang"
+
 #0520
    add "macross.mra" "_Macross"
 
