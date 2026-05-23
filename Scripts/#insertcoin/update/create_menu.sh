@@ -61,6 +61,7 @@ fi
 ./folders/neogeo.sh "$targetdir"
 ./folders/nichibutsu.sh "$targetdir"
 ./folders/nintendo.sh "$targetdir"
+./folders/nmk.sh "$targetdir"
 ./folders/orca.sh "$targetdir"
 ./folders/pacman.sh "$targetdir"
 ./folders/raizing.sh "$targetdir"
