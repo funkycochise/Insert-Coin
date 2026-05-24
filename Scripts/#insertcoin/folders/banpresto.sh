@@ -1,4 +1,4 @@
-ww#!/bin/bash
+#!/bin/bash
 source ./folders/functions.sh
 loadsetup
 
