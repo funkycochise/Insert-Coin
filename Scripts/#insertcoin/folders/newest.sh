@@ -69,7 +69,7 @@ function additem {
 counter=0
 
 #0524
-   add "Super Dimension Fortress Macross.mra" "_Super Dimension Fortress Macross"
+   add "Super Dimension Fortress Macross (Japan).mra" "_Super Dimension Fortress Macross"
 
 #0522
    add "US AAF Mustang (25th May. 1990).mra" "_US AAF Mustang"
