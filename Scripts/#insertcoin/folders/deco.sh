@@ -33,6 +33,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Tumble Pop (World).mra" "_Tumble Pop" "" "ACT"
    add "$dir" "H" "Psycho-Nics Oscar (World).mra" "_Psycho-Nics Oscar" "" "RNG"
    add "$dir" "H" "The Real Ghostbusters (US 2 Players, Revision 2).mra" "_The Real Ghostbusters" "" "RNG"
+    add "$dir" "H" "Vapor Trail - Hyper Offence Formation (World, Rev. 1).mra" "_Vapor Trail - Hyper Offence Formation" "" "STG"
 
    dot
 fi
