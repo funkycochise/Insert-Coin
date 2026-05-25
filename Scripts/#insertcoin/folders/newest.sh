@@ -70,6 +70,7 @@ counter=0
 
 #0525
    add "Cabal (World, Joystick).mra" "_Cabal"
+   add "Act-Fancer Cybernetick Hyper Weapon (World, Rev. 3).mra" "_Act-Fancer Cybernetick Hyper Weapon"
 
 #0524
    add "Super Dimension Fortress Macross (Japan).mra" "_Super Dimension Fortress Macross"
