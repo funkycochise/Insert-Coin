@@ -14,6 +14,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
 
    add "$dir" "H" "Blood Bros.mra" "_Blood Bros" "" "ACT"
+   add "$dir" "H" "Cabal (World, Joystick).mra" "_Cabal" "" "ACT"
    add "$dir" "H" "Toki (World, set 1).mra" "_Toki" "" "ACT"
    dot
 fi
