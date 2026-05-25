@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0525
+   add "Cabal (World, Joystick).mra" "_Cabal"
+
 #0524
    add "Super Dimension Fortress Macross (Japan).mra" "_Super Dimension Fortress Macross"
 
