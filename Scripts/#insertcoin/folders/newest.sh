@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0526
+   add "The Cliffhanger - Edward Randy (World, Ver. 3).mra" "_The Cliffhanger - Edward Randy"
+
 #0525
    add "Cabal (World, Joystick).mra" "_Cabal"
    add "Act-Fancer Cybernetick Hyper Weapon (World, Rev. 3).mra" "_Act-Fancer Cybernetick Hyper Weapon"

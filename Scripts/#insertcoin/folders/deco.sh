@@ -32,8 +32,9 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Western Express (Japan, rev 4).mra" "_Express Raider" "" "RNG"
    add "$dir" "H" "Tumble Pop (World).mra" "_Tumble Pop" "" "ACT"
    add "$dir" "H" "Psycho-Nics Oscar (World).mra" "_Psycho-Nics Oscar" "" "RNG"
+   add "$dir" "H" "The Cliffhanger - Edward Randy (World, Ver. 3).mra" "_The Cliffhanger - Edward Randy" "" "ACT"
    add "$dir" "H" "The Real Ghostbusters (US 2 Players, Revision 2).mra" "_The Real Ghostbusters" "" "RNG"
-    add "$dir" "H" "Vapor Trail - Hyper Offence Formation (World, Rev. 1).mra" "_Vapor Trail - Hyper Offence Formation" "" "STG"
+   add "$dir" "H" "Vapor Trail - Hyper Offence Formation (World, Rev. 1).mra" "_Vapor Trail - Hyper Offence Formation" "" "STG"
 
    dot
 fi
