@@ -70,6 +70,7 @@ counter=0
 
 #0527
    add "Star Wars (Rev 2).mra" "_Star Wars" 
+   add "Crude Buster (World, FX version).mra" "_Crude Buster"
 
 #0526
    add "The Cliffhanger - Edward Randy (World, Ver. 3).mra" "_The Cliffhanger - Edward Randy"
