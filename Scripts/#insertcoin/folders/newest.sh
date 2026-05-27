@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0527
+   add "Star Wars (Rev 2).mra" "_Star Wars" 
+
 #0526
    add "The Cliffhanger - Edward Randy (World, Ver. 3).mra" "_The Cliffhanger - Edward Randy"
 
