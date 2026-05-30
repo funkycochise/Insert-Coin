@@ -210,6 +210,10 @@ then
    rm -r "$ARCADE/Cabal.mgl"
 fi
 
+if [ -d "$ALT/_Blood Bros" ]
+then
+find $ARCADE -maxdepth 1 -type f -name "Blood Bros*.mra" ! -name "Blood Bros (World).mra" -delete
+fi
 
 if [ -f "$CORE/IremM90_20241107.rbf" ] 
 then
