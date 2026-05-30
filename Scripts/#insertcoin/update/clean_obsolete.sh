@@ -14,6 +14,7 @@ if [ "$remove_other" == "1" ]; then
 fi
 #remove previous G&W core
 if [ -f "$CONSOLE/GnW_20220606.rbf" ] 
+if [ -f "$CONSOLE/GnW_20220606.rbf" ] 
 then
   rm -r "$CONSOLE/GnW_20220606.rbf"
 fi
@@ -170,8 +171,6 @@ if [ -f "$CORE/Darius2_20260430.rbf" ] && [ -f "$CORE/Darius2_20260510.rbf" ]; t
    find /media/fat/_Arcade/cores  -maxdepth 1 -type f -name "Darius2_*" ! -name "Darius2_20260510.rbf" -delete
 fi
 find $CORE -maxdepth 1 -type f -name "Millipede_*" ! -name "Millipede_20260518.rbf" -delete
-
-find $CORE -maxdepth 1 -type f -name "DCon_*" ! -name "DCon_20260515.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "snowbros_mister_*" ! -name "snowbros_mister_20260527.rbf" -delete
 
