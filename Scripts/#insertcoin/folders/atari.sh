@@ -50,6 +50,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Sprint 1.mra" "_Sprint 1" "" "SPO"
    add "$dir" "H" "Sprint 2.mra" "_Sprint 2" "" "SPO"
    add "$dir" "H" "Star Wars (Rev 2).mra" "_Star Wars" 
+   add "$dir" "H" "Empire Strikes Back.mra" "_Empire Strikes Back" 
    add "$dir" "H" "Subs.mra" "_Subs"
    add "$dir" "H" "Vindicators Part II (rev 3).mra" "_Vindicators part II"
    add_rep "$dir" "V" "_Tetris (Atari)"  "" "" "PUZ"

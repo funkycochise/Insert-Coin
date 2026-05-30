@@ -68,6 +68,9 @@ function additem {
 
 counter=0
 
+#0530
+   add "Empire Strikes Back.mra" "_Empire Strikes Back" 
+
 #0527
    add "Star Wars (Rev 2).mra" "_Star Wars" 
    add "Crude Buster (World, FX version).mra" "_Crude Buster"
