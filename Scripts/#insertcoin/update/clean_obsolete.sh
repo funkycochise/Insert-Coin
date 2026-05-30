@@ -201,7 +201,14 @@ then
     rm -r "$ALT/_Darius/Darius.mra" > /dev/null 2>&1
 fi
 
-
+if [ -f "$ALT/_Cabal/Cabal.mgl" ] 
+then
+   rm -r "$ALT/_Cabal/Cabal.mgl"
+fi
+if [ -f "$ARCADE/Cabal.mgl" ] 
+then
+   rm -r "$ARCADE/Cabal.mgl"
+fi
 
 
 if [ -f "$CORE/IremM90_20241107.rbf" ] 
