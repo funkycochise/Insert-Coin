@@ -45,7 +45,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Breakers Revenge.mgl" "" "" "VSF"
    add "$dir" "H"  "Breakers.mgl" "" "" "VSF"
    add "$dir" "H"  "Burning Fight.mgl" "" "" "BEA"
-   add "$dir" "H"  "Cabal.mgl" "" "" "ACT"
+   add "$dir" "H"  "Cabal (neogeo).mgl" "_Cabal NG" "" "ACT"
    add "$dir" "H"  "Captain Tomaday.mgl" "" "" "STG"
    add "$dir" "H"  "Chibi Maruko-chan; Maruko Deluxe Quiz.mgl"
    add "$dir" "H"  "Choutetsu Brikin'ger.mgl"
