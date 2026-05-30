@@ -175,6 +175,8 @@ find $CORE -maxdepth 1 -type f -name "DCon_*" ! -name "DCon_20260515.rbf" -delet
 
 find $CORE -maxdepth 1 -type f -name "snowbros_mister_*" ! -name "snowbros_mister_20260527.rbf" -delete
 
+find $CORE -maxdepth 1 -type f -name "StarWars_*" ! -name "StarWars_20260530.rbf" -delete
+
 
 if [ -f "$CORE/mazinger_mister_20250804.rbf" ] 
 then
