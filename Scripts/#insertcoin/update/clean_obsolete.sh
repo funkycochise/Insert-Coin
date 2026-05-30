@@ -14,7 +14,6 @@ if [ "$remove_other" == "1" ]; then
 fi
 #remove previous G&W core
 if [ -f "$CONSOLE/GnW_20220606.rbf" ] 
-if [ -f "$CONSOLE/GnW_20220606.rbf" ] 
 then
   rm -r "$CONSOLE/GnW_20220606.rbf"
 fi
@@ -161,6 +160,7 @@ find $CORE -maxdepth 1 -type f -name "jtgrad3_*" ! -name "jtgrad3.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "jtargus_*" ! -name "jtargus_20260502.rbf" -delete
 
+
 if [ -f "$CORE/Darius2_20260430.rbf" ] && [ ! -f "$CORE/Darius2_20260510.rbf" ]; then
    find /media/fat/_Arcade/cores  -maxdepth 1 -type f -name "Darius2_*" ! -name "Darius2_20260430.rbf" -delete
 fi
@@ -200,19 +200,8 @@ then
     rm -r "$ALT/_Darius/Darius.mra" > /dev/null 2>&1
 fi
 
-if [ -f "$ALT/_Cabal/Cabal.mgl" ] 
-then
-   rm -r "$ALT/_Cabal/Cabal.mgl"
-fi
-if [ -f "$ARCADE/Cabal.mgl" ] 
-then
-   rm -r "$ARCADE/Cabal.mgl"
-fi
 
-if [ -d "$ALT/_Blood Bros" ]
-then
-find $ARCADE -maxdepth 1 -type f -name "Blood Bros*.mra" ! -name "Blood Bros (World).mra" -delete
-fi
+
 
 if [ -f "$CORE/IremM90_20241107.rbf" ] 
 then
