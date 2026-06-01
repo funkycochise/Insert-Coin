@@ -15,6 +15,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    outdir=$1
    add "$dir" "V" "Burger Time (Set 1).mra" "_Burger Time" "" "ACT"
    add "$dir" "V" "Burnin' Rubber.mra" "_Burning Rubber" "" "ACT"
+   add "$dir" "V" "Sky Smasher.mra" "_Sky Smasher" "" "STG"
    add "$dir" "H" "Act-Fancer Cybernetick Hyper Weapon (World, Rev. 3).mra" "_Act-Fancer Cybernetick Hyper Weapon" "" "RNG"
    add "$dir" "H" "Cobra-Command (World, Rev. 5).mra" "_Cobra-Command" "" "STG"
    add "$dir" "H" "Crude Buster (World, FX version).mra" "_Crude Buster" "" "BEA"
@@ -35,6 +36,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Psycho-Nics Oscar (World).mra" "_Psycho-Nics Oscar" "" "RNG"
    add "$dir" "H" "The Cliffhanger - Edward Randy (World, Ver. 3).mra" "_The Cliffhanger - Edward Randy" "" "ACT"
    add "$dir" "H" "The Real Ghostbusters (US 2 Players, Revision 2).mra" "_The Real Ghostbusters" "" "RNG"
+   add "$dir" "H" "Trio The Punch (World).mra" "_Trio The Punch" "" "ACT"
    add "$dir" "H" "Vapor Trail - Hyper Offence Formation (World, Rev. 1).mra" "_Vapor Trail - Hyper Offence Formation" "" "STG"
 
    dot
