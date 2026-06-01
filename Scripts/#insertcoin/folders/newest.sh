@@ -68,6 +68,10 @@ function additem {
 
 counter=0
 
+#0601
+   add "Trio The Punch (World).mra" "_Trio The Punch"
+   add "Sky Smasher.mra" "_Sky Smasher"
+
 #0530
    add "Empire Strikes Back.mra" "_Empire Strikes Back" 
 
