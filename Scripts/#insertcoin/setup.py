@@ -95,6 +95,7 @@ neogeo=_Neo-geo
 nichibutsu=_Nihon Bussan-Nichibutsu
 nintendo=_Nintendo
 nmk=_Nmk
+orca=_Orca
 pacman=_Pacman
 raizing=_Raizing-8ing
 rare=_Rare

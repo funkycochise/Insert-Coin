@@ -122,6 +122,7 @@ echo "neogeo=$neogeo"
 echo "nichibutsu=$nichibutsu"
 echo "nintendo=$nintendo"
 echo "nmk=$nmk"
+echo "orca=$orca"
 echo "pacman=$pacman"
 echo "raizing=$raizing"
 echo "rare=$rare"
@@ -178,7 +179,6 @@ if [ "$additional_res" == "1" ]; then
    fi
 fi
 
-echo "insertcoin_menu=$insertcoin_menu"
 if [ "$insertcoin_menu" == "1" ]; then
    start_time=$SECONDS
    ./update/create_menu.sh

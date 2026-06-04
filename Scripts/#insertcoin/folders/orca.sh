@@ -1,6 +1,7 @@
 #!/bin/bash
 source ./folders/functions.sh
-dir=_Orca
+dir=$orca
+#dir=_Orca
 
 resv=$(exist "Vastar.mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
