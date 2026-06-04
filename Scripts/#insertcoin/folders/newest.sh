@@ -59,6 +59,9 @@ function additem {
 
 counter=0
 
+#0604
+   add "Sagaia (dual screen) (World).mra" "_Sagaia"
+
 #0531
    add "Tempest.mra" "_Tempest"
 
