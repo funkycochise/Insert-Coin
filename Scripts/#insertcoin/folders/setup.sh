@@ -113,8 +113,8 @@ rng_v=$(ini_get "$ini" rng_v)
 
 function loadnames {
 
-essential=$(ini_get "$names" essential)
-newest=$(ini_get "$names" newest)
+dir_essential=$(ini_get "$names" dir_essential)
+dir_newest=$(ini_get "$names" dir_newest)
 
 genre_horizontal=$(ini_get "$names" genre_horizontal)
 genre_vertical=$(ini_get "$names" genre_vertical)

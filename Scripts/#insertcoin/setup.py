@@ -37,8 +37,8 @@ DEFAULT_CONFIG = {
 
 # ------------------- Contenu par défaut de names.ini -------------------
 RAW_NAMES_CONTENT = """[folder]
-essential=_#Essentials
-newest=_#Newest
+dir_essential=_#Essentials
+dir_newest=_#Newest
 
 genre_horizontal=__Horizontal
 genre_vertical=__Vertical

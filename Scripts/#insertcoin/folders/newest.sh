@@ -1,8 +1,12 @@
 #!/bin/bash  
 source ./folders/functions.sh
-dir=$newest
+dir=$dir_newest
 
-echo "newest=$newest"
+if [ ! -d "$targetfolder/$dir" ];
+then
+   #echo "Creating $targetfolder"
+   mkdir "$targetfolder/$dir" 
+fi
 
 function linkfolder {
 
@@ -16,8 +20,10 @@ function linkfolder {
       formated=$(printf "%02d" $counter)
 
       if (! [ -z "$2" ]);then
+         #echo "$ALT/$1 to $targetfolder/$dir/_$formated$2"
          ln -s "$ALT/$1"  "$targetfolder/$dir/_$formated$2"
       else
+         #echo "$ALT/$1 to $targetfolder/$dir/_$formated$1"
          ln -s "$ALT/$1"  "$targetfolder/$dir/_$formated$1"
       fi
    fi

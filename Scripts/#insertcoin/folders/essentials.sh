@@ -1,6 +1,6 @@
 #!/bin/bash
 source ./folders/functions.sh
-dir=$essential
+dir=$dir_essential
 
    #add "$dir" "V"  "Time Pilot '84 (Set 1).mra" "_Time Pilot 84" "" "STG"
    #add "$dir" "V"  "Time Pilot '84 (Set 2).mra" "_Time Pilot 84" "" "STG"
