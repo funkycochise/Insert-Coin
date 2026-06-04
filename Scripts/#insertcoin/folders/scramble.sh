@@ -1,18 +1,9 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep scramble $names)
-else
-   scramble="_Scramble"
-fi
 dir=$scramble
 
 resv=$(exist "Scramble (Stern, Set 1).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V"  "Amidar (Scramble).mra" "_Amidar"
    add "$dir" "V"  "Anteater.mra" "_Anteater" 
    add "$dir" "V"  "Armored Car.mra" "_Armored Car" 

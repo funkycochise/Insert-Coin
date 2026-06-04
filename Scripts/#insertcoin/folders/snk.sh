@@ -1,19 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep snk $names)
-else
-   snk="_SNK"
-fi
 dir=$snk
 
 resh=$(exist "P.O.W. - Prisoners of War (US Version 1).mra")
 resv=$(exist "Ikari Warriors.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V" "ASO.mra" "_ASO"
    add "$dir" "V" "Fantasy.mra" "_Fantasy" "" "STG"
    add "$dir" "V" "Fighting Golf.mra" "_Fighting Golf"
@@ -37,7 +28,6 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Street Smart (US Version 2).mra" "_Street Smart"
    add "$dir" "H" "P.O.W. - Prisoners of War (US Version 1).mra" "_P.O.W. - Prisoners of War" "" "BEA"
    add "$dir" "H" "Ikari III - The Rescue (World Version 1, 8-Way Joystick).mra" "_Ikari III - The Rescue" "" "RNG"
-
 
    dot
 fi

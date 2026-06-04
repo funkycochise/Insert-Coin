@@ -1,19 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep konami $names)
-else
-   konami="_Konami"
-fi
 dir=$konami
 
 resh=$(exist "Combat School (joystick).mra")
 resv=$(exist "Contra (US - Asia, set 1).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V"  "Amidar (Scramble).mra" "_Amidar" "" "PUZ"
    add "$dir" "V"  "Ajax.mra" "_Ajax" "" "STG"
    add "$dir" "V"  "Circus Charlie (level select, set 1).mra" "_Circus Charlie" "" "ACT"

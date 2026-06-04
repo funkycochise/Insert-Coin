@@ -1,17 +1,9 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep galaxian $names)
-else
-   galaxian="_Galaxian"
-fi
 dir=$galaxian
 
 resv=$(exist "Galaxian (Namco, Set 1).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
    add "$dir" "V" "Moon Quasar.mra" "_Moon Quasar"
    add "$dir" "V" "Azurian Attack.mra" "_Azurian Attack"
    add "$dir" "V" "Black Hole.mra" "_Black Hole"

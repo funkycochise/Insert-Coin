@@ -6,7 +6,7 @@ dir="_#Favorites"
 
    outdir=$1
    add "$dir" "H" "Bubble Bobble (Japan, Ver 0.1).mra" "_Bubble Bobble" "" "ACT"
-   add "$dir" "H" "Chelnov - Atomic Runner (World).mra" "_Chelnov" "" "ACT"
+   add "$dir" "H" "Atomic Runner Chelnov (World).mra" "_Atomic Runner Chelnov" "" "ACT"
    add "$dir" "H" "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen" "" "STG"
    add "$dir" "H" "Cotton 2 (JUET 970902 V1.000).mra" "_Cotton 2" "" "STG"
    add "$dir" "H" "Cotton Boomerang (JUET 980709 V1.000).mra" "_Cotton Boomerang" "" "STG"

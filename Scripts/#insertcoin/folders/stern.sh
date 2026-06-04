@@ -1,19 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep stern $names)
-else
-   stern="_Stern"
-fi
 dir=$stern
 
 resh=$(exist "Berzerk.mra")
 resv=$(exist "Armored Car.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V" "Armored Car.mra" "_Armored Car" "" "ACT"
    add "$dir" "H" "Berzerk.mra" "_Berzerk" "" "ACT"
    add "$dir" "H" "Dark Planet.mra" "_Dark Planet" "" "ACT"

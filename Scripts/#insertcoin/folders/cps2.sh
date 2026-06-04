@@ -1,17 +1,5 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep cps2 $names)
-else
-   cps2="_CPS2"
-fi
-if [ -f "$names" ]; then
-   source <(grep capcom $names)
-else
-   capcom="_Capcom-Mitchell"
-fi
 if [ "$show_system" == "1" ]; then
    dir=$cps2
 else
@@ -21,10 +9,6 @@ fi
 resh=$(exist "1944 The Loop Master (Europe 000620).mra")
 resv=$(exist "Dimahoo (Europe 000121).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
-   add "$dir" "V" "19XX The War Against Destiny (Europe 960104).mra" "_19XX The War Against Destiny" "" "STG"
-   add "$dir" "V" "Dimahoo (Europe 000121).mra" "_Dimahoo" "" "STG"
 
    add "$dir" "H" "1944 The Loop Master (Europe 000620).mra" "_1944 The Loop Master" "" "STG"
    add "$dir" "H" "Adventure Quiz Capcom World 2 (Japan 920611).mra" "_Adventure Quiz Capcom World 2"
@@ -70,7 +54,5 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "X-Men Vs. Street Fighter (Europe 961004).mra" "_X-Men Vs. Street Fighter" "" "VSF"
    add "$dir" "H" "Final Fight AE CPS2 Patch.mra" "_Final Fight AE" "" "BEA"
 
-
-   add "$dir" "H"  "Ghouls'n Ghosts (World).mra" "_Ghouls'n Ghosts" "" "ACT"
    dot
 fi

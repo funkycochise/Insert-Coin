@@ -1,18 +1,9 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep midwaytyz $names)
-else
-   midwaytyz="_Midway_TYZUnit"
-fi
-midwaytyz="_Midway_TYZUnit"
 dir=$midwaytyz
 
 resh=$(exist "Mortal Kombat (Rev. 4.0 09-28-92).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
    #add "$dir" "H"  "High Impact Football (rev LA5 02-15-91).mra" "_High Impact Football"
    add "$dir" "H"  "Mortal Kombat (Rev. 4.0 09-28-92).mra" "_Mortal Kombat" "" "VSF"
    add "$dir" "H"  "Mortal Kombat II (Rev. L3.1).mra" "_Mortal Kombat II" "" "VSF"

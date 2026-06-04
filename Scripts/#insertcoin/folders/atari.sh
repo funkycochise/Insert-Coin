@@ -1,19 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep atari $names)
-else
-   atari="_Atari"
-fi
 dir=$atari
-outdir=$1
 
 resh=$(exist "Gauntlet (rev 14).mra")
 resv=$(exist "Centipede (Rev 4).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-
 
    add "$dir" "V" "Breakout (TTL).mra" "_Breakout"
    add "$dir" "V" "Centipede (Rev 4).mra" "_Centipede"
@@ -21,6 +12,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Millipede.mra" "_Millipede"
    add "$dir" "V" "Super Breakout (Rev 04).mra" "_Super Breakout"
    add "$dir" "V" "Super Xevious.mra" "_Xevious"
+   add_rep "$dir" "V" "_Tetris (Atari)"  "" "" "PUZ"
    add "$dir" "V" "Tron.mra" "_Tron"
    add "$dir" "V" "Xevious.mra" "_Xevious" "" "STG"
 
@@ -53,6 +45,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Empire Strikes Back.mra" "_Empire Strikes Back" 
    add "$dir" "H" "Subs.mra" "_Subs"
    add "$dir" "H" "Vindicators Part II (rev 3).mra" "_Vindicators part II"
-   add_rep "$dir" "V" "_Tetris (Atari)"  "" "" "PUZ"
+   add "$dir" "H" "Tempest.mra" "_Tempest" "" "ACT"
+
    dot
 fi

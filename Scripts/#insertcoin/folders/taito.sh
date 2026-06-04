@@ -1,19 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep taito $names)
-else
-   taito="_Taito"
-fi
 dir=$taito
 
 resh=$(exist "Bubble Bobble (Japan, Ver 0.1).mra")
 resv=$(exist "Arkanoid (W).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"
    add "$dir" "V" "Arkanoid - Revenge of DOH (World).mra" "_Arkanoid II"
    add "$dir" "V" "Arkanoid (JP).mra" "_Arkanoid"

@@ -1,27 +1,5 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep segasyse $names)
-else
-   segasyse="_Sega-System-E"
-fi
-if [ -f "$names" ]; then
-   source <(grep sega $names)
-else
-   sega="_Sega"
-fi
-if [ "$show_system" == "1" ]; then
-   dir=$segasys16
-else
-   dir=$sega
-fi
-if [ -f "$names" ]; then
-   source <(grep sega $names)
-else
-   sega="_Sega"
-fi
 if [ "$show_system" == "1" ]; then
    dir=$segasyse
 else
@@ -31,8 +9,6 @@ fi
 resh=$(exist "Opa Opa.mra")
 resv=$(exist "Megumi Rescue (Japan).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V" "Megumi Rescue (Japan).mra" "_SystemE_Megumi Rescue" "_Megumi Rescue"
    add "$dir" "V" "Riddle of Pythagoras (Japan).mra" "_SystemE_Riddle of Pythagoras" "_Riddle of Pythagoras"
 

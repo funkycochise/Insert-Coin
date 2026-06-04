@@ -1,32 +1,14 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep toaplan $names)
-fi
-if [ -z "$toaplan" ]; then
-   toaplan="_Toaplan"
-fi
-if [ -f "$names" ]; then
-   source <(grep toaplanstg $names)
-fi
-if [ -z "$toaplanstg" ]; then
-   toaplanstg="_Toaplan_STG"
-fi
-dir=$toaplanstg
 if [ "$show_system" == "1" ]; then
    dir=$toaplanstg
 else
    dir=$toaplan
 fi
 
-
 resh=$(exist "Kyukyoku Tiger (Japan, 2P Co-op).mra")
 resv=$(exist "Truxton - Tatsujin.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "H" "Hellfire (2P set).mra" "_Hellfire" "" "STG"
    add "$dir" "H" "Zero Wing (2P set).mra" "_Zero Wing" "" "STG"
    add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"

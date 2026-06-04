@@ -1,18 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep capcom $names)
-else
-   capcom="_Capcom-Mitchell"
-fi
 dir=$capcom
 
 resh=$(exist "Black Tiger.mra")
 resv=$(exist "1942 (Revision B).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
    add "$dir" "V"  "Avengers (US, rev. D).mra" "_Avengers" "" "BEA"
    add "$dir" "V"  "1942 (Revision B).mra" "_1942" "" "STG"
    add "$dir" "V"  "1943 Kai Midway Kaisen (Japan).mra" "_1943 The Battle of Midway" "" "STG"

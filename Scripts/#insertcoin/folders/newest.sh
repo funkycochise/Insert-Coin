@@ -1,17 +1,8 @@
 #!/bin/bash  
 source ./folders/functions.sh
-
-outdir=$1
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep newest $names)
-else
-   newest="_#Recent"
-fi
 dir=$newest
 
-mkdir "$outdir/$dir"
+echo "newest=$newest"
 
 function linkfolder {
 
@@ -25,9 +16,9 @@ function linkfolder {
       formated=$(printf "%02d" $counter)
 
       if (! [ -z "$2" ]);then
-         ln -s "$ALT/$1"  "$outdir/$dir/_$formated$2"
+         ln -s "$ALT/$1"  "$targetfolder/$dir/_$formated$2"
       else
-         ln -s "$ALT/$1"  "$outdir/$dir/_$formated$1"
+         ln -s "$ALT/$1"  "$targetfolder/$dir/_$formated$1"
       fi
    fi
 }
@@ -48,7 +39,7 @@ fi
 
 function additem {
 
-   #echo "outdir: $outdir"
+   #echo "targetfolder: $targetfolder"
    #echo "dir: $dir"
    #echo "1: $1"
 
@@ -57,10 +48,10 @@ function additem {
       #echo "$counter - $1"
       formated=$(printf "%02d" $counter)
 
-      #echo "source: $outdir/$1"
+      #echo "source: $targetfolder/$1"
       #echo "formated: _$formated$1"      
-      if [ -d "$outdir/$1" ]; then
-         ln -s "$outdir/$1" "$outdir/$dir/_$formated$1"
+      if [ -d "$targetfolder/$1" ]; then
+         ln -s "$targetfolder/$1" "$targetfolder/$dir/_$formated$1"
       fi
    fi
 }
@@ -68,9 +59,8 @@ function additem {
 
 counter=0
 
-#0601
-   add "Trio The Punch (World).mra" "_Trio The Punch"
-   add "Sky Smasher.mra" "_Sky Smasher"
+#0531
+   add "Tempest.mra" "_Tempest"
 
 #0530
    add "Empire Strikes Back.mra" "_Empire Strikes Back" 
@@ -108,7 +98,7 @@ counter=0
    add "Millipede.mra" "_Millipede"
 
 #0514
-   add "Blood Bros (World).mra" "_Blood Bros"
+   add "Blood Bros.mra" "_Blood Bros"
    add "SD Gundam Psycho Salamander no Kyoui.mra" "_SD Gundam Psycho Salamander no Kyoui"
 
 #0510

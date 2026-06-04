@@ -1,18 +1,5 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep irem92t $names)
-else
-   irem92t="_Irem M92t"
-fi
-if [ -f "$names" ]; then
-   source <(grep irem $names)
-else
-   irem="_Irem"
-fi
-dir=$irem
 if [ "$show_system" == "1" ]; then
    dir=$irem92t
 else
@@ -22,7 +9,6 @@ fi
 resh=$(exist "_In The Hunt (Turbo)")
 resv=$(exist "_Lethal Thunder (Turbo)")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
    add_rep "$dir" "V" "_Lethal Thunder (Turbo)"  "_Lethal Thunder (Turbo)" "" "STG"
 
    add_rep "$dir" "H" "_Blade Master (Turbo)"  "_Blade Master (Turbo)" "" "BEA"

@@ -1,18 +1,5 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep irem92 $names)
-else
-   irem92="_Irem M92"
-fi
-if [ -f "$names" ]; then
-   source <(grep irem $names)
-else
-   irem="_Irem"
-fi
-dir=$irem
 if [ "$show_system" == "1" ]; then
    dir=$irem92
 else
@@ -22,7 +9,6 @@ fi
 resh=$(exist "In The Hunt (World).mra")
 resv=$(exist "Lethal Thunder (World).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
    add "$dir" "V" "Lethal Thunder (World).mra" "_Lethal Thunder" "" "STG"
 
    add "$dir" "H" "Blade Master (World).mra" "_Blade Master" "" "BEA"

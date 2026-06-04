@@ -1,17 +1,5 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep cps1 $names)
-else
-   cps1="_CPS1"
-fi
-if [ -f "$names" ]; then
-   source <(grep capcom $names)
-else
-   capcom="_Capcom-Mitchell"
-fi
 if [ "$show_system" == "1" ]; then
    dir=$cps1
 else
@@ -21,8 +9,6 @@ fi
 resh=$(exist "Ghouls'n Ghosts (World).mra")
 resv=$(exist "1941 Counter Attack (World 900227).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V"  "1941 Counter Attack (World 900227).mra" "_1941 Counter Attack" "" "STG"
    add "$dir" "V"  "Mercs (World 900302).mra" "_Mercs" "" "RNG"
    add "$dir" "V"  "Varth Operation Thunderstorm (World 920714).mra" "_Varth  Operation Thunderstorm" "" "STG"

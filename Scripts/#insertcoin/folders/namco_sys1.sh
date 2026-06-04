@@ -1,17 +1,5 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep namco_sys1 $names)
-else
-   namco_sys1="_Namco-System-1"
-fi
-if [ -f "$names" ]; then
-   source <(grep namco $names)
-else
-   namco="_Namco"
-fi
 if [ "$show_system" == "1" ]; then
    dir=$namco_sys1
 else
@@ -21,8 +9,6 @@ fi
 resh=$(exist "Splatter House (World, new version (SH3)).mra")
 resv=$(exist "Galaga '88.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V" "Bakutotsu Kijuutei.mra" "_Bakutotsu Kijuutei" "" "STG"
    add "$dir" "V" "Blast Off (Japan).mra" "_Blast Off" "" "SPO" "" "STG"
    add "$dir" "V" "Blazer (Japan).mra" "_Blazer" "" "STG"

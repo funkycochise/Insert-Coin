@@ -1,19 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep universal $names)
-else
-   universal="_Universal"
-fi
 dir=$universal
 
 resh=$(exist "Snap Jack.mra")
 resv=$(exist "Mr. Do!.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V" "Cosmic Alien.mra" "_Cosmic Alien"
    add "$dir" "V" "Cosmic Guerilla.mra" "_Cosmic Guerilla"
    add "$dir" "V" "Devil Zone.mra" "_Devil Zone"
