@@ -188,18 +188,7 @@ counter=0
 #1227
    add "Snow Bros. - Nick & Tom (Japan).mra" "_Snow Bros. - Nick & Tom"
 
-if [ -f "$names" ]; then
-   source <(grep vs $names)
-else
-   vs="_Nintendo Vs."
-fi
-if [ ! -z "$vs" ]; then
-   vs="_Nintendo Vs."
-fi
-#echo "names: $names"
-#echo "vs: $vs"
-
-additem "$vs"
+   additem "$vs"
 
 #1112
    add "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra"
