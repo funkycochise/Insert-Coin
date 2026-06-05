@@ -50,12 +50,12 @@ genre_sport=__Sport
 genre_vsf=__Vs Fighting
 genre_stg_h=__STG_H
 genre_stg_v=__STG_V
-genre_rng_h="__Run'n'Gun_H"
-genre_rng_v="__Run'n'Gun_V"
+genre_rng_h=__Run'n'Gun_H
+genre_rng_v=__Run'n'Gun_V
 
-alpha="_Alpha"
-atari="_Atari"
-bagman="_Bagman"
+alpha=_Alpha
+atari=_Atari
+bagman=_Bagman
 bally_midway=_Bally-midway
 banpresto=_Banpresto
 capcom=_Capcom-Mitchell
