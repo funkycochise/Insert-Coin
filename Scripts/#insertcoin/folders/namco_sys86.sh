@@ -1,17 +1,5 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep namco_sys86 $names)
-else
-   namco_sys86="_Namco-System-86"
-fi
-if [ -f "$names" ]; then
-   source <(grep namco $names)
-else
-   namco="_Namco"
-fi
 if [ "$show_system" == "1" ]; then
    dir=$namco_sys86
 else
@@ -20,8 +8,6 @@ fi
 
 resh=$(exist "Rolling Thunder (rev 3).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    #add "$dir" "H" "Alien Sector.mra" "_Alien Sector" "" "RNG"
    add "$dir" "H" "Genpei ToumaDen.mra" "_Genpei ToumaDen" "" "ACT"
    add "$dir" "H" "Hopping Mappy.mra" "_Hopping Mappy" "" "ACT"

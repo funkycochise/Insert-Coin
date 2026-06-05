@@ -1,19 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep jaleco $names)
-else
-   jaleco="_Jaleco"
-fi
 dir=$jaleco
 
 resh=$(exist "Rod-Land (World, set 1).mra")
 resv=$(exist "Psychic 5 (World).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V" "Argus.mra" "_Argus" "" "STG"
    add "$dir" "V" "Exerion (Taito).mra" "_Exerion" "" "STG"
    add "$dir" "V" "Grasspin (Jaleco).mra" "_Grasspin" "" ""

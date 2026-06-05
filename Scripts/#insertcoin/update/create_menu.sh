@@ -1,18 +1,12 @@
 #!/bin/bash
-
 source ./folders/functions.sh
 
-launchdir=$1
-#echo "launchdir: $launchdir"
-targetdir=$2
-#echo "targetdir: $targetdir"
-COL=$3
+if [ "$debug" == "1" ]; then
+   echo "launchdir: $launchdir"
+   echo "targetfolder: $targetfolder"
+fi
 
-loadsetup
-
-SECONDS=0
-
-echo "Creating $targetdir"
+echo "Creating $targetfolder"
 
 function linkcores {
 #echo "Linking cores"
@@ -21,91 +15,90 @@ ln -s "$ARCADE/cores" "$targetdir/cores"
 fi 
 }
 
-./folders/alpha.sh "$targetdir"
-./folders/atari.sh "$targetdir"
-./folders/bagman.sh "$targetdir" 
-./folders/bally-midway.sh "$targetdir"
-./folders/banpresto.sh "$targetdir"
-./folders/capcom.sh "$targetdir"
-./folders/cave.sh "$targetdir" 
-./folders/cps1.5.sh "$targetdir" 
-./folders/cps1.sh "$targetdir"
-./folders/cps2.sh "$targetdir"
-./folders/crazykong.sh "$targetdir"
-./folders/deco.sh "$targetdir"
-./folders/exidy.sh "$targetdir"
-./folders/galaxian.sh "$targetdir"
-./folders/gottlieb.sh "$targetdir"
-#./folders/igspgm.sh "$targetdir"
-./folders/irem.sh "$targetdir"
-./folders/irem62.sh "$targetdir"
-./folders/irem72.sh "$targetdir"
-./folders/irem90.sh "$targetdir"
-./folders/irem92.sh "$targetdir"
-./folders/irem92t.sh "$targetdir"
-./folders/irem107.sh "$targetdir"
-./folders/jaleco.sh "$targetdir"
-./folders/Kiwako.sh "$targetdir"
-./folders/konami.sh "$targetdir"
-./folders/konami_twin16.sh "$targetdir"
-./folders/ladybug.sh "$targetdir"
-./folders/mcr1.sh "$targetdir"
-./folders/mcr2.sh "$targetdir"
-./folders/mcr3.sh "$targetdir"
-./folders/mcr3mono.sh "$targetdir"
-./folders/mcr3scroll.sh "$targetdir"
-./folders/midwayyz.sh "$targetdir"
-./folders/namco.sh "$targetdir"
-./folders/namco_sys1.sh "$targetdir"
-./folders/namco_sys86.sh "$targetdir"
-./folders/neogeo.sh "$targetdir"
-./folders/nichibutsu.sh "$targetdir"
-./folders/nintendo.sh "$targetdir"
-./folders/nmk.sh "$targetdir"
-./folders/orca.sh "$targetdir"
-./folders/pacman.sh "$targetdir"
-./folders/raizing.sh "$targetdir"
-./folders/rare.sh "$targetdir"
-./folders/robotron.sh "$targetdir"
-./folders/scramble.sh "$targetdir"
-./folders/sega.sh "$targetdir"
-./folders/segaoutrun.sh "$targetdir"
-./folders/segasys1.sh "$targetdir"
-./folders/segasys16.sh "$targetdir"
-./folders/segasys18.sh "$targetdir"
-./folders/segasys2.sh "$targetdir"
-./folders/segasyse.sh "$targetdir"
-./folders/segastv.sh "$targetdir"
-./folders/segag80.sh "$targetdir"
-./folders/seta.sh "$targetdir"
-./folders/si.sh "$targetdir"
-./folders/snk.sh "$targetdir"
-./folders/stern.sh "$targetdir"
-./folders/success.sh "$targetdir"
-./folders/tad.sh "$targetdir"
-./folders/taito.sh "$targetdir"
-./folders/taitof2.sh "$targetdir"
-./folders/taitosj.sh "$targetdir"
-./folders/technos.sh "$targetdir"
-./folders/technos16.sh "$targetdir"
-./folders/Tehkan-Tecmo.sh "$targetdir"
-./folders/toaplan.sh "$targetdir"
-./folders/toaplan_stg.sh "$targetdir"
-./folders/universal.sh "$targetdir"
-./folders/upl.sh "$targetdir"
-./folders/vs.sh "$targetdir"
-./folders/williams.sh "$targetdir"
-
+./folders/alpha.sh
+./folders/atari.sh
+./folders/bagman.sh
+./folders/bally-midway.sh
+./folders/banpresto.sh 
+./folders/capcom.sh 
+./folders/cave.sh
+./folders/cps1.5.sh 
+./folders/cps1.sh
+./folders/cps2.sh
+./folders/cps3.sh
+./folders/crazykong.sh 
+./folders/deco.sh 
+./folders/exidy.sh 
+./folders/galaxian.sh 
+./folders/gottlieb.sh 
+#./folders/igspgm.sh 
+./folders/irem.sh 
+./folders/irem62.sh 
+./folders/irem72.sh 
+./folders/irem90.sh 
+./folders/irem92.sh 
+./folders/irem92t.sh 
+./folders/irem107.sh 
+./folders/jaleco.sh 
+./folders/Kiwako.sh 
+./folders/konami.sh 
+./folders/konami_twin16.sh 
+./folders/ladybug.sh 
+./folders/mcr1.sh 
+./folders/mcr2.sh 
+./folders/mcr3.sh 
+./folders/mcr3mono.sh 
+./folders/mcr3scroll.sh 
+./folders/midwayyz.sh 
+./folders/namco.sh 
+./folders/namco_sys1.sh 
+./folders/namco_sys86.sh 
+./folders/neogeo.sh 
+./folders/nichibutsu.sh 
+./folders/nintendo.sh 
+./folders/nmk.sh 
+./folders/orca.sh 
+./folders/pacman.sh 
+./folders/raizing.sh 
+./folders/rare.sh 
+./folders/robotron.sh 
+./folders/scramble.sh 
+./folders/sega.sh 
+./folders/segaoutrun.sh 
+./folders/segasys1.sh 
+./folders/segasys16.sh 
+./folders/segasys18.sh 
+./folders/segasys2.sh 
+./folders/segasyse.sh 
+./folders/segastv.sh 
+./folders/segag80.sh 
+./folders/seta.sh 
+./folders/si.sh 
+./folders/snk.sh 
+./folders/stern.sh 
+./folders/success.sh 
+./folders/tad.sh 
+./folders/taito.sh 
+./folders/taitof2.sh 
+./folders/taitosj.sh 
+./folders/technos.sh 
+./folders/technos16.sh 
+./folders/Tehkan-Tecmo.sh 
+./folders/toaplan.sh 
+./folders/toaplan_stg.sh 
+./folders/universal.sh 
+./folders/upl.sh 
+./folders/vs.sh 
+./folders/williams.sh 
 if [ "$newest" == "1" ]; then
-  ./folders/newest.sh "$targetdir"
+  ./folders/newest.sh 
 fi
-
 if [ "$essential" == "1" ]; then
-   ./folders/essentials.sh "$targetdir"
+   ./folders/essentials.sh 
 fi
-#if test -f "./update/favorites.sh"; then
-#   ./update/favorites.sh "$targetdir"
-#fi
+if test -f "./update/favorites.sh"; then
+   ./update/favorites.sh 
+fi
 
 #cores in insert coin
 if [ "$rootfolder" == "1" ]; then

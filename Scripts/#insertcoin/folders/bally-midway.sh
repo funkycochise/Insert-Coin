@@ -1,18 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep bally_midway $names)
-else
-   bally_midway="_Bally-midway"
-fi
 dir=$bally_midway
 
 resh=$(exist "Bosconian - Star Destroyer (new version).mra")
 resv=$(exist "Galaxian (Namco, Set 1).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
    add_rep "$dir" "V" "_Gaplus"  "" "" "STG"
    add_rep "$dir" "V" "_Pac-Man" "" "" "STG"
    add "$dir" "V" "Galaxian (Namco, Set 1).mra" "_Galaxian" "" "STG"

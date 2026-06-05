@@ -1,18 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep namco $names)
-else
-   namco="_Namco"
-fi
 dir=$namco
 
 resh=$(exist "Pac-Land (World).mra")
 resv=$(exist "_Gaplus")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
    add "$dir" "V"  "Dig Dug (Rev 2).mra" "_Dig Dug" "" "ACT"
    add "$dir" "V"  "Dig Dug II (New Ver).mra" "_Dig Dug II" "" "ACT"
    add "$dir" "V"  "Galaga (Midway, Set 1).mra" "_Galaga" "" "STG"

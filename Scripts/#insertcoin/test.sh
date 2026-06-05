@@ -4,9 +4,9 @@ debug=$1
 source ./folders/setup.sh
 set +a
 
-#echo "InsertCoin Rebuild"
+echo "InsertCoin Rebuild"
 
-function dump {
+if [ "$debug" == "1" ]; then
 
 echo "insertcoin_menu=$insertcoin_menu"
 echo "main_mister=$main_mister"
@@ -122,7 +122,6 @@ echo "neogeo=$neogeo"
 echo "nichibutsu=$nichibutsu"
 echo "nintendo=$nintendo"
 echo "nmk=$nmk"
-echo "orca=$orca"
 echo "pacman=$pacman"
 echo "raizing=$raizing"
 echo "rare=$rare"
@@ -155,76 +154,4 @@ echo "universal=$universal"
 echo "upl=$upl"
 echo "vs=$vs"
 echo "williams=$williams"
-}
-
-if [ "$TERM" == "vt102" ]; then
-./update/banner.sh $COL
-else
-./update/banner.sh $COL
-fi
-
-if test -f "/media/fat/Scripts/#insertcoin/out.txt"; 
-then
-   rm -r /media/fat/Scripts/#insertcoin/out.txt
-fi
-
-#clean of existing folders
-if test -f "./update/sweep.sh"; then
-  ./update/sweep.sh
-fi
-
-if [ "$additional_res" == "1" ]; then
-   if test -f "./update/install_res.sh"; then
-      ./update/install_res.sh
-   fi
-fi
-
-if [ "$insertcoin_menu" == "1" ]; then
-   start_time=$SECONDS
-   ./update/create_menu.sh
-   elapsed=$(( SECONDS - start_time ))
-   echo -n -e "Menu Creation process completed in $elapsed sec.\n"
-fi
-
-if test -f "/media/fat/Scripts/#local/key2.sh"; then
-   /media/fat/Scripts/#local/key2.sh
-fi
-if test -f "./update/install_local.sh"; then
-   ./update/install_local.sh "$targetfolder"
-fi
-if [ "$mame_rom" == "1" ]; then
-   ./update/mame.sh
-fi
-if [ "$neogeo_rom" == "1" ]; then
-   ./update/neogeo.sh
-fi
-
-if [ "$gnw_rom" == "1" ]; then
-   ./update/gw.sh
-fi
-if [ "$console_mgl" == "1" ]; then
-   ./update/clean_console.sh
-fi
-#if [ "$obsolete_core" == "1" ]; then
-   ./update/clean_obsolete.sh
-#fi 
-if [ "$console_core" == "1" ]; then
-   ./update/update_console.sh
-fi
-
-echo -e "${BLUE}${CHECK}${NC} Latest updated _Console cores :"
-find /media/fat/_Console/*.rbf  -mtime 0 -printf '%p\n' 2>/dev/null | sort -r | more
-echo -e "${BLUE}${CHECK}${NC} Latest updated _Arcade cores :"
-find /media/fat/_Arcade/cores/*.rbf  -mtime 0 -printf '%p\n' 2>/dev/null | sort -r | more
-
-sh ./update/post.sh
-
-if [ "$main_mister" == "1" ]; then
-   ./update/update_main_mister.sh
-   reboot
-   #echo "main Mister"
-fi
-
-if [ "$debug" == "1" ]; then
-   dump
 fi

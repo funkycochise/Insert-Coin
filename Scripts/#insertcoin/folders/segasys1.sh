@@ -1,17 +1,5 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep segasys1 $names)
-else
-   segasys1="_Sega-System-1"
-fi
-if [ -f "$names" ]; then
-   source <(grep sega $names)
-else
-   sega="_Sega"
-fi
 if [ "$show_system" == "1" ]; then
    dir=$segasys1
 else
@@ -21,7 +9,6 @@ fi
 resh=$(exist "Wonder Boy (Set 1, 315-5177).mra")
 resv=$(exist "Mister Viking (315-5041).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
    add "$dir" "V" "Block Gal.mra" "_Block Gal"
    add "$dir" "V" "Gardia (317-0006).mra" "_Gardia" "" "STG"
    add "$dir" "V" "Mister Viking (315-5041).mra" "_Mister Viking" "" "RNG"

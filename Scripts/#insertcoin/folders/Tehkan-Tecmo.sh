@@ -1,19 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep tecmo $names)
-else
-   tecmo="_Tehkan-Tecmo"
-fi
 dir=$tecmo
 
 resh=$(exist "Rygar.mra")
 resv=$(exist "Bomb Jack.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V" "Bomb Jack.mra" "_Bomb Jack"
    add "$dir" "V" "Gemini Wing.mra" "_Gemini Wing" "" "STG"
    #add "$dir" "V" "Pleiads (Centuri).mra" "_Pleiads" "" "STG"

@@ -1,18 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep nichibutsu $names)
-else
-   nichibutsu="_Nihon Bussan-Nichibutsu"
-fi
 dir=$nichibutsu
 
 resh=$(exist "Kozure Ookami (Japan).mra")
 resv=$(exist "Terra Cresta (YM3526 set 1).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
    add "$dir" "V"  "Armed F (Japan).mra" "_Formation Armed F" "" "STG"
    add "$dir" "V"  "Cosmo Police Galivan (12-26-1985).mra" "_Galivan" "" "ACT"
    add "$dir" "V"  "Kid no Hore Hore Daisakusen.mra" "_Booby Kids" "" "ACT"

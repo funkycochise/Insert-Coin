@@ -1,28 +1,5 @@
 #!/bin/bash  
 source ./folders/functions.sh
-
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep segasys16 $names)
-else
-   segasys16="_Sega-System-16"
-fi
-if [ -f "$names" ]; then
-   source <(grep sega $names)
-else
-   sega="_Sega"
-fi
-if [ "$show_system" == "1" ]; then
-   dir=$segasys16
-else
-   dir=$sega
-fi
-if [ -f "$names" ]; then
-   source <(grep sega $names)
-else
-   sega="_Sega"
-fi
 if [ "$show_system" == "1" ]; then
    dir=$segasys16
 else
@@ -32,8 +9,6 @@ fi
 resh=$(exist "Shinobi (Set 6, World, S16A) [No Protection].mra")
 resv=$(exist "Sonic Boom (FD1094 317-0053).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V" "Ace Attacker (Japan, S16A) [FD1094 317-0060].mra" "_Ace Attacker" "" "SPO"
    add "$dir" "V" "Action Fighter (World, S16A) [FD1089A 317-0018].mra" "_Action Fighter"
    add "$dir" "V" "Major League (World, S16A) [No Protection].mra" "_Major League" "" "SPO"

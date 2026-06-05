@@ -1,18 +1,5 @@
 #!/bin/bash  
 source ./folders/functions.sh
-
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep taitof2 $names)
-else
-   taitof2="_Taito-F2"
-fi
-if [ -f "$names" ]; then
-   source <(grep taito $names)
-else
-   taito="_Taito"
-fi
 if [ "$show_system" == "1" ]; then
    dir=$taitof2
 else
@@ -21,9 +8,7 @@ fi
 
 resh=$(exist "Liquid Kids (World).mra")
 resv=$(exist "Gun & Frontier (World).mra")
-if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-   
+if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then  
    #add "$dir" "V" "Gun Frontier (Japan).mra" "_Gun Frontier" "" "STG"
    add "$dir" "V" "Gun & Frontier (World).mra" "_Gun Frontier" "" "STG"
 

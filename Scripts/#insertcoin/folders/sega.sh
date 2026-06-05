@@ -1,19 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep sega $names)
-else
-   sega="_Sega"
-fi
 dir=$sega
 
 resh=$(exist "Super Locomotive.mra")
 resv=$(exist "Pulsar.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V" "Carnival.mra" "_Carnival" "" "ACT"
    add "$dir" "V" "Future Spy (315-5061).mra" "_Future Spy"
    add "$dir" "V" "Pengo (Set 1, Rev C).mra" "_Pengo" "" "PUZ"

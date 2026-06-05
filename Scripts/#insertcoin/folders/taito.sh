@@ -1,19 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep taito $names)
-else
-   taito="_Taito"
-fi
 dir=$taito
 
 resh=$(exist "Bubble Bobble (Japan, Ver 0.1).mra")
 resv=$(exist "Arkanoid (W).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"
    add "$dir" "V" "Arkanoid - Revenge of DOH (World).mra" "_Arkanoid II"
    add "$dir" "V" "Arkanoid (JP).mra" "_Arkanoid"
@@ -41,26 +32,27 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "H" "Bubble Bobble (Japan, Ver 0.1).mra" "_Bubble Bobble" "" "ACT"
    add "$dir" "H" "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen" "" "STG"
+   add "$dir" "H" "Complex X.mra" "_Complex X" "" ""
+   add "$dir" "H" "Darius (World).mra" "_Darius" "" "STG"
+   add "$dir" "H" "Darius II (Japan, rev 1).mra" "_Darius II" "" "STG"
    add "$dir" "H" "Insector X (World).mra" "_Insector X" "" "STG"
    add "$dir" "H" "Kick And Run.mra" "_Kick And Run"
    add "$dir" "H" "KiKi KaiKai (Japan).mra" "_KiKi KaiKai" "" "ACT"
+   add "$dir" "H" "Kram.mra" "_Kram" "" ""
+   add "$dir" "H" "N.Y. Captor (rev 2).mra" "_N.Y. Captor"
    add "$dir" "H" "Onna Sanshirou - Typhoon Gal (rev 1).mra" "_Onna Sanshirou" "" "VSF"
    add "$dir" "H" "Plump Pop (Japan).mra" "_Plump Pop"
+   add "$dir" "H" "Qix (set 1).mra" "_Qix" "" "PUZ"
+   add "$dir" "H" "Qix II (Tournament).mra" "_Qix" "" "PUZ"
    add "$dir" "H" "Rastan (World Rev 1).mra" "_Rastan" "" "ACT"
    add "$dir" "H" "Rumba Lumber (rev 1).mra" "_Rumba Lumber" "" ""
+   add "$dir" "H" "Sagaia (dual screen) (World).mra" "_Sagaia" "" "STG"
+   add "$dir" "H" "Space Dungeon.mra" "_Space Dungeon" "" ""
    add "$dir" "H" "The FairyLand Story.mra" "_The FairyLand Story" "" "ACT"
    add "$dir" "H" "The Legend of Kage (Rev 2).mra" "_The Legend of Kage" "" "ACT"
    add "$dir" "H" "The NewZealand Story (World, new version) (P0-043A PCB).mra" "_The NewZealand Story" "" "ACT"
-   add "$dir" "H" "Victorious Nine.mra" "_Victorious Nine" "" "SPO"
-   add "$dir" "H" "N.Y. Captor (rev 2).mra" "_N.Y. Captor"
-   add "$dir" "H" "Darius (World).mra" "_Darius" "" "STG"
-   add "$dir" "H" "Darius II (Japan, rev 1).mra" "_Darius II" "" "STG"
    add "$dir" "H" "The Ninja Warriors (World).mra" "_The Ninja Warriors" "" "ACT"
-   add "$dir" "H" "Qix (set 1).mra" "_Qix" "" "PUZ"
-   add "$dir" "H" "Complex X.mra" "_Complex X" "" ""
-   add "$dir" "H" "Kram.mra" "_Kram" "" ""
-   add "$dir" "H" "Qix II (Tournament).mra" "_Qix" "" "PUZ"
-   add "$dir" "H" "Space Dungeon.mra" "_Space Dungeon" "" ""
+   add "$dir" "H" "Victorious Nine.mra" "_Victorious Nine" "" "SPO"
    add "$dir" "H" "Warrior Blade (Japan).mra" "_Warrior Blade" "" "BEA"
 
    dot

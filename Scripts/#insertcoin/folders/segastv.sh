@@ -1,30 +1,14 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup "force"
-
-if [ -f "$names" ]; then
-   source <(grep segastv $names)
-else
-   segastv="_Sega-Titan Video"
-fi
-if [ -f "$names" ]; then
-   source <(grep sega $names)
-else
-   sega="_Sega"
-fi
 if [ "$show_system" == "1" ]; then
    dir=$segastv
 else
    dir=$sega
 fi
-
 resh=$(exist "Die Hard Arcade (UET 960515 V1.000).mra")
 resv=$(exist "Shienryu (JUET 961226 V1.000).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-	outdir=$1
-
 	add "$dir" "V" "Shienryu (JUET 961226 V1.000).mra" "_Shienryu" "" "STG"
-
 	add "$dir" "H" "Astra SuperStars (J 980514 V1.002).mra" "_Astra SuperStars" "" "VSF"
 	add "$dir" "H" "Baku Baku Animal (J 950407 V1.000).mra" "_Baku Baku Animal"
 	add "$dir" "H" "Batman Forever (JUE 960507 V1.000).mra" "_Batman Forever" "" "BEA"

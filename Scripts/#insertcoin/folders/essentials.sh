@@ -1,15 +1,7 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
+dir=$dir_essential
 
-if [ -f "$names" ]; then
-   source <(grep essential $names)
-else
-   essential="_#Essentiels"
-fi
-dir=$essential
-
-   outdir=$1
    #add "$dir" "V"  "Time Pilot '84 (Set 1).mra" "_Time Pilot 84" "" "STG"
    #add "$dir" "V"  "Time Pilot '84 (Set 2).mra" "_Time Pilot 84" "" "STG"
    #add "$dir" "V"  "Time Pilot '84 (Set 3).mra" "_Time Pilot 84" "" "STG"

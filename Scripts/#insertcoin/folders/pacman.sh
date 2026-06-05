@@ -1,18 +1,9 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep pacman $names)
-else
-   pacman="_Pacman"
-fi
 dir=$pacman
 
 resv=$(exist "Ms. Pac-Man.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "V"  "Ali Baba and 40 Thieves.mra" "_Pacman"
    add "$dir" "V"  "Birdiy.mra" "_Birdiy"
    add "$dir" "V"  "Crazy Otto.mra" "_Pacman"

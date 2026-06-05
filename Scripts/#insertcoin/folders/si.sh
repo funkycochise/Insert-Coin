@@ -1,19 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep si $names)
-else
-   si="_Space Invaders"
-fi
 dir=$si
 
 resv=$(exist "Space Invaders.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    dir=""
-   outdir=$1
-
    add "$dir" "V" "280Z-ZZAP (US).mra" "_Space Invaders"
    add "$dir" "V" "Amazing Maze.mra" "_Space Invaders"
    add "$dir" "V" "Attack Force.mra" "_Space Invaders"

@@ -1,18 +1,9 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep tad $names)
-else
-   tad="_Tad Corp"
-fi
 dir=$tad
 
 resh=$(exist "Toki (World, set 1).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    add "$dir" "H" "Blood Bros (World).mra" "_Blood Bros" "" "ACT"
    add "$dir" "H" "Cabal (World, Joystick).mra" "_Cabal" "" "ACT"
    add "$dir" "H" "Toki (World, set 1).mra" "_Toki" "" "ACT"

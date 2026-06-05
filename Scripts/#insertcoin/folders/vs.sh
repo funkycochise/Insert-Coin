@@ -1,20 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep vs $names)
-else
-   vs="_Nintendo Vs."
-fi
-#vs="_Nintendo Vs."
 dir=$vs
 
 resh=$(exist "Metal Slug - Super Vehicle-001.mgl")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   	outdir=$1
-
-add "$dir" "H"  "Vs. Atari R.B.I. Baseball  (set 1).mra" "_Vs. Atari R.B.I. Baseball" ""
+        add "$dir" "H"  "Vs. Atari R.B.I. Baseball  (set 1).mra" "_Vs. Atari R.B.I. Baseball" ""
 	add "$dir" "H"  "Vs. Atari R.B.I. Baseball (set 2).mra" "_Vs. Atari R.B.I. Baseball" ""
 	add "$dir" "H"  "Vs. Balloon Fight (set BF4 A-3).mra" "_Vs. Balloon Fight" ""
 	add "$dir" "H"  "Vs. Baseball (Japan, set BA A-1).mra" "_Vs. Baseball" ""

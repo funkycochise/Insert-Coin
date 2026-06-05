@@ -119,7 +119,7 @@ fi
 
 function getres {
 
-echo "Getting res /media/fat/Scripts/#insertcoin/res "
+echo "Downloading res "
 
 if [ -d "$res" ] 
 then

@@ -1,18 +1,9 @@
 #!/bin/bash
 source ./folders/functions.sh
-loadsetup
-
-if [ -f "$names" ]; then
-   source <(grep neogeo $names)
-else
-   neogeo="_Neo-geo"
-fi
 dir=$neogeo
 
 resh=$(exist "Metal Slug - Super Vehicle-001.mgl")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   outdir=$1
-
    #add "$dir" "H" "Columns.mra" 
    #add "$dir" "H" "Frog Feast.mra" 
    #add "$dir" "H" "NeoTRIS (free beta version).mra" 
@@ -45,7 +36,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Breakers Revenge.mgl" "" "" "VSF"
    add "$dir" "H"  "Breakers.mgl" "" "" "VSF"
    add "$dir" "H"  "Burning Fight.mgl" "" "" "BEA"
-   add "$dir" "H"  "Cabal (neogeo).mgl" "_Cabal NG" "" "ACT"
+   add "$dir" "H"  "Cabal (neogeo).mgl" "" "" "ACT"
    add "$dir" "H"  "Captain Tomaday.mgl" "" "" "STG"
    add "$dir" "H"  "Chibi Maruko-chan; Maruko Deluxe Quiz.mgl"
    add "$dir" "H"  "Choutetsu Brikin'ger.mgl"
