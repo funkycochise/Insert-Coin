@@ -90,9 +90,9 @@ fi
 ./folders/upl.sh 
 ./folders/vs.sh 
 ./folders/williams.sh 
-#if [ "$newest" == "1" ]; then
-#  ./folders/newest.sh 
-#fi
+if [ "$newest" == "1" ]; then
+  ./folders/newest.sh 
+fi
 if [ "$essential" == "1" ]; then
    ./folders/essentials.sh 
 fi
