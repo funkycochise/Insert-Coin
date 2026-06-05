@@ -14,8 +14,6 @@ if [ "$remove_other" == "1" ]; then
 fi
 #GnW
 find $CONSOLE -maxdepth 1 -type f -name "GnW_*" ! -name "GnW_20250717.rbf" -delete
-#SNES
-find $CONSOLE -maxdepth 1 -type f -name "SNES_*" ! -name "SNES_20260603.rbf" -delete
 #Zaxxon
 if [ -d "$ALT/_Zaxxon" ] 
 then
