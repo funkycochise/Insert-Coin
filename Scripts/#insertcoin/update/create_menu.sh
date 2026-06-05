@@ -9,9 +9,8 @@ fi
 echo "Creating $targetfolder"
 
 function linkcores {
-#echo "Linking cores"
-if [ ! -d "$targetdir/cores" ]; then
-ln -s "$ARCADE/cores" "$targetdir/cores"
+if [ ! -d $targetfolder/cores ]; then
+   ln -s $ARCADE/cores $targetfolder/cores
 fi 
 }
 
