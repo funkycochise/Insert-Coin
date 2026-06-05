@@ -12,19 +12,10 @@ if [ "$remove_other" == "1" ]; then
     rm -r "/media/fat/_Other"
   fi
 fi
-#remove previous G&W core
-if [ -f "$CONSOLE/GnW_20220606.rbf" ] 
-then
-  rm -r "$CONSOLE/GnW_20220606.rbf"
-fi
-##dup SNES, remove oldest one
-if [ -f "$CONSOLE/SNES_20230502.rbf" ] 
-then
-  if [ -f "$CONSOLE/SNES_20230223.rbf" ] 
-  then
-    rm -r "$CONSOLE/SNES_20230223.rbf"
-  fi
-fi
+#GnW
+find $CONSOLE -maxdepth 1 -type f -name "GnW_*" ! -name "GnW_20250717.rbf" -delete
+#SNES
+find $CONSOLE -maxdepth 1 -type f -name "SNES_*" ! -name "SNES_20260603.rbf" -delete
 #Zaxxon
 if [ -d "$ALT/_Zaxxon" ] 
 then
