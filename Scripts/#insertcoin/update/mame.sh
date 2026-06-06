@@ -95,9 +95,6 @@ find "/media/fat/games/mame" -size 0 -delete
 #clean "sprint2.zip"
 #clean "victorycb.zip"
 
-
-
-#dl "dmnfrnt.zip"
 #dlf "neogeo.zip"
 #vs system roms:
 dl "005.zip"
@@ -329,7 +326,6 @@ dl "eggor.zip"
 dl "einning.zip"
 dl "elevator.zip"
 dl "esb.zip"
-dl "espgal.zip"
 dl "esprade.zip"
 dl "eswat.zip"
 dl "excitebk.zip"
@@ -625,7 +621,6 @@ dl "pengo.zip"
 dl "pepper2.zip"
 dl "perfrman.zip"
 dl "peterpak.zip"
-dl "pgm.zip"
 dl "phantom2.zip"
 dl "phoenix.zip"
 dl "pickin.zip"
@@ -987,7 +982,7 @@ dl "zerowing.zip"
 dl "zigzagb.zip"
 dl "zzyzzyxx.zip"
 
-#special_echo "Downloading missing STV mame roms"
+#STV
 dl "astrass.zip"
 dl "bakubaku.zip"
 dl "batmanfr.zip"
@@ -1044,6 +1039,20 @@ dl "vfremix.zip"
 dl "vmahjong.zip"
 dl "winterht.zip"
 dl "znpwfv.zip"
+
+#igs pgm
+dl "ddp2.zip"
+dl "ddp3.zip"
+dl "dmnfrnt.zip"
+dl "drgw3.zip"
+dl "espgal.zip"
+dl "ket.zip"
+dl "killbld.zip"
+dl "kovplus.zip"
+dl "kovsh.zip"
+dl "orlegend.zip"
+dl "pgm.zip"
+dl "photoy2k.zip"
 
 cd /media/fat
 rm -r "$TEMP"
