@@ -30,7 +30,7 @@ fi
 ./folders/exidy.sh 
 ./folders/galaxian.sh 
 ./folders/gottlieb.sh 
-#./folders/igspgm.sh 
+./folders/igspgm.sh 
 ./folders/irem.sh 
 ./folders/irem62.sh 
 ./folders/irem72.sh 
