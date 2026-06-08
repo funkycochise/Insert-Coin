@@ -2,9 +2,11 @@
 source ./folders/functions.sh
 dir=$igspgm
 
+#echo "igspgm=$igspgm"
+
 resh=$(exist "Demon Front.mra")
-resv="0" 
-#$(exist "Truxton - Tatsujin.mra")
+resh=$(exist "Demon Front.mra")
+resv=$(exist "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Cabal PGM.mra" "_Cabal PGM" "" "ACT"
    add "$dir" "H" "Demon Front.mra" "_Demon Front" "" "RNG"
