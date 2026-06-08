@@ -15,7 +15,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Espgaluda (2003.10.15 Master Ver, bootleg cartridge conversion).mra" "_Espgaluda" "" "STG"
    add "$dir" "V" "Ketsui Kizuna Jigoku Tachi (2003.01.01. Master Ver., bootleg cartridge conversion).mra" "_Ketsui Kizuna Jigoku Tachi" "" "STG"
    add "$dir" "H" "Knights of Valour 2 (ver. 107).mra" "_Knights of Valour 2" "" "VSF"
-   add "$dir" "H" "Knights of Valour Super Heroes (ver. 100, CN).mra" "__Knights of Valour Super Heroes" "" "VSF"
+   add "$dir" "H" "Knights of Valour Super Heroes (ver. 100, CN).mra" "_Knights of Valour Super Heroes" "" "VSF"
    add "$dir" "H" "Martial Masters (ver. 104, 102, 102US).mra" "_Martial Masters" "" "VSF"
    add "$dir" "H" "Oriental Legend (ver. 126).mra" "_Oriental Legend" "" "VSF"
    add "$dir" "H" "Photo Y2K (ver. 102, Japanese Board).mra" "_Photo Y2K" "" "PUZ"
