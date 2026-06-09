@@ -20,7 +20,8 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Photo Y2K (ver. 102, Japanese Board).mra" "_Photo Y2K" "" "PUZ"
    add "$dir" "H" "The Killing Blade (ver. 109, Chinese Board).mra" "_The Killing Blade"
    add "$dir" "H" "Xiyou Shi E Zhuan Super (ver. 103, China, Tencent) (unprotected).mra" "_Xiyou Shi E Zhuan Super" 
-
+   add "$dir" "H" "S.V.G. - Spectral vs Generation (ver. 200).mra" "_S.V.G. - Spectral vs Generation" "" "VSF"
+   add "$dir" "H" "The Gladiator (ver. 101).mra" "_The Gladiator" "" "BEA"
 
 dot
 fi

@@ -66,6 +66,8 @@ function additem {
 counter=0
 
 #0608
+   add "S.V.G. - Spectral vs Generation (ver. 200).mra" "_S.V.G. - Spectral vs Generation"
+   add "The Gladiator (ver. 101).mra" "_The Gladiator"
    add "Cabal PGM.mra" "_Cabal PGM"
    add "Demon Front (ver. 105).mra" "_Demon Front"
    add "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion).mra" "_DoDonPachi Dai-Ou-Jou"
