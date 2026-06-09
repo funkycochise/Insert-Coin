@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0609
+   add "Boogie Wings (World).mra" "_Boogie Wings (World).mra"
+
 #0608
    add "S.V.G. - Spectral vs Generation (ver. 200).mra" "_S.V.G. - Spectral vs Generation"
    add "The Gladiator (ver. 101).mra" "_The Gladiator"

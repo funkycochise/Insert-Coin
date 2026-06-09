@@ -14,6 +14,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Act-Fancer Cybernetick Hyper Weapon (World, Rev. 3).mra" "_Act-Fancer Cybernetick Hyper Weapon" "" "RNG"
    add "$dir" "H" "Atomic Runner Chelnov (World).mra" "_Atomic Runner Chelnov" "" "ACT"
    add "$dir" "H" "Bad Dudes vs. Dragonninja (US, revision 1).mra" "_Bad Dudes vs. Dragonninja" "" "ACT"
+   add "$dir" "H" "Boogie Wings (World).mra" "_Boogie Wings (World).mra" "" "ACT"
    add "$dir" "H" "Boulder Dash - Boulder Dash Part 2 (World).mra" "_Boulder Dash" "" "ACT"
    add "$dir" "H" "Cobra-Command (World, Rev. 5).mra" "_Cobra-Command" "" "STG"
    add "$dir" "H" "Crude Buster (World, FX version).mra" "_Crude Buster" "" "BEA"
