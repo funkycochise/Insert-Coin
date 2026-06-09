@@ -1,66 +1,45 @@
 #!/bin/bash
-source /media/fat/Scripts/#insertcoin/folders/functions.sh
 
 TEMP=/media/fat/scripts/temp
 SD=/media/fat
 USB=/media/usb0
 CIFS=/media/fat/cifs
-ARCHIVE=https://ia800304.us.archive.org/11/items/gw_mister/
-
-source <(grep setup_gw $ini)
-setup_gw="${setup_gw:0:3}"
-#echo "setup_gw: $setup_gw"
+ARCHIVE=https://archive.org/download/gw_mister/
 
 function identify_folder {
 
-#detection of plugged USB drive
-#if [ -d "$USB" ]; then
-#   #USB plugged becomes the target drive instead of SD card
-#   des_games=$USB/games
-#   target=$des_games/"Game and Watch"/
-#else
-   des_games=$SD/games
-   target=$des_games/"Game and Watch"/
-#fi
 
+des_games=$SD/games
+des="$des_games/Game And Watch"
 if ! [ -d "$des_games" ]; then
-   mkdir "$des_games"
+   mkdir $des_games
 fi
-if ! [ -d "$target" ]; then
-   mkdir "$target"
+if ! [ -d "$des" ]; then
+   mkdir $des
 fi
 if [ ! -d "$TEMP" ] 
 then
    mkdir $TEMP
 fi 
-if ! [ -d "$target" ]; then
-  mkdir $target
-fi
 }
 
 function dl {
 
-   if ! test -d "$target"; then
-     #special_echo "creating $target"
-     mkdir "$target"
-   fi
-
-   FILE=$target$1
-   #special_echo "retrieve $FILE"
+   #echo "dl $1"
+   
+   FILE=$des/$1
+   #echo "retrieve $FILE"
    if ! test -f "$FILE"; then
       echo -n "downloading $1"
-      #curl $ARCHIVE/$1 -O -k
-      wget "$ARCHIVE/$1" -P $TEMP -q
+      wget -q -c -P $TEMP "$ARCHIVE/$1"
       mv "$TEMP/$1" "$FILE" 
-      echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
-      
+      echo -e "\r${BLUE}${CHECK}${NC} $1                                            "    
   fi
 
 }
 
-identify_folder
-
 echo -e "Updating game&watch folder $target"
+identify_folder
 
 if [ ! -d "$TEMP" ]; 
 then
@@ -104,6 +83,7 @@ dl "Top Gun (handheld).gnw"
 dl "Tropical Fish.gnw"
 dl "Turtle Bridge.gnw"
 dl "Vermin.gnw"
+
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
 
