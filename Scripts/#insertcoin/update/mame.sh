@@ -1053,6 +1053,8 @@ dl "kovsh.zip"
 dl "orlegend.zip"
 dl "pgm.zip"
 dl "photoy2k.zip"
+dl "svg.zip"
+dl "theglad.zip"
 
 cd /media/fat
 rm -r "$TEMP"
