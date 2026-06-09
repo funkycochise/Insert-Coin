@@ -145,6 +145,10 @@ if [ -f "/media/fat/Scripts/temp/res5.zip" ]
 then
    rm -r $temp/res5.zip
 fi
+if [ -f "/media/fat/Scripts/temp/res6.zip" ] 
+then
+   rm -r $temp/res6.zip
+fi
   
 echo -e "${BLUE}${CHECK}${NC} res" 
 rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res.zip -O -k -s --output $temp/res.zip >/dev/null)
@@ -188,6 +192,14 @@ if [[ "$rcode" -ne 0 ]]; then
 else
     unzip -qq $temp/res5.zip -d $res
     rm -r $temp/res5.zip
+fi
+echo -e "${BLUE}${CHECK}${NC} res6" 
+rcode=$(curl /media/fat/Scripts/temp https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/res6.zip -O -k -s --output $temp/res6.zip >/dev/null)
+if [[ "$rcode" -ne 0 ]]; then
+    echo "Failed to download file res6"
+else
+    unzip -qq $temp/res6.zip -d $res
+    rm -r $temp/res6.zip
 fi
 
 
