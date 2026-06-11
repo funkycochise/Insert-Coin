@@ -1,48 +1,11 @@
 #!/bin/bash
 
-function dl {
-name=$1
-file=$2
-neededversion=$3
-dl="0"
-
-#echo "name $name"
-#echo "file $file"
-#echo "neededversion $neededversion"
-
-if [ -f "$file" ] 
-then
-   source <(grep version $file)
-   version=${version:0:1}
-
-   if [ ! "$version" == "$neededversion" ]; then
-      dl="1"
-      rm -r "$file"
-   fi
-else 
-   dl="1"
-fi
-if [ "$dl" == "1" ]; then
-  echo "Getting latest default Insert-Coin $name"
-  curl "https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/$name" --insecure -o "$2" 
-fi
-}
-
-#dl "setup.ini" "/media/fat/Scripts/#insertcoin/setup.ini" "G"
-#dl "names.ini" "/media/fat/Scripts/#insertcoin/names.ini" "E"
-
-#clean 
-if [ -d "/media/fat/#insertcoin" ] 
-then
-   rm -r "/media/fat/#insertcoin"
-fi
 file="/media/fat/_Arcade/Cabal PGM.mra"
-if [ -f $file ]
-then
-   rm -r $file
+if [ -f "$file" ]; then
+   rm -r "$file"
 fi
-dir="/media/fat/_Arcade/_Alternatives/_Cabal PGM"
-if [ -d $dir ]
+dir="/media/fat/_Arcade/_alternatives/_Cabal PGM"
+if [ -d "$dir" ]
 then
-   rm -r $dir
+   rm -r "$dir"
 fi
