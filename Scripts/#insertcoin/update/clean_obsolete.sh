@@ -169,6 +169,8 @@ find $CORE -maxdepth 1 -type f -name "IGSPGM_*" ! -name "IGSPGM_20260611.rbf.rbf
 
 find $CORE -maxdepth 1 -type f -name "SkySmasher_*" ! -name "SkySmasher_20260608.rbf" -delete
 
+find "$ALT/_DoDonPachi Dai-Ou-Jou" -maxdepth 1 -type f -name "Ketsui*" -delete
+
 
 if [ -f "$CORE/mazinger_mister_20250804.rbf" ] 
 then
