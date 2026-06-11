@@ -165,7 +165,7 @@ find $CORE -maxdepth 1 -type f -name "StarWars_*" ! -name "StarWars_20260603.rbf
 
 find $CORE -maxdepth 1 -type f -name "Tempest_*" ! -name "Tempest_20260607.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "IGSPGM_*" ! -name "IGSPGM_20260611.rbf.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "IGSPGM_*" ! -name "IGSPGM_20260611.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "SkySmasher_*" ! -name "SkySmasher_20260608.rbf" -delete
 
