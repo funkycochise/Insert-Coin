@@ -26,9 +26,6 @@ if [ "$dl" == "1" ]; then
   echo "Getting latest default Insert-Coin $name"
   curl "https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/$name" --insecure -o "$2" 
 fi
-
-
-
 }
 
 #dl "setup.ini" "/media/fat/Scripts/#insertcoin/setup.ini" "G"
@@ -38,4 +35,9 @@ fi
 if [ -d "/media/fat/#insertcoin" ] 
 then
    rm -r "/media/fat/#insertcoin"
+fi
+file="/media/fat/_Arcade/Cabal PGM.mra"
+if [ -f $file ]
+then
+   rm -r $file
 fi
