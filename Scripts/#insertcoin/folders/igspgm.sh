@@ -5,7 +5,6 @@ dir=$igspgm
 resh=$(exist "Demon Front (ver. 105).mra")
 resv=$(exist "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   #add "$dir" "H"  "Cabal PGM.mra" "_Cabal PGM" "" "ACT"
    add "$dir" "H" "Demon Front (ver. 105).mra" "_Demon Front" "" "RNG"
    add "$dir" "V" "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion).mra" "_DoDonPachi Dai-Ou-Jou" "" "STG"
    add "$dir" "V" "DoDonPachi II - Bee Storm (World, ver. 102).mra" "_DoDonPachi II" "" "STG"
