@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0611
+   add "Caveman Ninja.mra" "_Caveman Ninja"
+
 #0609
    add "Boogie Wings (World).mra" "_Boogie Wings"
 
