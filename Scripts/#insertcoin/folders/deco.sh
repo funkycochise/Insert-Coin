@@ -16,6 +16,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Bad Dudes vs. Dragonninja (US, revision 1).mra" "_Bad Dudes vs. Dragonninja" "" "ACT"
    add "$dir" "H" "Boogie Wings (World).mra" "_Boogie Wings" "" "ACT"
    add "$dir" "H" "Boulder Dash - Boulder Dash Part 2 (World).mra" "_Boulder Dash" "" "ACT"
+    add "$dir" "H" "Caveman Ninja.mra" "_Caveman Ninja" "" "ACT"
    add "$dir" "H" "Cobra-Command (World, Rev. 5).mra" "_Cobra-Command" "" "STG"
    add "$dir" "H" "Crude Buster (World, FX version).mra" "_Crude Buster" "" "BEA"
    add "$dir" "H" "Express Raider.mra" "_Express Raider" "" "RNG"
