@@ -41,3 +41,8 @@ if [ -f $file ]
 then
    rm -r $file
 fi
+dir="/media/fat/_Arcade/_Alternatives/_Cabal PGM"
+if [ -d $dir ]
+then
+   rm -r $dir
+fi
