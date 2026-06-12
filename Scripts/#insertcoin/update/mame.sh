@@ -1,84 +1,54 @@
- # !/bin/bash
-source /media/fat/Scripts/#insertcoin/folders/functions.sh
+#!/bin/bash
 
-TEMP=/media/fat/scripts/temp
+
+BLACK='\033[0;30m'
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+ORANGE='\033[0;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+LIGHTGRAY='\033[0;37m'
+DARKGRAY='\033[1;30m'     
+LIGHTRED='\033[1;31m'          
+LIGHTGREEN='\033[1;32m'        
+YELLOW='\033[1;33m'       
+LIGHTBLUE='\033[1;34m'         
+LIGHTPURPLE='\033[1;35m'       
+LIGHTCYAN='\033[1;36m'        
+WHITE='\033[1;37m'
+NC='\033[0m' # No Color
+
+if [ "$TERM" == "xterm" ]; then
+   CHECK="✓"
+   TAB=""
+else
+   CHECK="•"
+   #CHECK="»"
+   TAB="  "
+fi
+
+#clear
+
 SD=/media/fat
-USB=/media/usb0
-
-source <(grep setup_mame $ini)
-setup_mame="${setup_mame:0:3}"
-#echo "setup_mame: $setup_mame"
-
-function identify_folder {
-
-#detection of plugged USB drive
-#if [ -d "$USB" ]; then
-#   #USB plugged becomes the target drive instead of SD card
-#   des_games=$USB/games
-#   des_mame=$des_games/mame
-#else
-   des_games=$SD/games
-   des_mame=$des_games/mame
-#fi
-if ! [ -d "$des_games" ]; then
-   mkdir $des_games
-fi
-if ! [ -d "$des_mame" ]; then
-   mkdir $des_mame
-fi
-if [ ! -d "$TEMP" ] 
-then
-   mkdir $TEMP
-fi 
-}
+des_games=$SD/games/mame
 
 function dl {
-
-    FILE=$des_mame/$1
-    #echo "dl : $des_mame/$1"
-
-    if ! test -f "$FILE"; then
-      #file doesn not exists
-      echo -n "downloading $1"   
-      wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/insert_coin_mame/$1
+   FILE="$des_games/$1"
+   #echo "$FILE"
+   if [ -f $FILE ]; then
+      echo "$des_games/$1 exists"  > /dev/null 2>&1
+   else
+      #echo "$des_games/$1 do not exists"
+      echo -n "downloading $1"
+      wget -q -c -P /media/fat/Scripts/temp https://archive.org/download/insert_coin_mame/$1
       touch /media/fat/Scripts/temp/$1
-      mv /media/fat/Scripts/temp/$1 $des_mame/$1
-      echo -e "\r${BLUE}${CHECK}${NC} $1                                            "
-
-   #else
-    # echo "$1 already exixts"
-   fi
-
-}
-
-function dlf {
-
-    FILE=$des_mame/$1
-    #echo "dl : $des_mame/$1"
-
-    wget -q -c -P /media/fat/Scripts/temp \https://archive.org/download/insert_coin_mame/$1
-    touch /media/fat/Scripts/temp/$1
-    mv /media/fat/Scripts/temp/$1 $des_mame/$1
-}
-
-
-
-function clean {
-   identify_folder
-
-   FILE=$des_mame/$1
-   if test -f "$FILE"; then
-      rm $FILE
+      mv /media/fat/Scripts/temp/$1 "$des_games/$1"
+      echo -e "\r${BLUE}${CHECK}${NC} $1"
    fi
 }
 
-identify_folder
-#echo "des_mame $des_mame"
-
-echo "Updating mame folder $des_mame"
-
-#delete all zero file in games/mame
-find "/media/fat/games/mame" -size 0 -delete
+echo "Updating mame folder $des_games"
 
 #clean "amidaru.zip"
 #clean "atetrisc.zip"
@@ -95,8 +65,6 @@ find "/media/fat/games/mame" -size 0 -delete
 #clean "sprint2.zip"
 #clean "victorycb.zip"
 
-#dlf "neogeo.zip"
-#vs system roms:
 dl "005.zip"
 dl "1941.zip"
 dl "1942.zip"
@@ -1062,8 +1030,5 @@ dl "pgm.zip"
 dl "photoy2k.zip"
 dl "svg.zip"
 dl "theglad.zip"
-
-cd /media/fat
-rm -r "$TEMP"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
