@@ -58,6 +58,7 @@ fi
 ./folders/nmk.sh 
 ./folders/orca.sh 
 ./folders/pacman.sh 
+./folders/psikyosh2.sh 
 ./folders/raizing.sh 
 ./folders/rare.sh 
 ./folders/robotron.sh 
