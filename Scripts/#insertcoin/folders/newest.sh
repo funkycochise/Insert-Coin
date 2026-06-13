@@ -65,6 +65,19 @@ function additem {
 
 counter=0
 
+#0612
+
+   add "Dragon Blaze.mra" "_Dragon Blaze"
+   add "Gunbarich.mra" "_Gunbarich" 
+   add "Gunbird 2 (set 1).mra" "_Gunbird 2" 
+   add "Strikers 1945 II.mra" "_Strikers 1945 II"
+   add "Strikers 1945 III.mra" "_Strikers 1945 III"
+   add "Daraku Tenshi The Fallen Angels.mra" "_Daraku Tenshi The Fallen Angels"
+   add "Mahjong G-Taste.mra" "_Mahjong G-Taste"
+   add "Sol Divide Sword Of Darkness (Korea).mra" "_Sol Divide Sword Of Darkness"
+   add "Tetris The Absolute - The Grand Master 2.mra" "_Tetris The Absolute - The Grand Master 2"
+   add "Space Bomber.mra" "_Space Bomber"
+
 #0611
    add "Caveman Ninja.mra" "_Caveman Ninja"
 
