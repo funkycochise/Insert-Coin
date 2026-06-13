@@ -42,9 +42,13 @@ function dl {
       #echo "$des_games/$1 do not exists"
       echo -n "downloading $1"
       wget -q -c -P /media/fat/Scripts/temp https://archive.org/download/insert_coin_mame/$1
-      touch /media/fat/Scripts/temp/$1
-      mv /media/fat/Scripts/temp/$1 "$des_games/$1"
-      echo -e "\r${BLUE}${CHECK}${NC} $1"
+         if [ -f /media/fat/Scripts/temp/$1 ]; then
+            touch /media/fat/Scripts/temp/$1
+            mv /media/fat/Scripts/temp/$1 "$des_games/$1"
+            echo -e "\r${BLUE}${CHECK}${NC} $1                    "
+         else
+            echo -e ": Error when downloading $1                  "
+      	 fi
    fi
 }
 
@@ -1016,7 +1020,7 @@ dl "drgw3.zip"
 dl "dw2001.zip"
 dl "espgal.zip"
 dl "ket.zip"
-dl "ketidk.zip"
+dl "ketikd.zip"
 dl "ketps4.zip"
 dl "killbld.zip"
 dl "kov2.zip"
