@@ -3,8 +3,9 @@ source ./folders/functions.sh
 dir=$psikyosh2
 
 resh=$(exist "Tetris The Absolute - The Grand Master 2.mra")
-resv=$(exist "Dragon Blaze.mra")
+resv=$(exist "Strikers 1945 II.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
+
    add "$dir" "V"  "Dragon Blaze.mra" "_Dragon Blaze" "" "STG"
    add "$dir" "V"  "Gunbarich.mra" "_Gunbarich" "" "STG"
    add "$dir" "V"  "Gunbird 2 (set 1).mra" "_Gunbird 2" "" "STG"
