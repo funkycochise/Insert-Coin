@@ -77,6 +77,8 @@ counter=0
    add "Sol Divide Sword Of Darkness (Korea).mra" "_Sol Divide Sword Of Darkness"
    add "Tetris The Absolute - The Grand Master 2.mra" "_Tetris The Absolute - The Grand Master 2"
    add "Space Bomber.mra" "_Space Bomber"
+   add "Red Earth (Asia 961121, NO CD).mra" "_Red Earth"
+   add "Street Fighter III New Generation (Asia 970204, NO CD, BIOS set 1).mra" "_Street Fighter III New Generation"
 
 #0611
    add "Caveman Ninja.mra" "_Caveman Ninja"
