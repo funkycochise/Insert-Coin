@@ -12,7 +12,10 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Sky Smasher.mra" "_Sky Smasher" "" "STG"
    add "$dir" "V" "Wonder Planet (Japan).mra" "_Wonder Planet" "" "STG"
 
-   add "$dir" "H" "Act-Fancer Cybernetick Hyper Weapon (World, Rev. 3).mra" "_Act-Fancer Cybernetick Hyper Weapon" "" "RNG"
+   add "$dir" "H" "Act-Fancer (Japan rev 1).mra" "_Act-Fancer" "" "RNG"
+   add "$dir" "H" "Act-Fancer (World rev 2).mra" "_Act-Fancer" "" "RNG"
+   add "$dir" "H" "Act-Fancer (World rev 3).mra" "_Act-Fancer" "" "RNG"
+
    add "$dir" "H" "Atomic Runner Chelnov (World).mra" "_Atomic Runner Chelnov" "" "ACT"
    add "$dir" "H" "Bad Dudes vs. Dragonninja (US, revision 1).mra" "_Bad Dudes vs. Dragonninja" "" "ACT"
    add "$dir" "H" "Boogie Wings (World).mra" "_Boogie Wings" "" "ACT"
@@ -20,6 +23,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Caveman Ninja.mra" "_Caveman Ninja" "" "ACT"
    add "$dir" "H" "Cobra-Command (World, Rev. 5).mra" "_Cobra-Command" "" "STG"
    add "$dir" "H" "Crude Buster (World, FX version).mra" "_Crude Buster" "" "BEA"
+   add "$dir" "H" "Dark Seal (World, Rev. 3).mra" "_Dark Seal" 
    add "$dir" "H" "Express Raider.mra" "_Express Raider" "" "RNG"
    add "$dir" "H" "Hippodrome (US).mra" "_Hippodrome" "" "VSF"
    add "$dir" "H" "Karnov (US, rev 6).mra" "_Karnov" "" "RNG"

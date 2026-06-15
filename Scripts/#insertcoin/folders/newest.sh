@@ -67,6 +67,8 @@ counter=0
 
 #0615
    add "Boogie Wings (World).mra" "_Boogie Wings"
+   add "Act-Fancer Cybernetick Hyper Weapon (World, Rev. 3).mra" "_Act-Fancer"
+   add "Dark Seal (World, Rev. 3).mra" "_Dark Seal" 
 
 #0612
 
