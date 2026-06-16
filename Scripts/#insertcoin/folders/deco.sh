@@ -30,6 +30,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Midnight Resistance (World, set 1).mra" "_Midnight Resistance" "" "RNG"
    add "$dir" "H" "Psycho-Nics Oscar (World).mra" "_Psycho-Nics Oscar" "" "RNG"
    add "$dir" "H" "Robocop (World, revision 4).mra" "_Robocop" "" "RNG"
+   add "$dir" "H" "Robocop 2 (USA v0.10).mra" "_Robocop2" "" "BEA"
    add "$dir" "H" "Secret Agent (World, revision 3).mra" "_Secret Agent" "" "RNG"
    add "$dir" "H" "The Cliffhanger - Edward Randy (World, Ver. 3).mra" "_The Cliffhanger - Edward Randy" "" "ACT"
    add "$dir" "H" "The Real Ghostbusters (US 2 Players, Revision 2).mra" "_The Real Ghostbusters" "" "RNG"

@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0616
+   add "Robocop 2 (USA v0.10).mra" "_Robocop2"
+
 #0615
    add "Dark Seal (World, Rev. 3).mra" "_Dark Seal" 
    add "Act-Fancer Cybernetick Hyper Weapon (World, Rev. 3).mra" "_Act-Fancer"
