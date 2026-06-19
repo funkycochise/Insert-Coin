@@ -6,7 +6,7 @@ resh=$(exist "Demon Front (ver. 105).mra")
 resv=$(exist "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Demon Front (ver. 105).mra" "_Demon Front" "" "RNG"
-   add "$dir" "V" "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion).mra" "_DoDonPachi Dai-Ou-Jou" "" "STG"
+   add "$dir" "V" "DoDonPachi III (World, 2002.05.15 Master Ver).mra" "_DoDonPachi III" "" "STG"
    add "$dir" "V" "DoDonPachi II - Bee Storm (World, ver. 102).mra" "_DoDonPachi II" "" "STG"
    add "$dir" "H" "Dragon World 3 (ver. 106).mra" "_Dragon World 3" "" ""
    add "$dir" "H" "Dragon World 2001 (ver. 100, Japan).mra" "_Dragon World 2001" "" ""
