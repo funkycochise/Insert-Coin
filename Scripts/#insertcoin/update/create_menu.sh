@@ -26,7 +26,9 @@ fi
 ./folders/cps2.sh
 ./folders/cps3.sh
 ./folders/crazykong.sh 
-./folders/deco.sh 
+./folders/deco.sh
+./folders/deco8.sh
+./folders/deco16.sh  
 ./folders/exidy.sh 
 ./folders/galaxian.sh 
 ./folders/gottlieb.sh 
