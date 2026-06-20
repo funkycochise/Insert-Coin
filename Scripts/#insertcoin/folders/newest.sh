@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0619
+   add "Captain America and The Avengers (US, Rev 1.9).mra" "_Captain America and The Avengers"
+
 #0616
    add "Robocop 2 (USA v0.10).mra" "_Robocop2"
 
