@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0620
+   add "World Rally Championship (set 2).mra" "_World Rally Championship"
+
 #0619
    add "Captain America and The Avengers (US, Rev 1.9).mra" "_Captain America and The Avengers"
 
@@ -95,7 +98,7 @@ counter=0
    add "Caveman Ninja.mra" "_Caveman Ninja"
 
 #0609
-   add "Boogie Wings (World).mra" "_Boogie Wings"
+   #add "Boogie Wings (World).mra" "_Boogie Wings"
 
 #0608
    add "S.V.G. - Spectral vs Generation (ver. 200).mra" "_S.V.G. - Spectral vs Generation"
