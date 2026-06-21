@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0621
+   add "JoJo's Venture (Asia 990128, NO CD).mra" "_JoJo's Venture"
+
 #0620
    add "World Rally Championship (set 2).mra" "_World Rally Championship"
 
