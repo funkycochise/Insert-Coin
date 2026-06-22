@@ -35,6 +35,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Complex X.mra" "_Complex X" "" ""
    add "$dir" "H" "Darius (World).mra" "_Darius" "" "STG"
    add "$dir" "H" "Darius II (Japan, rev 1).mra" "_Darius II" "" "STG"
+   add "$dir" "H" "Darius II (Japan, dual screen, rev 2).mra" "_Darius II" "" "STG"
    add "$dir" "H" "Insector X (World).mra" "_Insector X" "" "STG"
    add "$dir" "H" "Kick And Run.mra" "_Kick And Run"
    add "$dir" "H" "KiKi KaiKai (Japan).mra" "_KiKi KaiKai" "" "ACT"
