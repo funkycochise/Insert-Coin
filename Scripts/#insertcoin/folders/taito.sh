@@ -47,7 +47,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Qix II (Tournament).mra" "_Qix" "" "PUZ"
    add "$dir" "H" "Rastan (World Rev 1).mra" "_Rastan" "" "ACT"
    add "$dir" "H" "Rumba Lumber (rev 1).mra" "_Rumba Lumber" "" ""
-   add "$dir" "H" "Sagaia (dual screen) (World).mra" "_Sagaia" "" "STG"
+   add "$dir" "H" "Sagaia (World, dual screen).mra" "_Sagaia" "" "STG"
    add "$dir" "H" "Space Dungeon.mra" "_Space Dungeon" "" ""
    add "$dir" "H" "The FairyLand Story.mra" "_The FairyLand Story" "" "ACT"
    add "$dir" "H" "The Legend of Kage (Rev 2).mra" "_The Legend of Kage" "" "ACT"
