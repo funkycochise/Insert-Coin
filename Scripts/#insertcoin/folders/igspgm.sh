@@ -6,7 +6,7 @@ resh=$(exist "Demon Front (ver. 105).mra")
 resv=$(exist "DoDonPachi III (World, 2002.05.15 Master Ver).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Demon Front (ver. 105).mra" "_Demon Front" "" "RNG"
-   add "$dir" "V" "DoDonPachi II - Bee Storm (World, ver. 102).mra "_DoDonPachi II" "_DoDonPachi II - Bee Storm" "STG"
+   add "$dir" "V" "DoDonPachi II - Bee Storm (World, ver. 102).mra" "_DoDonPachi II" "_DoDonPachi II - Bee Storm" "STG"
    add "$dir" "V" "DoDonPachi III (World, 2002.05.15 Master Ver).mra" "_DoDonPachi III" "_DoDonPachi Dai-Ou-Jou" "STG"
    add "$dir" "H" "Dragon World 3 (ver. 106).mra" "_Dragon World 3" "" ""
    add "$dir" "H" "Dragon World 3 EX (ver. 100).mra" "_Dragon World 3" "" ""
