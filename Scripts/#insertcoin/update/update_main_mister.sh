@@ -1,24 +1,27 @@
 #!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/setup.sh
 
+URL="https://raw.githubusercontent.com/funkycochise/Main_MiSTer/master/releases/MiSTer"
+DEST="/media/fat/MiSTer"
+TMP="/media/fat/MiSTer.tmp"
+
 echo -e "Installing custom Main"
 
-#delete backup if it already exists
-if [ -f "/media/fat/Mister_" ]; then
-   echo "remove backup"
-   #rm /media/fat/Mister_
+curl -k -fsSL -L "$URL" -o "$TMP"
+
+if [ $? -ne 0 ] || [ ! -s "$TMP" ]; then
+    echo "ERREUR : téléchargement échoué"
+    rm -f "$TMP"
+    exit 1
 fi
 
-if [ -f "/media/fat/Mister_" ] && [ -f "/media/fat/Mister" ]; then
-   rm /media/fat/Mister_
+if [ -f "$DEST" ]; then
+    cp "$DEST" "${DEST}.bak"
 fi
 
-#echo -e "getting custom Main"
-curl https://raw.githubusercontent.com/funkycochise/Main_MiSTer/master/releases/$MF /media/fat -O -k -s
-if [ -f "media/fat/Mister" ]; then
-   #echo "/media/fat/Scripts/temp/Mister downloaded, installed"
-   cp /media/fat/Scripts/temp/Mister /media/fat/Mister
-else
-      cp /media/fat/Mister_ /media/fat/Mister
-fi
+
+mv "$TMP" "$DEST"
+chmod +x "$DEST"
+
 echo -e "${GREEN}${CHECK}${NC} Completed"
+reboot
