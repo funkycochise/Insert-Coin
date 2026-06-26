@@ -14,9 +14,11 @@ if [ -f "/media/fat/Mister_" ] && [ -f "/media/fat/Mister" ]; then
 fi
 
 #echo -e "getting custom Main"
-wget -q -c -P /media/fat/Scripts/temp https://github.com/funkycochise/Main_MiSTer/tree/master/releases/MiSTer
-if [ -f "/media/fat/Scripts/temp/Mister" ]; then
-   #echo "/media/fat/Scripts/temp/Mister downloaded, installing"
+curl https://raw.githubusercontent.com/funkycochise/Main_MiSTer/master/releases/$MF /media/fat -O -k -s
+if [ -f "media/fat/Mister" ]; then
+   #echo "/media/fat/Scripts/temp/Mister downloaded, installed"
    cp /media/fat/Scripts/temp/Mister /media/fat/Mister
+else
+      cp /media/fat/Mister_ /media/fat/Mister
 fi
 echo -e "${GREEN}${CHECK}${NC} Completed"
