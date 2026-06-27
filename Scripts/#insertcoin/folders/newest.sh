@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0627
+   additem "$segamegaplay"
+
 #0621
    add "JoJo's Venture (Asia 990128, NO CD).mra" "_JoJo's Venture"
 
