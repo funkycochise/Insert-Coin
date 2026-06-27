@@ -66,16 +66,8 @@ function additem {
 counter=0
 
 #0627
-   additem "$segamegaplay"
-
-#0621
-   add "JoJo's Venture (Asia 990128, NO CD).mra" "_JoJo's Venture"
-
-#0620
-   add "World Rally Championship (set 2).mra" "_World Rally Championship"
-
-#0619
-   add "Captain America and The Avengers (US, Rev 1.9).mra" "_Captain America and The Avengers"
+   
+      additem "$segamegaplay"
 
 #0616
    add "Robocop 2 (USA v0.10).mra" "_Robocop2"
@@ -104,7 +96,7 @@ counter=0
    add "Caveman Ninja.mra" "_Caveman Ninja"
 
 #0609
-   #add "Boogie Wings (World).mra" "_Boogie Wings"
+   add "Boogie Wings (World).mra" "_Boogie Wings"
 
 #0608
    add "S.V.G. - Spectral vs Generation (ver. 200).mra" "_S.V.G. - Spectral vs Generation"
