@@ -66,7 +66,8 @@ fi
 ./folders/rare.sh 
 ./folders/robotron.sh 
 ./folders/scramble.sh 
-./folders/sega.sh 
+./folders/sega.sh
+./folders/segamp.sh 
 ./folders/segaoutrun.sh 
 ./folders/segasys1.sh 
 ./folders/segasys16.sh 
