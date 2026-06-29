@@ -169,22 +169,6 @@ find $CORE -maxdepth 1 -type f -name "IGSPGM_*" ! -name "IGSPGM_20260615.rbf" -d
 
 find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260619.rbf" -delete
 
-find "$ALT/_DoDonPachi Dai-Ou-Jou" -maxdepth 1 -type f -name "Ketsui*" -delete
-
-if [ -f "$CORE/mazinger_mister_20250804.rbf" ] 
-then
-  if [ -f "$CORE/mazinger_mister.rbf" ] 
-  then
-    rm -r "$CORE/mazinger_mister.rbf"
-  fi
-fi
-if [ -f "$CORE/sailormn_mister_20250805.rbf" ] 
-then
-  if [ -f "$CORE/sailormn_mister.rbf" ] 
-  then
-    rm -r "$CORE/sailormn_mister.rbf"
-  fi
-fi
 
 if [ -f "$CORE/Darius_20260411.rbf" ] 
 then
