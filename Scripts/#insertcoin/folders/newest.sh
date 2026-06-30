@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+   add "Street Fighter III 2nd Impact Giant Attack (Asia 970930, NO CD).mra" "_Street Fighter III 2nd Impact Giant Attack"
+
+#deco cassette
+
 #0627
    
       additem "$segamegaplay"
