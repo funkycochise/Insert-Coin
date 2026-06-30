@@ -66,6 +66,7 @@ cps3=_CPS3
 cave=_Cave 68000
 crazykong=_Crazy Kong
 deco=_DataEast-Deco
+decocassette=_Deco-Cassette
 deco8=_Deco-8
 deco16=_Deco-16
 exidy=_Exidy
