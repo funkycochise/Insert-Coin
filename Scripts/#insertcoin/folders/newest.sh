@@ -65,9 +65,11 @@ function additem {
 
 counter=0
 
-   add "Street Fighter III 2nd Impact Giant Attack (Asia 970930, NO CD).mra" "_Street Fighter III 2nd Impact Giant Attack"
+#0630
 
-#deco cassette
+   add "DECO Darksoft Multigame (DECO).mra" "_Deco-Cassette"
+
+   add "Street Fighter III 2nd Impact Giant Attack (Asia 970930, NO CD).mra" "_Street Fighter III 2nd Impact Giant Attack"
 
 #0627
    
