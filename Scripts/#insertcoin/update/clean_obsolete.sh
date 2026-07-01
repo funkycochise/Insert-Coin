@@ -169,9 +169,6 @@ find $CORE -maxdepth 1 -type f -name "IGSPGM_*" ! -name "IGSPGM_20260615.rbf" -d
 
 find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260628.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "DECOCassette_*" ! -name "DECOCassette_20260629.rbf" -delete
-
-
 if [ -f "$CORE/Darius_20260411.rbf" ] 
 then
     rm -r "$CORE/Darius_20260407.rbf" > /dev/null 2>&1
