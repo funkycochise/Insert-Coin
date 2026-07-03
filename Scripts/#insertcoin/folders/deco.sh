@@ -29,6 +29,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Hippodrome (US).mra" "_Hippodrome" "" "VSF"
    add "$dir" "H" "Karnov (US, rev 6).mra" "_Karnov" "" "RNG"
    add "$dir" "H" "Midnight Resistance (World, set 1).mra" "_Midnight Resistance" "" "RNG"
+   add "$dir" "H" "Night Slashers (Japan Rev 1.2, DE-0397-0 PCB).mra" "_Night Slashers" "" "BEA"
    add "$dir" "H" "Psycho-Nics Oscar (World).mra" "_Psycho-Nics Oscar" "" "RNG"
    add "$dir" "H" "Robocop (World, revision 4).mra" "_Robocop" "" "RNG"
    add "$dir" "H" "Robocop 2 (USA v0.10).mra" "_Robocop2" "" "BEA"
