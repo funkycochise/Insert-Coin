@@ -76,6 +76,7 @@ fi
 ./folders/segasyse.sh 
 ./folders/segastv.sh 
 ./folders/segag80.sh 
+./folders/segakyugo.sh
 ./folders/seta.sh 
 ./folders/si.sh 
 ./folders/snk.sh 
