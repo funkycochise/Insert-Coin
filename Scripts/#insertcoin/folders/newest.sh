@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0703
+   add "Night Slashers (Japan Rev 1.2, DE-0397-0 PCB).mra" "_Night Slashers"
+
 #0630
 
    add "DECO Darksoft Multigame (DECO).mra" "_Deco-Cassette"
