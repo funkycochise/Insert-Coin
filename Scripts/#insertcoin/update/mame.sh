@@ -1104,4 +1104,6 @@ dl "aligator.zip"
 dl "biomtoy.zip"
 dl "squash.zip"
 
+dl "nslasher.zip"
+
 echo -e "${GREEN}${CHECK}${NC} Completed"
