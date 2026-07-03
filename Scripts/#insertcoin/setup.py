@@ -117,6 +117,7 @@ segasys18=_Sega-System-18
 segastv=_Sega-Titan Video
 segamegaplay=_Sega Megaplay
 segag80=_Sega-G80
+segakyugo=_Sega-Kyugo
 snk=_SNK
 si=_Space Invaders
 stern=_Stern
