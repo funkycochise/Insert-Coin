@@ -65,8 +65,14 @@ function additem {
 
 counter=0
 
+#0705
+
+   add "Gulf War II (set 1).mra" "_Gulf War II"
+   add "Captain America and The Avengers (US, Rev 1.9).mra" "_Captain America and The Avengers"
+
 #0703
    add "Night Slashers (Japan Rev 1.2, DE-0397-0 PCB).mra" "_Night Slashers"
+
 
 #0630
 
