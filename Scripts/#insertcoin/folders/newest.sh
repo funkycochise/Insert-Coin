@@ -66,7 +66,7 @@ function additem {
 counter=0
 
 #0705
-   add "Boogie Wings (Euro v1.5, 92.12.07).mra" "_"Boogie Wings" 
+   add "Boogie Wings (Euro v1.5, 92.12.07).mra" "_Boogie Wings" 
    add "Break Thru (World).mra" "_Break Thru"
    add "Paperboy (rev 3).mra" "_Paperboy"
    add "Klax.mra" "_Klax"
