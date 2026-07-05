@@ -18,6 +18,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Atomic Runner Chelnov (World).mra" "_Atomic Runner Chelnov" "" "ACT"
    add "$dir" "H" "Bad Dudes vs. Dragonninja (US, revision 1).mra" "_Bad Dudes vs. Dragonninja" "" "ACT"
    add "$dir" "H" "Boogie Wings (World).mra" "_Boogie Wings" "" "ACT"
+   add "$dir" "H" "Boogie Wings (Euro v1.5, 92.12.07).mra" "_"Boogie Wings" "" "ACT"
    add "$dir" "H" "Boulder Dash - Boulder Dash Part 2 (World).mra" "_Boulder Dash" "" "ACT"
    add "$dir" "H" "Break Thru (World).mra" "_Break Thru" "" "ACT"
    add "$dir" "H" "Captain America and The Avengers (US, Rev 1.9).mra" "_Captain America and The Avengers" "" "BEA"
