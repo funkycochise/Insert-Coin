@@ -66,7 +66,9 @@ function additem {
 counter=0
 
 #0705
-
+   add "Break Thru (World).mra" "_Break Thru"
+   add "Paperboy (rev 3).mra" "_Paperboy"
+   add "Klax.mra" "_Klax"
    add "Gulf War II (set 1).mra" "_Gulf War II"
    add "Captain America and The Avengers (US, Rev 1.9).mra" "_Captain America and The Avengers"
 
