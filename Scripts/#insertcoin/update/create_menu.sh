@@ -21,12 +21,14 @@ fi
 ./folders/banpresto.sh 
 ./folders/capcom.sh 
 ./folders/cave.sh
+./folders/comad.sh 
 ./folders/cps1.5.sh 
 ./folders/cps1.sh
 ./folders/cps2.sh
 ./folders/cps3.sh
 ./folders/crazykong.sh 
 ./folders/deco.sh
+./folders/decocassette.sh
 ./folders/deco8.sh
 ./folders/deco16.sh  
 ./folders/exidy.sh 
