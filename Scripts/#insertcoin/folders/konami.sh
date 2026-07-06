@@ -47,6 +47,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Aliens (World set 1).mra" "_Aliens" "" "BEA"
    add "$dir" "H"  "Combat School (joystick).mra" "_Combat School" "" "ACT"
    add "$dir" "H"  "Crime Fighters (World 2 players).mra" "_Crime Fighters"  "" "BEA"
+   add "$dir" "H"  "Double Dribble.mra" "_Double Dribble" "" "SPO"
    add "$dir" "H"  "Golfing Greats (World, version L).mra" "_Golfing Greats" "" "SPO"
    add "$dir" "H"  "Gradius.mra" "_Gradius" "" "STG"
    add "$dir" "H"  "Gradius III (World, version R).mra" "_Gradius III" "" "STG"
