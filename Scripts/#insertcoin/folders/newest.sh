@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+#0708
+   add "Cloak & Dagger (rev 5).mra" "_Cloak & Dagger"
+   add "Major Havoc.mra" "_Major Havoc"
+
 #0705
    add "Double Dribble.mra" "_Double Dribble"
    add "Boogie Wings (Euro v1.5, 92.12.07).mra" "_Boogie Wings" 
