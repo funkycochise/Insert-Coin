@@ -168,6 +168,8 @@ find $CORE -maxdepth 1 -type f -name "Tempest_*" ! -name "Tempest_20260607.rbf" 
 
 find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260702.rbf" -delete
 
+find $CORE -maxdepth 1 -type f -name "jtnslasher_*" ! -name "jtnslasher_20260707.rbf" -delete
+
 if [ -f "$CORE/Darius_20260411.rbf" ] 
 then
     rm -r "$CORE/Darius_20260407.rbf" > /dev/null 2>&1
