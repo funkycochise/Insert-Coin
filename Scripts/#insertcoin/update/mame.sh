@@ -1109,5 +1109,6 @@ dl "klax.zip"
 dl "paperboy.zip"
 dl "brkthru.zip"
 dl "mhavoc.zip"
+dl "cloak.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
