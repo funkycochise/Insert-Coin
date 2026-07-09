@@ -1110,5 +1110,7 @@ dl "paperboy.zip"
 dl "brkthru.zip"
 dl "mhavoc.zip"
 dl "cloak.zip"
+dl "puzzli2.zip"
+dl "puzlstar.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
