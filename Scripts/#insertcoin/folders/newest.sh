@@ -65,6 +65,14 @@ function additem {
 
 counter=0
 
+#0710
+   add "Trio The Punch (World).mra" "_Trio The Punch"
+
+#0709
+   add "Puzzli 2 (ver. 100, WORLD).mra" "_Puzzli 2"
+   add "Puzzli 2 Super (ver. 200, WORLD).mra" "_Puzzli 2 Super"
+   add "Puzzle Star (ver. 100MG, WORLD).mra" "_Puzzle Star"
+
 #0708
    add "Cloak & Dagger (rev 5).mra" "_Cloak & Dagger"
    add "Major Havoc.mra" "_Major Havoc"
