@@ -56,6 +56,7 @@ fi
 ./folders/midwayyz.sh 
 ./folders/namco.sh 
 ./folders/namco_sys1.sh 
+./folders/namco_sys11.sh 
 ./folders/namco_sys86.sh 
 ./folders/neogeo.sh 
 ./folders/nichibutsu.sh 

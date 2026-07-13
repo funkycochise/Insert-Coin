@@ -1113,4 +1113,8 @@ dl "cloak.zip"
 dl "puzzli2.zip"
 dl "puzlstar.zip"
 
+dl "tekken.zip"
+dl "tekken2.zip"
+dl "namcoc76.zip"
+
 echo -e "${GREEN}${CHECK}${NC} Completed"
