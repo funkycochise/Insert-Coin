@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+#0713
+   add "Tekken (World TE2 Ver.C).mra" "_Tekken"
+   add "Tekken 2 Ver.B (World TES2 Ver.B).mra" "_Tekken 2"
+
 #0710
    add "Trio The Punch (World).mra" "_Trio The Punch"
 
