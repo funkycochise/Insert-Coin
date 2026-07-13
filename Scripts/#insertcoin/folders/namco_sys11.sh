@@ -9,6 +9,6 @@ fi
 resh=$(exist "Tekken (World TE2 Ver.C).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Tekken (World TE2 Ver.C).mra" "_Tekken" "" "VSF"
-   add "$dir" "V" "Tekken 2 Ver.B (World TES2 Ver.B).mra" "Tekken 2" "" "VSF"
+   add "$dir" "V" "Tekken 2 Ver.B (World TES2 Ver.B).mra" "_Tekken 2" "" "VSF"
    dot
 fi
