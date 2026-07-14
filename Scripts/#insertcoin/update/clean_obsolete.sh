@@ -174,6 +174,8 @@ find $CORE -maxdepth 1 -type f -name "MajorHavoc_*" ! -name "MajorHavoc_20260605
 
 find $CORE -maxdepth 1 -type f -name "CloakAndDagger_*" ! -name "CloakAndDagger_20260708.rbf" -delete
 
+find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" ! -name "XNSYSTEM11_20260713.rbf" -delete
+
 if [ -f "$CORE/Darius_20260411.rbf" ] 
 then
     rm -r "$CORE/Darius_20260407.rbf" > /dev/null 2>&1
