@@ -7,9 +7,6 @@ resv=$(exist "Arkanoid (W).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"
    add "$dir" "V" "Arkanoid - Revenge of DOH (World).mra" "_Arkanoid II"
-   add "$dir" "V" "Arkanoid (JP).mra" "_Arkanoid"
-   add "$dir" "V" "Arkanoid (Unl. lives) [hb].mra" "_Arkanoid"
-   add "$dir" "V" "Arkanoid (US).mra" "_Arkanoid"
    add "$dir" "V" "Arkanoid (W).mra" "_Arkanoid"
    add "$dir" "V" "Balloon Bomber.mra" "_Balloon Bomber"
    add "$dir" "V" "Bronx (bootleg of Cycle Shooting).mra" "_Bronx"
