@@ -104,7 +104,7 @@ counter=0
 
 #0627
    
-      additem "$segamegaplay"
+   additem "$segamegaplay"
 
 #0616
    add "Robocop 2 (USA v0.10).mra" "_Robocop2"
@@ -115,17 +115,17 @@ counter=0
    add "Boogie Wings (World).mra" "_Boogie Wings"
 
 #0612
-
-   add "Dragon Blaze.mra" "_Dragon Blaze"
-   add "Gunbarich.mra" "_Gunbarich" 
-   add "Gunbird 2 (set 1).mra" "_Gunbird 2" 
-   add "Strikers 1945 II.mra" "_Strikers 1945 II"
-   add "Strikers 1945 III.mra" "_Strikers 1945 III"
-   add "Daraku Tenshi The Fallen Angels.mra" "_Daraku Tenshi The Fallen Angels"
-   add "Mahjong G-Taste.mra" "_Mahjong G-Taste"
-   add "Sol Divide Sword Of Darkness (Korea).mra" "_Sol Divide Sword Of Darkness"
-   add "Tetris The Absolute - The Grand Master 2.mra" "_Tetris The Absolute - The Grand Master 2"
-   add "Space Bomber.mra" "_Space Bomber"
+   additem "$psikyosh2"
+   #add "Dragon Blaze.mra" "_Dragon Blaze"
+   #add "Gunbarich.mra" "_Gunbarich" 
+   #add "Gunbird 2 (set 1).mra" "_Gunbird 2" 
+   #add "Strikers 1945 II.mra" "_Strikers 1945 II"
+   #add "Strikers 1945 III.mra" "_Strikers 1945 III"
+   #add "Daraku Tenshi The Fallen Angels.mra" "_Daraku Tenshi The Fallen Angels"
+   #add "Mahjong G-Taste.mra" "_Mahjong G-Taste"
+   #add "Sol Divide Sword Of Darkness (Korea).mra" "_Sol Divide Sword Of Darkness"
+   #add "Tetris The Absolute - The Grand Master 2.mra" "_Tetris The Absolute - The Grand Master 2"
+   #add "Space Bomber.mra" "_Space Bomber"
    add "Red Earth (Asia 961121, NO CD).mra" "_Red Earth"
    add "Street Fighter III New Generation (Asia 970204, NO CD, BIOS set 1).mra" "_Street Fighter III New Generation"
 
@@ -136,23 +136,24 @@ counter=0
    add "Boogie Wings (World).mra" "_Boogie Wings"
 
 #0608
-   add "S.V.G. - Spectral vs Generation (ver. 200).mra" "_S.V.G. - Spectral vs Generation"
-   add "The Gladiator (ver. 101).mra" "_The Gladiator"
+   additem "$igspgm"
+   #add "S.V.G. - Spectral vs Generation (ver. 200).mra" "_S.V.G. - Spectral vs Generation"
+   #add "The Gladiator (ver. 101).mra" "_The Gladiator"
    add "Cabal PGM.mra" "_Cabal PGM"
-   add "Demon Front (ver. 105).mra" "_Demon Front"
-   add "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion).mra" "_DoDonPachi Dai-Ou-Jou"
-   add "DoDonPachi II - Bee Storm (World, ver. 102).mra" "_DoDonPachi II"
-   add "Dragon World 3 (ver. 106).mra" "_Dragon World 3"
-   add "Dragon World 2001 (ver. 100, Japan).mra" "_Dragon World 2001"
-   add "Espgaluda (2003.10.15 Master Ver, bootleg cartridge conversion).mra" "_Espgaluda"
-   add "Ketsui Kizuna Jigoku Tachi (2003.01.01. Master Ver., bootleg cartridge conversion).mra" "_Ketsui Kizuna Jigoku Tachi"
-   add "Knights of Valour 2 (ver. 107).mra" "_Knights of Valour 2"
-   add "Knights of Valour Super Heroes (ver. 100, CN).mra" "_Knights of Valour Super Heroes"
-   add "Martial Masters (ver. 104, 102, 102US).mra" "_Martial Masters"
-   add "Oriental Legend (ver. 126).mra" "_Oriental Legend"
-   add "Photo Y2K (ver. 102, Japanese Board).mra" "_Photo Y2K"
-   add "The Killing Blade (ver. 109, Chinese Board).mra" "_The Killing Blade"
-   add "Xiyou Shi E Zhuan Super (ver. 103, China, Tencent) (unprotected).mra" "_Xiyou Shi E Zhuan Super" 
+   #add "Demon Front (ver. 105).mra" "_Demon Front"
+   #add "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion).mra" "_DoDonPachi Dai-Ou-Jou"
+   #add "DoDonPachi II - Bee Storm (World, ver. 102).mra" "_DoDonPachi II"
+   #add "Dragon World 3 (ver. 106).mra" "_Dragon World 3"
+   #add "Dragon World 2001 (ver. 100, Japan).mra" "_Dragon World 2001"
+   #add "Espgaluda (2003.10.15 Master Ver, bootleg cartridge conversion).mra" "_Espgaluda"
+   #add "Ketsui Kizuna Jigoku Tachi (2003.01.01. Master Ver., bootleg cartridge conversion).mra" "_Ketsui Kizuna Jigoku Tachi"
+   #add "Knights of Valour 2 (ver. 107).mra" "_Knights of Valour 2"
+   #add "Knights of Valour Super Heroes (ver. 100, CN).mra" "_Knights of Valour Super Heroes"
+   #add "Martial Masters (ver. 104, 102, 102US).mra" "_Martial Masters"
+   #add "Oriental Legend (ver. 126).mra" "_Oriental Legend"
+   #add "Photo Y2K (ver. 102, Japanese Board).mra" "_Photo Y2K"
+   #add "The Killing Blade (ver. 109, Chinese Board).mra" "_The Killing Blade"
+   #add "Xiyou Shi E Zhuan Super (ver. 103, China, Tencent) (unprotected).mra" "_Xiyou Shi E Zhuan Super" 
    add "Sky Smasher.mra" "_Sky Smasher"
 
 #0604
