@@ -137,7 +137,7 @@ then
     rm -r "$CORE/NeoGeo-MVS_20220218.rbf"
 fi
 #tar Force
-find $CORE -maxdepth 1 -type f -name "StarForce_*" ! -name "Starforce_20260414.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "StarForce_*" ! -name "Starforce_20260418.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "NaughtyBoy_*" ! -name "NaughtyBoy_20250428.rbf" -delete
 
