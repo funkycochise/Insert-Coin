@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0715
+   add "Legionnaire (World).mra" "_Legionnaire"
+
 #0713
    additem "$namco_sys11"
    #add "Tekken (World TE2 Ver.C).mra" "_Tekken"
