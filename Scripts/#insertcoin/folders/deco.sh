@@ -17,7 +17,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "H" "Atomic Runner Chelnov (World).mra" "_Atomic Runner Chelnov" "" "ACT"
    add "$dir" "H" "Bad Dudes vs. Dragonninja (US, revision 1).mra" "_Bad Dudes vs. Dragonninja" "" "ACT"
-   add "$dir" "H" "Boogie Wings (USA v1.7, 92.12.14).mra" "_Boogie Wings" "" "ACT"
+   #add "$dir" "H" "Boogie Wings (USA v1.7, 92.12.14).mra" "_Boogie Wings" "" "ACT"
    add "$dir" "H" "Boogie Wings (Euro v1.5, 92.12.07).mra" "_Boogie Wings" "" "ACT"
    add "$dir" "H" "Boogie Wings (USA v1.7, 92.12.14) (Coc).mra" "_Boogie Wings" "" "ACT"
    add "$dir" "H" "Boulder Dash - Boulder Dash Part 2 (World).mra" "_Boulder Dash" "" "ACT"
@@ -26,7 +26,8 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Caveman Ninja (World ver 4).mra" "_Caveman Ninja" "" "ACT"
    add "$dir" "H" "Caveman Ninja (World, Ver. 4) (Coc).mra" "_Caveman Ninja" "" "ACT"
    add "$dir" "H" "Cobra-Command (World, Rev. 5).mra" "_Cobra-Command" "" "STG"
-   add "$dir" "H" "Crude Buster (World, FX version).mra" "_Crude Buster" "" "BEA"
+   #add "$dir" "H" "Crude Buster (World, FX version).mra" "_Crude Buster" "" "BEA"
+   add "$dir" "H" "Crude Buster (World, FX version) (Coc).mra" "_Crude Buster" "" "BEA"
    add "$dir" "H" "Dark Seal (World, Rev. 3).mra" "_Dark Seal" 
    add "$dir" "H" "Express Raider.mra" "_Express Raider" "" "RNG"
    add "$dir" "H" "Hippodrome (US).mra" "_Hippodrome" "" "VSF"
