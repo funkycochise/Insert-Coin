@@ -203,8 +203,8 @@ else
 fi
 
 
-if test -f "/media/fat/Scripts/#local/res.sh"; then
-      /media/fat/Scripts/#local/res.sh
+if test -f "/media/fat/Scripts/#local/coc.sh"; then
+      /media/fat/Scripts/#local/coc.sh
 fi
 
 if test -f "/media/fat/Scripts/#local/dk3.sh"; then
