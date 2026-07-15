@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0715
+   add "Heated Barrel (World version 3).mra" "_Heated Barrel"
    add "Legionnaire (World).mra" "_Legionnaire"
 
 #0713
