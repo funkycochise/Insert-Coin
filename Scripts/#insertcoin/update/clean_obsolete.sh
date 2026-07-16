@@ -165,11 +165,9 @@ find $CORE -maxdepth 1 -type f -name "snowbros_mister_*" ! -name "snowbros_miste
 find $CORE -maxdepth 1 -type f -name "Tempest_*" ! -name "Tempest_20260607.rbf" -delete
 
 
-find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260714.rbf.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260714.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "jtnslasher_*" ! -name "jtnslasher_20260707.rbf" -delete
-
-find $CORE -maxdepth 1 -type f -name "MajorHavoc_*" ! -name "MajorHavoc_20260605.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "MajorHavoc_*" ! -name "MajorHavoc_20260605.rbf" -delete
 
