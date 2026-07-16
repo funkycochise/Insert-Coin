@@ -18,7 +18,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Soul Edge Ver. II (Asia SO4-VER.C).mra" "_Soul Edge Ver. II" "" ""
    add "$dir" "H" "Star Sweep (World STP2-VER.A).mra" "_Star Sweep" "" "PUZ"
    add "$dir" "H" "Tekken (World TE2 Ver.C).mra" "_Tekken" "" "VSF"
-   add "$dir" "H" "Tekken 2 Ver.B (World TES2 Ver.B).mra" "_Tekken 2" "" "VSF"
+   add "$dir" "H" "Tekken 2 Ver.B (World TES2-VER.D).mra" "_Tekken 2" "" "VSF"
    add "$dir" "H" "Xevious 3D-G (World XV32-VER.B).mra" "_Xevious 3D-G" "" "STG"
    dot
 fi
