@@ -37,11 +37,18 @@ then
       processlocal $targetfolder "_#Pce"
    fi
 fi
-   if [ -d "$addon/_Arcade/" ];then
+if [ -d "$addon/_Arcade/" ];then
 
-      cp  /media/fat/Scripts/#local/addon/_Arcade/*.mra /media/fat/_Arcade/
-      cp  /media/fat/Scripts/#local/addon/_Arcade/cores/*.rbf /media/fat/_Arcade/cores
-      cp -r  /media/fat/Scripts/#local/addon/_Arcade/_alternatives/ /media/fat/_Arcade
-   fi
+   cp  $addon/_Arcade/*.mgl /media/fat/_Arcade/
+   cp  $addon/_Arcade/*.mra /media/fat/_Arcade/
+   cp  $addon/_Arcade/cores/*.rbf /media/fat/_Arcade/cores
+   cp -r  $addon/_Arcade/_alternatives/ /media/fat/_Arcade
+fi
+#Paprium
+if [ -f "$ARCADE/Paprium.mgl" ];
+then
+   echo "Creating $targetfolder/Paprium.mgl"
+   ln -s "$ARCADE/Paprium.mgl" "$targetfolder/Paprium.mgl"
+fi
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
