@@ -11,7 +11,7 @@ function dump {
 echo "insertcoin_menu=$insertcoin_menu"
 echo "main_mister=$main_mister"
 echo "mame_rom=$mame_rom"
-echo "neogeo_rom=$neogeo_rom"
+echo "neo_rom=$neo_rom"
 echo "gnw_rom=$gnw_rom"
 echo "additional_res=$additional_res"
 echo "console_core=$console_core"
@@ -195,7 +195,7 @@ fi
 if [ "$mame_rom" == "1" ]; then
    ./update/mame.sh
 fi
-if [ "$neogeo_rom" == "1" ]; then
+if [ "$neo_rom" == "1" ]; then
    ./update/neogeo.sh
 fi
 
