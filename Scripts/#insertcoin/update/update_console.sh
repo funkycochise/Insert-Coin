@@ -16,7 +16,6 @@ function installPSX {
       if [ "${f:2:3}" == "PSX" ];  then
          if [ "$dualsdram" == "0" ] || [ "$dualsdram" == "2" ]; then
             target="${f:2:${#f}}"
-            #echo "move to $CONSOLE/$target"
             cp $f $CONSOLE/$target
             touch $CONSOLE/$target >/dev/null
             installed="1"
@@ -499,7 +498,7 @@ function installMegadrive {
        target="${f:2:${#f}}"
        #echo "target: $target"
        
-       find $CONSOLE -maxdepth 1 -type f -name "MegaDrive*" ! -name "$target" -delete
+       find $CONSOLE -maxdepth 1 -type f -name "MegaDrive*" ! -name "MegaDrive_Paprium*" ! -name "$target" -delete
        echo -e "${BLUE}${CHECK}${NC} MegaDrive"
     fi
   fi
