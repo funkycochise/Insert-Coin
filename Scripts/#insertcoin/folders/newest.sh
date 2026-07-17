@@ -116,7 +116,7 @@ counter=0
 #0615
    add "Dark Seal (World, Rev. 3).mra" "_Dark Seal" 
    add "Act-Fancer Cybernetick Hyper Weapon (World, Rev. 3).mra" "_Act-Fancer"
-   add "Boogie Wings (World).mra" "_Boogie Wings"
+   #add "Boogie Wings (World).mra" "_Boogie Wings"
 
 #0612
    additem "$psikyosh2"
@@ -137,7 +137,7 @@ counter=0
    add "Caveman Ninja.mra" "_Caveman Ninja"
 
 #0609
-   add "Boogie Wings (World).mra" "_Boogie Wings"
+   #add "Boogie Wings (World).mra" "_Boogie Wings"
 
 #0608
    additem "$igspgm"
