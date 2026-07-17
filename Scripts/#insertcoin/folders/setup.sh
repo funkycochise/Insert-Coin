@@ -63,7 +63,7 @@ function loadsetup {
 insertcoin_menu=$(ini_get "$ini" insertcoin_menu)
 main_mister=$(ini_get "$ini" main_mister)
 mame_rom=$(ini_get "$ini" mame_rom)
-neogeo_rom=$(ini_get "$ini" neogeo_rom)
+neo_rom=$(ini_get "$ini" neo_rom)
 gnw_rom=$(ini_get "$ini" gnw_rom)
 additional_res=$(ini_get "$ini" additional_res)
 console_core=$(ini_get "$ini" console_core)
