@@ -43,7 +43,8 @@ fi
 ./folders/irem92.sh 
 ./folders/irem92t.sh 
 ./folders/irem107.sh 
-./folders/jaleco.sh 
+./folders/jaleco.sh
+./folders/Kaneko.sh 
 ./folders/Kiwako.sh 
 ./folders/konami.sh 
 ./folders/konami_twin16.sh 
