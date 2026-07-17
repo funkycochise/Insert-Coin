@@ -39,10 +39,10 @@ then
 fi
 if [ -d "$addon/_Arcade/" ];then
 
-   cp  $addon/_Arcade/*.mgl /media/fat/_Arcade/
-   cp  $addon/_Arcade/*.mra /media/fat/_Arcade/
-   cp  $addon/_Arcade/cores/*.rbf /media/fat/_Arcade/cores
-   cp -r  $addon/_Arcade/_alternatives/ /media/fat/_Arcade
+   cp  $addon/_Arcade/*.mgl /media/fat/_Arcade/ >/dev/null 2>&1
+   cp  $addon/_Arcade/*.mra /media/fat/_Arcade/ >/dev/null 2>&1
+   cp  $addon/_Arcade/cores/*.rbf /media/fat/_Arcade/cores >/dev/null 2>&1
+   cp -r  $addon/_Arcade/_alternatives/ /media/fat/_Arcade >/dev/null 2>&1
 fi
 #Paprium
 if [ -f "$ARCADE/Paprium.mgl" ];
