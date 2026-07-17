@@ -1128,5 +1128,6 @@ dl "tekken2.zip"
 dl "namcoc76.zip"
 dl "xevi3dg.zip"
 dl "heatbrl.zip"
+dl "galpanic.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
