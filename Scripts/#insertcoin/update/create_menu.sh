@@ -98,7 +98,8 @@ fi
 ./folders/universal.sh 
 ./folders/upl.sh 
 ./folders/vs.sh 
-./folders/williams.sh 
+./folders/williams.sh
+./folders/zn1.sh 
 if [ "$newest" == "1" ]; then
   ./folders/newest.sh 
 fi
