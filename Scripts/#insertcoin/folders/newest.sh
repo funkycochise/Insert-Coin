@@ -65,7 +65,9 @@ function additem {
 
 counter=0
 
+
 #0717
+   add "Batsugun.mra" "_Batsugun"
    add "Gals Panic (unprotected, ver. 2.0).mra" "_Gals Panic"
 
 #0715
