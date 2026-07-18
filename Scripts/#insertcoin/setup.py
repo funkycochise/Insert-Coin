@@ -138,6 +138,7 @@ universal=_Universal
 upl=_Upl
 vs=_Nintendo Vs.
 williams=_Williams
+zn1=_ZN1
 """
 
 # ------------------- Fonctions INI -------------------
