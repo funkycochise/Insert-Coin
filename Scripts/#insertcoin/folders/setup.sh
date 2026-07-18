@@ -214,6 +214,7 @@ universal=$(ini_get "$names" universal)
 upl=$(ini_get "$names" upl)
 vs=$(ini_get "$names" vs)
 williams=$(ini_get "$names" williams)
+zn1=$(ini_get "$names" zn1)
 }
 
 loadsetup

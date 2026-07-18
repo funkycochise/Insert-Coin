@@ -65,6 +65,8 @@ function additem {
 
 counter=0
 
+   additem "$zn1"
+
 
 #0717
    add "Batsugun.mra" "_Batsugun"
