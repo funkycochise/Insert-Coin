@@ -1131,4 +1131,8 @@ dl "heatbrl.zip"
 dl "galpanic.zip"
 dl "batsugun.zip"
 
+#ZN
+dl "aerofgt.zip"
+dl "coh1002v.zip"
+
 echo -e "${GREEN}${CHECK}${NC} Completed"
