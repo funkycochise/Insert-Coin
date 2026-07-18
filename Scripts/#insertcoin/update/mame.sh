@@ -1129,5 +1129,6 @@ dl "namcoc76.zip"
 dl "xevi3dg.zip"
 dl "heatbrl.zip"
 dl "galpanic.zip"
+dl "batsugun.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
