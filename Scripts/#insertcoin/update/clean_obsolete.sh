@@ -169,6 +169,10 @@ find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260714.r
 
 find $CORE -maxdepth 1 -type f -name "jtnslasher_*" ! -name "jtnslasher_20260707.rbf" -delete
 
+find $CORE -maxdepth 1 -type f -name "HeatedBarrel_*" ! -name "HeatedBarrel_20260715.rbf" -delete
+
+find $CORE -maxdepth 1 -type f -name "Legionnaire_*" ! -name "Legionnaire_20260715.rbf" -delete
+
 find $CORE -maxdepth 1 -type f -name "MajorHavoc_*" ! -name "MajorHavoc_20260605.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "CloakAndDagger_*" ! -name "CloakAndDagger_20260708.rbf" -delete
@@ -181,7 +185,7 @@ find $CORE -maxdepth 1 -type f -name "Klax_*" ! -name "Klax_20260704.rbf" -delet
 
 find $CORE -maxdepth 1 -type f -name "glass_*" ! -name "glass_20260713.rbf" -delete
 
-
+find $CORE -maxdepth 1 -type f -name "Batsugun_*" ! -name "Batsugun_20260718.rbf" -delete
 
 
 if [ -f "$CORE/Darius_20260411.rbf" ] 
