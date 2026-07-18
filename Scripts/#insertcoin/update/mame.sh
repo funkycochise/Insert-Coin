@@ -1131,7 +1131,7 @@ dl "heatbrl.zip"
 dl "galpanic.zip"
 dl "batsugun.zip"
 
-#ZN
+#ZN1
 dl "aerofgt.zip"
 dl "coh1002v.zip"
 dl "coh1002m.zip"
