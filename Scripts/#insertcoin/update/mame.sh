@@ -1136,5 +1136,7 @@ dl "aerofgt.zip"
 dl "coh1002v.zip"
 dl "coh1002m.zip"
 dl "brvblade.zip"
+dl "1on1gov.zip"
+dl "coh1002m.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
