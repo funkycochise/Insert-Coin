@@ -65,6 +65,8 @@ function additem {
 
 counter=0
 
+#0719
+   add "SuperOffRoad.mra" "_SuperOffRoad"
    additem "$zn1"
 
 
