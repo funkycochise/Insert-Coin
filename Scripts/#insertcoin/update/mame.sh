@@ -1160,5 +1160,6 @@ dl "shngmtkb.zip"
 dl "tblkkuzu.zip"
 dl "tondemo.zip"
 dl "twcupmil.zip"
+dl "offroad.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
