@@ -54,6 +54,7 @@ genre_rng_h=__Run'n'Gun_H
 genre_rng_v=__Run'n'Gun_V
 
 alpha=_Alpha
+aleck64=_Aleck64
 atari=_Atari
 bagman=_Bagman
 bally_midway=_Bally-midway
