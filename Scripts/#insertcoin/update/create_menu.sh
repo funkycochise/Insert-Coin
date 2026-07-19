@@ -49,6 +49,7 @@ fi
 ./folders/konami.sh 
 ./folders/konami_twin16.sh 
 ./folders/ladybug.sh 
+./folders/leland.sh 
 ./folders/mcr1.sh 
 ./folders/mcr2.sh 
 ./folders/mcr3.sh 
