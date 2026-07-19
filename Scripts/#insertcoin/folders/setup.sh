@@ -129,6 +129,7 @@ genre_stg_v=$(ini_get "$names" genre_stg_v)
 genre_rng_h=$(ini_get "$names" genre_rng_h)
 genre_rng_v=$(ini_get "$names" genre_rng_v)
 
+aleck64=$(ini_get "$names" aleck64)
 alpha=$(ini_get "$names" alpha)
 atari=$(ini_get "$names" atari)
 bagman=$(ini_get "$names" bagman)

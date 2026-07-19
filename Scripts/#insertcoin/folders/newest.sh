@@ -66,7 +66,10 @@ function additem {
 counter=0
 
 #0719
+   additem "$aleck64"
    add "SuperOffRoad.mra" "_SuperOffRoad"
+
+#0718
    additem "$zn1"
 
 
