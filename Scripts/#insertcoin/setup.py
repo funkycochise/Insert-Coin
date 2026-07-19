@@ -88,6 +88,7 @@ kiwako=_Kiwako
 konami=_Konami
 konamitwin16=_Konami Twin16
 ladybug=_Ladybug
+leland=_Leland
 mcr1=_MCR1
 mcr2=_MCR2
 mcr3=_MCR3
