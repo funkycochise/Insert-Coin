@@ -162,7 +162,7 @@ find $CORE -maxdepth 1 -type f -name "Millipede_*" ! -name "Millipede_20260518.r
 find $CORE -maxdepth 1 -type f -name "snowbros_mister_*" ! -name "snowbros_mister_20260527.rbf" -delete
 
 
-find $CORE -maxdepth 1 -type f -name "Tempest_*" ! -name "Tempest_20260607.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "Tempest_*" ! -name "Tempest_20260720.rbf" -delete
 
 
 find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260714.rbf" -delete
