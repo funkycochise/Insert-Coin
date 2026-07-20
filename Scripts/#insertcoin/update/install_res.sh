@@ -202,9 +202,11 @@ else
     rm -r $temp/res6.zip
 fi
 
-
 if test -f "/media/fat/Scripts/#local/coc.sh"; then
       /media/fat/Scripts/#local/coc.sh
+fi
+if test -f "/media/fat/Scripts/#local/rmonic79.sh"; then
+      /media/fat/Scripts/#local/rmonic79.sh
 fi
 
 if test -f "/media/fat/Scripts/#local/dk3.sh"; then
