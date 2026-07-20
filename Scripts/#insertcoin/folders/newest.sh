@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0719
+   add "Raiden (World).mra" "_Raiden"
    add "Magical Error wo Sagase.mra" "_Magical Error wo Sagase"
    add "Wild West C.O.W.-Boys of Moo Mesa (ver EAB).mra" "_Wild West C.O.W.-Boys of Moo Mesa"
    add "Operation Wolf (World, rev 2, set 1).mra" "_Operation Wolf"
