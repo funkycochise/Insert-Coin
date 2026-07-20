@@ -66,6 +66,9 @@ function additem {
 counter=0
 
 #0719
+   add "Operation Wolf (World, rev 2, set 1).mra" "_Operation Wolf"
+   add "Empire City.mra" "_Empire City"
+   add "Hyper Duel.mra" "_Hyper Duel"
    additem "$aleck64"
    add "SuperOffRoad.mra" "_SuperOffRoad"
 
