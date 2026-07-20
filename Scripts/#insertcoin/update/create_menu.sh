@@ -83,6 +83,7 @@ fi
 ./folders/segastv.sh 
 ./folders/segag80.sh 
 ./folders/segakyugo.sh
+./folders/seibu.sh 
 ./folders/seta.sh 
 ./folders/si.sh 
 ./folders/snk.sh 
