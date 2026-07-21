@@ -89,9 +89,6 @@ counter=0
 
 #0713
    additem "$namco_sys11"
-   #add "Tekken (World TE2 Ver.C).mra" "_Tekken"
-   #add "Tekken 2 Ver.B (World TES2 Ver.B).mra" "_Tekken 2"
-   #add "Xevious 3D-G (World XV32-VER.B).mra" "_Xevious 3D-G"
 
 #0710
    add "Trio The Punch (World).mra" "_Trio The Punch"
