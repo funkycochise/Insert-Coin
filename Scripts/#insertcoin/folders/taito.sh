@@ -48,6 +48,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Sagaia (World, dual screen).mra" "_Sagaia" "" "STG"
    add "$dir" "H" "Space Dungeon.mra" "_Space Dungeon" "" ""
    add "$dir" "H" "The FairyLand Story.mra" "_The FairyLand Story" "" "ACT"
+   add "$dir" "H" "The Legend of Kage (bootleg set 1).mra" "_The Legend of Kage" "" "ACT"
    add "$dir" "H" "The Legend of Kage (Rev 2).mra" "_The Legend of Kage" "" "ACT"
    add "$dir" "H" "The NewZealand Story (World, new version) (P0-043A PCB).mra" "_The NewZealand Story" "" "ACT"
    add "$dir" "H" "The Ninja Warriors (World).mra" "_The Ninja Warriors" "" "ACT"

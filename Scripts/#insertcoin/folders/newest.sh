@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+#0722
+   add "The Legend of Kage (bootleg set 1).mra" "_The Legend of Kage"
+   add "NBAHangtime.mra" "_NBAHangtime"
+
 #0719
    add "Raiden (World).mra" "_Raiden"
    add "Magical Error wo Sagase.mra" "_Magical Error wo Sagase"
