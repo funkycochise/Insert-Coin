@@ -56,7 +56,8 @@ fi
 ./folders/mcr3.sh 
 ./folders/mcr3mono.sh 
 ./folders/mcr3scroll.sh 
-./folders/midwayyz.sh 
+./folders/midwayyz.sh
+./folders/midwaywolf.sh 
 ./folders/namco.sh 
 ./folders/namco_sys1.sh 
 ./folders/namco_sys11.sh 
