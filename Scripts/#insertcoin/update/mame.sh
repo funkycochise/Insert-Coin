@@ -1169,6 +1169,7 @@ dl "magerror.zip"
 dl "raiden.zip"
 dl "umk3.zip"
 dl "nbahangt.zip"
+dl "wwfmania.zip"
 
 dl "aleck64.zip"
 dl "11beat.zip"
