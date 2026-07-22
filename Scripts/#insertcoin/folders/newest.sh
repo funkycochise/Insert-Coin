@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0722
+   add "Ultimate Mortal Kombat 3.mra" "_Ultimate Mortal Kombat 3"
    add "The Legend of Kage (bootleg set 1).mra" "_The Legend of Kage"
    add "NBAHangtime.mra" "_NBAHangtime"
 
