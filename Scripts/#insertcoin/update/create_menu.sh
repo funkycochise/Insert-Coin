@@ -94,6 +94,7 @@ fi
 ./folders/taitof2.sh 
 ./folders/taitosj.sh 
 ./folders/technos.sh 
+./folders/technosoft.sh 
 ./folders/technos16.sh 
 ./folders/Tehkan-Tecmo.sh 
 ./folders/toaplan.sh 
