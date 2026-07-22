@@ -69,6 +69,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Thunder Cross (set 1).mra" "_Thunder Cross" "" "STG"
    add "$dir" "H"  "Track & Field.mra" "_Track & Field" "" "SPO"
    add "$dir" "H"  "Vendetta (World, 4 Players, ver. T).mra" "_Vendetta" "" "BEA"
+   add "$dir" "H"  "Wild West C.O.W.-Boys of Moo Mesa (ver EAB).mra" "_Wild West C.O.W.-Boys of Moo Mesa"
    add "$dir" "H"  "X-Men (4 Players ver EBA).mra" "_X-Men" "" "BEA"
    add "$dir" "H"  "Yie Ar Kung-Fu (version I).mra" "_Yie Ar Kung-Fu" "" "ACT"
    dot
