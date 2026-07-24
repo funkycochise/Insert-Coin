@@ -65,11 +65,15 @@ function additem {
 
 counter=0
 
-#0722
-   add "WWFWrestleMania.mra" "_WWFWrestleMania"
+#0724
    add "Ultimate Mortal Kombat 3.mra" "_Ultimate Mortal Kombat 3"
+   add "Smash T.V. (rev 8.00) [firefix mixboot].mra" "_Smash T.V."
+   add "Rampage (Rev 3, 860827).mra" "_Rampage"
    add "The Legend of Kage (bootleg set 1).mra" "_The Legend of Kage"
+
+#0722
    add "NBAHangtime.mra" "_NBAHangtime"
+   add "WWFWrestleMania.mra" "_WWFWrestleMania"
 
 #0719
    add "Raiden (World).mra" "_Raiden"
