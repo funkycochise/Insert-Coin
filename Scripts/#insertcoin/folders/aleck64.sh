@@ -13,7 +13,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Mayjinsen 3.mra" "$aleck64" "" ""
    add "$dir" "H" "Star Soldier - Vanishing Earth.mra" "$aleck64" "" "STG"
    add "$dir" "H" "Super Real Mahjong VS (Rev A).mra" "$aleck64" "" ""
-   add "$dir" "H" "Super Real Mahjong VS.mra" "$aleck64" "" ""
+   #add "$dir" "H" "Super Real Mahjong VS.mra" "$aleck64" "" ""
    add "$dir" "H" "Tower & Shaft.mra" "$aleck64" "" ""
    add "$dir" "H" "Vivid Dolls.mra" "$aleck64" "" "PUZ"
    dot

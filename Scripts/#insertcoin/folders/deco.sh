@@ -24,10 +24,12 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Break Thru (World).mra" "_Break Thru" "" "ACT"
    add "$dir" "H" "Captain America and The Avengers (US, Rev 1.9).mra" "_Captain America and The Avengers" "" "BEA"
    add "$dir" "H" "Caveman Ninja (World ver 4).mra" "_Caveman Ninja" "" "ACT"
+   add "$dir" "H" "Caveman Ninja (World ver 4).mra" "_Caveman Ninja" "" "ACT"
    add "$dir" "H" "Caveman Ninja (World, Ver. 4) (Coc).mra" "_Caveman Ninja" "" "ACT"
    add "$dir" "H" "Cobra-Command (World, Rev. 5).mra" "_Cobra-Command" "" "STG"
    #add "$dir" "H" "Crude Buster (World, FX version).mra" "_Crude Buster" "" "BEA"
    add "$dir" "H" "Crude Buster (World, FX version) (Coc).mra" "_Crude Buster" "" "BEA"
+   add "$dir" "H" "Dark Seal (World revision 3).mra" "_Dark Seal" 
    add "$dir" "H" "Dark Seal (World, Rev. 3).mra" "_Dark Seal" 
    add "$dir" "H" "Express Raider.mra" "_Express Raider" "" "RNG"
    add "$dir" "H" "Hippodrome (US).mra" "_Hippodrome" "" "VSF"
@@ -42,7 +44,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "The Real Ghostbusters (US, 2 Players, Revision 2).mra" "_The Real Ghostbusters" "" "RNG"
    add "$dir" "H" "Trio The Punch (World).mra" "_Trio The Punch" "" "ACT"
    add "$dir" "H" "Tumble Pop (World).mra" "_Tumble Pop" "" "ACT"
-   add "$dir" "H" "Vapor Trail - Hyper Offence Formation (World, Rev. 1).mra" "_Vapor Trail" "" "STG"
+   add "$dir" "H" "Vapor Trail - Hyper Offence Formation (World revision 1).mra" "_Vapor Trail" "" "STG"
    add "$dir" "H" "Western Express (Japan, rev 4).mra" "_Express Raider" "" "RNG"
 
    dot
