@@ -5,6 +5,8 @@ dir=$midwaywolf
 
 resh=$(exist "NBAHangtime.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
+   add "$dir" "H"  "Mortal Kombat (Wolf Unit).mra" "_Mortal Kombat" "" "VSF"
+   add "$dir" "H"  "Mortal Kombat II (Wolf Unit).mra" "_Mortal Kombat II" "" "VSF"
    add "$dir" "H"  "NBAHangtime.mra" "_NBAHangtime" "" "SPO"
    add "$dir" "H"  "Rampage (Rev 3, 860827).mra" "_Rampage" "" "ACT"
    add "$dir" "H"  "Smash T.V. (rev 8.00) [firefix mixboot].mra" "_Smash T.V." "" "ACT"
