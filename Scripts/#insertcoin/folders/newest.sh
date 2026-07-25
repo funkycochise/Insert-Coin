@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0724
+   add "Pocket Gal (Japan).mra" "_Pocket Gal"
    add "Mortal Kombat (Wolf Unit).mra" "_Mortal Kombat"
    add "Mortal Kombat II (Wolf Unit).mra" "_Mortal Kombat II"
    add "Ultimate Mortal Kombat 3.mra" "_Ultimate Mortal Kombat 3"
