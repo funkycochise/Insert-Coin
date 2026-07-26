@@ -18,12 +18,12 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Boogie Wings (USA v1.7, 92.12.14) (Coc).mra" "_Boogie Wings" "" "ACT"
 
    add "$dir" "H" "Caveman Ninja (World ver 4).mra" "_Caveman Ninja" "" "ACT"
-   #add "$dir" "H" "Crude Buster (World, FX version).mra" "_Crude Buster" "" "BEA"
+   add "$dir" "H" "Crude Buster (World FX version).mra" "_Crude Buster" "" "BEA"
    add "$dir" "H" "Crude Buster (World, FX version) (Coc).mra" "_Crude Buster" "" "BEA"
    add "$dir" "H" "Dark Seal (World, Rev. 3).mra" "_Dark Seal" "" ""
    add "$dir" "H" "Robocop 2 (USA v0.10).mra" "_Robocop 2" "" "ACT"
    add "$dir" "H" "The Cliffhanger - Edward Randy (World, Ver. 3).mra" "_The Cliffhanger - Edward Randy" "" "ACT"
    add "$dir" "H" "Tumble Pop (World).mra" "_Tumble Pop" "" "ACT"
-
+   add "$dir" "H" "Vapor Trail - Hyper Offence Formation (World revision 1).mra" "_Vapor Trail" "" "STG"
    dot
 fi
