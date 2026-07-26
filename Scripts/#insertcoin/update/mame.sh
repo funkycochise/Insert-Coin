@@ -1173,6 +1173,8 @@ dl "wwfmania.zip"
 dl "rbisland.zip"
 dl "cchip.zip"
 dl "MK1_rel5.5.zip"
+dl "mk2_wolf_31w.zip"
+dl "mk2_wolf_32w.zip"
 dl "pcb.zip"
 dl "mk3.zip"
 
