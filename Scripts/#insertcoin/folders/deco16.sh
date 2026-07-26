@@ -10,6 +10,9 @@ fi
 resh=$(exist "Chelnov - Atomic Runner (World).mra")
 resv=$(exist "Burger Time (Set 1).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
+
+   add "$dir" "V" "Vapor Trail - Hyper Offence Formation (World revision 1).mra" "_Vapor Trail" "" "STG"
+
    #add "$dir" "H" "Boogie Wings (USA v1.7, 92.12.14).mra" "_Boogie Wings" "" "ACT"
    add "$dir" "H" "Boogie Wings (Euro v1.5, 92.12.07).mra" "_Boogie Wings" "" "ACT"
    add "$dir" "H" "Boogie Wings (USA v1.7, 92.12.14) (Coc).mra" "_Boogie Wings" "" "ACT"
@@ -21,6 +24,6 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Robocop 2 (USA v0.10).mra" "_Robocop 2" "" "ACT"
    add "$dir" "H" "The Cliffhanger - Edward Randy (World, Ver. 3).mra" "_The Cliffhanger - Edward Randy" "" "ACT"
    add "$dir" "H" "Tumble Pop (World).mra" "_Tumble Pop" "" "ACT"
-   add "$dir" "H" "Vapor Trail - Hyper Offence Formation (World, Rev. 1).mra" "_Vapor Trail" "" "STG"
+
    dot
 fi

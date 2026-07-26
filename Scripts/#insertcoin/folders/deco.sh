@@ -27,7 +27,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Caveman Ninja (World ver 4).mra" "_Caveman Ninja" "" "ACT"
    add "$dir" "H" "Caveman Ninja (World, Ver. 4) (Coc).mra" "_Caveman Ninja" "" "ACT"
    add "$dir" "H" "Cobra-Command (World, Rev. 5).mra" "_Cobra-Command" "" "STG"
-   #add "$dir" "H" "Crude Buster (World, FX version).mra" "_Crude Buster" "" "BEA"
+   add "$dir" "H" "Crude Buster (World, FX version).mra" "_Crude Buster" "" "BEA"
    add "$dir" "H" "Crude Buster (World, FX version) (Coc).mra" "_Crude Buster" "" "BEA"
    add "$dir" "H" "Dark Seal (World revision 3).mra" "_Dark Seal" 
    add "$dir" "H" "Dark Seal (World, Rev. 3).mra" "_Dark Seal" 
