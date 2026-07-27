@@ -187,6 +187,7 @@ find $CORE -maxdepth 1 -type f -name "glass_*" ! -name "glass_20260713.rbf" -del
 
 find $CORE -maxdepth 1 -type f -name "Batsugun_*" ! -name "Batsugun_20260726.rbf" -delete
 
+find $CORE -maxdepth 1 -type f -name "SuperOffRoad_*" ! -name "SuperOffRoad_20260726.rbf" -delete
 
 if [ -f "$CORE/Darius_20260411.rbf" ] 
 then

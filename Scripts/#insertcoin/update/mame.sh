@@ -1177,6 +1177,8 @@ dl "mk2_wolf_31w.zip"
 dl "mk2_wolf_32w.zip"
 dl "pcb.zip"
 dl "mk3.zip"
+dl "offroadt.zip"
+dl "pigout.zip"
 
 dl "aleck64.zip"
 dl "11beat.zip"

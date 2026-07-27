@@ -141,6 +141,7 @@ dl "vs.zip"
 dl "ZN1.zip"
 dl "jlrh_OperWolf.zip"
 dl "Argus.zip"
+dl "SuperOffroad.zip"
 
 
 echo "Downloading res (blahm1d)"
