@@ -1180,6 +1180,8 @@ dl "mk3.zip"
 dl "offroadt.zip"
 dl "pigout.zip"
 dl "ga2.zip"
+dl "spidman.zip"
+dl "holo.zip"
 
 dl "aleck64.zip"
 dl "11beat.zip"
