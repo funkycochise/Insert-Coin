@@ -27,8 +27,14 @@ cd /media/fat/Scripts/res/
 function dl {
 
 file=$1
+txt=$2
 
-echo -e "${BLUE}${CHECK}${NC} $file" 
+if [ -z "$txt" ];
+then
+   echo -e "${BLUE}${CHECK}${NC} $file"
+else
+   echo -e "${BLUE}${CHECK}${NC} $txt"
+fi
 
 wget -q https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/$file -O /media/fat/Scripts/temp/$file
 if [ -f "/media/fat/Scripts/temp/$file" ]; then
@@ -125,31 +131,33 @@ rm -r /media/fat/Scripts/res/
 }
 
 echo "Downloading additional res"
-dl "Atari.zip"
-dl "Banpresto.zip"
-dl "Batsugun.zip"
-dl "Breakthru.zip"
-dl "CowBoys.zip"
-dl "deco16.zip"
-dl "DECOCassette.zip"
+dl "res.zip" "Neogeo and more"
+dl "Argus.zip" "Argus"
+dl "Atari.zip" "Atari"
+dl "Banpresto.zip" "Banpresto 68000
+dl "Batsugun.zip" "Batsugun"
+dl "Breakthru.zip" "Breakthru"
+dl "CowBoys.zip" "Cowboys of Moos Mesa"
+dl "deco16.zip" "Deco 16"
+dl "DECOCassette.zip" "Deco Cassette"
 dl "EmpireCity.zip"
-dl "MegaPlay.zip"
-dl "Psikyo.zip"
-dl "res.zip"
-dl "SYS11.zip"
-dl "vs.zip"
-dl "ZN1.zip"
-dl "jlrh_OperWolf.zip"
-dl "Argus.zip"
-dl "SuperOffroad.zip"
+dl "jlrh_OperWolf.zip" "Operation Wolf"
+dl "MegaPlay.zip" "SEGA Megaplay"
+dl "Psikyo.zip" "Psikyo SH2"
+dl "SuperOffroad.zip" "Super Off Road"
+dl "SYS11.zip" "Namco System11"
+dl "taitosj.zip" "Taito SJ"
+dl "vs.zip" "Nintendo VS""
+dl "ZN1.zip" "Namco ZN1"
+dl "GoldenAxe2.zip" "Golden Axe The Revenge of Death Adder"
 
 
 echo "Downloading res (blahm1d)"
-dl "blahm1d_UMK3.zip"
-dl "blahm1d_SmashTV.zip"
-dl "blahm1d_Rampage.zip"
-dl "blahm1d_lkage.zip"
-dl "blahm1d_NBAHangtime.zip"
+dl "blahm1d_UMK3.zip" "UMK3"
+dl "blahm1d_SmashTV.zip" "Smash TV"
+dl "blahm1d_Rampage.zip" "Rampage"
+dl "blahm1d_lkage.zip" "The legend of Kage"
+dl "blahm1d_NBAHangtime.zip" "NBA HAngtime"
 
 install
 
