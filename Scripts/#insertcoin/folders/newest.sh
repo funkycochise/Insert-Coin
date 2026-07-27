@@ -68,7 +68,7 @@ counter=0
 #0727
    add "Holosseum (US, Rev A).mra" "_Holosseum"
    add "Golden Axe The Revenge of Death Adder (World, Rev B).mra" "_Golden Axe The Revenge of Death Adder"
-   add "TrackPak.mra" "_SuperOffRoad"
+   add "TrackPak.mra" "_SuperOffRoad" "_Track Pak"
 
 #0724
    add "Pocket Gal (Japan).mra" "_Pocket Gal"

@@ -10,5 +10,6 @@ resh=$(exist "Golden Axe The Revenge of Death Adder (World, Rev B).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "H" "Golden Axe The Revenge of Death Adder (World, Rev B).mra" "_Golden Axe The Revenge of Death Adder" "" "BEA"
+   add "$dir" "H" "Holosseum (US, Rev A).mra" "_Holosseum" "" "VSF"
    dot
 fi
