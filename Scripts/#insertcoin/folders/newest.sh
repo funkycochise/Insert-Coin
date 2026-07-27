@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+#0727
+   add "Golden Axe The Revenge of Death Adder (World, Rev B).mra" "_Golden Axe The Revenge of Death Adder"
+   add "TrackPak.mra" "_SuperOffRoad"
+
 #0724
    add "Pocket Gal (Japan).mra" "_Pocket Gal"
    add "Mortal Kombat (Wolf Unit).mra" "_Mortal Kombat"

@@ -25,8 +25,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "H" "jetpac_sj.mra" "_jetpac_sj"
    add "$dir" "H" "Jungle Hunt US.mra" "_Jungle Hunt"
-   add "$dir" "H" "Jungle King Japan.mra" "_Jungle King"
+   add "$dir" "H" "Jungle King (Japan).mra" "_Jungle King"
    add "$dir" "H" "Pirate Pete.mra" "_Pirate Pete"
-   
   dot
 fi
