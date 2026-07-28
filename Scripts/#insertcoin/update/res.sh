@@ -131,7 +131,7 @@ rm -r /media/fat/Scripts/res/
 }
 
 echo "Downloading additional res"
-dl "res.zip" "Neogeo and more"
+dl "res.zip" "Neogeo / IremM92 Turbo mras"
 dl "Argus.zip" "Argus"
 dl "Atari.zip" "Atari"
 dl "Banpresto.zip" "Banpresto 68000
@@ -153,11 +153,16 @@ dl "GoldenAxe2.zip" "Golden Axe The Revenge of Death Adder"
 dl "Spider-Man.zip" "Spider man the video game"
 
 echo "Downloading res (blahm1d)"
-dl "blahm1d_UMK3.zip" "UMK3"
+#dl "blahm1d_UMK3.zip" "UMK3"
 dl "blahm1d_SmashTV.zip" "Smash TV"
 dl "blahm1d_Rampage.zip" "Rampage"
 dl "blahm1d_lkage.zip" "The legend of Kage"
-dl "blahm1d_NBAHangtime.zip" "NBA HAngtime"
+#dl "blahm1d_NBAHangtime.zip" "NBA HAngtime"
+dl "WolfUnit.zip" "Midway Wolf"
+
+#force Asteroids updates (remove mra in _Arcade
+find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Asteroid*.mra" -delete
+find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Lunar Lander.mra" -delete 
 
 install
 
