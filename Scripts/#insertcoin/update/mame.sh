@@ -1185,6 +1185,7 @@ dl "holo.zip"
 dl "openice.zip"
 dl "rmpgwt.zip"
 dl "nbamht.zip"
+dl "ikki.zip"
 
 dl "aleck64.zip"
 dl "11beat.zip"

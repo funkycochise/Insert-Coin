@@ -91,6 +91,7 @@ fi
 ./folders/snk.sh 
 ./folders/stern.sh 
 ./folders/success.sh 
+./folders/sun.sh 
 ./folders/tad.sh 
 ./folders/taito.sh 
 ./folders/taitof2.sh 
