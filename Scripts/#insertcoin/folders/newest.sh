@@ -67,18 +67,20 @@ counter=0
 
 #0727
    add "Ikki.mra" "_Ikki"
-   add "Spider-Man The Videogame (World).mra" "_Spider-Man The Videogame"
-   add "Holosseum (US, Rev A).mra" "_Holosseum"
-   add "Golden Axe The Revenge of Death Adder (World, Rev B).mra" "_Golden Axe The Revenge of Death Adder"
+   additem "$segasys32"
+   additem "$midwaywolf"
+   #add "Spider-Man The Videogame (World).mra" "_Spider-Man The Videogame"
+   #add "Holosseum (US, Rev A).mra" "_Holosseum"
+   #add "Golden Axe The Revenge of Death Adder (World, Rev B).mra" "_Golden Axe The Revenge of Death Adder"
    add "TrackPak.mra" "_SuperOffRoad" "_Track Pak"
 
 #0724
    add "Pocket Gal (Japan).mra" "_Pocket Gal"
-   add "Mortal Kombat (Wolf Unit).mra" "_Mortal Kombat"
-   add "Mortal Kombat II (Wolf Unit).mra" "_Mortal Kombat II"
-   add "Ultimate Mortal Kombat 3.mra" "_Ultimate Mortal Kombat 3"
-   add "Smash T.V. (rev 8.00) [firefix mixboot].mra" "_Smash T.V."
-   add "Rampage (Rev 3, 860827).mra" "_Rampage"
+   #add "Mortal Kombat (Wolf Unit).mra" "_Mortal Kombat"
+   #add "Mortal Kombat II (Wolf Unit).mra" "_Mortal Kombat II"
+   #add "Ultimate Mortal Kombat 3.mra" "_Ultimate Mortal Kombat 3"
+   #add "Smash T.V. (rev 8.00) [firefix mixboot].mra" "_Smash T.V."
+   #add "Rampage (Rev 3, 860827).mra" "_Rampage"
    add "The Legend of Kage (bootleg set 1).mra" "_The Legend of Kage"
 
 #0722
