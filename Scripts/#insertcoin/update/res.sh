@@ -160,6 +160,10 @@ dl "blahm1d_lkage.zip" "The legend of Kage"
 #dl "blahm1d_NBAHangtime.zip" "NBA HAngtime"
 dl "WolfUnit.zip" "Midway Wolf"
 
+#force goldenaxe2 core
+find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "s32GoldenAxe.rbf" -delete
+rm -r "/media/fat/_Arcade/_alternatives/_Golden Axe The Revenge of Death Adder"  > /dev/null 2>&1
+
 #force Asteroids updates (remove mra in _Arcade
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Asteroid*.mra" -delete
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Lunar Lander.mra" -delete 
