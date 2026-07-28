@@ -130,6 +130,7 @@ snk=_SNK
 si=_Space Invaders
 stern=_Stern
 success=_Success
+sun=_Sun
 tad=_Tad Corp
 taito=_Taito
 taitof2=_Taito-F2
