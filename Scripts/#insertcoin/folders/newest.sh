@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0727
+   add "Ikki.mra" "_Ikki"
    add "Spider-Man The Videogame (World).mra" "_Spider-Man The Videogame"
    add "Holosseum (US, Rev A).mra" "_Holosseum"
    add "Golden Axe The Revenge of Death Adder (World, Rev B).mra" "_Golden Axe The Revenge of Death Adder"
