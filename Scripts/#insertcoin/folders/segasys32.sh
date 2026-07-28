@@ -11,5 +11,6 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "H" "Golden Axe The Revenge of Death Adder (World, Rev B).mra" "_Golden Axe The Revenge of Death Adder" "" "BEA"
    add "$dir" "H" "Holosseum (US, Rev A).mra" "_Holosseum" "" "VSF"
+   add "$dir" "H" "Spider-Man The Videogame (World).mra" "_Spider-Man The Videogame" "" "BEA"
    dot
 fi
