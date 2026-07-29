@@ -66,6 +66,8 @@ function additem {
 counter=0
 
 #0729
+   add "Dyna Gear.mra" "_Dyna Gear"
+   add "Toobin.mra" "_Toobin"
    add "Asterix (FF ver EAD).mra" "_Asterix"
    add "Wild West C.O.W.-Boys of Moo Mesa (FF, Konami, 1992).mra" "_Wild West C.O.W.-Boys of Moo Mesa"
 
