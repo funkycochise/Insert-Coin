@@ -1188,6 +1188,7 @@ dl "nbamht.zip"
 dl "ikki.zip"
 dl "ga2.zip"
 dl "asterix.zip"
+dl "toobin.zip"
 
 dl "aleck64.zip"
 dl "11beat.zip"

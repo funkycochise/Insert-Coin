@@ -162,6 +162,7 @@ dl "blahm1d_lkage.zip" "The legend of Kage"
 #dl "blahm1d_NBAHangtime.zip" "NBA HAngtime"
 dl "WolfUnit.zip" "Midway Wolf"
 dl "Raiden.zip"
+dl "Toobin.zip"
 
 #force goldenaxe2 core
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "s32GoldenAxe.rbf" -delete
