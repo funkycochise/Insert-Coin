@@ -134,6 +134,7 @@ echo "Downloading additional res"
 dl "res.zip" "Neogeo / IremM92 Turbo mras"
 dl "Argus.zip" "Argus"
 dl "Atari.zip" "Atari"
+dl "asterix.zip" "Asterix"
 dl "Banpresto.zip" "Banpresto 68000"
 dl "Batsugun.zip" "Batsugun"
 dl "Breakthru.zip" "Breakthru"
@@ -165,6 +166,9 @@ dl "Raiden.zip"
 #force goldenaxe2 core
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "s32GoldenAxe.rbf" -delete
 rm -r "/media/fat/_Arcade/_alternatives/_Golden Axe The Revenge of Death Adder"  > /dev/null 2>&1
+#force update cowboys of moo mesa
+find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "cowboys*.rbf" -delete
+find /media/fat/_Arcade -maxdepth 1 -type f -name "Wild West C.O.W.-Boys*.mra" -delete
 
 #force Asteroids updates (remove mra in _Arcade
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Asteroid*.mra" -delete
