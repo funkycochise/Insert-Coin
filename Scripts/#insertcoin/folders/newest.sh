@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+#0729
+   add "Asterix (FF ver EAD).mra" "_Asterix"
+   add "Wild West C.O.W.-Boys of Moo Mesa (FF, Konami, 1992).mra" "_Wild West C.O.W.-Boys of Moo Mesa"
+
 #0727
    add "Raiden (World).mra" "_Raiden"
    add "Ikki.mra" "_Ikki"
@@ -90,7 +94,6 @@ counter=0
 
 #0719
    add "Magical Error wo Sagase.mra" "_Magical Error wo Sagase"
-   add "Wild West C.O.W.-Boys of Moo Mesa (ver EAB).mra" "_Wild West C.O.W.-Boys of Moo Mesa"
    add "Operation Wolf (World, rev 2, set 1).mra" "_Operation Wolf"
    add "Empire City.mra" "_Empire City"
    add "Hyper Duel.mra" "_Hyper Duel"

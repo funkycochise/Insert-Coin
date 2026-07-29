@@ -36,6 +36,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V"  "TwinBee (Bubble System).mra" "_TwinBee" "" "STG"
 
    add "$dir" "H"  "Aliens (World set 1).mra" "_Aliens" "" "BEA"
+   add "$dir" "H"  "Asterix (FF ver EAD).mra" "_Asterix" "" "BEA"
    add "$dir" "H"  "Combat School (joystick).mra" "_Combat School" "" "ACT"
    add "$dir" "H"  "Crime Fighters (World 2 players).mra" "_Crime Fighters"  "" "BEA"
    add "$dir" "H"  "Double Dribble.mra" "_Double Dribble" "" "SPO"
@@ -69,7 +70,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Thunder Cross (set 1).mra" "_Thunder Cross" "" "STG"
    add "$dir" "H"  "Track & Field.mra" "_Track & Field" "" "SPO"
    add "$dir" "H"  "Vendetta (World, 4 Players, ver. T).mra" "_Vendetta" "" "BEA"
-   add "$dir" "H"  "Wild West C.O.W.-Boys of Moo Mesa (ver EAB).mra" "_Wild West C.O.W.-Boys of Moo Mesa"
+   add "$dir" "H"  "Wild West C.O.W.-Boys of Moo Mesa (FF, Konami, 1992).mra" "_Wild West C.O.W.-Boys of Moo Mesa"
    add "$dir" "H"  "X-Men (4 Players ver EBA).mra" "_X-Men" "" "BEA"
    add "$dir" "H"  "Yie Ar Kung-Fu (version I).mra" "_Yie Ar Kung-Fu" "" "ACT"
    dot
