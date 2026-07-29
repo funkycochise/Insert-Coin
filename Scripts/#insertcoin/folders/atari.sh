@@ -12,6 +12,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Millipede.mra" "_Millipede"
    add "$dir" "V" "Super Breakout (Rev 04).mra" "_Super Breakout"
    add "$dir" "V" "Super Xevious.mra" "_Xevious"
+   add "$dir" "V" "Toobin.mra" "_Toobin" "" "ACT"
    add_rep "$dir" "V" "_Tetris (Atari)"  "" "" "PUZ"
    add "$dir" "V" "Tron.mra" "_Tron"
    add "$dir" "V" "Xevious.mra" "_Xevious" "" "STG"
