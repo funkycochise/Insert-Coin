@@ -181,7 +181,7 @@ find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" ! -name "XNSYSTEM11_20260720
 
 find $CORE -maxdepth 1 -type f -name "Paperboy_*" ! -name "Paperboy_20260704.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "Klax_*" ! -name "Klax_20260727.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "Klax_*" ! -name "Klax_20260729.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "glass_*" ! -name "glass_20260713.rbf" -delete
 
