@@ -178,7 +178,7 @@ find /media/fat/_Arcade -maxdepth 1 -type f -name "Wild West C.O.W.-Boys*.mra" -
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Asteroid*.mra" -delete 
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Lunar Lander.mra" -delete 
 # 
-find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Toobin*.mra"
+find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Toobin*.mra" -delete 
 rm -r "/media/fat/_Arcade/_alternatives/_Toobin"  > /dev/null 2>&1
 #les perso cachés dans gunbird2 et s1945iii de psikyo
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Gunbird 2*" -delete
