@@ -173,15 +173,17 @@ find $CORE -maxdepth 1 -type f -name "HeatedBarrel_*" ! -name "HeatedBarrel_2026
 
 find $CORE -maxdepth 1 -type f -name "Legionnaire_*" ! -name "Legionnaire_20260715.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "MajorHavoc_*" ! -name "MajorHavoc_20260605.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "MajorHavoc_*" ! -name "MajorHavoc_20260730.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "CloakAndDagger_*" ! -name "CloakAndDagger_20260708.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" ! -name "XNSYSTEM11_20260720.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "Paperboy_*" ! -name "Paperboy_20260704.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "Paperboy_*" ! -name "Paperboy_20260730.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "Klax_*" ! -name "Klax_20260729.rbf" -delete
+
+find $CORE -maxdepth 1 -type f -name "Toobin_*" ! -name "Toobin_20260729.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "glass_*" ! -name "glass_20260713.rbf" -delete
 
@@ -190,6 +192,10 @@ find $CORE -maxdepth 1 -type f -name "Asteroids_*" ! -name "Asteroids_20260725.r
 find $CORE -maxdepth 1 -type f -name "Batsugun_*" ! -name "Batsugun_20260726.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "SuperOffRoad_*" ! -name "SuperOffRoad_20260726.rbf" -delete
+
+find $CORE -maxdepth 1 -type f -name "NARC_*" ! -name "NARC_20260730.rbf" -delete
+
+
 
 if [ -f "$CORE/Darius_20260411.rbf" ] 
 then

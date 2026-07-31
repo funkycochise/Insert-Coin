@@ -160,10 +160,12 @@ dl "blahm1d_SmashTV.zip" "Smash TV"
 dl "blahm1d_Rampage.zip" "Rampage"
 dl "blahm1d_lkage.zip" "The legend of Kage"
 #dl "blahm1d_NBAHangtime.zip" "NBA HAngtime"
+dl "blahm1d_NARC.zip"
 dl "WolfUnit.zip" "Midway Wolf"
 #dl "Raiden.zip"
 dl "Toobin.zip"
 dl "DynaGear.zip"
+dl "Universal.zip"
 
 #force goldenaxe2 core
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "s32GoldenAxe.rbf" -delete
@@ -172,9 +174,12 @@ rm -r "/media/fat/_Arcade/_alternatives/_Golden Axe The Revenge of Death Adder" 
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "cowboys*.rbf" -delete
 find /media/fat/_Arcade -maxdepth 1 -type f -name "Wild West C.O.W.-Boys*.mra" -delete
 
-#force Asteroids updates (remove mra in _Arcade
-find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Asteroid*.mra" -delete
+#force Asteroids updates (remove mra in _Arcade)
+find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Asteroid*.mra" -delete 
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Lunar Lander.mra" -delete 
+# 
+find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Toobin*.mra"
+rm -r "/media/fat/_Arcade/_alternatives/_Toobin"  > /dev/null 2>&1
 
 install
 
