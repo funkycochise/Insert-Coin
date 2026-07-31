@@ -16,5 +16,15 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Space Panic.mra" "_Space Panic"
 
    add "$dir" "H" "Snap Jack.mra" "_Snap Jack" "" "ACT"
+
+   add "$dir" "H" "American Soccer.mra" "_Indoor Soccer" "" "SPO"
+   add "$dir" "H" "Do! Run Run.mra" "_Do! Run Run" "" "ACT"
+   add "$dir" "H" "Indoor Soccer.mra" "_Indoor Soccer" "" "SPO"
+   add "$dir" "H" "Jumping Jack.mra" "_Jumping Jack" "" "ACT"
+   add "$dir" "H" "Kick Rider.mra" "_Kick Rider" "" "SPO"
+   add "$dir" "H" "Mr. Do! vs. Unicorns.mra" "_Mr. Do's Castle.mra" "" "ACT"
+   add "$dir" "H" "Mr. Do's Castle.mra" "_Mr. Do's Castle.mra" "" "ACT"
+   add "$dir" "H" "Mr. Do's Wild Ride.mra" "_Mr. Do's Wild Ride" "" "SPO"
+   add "$dir" "H" "Super Pierrot.mra" "_Do! Run Run" "" "ACT"
    dot
 fi

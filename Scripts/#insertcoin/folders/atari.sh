@@ -37,6 +37,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Major Havoc.mra" "_Major Havoc" "" "ACT"
    #add "$dir" "H" "Marble Madness (set 4).mra" "_Marble Madness"
    add "$dir" "H" "Marble Madness (set 5 - LSI).mra" "_Marble Madness"
+   add "$dir" "H" "Marble Madness II (prototype).mra" "_Marble Madness II" 
    add "$dir" "H" "Missile Command (rev 3).mra" "_Missile_Command" "" "ACT"
    add "$dir" "H" "Paperboy (rev 3).mra" "_Paperboy" "" "ACT"
    add "$dir" "H" "Peter Pack Rat.mra" "_Peter Pack Rat"
