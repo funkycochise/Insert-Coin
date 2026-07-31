@@ -180,6 +180,11 @@ find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Lunar Lander.mra" -delete
 # 
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Toobin*.mra"
 rm -r "/media/fat/_Arcade/_alternatives/_Toobin"  > /dev/null 2>&1
+#les perso cachés dans gunbird2 et s1945iii de psikyo
+find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Gunbird 2*" -delete
+find "/media/fat/_Arcade/_alternatives/_Gunbird 2" -maxdepth 1 -type f -name "Gunbird 2 (set 2).mra" -delete
+find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Strikers 1945 III.mra" -delete
+
 
 install
 
