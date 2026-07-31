@@ -66,10 +66,12 @@ function additem {
 counter=0
 
 #0730
-   add "Narc (rev 7.00) [DDR3 v9].mra" "_NARC"
+   
+   linkfolder "_NARC"
+   additem "$universal"
 
 #0729
-   additem "$universal"
+
    add "Dyna Gear.mra" "_Dyna Gear"
    add "Toobin.mra" "_Toobin"
    add "Asterix (FF ver EAD).mra" "_Asterix"

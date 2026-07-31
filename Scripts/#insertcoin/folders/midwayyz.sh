@@ -2,7 +2,7 @@
 source ./folders/functions.sh
 dir=$midwaytyz
 
-resh=$(exist "Mortal Kombat (Rev. 4.0 09-28-92).mra")
+resh=$(exist "Narc (rev 7.00) [DDR3 v9].mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    #add "$dir" "H"  "High Impact Football (rev LA5 02-15-91).mra" "_High Impact Football"
    add "$dir" "H"  "Mortal Kombat (Rev. 4.0 09-28-92).mra" "_Mortal Kombat" "" "VSF"
