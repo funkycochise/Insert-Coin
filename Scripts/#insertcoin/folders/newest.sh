@@ -65,6 +65,12 @@ function additem {
 
 counter=0
 
+#0801
+   add "Buck Rogers Planet of Zoom (not encrypted, set 1).mra" "_Buck Rogers Planet of Zoom"
+   add "Nitro Ball (World, Set 1).mra" "_Nitro Ball"
+   add "Double Wings (Asia).mra" "_Double Wings"
+   add "Mutant Fighter (World, Ver. EM-5).mra" "_Mutant Fighter"
+
 #0730
    
    linkfolder "_NARC"
