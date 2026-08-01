@@ -7,6 +7,7 @@ resv=$(exist "Burger Time (Set 1).mra")
 if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Burger Time (Set 1).mra" "_Burger Time" "" "ACT"
    add "$dir" "V" "Burnin' Rubber.mra" "_Burning Rubber" "" "ACT"
+   add "$dir" "V" "Double Wings (Asia).mra" "_Double Wings" "" "STG"
    add "$dir" "V" "Heavy Barrel (World).mra" "_Heavy Barrel" "" "RNG"
    add "$dir" "V" "Karate Champ (US).mra" "_Karate Champ" "" "SPO"
    add "$dir" "V" "Sky Smasher.mra" "_Sky Smasher" "" "STG"
