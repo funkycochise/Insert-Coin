@@ -167,6 +167,7 @@ dl "WolfUnit.zip" "Midway Wolf"
 dl "Toobin.zip"
 dl "DynaGear.zip"
 dl "Universal.zip"
+dl "KickAndRun.zip"
 
 #force goldenaxe2 core
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "s32GoldenAxe.rbf" -delete
@@ -183,7 +184,7 @@ find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Toobin*.mra" -delete
 rm -r "/media/fat/_Arcade/_alternatives/_Toobin"  > /dev/null 2>&1
 #hidden choice in gunbird2 & s1945iii (psikyo SH2)
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Gunbird 2*" -delete
-find "/media/fat/_Arcade/_alternatives/_Gunbird 2" -maxdepth 1 -type f -name "Gunbird 2 (set 2).mra" -delete
+find "/media/fat/_Arcade/_alternatives/_Gunbird 2" -maxdepth 1 -type f -name "Gunbird 2 (set 2).mra" -delete > /dev/null 2>&1
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Strikers 1945 III.mra" -delete
 #vsNES
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Vs*" -delete
