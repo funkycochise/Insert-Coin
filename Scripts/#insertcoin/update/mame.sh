@@ -1194,5 +1194,10 @@ dl "zzyzzyxx.zip"
 dl "dynagear.zip"
 dl "pbaction.zip"
 dl "marblmd2.zip"
+dl "mutantf.zip"
+dl "nitrobal.zip"
+dl "dblewing.zip"
+dl "buckrog.zip"
+
 
 echo -e "${GREEN}${CHECK}${NC} Completed"

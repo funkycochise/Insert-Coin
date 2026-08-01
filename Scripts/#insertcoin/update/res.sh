@@ -138,9 +138,10 @@ dl "asterix.zip" "Asterix"
 dl "Banpresto.zip" "Banpresto 68000"
 dl "Batsugun.zip" "Batsugun"
 dl "Breakthru.zip" "Breakthru"
+dl "BuckRodgers.zip" "BuckRodgers"
 dl "CowBoys.zip" "Cowboys of Moos Mesa"
 #dl "deco16.zip" "Deco 16"
-dl "DECOCassette.zip" "Deco Cassette"
+#dl "DECOCassette.zip" "Deco Cassette"
 dl "EmpireCity.zip"
 dl "jlrh_OperWolf.zip" "Operation Wolf"
 dl "MegaPlay.zip" "SEGA Megaplay"
@@ -180,11 +181,14 @@ find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Lunar Lander.mra" -delete
 # 
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Toobin*.mra" -delete 
 rm -r "/media/fat/_Arcade/_alternatives/_Toobin"  > /dev/null 2>&1
-#les perso cachés dans gunbird2 et s1945iii de psikyo
+#hidden choice in gunbird2 & s1945iii (psikyo SH2)
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Gunbird 2*" -delete
 find "/media/fat/_Arcade/_alternatives/_Gunbird 2" -maxdepth 1 -type f -name "Gunbird 2 (set 2).mra" -delete
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Strikers 1945 III.mra" -delete
-
+#vsNES
+find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Vs*" -delete
+#find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -delete
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -exec rm -rf {} +
 
 install
 
