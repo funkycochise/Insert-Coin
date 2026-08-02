@@ -1198,6 +1198,8 @@ dl "mutantf.zip"
 dl "nitrobal.zip"
 dl "dblewing.zip"
 dl "buckrog.zip"
+dl "supbtime.zip"
+
 
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
