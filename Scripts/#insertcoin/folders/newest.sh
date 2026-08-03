@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0803
+   additem "$namco_sys12"
+
 #0801
    add "Super Burger Time (World, Set 1).mra" "_Super Burger Time"
    add "Diet Go Go (Europe, Set 1).mra" "_Diet Go Go"

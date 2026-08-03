@@ -34,6 +34,160 @@ fi
 
 }
 
+function addr {
+
+dir="$1"
+orientation="$2"
+mra="$3"
+mraren="$4"
+sub="$5"
+renamed="$6"
+genre="$7"
+
+#echo "manufacturer_subfolder : $manufacturer_subfolder"
+#echo "dir: $dir"
+#echo "orientation: $orientation"
+#echo "mra: $mra" 
+#echo "mraren: $mraren" 
+#echo "sub: $sub"
+#echo "renamed: $renamed"
+
+if [ -z "$mraren" ];
+then
+   mraren="$mra"
+fi 
+
+if [ -z "$sub" ];
+then
+   #echo "add() : empty sub for $mra"
+   game=${mra:0:${#mra}-4}
+   suf=${mra:${#mra}-3}
+   if  [ "$suf" = "mra" ] || [ "$suf" = "mgl" ];
+   then
+      #default game folder name in _alternatives
+      sub="_$game"
+   fi
+   #echo "add() : sub is $sub"
+fi
+
+
+#if no rename, rename equals original sub name
+if ([ -z "$renamed" ]); then 
+   renamed=$sub
+   #echo "add() : renamed is $renamed"
+fi
+
+if [ ! -d "$targetfolder" ];
+then
+   #echo "Creating $targetfolder"
+   mkdir "$targetfolder" 
+fi
+if [ ! -d "$targetfolder/$dir" ];then
+   if [ ! -z "$dir" ];
+   then 
+      #echo "Creating $targetfolder/$dir"
+      mkdir "$targetfolder/$dir"
+   fi
+fi
+
+if [ -f "$ARCADE/$mra" ];
+then
+   if [ ! -d "$ALT/$sub" ] 
+   then
+      #echo "Creating $ALT/$sub"
+      mkdir "$ALT/$sub"
+   fi
+   #echo "Creating $ALT/$sub/$mra"
+
+   if [ "$forcemode" == "force" ] && [  -f "$ALT/$sub/$mraren" ]; then
+      #echo "removing $ALT/$sub/$mra"
+      rm -r "$ALT/$sub/$mraren"
+   fi
+   if [ ! -f "$ALT/$sub/$mraren" ];
+   then
+      ln -s "$ARCADE/$mra" "$ALT/$sub/$mraren"
+      if [ !  $? -eq 0 ]; then
+         echo "ln FAIL"
+         echo "ln -s \"$ARCADE/$mra\" \"$ALT/$sub/$mraren\""
+      fi
+   fi
+   if [ ! -z "$dir" ];
+   then 
+      if [ ! -d "$targetfolder/$dir/$renamed" ];then
+         ln -s "$ALT/$sub" "$targetfolder/$dir/$renamed"
+         if [ !  $? -eq 0 ]; then
+            echo "ln FAIL"
+            echo "ln -s \"$ALT/$sub\" \"$targetfolder/$dir/$renamed\""
+         fi
+      fi
+   else
+      if [ ! -d "$targetfolder/$renamed" ];then
+         ln -s "$ALT/$sub" "$targetfolder/$renamed"
+         if [ !  $? -eq 0 ]; then
+            echo "ln FAIL"
+            echo "ln -s \"$ALT/$sub\" \"$targetfolder/$renamed\""
+         fi
+      fi
+   fi
+else
+  if [ ! -z "$mra" ];
+  then
+    echo -e "NF $ARCADE/$mra\r - $targetfolder/$dir" >> /media/fat/Scripts/#insertcoin/out.txt
+  fi
+fi
+
+
+if [ "$show_genre" == "1" ]; then
+
+   
+
+   #horizontal
+   if [ "$horizontal" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "H" ]; then
+      add_folder "$genre_horizontal"
+   fi
+   #vertical
+   if [ "$vertical" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "V" ]; then
+      add_folder "$genre_vertical"
+   fi
+   
+   if [ "$action" == "1" ] && [ "$show_genre" == "1" ] && [ "$genre" == "ACT" ]; then
+      add_folder "$genre_action"
+   fi
+   if [ "$beat" == "1" ] && [ "$show_genre" == "1" ] && [ "$genre" == "BEA" ]; then
+      add_folder "$genre_beat"
+   fi
+   if [ "$puzzle" == "1" ] && [ "$show_genre" == "1" ] && [ "$genre" == "PUZ" ]; then
+      add_folder "$genre_puzzle"
+   fi
+   if [ "$sport" == "1" ] && [ "$show_genre" == "1" ] && [ "$genre" == "SPO" ]; then
+      add_folder "$genre_sport"
+   fi
+   if [ "$vsf" == "1" ] && [ "$show_genre" == "1" ] && [ "$genre" == "VSF" ]; then
+      add_folder "$genre_vsf"
+   fi
+   if [ "$stg_h" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "STG" ]; then
+      add_folder "$genre_stg_h"
+   fi
+   if [ "$stg_v" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "STG" ]; then
+      add_folder "$genre_stg_v"
+   fi
+   if [ "$rng_h" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "RNG" ]; then
+      add_folder "$genre_rng_h"
+   fi
+   if [ "$rng_v" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "V" ] && [ "$genre" == "RNG" ]; then
+      add_folder "$genre_rng_v"
+   fi
+fi
+
+
+if [ ! -z "$sub" ];
+then
+   altclean "$sub"
+fi
+
+}
+
+
 function add {
 
 dir="$1"
