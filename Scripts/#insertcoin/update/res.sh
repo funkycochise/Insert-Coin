@@ -148,6 +148,7 @@ dl "MegaPlay.zip" "SEGA Megaplay"
 dl "Psikyo.zip" "Psikyo SH2"
 dl "SuperOffroad.zip" "Super Off Road"
 dl "SYS11.zip" "Namco System11"
+dl "SYS12.zip" "Namco System12"
 dl "taitosj.zip" "Taito SJ"
 dl "vs.zip" "Nintendo VS"
 dl "ZN1.zip" "Namco ZN1"
@@ -190,6 +191,48 @@ find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Strikers 1945 III.mra" -dele
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Vs*" -delete
 #find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -delete
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -exec rm -rf {} +
+#Coc mra
+#Boogie Wings
+if [ -f "/media/fat/_Arcade/_alternatives/_Boogie Wings/The Great Ragtime Show (Japan, v1.3, 92.11.26).mra" ];
+then
+   mv "/media/fat/_Arcade/_alternatives/_Boogie Wings/The Great Ragtime Show (Japan, v1.3, 92.11.26).mra" "/media/fat/_Arcade/_alternatives/_Boogie Wings/The Great Ragtime Show (Japan, v1.3, 92.11.26) (Coc).mra"
+fi
+if [ -f "/media/fat/_Arcade/_alternatives/_Boogie Wings/The Great Ragtime Show (Japan, v1.5, 92.12.07).mra" ];
+then
+   mv "/media/fat/_Arcade/_alternatives/_Boogie Wings/The Great Ragtime Show (Japan, v1.5, 92.12.07).mra" "/media/fat/_Arcade/_alternatives/_Boogie Wings/The Great Ragtime Show (Japan, v1.5, 92.12.07) (Coc).mra"
+fi
+
+#Diet Go Go
+if [ -f "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (Europe, Set 2).mra" ];
+then
+   mv "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (Europe, Set 2).mra" "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (Europe, Set 2) (Coc).mra"
+fi
+if [ -f "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (Europe, Set 3).mra" ];
+then
+   mv "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (Europe, Set 3).mra" "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (Europe, Set 3) (Coc).mra"
+fi
+if [ -f "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (Europe, Set 4).mra" ];
+then
+   mv "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (Europe, Set 4).mra" "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (Europe, Set 4) (Coc).mra"
+fi
+if [ -f "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (Japan).mra" ];
+then
+   mv "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (Japan).mra" "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (Japan) (Coc).mra"
+fi
+if [ -f "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (USA).mra" ];
+then
+   mv "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (USA).mra" "/media/fat/_Arcade/_alternatives/_Diet Go Go/Diet Go Go (USA) (Coc).mra"
+fi
+#Vapor Trail
+if [ -f "/media/fat/_Arcade/_alternatives/_Vapor Trail/Kuhga - Operation Code 'Vapor Trail' (Japan, Rev. 3).MRA" ];
+then
+   mv "/media/fat/_Arcade/_alternatives/_Vapor Trail/Kuhga - Operation Code 'Vapor Trail' (Japan, Rev. 3).MRA" "/media/fat/_Arcade/_alternatives/_Vapor Trail/Kuhga - Operation Code 'Vapor Trail' (Japan, Rev. 3) (Coc).mra"
+fi
+if [ -f "/media/fat/_Arcade/_alternatives/_Vapor Trail/Vapor Trail - Hyper Offence Formation (US).mra" ];
+then
+   mv "/media/fat/_Arcade/_alternatives/_Vapor Trail/Vapor Trail - Hyper Offence Formation (US).mra" "/media/fat/_Arcade/_alternatives/_Vapor Trail/Vapor Trail - Hyper Offence Formation (US) (Coc).mra"
+fi
+
 
 install
 
