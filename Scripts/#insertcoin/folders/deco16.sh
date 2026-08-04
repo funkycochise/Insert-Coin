@@ -23,7 +23,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    addr  "$dir" "H" "Mutant Fighter (World, Ver. EM-5).mra" "Mutant Fighter (World, Ver. EM-5) (Coc).mra" "_Mutant Fighter" "" "VSF"
    addr  "$dir" "H" "Nitro Ball (World, Set 1).mra" "Nitro Ball (World, Set 1) (Coc).mra" "_Nitro Ball" "" "RNG"
    addr  "$dir" "H" "Robocop 2 (USA, v0.10).mra" "Robocop 2 (USA, v0.10) (Coc).mra" "_Robocop 2" "" "ACT"
-   addr "$dir" "H"  "Rohga - Armor Force (World, v5.0).mra" "Rohga - Armor Force (World, v5.0) (Coc).mra" "__Rohga - Armor Force" "" ""
+   addr "$dir" "H"  "Rohga - Armor Force (World, v5.0).mra" "Rohga - Armor Force (World, v5.0) (Coc).mra" "_Rohga - Armor Force" "" ""
    addr  "$dir" "H" "Super Burger Time (World, Set 1).mra" "Super Burger Time (World, Set 1) (Coc).mra" "_Super Burger Time" "" "ACT"
    addr  "$dir" "H" "The Cliffhanger - Edward Randy (World, Ver. 3).mra" "The Cliffhanger - Edward Randy (World, Ver. 3) (Coc).mra" "_The Cliffhanger - Edward Randy" "" "ACT"
    addr "$dir" "H"  "Tumble Pop (World).mra" "Tumble Pop (World) (Coc).mra" "_Tumble Pop" "" "ACT"
