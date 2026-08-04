@@ -139,10 +139,9 @@ if [ -f "$dir/$mra" ];
 then
    if [ -f "$dir/$renamed" ];
    then
-      echo "removing $dir/$mra"
       rm -r "$dir/$mra"
    else
-      echo "Renamed $dir/$renamed"
+      #echo "Renamed $dir/$renamed"
       mv "$dir/$mra" "$dir/$renamed"
    fi
 fi
