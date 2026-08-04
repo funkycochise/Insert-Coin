@@ -16,6 +16,5 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Super World Stadium '98 (Japan SS81-VER.A).mra" "_Super World Stadium '98 (Japan SS81-VER.A).mra" "" "SPO"
    add "$dir" "H" "Super World Stadium '99 (Japan SS91-VER.A3).mra" "_Super World Stadium '99" "" ""
    add "$dir" "H" "Tekken 3 (World TET2-VER.E1).mra" "_Tekken 3" "" "VSF"
-
    dot
 fi

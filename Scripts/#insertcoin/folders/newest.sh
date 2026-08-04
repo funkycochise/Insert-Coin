@@ -69,12 +69,13 @@ counter=0
    additem "$namco_sys12"
 
 #0801
-   add "Super Burger Time (World, Set 1).mra" "_Super Burger Time"
-   add "Diet Go Go (Europe, Set 1).mra" "_Diet Go Go"
-   add "Buck Rogers Planet of Zoom (not encrypted, set 1).mra" "_Buck Rogers Planet of Zoom"
-   add "Nitro Ball (World, Set 1).mra" "_Nitro Ball"
-   add "Double Wings (Asia).mra" "_Double Wings"
-   add "Mutant Fighter (World, Ver. EM-5).mra" "_Mutant Fighter"
+   additem "$deco16"
+   #add "Super Burger Time (World, Set 1).mra" "_Super Burger Time"
+   #add "Diet Go Go (Europe, Set 1).mra" "_Diet Go Go"
+   #add "Buck Rogers Planet of Zoom (not encrypted, set 1).mra" "_Buck Rogers Planet of Zoom"
+   #add "Nitro Ball (World, Set 1).mra" "_Nitro Ball"
+   #add "Double Wings (Asia).mra" "_Double Wings"
+   #add "Mutant Fighter (World, Ver. EM-5).mra" "_Mutant Fighter"
 
 #0730
    
