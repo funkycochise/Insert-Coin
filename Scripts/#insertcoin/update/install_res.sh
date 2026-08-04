@@ -212,6 +212,9 @@ fi
 if test -f "/media/fat/Scripts/#local/rmonic79.sh"; then
       /media/fat/Scripts/#local/rmonic79.sh
 fi
+if test -f "/media/fat/Scripts/#local/jt_res.sh"; then
+      /media/fat/Scripts/#local/jt_res.sh
+fi
 
 if test -f "/media/fat/Scripts/#local/dk3.sh"; then
       /media/fat/Scripts/#local/dk3.sh

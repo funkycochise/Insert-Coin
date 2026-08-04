@@ -193,7 +193,6 @@ rm -r "/media/fat/_Arcade/_alternatives/_Golden Axe The Revenge of Death Adder" 
 #force update cowboys of moo mesa
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "cowboys*.rbf" -delete
 find /media/fat/_Arcade -maxdepth 1 -type f -name "Wild West C.O.W.-Boys*.mra" -delete
-
 #force Asteroids updates (remove mra in _Arcade)
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Asteroid*.mra" -delete 
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Lunar Lander.mra" -delete 
@@ -208,32 +207,6 @@ find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Strikers 1945 III.mra" -dele
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Vs*" -delete
 #find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -delete
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -exec rm -rf {} +
-#Coc mra
-#Boogie Wings
-rename "/media/fat/_Arcade/_alternatives/_Boogie Wings/" "The Great Ragtime Show (Japan, v1.3, 92.11.26).mra" "The Great Ragtime Show (Japan, v1.3, 92.11.26) (Coc).mra"
-rename "/media/fat/_Arcade/_alternatives/_Boogie Wings/" "The Great Ragtime Show (Japan, v1.5, 92.12.07).mra" "The Great Ragtime Show (Japan, v1.5, 92.12.07) (Coc).mra"
-#Caveman Ninja
-rename "/media/fat/_Arcade/_alternatives/_Caveman Ninja" "Caveman Ninja (US, Ver. 4).mra" "Caveman Ninja (US, Ver. 4) (Coc).mra"
-rename "/media/fat/_Arcade/_alternatives/_Caveman Ninja" "Caveman Ninja (World, Ver. 1).mra" "Caveman Ninja (World, Ver. 1) (Coc).mra"
-rename "/media/fat/_Arcade/_alternatives/_Caveman Ninja" "Tatakae Genshijin Joe & Mac (Japan, Ver. 1).mra" "Tatakae Genshijin Joe & Mac (Japan, Ver. 1) (Coc).mra"
-# Double Wings
-rename "/media/fat/_Arcade/_alternatives/_Double Wings" "Double Wings (World, Set 1).mra" "Double Wings (World, Set 1) (Coc).mra"
-rename "/media/fat/_Arcade/_alternatives/_Double Wings" "Double Wings (World, Set 2).mra" "Double Wings (World, Set 2) (Coc).mra"
-
-#Diet Go Go
-rename "_alternatives/_Diet Go Go" "Diet Go Go (Europe, Set 2).mra" "Diet Go Go (Europe, Set 2) (Coc).mra"
-rename "_alternatives/_Diet Go Go" "Diet Go Go (Europe, Set 3).mra" "Diet Go Go (Europe, Set 3) (Coc).mra"
-rename "_alternatives/_Diet Go Go" "Diet Go Go (Europe, Set 4).mra" "Diet Go Go (Europe, Set 4) (Coc).mra"
-rename "_alternatives/_Diet Go Go" "Diet Go Go (Japan).mra" "Diet Go Go (Japan) (Coc).mra"
-rename "_alternatives/_Diet Go Go" "Diet Go Go (USA).mra" "Diet Go Go (USA) (Coc).mra"
-#the cligffhanger
-rename "_alternatives/_The Cliffhanger - Edward Randy" "The Cliffhanger - Edward Randy (Japan, Ver. 3).mra" "The Cliffhanger - Edward Randy (Japan, Ver. 3) (Coc).mra"
-rename "_alternatives/_The Cliffhanger - Edward Randy" "The Cliffhanger - Edward Randy (World, Ver. 1).mra" "The Cliffhanger - Edward Randy (World, Ver. 1) (Coc).mra"
-rename "_alternatives/_The Cliffhanger - Edward Randy" "The Cliffhanger - Edward Randy (World, Ver. 2).mra" "The Cliffhanger - Edward Randy (World, Ver. 2) (Coc).mra"
-
-#Vapor Trail
-rename "_alternatives/_Vapor Trail" "Kuhga - Operation Code 'Vapor Trail' (Japan, Rev. 3).MRA" "Kuhga - Operation Code 'Vapor Trail' (Japan, Rev. 3) (Coc).mra"
-rename "_alternatives/_Vapor Trail" "Vapor Trail - Hyper Offence Formation (US).mra""Vapor Trail - Hyper Offence  Formation (US) (Coc).mra"
 
 install
 

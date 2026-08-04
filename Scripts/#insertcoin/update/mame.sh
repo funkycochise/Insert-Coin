@@ -1200,6 +1200,12 @@ dl "dblewing.zip"
 dl "buckrog.zip"
 dl "supbtime.zip"
 dl "tekken3.zip"
-
+dl "ehrgeiz.zip"
+dl "fgtlayer.zip"
+dl "lbgrande.zip"
+dl "ghlpanic.zip"
+dl "soulclbr.zip"
+dl "sws98.zip"
+dl "sws99.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
