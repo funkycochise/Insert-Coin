@@ -205,6 +205,7 @@ dl "ZN1.zip" "Namco ZN1"
 dl "GoldenAxe2.zip" "Golden Axe The Revenge of Death Adder"
 dl "Spider-Man.zip" "Spider man the video game"
 dl "Ikki.zip"
+dl "SegaS24.zip" "Sega System 24"
 
 echo "Downloading res (blahm1d)"
 #dl "blahm1d_UMK3.zip" "UMK3"

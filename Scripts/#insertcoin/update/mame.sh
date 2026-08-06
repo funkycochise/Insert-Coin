@@ -1209,4 +1209,12 @@ dl "soulclbr.zip"
 dl "sws98.zip"
 dl "sws99.zip"
 
+dl "bnzabros.zip"
+dl "crkdown.zip"
+dl "gground.zip"
+dl "hotrod.zip"
+dl "roughrac.zip"
+dl "sspirits.zip"
+
+
 echo -e "${GREEN}${CHECK}${NC} Completed"

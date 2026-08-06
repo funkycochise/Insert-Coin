@@ -80,6 +80,7 @@ fi
 ./folders/segasys1.sh 
 ./folders/segasys16.sh 
 ./folders/segasys18.sh
+./folders/segasys24.sh 
 ./folders/segasys32.sh 
 ./folders/segasys2.sh 
 ./folders/segasyse.sh 
