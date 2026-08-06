@@ -105,27 +105,27 @@ then
    fi
    if [ ! -f "$ALT/$sub/$mraren" ];
    then
-      ln -s "$ARCADE/$mra" "$ALT/$sub/$mraren"
+      ln -sf "$ARCADE/$mra" "$ALT/$sub/$mraren"
       if [ !  $? -eq 0 ]; then
-         echo "ln FAIL"
-         echo "ln -s \"$ARCADE/$mra\" \"$ALT/$sub/$mraren\""
+         echo "ln FAIL" >> /media/fat/Scripts/#insertcoin/ln.txt
+         echo "ln -sf \"$ARCADE/$mra\" \"$ALT/$sub/$mraren\"" >> /media/fat/Scripts/#insertcoin/ln.txt
       fi
    fi
    if [ ! -z "$dir" ];
    then 
       if [ ! -d "$targetfolder/$dir/$renamed" ];then
-         ln -s "$ALT/$sub" "$targetfolder/$dir/$renamed"
+         ln -sf "$ALT/$sub" "$targetfolder/$dir/$renamed"
          if [ !  $? -eq 0 ]; then
-            echo "ln FAIL"
-            echo "ln -s \"$ALT/$sub\" \"$targetfolder/$dir/$renamed\""
+            echo "ln FAIL" >> /media/fat/Scripts/#insertcoin/ln.txt
+            echo "ln -sf \"$ALT/$sub\" \"$targetfolder/$dir/$renamed\"" >> /media/fat/Scripts/#insertcoin/ln.txt
          fi
       fi
    else
       if [ ! -d "$targetfolder/$renamed" ];then
-         ln -s "$ALT/$sub" "$targetfolder/$renamed"
+         ln -sf "$ALT/$sub" "$targetfolder/$renamed"
          if [ !  $? -eq 0 ]; then
-            echo "ln FAIL"
-            echo "ln -s \"$ALT/$sub\" \"$targetfolder/$renamed\""
+            echo "ln FAIL" >> /media/fat/Scripts/#insertcoin/ln.txt
+            echo "ln -sf \"$ALT/$sub\" \"$targetfolder/$renamed\"" >> /media/fat/Scripts/#insertcoin/ln.txt
          fi
       fi
    fi
@@ -253,27 +253,27 @@ then
    fi
    if [ ! -f "$ALT/$sub/$mra" ];
    then
-      ln -s "$ARCADE/$mra" "$ALT/$sub/$mra"
+      ln -sf "$ARCADE/$mra" "$ALT/$sub/$mra"
       if [ !  $? -eq 0 ]; then
-         echo "ln FAIL"
-         echo "ln -s \"$ARCADE/$mra\" \"$ALT/$sub/$mra\""
+         echo "ln FAIL" >> /media/fat/Scripts/#insertcoin/ln.txt
+         echo "ln -sf \"$ARCADE/$mra\" \"$ALT/$sub/$mra\"" >> /media/fat/Scripts/#insertcoin/ln.txt
       fi
    fi
    if [ ! -z "$dir" ];
    then 
       if [ ! -d "$targetfolder/$dir/$renamed" ];then
-         ln -s "$ALT/$sub" "$targetfolder/$dir/$renamed"
+         ln -sf "$ALT/$sub" "$targetfolder/$dir/$renamed"
          if [ !  $? -eq 0 ]; then
-            echo "ln FAIL"
-            echo "ln -s \"$ALT/$sub\" \"$targetfolder/$dir/$renamed\""
+            echo "ln FAIL" >> /media/fat/Scripts/#insertcoin/ln.txt
+            echo "ln -sf \"$ALT/$sub\" \"$targetfolder/$dir/$renamed\"" >> /media/fat/Scripts/#insertcoin/ln.txt
          fi
       fi
    else
       if [ ! -d "$targetfolder/$renamed" ];then
-         ln -s "$ALT/$sub" "$targetfolder/$renamed"
+         ln -sf "$ALT/$sub" "$targetfolder/$renamed"
          if [ !  $? -eq 0 ]; then
-            echo "ln FAIL"
-            echo "ln -s \"$ALT/$sub\" \"$targetfolder/$renamed\""
+            echo "ln FAIL" >> /media/fat/Scripts/#insertcoin/ln.txt
+            echo "ln -sf \"$ALT/$sub\" \"$targetfolder/$renamed\"" >> /media/fat/Scripts/#insertcoin/ln.txt
          fi
       fi
    fi
@@ -356,20 +356,22 @@ if [ "$dir" != "$essential" ];then
             #echo "Creating $targetfolder/$folder/$dir"
             mkdir "$targetfolder/$folder/$dir"
          fi
+         #clean existing
+
          if [ ! -d "$targetfolder/$folder/$dir/$renamed" ]; then
-            ln -s "$ALT/$sub" "$targetfolder/$folder/$dir/$renamed"
+            ln -sf "$ALT/$sub" "$targetfolder/$folder/$dir/$renamed"
             if [ !  $? -eq 0 ]; then
-               echo "ln FAIL 1"
-               echo "ln -s \"$ALT/$sub\" \"$targetfolder/$folder/$renamed\""
+               echo "ln FAIL 1" >> /media/fat/Scripts/#insertcoin/ln.txt
+               echo "ln -sf \"$ALT/$sub\" \"$targetfolder/$folder/$renamed\"" >> /media/fat/Scripts/#insertcoin/ln.txt
             fi
          fi
       else
          if [ -d "$ALT/$sub" ]; then
             if [ ! -d "$targetfolder/$folder/$renamed" ]; then
-               ln -s "$ALT/$sub" "$targetfolder/$folder/$renamed"
+               ln -sf "$ALT/$sub" "$targetfolder/$folder/$renamed"
                if [ !  $? -eq 0 ]; then
-                  echo "ln FAIL 2"
-                  echo "ln -s \"$ALT/$sub\" \"$targetfolder/$folder/$renamed\""
+                  echo "ln FAIL 2" >> /media/fat/Scripts/#insertcoin/ln.txt
+                  echo "ln -sf \"$ALT/$sub\" \"$targetfolder/$folder/$renamed\"" >> /media/fat/Scripts/#insertcoin/ln.txt
                fi
             fi
          fi
@@ -410,11 +412,11 @@ fi
 if [ -d "$source" ]; then
 
    if [ ! -d "$target" ]; then
-      #echo "ln -s \"$source\" \"$target\"" >> /media/fat/Scripts/#insertcoin/add_rep.txt
-      ln -s "$source" "$target"
+      #echo "ln -sf \"$source\" \"$target\"" >> /media/fat/Scripts/#insertcoin/add_rep.txt
+      ln -sf "$source" "$target"
       if [ !  $? -eq 0 ]; then
-         echo "ln FAIL"
-         echo "ln -s \"$source\" \"$target\""
+         echo "ln FAIL" >> /media/fat/Scripts/#insertcoin/ln.txt
+         echo "ln -sf \"$source\" \"$target\""
       fi
    fi
 fi
@@ -463,19 +465,19 @@ function add_genre {
             mkdir "$targetfolder/$genre/$dir"
          fi
          if [ ! -d "$targetfolder/$genre/$dir/$renamed" ]; then
-            ln -s "$ALT/$sub" "$targetfolder/$genre/$dir/$renamed"
+            ln -sf "$ALT/$sub" "$targetfolder/$genre/$dir/$renamed"
             if [ !  $? -eq 0 ]; then
-               echo "ln FAIL 1"
-               echo "ln -s \"$ALT/$sub\" \"$targetfolder/$genre/$renamed\""
+               echo "ln FAIL 3" >> /media/fat/Scripts/#insertcoin/ln.txt
+               echo "ln -sf \"$ALT/$sub\" \"$targetfolder/$genre/$renamed\"" >> /media/fat/Scripts/#insertcoin/ln.txt
             fi
          fi
       else
          if [ -d "$ALT/$sub" ]; then
             if [ ! -d "$targetfolder/$genre/$renamed" ]; then
-               ln -s "$ALT/$sub" "$targetfolder/$genre/$renamed"
+               ln -sf "$ALT/$sub" "$targetfolder/$genre/$renamed"
                if [ !  $? -eq 0 ]; then
-                  echo "ln FAIL 2"
-                  echo "ln -s \"$ALT/$sub\" \"$targetfolder/$genre/$renamed\""
+                  echo "ln FAIL 4" >> /media/fat/Scripts/#insertcoin/ln.txt
+                  echo "ln -sf \"$ALT/$sub\" \"$targetfolder/$genre/$renamed\"" >> /media/fat/Scripts/#insertcoin/ln.txt
                fi
             fi
          fi

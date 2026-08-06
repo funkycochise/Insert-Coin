@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0806
+   additem "$segasys24"
+
 #0803
    additem "$namco_sys12"
 
