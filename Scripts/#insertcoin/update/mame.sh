@@ -1215,6 +1215,7 @@ dl "gground.zip"
 dl "hotrod.zip"
 dl "roughrac.zip"
 dl "sspirits.zip"
+dl "volfied.zip"
 
 
 echo -e "${GREEN}${CHECK}${NC} Completed"

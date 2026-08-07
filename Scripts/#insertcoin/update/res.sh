@@ -205,6 +205,7 @@ dl "ZN1.zip" "Namco ZN1"
 dl "GoldenAxe2.zip" "Golden Axe The Revenge of Death Adder"
 dl "Spider-Man.zip" "Spider man the video game"
 dl "Ikki.zip"
+dl "Gaelco.zip" "Gaelco"
 dl "SegaS24.zip" "Sega System 24"
 
 echo "Downloading res (blahm1d)"
@@ -220,6 +221,8 @@ dl "Toobin.zip"
 dl "DynaGear.zip"
 dl "Universal.zip"
 dl "KickAndRun.zip"
+dl "Rbisland.zip" "Rainbow Islands"
+dl "volfied.zip" "Volfied"
 
 #force goldenaxe2 core
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "s32GoldenAxe.rbf" -delete
