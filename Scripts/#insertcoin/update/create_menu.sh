@@ -73,6 +73,7 @@ fi
 ./folders/raizing.sh 
 ./folders/rare.sh 
 ./folders/robotron.sh 
+./folders/rockola.sh 
 ./folders/scramble.sh 
 ./folders/sega.sh
 ./folders/segamp.sh 
