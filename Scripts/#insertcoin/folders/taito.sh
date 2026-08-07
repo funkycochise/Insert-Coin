@@ -26,6 +26,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Space Invaders.mra" "_Space Invaders" "" "STG"
    add "$dir" "V" "Tiger Heli Bootleg.mra" "_Tiger Heli" "" "STG"
    add "$dir" "V" "Tokio - Scramble Formation (newer).mra" "_Tokio" "" "STG"
+   add "$dir" "V" "Volfied (World, rev 1) .mra" "_Volfied" "" "PUZ"
 
    add "$dir" "H" "Bubble Bobble (Japan, Ver 0.1).mra" "_Bubble Bobble" "" "ACT"
    add "$dir" "H" "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen" "" "STG"
@@ -43,8 +44,8 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Plump Pop (Japan).mra" "_Plump Pop"
    add "$dir" "H" "Qix (set 1).mra" "_Qix" "" "PUZ"
    add "$dir" "H" "Qix II (Tournament).mra" "_Qix" "" "PUZ"
-   add "$dir" "H" "Rainbow Islands (rev 1).mra" "_Rainbow Islands" "" "ACT"
-   add "$dir" "H" "Rainbow Islands - Extra Version.mra" "_Rainbow Islands" "" "ACT"
+   add "$dir" "H" "Rainbow Islands (World, rev 2, set 1) .mra" "_Rainbow Islands" "" "ACT"
+   add "$dir" "H" "Rainbow Islands - Extra Version .mra" "_Rainbow Islands" "" "ACT"
    add "$dir" "H" "Rastan (World Rev 1).mra" "_Rastan" "" "ACT"
    add "$dir" "H" "Rumba Lumber (rev 1).mra" "_Rumba Lumber" "" ""
    add "$dir" "H" "Sagaia (World, dual screen).mra" "_Sagaia" "" "STG"

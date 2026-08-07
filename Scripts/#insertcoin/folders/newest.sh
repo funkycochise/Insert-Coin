@@ -66,6 +66,8 @@ function additem {
 counter=0
 
 #0806
+   add "Volfied (World, rev 1) .mra" "_Volfied"
+   add "Rainbow Islands (World, rev 2, set 1) .mra" "_Rainbow Islands"
    additem "$segasys24"
 
 #0803
@@ -136,6 +138,7 @@ counter=0
    add "Legionnaire (World).mra" "_Legionnaire"
 
 #0713
+   additem "$gaelco"
    additem "$namco_sys11"
 
 #0710

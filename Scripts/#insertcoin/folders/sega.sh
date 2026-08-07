@@ -2,7 +2,7 @@
 source ./folders/functions.sh
 dir=$sega
 
-resh=$(exist "Super Locomotive.mra")
+resh=$(exist "Buck Rogers Planet of Zoom (not encrypted, set 1).mra")
 resv=$(exist "Pulsar.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Carnival.mra" "_Carnival" "" "ACT"
