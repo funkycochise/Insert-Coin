@@ -18,5 +18,6 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Opa Opa.mra" "_SystemE_Opa Opa" "_Opa Opa"
    add "$dir" "H" "Slap Shooter.mra" "_SystemE_Slap Shooter" "_Slap Shooter"
    add "$dir" "H" "Tetris (Japan, System E).mra" "_SystemE_Tetris" "_Tetris" "" "PUZ"
+   add "$dir" "H" "Transformer.mra" "_Transformer" "" "STG"
    dot
 fi
