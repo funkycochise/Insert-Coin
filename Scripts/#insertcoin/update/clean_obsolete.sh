@@ -79,6 +79,8 @@ find $CORE -maxdepth 1 -type f -name "Volfied_*" ! -name "Volfied_20260806.rbf" 
 find $CORE -maxdepth 1 -type f -name "Arcade-NARC-*" ! -name "Arcade-NARC-v9.rbf"
 find $CORE -maxdepth 1 -type f -name "Arcade-NARC-*" ! -name "Arcade-NARC-v9.rbf" -delete
 
+find $CORE -maxdepth 1 -type f -name "SMS_*" ! -name "SMS_20260804.rbf"
+find $CORE -maxdepth 1 -type f -name "SMS_*" ! -name "SMS_20260804.rbf" -delete
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
 

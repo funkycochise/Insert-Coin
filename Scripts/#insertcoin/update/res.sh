@@ -223,6 +223,7 @@ dl "Universal.zip"
 dl "KickAndRun.zip"
 dl "Rbisland.zip" "Rainbow Islands"
 dl "volfied.zip" "Volfied"
+dl "sms.zip" "SMS Sega System-E"
 
 #force goldenaxe2 core
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "s32GoldenAxe.rbf" -delete
