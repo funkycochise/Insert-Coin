@@ -1216,6 +1216,10 @@ dl "hotrod.zip"
 dl "roughrac.zip"
 dl "sspirits.zip"
 dl "volfied.zip"
+dl "exctsccr.zip"
+dl "champbas.zip"
+dl "exctscc2.zip"
+dl "dogyuun.zip"
 
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
