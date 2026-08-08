@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0808
+   add "Dogyuun.mra" "_Dogyuun"
+
 #0806
    add "Volfied (World, rev 1) .mra" "_Volfied"
    add "Rainbow Islands (World, rev 2, set 1) .mra" "_Rainbow Islands"
