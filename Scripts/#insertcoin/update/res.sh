@@ -226,6 +226,7 @@ dl "volfied.zip" "Volfied"
 dl "sms.zip" "SMS Sega System-E"
 dl "AlphaDenshi.zip" "Alpha Denshi Soccer/Baseball"
 dl "Dogyuun.zip" "Dogyuun"
+dl "T-Unit.zip" "Midway T-Unit"
 
 #force goldenaxe2 core
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "s32GoldenAxe.rbf" -delete

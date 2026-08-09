@@ -1220,6 +1220,8 @@ dl "exctsccr.zip"
 dl "champbas.zip"
 dl "exctscc2.zip"
 dl "dogyuun.zip"
+dl "nbajam.zip"
+dl "nbajamte.zip"
 
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
