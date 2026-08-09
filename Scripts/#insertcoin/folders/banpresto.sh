@@ -6,6 +6,7 @@ resh=$(exist "Bishoujo Senshi Sailor Moon (Version 95-03-22B, Japan).mra")
 resv=$(exist "Air Gallet (Europe).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Air Gallet (Europe).mra" "_Air Gallet" "" "STG"
+   add "$dir" "H" "Godzilla (Japan).mra" "_Godzilla" "" "VSF"
    add "$dir" "V" "Hotdog Storm.mra" "_Hotdog Storm" "" "STG"
    add "$dir" "V" "Hotdog Storm (Korea).mra" "_Hotdog Storm" "" "STG"
    add "$dir" "V" "Mazinger Z (World).mra" "_Mazinger Z" "" "STG"
