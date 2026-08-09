@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0808
+   additem "$midwaytunit"
    add "Godzilla (Japan).mra" "_Godzilla"
    add "Dogyuun.mra" "_Dogyuun"
 
