@@ -7,6 +7,8 @@ resv=$(exist "Raiden (World).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "V" "Raiden (World).mra" "_Raiden" "" "STG"
+   add "$dir" "V" "Raiden II.mra" "_Raiden II" "" "STG"
+   add "$dir" "V" "Raiden DX.mra" "_Raiden DX" "" "STG"
 
    add "$dir" "H" "Empire City.mra" "_Empire City" "" "ACT"
 
