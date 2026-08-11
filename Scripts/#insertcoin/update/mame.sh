@@ -1225,6 +1225,7 @@ dl "raidendx.zip"
 dl "grindstm.zip"
 dl "denjinmk.zip"
 dl "grdians.zip"
+dl "trog.zip"
 
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
