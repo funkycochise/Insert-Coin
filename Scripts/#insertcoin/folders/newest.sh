@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0810
+   add "Guardians (Denjin Makai II).mra" "_Guardians"
    add  "DenjinMakai.mra" "_DenjinMakai"
    add  "Grind Stormer.mra" "_Grind Stormer"
    add  "Raiden DX.mra" "_Raiden DX" 
