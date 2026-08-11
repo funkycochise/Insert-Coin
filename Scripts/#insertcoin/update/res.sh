@@ -212,7 +212,7 @@ dl "SegaS24.zip" "Sega System 24"
 
 echo "Downloading res (blahm1d)"
 #dl "blahm1d_UMK3.zip" "UMK3"
-dl "blahm1d_SmashTV.zip" "Smash TV"
+#dl "blahm1d_SmashTV.zip" "Smash TV"
 dl "blahm1d_Rampage.zip" "Rampage"
 dl "blahm1d_lkage.zip" "The legend of Kage"
 #dl "blahm1d_NBAHangtime.zip" "NBA HAngtime"
@@ -233,6 +233,12 @@ dl "Cave68K.zip"
 dl "Raiden2.zip"
 dl "GrindStormer.zip"
 dl "Guardians.zip"
+
+#remove any previous SmashTV file
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Smash T.V*" -delete
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Smash T.V*" -exec rm -rf {} +
+find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "SmashTV*" -delete
+dl "TrogSmashTV.zip"
 
 #force goldenaxe2 core
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "s32GoldenAxe.rbf" -delete
