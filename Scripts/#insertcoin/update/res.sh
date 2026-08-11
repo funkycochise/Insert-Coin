@@ -60,6 +60,8 @@ function install {
             if [ ! -f "$des_arcade/$f" ]; then
                #echo -e "\rcopying $des_arcade/$f                                                   "
                cp -f "$file" "$des_arcade/$f"
+            else
+               echo "ignore $des_arcade/$f" >> /media/fat/Scripts/#insertcoin/out_ignore.txt
             fi
          fi
       done
@@ -230,6 +232,7 @@ dl "T-Unit.zip" "Midway T-Unit"
 dl "Cave68K.zip"
 dl "Raiden2.zip"
 dl "GrindStormer.zip"
+dl "Guardians.zip"
 
 #force goldenaxe2 core
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "s32GoldenAxe.rbf" -delete
