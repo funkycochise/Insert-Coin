@@ -9,5 +9,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Mortal Kombat II (rev L3.1).mra" "_Mortal Kombat II" "" "VSF"
    add "$dir" "H" "NBA Jam (rev 3.01 4-07-93).mra" "_NBA Jam" "" "SPO"
    add "$dir" "H" "NBA Jam Tournament Edition (rev 4.0 3-23-94).mra" "_NBA Jam Tournament Edition" "" "SPO"
+   add "$dir" "H" "Trog (rev LA5 3-29-91).mra" "_Trog" "" "ACT"
+   add "$dir" "H" "Smash T.V. (rev 8.00).mra" "_Smash T.V." "" "ACT"
    dot
 fi
