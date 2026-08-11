@@ -66,9 +66,11 @@ function additem {
 counter=0
 
 #0810
+   add  "DenjinMakai.mra" "_DenjinMakai"
    add  "Grind Stormer.mra" "_Grind Stormer"
-   add  "Raiden II.mra" "_Raiden II" 
    add  "Raiden DX.mra" "_Raiden DX" 
+   add  "Raiden II.mra" "_Raiden II" 
+
 
 #0808
    additem "$midwaytunit"
