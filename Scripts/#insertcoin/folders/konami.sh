@@ -68,6 +68,8 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra" "_Teenage Mutant Ninja Turtles" "_TMNT" "BEA"
    add "$dir" "H"  "The Simpsons (4 Players World, set 1).mra" "_The Simpsons" "" "BEA"
    add "$dir" "H"  "Thunder Cross (set 1).mra" "_Thunder Cross" "" "STG"
+   add "$dir" "H"  "Thunder Cross II (World).mra" "_Thunder Cross II" "" "STG"
+   add "$dir" "H"  "Thunder Cross II (World).mra" "_Thunder Cross II" "" "STG"
    add "$dir" "H"  "Track & Field.mra" "_Track & Field" "" "SPO"
    add "$dir" "H"  "Vendetta (World, 4 Players, ver. T).mra" "_Vendetta" "" "BEA"
    add "$dir" "H"  "Wild West C.O.W.-Boys of Moo Mesa (FF, Konami, 1992).mra" "_Wild West C.O.W.-Boys of Moo Mesa"

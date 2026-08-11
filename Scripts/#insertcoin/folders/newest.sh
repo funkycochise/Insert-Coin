@@ -67,10 +67,12 @@ counter=0
 
 #0810
    add "Guardians (Denjin Makai II).mra" "_Guardians"
-   add  "DenjinMakai.mra" "_DenjinMakai"
-   add  "Grind Stormer.mra" "_Grind Stormer"
-   add  "Raiden DX.mra" "_Raiden DX" 
-   add  "Raiden II.mra" "_Raiden II" 
+   add "DenjinMakai.mra" "_DenjinMakai"
+   add "Grind Stormer.mra" "_Grind Stormer"
+   add "Raiden DX.mra" "_Raiden DX" 
+   add "Raiden II.mra" "_Raiden II"
+   add "Thunder Cross II (World).mra" "_Thunder Cross II"
+   add "Rainbow Islands (World, rev 2, set 1) .mra" "_Rainbow Islands"
 
 
 #0808
@@ -80,7 +82,6 @@ counter=0
 
 #0806
    add "Volfied (World, rev 1) .mra" "_Volfied"
-   add "Rainbow Islands (World, rev 2, set 1) .mra" "_Rainbow Islands"
    additem "$segasys24"
 
 #0803
