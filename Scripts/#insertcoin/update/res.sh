@@ -46,6 +46,7 @@ fi
 
 }
 
+
 function install {
 #echo "Installing res"
 
@@ -210,7 +211,6 @@ dl "Ikki.zip"
 dl "Gaelco.zip" "Gaelco"
 dl "SegaS24.zip" "Sega System 24"
 
-echo "Downloading res (blahm1d)"
 #dl "blahm1d_UMK3.zip" "UMK3"
 #dl "blahm1d_SmashTV.zip" "Smash TV"
 dl "blahm1d_Rampage.zip" "Rampage"
@@ -233,6 +233,8 @@ dl "Cave68K.zip"
 dl "Raiden2.zip"
 dl "GrindStormer.zip"
 dl "Guardians.zip"
+dl "jtkiwi.zip" "Chuka Taisen"
+dl "Bucky.zip" "Bucky O'Hare"
 
 #remove any previous SmashTV file
 find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Smash T.V*" -delete
@@ -260,6 +262,24 @@ find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Strikers 1945 III.mra" -dele
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Vs*" -delete
 #find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -delete
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -exec rm -rf {} +
+
+#force chuka jtkiwi
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Chuka*.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "The NewZealand Story*.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Kageki*.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Insector X*.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Extermination*.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Arkanoid - Revenge of DOH*.mra" -delete
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_The NewZealand Story*" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Kageki*" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Insector X*" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Extermination*" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Dr. Toppel's Adventure*" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Chuka*" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Arkanoid II*" -exec rm -rf {} +
+find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "jtkiwi.rbf"
+
+
 
 install
 

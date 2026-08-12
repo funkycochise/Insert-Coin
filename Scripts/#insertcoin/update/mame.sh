@@ -1226,6 +1226,7 @@ dl "grindstm.zip"
 dl "denjinmk.zip"
 dl "grdians.zip"
 dl "trog.zip"
+dl "bucky.zip"
 
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
