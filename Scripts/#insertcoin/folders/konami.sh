@@ -37,6 +37,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "H"  "Aliens (World set 1).mra" "_Aliens" "" "BEA"
    add "$dir" "H"  "Asterix (FF ver EAD).mra" "_Asterix" "" "BEA"
+   add "$dir" "H"  "Bucky O'Hare.mra" "_Bucky O'Hare" "" "BEA" 
    add "$dir" "H"  "Combat School (joystick).mra" "_Combat School" "" "ACT"
    add "$dir" "H"  "Crime Fighters (World 2 players).mra" "_Crime Fighters"  "" "BEA"
    add "$dir" "H"  "Double Dribble.mra" "_Double Dribble" "" "SPO"

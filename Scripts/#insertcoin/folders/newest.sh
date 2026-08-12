@@ -65,6 +65,8 @@ function additem {
 
 counter=0
 
+#0812
+   add "Bucky O'Hare.mra" "_Bucky O'Hare"
 #0810
    add "Guardians (Denjin Makai II).mra" "_Guardians"
    add "DenjinMakai.mra" "_DenjinMakai"
