@@ -52,8 +52,8 @@ find $CORE -maxdepth 1 -type f -name "XNZN1_*" ! -name "XNZN1_20260721.rbf" -del
 find $CORE -maxdepth 1 -type f -name "xnbrkthru_*" ! -name "xnbrkthru_20260705.rbf"
 find $CORE -maxdepth 1 -type f -name "xnbrkthru_*" ! -name "xnbrkthru_20260705.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "Klax_*" ! -name "Klax_20260729.rbf"
-find $CORE -maxdepth 1 -type f -name "Klax_*" ! -name "Klax_20260729.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "Klax_*" ! -name "Klax_20260811.rbf"
+find $CORE -maxdepth 1 -type f -name "Klax_*" ! -name "Klax_20260811.rbf" -delete
 
 find $CORE -maxdepth 1 -type f -name "Toobin_*" ! -name "Toobin_20260729.rbf"
 find $CORE -maxdepth 1 -type f -name "Toobin_*" ! -name "Toobin_20260729.rbf" -delete

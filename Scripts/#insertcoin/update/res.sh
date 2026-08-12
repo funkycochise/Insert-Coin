@@ -39,6 +39,7 @@ fi
 wget -q https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/$file -O /media/fat/Scripts/temp/$file
 if [ -f "/media/fat/Scripts/temp/$file" ]; then
   unzip -qq -o /media/fat/Scripts/temp/$file -d /media/fat/Scripts/res/
+  #ls /media/fat/Scripts/res/_Arcade/cores/Klax_*.rbf
   rm -r /media/fat/Scripts/temp/$file
 else
    echo -e "Error downloading $file" 
