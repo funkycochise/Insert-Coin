@@ -206,7 +206,7 @@ if [ "$console_mgl" == "1" ]; then
    ./update/clean_console.sh
 fi
 #if [ "$obsolete_core" == "1" ]; then
-#   ./update/clean_obsolete.sh
+   ./update/clean_obsolete.sh
 #fi 
 if [ "$console_core" == "1" ]; then
    ./update/update_console.sh
