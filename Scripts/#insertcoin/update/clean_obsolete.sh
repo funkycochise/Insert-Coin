@@ -13,79 +13,100 @@ if [ "$remove_other" == "1" ]; then
   fi
 fi
 
+echo -e "jtargus"
 find $CORE -maxdepth 1 -type f -name "jtargus_*" ! -name "jtargus_20260502.rbf"
 find $CORE -maxdepth 1 -type f -name "jtargus_*" ! -name "jtargus_20260502.rbf" -delete
 
+echo -e "NaughtyBoy"
 find $CORE -maxdepth 1 -type f -name "NaughtyBoy_*" ! -name "NaughtyBoy_20250714.rbf"
 find $CORE -maxdepth 1 -type f -name "NaughtyBoy_*" ! -name "NaughtyBoy_20250714.rbf" -delete
 
+echo -e "PsikyoSH"
 find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260731.rbf"
 find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260731.rbf" -delete
 
+echo -e "StarForce"
 find $CORE -maxdepth 1 -type f -name "StarForce_*" ! -name "Starforce_20260418.rbf"
 find $CORE -maxdepth 1 -type f -name "StarForce_*" ! -name "Starforce_20260418.rbf" -delete
 
+echo -e "Tempest"
 find $CORE -maxdepth 1 -type f -name "Tempest_*" ! -name "Tempest_20260720.rbf"
 find $CORE -maxdepth 1 -type f -name "Tempest_*" ! -name "Tempest_20260720.rbf" -delete
 
+echo -e "Millipede"
 find $CORE -maxdepth 1 -type f -name "Millipede_*" ! -name "Millipede_20260518.rbf"
 find $CORE -maxdepth 1 -type f -name "Millipede_*" ! -name "Millipede_20260518.rbf" -delete
 
+echo -e "CloakAndDagger"
 find $CORE -maxdepth 1 -type f -name "CloakAndDagger_*" ! -name "CloakAndDagger_20260708.rbf"
 find $CORE -maxdepth 1 -type f -name "CloakAndDagger_*" ! -name "CloakAndDagger_20260708.rbf" -delete
 
+echo -e "Legionnaire"
 find $CORE -maxdepth 1 -type f -name "Legionnaire_*" ! -name "Legionnaire_20260715.rbf"
 find $CORE -maxdepth 1 -type f -name "Legionnaire_*" ! -name "Legionnaire_20260715.rbf" -delete
 
+echo -e "MajorHavoc"
 find $CORE -maxdepth 1 -type f -name "MajorHavoc_*" ! -name "MajorHavoc_20260730.rbf"
 find $CORE -maxdepth 1 -type f -name "MajorHavoc_*" ! -name "MajorHavoc_20260730.rbf" -delete
 
+echo -e "XNSYSTEM11"
 find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" ! -name "XNSYSTEM11_20260727.rbf"
 find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" ! -name "XNSYSTEM11_20260727.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" ! -name "XNSYSTEM12_20260804.rbf"
-find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" ! -name "XNSYSTEM12_20260804.rbf" -delete
+echo -e "XNSYSTEM12"
+find $CORE -maxdepth 1 -type f -name "XNSYSTEM12_*" ! -name "XNSYSTEM12_20260804.rbf"
+find $CORE -maxdepth 1 -type f -name "XNSYSTEM12_*" ! -name "XNSYSTEM12_20260804.rbf" -delete
 
+echo -e "XNZN1"
 find $CORE -maxdepth 1 -type f -name "XNZN1_*" ! -name "XNZN1_20260721.rbf"
 find $CORE -maxdepth 1 -type f -name "XNZN1_*" ! -name "XNZN1_20260721.rbf" -delete
 
+echo -e "xnbrkthru"
 find $CORE -maxdepth 1 -type f -name "xnbrkthru_*" ! -name "xnbrkthru_20260705.rbf"
 find $CORE -maxdepth 1 -type f -name "xnbrkthru_*" ! -name "xnbrkthru_20260705.rbf" -delete
 
+echo -e "Klax"
 find $CORE -maxdepth 1 -type f -name "Klax_*" ! -name "Klax_20260811.rbf"
 find $CORE -maxdepth 1 -type f -name "Klax_*" ! -name "Klax_20260811.rbf" -delete
 
+echo -e "Toobin"
 find $CORE -maxdepth 1 -type f -name "Toobin_*" ! -name "Toobin_20260729.rbf"
 find $CORE -maxdepth 1 -type f -name "Toobin_*" ! -name "Toobin_20260729.rbf" -delete
 
+echo -e "SegaVCO"
 find $CORE -maxdepth 1 -type f -name "SegaVCO_*" ! -name "SegaVCO_20260801.rbf"
 find $CORE -maxdepth 1 -type f -name "SegaVCO_*" ! -name "SegaVCO_20260801.rbf" -delete
 
+echo -e "glass"
 find $CORE -maxdepth 1 -type f -name "glass_*" ! -name "glass_20260713.rbf"
 find $CORE -maxdepth 1 -type f -name "glass_*" ! -name "glass_20260713.rbf" -delete
 
+echo -e "SuperOffRoad"
 find $CORE -maxdepth 1 -type f -name "SuperOffRoad_*" ! -name "SuperOffRoad_20260726.rbf"
 find $CORE -maxdepth 1 -type f -name "SuperOffRoad_*" ! -name "SuperOffRoad_20260726.rbf" -delete
 
+echo -e "KickAndRun"
+find $CORE -maxdepth 1 -type f -name "Kick*" ! -name "KickAndRun_20260801.rbf"
+find $CORE -maxdepth 1 -type f -name "Kick*" ! -name "KickAndRun_20260801.rbf" -delete
+
+echo -e "Volfied"
 find $CORE -maxdepth 1 -type f -name "Volfied_*" ! -name "Volfied_20260806.rbf"
 find $CORE -maxdepth 1 -type f -name "Volfied_*" ! -name "Volfied_20260806.rbf" -delete
 
+echo -e "Rbisland"
 find $CORE -maxdepth 1 -type f -name "Rbisland_*" ! -name "Rbisland_20260805.rbf"
 find $CORE -maxdepth 1 -type f -name "Rbisland_*" ! -name "Rbisland_20260805.rbf" -delete
 
-find $CORE -maxdepth 1 -type f -name "Volfied_*" ! -name "Volfied_20260806.rbf"
-find $CORE -maxdepth 1 -type f -name "Volfied_*" ! -name "Volfied_20260806.rbf" -delete
-
+echo -e "Arcade-NARC"
 find $CORE -maxdepth 1 -type f -name "Arcade-NARC-*" ! -name "Arcade-NARC-v9.rbf"
 find $CORE -maxdepth 1 -type f -name "Arcade-NARC-*" ! -name "Arcade-NARC-v9.rbf" -delete
 
+echo -e "SMS"
 find $CORE -maxdepth 1 -type f -name "SMS_*" ! -name "SMS_20260804.rbf"
 find $CORE -maxdepth 1 -type f -name "SMS_*" ! -name "SMS_20260804.rbf" -delete
 
+echo -e "cave"
 find $CORE -maxdepth 1 -type f -name "cave_*" ! -name "cave_20260808.rbf"
 find $CORE -maxdepth 1 -type f -name "cave_*" ! -name "cave_20260808.rbf" -delete
 
-
 echo -e "${GREEN}${CHECK}${NC} Completed"
-
-

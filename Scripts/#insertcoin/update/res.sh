@@ -83,7 +83,7 @@ function install {
       done
    fi
    #echo "cores"
-   if [ -d "$mra" ]; 
+   if [ -d "$cores" ]; 
    then
       for file in $cores/*.rbf; do
          f=$(basename -- "$file")
@@ -105,7 +105,7 @@ function install {
       done
    fi
    #echo "alternatives"
-   if [ -d "$config" ]; 
+   if [ -d "$altdir" ]; 
    then
       for file in $altdir/*; 
       do
@@ -278,9 +278,7 @@ find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Exterminatio
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Dr. Toppel's Adventure*" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Chuka*" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Arkanoid II*" -exec rm -rf {} +
-find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "jtkiwi.rbf"
-
-
+find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "jtkiwi.rbf" -delete
 
 install
 
