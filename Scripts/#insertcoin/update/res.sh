@@ -16,13 +16,19 @@ des_alt=$des_arcade/_alternatives
 des_config=$SD/config
 
 
-#echo "Downloading res (blahm1d)"
-
 if [ ! -d "/media/fat/Scripts/res/" ];
 then  
    mkdir /media/fat/Scripts/res/
 fi
 cd /media/fat/Scripts/res/
+
+debug="0"
+function debug {
+
+if [ "$debug" == "1" ]; then
+   echo -e "$1"
+fi
+}
 
 function dl {
 
@@ -196,7 +202,7 @@ dl "BuckRodgers.zip" "BuckRodgers"
 dl "CowBoys.zip" "Cowboys of Moos Mesa"
 #dl "deco16.zip" "Deco 16"
 #dl "DECOCassette.zip" "Deco Cassette"
-dl "EmpireCity.zip"
+dl "EmpireCity.zip" "EmpireCity"
 dl "jlrh_OperWolf.zip" "Operation Wolf"
 dl "MegaPlay.zip" "SEGA Megaplay"
 dl "Psikyo.zip" "Psikyo SH2"
@@ -208,7 +214,7 @@ dl "vs.zip" "Nintendo VS"
 dl "ZN1.zip" "Namco ZN1"
 dl "GoldenAxe2.zip" "Golden Axe The Revenge of Death Adder"
 dl "Spider-Man.zip" "Spider man the video game"
-dl "Ikki.zip"
+dl "Ikki.zip" "Ikki"
 dl "Gaelco.zip" "Gaelco"
 dl "SegaS24.zip" "Sega System 24"
 
@@ -217,54 +223,55 @@ dl "SegaS24.zip" "Sega System 24"
 dl "blahm1d_Rampage.zip" "Rampage"
 dl "blahm1d_lkage.zip" "The legend of Kage"
 #dl "blahm1d_NBAHangtime.zip" "NBA HAngtime"
-dl "blahm1d_NARC.zip"
+dl "blahm1d_NARC.zip" "NARC"
 dl "WolfUnit.zip" "Midway Wolf"
-#dl "Raiden.zip"
-dl "Toobin.zip"
-dl "DynaGear.zip"
-dl "Universal.zip"
-dl "KickAndRun.zip"
+#dl "Raiden.zip" "Raiden"
+dl "Toobin.zip" "Toobin"
+dl "DynaGear.zip" "Dynagear"
+dl "Universal.zip" "Universal"
+dl "KickAndRun.zip" "KickAndRun"
 dl "Rbisland.zip" "Rainbow Islands"
 dl "volfied.zip" "Volfied"
 dl "sms.zip" "SMS Sega System-E"
 dl "AlphaDenshi.zip" "Alpha Denshi Soccer/Baseball"
 dl "Dogyuun.zip" "Dogyuun"
 dl "T-Unit.zip" "Midway T-Unit"
-dl "Cave68K.zip"
-dl "Raiden2.zip"
-dl "GrindStormer.zip"
-dl "Guardians.zip"
+dl "Cave68K.zip" "Cave68K"
+dl "Raiden2.zip" "Raiden2"
+dl "GrindStormer.zip" "GrindStormer"
+dl "Guardians.zip" "Guardians"
 dl "jtkiwi.zip" "Chuka Taisen"
 dl "Bucky.zip" "Bucky O'Hare"
+dl "TrogSmashTV.zip" "Trog SmashTV"
 
 #remove any previous SmashTV file
+debug "SmashTV removal"
 find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Smash T.V*" -delete
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Smash T.V*" -exec rm -rf {} +
 find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "SmashTV*" -delete
-dl "TrogSmashTV.zip"
-
 #force goldenaxe2 core
+debug "goldenaxe2 removal"
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "s32GoldenAxe.rbf" -delete
 rm -r "/media/fat/_Arcade/_alternatives/_Golden Axe The Revenge of Death Adder"  > /dev/null 2>&1
 #force update cowboys of moo mesa
+debug "moo mesa removal"
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "cowboys*.rbf" -delete
 find /media/fat/_Arcade -maxdepth 1 -type f -name "Wild West C.O.W.-Boys*.mra" -delete
-#force Asteroids updates (remove mra in _Arcade)
-find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Asteroid*.mra" -delete 
-find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Lunar Lander.mra" -delete 
-# 
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Toobin*.mra" -delete 
+debug "toobin removal"
 rm -r "/media/fat/_Arcade/_alternatives/_Toobin"  > /dev/null 2>&1
 #hidden choice in gunbird2 & s1945iii (psikyo SH2)
+debug "gunbird 2 removal"
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Gunbird 2*" -delete
 find "/media/fat/_Arcade/_alternatives/_Gunbird 2" -maxdepth 1 -type f -name "Gunbird 2 (set 2).mra" -delete > /dev/null 2>&1
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Strikers 1945 III.mra" -delete
 #vsNES
+debug "vsNES removal"
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Vs*" -delete
 #find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -delete
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -exec rm -rf {} +
-
 #force chuka jtkiwi
+debug " kiwi removal"
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Chuka*.mra" -delete
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "The NewZealand Story*.mra" -delete
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Kageki*.mra" -delete
