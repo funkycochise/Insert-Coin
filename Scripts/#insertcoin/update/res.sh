@@ -82,7 +82,7 @@ function install {
          f=$(basename -- "$file")
          if [ -f "$file" ]; then
             #if [ ! -f "$des_arcade/$f" ]; then
-               #echo -e "\rcopying $des_arcade/$f                                                   "
+               #echo -e "\r$des_arcade/$f                                                   "
                cp "$file" "$des_arcade/$f"
             #fi
          fi
@@ -201,7 +201,7 @@ dl "Breakthru.zip" "Breakthru"
 dl "BuckRodgers.zip" "BuckRodgers"
 dl "CowBoys.zip" "Cowboys of Moos Mesa"
 #dl "deco16.zip" "Deco 16"
-#dl "DECOCassette.zip" "Deco Cassette"
+dl "DECOCassette.zip" "Deco Cassette"
 dl "EmpireCity.zip" "EmpireCity"
 dl "jlrh_OperWolf.zip" "Operation Wolf"
 dl "MegaPlay.zip" "SEGA Megaplay"
