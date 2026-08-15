@@ -152,6 +152,7 @@ upl=_Upl
 vs=_Nintendo Vs.
 williams=_Williams
 zn1=_ZN1
+zn1taito=_ZN1-TaitoFX1B
 """
 
 # ------------------- Fonctions INI -------------------
