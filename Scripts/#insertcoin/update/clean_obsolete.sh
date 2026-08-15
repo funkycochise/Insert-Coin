@@ -128,9 +128,9 @@ fi
 find $CORE -maxdepth 1 -type f -name "Volfied_*" ! -name "Volfied_20260806.rbf" -delete
 
 debug "Rbisland"
-if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "Rbisland_*" ! -name "Rbisland_20260805.rbf"
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "Rbisland_*" ! -name "Rbisland_20260813.rbf"
 fi
-find $CORE -maxdepth 1 -type f -name "Rbisland_*" ! -name "Rbisland_20260805.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "Rbisland_*" ! -name "Rbisland_20260813.rbf" -delete
 
 debug "TwinHawk"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "TwinHawk_*" ! -name "TwinHawk_20260813.rbf"

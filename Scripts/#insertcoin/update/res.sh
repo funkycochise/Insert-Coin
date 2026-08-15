@@ -246,6 +246,7 @@ dl "Bucky.zip" "Bucky O'Hare"
 dl "TrogSmashTV.zip" "Trog SmashTV"
 dl "TwinHawk.zip" "TwinHawk/Daisenpu"
 dl "SegaG80.zip" "SEGA G80 correct core"
+dl "SegaSys32Arabian.zip" "Sega System 32"
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
