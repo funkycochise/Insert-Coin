@@ -101,6 +101,7 @@ fi
 ./folders/taito.sh 
 ./folders/taitof2.sh 
 ./folders/taitosj.sh 
+./folders/taitox.sh 
 ./folders/technos.sh 
 ./folders/technosoft.sh 
 ./folders/technos16.sh 

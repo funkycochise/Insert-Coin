@@ -127,6 +127,11 @@ if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "Rbisland_*" ! 
 fi
 find $CORE -maxdepth 1 -type f -name "Rbisland_*" ! -name "Rbisland_20260805.rbf" -delete
 
+debug "TwinHawk"
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "TwinHawk_*" ! -name "TwinHawk_20260813.rbf"
+fi
+find $CORE -maxdepth 1 -type f -name "TwinHawk_*" ! -name "TwinHawk_20260813.rbf" -delete
+
 debug "Arcade-NARC"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "Arcade-NARC-*" ! -name "Arcade-NARC-v9.rbf"
 fi

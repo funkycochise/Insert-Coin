@@ -243,6 +243,7 @@ dl "Guardians.zip" "Guardians"
 dl "jtkiwi.zip" "Chuka Taisen"
 dl "Bucky.zip" "Bucky O'Hare"
 dl "TrogSmashTV.zip" "Trog SmashTV"
+dl "TwinHawk.zip" "TwinHawk/Daisenpu"
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
