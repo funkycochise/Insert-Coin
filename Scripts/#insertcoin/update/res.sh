@@ -245,6 +245,7 @@ dl "jtkiwi.zip" "Chuka Taisen"
 dl "Bucky.zip" "Bucky O'Hare"
 dl "TrogSmashTV.zip" "Trog SmashTV"
 dl "TwinHawk.zip" "TwinHawk/Daisenpu"
+dl "SegaG80.zip" "SEGA G80 correct core"
 
 #remove any previous SmashTV file
 debug "SmashTV removal"

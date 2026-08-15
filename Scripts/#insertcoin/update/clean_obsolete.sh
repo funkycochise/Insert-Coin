@@ -82,6 +82,11 @@ if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "XNZN1_*" ! -na
 fi
 find $CORE -maxdepth 1 -type f -name "XNZN1_*" ! -name "XNZN1_20260721.rbf" -delete
 
+debug "XNZN1TaitoFX1B"
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "XNZN1TaitoFX1B_*" ! -name "XNZN1TaitoFX1B_20260814.rbf"
+fi
+find $CORE -maxdepth 1 -type f -name "XNZN1_*" ! -name "XNZN1TaitoFX1B_20260814.rbf" -delete
+
 debug "xnbrkthru"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "xnbrkthru_*" ! -name "xnbrkthru_20260705.rbf"
 fi
