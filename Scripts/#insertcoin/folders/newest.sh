@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0815
+   additem "$segasys32"
    additem "$segag80"
    additem "$zn1taito"
    add "Twin Hawk (World).mra" "_Twin Hawk"
@@ -118,7 +119,6 @@ counter=0
 #0727
    add "Raiden (World).mra" "_Raiden"
    add "Ikki.mra" "_Ikki"
-   additem "$segasys32"
    additem "$midwaywolf"
    #add "Spider-Man The Videogame (World).mra" "_Spider-Man The Videogame"
    #add "Holosseum (US, Rev A).mra" "_Holosseum"
