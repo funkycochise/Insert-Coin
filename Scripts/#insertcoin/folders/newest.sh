@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0815
+   add "Street Fighter - The Movie (v1.12).mra" "_Street Fighter - The Movie"
    additem "$segasys32"
    additem "$segag80"
    additem "$zn1taito"

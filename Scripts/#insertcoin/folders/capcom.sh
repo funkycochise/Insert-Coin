@@ -31,6 +31,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Hyper Dyne Side Arms (World, 861129).mra" "_Hyper Dyne Side Arms" "" "STG"
    add "$dir" "H" "SonSon.mra" "_SonSon" "" "ACT"
    add "$dir" "H" "Street Fighter (US, set 1).mra" "_Street Fighter" "" "VSF"
+   add "$dir" "H" "Street Fighter - The Movie (v1.12).mra" "_Street Fighter - The Movie" "" "VSF"
    add "$dir" "H" "Super Pang (World 900914).mra" "_Super Pang" "" "ACT"
    add "$dir" "H" "Tiger Road (US).mra" "_Tiger Road" "" "ACT"
    add "$dir" "H" "Trojan (US set 1).mra" "_Trojan" "" "RNG"
