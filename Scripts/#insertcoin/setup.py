@@ -140,6 +140,7 @@ tad=_Tad Corp
 taito=_Taito
 taitof2=_Taito-F2
 taitosj=_Taito-SJ
+taitox=_Taito-X
 technos=_Technos
 technosoft=_Technosoft
 technos16=_Technos16
