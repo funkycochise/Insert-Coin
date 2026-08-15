@@ -227,6 +227,7 @@ upl=$(ini_get "$names" upl)
 vs=$(ini_get "$names" vs)
 williams=$(ini_get "$names" williams)
 zn1=$(ini_get "$names" zn1)
+zn1taito=$(ini_get "$names" zn1taito)
 }
 
 loadsetup

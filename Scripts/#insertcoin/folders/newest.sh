@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0815
+   additem "$zn1taito"
    add "Twin Hawk (World).mra" "_Twin Hawk"
 
 #0812
