@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0815
+   add "Twin Hawk (World).mra" "_Twin Hawk"
+
 #0812
    add "Bucky O'Hare.mra" "_Bucky O'Hare"
 #0810
