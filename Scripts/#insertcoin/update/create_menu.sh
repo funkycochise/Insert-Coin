@@ -113,6 +113,7 @@ fi
 ./folders/vs.sh 
 ./folders/williams.sh
 ./folders/zn1.sh 
+./folders/zn1taito.sh 
 if [ "$newest" == "1" ]; then
   ./folders/newest.sh 
 fi
