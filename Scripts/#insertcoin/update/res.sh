@@ -145,16 +145,17 @@ dir="$1"
 mra="$2"
 renamed="$3"
 
-if [ -f "$dir/$mra" ];
-then
-   if [ -f "$dir/$renamed" ];
-   then
-      rm -r "$dir/$mra"
-   else
-      #echo "Renamed $dir/$renamed"
-      mv "$dir/$mra" "$dir/$renamed"
+if [ -f "$dir/$renamed" ]; then
+      # La version renommée existe déjà : si l'original est présent, on le supprime
+      if [ -f "$dir/$mra" ]; then
+         rm "$dir/$mra"
+      fi
+else
+      # Pas encore renommé : on renomme si l'original existe
+      if [ -f "$dir/$mra" ]; then
+         mv "$dir/$mra" "$dir/$renamed"
+      fi
    fi
-fi
 }
 
 function renexisting {
@@ -174,19 +175,19 @@ function renexisting {
    rename "/media/fat/_Arcade/_alternatives/_Double Wings" "Double Wings (World, Set 2).mra" "Double Wings (World, Set 2) (Coc).mra"
 
    #Diet Go Go
-   rename "_alternatives/_Diet Go Go" "Diet Go Go (Europe, Set 2).mra" "Diet Go Go (Europe, Set 2) (Coc).mra"
-   rename "_alternatives/_Diet Go Go" "Diet Go Go (Europe, Set 3).mra" "Diet Go Go (Europe, Set 3) (Coc).mra"
-   rename "_alternatives/_Diet Go Go" "Diet Go Go (Europe, Set 4).mra" "Diet Go Go (Europe, Set 4) (Coc).mra"
-   rename "_alternatives/_Diet Go Go" "Diet Go Go (Japan).mra" "Diet Go Go (Japan) (Coc).mra"
-   rename "_alternatives/_Diet Go Go" "Diet Go Go (USA).mra" "Diet Go Go (USA) (Coc).mra"
+   rename "/media/fat/_Arcade/_alternatives/_Diet Go Go" "Diet Go Go (Europe, Set 2).mra" "Diet Go Go (Europe, Set 2) (Coc).mra"
+   rename "/media/fat/_Arcade/_alternatives/_Diet Go Go" "Diet Go Go (Europe, Set 3).mra" "Diet Go Go (Europe, Set 3) (Coc).mra"
+   rename "/media/fat/_Arcade/_alternatives/_Diet Go Go" "Diet Go Go (Europe, Set 4).mra" "Diet Go Go (Europe, Set 4) (Coc).mra"
+   rename "/media/fat/_Arcade/_alternatives/_Diet Go Go" "Diet Go Go (Japan).mra" "Diet Go Go (Japan) (Coc).mra"
+   rename "/media/fat/_Arcade/_alternatives/_Diet Go Go" "Diet Go Go (USA).mra" "Diet Go Go (USA) (Coc).mra"
    #the cligffhanger
-   rename "_alternatives/_The Cliffhanger - Edward Randy" "The Cliffhanger - Edward Randy (Japan, Ver. 3).mra" "The Cliffhanger - Edward Randy (Japan, Ver. 3) (Coc).mra"
-   rename "_alternatives/_The Cliffhanger - Edward Randy" "The Cliffhanger - Edward Randy (World, Ver. 1).mra" "The Cliffhanger - Edward Randy (World, Ver. 1) (Coc).mra"
-   rename "_alternatives/_The Cliffhanger - Edward Randy" "The Cliffhanger - Edward Randy (World, Ver. 2).mra" "The Cliffhanger - Edward Randy (World, Ver. 2) (Coc).mra"
+   rename "/media/fat/_Arcade/_alternatives/_The Cliffhanger - Edward Randy" "The Cliffhanger - Edward Randy (Japan, Ver. 3).mra" "The Cliffhanger - Edward Randy (Japan, Ver. 3) (Coc).mra"
+   rename "/media/fat/_Arcade/_alternatives/_The Cliffhanger - Edward Randy" "The Cliffhanger - Edward Randy (World, Ver. 1).mra" "The Cliffhanger - Edward Randy (World, Ver. 1) (Coc).mra"
+   rename "/media/fat/_Arcade/_alternatives/_The Cliffhanger - Edward Randy" "The Cliffhanger - Edward Randy (World, Ver. 2).mra" "The Cliffhanger - Edward Randy (World, Ver. 2) (Coc).mra"
 
    #Vapor Trail
-   rename "_alternatives/_Vapor Trail" "Kuhga - Operation Code 'Vapor Trail' (Japan, Rev. 3).MRA" "Kuhga - Operation Code 'Vapor Trail' (Japan, Rev. 3) (Coc).mra"
-   rename "_alternatives/_Vapor Trail" "Vapor Trail - Hyper Offence Formation (US).mra""Vapor Trail - Hyper Offence  Formation (US) (Coc).mra"
+   rename "/media/fat/_Arcade/_alternatives/_Vapor Trail" "Kuhga - Operation Code 'Vapor Trail' (Japan, Rev. 3).MRA" "Kuhga - Operation Code 'Vapor Trail' (Japan, Rev. 3) (Coc).mra"
+   rename "/media/fat/_Arcade/_alternatives/_Vapor Trail" "Vapor Trail - Hyper Offence Formation (US).mra" "Vapor Trail - Hyper Offence Formation (US) (Coc).mra"
 
 }
 
