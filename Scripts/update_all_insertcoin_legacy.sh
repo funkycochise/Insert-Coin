@@ -11,7 +11,20 @@ fi
 }
 
 dl "setup.ini" "/media/fat/Scripts/#insertcoin/setup.ini"
-dl "names.ini" "/media/fat/Scripts/#insertcoin/names.ini"
 
+#clear
 cd /media/fat/Scripts/#insertcoin
-./run.sh | tee output.log
+python names.py
+RET=$?
+
+if [ $RET -eq 0 ]; then
+    #echo "Run choisi"
+    ./run.sh | tee output.log
+#elif [ $RET -eq 1 ]; then
+#    #echo "ESC ou Exit choisi"
+#    # Action en cas d'interruption
+#else
+#    echo "Autre code retour : $RET"
+fi
+
+#echo "code retour : $RET"
