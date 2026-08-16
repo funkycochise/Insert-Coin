@@ -98,9 +98,9 @@ fi
 find $CORE -maxdepth 1 -type f -name "Klax_*" ! -name "Klax_20260811.rbf" -delete
 
 debug "Toobin"
-if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "Toobin_*" ! -name "Toobin_20260729.rbf"
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "Toobin_*" ! -name "Toobin_20260813.rbf"
 fi
-find $CORE -maxdepth 1 -type f -name "Toobin_*" ! -name "Toobin_20260729.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "Toobin_*" ! -name "Toobin_20260813.rbf" -delete
 
 debug "SegaVCO"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "SegaVCO_*" ! -name "SegaVCO_20260801.rbf"
