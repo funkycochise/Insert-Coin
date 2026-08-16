@@ -1,0 +1,203 @@
+"""
+names.py
+--------
+Gère la création et la mise à jour de names.ini, indépendamment
+de l'interface curses de setup.py.
+
+Peut être importé (ensure_names(), normalize_ini()) ou exécuté
+directement :
+    python3 names.py
+"""
+
+import configparser
+import os
+import re
+from collections import OrderedDict
+
+# ------------------- Fichier -------------------
+NAMES_FILE = "names.ini"
+
+# ------------------- Contenu par défaut de names.ini -------------------
+RAW_NAMES_CONTENT = """[folder]
+dir_essential=_#Essentials
+dir_newest=_#Newest
+
+genre_horizontal=__Horizontal
+genre_vertical=__Vertical
+insertcoin=_#Insert-Coin
+genre_action=__Action
+genre_beat=__Beat'em up
+genre_puzzle=__Puzzle
+genre_sport=__Sport
+genre_vsf=__Vs Fighting
+genre_stg_h=__STG_H
+genre_stg_v=__STG_V
+genre_rng_h=__Run'n'Gun_H
+genre_rng_v=__Run'n'Gun_V
+
+alpha=_Alpha
+aleck64=_Aleck64
+atari=_Atari
+bagman=_Bagman
+bally_midway=_Bally-midway
+banpresto=_Banpresto
+capcom=_Capcom-Mitchell
+cps1=_CPS1
+cps15=_CPS15
+cps2=_CPS2
+cps3=_CPS3
+cave=_Cave 68000
+comad=_Comad Corp
+crazykong=_Crazy Kong
+deco=_DataEast-Deco
+decocassette=_Deco-Cassette
+deco8=_Deco-8
+deco16=_Deco-16
+exidy=_Exidy
+gaelco=_Gaelco
+galaxian=_Galaxian
+gottlieb=_Gottlieb
+igspgm=_IGS_PGM
+irem=_Irem
+irem62=_Irem M62
+irem72=_Irem M72
+irem90=_Irem M90
+irem92=_Irem M92
+irem92t=_Irem M92t
+irem107=_Irem M107
+jaleco=_Jaleco
+kaneko=_Kaneko
+kiwako=_Kiwako
+konami=_Konami
+konamitwin16=_Konami Twin16
+ladybug=_Ladybug
+leland=_Leland
+mcr1=_MCR1
+mcr2=_MCR2
+mcr3=_MCR3
+mcr3mono=_Midway_MCR3Mono
+mcr3scroll=_Midway_MCR3Scroll
+midwaytyz=_Midway_TYZUnit
+midwaytunit=_Midway_T-Unit
+midwaywolf=_Midway_Wolf
+namco=_Namco
+namco_sys1=_Namco-System-1
+namco_sys11=_Namco-System-11
+namco_sys12=_Namco-System-12
+namco_sys86=_Namco-System-86
+neogeo=_Neo-geo
+nichibutsu=_Nihon Bussan-Nichibutsu
+nintendo=_Nintendo
+nmk=_Nmk
+orca=_Orca
+pacman=_Pacman
+psikyosh2=_Psikyo_SH2
+raizing=_Raizing-8ing
+rare=_Rare
+robotron=_Robotron
+rockola=_Rockola
+scramble=_Scramble
+sega=_Sega
+seta=_Seta
+outrun=_Sega-Outrun
+segasys1=_Sega-System-1
+segasys2=_Sega-System-2
+segasys32=_Sega-System-32
+segasyse=_Sega-System-E
+segasys16=_Sega-System-16
+segasys18=_Sega-System-18
+segasys24=_Sega-System-24
+segastv=_Sega-Titan Video
+segamegaplay=_Sega Megaplay
+segag80=_Sega-G80
+segakyugo=_Sega-Kyugo
+sesame=_Sesame
+seibu=_Seibu
+snk=_SNK
+si=_Space Invaders
+stern=_Stern
+success=_Success
+sun=_Sun
+tad=_Tad Corp
+taito=_Taito
+taitof2=_Taito-F2
+taitosj=_Taito-SJ
+taitox=_Taito-X
+technos=_Technos
+technosoft=_Technosoft
+technos16=_Technos16
+tecmo=_Tehkan-Tecmo
+toaplan=_Toaplan
+toaplanstg=_Toaplan_STG
+universal=_Universal
+upl=_Upl
+vs=_Nintendo Vs.
+williams=_Williams
+zn1=_ZN1
+zn1taito=_ZN1-TaitoFX1B
+"""
+
+# ------------------- Fonctions -------------------
+def normalize_ini(filename):
+    """Supprime les espaces inutiles autour des '='"""
+    with open(filename, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+    with open(filename, "w", encoding="utf-8") as f:
+        for line in lines:
+            if "=" in line and not line.lstrip().startswith("#"):
+                k, v = line.split("=", 1)
+                f.write(f"{k.strip()}={v.strip()}\n")
+            else:
+                f.write(line)
+
+
+def ensure_names(names_file=NAMES_FILE):
+    """
+    Crée ou met à jour names.ini :
+    - ajoute les clés manquantes
+    - conserve l'ordre original
+    - pas d'espaces autour du '='
+    - ligne vide après 'newest'
+    """
+    existing = OrderedDict()
+    if os.path.exists(names_file):
+        with open(names_file, "r", encoding="utf-8") as f:
+            section = None
+            for line in f:
+                m = re.match(r"\s*\[(.+?)\]", line)
+                if m:
+                    section = m.group(1)
+                    existing[section] = OrderedDict()
+                    continue
+                if section and "=" in line:
+                    key, val = line.split("=", 1)
+                    key = key.strip()
+                    if key not in existing[section]:
+                        existing[section][key] = val.rstrip("\n").strip()
+
+    raw_parser = configparser.ConfigParser()
+    raw_parser.optionxform = str
+    raw_parser.read_string(RAW_NAMES_CONTENT)
+    updated = OrderedDict()
+
+    for section in raw_parser.sections():
+        updated[section] = OrderedDict()
+        for key, val in raw_parser[section].items():
+            if section in existing and key in existing[section]:
+                updated[section][key] = existing[section][key]
+            else:
+                updated[section][key] = val
+
+    with open(names_file, "w", encoding="utf-8") as f:
+        for section, opts in updated.items():
+            f.write(f"[{section}]\n")
+            for idx, (key, val) in enumerate(opts.items()):
+                if idx == 2:  # ligne vide après 'newest'
+                    f.write("\n")
+                f.write(f"{key}={val}\n")
+            f.write("\n")
+
+
+if __name__ == "__main__":
+    ensure_names()
+    print(f"{NAMES_FILE} mis à jour.")
