@@ -247,7 +247,7 @@ dl "TrogSmashTV.zip" "Trog SmashTV"
 dl "TwinHawk.zip" "TwinHawk/Daisenpu"
 dl "SegaG80.zip" "SEGA G80 correct core"
 dl "SegaSys32Arabian.zip" "Sega System 32"
-dl "SFTM.zip"
+dl "SFTM.zip" "Street Fighter The Movie"
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
@@ -266,7 +266,7 @@ find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Toobin*.mra" -delete
 debug "toobin removal"
 rm -r "/media/fat/_Arcade/_alternatives/_Toobin"  > /dev/null 2>&1
 #hidden choice in gunbird2 & s1945iii (psikyo SH2)
-debug "gunbird 2 removal"
+debug "Gunbird 2 removal"
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Gunbird 2*" -delete
 find "/media/fat/_Arcade/_alternatives/_Gunbird 2" -maxdepth 1 -type f -name "Gunbird 2 (set 2).mra" -delete > /dev/null 2>&1
 find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Strikers 1945 III.mra" -delete
@@ -276,7 +276,7 @@ find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Vs*" -delete
 #find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -delete
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -exec rm -rf {} +
 #force chuka jtkiwi
-debug " kiwi removal"
+debug "Kiwi removal"
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Chuka*.mra" -delete
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "The NewZealand Story*.mra" -delete
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Kageki*.mra" -delete
@@ -291,6 +291,13 @@ find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Dr. Toppel's
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Chuka*" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Arkanoid II*" -exec rm -rf {} +
 find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "jtkiwi.rbf" -delete
+debug "ZN1 Taito removal"
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Ray Storm" -exec rm -rf {} +
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Ray Storm*.mra" -delete
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_G-Darius" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Fighters' Impact" -exec rm -rf {} +
+debug "Toobin removal"
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Toobin" -exec rm -rf {} +
 
 install
 
