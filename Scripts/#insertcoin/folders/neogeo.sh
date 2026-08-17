@@ -171,7 +171,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Top Player's Golf.mgl" "" "" "SPO"
    add "$dir" "H"  "Treasure of the Caribbean.mgl" "" "" "PUZ"
    add "$dir" "H"  "TTE_Shinobi.mgl" "_TTE_Shinobi" "" "" "ACT"
-   add "$dir" "H"  "TTE_Shinobi.mgl" "_TTE_Golden Axe" "" "" "ACT"
+   add "$dir" "H"  "TTE_Golden Axe.mgl" "_TTE_Golden Axe" "" "" "BEA"
    add "$dir" "H"  "Twinkle Star Sprites.mgl" "" "" "STG"
    add "$dir" "H"  "Viewpoint.mgl" "" "" "STG"
    add "$dir" "H"  "Voltage Fighter - Gowcaizer.mgl" "" "" "VSF"

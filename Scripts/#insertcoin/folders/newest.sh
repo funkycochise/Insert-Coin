@@ -66,6 +66,9 @@ function additem {
 counter=0
 
 #0815
+   add "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen"
+   add "Volfied (World, rev 1).mra" "_Volfied"
+   add "Block Out (set 1).mra" "_Block Out"
    add "G.I. Joe (World, EAB).mra" "_G.I. Joe"
    add "Thunder Zone (World, Rev 1).mra" "_Thunder Zone"
    add "Street Fighter - The Movie (v1.12).mra" "_Street Fighter - The Movie"

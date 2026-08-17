@@ -26,7 +26,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Space Invaders.mra" "_Space Invaders" "" "STG"
    add "$dir" "V" "Tiger Heli Bootleg.mra" "_Tiger Heli" "" "STG"
    add "$dir" "V" "Tokio - Scramble Formation (newer).mra" "_Tokio" "" "STG"
-   add "$dir" "V" "Volfied (World, rev 1) .mra" "_Volfied" "" "PUZ"
+   add "$dir" "V" "Volfied (World, rev 1).mra" "_Volfied" "" "PUZ"
 
    add "$dir" "H" "Bubble Bobble (Japan, Ver 0.1).mra" "_Bubble Bobble" "" "ACT"
    add "$dir" "H" "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen" "" "STG"
