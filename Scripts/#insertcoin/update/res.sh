@@ -227,13 +227,14 @@ dl "blahm1d_lkage.zip" "The legend of Kage"
 #dl "blahm1d_NBAHangtime.zip" "NBA HAngtime"
 dl "blahm1d_NARC.zip" "NARC"
 dl "WolfUnit.zip" "Midway Wolf"
-#dl "Raiden.zip" "Raiden"
-dl "Toobin.zip" "Toobin"
 dl "DynaGear.zip" "Dynagear"
 dl "Universal.zip" "Universal"
 dl "KickAndRun.zip" "KickAndRun"
-dl "Rbisland.zip" "Rainbow Islands"
-dl "volfied.zip" "Volfied"
+#dl "Rbisland.zip" "Rainbow Islands"
+#dl "Raiden.zip" "Raiden"
+#dl "Toobin.zip" "Toobin"
+#dl "jtkiwi.zip" "Chuka Taisen"
+#dl "volfied.zip" "Volfied"
 dl "sms.zip" "SMS Sega System-E"
 dl "AlphaDenshi.zip" "Alpha Denshi Soccer/Baseball"
 dl "Dogyuun.zip" "Dogyuun"
@@ -242,7 +243,6 @@ dl "Cave68K.zip" "Cave68K"
 dl "Raiden2.zip" "Raiden2"
 dl "GrindStormer.zip" "GrindStormer"
 dl "Guardians.zip" "Guardians"
-dl "jtkiwi.zip" "Chuka Taisen"
 dl "Bucky.zip" "Bucky O'Hare"
 dl "TrogSmashTV.zip" "Trog SmashTV"
 dl "TwinHawk.zip" "TwinHawk/Daisenpu"
@@ -278,20 +278,20 @@ find /media/fat/_Arcade/ -maxdepth 1 -type f -name "Vs*" -delete
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vs*" -exec rm -rf {} +
 #force chuka jtkiwi
 debug "Kiwi removal"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Chuka*.mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "The NewZealand Story*.mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Kageki*.mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Insector X*.mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Extermination*.mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Arkanoid - Revenge of DOH*.mra" -delete
-find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_The NewZealand Story*" -exec rm -rf {} +
-find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Kageki*" -exec rm -rf {} +
-find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Insector X*" -exec rm -rf {} +
-find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Extermination*" -exec rm -rf {} +
-find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Dr. Toppel's Adventure*" -exec rm -rf {} +
-find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Chuka*" -exec rm -rf {} +
-find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Arkanoid II*" -exec rm -rf {} +
-find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "jtkiwi.rbf" -delete
+#find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Chuka*.mra" -delete
+#find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "The NewZealand Story*.mra" -delete
+#find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Kageki*.mra" -delete
+#find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Insector X*.mra" -delete
+#find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Extermination*.mra" -delete
+#find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Arkanoid - Revenge of DOH*.mra" -delete
+#find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_The NewZealand Story*" -exec rm -rf {} +
+#find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Kageki*" -exec rm -rf {} +
+#find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Insector X*" -exec rm -rf {} +
+#find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Extermination*" -exec rm -rf {} +
+#find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Dr. Toppel's Adventure*" -exec rm -rf {} +
+#find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Chuka*" -exec rm -rf {} +
+#find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Arkanoid II*" -exec rm -rf {} +
+#find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "jtkiwi.rbf" -delete
 debug "ZN1 Taito removal"
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Ray Storm" -exec rm -rf {} +
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Ray Storm*.mra" -delete

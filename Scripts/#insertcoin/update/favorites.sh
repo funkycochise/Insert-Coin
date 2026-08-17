@@ -26,5 +26,6 @@ dir="_#Favorites"
    add "$dir" "H" "The FairyLand Story.mra" "_The FairyLand Story" "" "ACT"
    add "$dir" "H" "The NewZealand Story (World, new version) (P0-043A PCB).mra" "_The NewZealand Story" "" "ACT"
    add "$dir" "H" "Toki (World, set 1).mra" "_Toki" "" "ACT"
+   add "$dir" "V" "Volfied (World, rev 1).mra" "_Volfied" "" "PUZ"
 
    dot

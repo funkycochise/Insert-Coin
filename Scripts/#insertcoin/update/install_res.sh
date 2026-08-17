@@ -206,8 +206,8 @@ if test -f "/media/fat/Scripts/#insertcoin/update/res.sh"; then
       /media/fat/Scripts/#insertcoin/update/res.sh
 fi
 
-if test -f "/media/fat/Scripts/#local/coc.sh"; then
-      /media/fat/Scripts/#local/coc.sh
+if test -f "/media/fat/Scripts/#local/coc_res.sh"; then
+      /media/fat/Scripts/#local/coc_res.sh
 fi
 if test -f "/media/fat/Scripts/#local/rmonic79.sh"; then
       /media/fat/Scripts/#local/rmonic79.sh
