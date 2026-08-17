@@ -214,7 +214,6 @@ dl "taitosj.zip" "Taito SJ"
 dl "vs.zip" "Nintendo VS"
 dl "ZN1.zip" "Namco ZN1"
 dl "ZN1Taito.zip" "ZN1 Taito"
-dl "GoldenAxe2.zip" "Golden Axe The Revenge of Death Adder"
 dl "Spider-Man.zip" "Spider man the video game"
 dl "Ikki.zip" "Ikki"
 dl "Gaelco.zip" "Gaelco"
@@ -247,18 +246,21 @@ dl "Bucky.zip" "Bucky O'Hare"
 dl "TrogSmashTV.zip" "Trog SmashTV"
 dl "TwinHawk.zip" "TwinHawk/Daisenpu"
 dl "SegaG80.zip" "SEGA G80 correct core"
-dl "SegaSys32Arabian.zip" "Sega System 32"
 dl "SFTM.zip" "Street Fighter The Movie"
+dl "SegaS32.zip" "Sega System 32"
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
 find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Smash T.V*" -delete
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Smash T.V*" -exec rm -rf {} +
 find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "SmashTV*" -delete
-#force goldenaxe2 core
+#force system32 core
 debug "goldenaxe2 removal"
-find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "s32GoldenAxe.rbf" -delete
+find /media/fat/_Arcade/cores/ -name "s32GoldenAxe.rbf" -delete
+find /media/fat/_Arcade/cores/ -name "SegaSystem32_20260815.rbf" -delete
+
 rm -r "/media/fat/_Arcade/_alternatives/_Golden Axe The Revenge of Death Adder"  > /dev/null 2>&1
+
 #force update cowboys of moo mesa
 debug "moo mesa removal"
 find /media/fat/_Arcade/cores -maxdepth 1 -type f -name "cowboys*.rbf" -delete
