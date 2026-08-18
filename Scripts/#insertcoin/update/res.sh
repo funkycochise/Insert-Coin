@@ -248,6 +248,7 @@ dl "TwinHawk.zip" "TwinHawk/Daisenpu"
 dl "SegaG80.zip" "SEGA G80 correct core"
 dl "SFTM.zip" "Street Fighter The Movie"
 dl "SegaS32.zip" "Sega System 32"
+dl "Kaneko.zip" "Kaneko Super Nova"
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
@@ -299,8 +300,11 @@ find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Ray Storm" -
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Ray Storm*.mra" -delete
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_G-Darius" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Fighters' Impact" -exec rm -rf {} +
-debug "Toobin removal"
-find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Toobin" -exec rm -rf {} +
+#debug "Toobin removal"
+#find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Toobin" -exec rm -rf {} +
+debug "Psikyo removal"
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Gunbird 2*" -delete
+find "/media/fat/_Arcade/_alternatives/_Gunbird 2" -maxdepth 1 -type f -name "Gunbird 2*" -delete
 
 install
 
