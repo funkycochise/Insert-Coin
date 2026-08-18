@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0818
+   additem "$kaneko"
+
 #0815
    add "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen"
    add "Volfied (World, rev 1).mra" "_Volfied"
@@ -87,7 +90,6 @@ counter=0
    add "Raiden II.mra" "_Raiden II"
    add "Thunder Cross II (World).mra" "_Thunder Cross II"
    add "Rainbow Islands (World, rev 2, set 1) .mra" "_Rainbow Islands"
-
 
 #0808
    additem "$midwaytunit"
