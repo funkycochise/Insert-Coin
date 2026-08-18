@@ -72,10 +72,15 @@ if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" 
 fi
 find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" ! -name "XNSYSTEM11_20260727.rbf" -delete
 
-debug "XNSYSTEM12"
-if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "XNSYSTEM12_*" ! -name "XNSYSTEM12_20260804.rbf"
+debug "XNSYSTEM12" 
+#delete previous XNSYSTEM12
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "XNSYSTEM12_20260804.rbf"
 fi
-find $CORE -maxdepth 1 -type f -name "XNSYSTEM12_*" ! -name "XNSYSTEM12_20260804.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "XNSYSTEM12_20260804.rbf" -delete
+
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "SYSTEM12_20260818.rbf"
+fi
+find $CORE -maxdepth 1 -type f -name "SYSTEM12_*.rbf" ! -name "SYSTEM12_20260818.rbf" -delete
 
 debug "XNZN1"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "XNZN1_*" ! -name "XNZN1_20260721.rbf"

@@ -189,6 +189,7 @@ function renexisting {
    rename "/media/fat/_Arcade/_alternatives/_Vapor Trail" "Kuhga - Operation Code 'Vapor Trail' (Japan, Rev. 3).MRA" "Kuhga - Operation Code 'Vapor Trail' (Japan, Rev. 3) (Coc).mra"
    rename "/media/fat/_Arcade/_alternatives/_Vapor Trail" "Vapor Trail - Hyper Offence Formation (US).mra" "Vapor Trail - Hyper Offence Formation (US) (Coc).mra"
 
+
 }
 
 echo "Downloading additional res"
@@ -305,6 +306,26 @@ find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Fighters' Im
 debug "Psikyo removal"
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Gunbird 2*" -delete
 find "/media/fat/_Arcade/_alternatives/_Gunbird 2" -maxdepth 1 -type f -name "Gunbird 2*" -delete
+
+   #System12
+debug "Psikyo XN System12"
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Ehrgeiz (World, EG2-VER.A).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Fighting Layer (Asia, FTL3-VER.A).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Libero Grande (World LG2-VER.A).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Oh! Bakyuuun (Japan OB1-VER.A).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Soul Calibur (World SOC12-VER.A2).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Super World Stadium '98 (Japan SS81-VER.A).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Super World Stadium '99 (Japan SS91-VER.A3).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Tekken 3 (World TET2-VER.E1).mra" -delete
+
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Ehrgeiz" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Fighting Layer" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Libero Grande" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Oh! Bakyuuun" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "__Soul Calibur" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Super World Stadium '98 (Japan SS81-VER.A).mra" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Super World Stadium '99" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Tekken 3" -exec rm -rf {} +
 
 install
 

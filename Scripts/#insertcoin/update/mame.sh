@@ -1252,4 +1252,6 @@ dl "skns.zip"
 dl "teljan.zip"
 dl "vblokbrk.zip"
 
+dl "mrdrillr.zip"
+
 echo -e "${GREEN}${CHECK}${NC} Completed"
