@@ -66,7 +66,7 @@ function additem {
 counter=0
 
 #0818
-   additem "$kaneko"
+   additem "$skns"
 
 #0815
    add "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen"
