@@ -45,7 +45,8 @@ fi
 ./folders/irem92t.sh 
 ./folders/irem107.sh 
 ./folders/jaleco.sh
-./folders/Kaneko.sh 
+./folders/Kaneko.sh
+./folders/skns.sh 
 ./folders/Kiwako.sh 
 ./folders/konami.sh 
 ./folders/konami_twin16.sh 
