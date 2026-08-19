@@ -1264,7 +1264,14 @@ dl "zigzagb.zip"
 dl "znpwfv.zip"
 dl "zzyzzyxx.zip"
 
-
+dl "cairblad.zip"
+dl "drifto94.zip"
+dl "dynagear.zip"
+dl "stmblade.zip"
+dl "twineag2.zip"
+dl "ultrax.zip"
+dl "vasara.zip"
+dl "vasara2.zip"
 
 
 echo -e "${GREEN}${CHECK}${NC} Completed"

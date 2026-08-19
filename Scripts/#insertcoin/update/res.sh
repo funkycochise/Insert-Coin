@@ -227,7 +227,7 @@ dl "blahm1d_lkage.zip" "The legend of Kage"
 #dl "blahm1d_NBAHangtime.zip" "NBA HAngtime"
 dl "blahm1d_NARC.zip" "NARC"
 dl "WolfUnit.zip" "Midway Wolf"
-dl "DynaGear.zip" "Dynagear"
+dl "SSV.zip" "SSV"
 dl "Universal.zip" "Universal"
 dl "KickAndRun.zip" "KickAndRun"
 #dl "Rbisland.zip" "Rainbow Islands"
@@ -356,6 +356,17 @@ find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Spider-Man T
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Super Visual Football European Sega Cup" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Super Visual Soccer Sega Cup" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_The J.League 1994" -exec rm -rf {} +
+
+debug "Seta"
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Change Air Blade.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Storm Blade.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Twin Eagle II - The Rescue Mission.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Ultra X Weapons - Ultra Keibitai.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Vasara.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Vasara 2.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Drift Out '94 - The Hard Order.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Dyna Gear.mra" -delete
+
 
 install
 
