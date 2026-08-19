@@ -250,6 +250,7 @@ dl "SegaG80.zip" "SEGA G80 correct core"
 dl "SFTM.zip" "Street Fighter The Movie"
 dl "SegaS32.zip" "Sega System 32"
 dl "Kaneko.zip" "Kaneko Super Nova"
+dl "Seibu.zip" "Seibu Kaihatsu"
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
@@ -327,7 +328,7 @@ find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Super World 
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Super World Stadium '99" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Tekken 3" -exec rm -rf {} +
 
-debug "Sega System12
+debug "Sega System12"
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Alien3 The Gun (World).mra"
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Arabian Fight (World).mra"
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Burning Rival (World).mra"
