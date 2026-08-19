@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0819
+   additem "$seibu"
+
 #0818
    additem "$skns"
 

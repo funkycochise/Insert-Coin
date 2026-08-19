@@ -1,4 +1,4 @@
-w#!/bin/bash
+#!/bin/bash
 source ./folders/functions.sh
 dir=$neogeo
 
