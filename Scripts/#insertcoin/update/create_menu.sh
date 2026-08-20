@@ -22,6 +22,7 @@ fi
 ./folders/banpresto.sh 
 ./folders/capcom.sh 
 ./folders/cave.sh
+./folders/cinematronics.sh
 ./folders/comad.sh 
 ./folders/cps1.5.sh 
 ./folders/cps1.sh

@@ -329,19 +329,19 @@ find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Super World 
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Tekken 3" -exec rm -rf {} +
 
 debug "Sega System12"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Alien3 The Gun (World).mra"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Arabian Fight (World).mra"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Burning Rival (World).mra"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Dark Edge (World).mra"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Golden Axe The Revenge of Death Adder (World, Rev B).mra"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Holosseum (US, Rev A).mra"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Jurassic Park (World, Rev A).mra"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Rad Rally (World).mra"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Slip Stream (Brazil 950515).mra"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Spider-Man The Videogame (World).mra"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Super Visual Football European Sega Cup (Rev A).mra"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Super Visual Soccer Sega Cup (US, Rev A).mra"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "The J.League 1994 (Japan).mra"
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Alien3 The Gun (World).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Arabian Fight (World).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Burning Rival (World).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Dark Edge (World).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Golden Axe The Revenge of Death Adder (World, Rev B).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Holosseum (US, Rev A).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Jurassic Park (World, Rev A).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Rad Rally (World).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Slip Stream (Brazil 950515).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Spider-Man The Videogame (World).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Super Visual Football European Sega Cup (Rev A).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Super Visual Soccer Sega Cup (US, Rev A).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "The J.League 1994 (Japan).mra" -delete
 
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Alien3 The Gun" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Arabian Fight" -exec rm -rf {} +
