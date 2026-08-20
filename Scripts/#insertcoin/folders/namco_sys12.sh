@@ -8,8 +8,8 @@ fi
 
 resh=$(exist "Tekken 3 (World TET2-VER.E1).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
-   add "$dir" "H" "Aqua Rush (Japan AQ1-VER.A1).mra" "_Aqua Rush" "" ""
-   add "$dir" "H" "Ehrgeiz (World, EG2-VER.A).mra" "_Ehrgeiz" "" ""
+   add "$dir" "H" "Aqua Rush (Japan AQ1-VER.A1).mra" "_Aqua Rush" "" "PUZ"
+   add "$dir" "H" "Ehrgeiz (World, EG2-VER.A).mra" "_Ehrgeiz" "" "VSF"
    add "$dir" "H" "Fighting Layer (Asia, FTL3-VER.A).mra" "_Fighting Layer" "" "VSF"
    add "$dir" "H" "Libero Grande (World LG2-VER.A).mra" "_Libero Grande" "" ""
    add "$dir" "H" "Mr. Driller (Japan, DRI1-VER.A2).mra" "_Mr. Driller" "" "ACT"
