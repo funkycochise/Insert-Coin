@@ -66,7 +66,6 @@ function additem {
 counter=0
 
 #0819
-   additem "$seta"
    additem "$seibu"
 
 #0818
@@ -93,7 +92,7 @@ counter=0
    add "Raiden DX.mra" "_Raiden DX" 
    add "Raiden II.mra" "_Raiden II"
    add "Thunder Cross II (World).mra" "_Thunder Cross II"
-   add "Rainbow Islands (World, rev 2, set 1) .mra" "_Rainbow Islands"
+   add "Rainbow Islands (rev 1).mra" "_Rainbow Islands"
 
 #0808
    additem "$midwaytunit"
@@ -123,6 +122,7 @@ counter=0
 
 #0729
 
+   add "Dyna Gear.mra" "_Dyna Gear"
    add "Toobin.mra" "_Toobin"
    add "Asterix (FF ver EAD).mra" "_Asterix"
    add "Wild West C.O.W.-Boys of Moo Mesa (FF, Konami, 1992).mra" "_Wild West C.O.W.-Boys of Moo Mesa"
