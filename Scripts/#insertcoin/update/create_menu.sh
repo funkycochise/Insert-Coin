@@ -76,6 +76,7 @@ fi
 ./folders/rare.sh 
 ./folders/robotron.sh 
 ./folders/rockola.sh 
+./folders/sammy.sh 
 ./folders/scramble.sh 
 ./folders/sega.sh
 ./folders/segamp.sh 
@@ -111,6 +112,7 @@ fi
 ./folders/toaplan_stg.sh 
 ./folders/universal.sh 
 ./folders/upl.sh 
+./folders/visco.sh 
 ./folders/vs.sh 
 ./folders/williams.sh
 ./folders/zn1.sh 
