@@ -42,6 +42,7 @@ bagman=_Bagman
 bally_midway=_Bally-midway
 banpresto=_Banpresto
 capcom=_Capcom-Mitchell
+cinematronics=_Cinematronics
 cps1=_CPS1
 cps15=_CPS15
 cps2=_CPS2
