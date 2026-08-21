@@ -17,6 +17,7 @@ fi
 ./folders/alpha.sh
 ./folders/aleck64.sh
 ./folders/atari.sh
+./folders/atari_sys2.sh
 ./folders/bagman.sh
 ./folders/bally-midway.sh
 ./folders/banpresto.sh 
