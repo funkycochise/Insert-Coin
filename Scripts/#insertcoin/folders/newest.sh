@@ -65,7 +65,9 @@ function additem {
 
 counter=0
 
-#0819
+#0821
+   additem "$atarisys2"
+
    additem "$seibu"
 
 #0818
