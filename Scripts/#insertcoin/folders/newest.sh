@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0821
+   add "Street Fighter III 3rd Strike Fight for the Future (Japan 990512, NO CD).mra" "_Street Fighter III 3rd Strike Fight for the Future"
    additem "$atarisys2"
 
    additem "$seibu"
