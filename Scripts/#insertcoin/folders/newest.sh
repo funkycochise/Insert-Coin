@@ -67,6 +67,7 @@ counter=0
 
 #0821
    add "Street Fighter III 3rd Strike Fight for the Future (Japan 990512, NO CD).mra" "_Street Fighter III 3rd Strike Fight for the Future"
+   additem "$namco_sys11"
    additem "$atarisys2"
 
    additem "$seibu"
@@ -174,7 +175,6 @@ counter=0
 
 #0713
    additem "$gaelco"
-   additem "$namco_sys11"
 
 #0710
    add "Trio The Punch (World).mra" "_Trio The Punch"
