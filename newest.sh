@@ -65,8 +65,96 @@ function additem {
 
 counter=0
 
+#0821
+   add "Street Fighter III 3rd Strike Fight for the Future (Japan 990512, NO CD).mra" "_Street Fighter III 3rd Strike Fight for the Future"
+   additem "$namco_sys11"
+   additem "$atarisys2"
+
+   additem "$seibu"
+
+#0818
+   additem "$skns"
+
+#0815
+   add "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen"
+   add "Volfied (World, rev 1).mra" "_Volfied"
+   add "Block Out (set 1).mra" "_Block Out"
+   add "G.I. Joe (World, EAB).mra" "_G.I. Joe"
+   add "Thunder Zone (World, Rev 1).mra" "_Thunder Zone"
+   add "Street Fighter - The Movie (v1.12).mra" "_Street Fighter - The Movie"
+   additem "$segasys32"
+   additem "$segag80"
+   additem "$zn1taito"
+   add "Twin Hawk (World).mra" "_Twin Hawk"
+
+#0812
+   add "Bucky O'Hare.mra" "_Bucky O'Hare"
+#0810
+   add "Guardians (Denjin Makai II).mra" "_Guardians"
+   add "DenjinMakai.mra" "_DenjinMakai"
+   add "Grind Stormer.mra" "_Grind Stormer"
+   add "Raiden DX.mra" "_Raiden DX" 
+   add "Raiden II.mra" "_Raiden II"
+   add "Thunder Cross II (World).mra" "_Thunder Cross II"
+   add "Rainbow Islands (rev 1).mra" "_Rainbow Islands"
+
+#0808
+   additem "$midwaytunit"
+   add "Godzilla (Japan).mra" "_Godzilla"
+   add "Dogyuun.mra" "_Dogyuun"
+
+#0806
+   add "Volfied (World, rev 1) .mra" "_Volfied"
+   additem "$segasys24"
+
+#0803
+   additem "$namco_sys12"
+
+#0801
+   additem "$deco16"
+   #add "Super Burger Time (World, Set 1).mra" "_Super Burger Time"
+   #add "Diet Go Go (Europe, Set 1).mra" "_Diet Go Go"
+   #add "Buck Rogers Planet of Zoom (not encrypted, set 1).mra" "_Buck Rogers Planet of Zoom"
+   #add "Nitro Ball (World, Set 1).mra" "_Nitro Ball"
+   #add "Double Wings (Asia).mra" "_Double Wings"
+   #add "Mutant Fighter (World, Ver. EM-5).mra" "_Mutant Fighter"
+
+#0730
+   
+   linkfolder "_NARC"
+   additem "$universal"
+
+#0729
+
+   add "Dyna Gear.mra" "_Dyna Gear"
+   add "Toobin.mra" "_Toobin"
+   add "Asterix (FF ver EAD).mra" "_Asterix"
+   add "Wild West C.O.W.-Boys of Moo Mesa (FF, Konami, 1992).mra" "_Wild West C.O.W.-Boys of Moo Mesa"
+
+#0727
+   add "Raiden (World).mra" "_Raiden"
+   add "Ikki.mra" "_Ikki"
+   additem "$midwaywolf"
+   #add "Spider-Man The Videogame (World).mra" "_Spider-Man The Videogame"
+   #add "Holosseum (US, Rev A).mra" "_Holosseum"
+   #add "Golden Axe The Revenge of Death Adder (World, Rev B).mra" "_Golden Axe The Revenge of Death Adder"
+   add "TrackPak.mra" "_SuperOffRoad" "_Track Pak"
+
+#0724
+   add "Pocket Gal (Japan).mra" "_Pocket Gal"
+   #add "Mortal Kombat (Wolf Unit).mra" "_Mortal Kombat"
+   #add "Mortal Kombat II (Wolf Unit).mra" "_Mortal Kombat II"
+   #add "Ultimate Mortal Kombat 3.mra" "_Ultimate Mortal Kombat 3"
+   #add "Smash T.V. (rev 8.00) [firefix mixboot].mra" "_Smash T.V."
+   #add "Rampage (Rev 3, 860827).mra" "_Rampage"
+   add "The Legend of Kage (bootleg set 1).mra" "_The Legend of Kage"
+
+#0722
+   add "NBAHangtime.mra" "_NBAHangtime"
+   add "WWFWrestleMania.mra" "_WWFWrestleMania"
+
 #0719
-   add "Wild West C.O.W.-Boys of Moo Mesa (ver EAB).mra" "_Wild West C.O.W.-Boys of Moo Mesa"
+   add "Magical Error wo Sagase.mra" "_Magical Error wo Sagase"
    add "Operation Wolf (World, rev 2, set 1).mra" "_Operation Wolf"
    add "Empire City.mra" "_Empire City"
    add "Hyper Duel.mra" "_Hyper Duel"
@@ -86,10 +174,7 @@ counter=0
    add "Legionnaire (World).mra" "_Legionnaire"
 
 #0713
-   additem "$namco_sys11"
-   #add "Tekken (World TE2 Ver.C).mra" "_Tekken"
-   #add "Tekken 2 Ver.B (World TES2 Ver.B).mra" "_Tekken 2"
-   #add "Xevious 3D-G (World XV32-VER.B).mra" "_Xevious 3D-G"
+   additem "$gaelco"
 
 #0710
    add "Trio The Punch (World).mra" "_Trio The Punch"
@@ -277,7 +362,7 @@ counter=0
 #0303
    add "Vastar.mra" "_Vastar"
    add "Planet Probe.mra" "_Planet Probe"
-   add "The Legend of Kage (Rev 2).mra" "_The Legend of Kage"
+   add "The Legend of Kage (Rev 2) (Coc).mra" "_The Legend of Kage"
    add "KiKi KaiKai (Japan).mra" "_KiKi KaiKai"
 
 #0222   
