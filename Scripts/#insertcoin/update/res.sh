@@ -324,7 +324,7 @@ find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Xevious 3D-G (XV32-VER.B).
 
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Dancing Eyes" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Dunk Mania" -exec rm -rf {} +
-find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_DKosodate Quiz My Angel 3" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Kosodate Quiz My Angel 3" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Pocket Racer" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Point Blank 2" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Prime Goal EX" -exec rm -rf {} +
