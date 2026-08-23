@@ -14,7 +14,6 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "H" "Buck Rogers Planet of Zoom (not encrypted, set 1).mra" "_Buck Rogers Planet of Zoom" "" "STG"
    add "$dir" "H" "BankPanic.mra" "_BankPanic"
-   add "$dir" "H" "OutRunners.mra" "_OutRunners" "" "RAC"
    add "$dir" "H" "Super Locomotive.mra" "_Super Locomotive" "" "ACT"
    dot
 fi
