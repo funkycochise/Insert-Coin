@@ -49,6 +49,7 @@ fi
 ./folders/irem107.sh 
 ./folders/jaleco.sh
 ./folders/Kaneko.sh
+./folders/Kaneko16.sh
 ./folders/skns.sh 
 ./folders/Kiwako.sh 
 ./folders/konami.sh 
