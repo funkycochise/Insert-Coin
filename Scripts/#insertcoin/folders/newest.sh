@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0826
+   additem "$kaneko16"
+
 #0823
    add "OutRunners.mra" "_OutRunners"
    add "Arabian.mra" "_Arabian"
