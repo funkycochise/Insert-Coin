@@ -71,6 +71,7 @@ irem107=_Irem M107
 jaleco=_Jaleco
 kaneko=_Kaneko
 skns=_Kaneko_Supernova
+kaneko16=_Kaneko16
 kiwako=_Kiwako
 konami=_Konami
 konamitwin16=_Konami Twin16
