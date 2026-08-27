@@ -1284,4 +1284,7 @@ dl "btlkroad.zip"
 dl "gunbird.zip"
 dl "samuraia.zip"
 
+dl "kinst.zip"
+dl "kinst2.zip"
+
 echo -e "${GREEN}${CHECK}${NC} Completed"

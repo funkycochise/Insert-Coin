@@ -19,6 +19,7 @@ fi
 ./folders/atari.sh
 ./folders/atari_sys1.sh
 ./folders/atari_sys2.sh
+./folders/atlus.sh
 ./folders/bagman.sh
 ./folders/bally-midway.sh
 ./folders/banpresto.sh 

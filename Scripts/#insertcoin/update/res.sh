@@ -253,6 +253,7 @@ dl "vs.zip" "Nintendo VS"
 dl "WolfUnit.zip" "Midway Wolf"
 dl "ZN1.zip" "Namco ZN1"
 dl "ZN1Taito.zip" "ZN1 Taito"
+dl "KillerInstinct.zip" "Killer Instinct"
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
@@ -395,6 +396,19 @@ find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Vasara 2.mra" -delete
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Drift Out '94 - The Hard Order.mra" -delete
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Dyna Gear.mra" -delete
 
+debug "Seibu"
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "E Jong High School (Japan).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Raiden Fighters (Germany).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Raiden Fighters 2 - Operation Hell Dive (Germany).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Raiden Fighters Jet (Germany).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Senkyu (Japan, newer).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Viper Phase 1 (New Version, World).mra" -delete
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Raiden Fighters" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Raiden Fighters 2 - Operation Hell Dive" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Raiden Fighters Jet" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Senkyu" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Viper Phase 1" -exec rm -rf {} +
+find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "SeibuSPI.rbf" -delete
 
 install
 
