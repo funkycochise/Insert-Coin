@@ -76,6 +76,9 @@ counter=0
    add "Street Fighter III 3rd Strike Fight for the Future (Japan 990512, NO CD).mra" "_Street Fighter III 3rd Strike Fight for the Future"
    additem "$namco_sys11"
    additem "$atarisys2"
+   additem "$seta"
+   additem "$visco"
+   additem "$sammy"
 
    additem "$seibu"
 
@@ -133,7 +136,7 @@ counter=0
 
 #0729
 
-   add "Dyna Gear.mra" "_Dyna Gear"
+   #add "Dyna Gear.mra" "_Dyna Gear"
    add "Toobin.mra" "_Toobin"
    add "Asterix (FF ver EAD).mra" "_Asterix"
    add "Wild West C.O.W.-Boys of Moo Mesa (FF, Konami, 1992).mra" "_Wild West C.O.W.-Boys of Moo Mesa"
