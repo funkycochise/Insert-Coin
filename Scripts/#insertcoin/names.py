@@ -36,6 +36,7 @@ genre_rng_h=__Run'n'Gun_H
 genre_rng_v=__Run'n'Gun_V
 
 alpha=_Alpha
+atlus=_Atlus
 aleck64=_Aleck64
 atari=_Atari
 atarisys1=_Atari-System-1
