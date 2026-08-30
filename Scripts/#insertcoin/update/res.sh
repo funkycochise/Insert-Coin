@@ -254,6 +254,7 @@ dl "WolfUnit.zip" "Midway Wolf"
 dl "ZN1.zip" "Namco ZN1"
 dl "ZN1Taito.zip" "ZN1 Taito"
 dl "KillerInstinct.zip" "Killer Instinct"
+dl "Psikyo.zip" "Psikyo 1st gen"
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
