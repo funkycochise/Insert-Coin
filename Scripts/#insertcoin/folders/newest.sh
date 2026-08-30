@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0830
+   additem "$psikyogen1"
+
 #0827
    add "Killer Instinct.mra" "_Killer Instinct"
    add "Killer Instinct 2.mra" "_Killer Instinct 2"

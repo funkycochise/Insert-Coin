@@ -1,12 +1,12 @@
 #!/bin/bash
 source ./folders/functions.sh
 if [ "$show_system" == "1" ]; then
-   dir=$psikyo1gen
+   dir=$psikyogen1
 else
    dir=$psikyo
 fi
 
-resv=$(exist "Strikers 1945 II.mra")
+resv=$(exist "Gunbird (World).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "V"  "Battle K-Road.mra" "_Battle K-Road" "" "VSF"
