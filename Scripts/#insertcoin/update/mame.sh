@@ -1286,5 +1286,8 @@ dl "samuraia.zip"
 
 dl "kinst.zip"
 dl "kinst2.zip"
+dl "battlnts.zip"
+dl "radm.zip"
+dl "mslider.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
