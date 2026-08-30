@@ -190,6 +190,7 @@ nintendo=$(ini_get "$names" nintendo)
 nmk=$(ini_get "$names" nmk)
 orca=$(ini_get "$names" orca)
 pacman=$(ini_get "$names" pacman)
+psikyo=$(ini_get "$names" psikyo)
 psikyosh2=$(ini_get "$names" psikyosh2)
 raizing=$(ini_get "$names" raizing)
 rare=$(ini_get "$names" rare)
@@ -236,6 +237,8 @@ vs=$(ini_get "$names" vs)
 williams=$(ini_get "$names" williams)
 zn1=$(ini_get "$names" zn1)
 zn1taito=$(ini_get "$names" zn1taito)
+zn1capcom=$(ini_get "$names" zn1capcom)
+zn2capcom=$(ini_get "$names" zn2capcom)
 }
 
 loadsetup

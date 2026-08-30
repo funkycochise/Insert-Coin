@@ -1,6 +1,10 @@
 #!/bin/bash
 source ./folders/functions.sh
-dir=$psikyosh2
+if [ "$show_system" == "1" ]; then
+   dir=$psikyosh2
+else
+   dir=$psikyo
+fi
 
 resh=$(exist "Tetris The Absolute - The Grand Master 2.mra")
 resv=$(exist "Strikers 1945 II.mra")
