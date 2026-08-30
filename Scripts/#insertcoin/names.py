@@ -97,6 +97,7 @@ nintendo=_Nintendo
 nmk=_Nmk
 orca=_Orca
 pacman=_Pacman
+psikyo1gen=_Psikyo_1st gen
 psikyosh2=_Psikyo_SH2
 raizing=_Raizing-8ing
 rare=_Rare
@@ -143,6 +144,8 @@ vs=_Nintendo Vs.
 williams=_Williams
 zn1=_ZN1
 zn1taito=_ZN1-TaitoFX1B
+zn1capcom=_ZN1-Capcom
+zn2capcom=_ZN2-Capcom
 """
 
 # ------------------- Fonctions -------------------
