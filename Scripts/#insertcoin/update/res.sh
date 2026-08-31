@@ -23,6 +23,7 @@ fi
 cd /media/fat/Scripts/res/
 
 debug="0"
+shopt -s nullglob
 function debug {
 
 if [ "$debug" == "1" ]; then
@@ -231,7 +232,7 @@ dl "Kaneko16.zip" "Kaneko 16"
 dl "KickAndRun.zip" "KickAndRun"
 dl "MegaPlay.zip" "SEGA Megaplay"
 dl "Outrunners.zip" "Outrunners"
-dl "Psikyo.zip" "Psikyo SH2"
+dl "PsikyoSH2.zip" "Psikyo SH2"
 #dl "Raiden2.zip" "Raiden2"
 dl "SegaG80.zip" "SEGA G80 correct core"
 dl "SegaS24.zip" "Sega System 24"
@@ -410,6 +411,19 @@ find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Raiden Fight
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Senkyu" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Viper Phase 1" -exec rm -rf {} +
 find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "SeibuSPI.rbf" -delete
+
+debug "Psikyo"
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Battle K-Road.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Gunbird (World).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Samurai Aces (World).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Strikers 1945 (World).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Tengai (World).mra" -delete
+
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Battle K-Road" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Gunbird" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Samurai Aces" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Strikers 1945" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Tengai" -exec rm -rf {} +
 
 install
 
