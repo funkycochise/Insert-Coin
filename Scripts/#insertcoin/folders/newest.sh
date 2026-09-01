@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0831
+   additem "$cavecv1k"
+
 #0830
    additem "$psikyogen1"
 
