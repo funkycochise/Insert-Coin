@@ -256,6 +256,7 @@ dl "ZN1.zip" "Namco ZN1"
 dl "ZN1Taito.zip" "ZN1 Taito"
 dl "KillerInstinct.zip" "Killer Instinct"
 dl "Psikyo.zip" "Psikyo 1st gen"
+dl "CaveCV1K.zip" "Cave CV1K"
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
@@ -424,6 +425,18 @@ find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Gunbird" -ex
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Samurai Aces" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Strikers 1945" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Tengai" -exec rm -rf {} +
+
+debug "Cave CV1K"
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "DoDonPachi Dai-Fukkatsu Ver 1.5 (Japan, 2008.06.23 MASTER VER 1.5).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Espgaluda II (Japan, 2005-11-14.MASTER VER.).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Ibara (Japan, 2005 03 22 MASTER VER..).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Ibara Kuro Black Label (Japan, 2006-02-06. MASTER VER.).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Muchi Muchi Pork! (Japan, 2007-4-17 MASTER VER.).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama (Japan, 2004-10-12 MASTER VER) .mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama Futari Ver 1.0 (2006-10-23 MASTER VER.).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama Futari Ver 1.5 (2006-12-08.MASTER VER. 1.54.).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama Futari Black Label (2007-12-11 BLACK LABEL VER).mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama Futari Black Label - Another Ver (2009-11-27 INTERNATIONAL BL).mra" -delete 
 
 install
 
