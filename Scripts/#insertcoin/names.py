@@ -51,6 +51,7 @@ cps15=_CPS15
 cps2=_CPS2
 cps3=_CPS3
 cave=_Cave 68000
+cavecv1k=_Cave CV1K
 comad=_Comad Corp
 crazykong=_Crazy Kong
 deco=_DataEast-Deco
