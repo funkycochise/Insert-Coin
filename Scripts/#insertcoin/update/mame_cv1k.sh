@@ -54,23 +54,23 @@ function dl {
 
 echo "Updating mame folder $des_games"
 
-
-dl "mushisam.zip"
+dl "akatana.zip"
+dl "ddpdfk.zip"
+dl "ddpsdoj.zip"
+dl "ddpsdoj.zip"
+dl "deathsml.zip"
+dl "dfkbl.zip"
+dl "dsmbl.zip"
 dl "espgal2.zip"
-dl "mushitam.zip"
 dl "futari15.zip"
 dl "futaribl.zip"
 dl "ibara.zip"
 dl "ibarablk.zip"
-dl "deathsml.zip"
+dl "matsuri15.zip"
 dl "mmpork.zip"
+dl "mushisam.zip"
+dl "mushitam.zip"
 dl "pinkswts.zip"
-dl "ddpdfk.zip"
-dl "dsmbl.zip"
-dl "dfkbl.zip"
-dl "akatana.zip"
-dl "ddpsdoj.zip"
-dl "ddpsdoj.zip"
 
 
 
