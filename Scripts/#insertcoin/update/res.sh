@@ -257,6 +257,7 @@ dl "ZN1Taito.zip" "ZN1 Taito"
 dl "KillerInstinct.zip" "Killer Instinct"
 dl "Psikyo.zip" "Psikyo 1st gen"
 dl "CaveCV1K.zip" "Cave CV1K"
+dl "EscapeRobotMonster.zip" "Escape From The Planet of the robot monsters"
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
