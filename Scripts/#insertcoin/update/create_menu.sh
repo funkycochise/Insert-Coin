@@ -108,6 +108,7 @@ fi
 ./folders/sun.sh 
 ./folders/tad.sh 
 ./folders/taito.sh 
+#./folders/taitob.sh 
 ./folders/taitof2.sh 
 ./folders/taitosj.sh 
 ./folders/taitox.sh 
@@ -123,7 +124,8 @@ fi
 ./folders/vs.sh 
 ./folders/williams.sh
 ./folders/zn1.sh 
-./folders/zn1taito.sh 
+./folders/zn1taito.sh
+./folders/zn2.sh 
 if [ "$newest" == "1" ]; then
   ./folders/newest.sh 
 fi

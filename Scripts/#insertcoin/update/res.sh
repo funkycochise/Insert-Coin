@@ -252,12 +252,15 @@ dl "TwinHawk.zip" "TwinHawk/Daisenpu"
 dl "Universal.zip" "Universal"
 dl "vs.zip" "Nintendo VS"
 dl "WolfUnit.zip" "Midway Wolf"
-dl "ZN1.zip" "Namco ZN1"
+dl "ZN1.zip" "ZN1 Namco"
 dl "ZN1Taito.zip" "ZN1 Taito"
 dl "KillerInstinct.zip" "Killer Instinct"
 dl "Psikyo.zip" "Psikyo 1st gen"
 dl "CaveCV1K.zip" "Cave CV1K"
 dl "EscapeRobotMonster.zip" "Escape From The Planet of the robot monsters"
+dl "ZN2.zip" "ZN2 Capcom"
+#dl "TaitoB.zip" "Taito Type B"
+
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
