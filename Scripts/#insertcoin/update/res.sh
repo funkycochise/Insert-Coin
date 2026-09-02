@@ -438,6 +438,13 @@ find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama Futari Ver 
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama Futari Black Label (2007-12-11 BLACK LABEL VER).mra" -delete
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama Futari Black Label - Another Ver (2009-11-27 INTERNATIONAL BL).mra" -delete 
 
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_DoDonPachi Dai-Fukkatsu" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Espgaluda II" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Ibara" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Muchi Muchi Pork!" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Mushihime-Sama" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Mushihime-Sama Futari" -exec rm -rf {} +
+
 install
 
 renexisting
