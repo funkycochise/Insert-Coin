@@ -194,6 +194,7 @@ if test -f "./update/install_local.sh"; then
 fi
 if [ "$mame_rom" == "1" ]; then
    ./update/mame.sh
+   ./update/mame_cv1k.sh
 fi
 if [ "$neo_rom" == "1" ]; then
    ./update/neogeo.sh
