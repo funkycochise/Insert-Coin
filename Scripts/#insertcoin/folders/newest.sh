@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0831
+   add "Escape from the Planet of the Robot Monsters (set 1).mra" "_Escape from the Planet of the Robot Monsters"
    additem "$cavecv1k"
 
 #0830
