@@ -177,4 +177,9 @@ if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "cave_*" ! -nam
 fi
 find $CORE -maxdepth 1 -type f -name "Guardians_*" ! -name "Guardians_20260824.rbf" -delete
 
+debug "SKNS"
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "SKNS_*" ! -name "SKNS_20260901.rbf"
+fi
+find $CORE -maxdepth 1 -type f -name "SKNS_*" ! -name "SKNS_20260901.rbf" -delete
+
 echo -e "${GREEN}${CHECK}${NC} Completed"
