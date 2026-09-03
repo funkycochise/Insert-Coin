@@ -163,9 +163,9 @@ fi
 find $CORE -maxdepth 1 -type f -name "SMS_*" ! -name "SMS_20260804.rbf" -delete
 
 debug "cave"
-if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "cave_*" ! -name "cave_20260808.rbf"
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "cave_*" ! -name "Cave_20260825.rbf"
 fi
-find $CORE -maxdepth 1 -type f -name "cave_*" ! -name "cave_20260808.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "cave_*" ! -name "Cave_20260825.rbf" -delete
 
 debug "SSV"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "SSV*" ! -name "SSV_20260828.rbf"
@@ -181,5 +181,11 @@ debug "SKNS"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "SKNS_*" ! -name "SKNS_20260901.rbf"
 fi
 find $CORE -maxdepth 1 -type f -name "SKNS_*" ! -name "SKNS_20260901.rbf" -delete
+
+debug "ChampionBaseball"
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "ChampionBaseball_*" ! -name "ChampionBaseball_20260901.rbf"
+fi
+find $CORE -maxdepth 1 -type f -name "SKNS_*" ! -name "ChampionBaseball_20260901.rbf" -delete
+
 
 echo -e "${GREEN}${CHECK}${NC} Completed"

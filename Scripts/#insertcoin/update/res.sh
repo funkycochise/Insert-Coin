@@ -204,7 +204,7 @@ dl "res.zip" "Neogeo / IremM92 Turbo mras"
 #dl "Rbisland.zip" "Rainbow Islands"
 #dl "Toobin.zip" "Toobin"
 #dl "volfied.zip" "Volfied"
-dl "AlphaDenshi.zip" "Alpha Denshi Soccer/Baseball"
+#dl "AlphaDenshi.zip" "Alpha Denshi Soccer/Baseball"
 #dl "Arabian.zip" "Arabian"
 dl "Argus.zip" "Argus"
 dl "asterix.zip" "Asterix"
@@ -260,6 +260,7 @@ dl "CaveCV1K.zip" "Cave CV1K"
 dl "EscapeRobotMonster.zip" "Escape From The Planet of the robot monsters"
 dl "ZN2.zip" "ZN2 Capcom"
 #dl "TaitoB.zip" "Taito Type B"
+dl "EscKids.zip" "Escape Kids"
 
 
 #remove any previous SmashTV file
@@ -431,18 +432,16 @@ find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Strikers 194
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Tengai" -exec rm -rf {} +
 
 debug "Cave CV1K"
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "DoDonPachi Dai-Fukkatsu Ver 1.5 (Japan, 2008.06.23 MASTER VER 1.5).mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Espgaluda II (Japan, 2005-11-14.MASTER VER.).mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Ibara (Japan, 2005 03 22 MASTER VER..).mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Ibara Kuro Black Label (Japan, 2006-02-06. MASTER VER.).mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Muchi Muchi Pork! (Japan, 2007-4-17 MASTER VER.).mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama (Japan, 2004-10-12 MASTER VER) .mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama Futari Ver 1.0 (2006-10-23 MASTER VER.).mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama Futari Ver 1.5 (2006-12-08.MASTER VER. 1.54.).mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama Futari Black Label (2007-12-11 BLACK LABEL VER).mra" -delete
-find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama Futari Black Label - Another Ver (2009-11-27 INTERNATIONAL BL).mra" -delete 
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Deathsmiles*.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "DoDonPachi Dai-Fukkatsu*.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Espgaluda II*.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Ibara*.mra" -delete
+
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Muchi Muchi Pork*.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama*.mra" -delete
 
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_DoDonPachi Dai-Fukkatsu" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Deathsmiles" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Espgaluda II" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Ibara" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Muchi Muchi Pork!" -exec rm -rf {} +
