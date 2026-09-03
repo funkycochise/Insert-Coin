@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0903
+   additem "$segaxboard"
+
 #0831
    add "Escape Kids.mra" "_Escape Kids"
    additem "$cavecv1k"
