@@ -20,6 +20,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Mushihime-Sama (Japan, 2004-10-12.MASTER VER.).mra" "_Mushihime-Sama" "" "STG"
    add "$dir" "V" "Mushihime-Sama Futari Ver 1.5 (2006-12-08.MASTER VER. 1.54.).mra" "_Mushihime-Sama Futari" "" "STG"
    add "$dir" "V" "Mushihime-Sama Futari Black Label (2007-12-11 BLACK LABEL VER).mra" "_Mushihime-Sama Futari" "" "STG"
+   add "$dir" "V" "Mushihime-Sama Futari Ver 1.5 (2006.12.08.MASTER VER. 1.54.).mra" "_Mushihime-Sama Futari" "" "STG"
    add "$dir" "V" "Mushihime-Sama Futari Black Label - Another Ver (2009-11-27 INTERNATIONAL BL).mra" "_Mushihime-Sama Futari" "" "STG"
    add "$dir" "V" "Mushihime-Sama Matsuri Ver 1.5 (2011.5.23 CAVEMATSURI VER1.5).mra" "_Mushihime-Sama" "" "STG"
    add "$dir" "H" "Puzzle! Mushihime-Tama (Japan, 2005-09-09.MASTER VER) .mra" "_Puzzle! Mushihime-Tama" "" "PUZ"
