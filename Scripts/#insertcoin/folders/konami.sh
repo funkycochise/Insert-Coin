@@ -41,6 +41,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Combat School (joystick).mra" "_Combat School" "" "ACT"
    add "$dir" "H"  "Crime Fighters (World 2 players).mra" "_Crime Fighters"  "" "BEA"
    add "$dir" "H"  "Double Dribble.mra" "_Double Dribble" "" "SPO"
+   add "$dir" "H"  "Escape Kids.mra" "_Escape Kids" "" "ACT"
    add "$dir" "H"  "G.I. Joe (World, EAB).mra" "_G.I. Joe" "" "RNG"
    add "$dir" "H"  "Golfing Greats (World, version L).mra" "_Golfing Greats" "" "SPO"
    add "$dir" "H"  "Gradius.mra" "_Gradius" "" "STG"

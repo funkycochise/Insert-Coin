@@ -66,9 +66,10 @@ function additem {
 counter=0
 
 #0831
+   add "Escape Kids.mra" "_Escape Kids"
+   additem "$cavecv1k"
    additem "$zn2capcom"
    add "Escape from the Planet of the Robot Monsters (set 1).mra" "_Escape from the Planet of the Robot Monsters"
-   additem "$cavecv1k"
 
 #0830
    additem "$psikyogen1"
