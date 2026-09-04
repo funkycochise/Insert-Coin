@@ -120,7 +120,7 @@ counter=0
    add "DenjinMakai.mra" "_DenjinMakai"
    add "Grind Stormer.mra" "_Grind Stormer"
    add "Raiden DX.mra" "_Raiden DX" 
-   add "Raiden II.mra" "_Raiden II"
+   add "Raiden II (US, set 1).mra" "_Raiden II"
    add "Thunder Cross II (World).mra" "_Thunder Cross II"
    add "Rainbow Islands (rev 1).mra" "_Rainbow Islands"
 
