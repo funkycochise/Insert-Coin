@@ -439,6 +439,7 @@ find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Ibara*.mra" -delete
 
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Muchi Muchi Pork*.mra" -delete
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Mushihime-Sama*.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Pink Sweets Ibara Sorekara*.mra" -delete
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Puzzle! Mushihime-Tama*.mra" -delete
 
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_DoDonPachi Dai-Fukkatsu" -exec rm -rf {} +
@@ -448,6 +449,7 @@ find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Ibara" -exec
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Muchi Muchi Pork!" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Mushihime-Sama" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Mushihime-Sama Futari" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Pink Sweets Ibara Sorekara*" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Puzzle! Mushihime-Tama*" -exec rm -rf {} +
 
 install
