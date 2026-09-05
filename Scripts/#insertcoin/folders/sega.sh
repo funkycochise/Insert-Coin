@@ -12,8 +12,11 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Super Zaxxon (315-5013).mra" "_Super Zaxxon" "" "ACT"
    add "$dir" "V" "Zaxxon (Set 1, Rev D).mra" "_Zaxxon" "" "ACT"
 
-   add "$dir" "H" "Buck Rogers Planet of Zoom (not encrypted, set 1).mra" "_Buck Rogers Planet of Zoom" "" "STG"
    add "$dir" "H" "BankPanic.mra" "_BankPanic"
+   add "$dir" "H" "Buck Rogers Planet of Zoom (not encrypted, set 1).mra" "_Buck Rogers Planet of Zoom" "" "STG"
+   add "$dir" "H" "Hang-On.mra" "_Hang-On" "" "RAC"
+   add "$dir" "H" "Space Harrier (Rev A, 8751 315-5163A).mra" "_Space Harrier" "" "ACT"
    add "$dir" "H" "Super Locomotive.mra" "_Super Locomotive" "" "ACT"
+
    dot
 fi
