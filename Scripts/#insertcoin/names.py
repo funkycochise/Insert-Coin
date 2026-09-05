@@ -149,7 +149,8 @@ visco=_Visco
 vs=_Nintendo Vs.
 williams=_Williams
 zn1=_ZN1
-zn1taito=_ZN1-TaitoFX1B
+zn1namco=_ZN1-Namco
+zn1taito=_ZN1-Taito
 zn1capcom=_ZN1-Capcom
 zn2capcom=_ZN2-Capcom
 """
