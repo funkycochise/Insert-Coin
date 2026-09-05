@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0905
+   additem "$uplfb"
+
 #0903
    additem "$segaxboard"
 
