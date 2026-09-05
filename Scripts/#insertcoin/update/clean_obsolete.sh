@@ -33,9 +33,9 @@ fi
 find $CORE -maxdepth 1 -type f -name "NaughtyBoy_*" ! -name "NaughtyBoy_20250714.rbf" -delete
 
 debug "PsikyoSH"
-if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260817.rbf"
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260905.rbf"
 fi
-find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260817.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "PsikyoSH2_*" ! -name "PsikyoSH2_20260905.rbf" -delete
 
 debug "Psikyo"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "Psikyo_*" ! -name "Psikyo_20260904.rbf"
