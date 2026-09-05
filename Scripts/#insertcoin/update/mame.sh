@@ -1308,5 +1308,12 @@ dl "techromn.zip"
 dl "techromn.zip"
 dl "tgmj.zip"
 
+dl "coh1000c.zip"
+dl "ts2.zip"
+dl "glpracr.zip"
+dl "starglad.zip"
+dl "sfex.zip"
+dl "sfexp.zip"
+
 
 echo -e "${GREEN}${CHECK}${NC} Completed"

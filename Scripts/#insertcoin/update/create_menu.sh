@@ -125,9 +125,10 @@ fi
 ./folders/visco.sh 
 ./folders/vs.sh 
 ./folders/williams.sh
-./folders/zn1.sh 
+./folders/zn1namco.sh 
 ./folders/zn1taito.sh
-./folders/zn2.sh 
+./folders/zn1capcom.sh 
+./folders/zn2capcom.sh 
 if [ "$newest" == "1" ]; then
   ./folders/newest.sh 
 fi
