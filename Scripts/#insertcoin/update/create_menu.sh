@@ -120,7 +120,8 @@ fi
 ./folders/toaplan.sh 
 ./folders/toaplan_stg.sh 
 ./folders/universal.sh 
-./folders/upl.sh 
+./folders/upl.sh
+./folders/uplfb.sh 
 ./folders/visco.sh 
 ./folders/vs.sh 
 ./folders/williams.sh
