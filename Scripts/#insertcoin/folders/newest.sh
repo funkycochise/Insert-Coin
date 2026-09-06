@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0905
+   add "Xybots.mra" "_Xybots"
    additem "$taitox"   
    add "Space Harrier (Rev A, 8751 315-5163A).mra" "_Space Harrier"
    additem "$uplfb"

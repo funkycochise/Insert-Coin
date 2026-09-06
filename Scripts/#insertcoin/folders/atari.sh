@@ -48,6 +48,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Subs.mra" "_Subs"
    add "$dir" "H" "Tempest.mra" "_Tempest" "" "ACT"
    add "$dir" "H" "Vindicators Part II (rev 3).mra" "_Vindicators part II"
+   add "$dir" "H" "Xybots.mra" "_Xybots" "" ""
 
    dot
 fi
