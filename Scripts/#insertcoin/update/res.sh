@@ -263,6 +263,7 @@ dl "ZN2.zip" "ZN2 Capcom"
 #dl "TaitoB.zip" "Taito Type B"
 dl "EscKids.zip" "Escape Kids"
 dl "SpaceHarrier.zip" "Space Harrier"
+dl "XYBots.zip" "XY Bots"
 
 
 #remove any previous SmashTV file
