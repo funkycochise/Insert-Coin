@@ -1314,4 +1314,9 @@ dl "zigzagb.zip"
 dl "znpwfv.zip"
 dl "zzyzzyxx.zip"
 
+dl "kyustrkr.zip"
+dl "ballbros.zip"
+dl "superman.zip"
+dl "gigandes.zip"
+
 echo -e "${GREEN}${CHECK}${NC} Completed"
