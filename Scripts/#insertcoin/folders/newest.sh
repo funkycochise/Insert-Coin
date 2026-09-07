@@ -72,6 +72,7 @@ counter=0
    additem "$uplfb"
 
 #0903
+   additem "$segayboard"
    additem "$segaxboard"
 
 #0831
