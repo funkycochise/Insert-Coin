@@ -265,7 +265,7 @@ dl "EscKids.zip" "Escape Kids"
 dl "SpaceHarrier.zip" "Space Harrier"
 dl "XYBots.zip" "XY Bots"
 dl "SegaYBoard.zip" "Sega YBoard"
-
+dl "HardDrivin.zip" "Hard Drivin'"
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
