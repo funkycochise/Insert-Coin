@@ -34,6 +34,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Gauntlet (rev 14).mra" "_Gauntlet" "" "ACT"
    add "$dir" "H" "Gauntlet II.mra" "_Gauntlet II" "" "ACT"
    add "$dir" "H" "Gravitar (Ver 3).mra" "_Gravitar"
+   add "$dir" "H" "Hard Drivin' (Cockpit, rev 7).mra" "_Hard Drivin'" "" "RAC"
    add "$dir" "H" "Klax.mra" "_Klax" "" "PUZ"
    add "$dir" "H" "Lunar Battle (Prototype).mra" "_Lunar Battle"
    add "$dir" "H" "Lunar Lander.mra" "_Lunar Lander"

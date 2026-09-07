@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0907
+   add "Hard Drivin' (Cockpit, rev 7).mra" "_Hard Drivin'"
+
 #0905
    add "Xybots.mra" "_Xybots"
    additem "$taitox"   
