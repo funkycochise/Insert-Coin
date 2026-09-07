@@ -87,6 +87,7 @@ fi
 ./folders/scramble.sh 
 ./folders/sega.sh
 ./folders/segax.sh
+./folders/segay.sh
 ./folders/segamp.sh 
 ./folders/segaoutrun.sh 
 ./folders/segasys1.sh 
