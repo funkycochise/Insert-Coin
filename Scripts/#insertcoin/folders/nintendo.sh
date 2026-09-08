@@ -14,5 +14,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "H"  "Popeye (Rev D).mra" "_Popeye" "" "ACT"
    add "$dir" "H"  "Sky Skipper.mra" "_Sky Skipper" "" "ACT"
+   add "$dir" "H"  "Punch-Out!! (Rev B).mra" "_Punch-Out!!" "" "SPO"
+   add "$dir" "H"  "Super Punch-Out!! (Rev B).mra" "_Super Punch-Out!!" "" "SPO"
    dot
 fi
