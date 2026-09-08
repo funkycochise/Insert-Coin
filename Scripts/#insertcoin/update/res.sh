@@ -264,6 +264,7 @@ dl "ZN2.zip" "ZN2 Capcom"
 dl "EscKids.zip" "Escape Kids"
 dl "SpaceHarrier.zip" "Space Harrier"
 dl "XYBots.zip" "XY Bots"
+dl "PunchOut.zip" "Punch Out/Super Punch Out"
 dl "SegaYBoard.zip" "Sega YBoard"
 dl "HardDrivin.zip" "Hard Drivin'"
 
