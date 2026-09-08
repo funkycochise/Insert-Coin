@@ -5,6 +5,7 @@ dir=$nintendo
 resh=$(exist "Sky Skipper.mra")
 resv=$(exist "Donkey Kong (US, Set 1).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
+
    add "$dir" "V"  "Donkey Kong (US, Set 1).mra" "_Donkey Kong" "" "ACT"
    add "$dir" "V"  "Donkey Kong 3 (US).mra" "_Donkey Kong 3" "" "ACT"
    add "$dir" "V"  "Donkey Kong Junior (US, Set F-2).mra" "_Donkey Kong Junior" "" "ACT"
@@ -12,6 +13,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V"  "Radar Scope (rev. D).mra" "_Radar Scope" "" "STG"
    add "$dir" "V"  "Space Firebird.mra" "_Space Firebird" "" "STG"
 
+   add "$dir" "H"  "Arm Wrestling.mra" "_Arm Wrestling" "" "SPO"
    add "$dir" "H"  "Popeye (Rev D).mra" "_Popeye" "" "ACT"
    add "$dir" "H"  "Sky Skipper.mra" "_Sky Skipper" "" "ACT"
    add "$dir" "H"  "Punch-Out!! (Rev B).mra" "_Punch-Out!!" "" "SPO"

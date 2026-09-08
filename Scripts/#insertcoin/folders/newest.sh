@@ -69,6 +69,7 @@ counter=0
    add "Hard Drivin' (Cockpit, rev 7).mra" "_Hard Drivin'"
    add "Punch-Out!! (Rev B).mra" "_Punch-Out!!"
    add "Super Punch-Out!! (Rev B).mra" "_Super Punch-Out!!"
+   add "Arm Wrestling.mra" "_Arm Wrestling"
 
 #0905
    add "Xybots.mra" "_Xybots"
