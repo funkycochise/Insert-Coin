@@ -457,6 +457,14 @@ find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Mushihime-Sa
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Pink Sweets Ibara Sorekara*" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Puzzle! Mushihime-Tama*" -exec rm -rf {} +
 
+debug "Punch Out/Super Punch Out"
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Arm Wrestling.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Punch-Out!! (Rev B).mra" -delete 
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Super Punch-Out!! (Rev B).mra" -delete 
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Punch-Out!!" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Super Punch-Out!!" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Arm Wrestling" -exec rm -rf {} +
+
 install
 
 renexisting
