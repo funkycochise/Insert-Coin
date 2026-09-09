@@ -65,6 +65,11 @@ function additem {
 
 counter=0
 
+#0909
+   additem "$segamodel1"   
+   add "I, Robot.mra" "_I, Robot"
+   add "Vindicators.mra" "_Vindicators"
+
 #0907
    add "Hard Drivin' (Cockpit, rev 7).mra" "_Hard Drivin'"
    add "Punch-Out!! (Rev B).mra" "_Punch-Out!!"
