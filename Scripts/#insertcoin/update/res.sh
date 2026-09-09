@@ -231,7 +231,6 @@ dl "Kaneko.zip" "Kaneko Super Nova"
 dl "Kaneko16.zip" "Kaneko 16"
 dl "KickAndRun.zip" "KickAndRun"
 dl "MegaPlay.zip" "SEGA Megaplay"
-dl "Outrunners.zip" "Outrunners"
 dl "PsikyoSH2.zip" "Psikyo SH2"
 #dl "Raiden2.zip" "Raiden2"
 dl "SegaG80.zip" "SEGA G80 correct core"
@@ -267,6 +266,31 @@ dl "XYBots.zip" "XY Bots"
 dl "PunchOut.zip" "Punch Out/Super Punch Out"
 dl "SegaYBoard.zip" "Sega YBoard"
 dl "HardDrivin.zip" "Hard Drivin'"
+dl "Vindicators.zip" "Vindicators"
+dl "IRobot.zip" "I, Robot"
+dl "Model1.zip" "Sega Model1"
+#dl "Outrunners.zip" "Outrunners"
+
+debug "WolfUnit removal"
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Mortal Kombat (Wolf Unit).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Mortal Kombat 3 (rev 2.1).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Mortal Kombat II (Wolf Unit).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "NBA Hangtime (L1.3).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "NBA Maximum Hangtime (L1.03 06-09-97).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "NHL Open Ice - 2 on 2 Challenge (rev 1.21).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Rampage World Tour.mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Ultimate Mortal Kombat 3.mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "WWF WrestleMania (rev 1.30 08-10-95).mra" -delete
+find /media/fat/_Arcade/cores/ -name "WolfUnit.rbf" -delete
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Mortal Kombat" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Mortal Kombat II" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Mortal Kombat 3" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_NBAHangtime" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_NBA Maximum Hangtime" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_NHL Open Ice - 2 on 2 Challenge" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Rampage World Tour" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Ultimate Mortal Kombat 3" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_WWF WrestleMania" -exec rm -rf {} +
 
 #remove any previous SmashTV file
 debug "SmashTV removal"
@@ -464,6 +488,19 @@ find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Super Punch-Out!! (Rev B).
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Punch-Out!!" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Super Punch-Out!!" -exec rm -rf {} +
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Arm Wrestling" -exec rm -rf {} +
+find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "Punchout_*.rbf" -delete
+debug "Vindicators"
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Vindicators.mra" -delete
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Vindicators" -exec rm -rf {} +
+find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "Vindicators_*.rbf" -delete
+debug "I, Robot"
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "I, Robot.mra" -delete
+find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "I-Robot_*.rbf" -delete
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_I, Robot" -exec rm -rf {} +
+debug "Sega Model1"
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Virtua Racing.mra" -delete
+find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "Model1_*.rbf" -delete
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Virtua Racing" -exec rm -rf {} +
 
 install
 
