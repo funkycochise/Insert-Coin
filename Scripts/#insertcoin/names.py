@@ -110,6 +110,7 @@ scramble=_Scramble
 sega=_Sega
 seta=_Seta
 outrun=_Sega-Outrun
+segamodel1=_Sega-Model1
 segasys1=_Sega-System-1
 segasys2=_Sega-System-2
 segasys32=_Sega-System-32
