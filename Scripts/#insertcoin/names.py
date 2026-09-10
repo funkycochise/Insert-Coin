@@ -135,6 +135,7 @@ tad=_Tad Corp
 taito=_Taito
 taitob=_Taito-B-system
 taitof2=_Taito-F2
+taitof3=_Taito-F3
 taitosj=_Taito-SJ
 taitox=_Taito-X
 technos=_Technos
