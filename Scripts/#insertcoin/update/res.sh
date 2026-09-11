@@ -269,6 +269,7 @@ dl "HardDrivin.zip" "Hard Drivin'"
 dl "Vindicators.zip" "Vindicators"
 dl "IRobot.zip" "I, Robot"
 dl "Model1.zip" "Sega Model1"
+dl "TaitoF3.zip" "Taito F3"
 #dl "Outrunners.zip" "Outrunners"
 
 debug "WolfUnit removal"
