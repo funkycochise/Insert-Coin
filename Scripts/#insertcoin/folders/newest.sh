@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0910
+   additem "$taitof3"   
+
 #0909
    additem "$segamodel1"   
    add "I, Robot.mra" "_I, Robot"
