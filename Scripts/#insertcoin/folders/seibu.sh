@@ -19,5 +19,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "E Jong High School (Japan).mra" "_E Jong High School" "" ""
    add "$dir" "H" "Senkyu (Japan, newer).mra" "_Senkyu" "" "PUZ"
 
+   add "$dir" "H" "Seibu Cup Soccer (set 1).mra" "_Seibu Cup Soccer" "" "SPO"
+
    dot
 fi

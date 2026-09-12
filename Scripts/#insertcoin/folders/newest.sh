@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+#0912
+   add "Seibu Cup Soccer (set 1).mra" "_Seibu Cup Soccer"
+   additem "$suna" 
+
 #0910
    additem "$taitof3"   
 
