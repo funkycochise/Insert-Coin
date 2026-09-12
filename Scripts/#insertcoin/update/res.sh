@@ -271,6 +271,7 @@ dl "IRobot.zip" "I, Robot"
 dl "Model1.zip" "Sega Model1"
 dl "TaitoF3.zip" "Taito F3"
 #dl "Outrunners.zip" "Outrunners"
+dl "SunA.zip" "SunA"
 
 debug "WolfUnit removal"
 find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Mortal Kombat (Wolf Unit).mra" -delete
@@ -502,6 +503,14 @@ debug "Sega Model1"
 find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Virtua Racing.mra" -delete
 find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "Model1_*.rbf" -delete
 find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Virtua Racing" -exec rm -rf {} +
+debug "Suna"
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Brick Zone.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Hard Head.mra" -delete
+find "/media/fat/_Arcade/" -maxdepth 1 -type f -name "Hard Head 2.mra" -delete
+find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "Suna8bit*.rbf" -delete
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Brick Zone" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Hard Head" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Hard Head 2" -exec rm -rf {} +
 
 install
 

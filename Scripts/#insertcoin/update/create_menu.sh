@@ -108,7 +108,8 @@ fi
 ./folders/snk.sh 
 ./folders/stern.sh 
 ./folders/success.sh 
-./folders/sun.sh 
+./folders/sun.sh
+./folders/suna.sh 
 ./folders/tad.sh 
 ./folders/taito.sh 
 #./folders/taitob.sh 
