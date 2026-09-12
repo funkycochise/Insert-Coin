@@ -73,24 +73,16 @@ fi
 find $CORE -maxdepth 1 -type f -name "MajorHavoc_*" ! -name "MajorHavoc_20260730.rbf" -delete
 
 debug "XNSYSTEM11"
-if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" 
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" ! -name "XNSYSTEM11_20260911.rbf"
 fi
-find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" -delete
+find $CORE -maxdepth 1 -type f -name "XNSYSTEM11_*" ! -name "XNSYSTEM11_20260911.rbf" -delete
 
-if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "SYSTEM11_*" 
-fi
-find $CORE -maxdepth 1 -type f -name "SYSTEM11_*" ! -name "SYSTEM11_20260818.rbf" -delete
-
-
-debug "XNSYSTEM12" 
+debug "SYSTEM12" 
 #delete previous XNSYSTEM12
-if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "XNSYSTEM12_20260804.rbf"
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "SYSTEM12_*" ! -name "SYSTEM12_20260804.rbf"
 fi
-find $CORE -maxdepth 1 -type f -name "XNSYSTEM12_20260804.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "XNSYSTEM12_*" ! -name "SYSTEM12_20260804.rbf" -delete
 
-if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "SYSTEM12_20260818.rbf"
-fi
-find $CORE -maxdepth 1 -type f -name "SYSTEM12_*.rbf" ! -name "SYSTEM12_20260818.rbf" -delete
 
 debug "XNZN1"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "XNZN1_*" ! -name "XNZN1_20260721.rbf"
@@ -100,7 +92,7 @@ find $CORE -maxdepth 1 -type f -name "XNZN1_*" ! -name "XNZN1_20260721.rbf" -del
 debug "XNZN1TaitoFX1B"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "XNZN1TaitoFX1B_*" ! -name "XNZN1TaitoFX1B_20260814.rbf"
 fi
-find $CORE -maxdepth 1 -type f -name "XNZN1_*" ! -name "XNZN1TaitoFX1B_20260814.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "XNZN1TaitoFX1B_*" ! -name "XNZN1TaitoFX1B_20260814.rbf" -delete
 
 debug "xnbrkthru"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "xnbrkthru_*" ! -name "xnbrkthru_20260705.rbf"
@@ -185,7 +177,7 @@ find $CORE -maxdepth 1 -type f -name "SKNS_*" ! -name "SKNS_20260901.rbf" -delet
 debug "ChampionBaseball"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "ChampionBaseball_*" ! -name "ChampionBaseball_20260901.rbf"
 fi
-find $CORE -maxdepth 1 -type f -name "SKNS_*" ! -name "ChampionBaseball_20260901.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "ChampionBaseball_*" ! -name "ChampionBaseball_20260901.rbf" -delete
 
 
 echo -e "${GREEN}${CHECK}${NC} Completed"

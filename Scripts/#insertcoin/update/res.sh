@@ -273,6 +273,28 @@ dl "TaitoF3.zip" "Taito F3"
 #dl "Outrunners.zip" "Outrunners"
 dl "SunA.zip" "SunA"
 
+debug "SYS11"
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Dancing Eyes (DC2-VER.B).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Dunk Mania (DM2-VER.C).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Kosodate Quiz My Angel 3 (KQT1-VER.A).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Pocket Racer (Japan PKR1-VER.B).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Point Blank 2 (World GNB2-VER.A).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Prime Goal EX (PG1-VER.A).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Soul Edge Ver. II (SO4-VER.C).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Star Sweep (STP1-VER.A).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Tekken (TE2 Ver.C).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Tekken 2 Ver.B (TES2-VER.D).mra" -delete
+find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Xevious 3D-G (XV32-VER.B).mra" -delete
+find /media/fat/_Arcade/cores/ -name "XNSYSTEM11_*.rbf" -delete
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Dancing Eyes" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Dunk Mania" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Point Blank 2" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Soul Edge" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Star Sweep" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Tekken" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Tekken 2" -exec rm -rf {} +
+find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "_Xevious 3D-G" -exec rm -rf {} +
+
 debug "WolfUnit removal"
 find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Mortal Kombat (Wolf Unit).mra" -delete
 find "/media/fat/_Arcade" -maxdepth 1 -type f -name "Mortal Kombat 3 (rev 2.1).mra" -delete
