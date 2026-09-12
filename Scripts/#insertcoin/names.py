@@ -131,6 +131,7 @@ si=_Space Invaders
 stern=_Stern
 success=_Success
 sun=_Sun
+suna=_SunA
 tad=_Tad Corp
 taito=_Taito
 taitob=_Taito-B-system
