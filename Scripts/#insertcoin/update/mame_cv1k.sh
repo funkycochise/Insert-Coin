@@ -52,7 +52,7 @@ function dl {
    fi
 }
 
-echo "Updating mame folder $des_games"
+echo "Updating CV1K mame folder $des_games"
 
 dl "akatana.zip"
 dl "ddpdfk.zip"
@@ -76,4 +76,4 @@ dl "pinkswts.zip"
 
 
 
-echo -e "${GREEN}${CHECK}${NC} Completed"
+echo -e "${GREEN}${CHECK}${NC} Completed cv1k"

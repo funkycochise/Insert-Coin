@@ -293,6 +293,7 @@ dl "TaitoF3.zip" "Taito F3"
 #dl "Outrunners.zip" "Outrunners"
 dl "SunA.zip" "SunA"
 
+# System11 (nettoyage fusionné, union des deux listes d'origine)
 debug "SYS11"
 delmra "Dancing Eyes (DC2-VER.B).mra"
 delmra "Dunk Mania (DM2-VER.C).mra"
@@ -346,6 +347,7 @@ delmra "Smash T.V*"
 delalt "_Smash T.V*"
 delrbf "SmashTV*"
 
+#force system32 core
 debug "goldenaxe2 removal"
 delrbf "s32GoldenAxe.rbf"
 delrbf "SegaSystem32_20260815.rbf"
@@ -397,26 +399,28 @@ delalt "_Taisen Hot Gimmick 4 Ever"
 delalt "_Taisen Hot Gimmick Kairakuten"
 delalt "_Tetris The Absolute - The Grand Master 2"
 
+
 #vsNES
 debug "vsNES removal"
 delmra "Vs*"
 delalt "_Vs*"
 
-debug "Kiwi"
-delmra "Chuka*.mra"
-delmra "The NewZealand Story*.mra"
-delmra "Kageki*.mra"
-delmra "Insector X*.mra"
-delmra "Extermination*.mra"
-delmra "Arkanoid - Revenge of DOH*.mra"
-delrbf "jtkiwi.rbf"
-delalt "_The NewZealand Story*"
-delalt "_Kageki*"
-delalt "_Insector X*"
-delalt "_Extermination*"
-delalt "_Dr. Toppel's Adventure*"
-delalt "_Chuka*"
-delalt "_Arkanoid II*"
+#force chuka jtkiwi
+debug "Kiwi removal"
+#delmra "Chuka*.mra"
+#delmra "The NewZealand Story*.mra"
+#delmra "Kageki*.mra"
+#delmra "Insector X*.mra"
+#delmra "Extermination*.mra"
+#delmra "Arkanoid - Revenge of DOH*.mra"
+#delalt "_The NewZealand Story*"
+#delalt "_Kageki*"
+#delalt "_Insector X*"
+#delalt "_Extermination*"
+#delalt "_Dr. Toppel's Adventure*"
+#delalt "_Chuka*"
+#delalt "_Arkanoid II*"
+#delrbf "jtkiwi.rbf"
 
 debug "ZN1 Taito removal"
 delalt "_Ray Storm"
@@ -437,8 +441,8 @@ delalt "_Ehrgeiz"
 delalt "_Fighting Layer"
 delalt "_Libero Grande"
 delalt "_Oh! Bakyuuun"
-delalt "_Soul Calibur"
-delalt "_Super World Stadium '98 (Japan SS81-VER.A)"
+delalt "__Soul Calibur"
+delalt "_Super World Stadium '98 (Japan SS81-VER.A).mra"
 delalt "_Super World Stadium '99"
 delalt "_Tekken 3"
 
@@ -640,8 +644,9 @@ delalt "_Rave Racer"
 delalt "_Ridge Racer"
 delalt "_Ridge Racer 2"
 delalt "_Time Crisis"
+
 install
 
 renexisting
 
-echo -e "${GREEN}${CHECK}${NC} Completed res"
+echo -e "${GREEN}${CHECK}${NC} Completed"

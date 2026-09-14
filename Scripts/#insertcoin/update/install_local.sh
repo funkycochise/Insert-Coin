@@ -6,6 +6,8 @@ echo "Installing local resources in $targetfolder"
 
 targetfolder=$1
 
+mkdir -p "$targetfolder"
+
 function processlocal {
    #echo "processlocal"
    #echo "$1"

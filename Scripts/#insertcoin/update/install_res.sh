@@ -354,4 +354,5 @@ if [ ! "$setup_res" == "NON" ]; then
    installres
    cleanneomra
 fi
-echo -e "${GREEN}${CHECK}${NC} Completed"
+
+#echo -e "${GREEN}${CHECK}${NC} Completed"
