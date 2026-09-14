@@ -20,7 +20,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Cleopatra Fortune.mra" "_Cleopatra Fortune" "" "PUZ"
    add "$dir" "H" "Command War.mra" "_Command War" "" ""
    add "$dir" "H" "Dan-Ku-Ga.mra" "_Dan-Ku-Ga" "" "VSF"
-   add "$dir" "H" "Darius Gaiden" "_Darius Gaiden" "" "STG"
+   add "$dir" "H" "Darius Gaiden.mra" "_Darius Gaiden" "" "STG"
 
    add "$dir" "H" "Elevator Action Returns.mra" "_Elevator Action Returns" "" "ACT"
    add "$dir" "H" "Grid Seeker.mra" "_Grid Seeker" "" ""
