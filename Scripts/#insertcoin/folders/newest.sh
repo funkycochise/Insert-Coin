@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0914
+   additem "$namco_sys22"
+
 #0912
    add "Seibu Cup Soccer (set 1).mra" "_Seibu Cup Soccer"
    additem "$suna" 
