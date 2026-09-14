@@ -76,4 +76,4 @@ dl "pinkswts.zip"
 
 
 
-echo -e "${GREEN}${CHECK}${NC} Completed cv1k"
+echo -e "${GREEN}${CHECK}${NC} Completed"
