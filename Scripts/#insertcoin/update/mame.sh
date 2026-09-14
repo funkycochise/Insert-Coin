@@ -1392,4 +1392,4 @@ dl "propcycl.zip"
 
 
 
-echo -e "${GREEN}${CHECK}${NC} Completed mame"
+echo -e "${GREEN}${CHECK}${NC} Completed"
