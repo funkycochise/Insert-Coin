@@ -179,13 +179,6 @@ if [ "$additional_res" == "1" ]; then
    fi
 fi
 
-if [ "$insertcoin_menu" == "1" ]; then
-   start_time=$SECONDS
-   ./update/create_menu.sh
-   elapsed=$(( SECONDS - start_time ))
-   echo -n -e "Menu Creation process completed in $elapsed sec.\n"
-fi
-
 if test -f "/media/fat/Scripts/#local/key2.sh"; then
    /media/fat/Scripts/#local/key2.sh
 fi
@@ -209,6 +202,14 @@ fi
 #if [ "$obsolete_core" == "1" ]; then
    ./update/clean_obsolete.sh
 #fi 
+
+if [ "$insertcoin_menu" == "1" ]; then
+   start_time=$SECONDS
+   ./update/create_menu.sh
+   elapsed=$(( SECONDS - start_time ))
+   echo -n -e "Menu Creation process completed in $elapsed sec.\n"
+fi
+
 if [ "$console_core" == "1" ]; then
    ./update/update_console.sh
 fi

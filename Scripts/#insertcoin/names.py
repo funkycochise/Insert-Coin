@@ -91,6 +91,7 @@ namco=_Namco
 namco_sys1=_Namco-System-1
 namco_sys11=_Namco-System-11
 namco_sys12=_Namco-System-12
+namco_sys22=_Namco-System-22
 namco_sys86=_Namco-System-86
 neogeo=_Neo-geo
 nichibutsu=_Nihon Bussan-Nichibutsu
