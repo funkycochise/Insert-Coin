@@ -71,6 +71,7 @@ irem92=_Irem M92
 irem92t=_Irem M92t
 irem107=_Irem M107
 jaleco=_Jaleco
+jalecoms32=_Jaleco MS32
 kaneko=_Kaneko
 skns=_Kaneko_Supernova
 kaneko16=_Kaneko16
