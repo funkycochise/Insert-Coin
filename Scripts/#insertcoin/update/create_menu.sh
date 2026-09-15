@@ -50,6 +50,7 @@ fi
 ./folders/irem92t.sh 
 ./folders/irem107.sh 
 ./folders/jaleco.sh
+./folders/jaleco_ms32.sh
 ./folders/Kaneko.sh
 ./folders/Kaneko16.sh
 ./folders/skns.sh 
