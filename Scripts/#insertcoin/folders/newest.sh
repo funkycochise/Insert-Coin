@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0914
+   additem "$jalecoms32"
    additem "$namco_sys22"
 
 #0912
