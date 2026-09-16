@@ -340,9 +340,9 @@ fi
 function add_folder {
 folder="$1"
 
-      if [ -f "$names" ]; then
-        source <(grep essential $names)
-      fi
+#      if [ -f "$names" ]; then
+#        source <(grep essential $names)
+#      fi
 
 #ignore essential list
 if [ "$dir" != "$essential" ];then
