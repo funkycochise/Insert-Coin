@@ -1,4 +1,4 @@
-#!/bin/bash
+SYS#!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/setup.sh
 
 SD=/media/fat
@@ -932,6 +932,7 @@ dl "TaitoF3.zip" "Taito F3"
 #dl "Outrunners.zip" "Outrunners"
 dl "SunA.zip" "SunA"
 dl "JalecoMS32.zip" "Jaleco MS32"
+dl "Blasteroids.zip" "Blasteroids"
 
 debug "SYS11"
 delmra "Dancing Eyes (DC2-VER.B).mra"
@@ -1312,6 +1313,10 @@ delalt "_Tetris Plus 2"
 delalt "_The Game Paradise - Master of Shooting!"
 delalt "_Vs. Janshi Brandnew Stars"
 delalt "_World PK Soccer V2"
+
+debug "Blasteroids"
+delmra "Blasteroids.mra"
+delalt "_Blasteroids"
 
 install
 

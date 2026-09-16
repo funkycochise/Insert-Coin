@@ -1400,6 +1400,6 @@ dl "tetrisp.zip"
 dl "tetrisp2.zip"
 dl "bnstars1.zip"
 dl "wpksocv2.zip"
-
+dl "blstroid.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"

@@ -138,9 +138,9 @@ fi
 if [ "$newest" == "1" ]; then
   ./folders/newest.sh 
 fi
-if [ "$essential" == "1" ]; then
-   ./folders/essentials.sh 
-fi
+#if [ "$essential" == "1" ]; then
+#   ./folders/essentials.sh 
+#fi
 if test -f "./update/favorites.sh"; then
    ./update/favorites.sh 
 fi
