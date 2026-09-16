@@ -160,9 +160,9 @@ fi
 find $CORE -maxdepth 1 -type f -name "cave_*" ! -name "Cave_20260825.rbf" -delete
 
 debug "SSV"
-if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "SSV*" ! -name "SSV_20260904.rbf"
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "SSV*" ! -name "SSV_20260907.rbf"
 fi
-find $CORE -maxdepth 1 -type f -name "SSV*" ! -name "SSV_20260904.rbf" -delete
+find $CORE -maxdepth 1 -type f -name "SSV*" ! -name "SSV_20260907.rbf" -delete
 
 debug "cave"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "cave_*" ! -name "Guardians_20260824.rbf"
