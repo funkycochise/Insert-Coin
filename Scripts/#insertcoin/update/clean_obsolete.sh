@@ -179,5 +179,9 @@ if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "ChampionBaseba
 fi
 find $CORE -maxdepth 1 -type f -name "ChampionBaseball_*" ! -name "ChampionBaseball_20260901.rbf" -delete
 
+debug "SegaModel1"
+if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "Model1_*" ! -name "Model1_20260917.rbf"
+fi
+find $CORE -maxdepth 1 -type f -name "Model1_*" ! -name "Model1_20260917.rbf" -delete
 
 echo -e "${GREEN}${CHECK}${NC} Completed"

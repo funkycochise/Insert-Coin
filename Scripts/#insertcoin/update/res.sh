@@ -1,4 +1,4 @@
-SYS#!/bin/bash
+#!/bin/bash
 source /media/fat/Scripts/#insertcoin/folders/setup.sh
 
 SD=/media/fat
@@ -927,12 +927,14 @@ dl "SegaYBoard.zip" "Sega YBoard"
 dl "HardDrivin.zip" "Hard Drivin'"
 dl "Vindicators.zip" "Vindicators"
 dl "IRobot.zip" "I, Robot"
-dl "Model1.zip" "Sega Model1"
+dl "SegaModel1.zip" "Sega Model1"
 dl "TaitoF3.zip" "Taito F3"
-#dl "Outrunners.zip" "Outrunners"
+dl "Outrunners.zip" "Outrunners"
 dl "SunA.zip" "SunA"
 dl "JalecoMS32.zip" "Jaleco MS32"
 dl "Blasteroids.zip" "Blasteroids"
+dl "MadGear.zip" "MadGear/LED Storm"
+dl "Badlands.zip" "Badlands"
 
 debug "SYS11"
 delmra "Dancing Eyes (DC2-VER.B).mra"
@@ -1121,6 +1123,12 @@ delmra "Vasara 2.mra"
 delmra "Drift Out '94 - The Hard Order.mra"
 delmra "Dyna Gear.mra"
 
+debug "OutRunners"
+delmra "OutRunners.mra"
+delrbf "SegaSystem32Multi_*"
+delalt "_Outrunners"
+
+
 debug "Seibu"
 delmra "E Jong High School (Japan).mra"
 delmra "Raiden Fighters (Germany).mra"
@@ -1187,6 +1195,7 @@ delalt "_I, Robot"
 
 debug "Sega Model1"
 delmra "Virtua Racing.mra"
+delmra "Star Wars Arcade.mra"
 delrbf "Model1_*.rbf"
 delalt "_Virtua Racing"
 
@@ -1282,6 +1291,21 @@ delalt "_Ridge Racer"
 delalt "_Ridge Racer 2"
 delalt "_Time Crisis"
 
+debug "Ikki"
+delmra "Ikki.mra"
+delrbf "Ikki*.rbf"
+delalt "_Ikki"
+
+debug "MadGear"
+delmra "Mad Gear (US).mra"
+delmra "Led Storm Rally 2011 (World).mra"
+delmra "Last Duel (US New Ver.).mra"
+delrbf "madgear_*.rbf"
+delrbf "lastduel_*.rbf"
+delalt "_Mad Gear"
+delalt "_Led Storm Rally 2011"
+delalt "_Last Duel"
+
 debug "Jaleco MS32"
 delmra "Best Bout Boxing (ver 1.3).mra"
 delmra "Desert War - Wangan Sensou (ver 1.0).mra"
@@ -1317,6 +1341,10 @@ delalt "_World PK Soccer V2"
 debug "Blasteroids"
 delmra "Blasteroids.mra"
 delalt "_Blasteroids"
+
+debug "Badlands"
+delmra "Badlands.mra"
+delalt "_Badlands"
 
 install
 
