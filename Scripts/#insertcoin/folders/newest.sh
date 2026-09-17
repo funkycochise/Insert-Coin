@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0917
+   additem "$segamodel1"   
    add "Badlands.mra" "_Badlands"
 
 #0914
@@ -83,7 +84,6 @@ counter=0
    additem "$taitof3"   
 
 #0909
-   additem "$segamodel1"   
    add "I, Robot.mra" "_I, Robot"
    add "Vindicators.mra" "_Vindicators"
 
