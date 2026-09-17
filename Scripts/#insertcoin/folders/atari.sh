@@ -21,6 +21,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Asteroids Deluxe (v3 green).mra" "_Asteroids Deluxe" "" "STG"
    add "$dir" "H" "Asteroids Deluxe (v3 orange).mra" "_Asteroids Deluxe" "" "STG"
    add "$dir" "H" "Asteroids.mra" "_Asteroid" "" "ACT"
+   add "$dir" "H" "Badlands.mra" "_Badlands" "" "ACT"
    add "$dir" "H" "Battle Zone rev 2.mra" "_Battle Zone"
    add "$dir" "H" "Black Widow.mra" "_Black Widow"
    add "$dir" "H" "Blasteroids.mra" "_Blasteroids" "" "STG"

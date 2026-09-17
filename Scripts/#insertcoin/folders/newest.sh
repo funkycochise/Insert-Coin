@@ -65,7 +65,13 @@ function additem {
 
 counter=0
 
+#0917
+   add "Badlands.mra" "_Badlands"
+
 #0914
+   add "Last Duel (US New Ver.).mra" "_Last Duel"
+   add "Mad Gear (US).mra" "_Mad Gear"
+   add "Led Storm Rally 2011 (World).mra" "_Led Storm Rally 2011"
    additem "$jalecoms32"
    additem "$namco_sys22"
 
