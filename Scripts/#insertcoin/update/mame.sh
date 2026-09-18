@@ -1405,5 +1405,6 @@ dl "badlands.zip"
 dl "swa.zip"
 dl "vf.zip"
 dl "wingwar.zip"
+dl "bonzeadv.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
