@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0917
+   add "Wardner (World).mra" "_Wardner"
    additem "$segamodel1"   
    add "Badlands.mra" "_Badlands"
 

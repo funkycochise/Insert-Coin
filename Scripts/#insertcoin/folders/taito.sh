@@ -56,6 +56,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "The NewZealand Story (World, new version) (P0-043A PCB).mra" "_The NewZealand Story" "" "ACT"
    add "$dir" "H" "The Ninja Warriors (World).mra" "_The Ninja Warriors" "" "ACT"
    add "$dir" "H" "Victorious Nine.mra" "_Victorious Nine" "" "SPO"
+   add "$dir" "H" "Wardner (World).mra" "_Wardner" "" "ACT"
    add "$dir" "H" "Warrior Blade (Japan).mra" "_Warrior Blade" "" "BEA"
 
    dot
