@@ -8,6 +8,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Alcon Bootleg.mra" "_SlapFight" "" "STG"
    add "$dir" "V" "Arkanoid - Revenge of DOH (World).mra" "_Arkanoid II"
    add "$dir" "V" "Arkanoid (W).mra" "_Arkanoid"
+   add "$dir" "V" "Asuka & Asuka (World, bazset).mra" "_Asuka & Asuka" "" "STG"
    add "$dir" "V" "Balloon Bomber.mra" "_Balloon Bomber"
    add "$dir" "V" "Bronx (bootleg of Cycle Shooting).mra" "_Bronx"
    add "$dir" "V" "Colony 7 (Set 1).mra" "_Colony7" "" "ACT"
@@ -29,6 +30,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Volfied (World, rev 1).mra" "_Volfied" "" "PUZ"
 
    add "$dir" "H" "Bubble Bobble (Japan, Ver 0.1).mra" "_Bubble Bobble" "" "ACT"
+   add "$dir" "H" "Cadash (World, bazset).mra" "_Cadash" "" ""
    add "$dir" "H" "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen" "" "STG"
    add "$dir" "H" "Complex X.mra" "_Complex X" "" ""
    add "$dir" "H" "Darius (World).mra" "_Darius" "" "STG"

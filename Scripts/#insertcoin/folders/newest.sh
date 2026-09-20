@@ -65,8 +65,14 @@ function additem {
 
 counter=0
 
+#0920
+   add "Galmedes (Japan, bazset).mra" "_Galmedes"
+   add "U.N. Defense Force - Earth Joker (US-Japan, set 1, bazset).mra" "_U.N. Defense Force - Earth Joker"
+   add "Asuka & Asuka (World, bazset).mra" "_Asuka & Asuka"
+
 #0917
    add "Wardner (World).mra" "_Wardner"
+   add  "Dr. Micro.mra" "_Dr. Micro"
    additem "$segamodel1"   
    add "Badlands.mra" "_Badlands"
 
