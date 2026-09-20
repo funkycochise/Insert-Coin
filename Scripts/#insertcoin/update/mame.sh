@@ -1406,5 +1406,8 @@ dl "swa.zip"
 dl "vf.zip"
 dl "wingwar.zip"
 dl "bonzeadv.zip"
+dl "wardner.zip"
+dl "twineagl.zip"
+dl "atehate.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
