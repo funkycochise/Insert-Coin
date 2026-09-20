@@ -107,6 +107,7 @@ raizing=_Raizing-8ing
 rare=_Rare
 robotron=_Robotron
 rockola=_Rockola
+sanritsu=_Sanritsu
 sammy=_Sammy
 scramble=_Scramble
 sega=_Sega
