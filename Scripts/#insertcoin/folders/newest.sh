@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0920
+   add "Cadash (World, bazset).mra" "_Cadash"
    add "Galmedes (Japan, bazset).mra" "_Galmedes"
    add "U.N. Defense Force - Earth Joker (US-Japan, set 1, bazset).mra" "_U.N. Defense Force - Earth Joker"
    add "Asuka & Asuka (World, bazset).mra" "_Asuka & Asuka"
