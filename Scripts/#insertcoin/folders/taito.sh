@@ -19,6 +19,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Kyukyoku Tiger (Japan, 2P Co-op).mra" "_Twin Cobra" "" "STG"
    add "$dir" "V" "Lunar Rescue.mra" "_Lunar Rescue"
    add "$dir" "V" "Lupin III (Set 2).mra" "_Lupin III"
+   add "$dir" "V" "Maze of Flott (Japan, bazset).mra" "_Maze of Flott" "" "RAC"
    add "$dir" "V" "Polaris.mra" "_Polaris"
    add "$dir" "V" "Rally Bike - Dash Yarou.mra" "_Rally Bike"
    add "$dir" "V" "SlapFight Bootleg.mra" "_SlapFight" "" "STG"
