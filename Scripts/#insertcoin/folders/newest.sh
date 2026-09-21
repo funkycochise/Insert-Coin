@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0921
+   additem "$fuuki" 
+
 #0920
    add "Maze of Flott (Japan, bazset).mra" "_Maze of Flott"
    add "Cadash (World, bazset).mra" "_Cadash"
