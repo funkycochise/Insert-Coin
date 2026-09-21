@@ -245,6 +245,46 @@ function process {
             delalt "_Xevious 3D-G"
             ;;
 
+        "Asuka")
+            dl "Asuka.zip" "Asuka & Asuka"
+            debug "Asuka & Asuka"
+            delmra "Asuka & Asuka (World, bazset).mra"
+            delrbf "Asuka_*.rbf"
+            delalt "_Asuka & Asuka"
+            ;;
+
+        "Galmedes")
+            dl "Galmedes.zip" "Galmedes"
+            debug "Galmedes"
+            delmra "Galmedes (Japan, bazset).mra"
+            delrbf "Galmedes_*.rbf"
+            delalt "_Galmedes"
+            ;;
+
+        "EarthJoker")
+            dl "EarthJoker.zip" "Earth Joker"
+            debug "Earth Joker"
+            delmra "U.N. Defense Force - Earth Joker (US-Japan, set 1, bazset).mra"
+            delrbf "EarthJoker_*.rbf"
+            delalt "_U.N. Defense Force - Earth Joker"
+            ;;
+
+        "Cadash")
+            dl "Cadash.zip" "Cadash"
+            debug "Cadash"
+            delmra "Cadash (World, bazset).mra"
+            delrbf "Cadash_*.rbf"
+            delalt "_Cadash"
+            ;;
+
+        "MazeOfFlott")
+        dl "MazeOfFlott.zip"
+        debug "Maze of Flott"
+        delmra "Maze of Flott (Japan, bazset).mra"
+        delrbf "MazeOfFlott_20260920.rbf"
+        delalt "_Maze of Flott"
+        ;;
+
         "WolfUnit")
             dl "WolfUnit.zip" "Midway Wolf"
             debug "WolfUnit removal"
@@ -390,26 +430,33 @@ function process {
         "SSV")
             dl "SSV.zip" "SSV"
             debug "SSV"
+            #sammy
             delmra "Change Air Blade.mra"
-            delmra "Drift Out '94 - The Hard Order.mra"
             delmra "Dyna Gear.mra"
-            delmra "Monster Slider.mra"
-            delmra "Storm Blade.mra"
+            #seta
             delmra "Twin Eagle II - The Rescue Mission.mra"
             delmra "Ultra X Weapons - Ultra Keibitai.mra"
+            #visco
+            delmra "Drift Out '94 - The Hard Order.mra"
+            delmra "Monster Slider.mra"
+            delmra "Storm Blade.mra"
             delmra "Vasara.mra"
             delmra "Vasara 2.mra"
+            #
+
             delrbf "SSV_*.rbf"
+            #sammy
             delalt "_Change Air Blade"
-            delalt "_Drift Out '94 - The Hard Order"
             delalt "_Dyna Gear"
-            delalt "_Monster Slider"
-            delalt "_Storm Blade"
+            #seta
             delalt "_Twin Eagle II - The Rescue Mission"
             delalt "_Ultra X Weapons - Ultra Keibitai"
+            #visco
+            delalt "_Drift Out '94 - The Hard Order"
+            delalt "_Monster Slider"
+            delalt "_Storm Blade"
             delalt "_Vasara"
             delalt "_Vasara 2"
-
             ;;
 
         "Seibu")
@@ -1001,7 +1048,7 @@ function process {
             delalt "_Hayaoshi Quiz Grand Champion Taika"
             delalt "_Hayaoshi Quiz Nettou Namahousou"
             delalt "_Idol Janshi Suchie-Pai II"
-            delalt "_ahjong Angel Kiss"
+            delalt "_Mahjong Angel Kiss"
             delalt "_P-47 Aces"
             delalt "_Ryuusei Janshi Kirara Star"
             delalt "_Tetris Plus"
@@ -1155,6 +1202,11 @@ process "MadGear"
 process "MrDo"
 process "BonzeAdventure"
 process "DrMicro"
+process "Asuka"
+process "Galmedes"
+process "EarthJoker"
+process "Cadash"
+process "MazeOfFlott"
 
 install
 
