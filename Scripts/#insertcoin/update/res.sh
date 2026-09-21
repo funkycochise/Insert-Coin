@@ -278,11 +278,25 @@ function process {
             ;;
 
         "MazeOfFlott")
-        dl "MazeOfFlott.zip"
+        dl "MazeOfFlott.zip" "Maze Of Flott"
         debug "Maze of Flott"
         delmra "Maze of Flott (Japan, bazset).mra"
-        delrbf "MazeOfFlott_20260920.rbf"
+        delrbf "MazeOfFlott_*.rbf"
         delalt "_Maze of Flott"
+        ;;
+
+	"Fuuki")
+        dl "Fuuki.zip" "Fuuki"
+        debug "Fuuki"
+        delmra "Asura Blade - Sword of Dynasty (Japan).mra"
+        delmra "Asura Buster - Eternal Warriors (USA).mra"
+        delmra "Gyakuten!! Puzzle Bancho (Japan, set 1).mra"
+        delmra "Susume! Mile Smile - Go Go! Mile Smile (newer).mra"
+        delalt "_Asura Blade - Sword of Dynasty (Japan)"
+        delalt "_Asura Buster - Eternal Warriors (USA)"
+        delalt "_Gyakuten!! Puzzle Bancho (Japan, set 1)"
+        delalt "_Susume! Mile Smile - Go Go! Mile Smile (newer)"
+        delrbf "Fuuki_*.rbf"
         ;;
 
         "WolfUnit")
@@ -1207,6 +1221,7 @@ process "Galmedes"
 process "EarthJoker"
 process "Cadash"
 process "MazeOfFlott"
+process "Fuuki"
 
 install
 

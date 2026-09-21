@@ -37,7 +37,8 @@ fi
 ./folders/decocassette.sh
 ./folders/deco8.sh
 ./folders/deco16.sh  
-./folders/exidy.sh 
+./folders/exidy.sh
+./folders/fuuki.sh 
 ./folders/gaelco.sh 
 ./folders/galaxian.sh 
 ./folders/gottlieb.sh 
