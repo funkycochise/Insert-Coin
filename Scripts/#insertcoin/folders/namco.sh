@@ -27,6 +27,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V"  "The Tower of Druaga.mra" "_The Tower of Druaga"
    add "$dir" "V"  "Xevious.mra" "_Xevious" "" "STG"
 
+   add "$dir" "H"  "Alien Sector.mra" "_Alien Sector" "" "ACT"
    add "$dir" "H"  "Bosconian - Star Destroyer (new version).mra" "_Bosconian" "" "STG"
    add "$dir" "H"  "Metro-Cross (set 1).mra" "_Metro-Cross" "" "ACT"
    add "$dir" "H"  "Pac-Land (World).mra" "_Pac-Land" "" "ACT"

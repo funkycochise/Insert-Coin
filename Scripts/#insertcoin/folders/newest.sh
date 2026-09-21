@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0921
+   add "Alien Sector.mra" "_Alien Sector"
    additem "$fuuki" 
 
 #0920
