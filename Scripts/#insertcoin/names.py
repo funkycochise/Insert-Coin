@@ -59,6 +59,7 @@ decocassette=_Deco-Cassette
 deco8=_Deco-8
 deco16=_Deco-16
 exidy=_Exidy
+fuuki=_Fuuki
 gaelco=_Gaelco
 galaxian=_Galaxian
 gottlieb=_Gottlieb
