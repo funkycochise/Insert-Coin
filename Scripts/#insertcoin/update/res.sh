@@ -983,23 +983,25 @@ function process {
         "CaveCV1K")
             dl "CaveCV1K.zip" "Cave CV1K"
             debug "Cave CV1K"
+
+            delmra "Akai Katana*.mra"
             delmra "Deathsmiles*.mra"
             delmra "DoDonPachi Dai-Fukkatsu*.mra"
+            delmra "DoDonPachi SaiDaiOuJou*.mra"
             delmra "Espgaluda II*.mra"
             delmra "Ibara*.mra"
             delmra "Muchi Muchi Pork*.mra"
             delmra "Mushihime-Sama*.mra"
-            delmra "Pink Sweets Ibara Sorekara*.mra"
+            delmra "Pink Sweets*.mra"
             delmra "Puzzle! Mushihime-Tama*.mra"
             delalt "_DoDonPachi Dai-Fukkatsu"
-            delalt "_Deathsmiles"
             delalt "_Espgaluda II"
             delalt "_Ibara"
-            delalt "_Muchi Muchi Pork!"
             delalt "_Mushihime-Sama"
             delalt "_Mushihime-Sama Futari"
-            delalt "_Pink Sweets Ibara Sorekara*"
-            delalt "_Puzzle! Mushihime-Tama*"
+            delalt "_Pink Sweets Ibara Sorekara"
+            delalt "_Puzzle! Mushihime-Tama"
+
             ;;
 
         "EscapeRobotMonster")
