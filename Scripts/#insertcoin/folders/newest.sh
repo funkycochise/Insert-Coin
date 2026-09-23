@@ -65,8 +65,10 @@ function additem {
 
 counter=0
 
+#0923
+   additem "$cavecv1k"
+
 #0921
-   add "Alien Sector.mra" "_Alien Sector"
    additem "$fuuki" 
 
 #0920
@@ -118,7 +120,6 @@ counter=0
 
 #0831
    add "Escape Kids.mra" "_Escape Kids"
-   additem "$cavecv1k"
    additem "$zn1capcom"
    additem "$zn2capcom"
 
