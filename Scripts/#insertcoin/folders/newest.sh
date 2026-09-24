@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0924
+   additem "$namco_sysfl"
+
 #0923
    additem "$cavecv1k"
 
