@@ -292,12 +292,22 @@ function process {
         delmra "Asura Buster - Eternal Warriors (USA).mra"
         delmra "Gyakuten!! Puzzle Bancho (Japan, set 1).mra"
         delmra "Susume! Mile Smile - Go Go! Mile Smile (newer).mra"
+        delrbf "Fuuki_*.rbf"
         delalt "_Asura Blade - Sword of Dynasty (Japan)"
         delalt "_Asura Buster - Eternal Warriors (USA)"
         delalt "_Gyakuten!! Puzzle Bancho (Japan, set 1)"
         delalt "_Susume! Mile Smile - Go Go! Mile Smile (newer)"
-        delrbf "Fuuki_*.rbf"
         ;;
+
+        "SystemFL")
+        dl "SystemFL.zip" "SystemFL"
+        debug "SystemFL"
+        delmra "Speed Racer.mra"
+        delmra "Final Lap R (Rev. B).mra"
+        delrbf "XNSYSTEMFL_*.rbf"
+        delalt "_Speed Racer"
+        delalt "_Final Lap R (Rev. B)"
+    ;;
 
         "WolfUnit")
             dl "WolfUnit.zip" "Midway Wolf"
@@ -995,6 +1005,7 @@ function process {
             delmra "Pink Sweets*.mra"
             delmra "Puzzle! Mushihime-Tama*.mra"
             delalt "_DoDonPachi Dai-Fukkatsu"
+            delalt "_DoDonPachi SaiDaiOuJou"
             delalt "_Espgaluda II"
             delalt "_Ibara"
             delalt "_Mushihime-Sama"
@@ -1224,6 +1235,7 @@ process "EarthJoker"
 process "Cadash"
 process "MazeOfFlott"
 process "Fuuki"
+process "SystemFL"
 
 install
 
