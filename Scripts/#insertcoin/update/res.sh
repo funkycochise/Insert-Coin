@@ -101,16 +101,24 @@ function install {
       done
    fi
    #echo "config"
-   if [ -d "$config" ]; 
-   then
-      for file in $config/*; do
-         f=$(basename -- "$file")
-         if [ ! -f "$des_config/$f" ]; then
-            #echo -e "$des_config/$f                                                   "
-            cp -r "$file" "$des_config/$f"
-         fi
-      done
+   if [ -d "$config" ]; then
+       for file in "$config"/*; do
+          f=$(basename -- "$file")
+          if [ -d "$file" ]; then
+             # sous-dossier (ex: nvram) : ne copier que les .nvm, pas le dossier
+             mkdir -p "$des_config/$f"
+             for sub in "$file"/*.nvm; do
+                sf=$(basename -- "$sub")
+                if [ -f "$sub" ] && [ ! -f "$des_config/$f/$sf" ]; then
+                   cp "$sub" "$des_config/$f/$sf"
+                fi
+             done
+          elif [ ! -f "$des_config/$f" ]; then
+             cp "$file" "$des_config/$f"
+          fi
+       done
    fi
+
    #echo "alternatives"
    if [ -d "$altdir" ]; 
    then
@@ -1154,6 +1162,8 @@ function process {
 
     esac
 }
+
+find "$des_config/nvram" -mindepth 1 -maxdepth 1 -type d -name "nvram" -exec rm -rf {} +
 
 process "SYS11"
 process "WolfUnit"
