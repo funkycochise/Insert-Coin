@@ -75,11 +75,11 @@ counter=0
    additem "$fuuki" 
 
 #0920
-   add "Maze of Flott (Japan, bazset).mra" "_Maze of Flott"
-   add "Cadash (World, bazset).mra" "_Cadash"
-   add "Galmedes (Japan, bazset).mra" "_Galmedes"
-   add "U.N. Defense Force - Earth Joker (US-Japan, set 1, bazset).mra" "_U.N. Defense Force - Earth Joker"
-   add "Asuka & Asuka (World, bazset).mra" "_Asuka & Asuka"
+   add "Maze of Flott (Japan).mra" "_Maze of Flott"
+   add "Cadash (World).mra" "_Cadash"
+   add "Galmedes (Japan).mra" "_Galmedes"
+   add "U.N. Defense Force - Earth Joker (US-Japan, set 1).mra" "_U.N. Defense Force - Earth Joker"
+   add "Asuka & Asuka (World).mra" "_Asuka & Asuka"
 
 #0917
    add "Wardner (World).mra" "_Wardner"
