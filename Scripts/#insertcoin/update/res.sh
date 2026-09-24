@@ -1130,6 +1130,15 @@ function process {
             delalt "_U.N. Defense Force - Earth Joker"
             ;;
 
+        "NamcoClassicCollection")
+            dl "NamcoClassicCollection.zip" "Namco Classic Collection"
+            debug "Namco Classic Collection"
+            delmra "Namco Classic Collection Vol.1.mra"
+            delmra "Namco Classic Collection Vol.2.mra"
+            delrbf "NamcoND1_*.rbf"
+            delalt "_Namco Classic Collection"
+            ;;
+
         "DrMicro")
             dl "DrMicro.zip" "Dr. Micro"
             debug "DrMicro"
@@ -1223,6 +1232,7 @@ process "TaitoAsuka"
 process "DrMicro"
 process "Fuuki"
 process "SystemFL"
+process "NamcoClassicCollection"
 
 install
 
