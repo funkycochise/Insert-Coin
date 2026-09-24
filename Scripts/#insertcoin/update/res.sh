@@ -253,46 +253,6 @@ function process {
             delalt "_Xevious 3D-G"
             ;;
 
-        "Asuka")
-            dl "Asuka.zip" "Asuka & Asuka"
-            debug "Asuka & Asuka"
-            delmra "Asuka & Asuka (World, bazset).mra"
-            delrbf "Asuka_*.rbf"
-            delalt "_Asuka & Asuka"
-            ;;
-
-        "Galmedes")
-            dl "Galmedes.zip" "Galmedes"
-            debug "Galmedes"
-            delmra "Galmedes (Japan, bazset).mra"
-            delrbf "Galmedes_*.rbf"
-            delalt "_Galmedes"
-            ;;
-
-        "EarthJoker")
-            dl "EarthJoker.zip" "Earth Joker"
-            debug "Earth Joker"
-            delmra "U.N. Defense Force - Earth Joker (US-Japan, set 1, bazset).mra"
-            delrbf "EarthJoker_*.rbf"
-            delalt "_U.N. Defense Force - Earth Joker"
-            ;;
-
-        "Cadash")
-            dl "Cadash.zip" "Cadash"
-            debug "Cadash"
-            delmra "Cadash (World, bazset).mra"
-            delrbf "Cadash_*.rbf"
-            delalt "_Cadash"
-            ;;
-
-        "MazeOfFlott")
-        dl "MazeOfFlott.zip" "Maze Of Flott"
-        debug "Maze of Flott"
-        delmra "Maze of Flott (Japan, bazset).mra"
-        delrbf "MazeOfFlott_*.rbf"
-        delalt "_Maze of Flott"
-        ;;
-
 	"Fuuki")
         dl "Fuuki.zip" "Fuuki"
         debug "Fuuki"
@@ -315,7 +275,7 @@ function process {
         delrbf "XNSYSTEMFL_*.rbf"
         delalt "_Speed Racer"
         delalt "_Final Lap R (Rev. B)"
-    ;;
+        ;;
 
         "WolfUnit")
             dl "WolfUnit.zip" "Midway Wolf"
@@ -1140,12 +1100,34 @@ function process {
             delalt "_Mr. Do's Castle"
             ;;
 
-        "BonzeAdventure")
-            dl "BonzeAdventure.zip" "Bonze Adventure"
-            debug "BonzeAdventure"
+        "TaitoAsuka")
+            dl "TaitoAsuka.zip" "TaitoAsuka"
+            debug "TaitoAsuka"
+            delmra "Asuka & Asuka (World).mra"
+            delmra "Asuka & Asuka (World, bazset).mra"
+            delmra "Bonze Adventure (World, rev 1).mra"
             delmra "Bonze Adventure (World, bazset).mra"
+            delmra "Cadash (World).mra"
+            delmra "Cadash (World, bazset).mra"
+            delmra "Galmedes (Japan).mra"
+            delmra "Galmedes (Japan, bazset).mra"
+            delmra "Kokontouzai Eto Monogatari (Japan).mra"
+            delmra "Maze of Flott (Japan).mra"
+            delmra "Maze of Flott (Japan, bazset).mra"
+            delmra "U.N. Defense Force - Earth Joker (US-Japan, set 1).mra"
+            delmra "U.N. Defense Force - Earth Joker (US-Japan, set 1, bazset).mra"
+
             delrbf "BonzeAdventure_*.rbf"
+            delrbf "Asuka_*.rbf"
+            delrbf "Cadash_*.rbf"
+            delrbf "EarthJoker_*.rbf"
+            delrbf "MazeOfFlott_*.rbf"
+            delalt "_Asuka & Asuka"
             delalt "_Bonze Adventure"
+            delalt "_Cadash"
+            delalt "_Galmedes"
+            delalt "_Maze of Flott"
+            delalt "_U.N. Defense Force - Earth Joker"
             ;;
 
         "DrMicro")
@@ -1237,13 +1219,8 @@ process "MadGear"
 #process "Blasteroids"
 #process "Badlands"
 process "MrDo"
-process "BonzeAdventure"
+process "TaitoAsuka"
 process "DrMicro"
-process "Asuka"
-process "Galmedes"
-process "EarthJoker"
-process "Cadash"
-process "MazeOfFlott"
 process "Fuuki"
 process "SystemFL"
 
