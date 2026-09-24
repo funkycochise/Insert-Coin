@@ -1419,5 +1419,7 @@ dl "sdojak.zip"
 dl "speedrcr.zip"
 dl "finalapr.zip"
 dl "namcoc75.zip"
+dl "ncv1.zip"
+dl "ncv2.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
