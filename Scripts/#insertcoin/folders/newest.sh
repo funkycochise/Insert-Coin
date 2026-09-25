@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0925
+   add "Legend of Makai (World).mra" "_Legend of Makai" 
+
 #0924
    additem "$namco_nd1"
    additem "$namco_sysfl"
