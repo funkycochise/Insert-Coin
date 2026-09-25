@@ -79,7 +79,8 @@ fi
 ./folders/neogeo.sh 
 ./folders/nichibutsu.sh 
 ./folders/nintendo.sh 
-./folders/nmk.sh 
+./folders/nmk.sh
+./folders/nmk16.sh 
 ./folders/orca.sh 
 ./folders/pacman.sh 
 ./folders/psikyo1gen.sh
