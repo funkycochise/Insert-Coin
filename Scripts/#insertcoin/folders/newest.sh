@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0925
+   additem "$nmk16"
    add "Legend of Makai (World).mra" "_Legend of Makai" 
 
 #0924

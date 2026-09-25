@@ -6,6 +6,7 @@ resh=$(exist "Ninjakun.mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    #addgame "Combat Hawk.mra" "_Combat Hawk"
    add "$dir" "V" "Dorodon (Set 1).mra" "_Dorodon"
+a  add "$dir" "H" "Black Heart.mra" "_Black Heart" "" "STG"
    add "$dir" "H" "Ninjakun.mra" "_Ninjakun Majou no Bouken" "" "ACT"
    add "$dir" "H" "Penguin-Kun Wars.mra" "_Penguin-Kun Wars" "" "ACT"
    add "$dir" "H" "Raiders5.mra" "_Raiders5"

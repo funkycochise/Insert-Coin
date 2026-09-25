@@ -1,22 +1,20 @@
 #!/bin/bash
 source ./folders/functions.sh
 if [ "$show_system" == "1" ]; then
-   dir=$nmk
+   dir=$nmk16
 else
 dir=$nmk
 fi
 
-resv=$(exist "Argus.mra")
-resh=$(exist "US AAF Mustang (25th May. 1990).mra")
+resv=$(exist "Acrobat Mission.mra")
+resh=$(exist "Bio-ship Paladin.mra")
 #if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
-add "$dir" "V" "Acrobat Mission.mra" "_Acrobat Mission" "" ""
-add "$dir" "V" "Air Attack (set 1).mra" "_Air Attack" "" ""
-add "$dir" "V" "Bio-ship Paladin.mra" "_Bio-ship Paladin" "" ""
-add "$dir" "V" "Black Heart.mra" "_Black Heart" "" ""
-add "$dir" "H" "Bombjack Twin (set 1).mra" "_Bombjack Twin" "" ""
-add "$dir" "V" "Bubble 2000.mra" "_Bubble 2000" "" ""
-add "$dir" "V" "Dolmen.mra" "_Dolmen" "" ""
+add "$dir" "V" "Acrobat Mission.mra" "_Acrobat Mission" "" "STG"
+add "$dir" "V" "Air Attack (set 1).mra" "_Air Attack" "" "STG"
+
+add "$dir" "V" "Bombjack Twin (set 1).mra" "_Bombjack Twin" "" "ACT"
+add "$dir" "H" "Dolmen.mra" "_Dolmen" "" "PUZ"
 add "$dir" "H" "Guardian Storm (horizontal, not encrypted).mra" "_Guardian Storm" "" ""
 add "$dir" "V" "GunNail (28th May. 1992).mra" "_GunNail" "" ""
 add "$dir" "V" "Hacha Mecha Fighter (19th Sep. 1991, protected, set 1).mra" "_Hacha Mecha Fighter" "" ""
@@ -41,6 +39,9 @@ add "$dir" "V" "Tom Tom Magic.mra" "_Tom Tom Magic" "" ""
 add "$dir" "H" "Twin Action.mra" "_Twin Action" "" ""
 add "$dir" "H" "US AAF Mustang (25th May. 1990).mra" "_US AAF Mustang" "" ""
 add "$dir" "V" "Vandyke (Japan).mra" "_Vandyke" "" ""
- 
+
+add "$dir" "H" "Bio-ship Paladin.mra" "_Bio-ship Paladin" "" "STG"
+add "$dir" "H" "Black Heart.mra" "_Black Heart" "" "STG"
+add "$dir" "H" "Bubble 2000.mra" "_Bubble 2000" "" "PUZ"
    dot
 #fi
