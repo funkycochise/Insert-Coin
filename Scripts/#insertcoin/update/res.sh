@@ -1139,6 +1139,14 @@ function process {
             delalt "_Namco Classic Collection"
             ;;
 
+        "LegendOfMakai")
+            dl "LegendOfMakai.zip" "LegendOfMakai"
+            debug "LegendOfMakai"
+            delmra "Legend of Makai (World).mra"
+            delrbf "JalecoMS1Z_20260923.rbf"
+            delalt "_Legend of Makai"
+            ;;
+
         "DrMicro")
             dl "DrMicro.zip" "Dr. Micro"
             debug "DrMicro"
@@ -1233,6 +1241,7 @@ process "DrMicro"
 process "Fuuki"
 process "SystemFL"
 process "NamcoClassicCollection"
+process "LegendOfMakai"
 
 install
 
