@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+#@^26
+   add "Rampart.mra" "_Rampart"
+   add "Batman.mra" "_Batman"
+
 #0925
    additem "$nmk16"
    add "Legend of Makai (World).mra" "_Legend of Makai" 
