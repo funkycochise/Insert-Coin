@@ -44,6 +44,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Major Havoc.mra" "_Major Havoc" "" "ACT"
    add "$dir" "H" "Marble Madness II (prototype).mra" "_Marble Madness II"
    add "$dir" "H" "Missile Command (rev 3).mra" "_Missile_Command" "" "ACT"
+   add "$dir" "H" "Pit Fighter (rev 9).mra" "_Pit Fighter" "" "VSF"
    add "$dir" "H" "Rampart.mra" "_Rampart" "" ""
    add "$dir" "H" "Red Baron.mra" "_Red Baron"
    add "$dir" "H" "Space Race [TTL].mra" "_Space Race"
@@ -54,6 +55,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Tempest.mra" "_Tempest" "" "ACT"
    add "$dir" "H" "Vindicators Part II (rev 3).mra" "_Vindicators part II"
    add "$dir" "H" "Xybots.mra" "_Xybots" "" ""
+   add "$dir" "V" "Hydra.mra" "_Hydra" "" ""
 
    dot
 fi

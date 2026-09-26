@@ -68,6 +68,8 @@ counter=0
 #@^26
    add "Rampart.mra" "_Rampart"
    add "Batman.mra" "_Batman"
+   add "Hydra.mra" "_Hydra"
+   add "Pit Fighter (rev 9).mra" "_Pit Fighter"
 
 #0925
    additem "$nmk16"
