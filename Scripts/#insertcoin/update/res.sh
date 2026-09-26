@@ -1147,7 +1147,7 @@ function process {
             delalt "_Legend of Makai"
             ;;
 
-"NMK16")
+        "NMK16")
             dl "NMK16.zip" "NMK16"
             debug "NMK16"
             delmra "Acrobat Mission.mra"
@@ -1216,6 +1216,22 @@ function process {
             delalt "_Twin Action"
             delalt "_US AAF Mustang"
             delalt "_Vandyke"
+            ;;
+
+        "Rampart")
+            dl "Rampart.zip" "Rampart"
+            debug "Rampart"
+            delmra "Rampart.mra"
+            delrbf "Rampart_20260924.rbf"
+            delalt "_Rampart"
+            ;;
+
+        "Batman")
+            dl "Batman.zip" "Batman"
+            debug "Batman"
+            delmra "Batman.mra"
+            delrbf "Batman_20260924.rbf"
+            delalt "_Batman"
             ;;
 
         "DrMicro")
@@ -1314,6 +1330,8 @@ process "SystemFL"
 process "NamcoClassicCollection"
 process "LegendOfMakai"
 process "NMK16"
+process "Rampart"
+process "Batman"
 
 install
 
