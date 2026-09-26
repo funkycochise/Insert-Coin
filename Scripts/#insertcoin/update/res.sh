@@ -1234,6 +1234,16 @@ function process {
             delalt "_Batman"
             ;;
 
+        "AtariG1")
+            dl "AtariG1.zip" "AtariG1"
+            debug "AtariG1"
+            delmra "Hydra.mra"
+            delmra "Pit Fighter (rev 9).mra"
+            delrbf "Atari-G1_20260925.rbf"
+            delalt "_Hydra"
+            delalt "_Pit Fighter"
+            ;;
+
         "DrMicro")
             dl "DrMicro.zip" "Dr. Micro"
             debug "DrMicro"
@@ -1332,6 +1342,7 @@ process "LegendOfMakai"
 process "NMK16"
 process "Rampart"
 process "Batman"
+process "AtariG1"
 
 install
 
