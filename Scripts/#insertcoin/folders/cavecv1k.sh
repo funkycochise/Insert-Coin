@@ -12,6 +12,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "DoDonPachi Dai-Fukkatsu Ver 1.5 (Japan, 2008.06.23 MASTER VER 1.5).mra" "_DoDonPachi Dai-Fukkatsu" "" "STG"
    add "$dir" "H" "DoDonPachi SaiDaiOuJou (Japan, 2012.4.20).mra" "_DoDonPachi SaiDaiOuJou" "" "STG"
    add "$dir" "V" "Espgaluda II (Japan, 2005-11-14.MASTER VER.).mra" "_Espgaluda II" "" "STG"
+   add "$dir" "V" "Flying shark (Slop Label Ver 1.67 MASTER.VER).mra" "_Ibara" "_Ibara" "" "STG"
    add "$dir" "V" "Ibara (Japan, 2005 03 22 MASTER VER..).mra" "_Ibara" "_Ibara" "" "STG"
    add "$dir" "V" "Ibara Kuro Black Label (Japan, 2006-02-06. MASTER VER.).mra" "_Ibara" "" "STG"
    add "$dir" "V" "Muchi Muchi Pork! (Japan, 2007-4-17 MASTER VER.).mra" "_Muchi Muchi Pork!" "" "STG"
