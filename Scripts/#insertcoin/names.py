@@ -101,6 +101,7 @@ neogeo=_Neo-geo
 nichibutsu=_Nihon Bussan-Nichibutsu
 nintendo=_Nintendo
 nmk=_Nmk
+nmk16=_Nmk16
 orca=_Orca
 pacman=_Pacman
 psikyogen1=_Psikyo_1st gen
