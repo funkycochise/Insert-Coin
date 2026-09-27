@@ -79,6 +79,7 @@ kaneko16=_Kaneko16
 kiwako=_Kiwako
 konami=_Konami
 konamitwin16=_Konami Twin16
+konamigx=_Konami GX
 ladybug=_Ladybug
 leland=_Leland
 mcr1=_MCR1
