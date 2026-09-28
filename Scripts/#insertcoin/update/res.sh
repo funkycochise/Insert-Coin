@@ -15,11 +15,8 @@ des_core=$des_arcade/cores
 des_alt=$des_arcade/_alternatives
 des_config=$SD/config
 
-
-if [ ! -d "/media/fat/Scripts/res/" ];
-then  
-   mkdir /media/fat/Scripts/res/
-fi
+# Création préalable des dossiers (évite les collisions entre unzip parallèles)
+mkdir -p "$temp" "$res" "$res/_Arcade/cores" "$res/_Arcade/_alternatives" "$res/config"
 cd /media/fat/Scripts/res/
 
 debug="0"
@@ -31,27 +28,19 @@ if [ "$debug" == "1" ]; then
 fi
 }
 
+# Téléchargement + décompression en parallèle (4 jobs max)
 function dl {
-
-file=$1
-txt=$2
-
-if [ -z "$txt" ];
-then
-   echo -e "${BLUE}${CHECK}${NC} $file"
-else
-   echo -e "${BLUE}${CHECK}${NC} $txt"
-fi
-
-wget -q https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/$file -O /media/fat/Scripts/temp/$file
-if [ -f "/media/fat/Scripts/temp/$file" ]; then
-  unzip -qq -o /media/fat/Scripts/temp/$file -d /media/fat/Scripts/res/
-  #ls /media/fat/Scripts/res/_Arcade/cores/Klax_*.rbf
-  rm -r /media/fat/Scripts/temp/$file
-else
-   echo -e "Error downloading $file" 
-fi
-
+   local file=$1 txt=$2
+   echo -e "${BLUE}${CHECK}${NC} ${txt:-$file}"
+   while [ "$(jobs -rp | wc -l)" -ge 4 ]; do sleep 0.2; done
+   (
+      if ! { wget -q "https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/$file" -O "$temp/$file" \
+             && [ -s "$temp/$file" ] \
+             && unzip -qq -o "$temp/$file" -d "$res/"; }; then
+         echo -e "Error downloading $file"
+      fi
+      rm -f "$temp/$file"
+   ) &
 }
 
 
@@ -150,9 +139,9 @@ rm -r /media/fat/Scripts/res/
 }
 
 function rename {
-dir="$1"
-mra="$2"
-renamed="$3"
+local dir="$1"
+local mra="$2"
+local renamed="$3"
 
 if [ -f "$dir/$renamed" ]; then
       # La version renommée existe déjà : si l'original est présent, on le supprime
@@ -202,22 +191,36 @@ function renexisting {
 }
 
 # --- Cleanup helpers -------------------------------------------------
-# delmra <pattern>  : remove a .mra file directly under /media/fat/_Arcade
-# delrbf <pattern>  : remove a .rbf core file under /media/fat/_Arcade/cores
-# delalt <pattern>  : remove a whole game folder under /media/fat/_Arcade/_alternatives
-# All three take a single -name pattern (globs like "Foo*" are fine) and are
-# no-ops when nothing matches (same as the original find calls).
+# delmra <pattern>  : queue a .mra file directly under /media/fat/_Arcade
+# delrbf <pattern>  : queue a .rbf core file under /media/fat/_Arcade/cores
+# delalt <pattern>  : queue a whole game folder under /media/fat/_Arcade/_alternatives
+# Patterns are only queued; flush_del runs ONE find per category at the end.
+# Globs like "Foo*" are fine, and nothing happens when nothing matches.
 
-function delmra {
-   find "/media/fat/_Arcade" -maxdepth 1 -type f -name "$1" -delete
+_dm=(); _dr=(); _da=()
+function delmra { _dm+=("$1"); }
+function delrbf { _dr+=("$1"); }
+function delalt { _da+=("$1"); }
+
+function _flush_one {
+   local dir="$1" type="$2"; shift 2
+   [ $# -eq 0 ] && return
+   [ -d "$dir" ] || return
+   local args=() p
+   for p in "$@"; do args+=(-o -name "$p"); done
+   unset 'args[0]'
+   if [ "$type" = "d" ]; then
+      find "$dir" -maxdepth 1 -type d \( "${args[@]}" \) -exec rm -rf {} +
+   else
+      find "$dir" -maxdepth 1 -type f \( "${args[@]}" \) -delete
+   fi
 }
 
-function delrbf {
-   find "/media/fat/_Arcade/cores" -maxdepth 1 -type f -name "$1" -delete
-}
-
-function delalt {
-   find "/media/fat/_Arcade/_alternatives" -maxdepth 1 -type d -name "$1" -exec rm -rf {} +
+function flush_del {
+   _flush_one /media/fat/_Arcade f "${_dm[@]}"
+   _flush_one /media/fat/_Arcade/cores f "${_dr[@]}"
+   _flush_one /media/fat/_Arcade/_alternatives d "${_da[@]}"
+   _dm=(); _dr=(); _da=()
 }
 
 function process {
@@ -838,8 +841,6 @@ function process {
             delalt "_Empire City"
             ;;
 
-
-
         "Gaelco")
             dl "Gaelco.zip" "Gaelco"
             debug "Gaelco"
@@ -860,11 +861,11 @@ function process {
             delrbf "glass_*.rbf"
             delalt "_Alligator Hunt"
             delalt "_Biomechanical Toy"
-            delalt  "_Glass"
-            delalt  "_Squash"
-            delalt  "_TH Strikes Back"
-            delalt  "_Thunder Hoop"
-            delalt  "_World Rally Championship"
+            delalt "_Glass"
+            delalt "_Squash"
+            delalt "_TH Strikes Back"
+            delalt "_Thunder Hoop"
+            delalt "_World Rally Championship"
             ;;
 
         "GrindStormer")
@@ -874,8 +875,6 @@ function process {
             delrbf "GrindStormer_*.rbf"
             delalt "_Grind Stormer"
             ;;
-
-
 
         "Guardians")
             dl "Guardians.zip" "Guardians"
@@ -1244,6 +1243,42 @@ function process {
             delalt "_Pit Fighter"
             ;;
 
+        "KonamiGX")
+        dl "KonamiGX.zip" "KonamiGX"
+        debug "KonamiGX"
+        delmra "Crazy Cross (ver EAA).mra"
+        delmra "Daisu-Kiss (ver JAA).mra"
+        delmra "Dragoon Might (ver AAB).mra"
+        delmra "Fantastic Journey (ver EAA).mra"
+        delmra "Lethal Enforcers II Gun Fighters (ver EAA).mra"
+        delmra "Salamander 2 (ver JAA).mra"
+        delmra "Sexy Parodius (ver JAA).mra"
+        delmra "Taisen Tokkae-dama (ver JAA).mra"
+        delmra "Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra"
+        delmra "Twin Bee Yahhoo! (ver JAA).mra"
+        delmra "Winning Spike (ver EAA).mra"
+        delalt "_Crazy Cross"
+        delalt "_Daisu-Kiss"
+        delalt "_Dragoon Might"
+        delalt "_Fantastic Journey"
+        delalt "_Lethal Enforcers II Gun Fighters"
+        delalt "_Salamander 2"
+        delalt "_Sexy Parodius"
+        delalt "_Taisen Tokkae-dama"
+        delalt "_Tokimeki Memorial Taisen Puzzle-dama"
+        delalt "_Twin Bee Yahhoo!"
+        delalt "_Winning Spike"
+        delrbf "KonamiGX_*.rbf"
+        ;;
+
+        "StunRunner")
+            dl "StunRunner.zip" "StunRunner"
+            debug "StunRunner"
+            delmra "S.T.U.N. Runner.mra"
+            delrbf "StunRunner_20260926.rbf"
+            delalt "_S.T.U.N. Runner"
+            ;;
+
         "DrMicro")
             dl "DrMicro.zip" "Dr. Micro"
             debug "DrMicro"
@@ -1343,6 +1378,12 @@ process "NMK16"
 process "Rampart"
 process "Batman"
 process "AtariG1"
+process "KonamiGX"
+process "StunRunner"
+
+# Attendre la fin de tous les téléchargements, puis supprimer en une passe
+wait
+flush_del
 
 install
 

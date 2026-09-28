@@ -1448,6 +1448,7 @@ dl "konamigx.zip"
 dl "crzcross.zip"
 dl "daiskiss.zip"
 dl "dragoona.zip"
+
 dl "fantjour.zip"
 dl "le2.zip"
 dl "salmndr2.zip"
@@ -1456,5 +1457,7 @@ dl "tokkae.zip"
 dl "tkmmpzdm.zip"
 dl "tbyahhoo.zip"
 dl "winspike.zip"
+
+dl "stunrun.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"

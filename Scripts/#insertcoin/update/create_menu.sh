@@ -57,7 +57,8 @@ fi
 ./folders/skns.sh 
 ./folders/Kiwako.sh 
 ./folders/konami.sh 
-./folders/konami_twin16.sh 
+./folders/konami_twin16.sh
+./folders/konami_gx.sh
 ./folders/ladybug.sh 
 ./folders/leland.sh 
 ./folders/mcr1.sh 
