@@ -47,6 +47,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Pit Fighter (rev 9).mra" "_Pit Fighter" "" "VSF"
    add "$dir" "H" "Rampart.mra" "_Rampart" "" ""
    add "$dir" "H" "Red Baron.mra" "_Red Baron"
+   add "$dir" "H" "S.T.U.N. Runner.mra" "_S.T.U.N. Runner" "" "RAC"
    add "$dir" "H" "Space Race [TTL].mra" "_Space Race"
    add "$dir" "H" "Sprint 1.mra" "_Sprint 1" "" "SPO"
    add "$dir" "H" "Sprint 2.mra" "_Sprint 2" "" "SPO"

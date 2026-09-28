@@ -65,7 +65,11 @@ function additem {
 
 counter=0
 
-#@^26
+#0928
+   additem "$konamigx"
+   add "S.T.U.N. Runner.mra" "_S.T.U.N. Runner"
+
+#0926
    add "Rampart.mra" "_Rampart"
    add "Batman.mra" "_Batman"
    add "Hydra.mra" "_Hydra"
