@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#0929
+   additem "$namco_sys2"
+
 #0928
    additem "$konamigx"
    add "S.T.U.N. Runner.mra" "_S.T.U.N. Runner"
