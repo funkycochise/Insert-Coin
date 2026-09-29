@@ -685,6 +685,18 @@ function process {
 
         "Atari")
             dl "Atari.zip" "Atari"
+            delmra "Cloak & Dagger (rev 5).mra"
+            delmra "Marble Madness II (prototype).mra"
+            delmra "Millipede.mra"
+            delmra "Paperboy (rev 3).mra"
+            delrbf "CloakAndDagger_*.rbf"
+            delrbf "MarbleMadness2.rbf"
+            delrbf "Millipede_*.rbf"
+            delrbf "Paperboy_*.rbf"
+            delalt "_Cloak & Dagger"
+            delalt "_Marble Madness II"
+            delalt "_Millipede"
+            delalt "_Paperboy"
             ;;
 
         "Banpresto")
@@ -761,6 +773,7 @@ function process {
 
         "Cave68K")
             dl "Cave68K.zip" "Cave68K"
+            delrbf "cave_*.rbf"
             ;;
 
         "DECOCassette")
@@ -894,67 +907,236 @@ function process {
 
         "jlrh_OperWolf")
             dl "jlrh_OperWolf.zip" "Operation Wolf"
+            delmra "Operation Wolf (World, rev 2, set 1).mra"
+            delrbf "opwolf_*.rbf"
+            delalt "_Operation Wolf"
             ;;
 
         "Kaneko")
             dl "Kaneko.zip" "Kaneko Super Nova"
+            delmra "Cyvern - The Dragon Weapons (US).mra"
+            delmra "Gals Panic 4 (Europe).mra"
+            delmra "Gals Panic DX (Asia).mra"
+            delmra "Gals Panic EX (Korea).mra"
+            delmra "Gals Panic S - Extra Edition (Europe, revision 1).mra"
+            delmra "Gals Panic S2 (Europe, version 3).mra"
+            delmra "Gals Panic S3 (Japan).mra"
+            delmra "Gals Panic SU (Korea, version 5).mra"
+            delmra "Guts'n (Japan).mra"
+            delmra "Jan Jan Paradise 2.mra"
+            delmra "Jan Jan Paradise.mra"
+            delmra "Panic Street (Japan).mra"
+            delmra "Puzz Loop (Europe, v0.94).mra"
+            delmra "Saru-Kani-Hamu-Zou (Japan).mra"
+            delmra "Sen-Know (Japan).mra"
+            delmra "Sengeki Striker (Asia).mra"
+            delmra "Tel Jan.mra"
+            delmra "VS Block Breaker (Europe).mra"
+            delmra "VS Mahjong Otome Ryouran (revision 2).mra"
+            delrbf "SKNS_*.rbf"
+            delalt "_Cyvern - The Dragon Weapons"
+            delalt "_Gals Panic 4"
+            delalt "_Gals Panic DX"
+            delalt "_Gals Panic EX"
+            delalt "_Gals Panic S - Extra Edition"
+            delalt "_Gals Panic S2"
+            delalt "_Gals Panic S3"
+            delalt "_Gals Panic SU"
+            delalt "_Guts'n"
+            delalt "_Jan Jan Paradise 2"
+            delalt "_Jan Jan Paradise"
+            delalt "_Panic Street"
+            delalt "_Puzz Loop"
+            delalt "_Saru-Kani-Hamu-Zou"
+            delalt "_Sen-Know"
+            delalt "_Sengeki Striker"
+            delalt "_Tel Jan"
+            delalt "_VS Block Breaker"
+            delalt "_VS Mahjong Otome Ryouran"
             ;;
 
         "Kaneko16")
             dl "Kaneko16.zip" "Kaneko 16"
+            delmra "Blaze On (Japan).mra"
+            delmra "Explosive Breaker (World).mra"
+            delmra "Magical Crystals (World, 92-01-10).mra"
+            delmra "Wing Force (Japan, prototype).mra"
+            delrbf "Kaneko16_*.rbf"
+            delalt "_Blaze On"
+            delalt "_Explosive Breaker"
+            delalt "_Magical Crystals"
+            delalt "_Wing Force"
             ;;
 
         "KickAndRun")
             dl "KickAndRun.zip" "KickAndRun"
+            delmra "kicknrun.mra"
+            delrbf "KickAndRun_*.rbf"
+            delalt "_kicknrun"
             ;;
 
         "MegaPlay")
             dl "MegaPlay.zip" "SEGA Megaplay"
+            delmra "Sega Mega Play - 4 Cart Test.mra"
+            delmra "Sega Mega Play - Bio-hazard Battle.mra"
+            delmra "Sega Mega Play - Columns III.mra"
+            delmra "Sega Mega Play - Golden Axe II (Rev B).mra"
+            delmra "Sega Mega Play - Golden Axe II.mra"
+            delmra "Sega Mega Play - Grand Slam.mra"
+            delmra "Sega Mega Play - Gunstar Heroes.mra"
+            delmra "Sega Mega Play - Mazin Wars.mra"
+            delmra "Sega Mega Play - Shinobi III.mra"
+            delmra "Sega Mega Play - Sonic The Hedgehog 2.mra"
+            delmra "Sega Mega Play - Sonic The Hedgehog.mra"
+            delmra "Sega Mega Play - Streets of Rage II.mra"
+            delmra "Sega Mega Play - Tecmo World Cup.mra"
+            delrbf "MegaPlay_*.rbf"
+            delalt "_Sega Mega Play - 4 Cart Test"
+            delalt "_Sega Mega Play - Bio-hazard Battle"
+            delalt "_Sega Mega Play - Columns III"
+            delalt "_Sega Mega Play - Golden Axe II"
+            delalt "_Sega Mega Play - Grand Slam"
+            delalt "_Sega Mega Play - Gunstar Heroes"
+            delalt "_Sega Mega Play - Mazin Wars"
+            delalt "_Sega Mega Play - Shinobi III"
+            delalt "_Sega Mega Play - Sonic The Hedgehog 2"
+            delalt "_Sega Mega Play - Sonic The Hedgehog"
+            delalt "_Sega Mega Play - Streets of Rage II"
+            delalt "_Sega Mega Play - Tecmo World Cup"
             ;;
 
         "SegaG80")
             dl "SegaG80.zip" "SEGA G80 correct core"
+            delmra "005.mra"
+            delmra "Astro Blaster.mra"
+            delmra "Monster Bash.mra"
+            delmra "Pig Newton.mra"
+            delmra "Sindbad Mystery.mra"
+            delmra "Space Odyssey.mra"
+            delmra "Star Trek.mra"
+            delmra "Tac-Scan.mra"
+            delrbf "SegaG80_*.rbf"
+            delalt "_005"
+            delalt "_Astro Blaster"
+            delalt "_Monster Bash"
+            delalt "_Pig Newton"
+            delalt "_Sindbad Mystery"
+            delalt "_Space Odyssey"
+            delalt "_Star Trek"
+            delalt "_Tac-Scan"
             ;;
 
         "SegaS24")
             dl "SegaS24.zip" "Sega System 24"
+            delmra "Bonanza Bros.mra"
+            delmra "Crack Down.mra"
+            delmra "Gain Ground.mra"
+            delmra "Hot Rod.mra"
+            delmra "Rough Racer.mra"
+            delmra "Scramble Spirits.mra"
+            delrbf "segas24_*.rbf"
+            delalt "_Bonanza Bros"
+            delalt "_Crack Down"
+            delalt "_Gain Ground"
+            delalt "_Hot Rod"
+            delalt "_Rough Racer"
+            delalt "_Scramble Spirits"
             ;;
 
         "SFTM")
             dl "SFTM.zip" "Street Fighter The Movie"
+            delmra "Street Fighter - The Movie (v1.12).mra"
+            delalt "_Street Fighter - The Movie"
+            delrbf "ITech32_*.rbf"
             ;;
 
         "sms")
             dl "sms.zip" "SMS Sega System-E"
+            delrbf "SMS_*.rbf"
             ;;
 
         "Spider-Man")
             dl "Spider-Man.zip" "Spider man the video game"
+            delmra "Holosseum (US, Rev A).mra"
+            delmra "Spider-Man The Videogame (World).mra"
+            delrbf "SegaS32.rbf"
+            delalt "_Holosseum"
+            delalt "_Spider-Man The Videogame"
             ;;
-
 
         "SuperOffroad")
             dl "SuperOffroad.zip" "Super Off Road"
+            delmra "PigOut.mra"
+            delmra "SuperOffRoad.mra"
+            delmra "TrackPak.mra"
+            delrbf "SuperOffRoad_*.rbf"
+            delalt "_PigOut"
+            delalt "_SuperOffRoad"
+            delalt "_TrackPak"
             ;;
 
         "taitosj")
             dl "taitosj.zip" "Taito SJ"
+            delmra "Jungle Hunt (US).mra"
+            delmra "Pirate Pete.mra"
+            delmra "jetpac_sj.mra"
+            delalt "_Jungle Hunt"
+            delalt "_Pirate Pete"
+            delalt "_jetpac_sj"
             ;;
 
         "T-Unit")
             dl "T-Unit.zip" "Midway T-Unit"
+            delmra "Judge Dredd (rev TA1 7-12-92, location test).mra"
+            delmra "Mortal Kombat (rev 5.0 T-Unit 03-19-93).mra"
+            delmra "Mortal Kombat II (rev L3.1).mra"
+            delmra "NBA Jam (rev 3.01 4-07-93).mra"
+            delmra "NBA Jam Tournament Edition (rev 4.0 3-23-94).mra"
+            delrbf "Arcade-TUnit-CRT-Adjust.rbf"
+            delalt "_Judge Dredd"
+            delalt "_Mortal Kombat"
+            delalt "_Mortal Kombat II"
+            delalt "_NBA Jam"
+            delalt "_NBA Jam Tournament Edition"
             ;;
 
         "TwinHawk")
             dl "TwinHawk.zip" "TwinHawk/Daisenpu"
+            delmra "Twin Hawk (World).mra"
+            delrbf "TwinHawk_*.rbf"
+            delalt "_Twin Hawk"
             ;;
 
         "Universal")
             dl "Universal.zip" "Universal"
+            delmra "American Soccer.mra"
+            delmra "Do! Run Run.mra"
+            delmra "Indoor Soccer.mra"
+            delmra "Jumping Jack.mra"
+            delmra "Kick Rider.mra"
+            delmra "Mr. Do! vs. Unicorns.mra"
+            delmra "Mr. Do's Castle.mra"
+            delmra "Mr. Do's Wild Ride.mra"
+            delmra "Super Pierrot.mra"
+            delrbf "Universal_DoCastle.rbf"
+            delalt "_American Soccer"
+            delalt "_Do! Run Run"
+            delalt "_Indoor Soccer"
+            delalt "_Jumping Jack"
+            delalt "_Kick Rider"
+            delalt "_Mr. Do! vs. Unicorns"
+            delalt "_Mr. Do's Castle"
+            delalt "_Mr. Do's Wild Ride"
+            delalt "_Super Pierrot"
             ;;
 
         "KillerInstinct")
             dl "KillerInstinct.zip" "Killer Instinct"
+            delmra "Killer Instinct 2.mra"
+            delmra "Killer Instinct.mra"
+            delrbf "KillerInstinct_*.rbf"
+            delalt "_Killer Instinct 2"
+            delalt "_Killer Instinct"
             ;;
 
         "CaveCV1K")
@@ -984,38 +1166,150 @@ function process {
 
         "EscapeRobotMonster")
             dl "EscapeRobotMonster.zip" "Escape From The Planet of the robot monsters"
+            delmra "Escape from the Planet of the Robot Monsters (set 1).mra"
+            delrbf "Escape_*.rbf"
+            delalt "_Escape from the Planet of the Robot Monsters"
             ;;
 
         "ZN1Namco")
             dl "ZN1Namco.zip" "ZN1 Namco"
+            delmra "1 on 1 Government (Japan).mra"
+            delmra "Aero Fighters Special (USA).mra"
+            delmra "Bloody Roar (Japan, Jun 21 1997).mra"
+            delmra "Bloody Roar 2 (World).mra"
+            delmra "Brave Blade (World).mra"
+            delmra "Dead or Alive ++ (Japan USA Export).mra"
+            delmra "Fighters' Impact (Ver 2.02A).mra"
+            delmra "Flame Gunner (Export).mra"
+            delmra "G-Darius Ver.2 (Ver 2.03J).mra"
+            delmra "Gallop Racer 2 (Export).mra"
+            delmra "Gallop Racer 3 (Export).mra"
+            delmra "Heaven's Gate.mra"
+            delmra "Logic Pro Adventure (Japan).mra"
+            delmra "Magical Date (Ver 2.02J).mra"
+            delmra "Monster Farm Jump (Japan).mra"
+            delmra "Psychic Force (Ver 2.4O).mra"
+            delmra "Ray Storm (Ver 2.06A).mra"
+            delmra "Shanghai Matekibuyuu (Japan).mra"
+            delmra "Sonic Wings Limited (Japan).mra"
+            delmra "Super Football Champ (Ver 2.5O).mra"
+            delmra "Tecmo World Cup Millennium (Japan).mra"
+            delmra "The Block Kuzushi (Japan).mra"
+            delmra "Tondemo Crisis (Japan).mra"
+            delrbf "XNZN1_*.rbf"
+            delalt "_1 on 1 Government"
+            delalt "_Aero Fighters Special"
+            delalt "_Bloody Roar"
+            delalt "_Bloody Roar 2"
+            delalt "_Brave Blade"
+            delalt "_Dead or Alive ++"
+            delalt "_Fighters' Impact"
+            delalt "_Flame Gunner"
+            delalt "_G-Darius Ver.2"
+            delalt "_Gallop Racer 2"
+            delalt "_Gallop Racer 3"
+            delalt "_Heaven's Gate"
+            delalt "_Logic Pro Adventure"
+            delalt "_Magical Date"
+            delalt "_Monster Farm Jump"
+            delalt "_Psychic Force"
+            delalt "_Ray Storm"
+            delalt "_Shanghai Matekibuyuu"
+            delalt "_Sonic Wings Limited"
+            delalt "_Super Football Champ"
+            delalt "_Tecmo World Cup Millennium"
+            delalt "_The Block Kuzushi"
+            delalt "_Tondemo Crisis"
+            delalt "_Fighters Impact"
+            delalt "_G-Darius"
             ;;
 
         "ZN1Capcom")
             dl "ZN1Capcom.zip" "ZN1 Capcom"
+            delmra "Battle Arena Toshinden 2 (USA).mra"
+            delmra "Gallop Racer.mra"
+            delmra "Star Gladiator Episode I - Final Crusade (USA).mra"
+            delmra "Street Fighter EX (USA).mra"
+            delmra "Street Fighter EX Plus (USA 970311).mra"
+            delrbf "ZN1Capcom_*.rbf"
+            delalt "_Battle Arena Toshinden 2"
+            delalt "_Gallop Racer"
+            delalt "_Star Gladiator Episode I - Final Crusade"
+            delalt "_Street Fighter EX"
+            delalt "_Street Fighter EX Plus"
             ;;
 
         "ZN2")
             dl "ZN2.zip" "ZN2 Capcom"
+            delmra "Choukou Senki Kikaioh (Japan).mra"
+            delmra "Plasma Sword - Nightmare of Bilstein (USA).mra"
+            delmra "Rival Schools - United By Fate (Europe).mra"
+            delmra "Star Gladiator 2 - Nightmare of Bilstein (Japan).mra"
+            delmra "Street Fighter EX2 (USA 980526).mra"
+            delmra "Street Fighter EX2 Plus (USA).mra"
+            delmra "Strider 2 (Europe).mra"
+            delmra "Strider Hiryu 2 (Japan).mra"
+            delmra "Tech Romancer (Europe).mra"
+            delmra "Tetris - The Grand Master (Japan).mra"
+            delrbf "Arcade-ZN2Capcom_*.rbf"
+            delalt "_Choukou Senki Kikaioh"
+            delalt "_Plasma Sword - Nightmare of Bilstein"
+            delalt "_Rival Schools - United By Fate"
+            delalt "_Star Gladiator 2 - Nightmare of Bilstein"
+            delalt "_Street Fighter EX2"
+            delalt "_Street Fighter EX2 Plus"
+            delalt "_Strider 2"
+            delalt "_Strider Hiryu 2"
+            delalt "_Tech Romancer"
+            delalt "_Tetris - The Grand Master"
+            delalt "_Shiritsu Justice Gakuen - Legion of Heroes"
             ;;
 
         "EscKids")
             dl "EscKids.zip" "Escape Kids"
+            delmra "Escape Kids.mra"
+            delrbf "EscapeKids_*.rbf"
+            delalt "_Escape Kids"
             ;;
 
         "SpaceHarrier")
             dl "SpaceHarrier.zip" "Space Harrier"
+            delmra "Hang-On.mra"
+            delmra "Space Harrier (Rev A, 8751 315-5163A).mra"
+            delrbf "SegaSpaceHarrier_*.rbf"
+            delalt "_Hang-On"
+            delalt "_Space Harrier"
             ;;
 
         "XYBots")
             dl "XYBots.zip" "XY Bots"
+            delmra "Xybots.mra"
+            delrbf "Xybots_*.rbf"
+            delalt "_Xybots"
             ;;
 
         "SegaYBoard")
             dl "SegaYBoard.zip" "Sega YBoard"
+            delmra "G-LOC Air Battle.mra"
+            delmra "G-LOC R360.mra"
+            delmra "Galaxy Force II.mra"
+            delmra "Power Drift.mra"
+            delmra "Rail Chase.mra"
+            delmra "Strike Fighter.mra"
+            delrbf "SegaYBoard_*.rbf"
+            delalt "_G-LOC Air Battle"
+            delalt "_G-LOC R360"
+            delalt "_Galaxy Force II"
+            delalt "_Power Drift"
+            delalt "_Rail Chase"
+            delalt "_Strike Fighter"
             ;;
 
         "HardDrivin")
             dl "HardDrivin.zip" "Hard Drivin'"
+            delmra "Hard Drivin' (Cockpit, rev 7).mra"
+            delrbf "HardDrivin_cockpit.rbf"
+            delalt "_Hard Drivin'"
             ;;
 
         "Jaleco MS32")
@@ -1287,6 +1581,68 @@ function process {
             delalt "_Dr. Micro"
             ;;
 
+        "NamcoSystem2")
+            dl "NamcoSystem2.zip" "Namco System2"
+            debug "NamcoSystem2"
+            delmra "Assault (Rev B).mra"
+            delmra "Bubble Trouble - Golly! Ghost! 2 (World, Rev B).mra"
+            delmra "Burning Force (Japan, new version (Rev C)).mra"
+            delmra "Cosmo Gang the Video (US).mra"
+            delmra "Dirt Fox (Japan).mra"
+            delmra "Dragon Saber (World, DO2).mra"
+            delmra "Final Lap (Rev E).mra"
+            delmra "Final Lap 2 (World, Rev B).mra"
+            delmra "Final Lap 3 (World, Rev C).mra"
+            delmra "Finest Hour (Japan).mra"
+            delmra "Four Trax (World).mra"
+            delmra "Golly! Ghost!.mra"
+            delmra "Kyuukai Douchuuki (Japan, new version (Rev B)).mra"
+            delmra "Lucky & Wild.mra"
+            delmra "Marvel Land (Japan).mra"
+            delmra "Metal Hawk (Rev C).mra"
+            delmra "Mirai Ninja (Japan, set 1).mra"
+            delmra "Ordyne (World).mra"
+            delmra "Phelios.mra"
+            delmra "Rolling Thunder 2.mra"
+            delmra "Steel Gunner (Rev B).mra"
+            delmra "Steel Gunner 2 (US).mra"
+            delmra "Super World Stadium '92 (Japan).mra"
+            delmra "Super World Stadium '93 (Japan).mra"
+            delmra "Super World Stadium (Japan).mra"
+            delmra "Suzuka 8 Hours (World, Rev C).mra"
+            delmra "Suzuka 8 Hours 2 (World, Rev B).mra"
+            delmra "Valkyrie no Densetsu (Japan).mra"
+            delrbf "NamcoS2_*.rbf"
+            delalt "_Assault"
+            delalt "_Bubble Trouble - Golly! Ghost! 2"
+            delalt "_Burning Force"
+            delalt "_Cosmo Gang the Video"
+            delalt "_Dirt Fox"
+            delalt "_Dragon Saber"
+            delalt "_Final Lap"
+            delalt "_Final Lap 2"
+            delalt "_Final Lap 3"
+            delalt "_Finest Hour"
+            delalt "_Four Trax"
+            delalt "_Golly! Ghost!"
+            delalt "_Kyuukai Douchuuki"
+            delalt "_Lucky & Wild"
+            delalt "_Marvel Land"
+            delalt "_Metal Hawk"
+            delalt "_Mirai Ninja"
+            delalt "_Ordyne"
+            delalt "_Phelios"
+            delalt "_Rolling Thunder 2"
+            delalt "_Steel Gunner"
+            delalt "_Steel Gunner 2"
+            delalt "_Super World Stadium '92"
+            delalt "_Super World Stadium '93"
+            delalt "_Super World Stadium"
+            delalt "_Suzuka 8 Hours"
+            delalt "_Suzuka 8 Hours 2"
+            delalt "_Valkyrie no Densetsu"
+            ;;
+
         *)
             echo "Unknown process: $1"
             ;;
@@ -1380,6 +1736,7 @@ process "Batman"
 process "AtariG1"
 process "KonamiGX"
 process "StunRunner"
+process "NamcoSystem2"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 wait

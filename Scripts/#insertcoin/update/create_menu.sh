@@ -70,7 +70,8 @@ fi
 ./folders/midwaytunit.sh
 ./folders/midwaywolf.sh 
 ./folders/namco.sh 
-./folders/namco_sys1.sh 
+./folders/namco_sys1.sh
+./folders/namco_sys2.sh 
 ./folders/namco_sys11.sh 
 ./folders/namco_sys12.sh 
 ./folders/namco_sys22.sh 
