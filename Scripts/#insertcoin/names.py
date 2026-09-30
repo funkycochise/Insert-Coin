@@ -92,6 +92,7 @@ midwaytunit=_Midway_T-Unit
 midwaywolf=_Midway_Wolf
 namco=_Namco
 namco_sys1=_Namco-System-1
+namco_sys2=_Namco-System-2
 namco_sys11=_Namco-System-11
 namco_sys12=_Namco-System-12
 namco_sys22=_Namco-System-22
