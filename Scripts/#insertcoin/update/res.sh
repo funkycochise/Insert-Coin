@@ -435,6 +435,7 @@ function process {
             delmra "Drift Out '94 - The Hard Order.mra"
             delmra "Monster Slider.mra"
             delmra "Storm Blade.mra"
+            delmra "Survival Arts.mra"
             delmra "Vasara.mra"
             delmra "Vasara 2.mra"
             #
@@ -450,6 +451,7 @@ function process {
             delalt "_Drift Out '94 - The Hard Order"
             delalt "_Monster Slider"
             delalt "_Storm Blade"
+            delalt "_Survival Arts"
             delalt "_Vasara"
             delalt "_Vasara 2"
             ;;
