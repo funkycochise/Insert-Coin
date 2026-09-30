@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #0929
+   additem "$sammy"
    additem "$namco_sys2"
 
 #0928
