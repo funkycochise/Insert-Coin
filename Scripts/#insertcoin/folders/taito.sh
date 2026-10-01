@@ -32,6 +32,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
 
    add "$dir" "H" "Bubble Bobble (Japan, Ver 0.1).mra" "_Bubble Bobble" "" "ACT"
    add "$dir" "H" "Cadash (World).mra" "_Cadash" "" ""
+   add "$dir" "H" "Chase HQ (World).mra" "_Chase HQ" "" "RAC"
    add "$dir" "H" "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen" "" "STG"
    add "$dir" "H" "Complex X.mra" "_Complex X" "" ""
    add "$dir" "H" "Darius (World).mra" "_Darius" "" "STG"
