@@ -1490,4 +1490,10 @@ dl "sws92.zip"
 dl "sws.zip"
 dl "valkyrie.zip"
 
+dl "nss.zip"
+dl "nss_fzer.zip"
+dl "nss_smw.zip"
+dl "nss.zip"
+
+
 echo -e "${GREEN}${CHECK}${NC} Completed"
