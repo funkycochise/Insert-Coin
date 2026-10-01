@@ -1645,6 +1645,22 @@ function process {
             delalt "_Valkyrie no Densetsu"
             ;;
 
+            "Jedi")
+            dl "Jedi.zip" "Return of the Jedi"
+            debug "Jedi"
+            delmra "Return of the Jedi.mra"
+            delrbf "Jedi_*.rbf"
+            delalt "_Return of the Jedi"
+            ;;
+
+            "ChaseHQ")
+            dl "ChaseHQ.zip" "ChaseHQ"
+            debug "ChaseHQ"
+            delmra "Chase HQ (World).mra"
+            delrbf "Chase_HQ_*.rbf"
+            delalt "_Chase HQ"
+            ;;
+
         *)
             echo "Unknown process: $1"
             ;;
@@ -1739,6 +1755,8 @@ process "AtariG1"
 process "KonamiGX"
 process "StunRunner"
 process "NamcoSystem2"
+process "Jedi"
+process "ChaseHQ"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 wait

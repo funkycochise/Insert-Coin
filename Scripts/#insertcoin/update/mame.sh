@@ -1493,7 +1493,10 @@ dl "valkyrie.zip"
 dl "nss.zip"
 dl "nss_fzer.zip"
 dl "nss_smw.zip"
-dl "nss.zip"
+dl "nss_sten.zip"
+dl "jedi.zip"
+dl "xexex.zip"
+dl "chasehq.zip"
 
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
