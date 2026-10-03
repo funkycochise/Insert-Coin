@@ -32,6 +32,8 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Dragon Buster.mra" "_Dragon Buster" "" "STG"
    add "$dir" "H"  "Metro-Cross (set 1).mra" "_Metro-Cross" "" "ACT"
    add "$dir" "H"  "Pac-Land (World).mra" "_Pac-Land" "" "ACT"
+   add "$dir" "H"  "Pole Position II.mra" "_Pole Position II" "" "RAC"
+   add "$dir" "H"  "Pole Position.mra" "_Pole Position" "" "RAC"
 
    dot
 fi
