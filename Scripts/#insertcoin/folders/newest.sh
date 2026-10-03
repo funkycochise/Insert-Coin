@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+#1003
+   additem "$namco_b1"
+   add "Dragon Buster.mra" "_Dragon Buster"
+
 #1001
    add "Chase HQ (World).mra" "_Chase HQ"
    add "Return of the Jedi.mra" "_Return of the Jedi"
