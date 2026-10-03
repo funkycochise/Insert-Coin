@@ -99,6 +99,7 @@ namco_sys22=_Namco-System-22
 namco_sys86=_Namco-System-86
 namco_sysfl=_Namco-System-FL
 namco_nd1=_Namco-ND1
+namco_b1=_Namco-B1
 neogeo=_Neo-geo
 nichibutsu=_Nihon Bussan-Nichibutsu
 nintendo=_Nintendo
