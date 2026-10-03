@@ -78,6 +78,7 @@ fi
 ./folders/namco_sys86.sh
 ./folders/namco_sysfl.sh 
 ./folders/namco_nd1.sh
+./folders/namco_b1.sh
 ./folders/neogeo.sh 
 ./folders/nichibutsu.sh 
 ./folders/nintendo.sh 
