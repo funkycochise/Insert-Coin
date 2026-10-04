@@ -122,13 +122,9 @@ function install {
                #echo "Creating $des_alt/$dir"
                mkdir "$des_alt/$dir"
             fi
-            for file in "$altdir/$dir"/*; do
-               f=$(basename -- "$file")
-               #if [ ! -f "$des_alt/$dir/$f" ]; then
-                  #echo -e "\rcopying $des_alt/$dir/$f                                                   "
-                  cp -f "$altdir/$dir/$f" "$des_alt/$dir/$f"
-               #fi
-            done
+
+            #echo -e "\rcopying $des_alt/$dir                                                   "
+            cp -rf "$altdir/$dir/." "$des_alt/$dir/"
          fi
       done
    fi
