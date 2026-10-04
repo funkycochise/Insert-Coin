@@ -72,7 +72,16 @@ dl "mushisam.zip"
 dl "mushitam.zip"
 dl "pinkswts.zip"
 
-
+#trainer
+dl "espgal2t.zip"
+dl "matsuri15t.zip"
+dl "mushisamt.zip"
+dl "akatanat.zip"
+dl "deathsmlt.zip"
+dl "ddpdfkt.zip"
+dl "ddpsdojt.zip"
+dl "futariblt.zip"
+dl "futaribljt.zip"
 
 
 
