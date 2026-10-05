@@ -153,6 +153,7 @@ technos=_Technos
 technosoft=_Technosoft
 technos16=_Technos16
 tecmo=_Tehkan-Tecmo
+tecmo16=_Tecmo16
 toaplan=_Toaplan
 toaplanstg=_Toaplan_STG
 universal=_Universal
