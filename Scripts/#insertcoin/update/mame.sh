@@ -1507,5 +1507,8 @@ dl "zzyzzyxx.zip"
 dl "fstarfrc.zip"
 dl "ginkun.zip"
 dl "riot.zip"
+dl "gondo.zip"
+dl "lastmisn.zip"
+dl "srdarwin.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"

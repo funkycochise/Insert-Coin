@@ -1674,6 +1674,31 @@ function process {
             delalt "_Point Blank"
             ;;
 
+            "Tecmo16")
+            dl "Tecmo16.zip" "Tecmo16"
+            debug "Tecmo16"
+            delmra "Final Star Force (US).mra"
+            delmra "Ganbare Ginkun.mra"
+            delmra "Riot (NMK).mra"
+            delrbf "Tecmo16_*.rbf"
+            delalt "_Final Star Force"
+            delalt "_Riot"
+            ;;
+
+            "Dec8")
+            dl "Dec8.zip" "Dec8"
+            debug "Dec8"
+            delmra "Gondomania (World).mra"
+            delmra "Last Mission (World revision 8).mra"
+            delmra "SRD - Super Real Darwin (World).mra"
+            delrbf "DEC8_*.rbf"
+            delalt "_Gondomania"
+            delalt "_Last Mission"
+            delalt "_SRD Super Real Darwin"
+            ;;
+
+
+
         *)
             echo "Unknown process: $1"
             ;;
@@ -1705,6 +1730,7 @@ process "CaveCV1K"
 process "ChaseHQ"
 process "CowBoys"
 process "DECOCassette"
+process "Dec8"
 process "Dogyuun"
 process "DrMicro"
 process "EmpireCity"
@@ -1739,7 +1765,7 @@ process "OutRunners"
 process "Psikyo"
 process "PsikyoSH2"
 process "PunchOut"
-process "Rampart"
+#process "Rampart"
 process "res"
 process "SegaG80"
 process "SegaS24"
@@ -1761,6 +1787,7 @@ process "SystemFL"
 process "TaitoAsuka"
 process "TaitoF3"
 process "taitosj"
+process "Tecmo16"
 process "TrogSmashTV"
 process "T-Unit"
 process "TwinHawk"
