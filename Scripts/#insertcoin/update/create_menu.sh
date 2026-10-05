@@ -129,7 +129,8 @@ fi
 ./folders/technos.sh 
 ./folders/technosoft.sh 
 ./folders/technos16.sh 
-./folders/Tehkan-Tecmo.sh 
+./folders/Tehkan-Tecmo.sh
+./folders/tecmo16.sh
 ./folders/toaplan.sh 
 ./folders/toaplan_stg.sh 
 ./folders/universal.sh 
