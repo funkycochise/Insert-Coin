@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #1003
+   additem "$deco8"
    additem "$tecmo16"
    additem "$namco_b1"
    add "Pole Position II.mra" "_Pole Position II"
@@ -417,7 +418,7 @@ counter=0
    add "SD Gundam Psycho Salamander no Kyoui.mra" "_SD Gundam Psycho Salamander no Kyoui"
 
 #0510
-   add "Cobra-Command (World, Rev. 5).mra" "_Cobra-Command"
+   #add "Cobra-Command (World, Rev. 5).mra" "_Cobra-Command"
    add "The Real Ghostbusters (US 2 Players, Revision 2).mra" "_The Real Ghostbusters"
 
 #0509
@@ -453,7 +454,7 @@ counter=0
    add "Big Tournament Golf (Hack Scotland Course from CD).mgl" "_Neo Turf Masters" "_Big Tournament Golf (Hack Scotland Course from CD)"
 
 #0403
-   add "Psycho-Nics Oscar (World).mra" "_Psycho-Nics Oscar"
+   #add "Psycho-Nics Oscar (World).mra" "_Psycho-Nics Oscar"
 
 #0402
    add "Tumble Pop (World).mra" "_Tumble Pop"
