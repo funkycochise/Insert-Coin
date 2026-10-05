@@ -66,7 +66,10 @@ function additem {
 counter=0
 
 #1003
+   additem "$tecmo16"
    additem "$namco_b1"
+   add "Pole Position II.mra" "_Pole Position II"
+   add "Pole Position.mra" "_Pole Position"
    add "Dragon Buster.mra" "_Dragon Buster"
 
 #1001
