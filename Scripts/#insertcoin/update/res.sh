@@ -1727,6 +1727,14 @@ function process {
             delalt "_Xexex"
             ;;
 
+            "NightStriker")
+            dl "NightStriker.zip" "NightStriker"
+            debug "NightStriker"
+            delmra "Night Striker (World).mra"
+            delrbf "Night_Striker_*.rbf"
+            delalt "_Night Striker"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -1831,6 +1839,7 @@ process "ZN2"
 process "KonamiGT"
 process "WECLeMan"
 process "Xexex"
+process "NightStriker"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -e "${NC}"

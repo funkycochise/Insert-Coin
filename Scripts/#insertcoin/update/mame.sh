@@ -1514,5 +1514,6 @@ dl "srdarwin.zip"
 dl "konamigt.zip"
 dl "wecleman.zip"
 dl "xexex.zip"
+dl "nightstr.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
