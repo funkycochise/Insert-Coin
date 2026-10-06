@@ -13,7 +13,7 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Crazy Cross (ver EAA).mra" "_Crazy Cross" "" "PUZ"
    add "$dir" "H" "Daisu-Kiss (ver JAA).mra" "_Daisu-Kiss" "" "PUZ"
    add "$dir" "H" "Dragoon Might (ver AAB).mra" "_Dragoon Might" "" "FTG"
-   add "$dir" "H" "Fantastic Journey (ver EAA).mra" "_Fantastic Journey (ver EAA)" "" "ACT"
+   add "$dir" "H" "Fantastic Journey (ver EAA).mra" "_Fantastic Journey" "" "ACT"
    add "$dir" "H" "Lethal Enforcers II Gun Fighters (ver EAA).mra" "_Lethal Enforcers II Gun Fighters" "" "SHO"
    add "$dir" "H" "Salamander 2 (ver JAA).mra" "_Salamander 2" "" "STG"
    add "$dir" "H" "Sexy Parodius (ver JAA).mra" "_Sexy Parodius" "" "STG"
