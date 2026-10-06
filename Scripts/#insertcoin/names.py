@@ -58,6 +58,7 @@ deco=_DataEast-Deco
 decocassette=_Deco-Cassette
 deco8=_Deco-8
 deco16=_Deco-16
+deco_simple156=_Deco-Simple156
 exidy=_Exidy
 fuuki=_Fuuki
 gaelco=_Gaelco
