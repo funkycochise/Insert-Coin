@@ -1735,6 +1735,18 @@ function process {
             delalt "_Night Striker"
             ;;
 
+            "Simple156")
+            dl "Simple156.zip" "Simple156"
+            debug "Simple156"
+            delmra "Joe & Mac Returns.mra"
+            delmra "Osman.mra"
+            delmra "Charlie Ninja.mra"
+            delrbf "Simple156_*.rbf"
+            delalt "_Joe & Mac Returns"
+            delalt "_Osman"
+            delalt "_Charlie Ninja"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -1840,6 +1852,7 @@ process "KonamiGT"
 process "WECLeMan"
 process "Xexex"
 process "NightStriker"
+process "Simple156"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -e "${NC}"

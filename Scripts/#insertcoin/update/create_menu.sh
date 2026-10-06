@@ -34,6 +34,7 @@ fi
 ./folders/cps3.sh
 ./folders/crazykong.sh 
 ./folders/deco.sh
+./folders/deco_simple156.sh
 ./folders/decocassette.sh
 ./folders/deco8.sh
 ./folders/deco16.sh  
