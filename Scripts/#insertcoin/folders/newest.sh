@@ -65,6 +65,11 @@ function additem {
 
 counter=0
 
+#1006
+   add "Xexex (FF ver EAA).mra" "_Xexex"
+   add "Konami GT (FF, Konami, 1985).mra" "_Konami GT" 
+   add "WEC Le Mans 24 (FF, Konami, 1986).mra" "_WEC Le Mans 24"
+
 #1003
    additem "$deco8"
    additem "$tecmo16"
