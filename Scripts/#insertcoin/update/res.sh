@@ -28,10 +28,15 @@ if [ "$debug" == "1" ]; then
 fi
 }
 
+function dot {    
+    echo -n -e "${BLUE}█"
+}
+
 # Téléchargement + décompression en parallèle (4 jobs max)
 function dl {
    local file=$1 txt=$2
-   echo -e "${BLUE}${CHECK}${NC} ${txt:-$file}"
+   #echo -e "${BLUE}${CHECK}${NC} ${txt:-$file}"
+   dot
    while [ "$(jobs -rp | wc -l)" -ge 4 ]; do sleep 0.2; done
    (
       if ! { wget -q "https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/$file" -O "$temp/$file" \
@@ -130,7 +135,7 @@ function install {
    fi
 
 #cleaning
-rm -r /media/fat/Scripts/res/
+rm -rf /media/fat/Scripts/res/
 
 }
 
@@ -677,6 +682,7 @@ function process {
             dl "asterix.zip" "Asterix"
             debug "Asterix"
             delmra "Asterix (FF ver EAD).mra"
+            delrbf "ffasterix_*.rbf"
             delrbf "asterix_*.rbf"
             delalt "_Asterix"
             ;;
@@ -1697,9 +1703,31 @@ function process {
             delalt "_SRD Super Real Darwin"
             ;;
 
+            "KonamiGT")
+            dl "KonamiGT.zip" "KonamiGT"
+            debug "KonamiGT"
+            delmra "Konami GT (FF, Konami, 1985).mra"
+            delrbf "ffkonamigt_*.rbf"
+            delalt "_Konami GT"
+            ;;
 
+            "WECLeMan")
+            dl "WECLeMan.zip" "WECLeMan"
+            debug "WECLeMan"
+            delmra "WEC Le Mans 24 (FF, Konami, 1986).mra"
+            delrbf "ffwecleman_*.rbf"
+            delalt "_WEC Le Mans 24"
+            ;;
 
-        *)
+            "Xexex")
+            dl "Xexex.zip" "Xexex"
+            debug "Xexex"
+            delmra "Xexex (FF ver EAA).mra"
+            delrbf "ffxexex_*.rbf"
+            delalt "_Xexex"
+            ;;
+
+            *)
             echo "Unknown process: $1"
             ;;
 
@@ -1707,6 +1735,8 @@ function process {
 }
 
 find "$des_config/nvram" -mindepth 1 -maxdepth 1 -type d -name "nvram" -exec rm -rf {} +
+
+echo -e "Resources installation in progress..."
 
 #process "Badlands"
 #process "Blasteroids"
@@ -1798,11 +1828,15 @@ process "ZN1Capcom"
 process "ZN1Namco"
 process "ZN1Taito"
 process "ZN2"
+process "KonamiGT"
+process "WECLeMan"
+process "Xexex"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
+echo -e "${NC}"
 wait
 flush_del
-
+echo -e "Please Wait"
 install
 
 renexisting
