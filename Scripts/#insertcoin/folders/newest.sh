@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #1006
+   add "Night Striker (World).mra" "_Night Striker"
    add "Xexex (FF ver EAA).mra" "_Xexex"
    add "Konami GT (FF, Konami, 1985).mra" "_Konami GT" 
    add "WEC Le Mans 24 (FF, Konami, 1986).mra" "_WEC Le Mans 24"

@@ -62,6 +62,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Victorious Nine.mra" "_Victorious Nine" "" "SPO"
    add "$dir" "H" "Wardner (World).mra" "_Wardner" "" "ACT"
    add "$dir" "H" "Warrior Blade (Japan).mra" "_Warrior Blade" "" "BEA"
+   add "$dir" "H" "Night Striker (World).mra" "_Night Striker" "" ""
 
    dot
 fi
