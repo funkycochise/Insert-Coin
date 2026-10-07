@@ -83,5 +83,6 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Konami GT (FF, Konami, 1985).mra" "_Konami GT" "" "RAC"
    add "$dir" "H" "WEC Le Mans 24 (FF, Konami, 1986).mra" "_WEC Le Mans 24" "" "RAC" 
    add "$dir" "H" "Xexex (FF ver EAA).mra" "_Xexex" "" "STG"
+   add "$dir" "H" "Violent Storm.mra" "_Violent Storm" "" "BEA"
    dot
 fi

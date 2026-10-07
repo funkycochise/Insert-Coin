@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #1006
+   add "Violent Storm.mra" "_Violent Storm"
    additem "$deco_simple156"
    add "Night Striker (World).mra" "_Night Striker"
    add "Xexex (FF ver EAA).mra" "_Xexex"
