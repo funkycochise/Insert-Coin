@@ -1747,6 +1747,14 @@ function process {
             delalt "_Charlie Ninja"
             ;;
 
+            "ViolentSorm")
+            dl "ViolentSorm.zip" "ViolentSorm"
+            debug "ViolentSorm"
+            delmra "Violent Storm.mra"
+            delrbf "VioStorm_*.rbf"
+            delalt "_Violent Storm"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -1853,6 +1861,7 @@ process "WECLeMan"
 process "Xexex"
 process "NightStriker"
 process "Simple156"
+process "ViolentSorm"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -e "${NC}"

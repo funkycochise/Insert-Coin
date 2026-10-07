@@ -1518,5 +1518,6 @@ dl "nightstr.zip"
 dl "joemacr.zip"
 dl "osman.zip"
 dl "charlien.zip"
+dl "viostorm.zip"
 
 echo -e "${GREEN}${CHECK}${NC} Completed"
