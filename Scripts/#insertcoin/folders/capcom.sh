@@ -38,5 +38,9 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Super Pang (World 900914).mra" "_Super Pang" "" "ACT"
    add "$dir" "H" "Tiger Road (US).mra" "_Tiger Road" "" "ACT"
    add "$dir" "H" "Trojan (US set 1).mra" "_Trojan" "" "RNG"
+
+   add "$dir" "H" "Joe & Mac Returns.mra" "_Joe & Mac Returns" "" "ACT"
+   add "$dir" "H" "Osman.mra" "_Osman" "" "ACT"
+   add "$dir" "H" "Charlie Ninja.mra" "_Charlie Ninja" "" "ACT"
    dot
 fi
