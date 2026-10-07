@@ -42,7 +42,7 @@ function dl {
       if ! { wget -q "https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/$file" -O "$temp/$file" \
              && [ -s "$temp/$file" ] \
              && unzip -qq -o "$temp/$file" -d "$res/"; }; then
-         echo -e "Error downloading $file"
+         echo -e "\n${NC}Error downloading $file"
       fi
       rm -f "$temp/$file"
    ) &
