@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#1007
+   additem "$taitognet"
+
 #1006
    add "Violent Storm.mra" "_Violent Storm"
    additem "$deco_simple156"
