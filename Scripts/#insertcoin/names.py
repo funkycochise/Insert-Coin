@@ -148,6 +148,7 @@ taito=_Taito
 taitob=_Taito-B-system
 taitof2=_Taito-F2
 taitof3=_Taito-F3
+taitognet=_Taito-GNet
 taitosj=_Taito-SJ
 taitox=_Taito-X
 technos=_Technos
