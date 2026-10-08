@@ -125,6 +125,7 @@ fi
 #./folders/taitob.sh 
 ./folders/taitof2.sh
 ./folders/taitof3.sh 
+./folders/taitognet.sh
 ./folders/taitosj.sh 
 ./folders/taitox.sh 
 ./folders/technos.sh 
