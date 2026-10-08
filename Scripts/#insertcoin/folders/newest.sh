@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #1007
+   add "SCI (World).mra" "_SCI"
    additem "$taitognet"
 
 #1006
