@@ -1519,6 +1519,7 @@ dl "joemacr.zip"
 dl "osman.zip"
 dl "charlien.zip"
 dl "viostorm.zip"
+dl "sci.zip"
 
 dl "coh3002t.zip"
 dl "gnet_chaoshea.zip"

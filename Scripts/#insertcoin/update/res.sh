@@ -1804,6 +1804,14 @@ function process {
             delalt "_Zooo"
             ;;
 
+            "SCI")
+            dl "SCI.zip" "SCI"
+            debug "SCI"
+            delmra "SCI (World).mra"
+            delrbf "SCI_*.rbf"
+            delalt "_SCI"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -1912,6 +1920,7 @@ process "NightStriker"
 process "Simple156"
 process "ViolentSorm"
 process "GNet"
+process "SCI"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -e "${NC}"
