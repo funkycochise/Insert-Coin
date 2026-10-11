@@ -842,7 +842,7 @@ function process {
             delalt "_Deco-Cassette"
             ;;
 
-        "Dogyuun")
+            "Dogyuun")
             dl "Dogyuun.zip" "Dogyuun"
             debug "Dogyuun"
             delmra "Dogyuun.mra"
@@ -850,7 +850,7 @@ function process {
             delalt "_Dogyuun"
             ;;
 
-        "EmpireCity")
+            "EmpireCity")
             dl "EmpireCity.zip" "EmpireCity"
             debug "EmpireCity"
             delmra "Empire City.mra"
@@ -858,7 +858,7 @@ function process {
             delalt "_Empire City"
             ;;
 
-        "Gaelco")
+            "Gaelco")
             dl "Gaelco.zip" "Gaelco"
             debug "Gaelco"
             delmra "World Rally Championship (set 2).mra"
@@ -885,7 +885,7 @@ function process {
             delalt "_World Rally Championship"
             ;;
 
-        "GrindStormer")
+            "GrindStormer")
             dl "GrindStormer.zip" "GrindStormer"
             debug "GrindStormer"
             delmra "Grind Stormer.mra"
@@ -893,7 +893,7 @@ function process {
             delalt "_Grind Stormer"
             ;;
 
-        "Guardians")
+            "Guardians")
             dl "Guardians.zip" "Guardians"
             debug "Guardians"
             delmra "Guardians - Denjin Makai II (P-FG01-1 PCB).mra"
@@ -901,7 +901,7 @@ function process {
             delalt "_Guardians"
             ;;
 
-        "Ikki")
+            "Ikki")
             dl "Ikki.zip" "Ikki"
             debug "Ikki"
             delmra "Ikki.mra"
@@ -909,14 +909,14 @@ function process {
             delalt "_Ikki"
             ;;
 
-        "jlrh_OperWolf")
+            "jlrh_OperWolf")
             dl "jlrh_OperWolf.zip" "Operation Wolf"
             delmra "Operation Wolf (World, rev 2, set 1).mra"
             delrbf "opwolf_*.rbf"
             delalt "_Operation Wolf"
             ;;
 
-        "Kaneko")
+            "Kaneko")
             dl "Kaneko.zip" "Kaneko Super Nova"
             delmra "Cyvern - The Dragon Weapons (US).mra"
             delmra "Gals Panic 4 (Europe).mra"
@@ -959,7 +959,7 @@ function process {
             delalt "_VS Mahjong Otome Ryouran"
             ;;
 
-        "Kaneko16")
+            "Kaneko16")
             dl "Kaneko16.zip" "Kaneko 16"
             delmra "Blaze On (Japan).mra"
             delmra "Explosive Breaker (World).mra"
@@ -972,14 +972,14 @@ function process {
             delalt "_Wing Force"
             ;;
 
-        "KickAndRun")
+            "KickAndRun")
             dl "KickAndRun.zip" "KickAndRun"
             delmra "kicknrun.mra"
             delrbf "KickAndRun_*.rbf"
             delalt "_kicknrun"
             ;;
 
-        "MegaPlay")
+            "MegaPlay")
             dl "MegaPlay.zip" "SEGA Megaplay"
             delmra "Sega Mega Play - 4 Cart Test.mra"
             delmra "Sega Mega Play - Bio-hazard Battle.mra"
@@ -1009,7 +1009,7 @@ function process {
             delalt "_Sega Mega Play - Tecmo World Cup"
             ;;
 
-        "SegaG80")
+            "SegaG80")
             dl "SegaG80.zip" "SEGA G80 correct core"
             delmra "005.mra"
             delmra "Astro Blaster.mra"
@@ -1030,7 +1030,7 @@ function process {
             delalt "_Tac-Scan"
             ;;
 
-        "SegaS24")
+            "SegaS24")
             dl "SegaS24.zip" "Sega System 24"
             delmra "Bonanza Bros.mra"
             delmra "Crack Down.mra"
@@ -1047,19 +1047,19 @@ function process {
             delalt "_Scramble Spirits"
             ;;
 
-        "SFTM")
+            "SFTM")
             dl "SFTM.zip" "Street Fighter The Movie"
             delmra "Street Fighter - The Movie (v1.12).mra"
             delalt "_Street Fighter - The Movie"
             delrbf "ITech32_*.rbf"
             ;;
 
-        "sms")
+            "sms")
             dl "sms.zip" "SMS Sega System-E"
             delrbf "SMS_*.rbf"
             ;;
 
-        "Spider-Man")
+            "Spider-Man")
             dl "Spider-Man.zip" "Spider man the video game"
             delmra "Holosseum (US, Rev A).mra"
             delmra "Spider-Man The Videogame (World).mra"
@@ -1068,7 +1068,7 @@ function process {
             delalt "_Spider-Man The Videogame"
             ;;
 
-        "SuperOffroad")
+            "SuperOffroad")
             dl "SuperOffroad.zip" "Super Off Road"
             delmra "PigOut.mra"
             delmra "SuperOffRoad.mra"
@@ -1079,7 +1079,7 @@ function process {
             delalt "_TrackPak"
             ;;
 
-        "taitosj")
+            "taitosj")
             dl "taitosj.zip" "Taito SJ"
             delmra "Jungle Hunt (US).mra"
             delmra "Pirate Pete.mra"
@@ -1089,7 +1089,7 @@ function process {
             delalt "_jetpac_sj"
             ;;
 
-        "T-Unit")
+            "T-Unit")
             dl "T-Unit.zip" "Midway T-Unit"
             delmra "Judge Dredd (rev TA1 7-12-92, location test).mra"
             delmra "Mortal Kombat (rev 5.0 T-Unit 03-19-93).mra"
@@ -1104,14 +1104,14 @@ function process {
             delalt "_NBA Jam Tournament Edition"
             ;;
 
-        "TwinHawk")
+            "TwinHawk")
             dl "TwinHawk.zip" "TwinHawk/Daisenpu"
             delmra "Twin Hawk (World).mra"
             delrbf "TwinHawk_*.rbf"
             delalt "_Twin Hawk"
             ;;
 
-        "Universal")
+            "Universal")
             dl "Universal.zip" "Universal"
             delmra "American Soccer.mra"
             delmra "Do! Run Run.mra"
@@ -1134,7 +1134,7 @@ function process {
             delalt "_Super Pierrot"
             ;;
 
-        "KillerInstinct")
+            "KillerInstinct")
             dl "KillerInstinct.zip" "Killer Instinct"
             delmra "Killer Instinct 2.mra"
             delmra "Killer Instinct.mra"
@@ -1143,10 +1143,9 @@ function process {
             delalt "_Killer Instinct"
             ;;
 
-        "CaveCV1K")
+            "CaveCV1K")
             dl "CaveCV1K.zip" "Cave CV1K"
             debug "Cave CV1K"
-
             delmra "Akai Katana*.mra"
             delmra "Deathsmiles*.mra"
             delmra "DoDonPachi Dai-Fukkatsu*.mra"
@@ -1165,17 +1164,16 @@ function process {
             delalt "_Mushihime-Sama Futari"
             delalt "_Pink Sweets Ibara Sorekara"
             delalt "_Puzzle! Mushihime-Tama"
-
             ;;
 
-        "EscapeRobotMonster")
+            "EscapeRobotMonster")
             dl "EscapeRobotMonster.zip" "Escape From The Planet of the robot monsters"
             delmra "Escape from the Planet of the Robot Monsters (set 1).mra"
             delrbf "Escape_*.rbf"
             delalt "_Escape from the Planet of the Robot Monsters"
             ;;
 
-        "ZN1Namco")
+            "ZN1Namco")
             dl "ZN1Namco.zip" "ZN1 Namco"
             delmra "1 on 1 Government (Japan).mra"
             delmra "Aero Fighters Special (USA).mra"
@@ -1228,7 +1226,7 @@ function process {
             delalt "_G-Darius"
             ;;
 
-        "ZN1Capcom")
+            "ZN1Capcom")
             dl "ZN1Capcom.zip" "ZN1 Capcom"
             delmra "Battle Arena Toshinden 2 (USA).mra"
             delmra "Gallop Racer.mra"
@@ -1243,7 +1241,7 @@ function process {
             delalt "_Street Fighter EX Plus"
             ;;
 
-        "ZN2")
+            "ZN2")
             dl "ZN2.zip" "ZN2 Capcom"
             delmra "Choukou Senki Kikaioh (Japan).mra"
             delmra "Plasma Sword - Nightmare of Bilstein (USA).mra"
@@ -1269,14 +1267,14 @@ function process {
             delalt "_Shiritsu Justice Gakuen - Legion of Heroes"
             ;;
 
-        "EscKids")
+            "EscKids")
             dl "EscKids.zip" "Escape Kids"
             delmra "Escape Kids.mra"
             delrbf "EscapeKids_*.rbf"
             delalt "_Escape Kids"
             ;;
 
-        "SpaceHarrier")
+            "SpaceHarrier")
             dl "SpaceHarrier.zip" "Space Harrier"
             delmra "Hang-On.mra"
             delmra "Space Harrier (Rev A, 8751 315-5163A).mra"
@@ -1285,14 +1283,14 @@ function process {
             delalt "_Space Harrier"
             ;;
 
-        "XYBots")
+            "XYBots")
             dl "XYBots.zip" "XY Bots"
             delmra "Xybots.mra"
             delrbf "Xybots_*.rbf"
             delalt "_Xybots"
             ;;
 
-        "SegaYBoard")
+            "SegaYBoard")
             dl "SegaYBoard.zip" "Sega YBoard"
             delmra "G-LOC Air Battle.mra"
             delmra "G-LOC R360.mra"
@@ -1309,14 +1307,14 @@ function process {
             delalt "_Strike Fighter"
             ;;
 
-        "HardDrivin")
+            "HardDrivin")
             dl "HardDrivin.zip" "Hard Drivin'"
             delmra "Hard Drivin' (Cockpit, rev 7).mra"
             delrbf "HardDrivin_cockpit.rbf"
             delalt "_Hard Drivin'"
             ;;
 
-        "Jaleco MS32")
+            "Jaleco MS32")
             dl "JalecoMS32.zip" "Jaleco MS32"
             debug "Jaleco MS32"
             delmra "Best Bout Boxing (ver 1.3).mra"
@@ -1350,7 +1348,7 @@ function process {
             delalt "_World PK Soccer V2"
             ;;
 
-        "OutRunners")
+            "OutRunners")
             dl "Outrunners.zip" "OutRunners"
             debug "OutRunners"
             delmra "OutRunners.mra"
@@ -1358,7 +1356,7 @@ function process {
             delalt "_Outrunners"
             ;;
 
-        "MadGear")
+            "MadGear")
             dl "MadGear.zip" "MadGear/LED Storm"
             debug "MadGear"
             delmra "Mad Gear (US).mra"
@@ -1371,21 +1369,21 @@ function process {
             delalt "_Last Duel"
             ;;
 
-        "Blasteroids")
+            "Blasteroids")
             dl "Blasteroids.zip" "Blasteroids"
             debug "Blasteroids"
             delmra "Blasteroids.mra"
             delalt "_Blasteroids"
             ;;
 
-        "Badlands")
+            "Badlands")
             dl "Badlands.zip" "Badlands"
             debug "Badlands"
             delmra "Badlands.mra"
             delalt "_Badlands"
             ;;
 
-        "MrDo")
+            "MrDo")
             dl "MrDo.zip" "Mr Do games"
             debug "MrDo"
             delmra "Do! Run Run.mra"
@@ -1397,7 +1395,7 @@ function process {
             delalt "_Mr. Do's Castle"
             ;;
 
-        "TaitoAsuka")
+            "TaitoAsuka")
             dl "TaitoAsuka.zip" "TaitoAsuka"
             debug "TaitoAsuka"
             delmra "Asuka & Asuka (World).mra"
@@ -1427,7 +1425,7 @@ function process {
             delalt "_U.N. Defense Force - Earth Joker"
             ;;
 
-        "NamcoClassicCollection")
+            "NamcoClassicCollection")
             dl "NamcoClassicCollection.zip" "Namco Classic Collection"
             debug "Namco Classic Collection"
             delmra "Namco Classic Collection Vol.1.mra"
@@ -1436,7 +1434,7 @@ function process {
             delalt "_Namco Classic Collection"
             ;;
 
-        "LegendOfMakai")
+            "LegendOfMakai")
             dl "LegendOfMakai.zip" "LegendOfMakai"
             debug "LegendOfMakai"
             delmra "Legend of Makai (World).mra"
@@ -1444,7 +1442,7 @@ function process {
             delalt "_Legend of Makai"
             ;;
 
-        "NMK16")
+            "NMK16")
             dl "NMK16.zip" "NMK16"
             debug "NMK16"
             delmra "Acrobat Mission.mra"
@@ -1515,7 +1513,7 @@ function process {
             delalt "_Vandyke"
             ;;
 
-        "Rampart")
+            "Rampart")
             dl "Rampart.zip" "Rampart"
             debug "Rampart"
             delmra "Rampart.mra"
@@ -1523,7 +1521,7 @@ function process {
             delalt "_Rampart"
             ;;
 
-        "Batman")
+            "Batman")
             dl "Batman.zip" "Batman"
             debug "Batman"
             delmra "Batman.mra"
@@ -1531,7 +1529,7 @@ function process {
             delalt "_Batman"
             ;;
 
-        "AtariG1")
+            "AtariG1")
             dl "AtariG1.zip" "AtariG1"
             debug "AtariG1"
             delmra "Hydra.mra"
@@ -1541,35 +1539,35 @@ function process {
             delalt "_Pit Fighter"
             ;;
 
-        "KonamiGX")
-        dl "KonamiGX.zip" "KonamiGX"
-        debug "KonamiGX"
-        delmra "Crazy Cross (ver EAA).mra"
-        delmra "Daisu-Kiss (ver JAA).mra"
-        delmra "Dragoon Might (ver AAB).mra"
-        delmra "Fantastic Journey (ver EAA).mra"
-        delmra "Lethal Enforcers II Gun Fighters (ver EAA).mra"
-        delmra "Salamander 2 (ver JAA).mra"
-        delmra "Sexy Parodius (ver JAA).mra"
-        delmra "Taisen Tokkae-dama (ver JAA).mra"
-        delmra "Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra"
-        delmra "Twin Bee Yahhoo! (ver JAA).mra"
-        delmra "Winning Spike (ver EAA).mra"
-        delalt "_Crazy Cross"
-        delalt "_Daisu-Kiss"
-        delalt "_Dragoon Might"
-        delalt "_Fantastic Journey"
-        delalt "_Lethal Enforcers II Gun Fighters"
-        delalt "_Salamander 2"
-        delalt "_Sexy Parodius"
-        delalt "_Taisen Tokkae-dama"
-        delalt "_Tokimeki Memorial Taisen Puzzle-dama"
-        delalt "_Twin Bee Yahhoo!"
-        delalt "_Winning Spike"
-        delrbf "KonamiGX_*.rbf"
-        ;;
+            "KonamiGX")
+            dl "KonamiGX.zip" "KonamiGX"
+            debug "KonamiGX"
+           delmra "Crazy Cross (ver EAA).mra"
+           delmra "Daisu-Kiss (ver JAA).mra"
+           delmra "Dragoon Might (ver AAB).mra"
+           delmra "Fantastic Journey (ver EAA).mra"
+           delmra "Lethal Enforcers II Gun Fighters (ver EAA).mra"
+           delmra "Salamander 2 (ver JAA).mra"
+           delmra "Sexy Parodius (ver JAA).mra"
+           delmra "Taisen Tokkae-dama (ver JAA).mra"
+           delmra "Tokimeki Memorial Taisen Puzzle-dama (ver JAB).mra"
+           delmra "Twin Bee Yahhoo! (ver JAA).mra"
+           delmra "Winning Spike (ver EAA).mra"
+           delalt "_Crazy Cross"
+           delalt "_Daisu-Kiss"
+           delalt "_Dragoon Might"
+           delalt "_Fantastic Journey"
+           delalt "_Lethal Enforcers II Gun Fighters"
+           delalt "_Salamander 2"
+           delalt "_Sexy Parodius"
+           delalt "_Taisen Tokkae-dama"
+           delalt "_Tokimeki Memorial Taisen Puzzle-dama"
+           delalt "_Twin Bee Yahhoo!"
+           delalt "_Winning Spike"
+           delrbf "KonamiGX_*.rbf"
+           ;;
 
-        "StunRunner")
+           "StunRunner")
             dl "StunRunner.zip" "StunRunner"
             debug "StunRunner"
             delmra "S.T.U.N. Runner.mra"
@@ -1577,7 +1575,7 @@ function process {
             delalt "_S.T.U.N. Runner"
             ;;
 
-        "DrMicro")
+           "DrMicro")
             dl "DrMicro.zip" "Dr. Micro"
             debug "DrMicro"
             delmra "Dr. Micro.mra"
@@ -1585,7 +1583,7 @@ function process {
             delalt "_Dr. Micro"
             ;;
 
-        "NamcoSystem2")
+            "NamcoSystem2")
             dl "NamcoSystem2.zip" "Namco System2"
             debug "NamcoSystem2"
             delmra "Assault (Rev B).mra"
@@ -1812,6 +1810,31 @@ function process {
             delalt "_SCI"
             ;;
 
+            "ContinentalCircus")
+            dl "ContinentalCircus.zip" "ContinentalCircus"
+            debug "ContinentalCircus"
+            delmra "Continental Circus (World).mra"
+            delrbf "Continental_Circus.rbf"
+            delalt "_Continental Circus"
+            ;;
+
+            "BonkAdventure")
+            dl "BonkAdventure.zip" "BonkAdventure"
+            debug "BonkAdventure"
+            delmra "Bonk's Adventure (World).mra"
+            delrbf "BonksAdventure.rbf"
+            delalt "_Bonk's Adventure"
+            ;;
+
+            "ShogunWarriors")
+            dl "ShogunWarriors.zip" "ShogunWarriors"
+            debug "ShogunWarriors"
+            delmra "Shogun Warriors (World).mra"
+            delrbf "ShogunWarriors_20261010.rbf"
+            delalt "_Shogun Warriors"
+            ;;
+
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -1921,6 +1944,9 @@ process "Simple156"
 process "ViolentSorm"
 process "GNet"
 process "SCI"
+process "ContinentalCircus"
+process "BonkAdventure"
+process "ShogunWarriors"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -e "${NC}"
