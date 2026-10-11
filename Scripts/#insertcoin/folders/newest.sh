@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+#1011
+   add "Bonk's Adventure (World).mra" "_Bonk's Adventure"
+   add "Continental Circus (World).mra" "_Continental Circus"
+
 #1007
    add "SCI (World).mra" "_SCI"
    additem "$taitognet"

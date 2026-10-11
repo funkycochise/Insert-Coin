@@ -11,6 +11,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Cyvern - The Dragon Weapons (US).mra" "_Cyvern - The Dragon Weapons" "" "STG"
    add "$dir" "V" "Sengeki Striker (Asia).mra" "_Sengeki Striker" "" "STG"
 
+   add "$dir" "H" "Bonk's Adventure (World).mra" "_Bonk's Adventure" "" "ACT"
    add "$dir" "H" "Gals Panic (unprotected, ver. 2.0).mra" "_Gals Panic" "" "PUZ"
    add "$dir" "H" "Gals Panic 4 (Europe).mra" "_Gals Panic 4" "" "PUZ"
    add "$dir" "H" "Gals Panic 4 (Europe).mra" "_Gals Panic 4" "" "PUZ"
