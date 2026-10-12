@@ -66,6 +66,8 @@ function additem {
 counter=0
 
 #1011
+   additem "$segamodel2"
+   add "Metamorphic Force (World ver EAA).mra" "_Metamorphic Force"
    add "Bonk's Adventure (World).mra" "_Bonk's Adventure"
    add "Continental Circus (World).mra" "_Continental Circus"
 

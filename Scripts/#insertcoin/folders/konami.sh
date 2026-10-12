@@ -55,6 +55,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Juno First.mra" "_Juno First" "" "STG"
    add "$dir" "H"  "Konami's Ping-Pong.mra" "_Konami's Ping-Pong" "" "SPO"
    add "$dir" "H"  "Lifeforce (US).mra" "_Lifeforce" "" "STG"
+   add "$dir" "H"  "Metamorphic Force (World ver EAA).mra" "_Metamorphic Force" "" "BEU"
    add "$dir" "H"  "M.I.A. - Missing in Action (version T).mra" "_M.I.A. - Missing in Action" "" "RNG"
    add "$dir" "H"  "Mr. Goemon.mra" "_Mr. Goemon" "" "ACT"
    add "$dir" "H"  "Nemesis (ROM Version).mra" "_Nemesis" "" "STG"
