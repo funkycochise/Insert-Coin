@@ -1524,6 +1524,8 @@ dl "contcirc.zip"
 dl "bonkadv.zip"
 dl "shogwarr.zip"
 dl "metamrph.zip"
+dl "zeroteam.zip"
+dl "ibarablkt.zip"
 
 dl "coh3002t.zip"
 dl "gnet_chaoshea.zip"

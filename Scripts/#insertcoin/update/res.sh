@@ -1850,6 +1850,14 @@ function process {
             delalt "_Daytona USA"
             ;;
 
+            "ZeroTeam")
+            dl "ZeroTeam.zip" "ZeroTeam"
+            debug "ZeroTeam"
+            delmra "Zero Team USA.mra"
+            delrbf "ZeroTeam_*.rbf"
+            delalt "_Zero Team USA"
+            ;;
+
 
             *)
             echo "Unknown process: $1"
@@ -1965,6 +1973,7 @@ process "BonkAdventure"
 process "ShogunWarriors"
 process "MetamorphicForce"
 process "DaytonaUSA"
+process "ZeroTeam"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -e "${NC}"
