@@ -1855,7 +1855,7 @@ function process {
             debug "ZeroTeam"
             delmra "Zero Team USA.mra"
             delrbf "ZeroTeam_*.rbf"
-            delalt "_Zero Team USA"
+            delalt "_Zero Team*"
             ;;
 
 
