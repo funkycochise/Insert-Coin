@@ -22,7 +22,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Gals Panic SU (Korea, version 5).mra" "_Gals Panic SU" "" "PUZ"
    add "$dir" "H" "Puzz Loop (Europe, v0.94).mra" "_Puzz Loop" "" "PUZ"
    add "$dir" "H" "Tel Jan.mra" "_Tel Jan" "" ""
-   add "$dir" "H" "VS Mahjong Otome Ryouran (revision 2).mra" "_VS Mahjong Otome Ryouran" "" ""
    add "$dir" "H" "VS Block Breaker (Europe).mra" "_VS Block Breaker" "" ""
+   add "$dir" "H" "VS Mahjong Otome Ryouran (revision 2).mra" "_VS Mahjong Otome Ryouran" "" ""
   dot
 fi
