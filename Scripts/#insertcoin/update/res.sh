@@ -1830,8 +1830,24 @@ function process {
             dl "ShogunWarriors.zip" "ShogunWarriors"
             debug "ShogunWarriors"
             delmra "Shogun Warriors (World).mra"
-            delrbf "ShogunWarriors_20261010.rbf"
+            delrbf "ShogunWarriors_*.rbf"
             delalt "_Shogun Warriors"
+            ;;
+
+            "MetamorphicForce")
+            dl "MetamorphicForce.zip" "MetamorphicForce"
+            debug "MetamorphicForce"
+            delmra "Metamorphic Force (World ver EAA).mra"
+            delrbf "metamorphicforce_*.rbf"
+            delalt "_Metamorphic Force"
+            ;;
+
+            "DaytonaUSA")
+            dl "DaytonaUSA.zip" "Daytona USA"
+            debug "DaytonaUSA"
+            delmra "Daytona USA (Revision A).mra"
+            delrbf "Model2_*.rbf"
+            delalt "_Daytona USA"
             ;;
 
 
@@ -1947,6 +1963,8 @@ process "SCI"
 process "ContinentalCircus"
 process "BonkAdventure"
 process "ShogunWarriors"
+process "MetamorphicForce"
+process "DaytonaUSA"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -e "${NC}"

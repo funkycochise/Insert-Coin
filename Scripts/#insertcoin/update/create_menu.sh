@@ -98,7 +98,8 @@ fi
 ./folders/sega.sh
 ./folders/segag80.sh 
 ./folders/segakyugo.sh
-./folders/segamodel1.sh 
+./folders/segamodel1.sh
+./folders/segamodel2.sh 
 ./folders/segamp.sh 
 ./folders/segaoutrun.sh 
 ./folders/segastv.sh 
