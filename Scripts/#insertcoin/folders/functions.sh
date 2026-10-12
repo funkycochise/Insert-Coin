@@ -484,6 +484,18 @@ function add_genre {
       fi
 }
 
-function dot {    
+#function dot {    
+#    echo -n -e "${RED}█"
+#}
+dot_max=95
+function dot {
+    local n=0
+    [ -f /tmp/ic_dot_count ] && n=$(cat /tmp/ic_dot_count)
     echo -n -e "${RED}█"
+    n=$((n + 1))
+    if [ "$n" -ge "$dot_max" ]; then
+        echo
+        n=0
+    fi
+    echo "$n" > /tmp/ic_dot_count
 }

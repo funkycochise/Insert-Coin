@@ -15,11 +15,11 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Raiden Fighters Jet (Germany).mra" "_Raiden Fighters Jet" "" "STG"
    add "$dir" "V" "Viper Phase 1 (New Version, World).mra" "_Viper Phase 1" "" "STG"
 
-   add "$dir" "H" "Empire City.mra" "_Empire City" "" "ACT"
    add "$dir" "H" "E Jong High School (Japan).mra" "_E Jong High School" "" ""
-   add "$dir" "H" "Senkyu (Japan, newer).mra" "_Senkyu" "" "PUZ"
-
+   add "$dir" "H" "Empire City.mra" "_Empire City" "" "ACT"
    add "$dir" "H" "Seibu Cup Soccer (set 1).mra" "_Seibu Cup Soccer" "" "SPO"
+   add "$dir" "H" "Senkyu (Japan, newer).mra" "_Senkyu" "" "PUZ"
+   add "$dir" "H" "Zero Team USA.mra" "_Zero Team USA" "" "BEA"
 
    dot
 fi
