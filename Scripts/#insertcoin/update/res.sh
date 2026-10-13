@@ -1883,6 +1883,7 @@ function process {
             delmra "Appoooh.mra"
             delmra "Robo Wres 2001.mra"
             delrbf "Arcade-Appoooh_*.rbf"
+            delrbf "Appoooh_*.rbf"
             delalt "_Appoooh"
             delalt "_Robo Wres 2001"
             ;;
