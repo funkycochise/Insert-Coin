@@ -16,6 +16,6 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Exciting Soccer II.mra" "_Exciting Soccer II" "" "SPO"
 
    add "$dir" "H" "Kyros.mra" "_Kyros" "" "ACT"
-   add "$dir" "H" "Super Stingray (Japan).mra" "_Super Stingray (Japan)" "" "ACT"
+   add "$dir" "H" "Super Stingray (Japan).mra" "_Super Stingray (Japan)" "" "STG"
    dot
 fi
