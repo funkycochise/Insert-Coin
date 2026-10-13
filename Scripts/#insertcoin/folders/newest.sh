@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#1013
+   add "Kickle Cubicle (English title).mra" "_Kickle Cubicle"
+
 #1011
    add "Zero Team USA.mra" "_Zero Team"
    additem "$segamodel2"
