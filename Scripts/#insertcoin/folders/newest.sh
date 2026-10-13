@@ -66,6 +66,8 @@ function additem {
 counter=0
 
 #1013
+   add "Appoooh.mra" "_Appoooh"
+   add "Robo Wres 2001.mra" "_Robo Wres 2001"
    add "Kyros.mra" "_Kyros"
    add "Super Stingray (Japan).mra" "_Super Stingray (Japan)"
    add "Kickle Cubicle (English title).mra" "_Kickle Cubicle"
