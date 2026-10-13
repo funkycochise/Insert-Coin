@@ -1526,6 +1526,8 @@ dl "shogwarr.zip"
 dl "metamrph.zip"
 dl "zeroteam.zip"
 dl "kikcubic.zip"
+dl "kyros.zip"
+dl "sstingry.zip"
 
 dl "coh3002t.zip"
 dl "gnet_chaoshea.zip"

@@ -1867,6 +1867,16 @@ function process {
             delalt "_Kickle Cubicle"
             ;;
 
+            "Alpha68K")
+            dl "Alpha68K.zip" "Alpha68K"
+            debug "Alpha68K"
+            delmra "Kyros.mra"
+            delmra "Super Stingray (Japan).mra"
+            delrbf "Alpha68kN.rbf"
+            delalt "_Kyros"
+            delalt "_Super Stingray (Japan)"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -1983,6 +1993,7 @@ process "MetamorphicForce"
 process "DaytonaUSA"
 process "ZeroTeam"
 process "KickleCubicle"
+process "Alpha68K"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -e "${NC}"
