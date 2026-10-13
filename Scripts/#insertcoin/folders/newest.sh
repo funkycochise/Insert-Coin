@@ -66,6 +66,8 @@ function additem {
 counter=0
 
 #1013
+   add "Kyros.mra" "_Kyros"
+   add "Super Stingray (Japan).mra" "_Super Stingray (Japan)"
    add "Kickle Cubicle (English title).mra" "_Kickle Cubicle"
 
 #1011
