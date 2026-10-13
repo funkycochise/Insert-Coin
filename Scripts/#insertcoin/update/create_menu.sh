@@ -93,6 +93,7 @@ fi
 ./folders/rare.sh 
 ./folders/robotron.sh 
 ./folders/rockola.sh 
+./folders/sanritsu.sh 
 ./folders/sammy.sh 
 ./folders/scramble.sh 
 ./folders/sega.sh

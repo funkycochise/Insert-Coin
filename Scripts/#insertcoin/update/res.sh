@@ -1877,6 +1877,16 @@ function process {
             delalt "_Super Stingray (Japan)"
             ;;
 
+            "Appoooh")
+            dl "Appoooh.zip" "Appoooh"
+            debug "Appoooh"
+            delmra "Appoooh.mra"
+            delmra "Robo Wres 2001.mra"
+            delrbf "Arcade-Appoooh_*.rbf"
+            delalt "_Appoooh"
+            delalt "_Robo Wres 2001"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -1994,6 +2004,7 @@ process "DaytonaUSA"
 process "ZeroTeam"
 process "KickleCubicle"
 process "Alpha68K"
+process "Appoooh"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -e "${NC}"
