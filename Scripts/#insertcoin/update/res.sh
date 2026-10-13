@@ -622,8 +622,8 @@ function process {
             delmra "Ridge Racer (World, RR2).mra"
             delmra "Ridge Racer 2 (World, RRS2).mra"
             delmra "Time Crisis (World, TS2 Ver.B).mra"
-            delrbf "XNSUPER22_20260913.rbf"
-            delrbf "XNSYSTEM22_20260913.rbf"
+            delrbf "XNSUPER22_*.rbf"
+            delrbf "XNSYSTEM22_*.rbf"
             delalt "_Prop Cycle"
             delalt "_Rave Racer"
             delalt "_Ridge Racer"
@@ -635,7 +635,7 @@ function process {
             dl "SegaS32.zip" "Sega System 32"
             debug "goldenaxe2 removal"
             delrbf "s32GoldenAxe.rbf"
-            delrbf "SegaSystem32_20260815.rbf"
+            delrbf "SegaSystem32_*.rbf"
             delalt "_Golden Axe The Revenge of Death Adder"
             debug "Sega System12"
             delmra "Alien3 The Gun (World).mra"
@@ -1438,7 +1438,7 @@ function process {
             dl "LegendOfMakai.zip" "LegendOfMakai"
             debug "LegendOfMakai"
             delmra "Legend of Makai (World).mra"
-            delrbf "JalecoMS1Z_20260923.rbf"
+            delrbf "JalecoMS1Z_*.rbf"
             delalt "_Legend of Makai"
             ;;
 
@@ -1476,10 +1476,10 @@ function process {
             delmra "Twin Action.mra"
             delmra "US AAF Mustang (25th May. 1990).mra"
             delmra "Vandyke (Japan).mra"
-            delrbf "NMK16_Afega_20260920.rbf"
-            delrbf "NMK16_Gunnail_20260920.rbf"
-            delrbf "NMK16_Macross2_20260920.rbf"
-            delrbf "NMK16_Raphero_20260920.rbf"
+            delrbf "NMK16_Afega_*.rbf"
+            delrbf "NMK16_Gunnail_*.rbf"
+            delrbf "NMK16_Macross2_*.rbf"
+            delrbf "NMK16_Raphero_*.rbf"
             delalt "_Acrobat Mission"
             delalt "_Air Attack"
             delalt "_Bio-ship Paladin"
@@ -1517,7 +1517,7 @@ function process {
             dl "Rampart.zip" "Rampart"
             debug "Rampart"
             delmra "Rampart.mra"
-            delrbf "Rampart_20260924.rbf"
+            delrbf "Rampart_*.rbf"
             delalt "_Rampart"
             ;;
 
@@ -1525,7 +1525,7 @@ function process {
             dl "Batman.zip" "Batman"
             debug "Batman"
             delmra "Batman.mra"
-            delrbf "Batman_20260924.rbf"
+            delrbf "Batman_*.rbf"
             delalt "_Batman"
             ;;
 
@@ -1534,7 +1534,7 @@ function process {
             debug "AtariG1"
             delmra "Hydra.mra"
             delmra "Pit Fighter (rev 9).mra"
-            delrbf "Atari-G1_20260925.rbf"
+            delrbf "Atari-G1_*.rbf"
             delalt "_Hydra"
             delalt "_Pit Fighter"
             ;;
@@ -1571,7 +1571,7 @@ function process {
             dl "StunRunner.zip" "StunRunner"
             debug "StunRunner"
             delmra "S.T.U.N. Runner.mra"
-            delrbf "StunRunner_20260926.rbf"
+            delrbf "StunRunner_*.rbf"
             delalt "_S.T.U.N. Runner"
             ;;
 
@@ -1858,6 +1858,14 @@ function process {
             delalt "_Zero Team*"
             ;;
 
+            "KickleCubicle")
+            dl "KickleCubicle.zip" "KickleCubicle"
+            debug "KickleCubicle"
+            delmra "Kickle Cubicle (English title).mra"
+            delmra "Meikyu Jima (Japan).mra"
+            delrbf "kickle_*.rbf"
+            delalt "_Kickle Cubicle"
+            ;;
 
             *)
             echo "Unknown process: $1"
@@ -1974,6 +1982,7 @@ process "ShogunWarriors"
 process "MetamorphicForce"
 process "DaytonaUSA"
 process "ZeroTeam"
+process "KickleCubicle"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -e "${NC}"

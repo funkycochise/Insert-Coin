@@ -1525,7 +1525,7 @@ dl "bonkadv.zip"
 dl "shogwarr.zip"
 dl "metamrph.zip"
 dl "zeroteam.zip"
-dl "ibarablkt.zip"
+dl "kikcubic.zip"
 
 dl "coh3002t.zip"
 dl "gnet_chaoshea.zip"
