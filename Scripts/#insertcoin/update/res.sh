@@ -28,8 +28,15 @@ if [ "$debug" == "1" ]; then
 fi
 }
 
-function dot {    
+dot_max=100
+dot_n=0
+function dot {
     echo -n -e "${BLUE}█"
+    dot_n=$((dot_n + 1))
+    if [ "$dot_n" -ge "$dot_max" ]; then
+        echo
+        dot_n=0
+    fi
 }
 
 # Téléchargement + décompression en parallèle (4 jobs max)
@@ -769,7 +776,7 @@ function process {
         "Bucky")
             dl "Bucky.zip" "Bucky O'Hare"
 
-            debug "Ikki"
+            debug "Bucky"
             delmra "Bucky O'Hare.mra"
             delrbf "Bucky_*.rbf"
             delalt "_Bucky O'Hare"
@@ -905,6 +912,9 @@ function process {
             dl "Ikki.zip" "Ikki"
             debug "Ikki"
             delmra "Ikki.mra"
+            delmra "BanBam.mra"
+            delmra "Markham.mra"
+            delmra "Strength & Skill.mra"
             delrbf "Ikki*.rbf"
             delalt "_Ikki"
             ;;
@@ -1736,13 +1746,19 @@ function process {
             "Simple156")
             dl "Simple156.zip" "Simple156"
             debug "Simple156"
-            delmra "Joe & Mac Returns.mra"
-            delmra "Osman.mra"
+            delmra "Party Time Gonta the Diver II - Ganbare! Gonta!! 2 (World Release).mra"
+            delmra "Osman*.mra"
+            delmra "Joe & Mac Returns*.mra"
+            delmra "Heavy Smash*.mra"
             delmra "Charlie Ninja.mra"
+            delmra "Chain Reaction*.mra"
             delrbf "Simple156_*.rbf"
-            delalt "_Joe & Mac Returns"
+            delalt "_Party Time Gonta the Diver II"
             delalt "_Osman"
+            delalt "_Joe & Mac Returns"
+            delalt "_Heavy Smash"
             delalt "_Charlie Ninja"
+            delalt "_Chain Reaction"
             ;;
 
             "ViolentSorm")
@@ -1888,6 +1904,14 @@ function process {
             delalt "_Robo Wres 2001"
             ;;
 
+            "JuezhanTianhuang")
+            dl "JuezhanTianhuang.zip" "JuezhanTianhuang"
+            debug "JuezhanTianhuang"
+            delmra "Juezhan Tianhuang.mra"
+            delrbf "Juezhan_Tianhuang_*.rbf"
+            delalt "_Juezhan Tianhuang"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2006,9 +2030,10 @@ process "ZeroTeam"
 process "KickleCubicle"
 process "Alpha68K"
 process "Appoooh"
+process "JuezhanTianhuang"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
-echo -e "${NC}"
+echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
 wait
 flush_del
 echo -e "Please Wait"
