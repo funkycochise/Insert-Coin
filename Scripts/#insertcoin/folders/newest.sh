@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#1015
+   additem "$namco_sys12"
+
 #1013
    add "Appoooh.mra" "_Appoooh"
    add "Robo Wres 2001.mra" "_Robo Wres 2001"
@@ -243,9 +246,6 @@ counter=0
 #0806
    add "Volfied (World, rev 1) .mra" "_Volfied"
    additem "$segasys24"
-
-#0803
-   additem "$namco_sys12"
 
 #0801
    additem "$deco16"
