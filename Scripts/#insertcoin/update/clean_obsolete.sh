@@ -62,11 +62,6 @@ if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "MajorHavoc_*" 
 fi
 find $CORE -maxdepth 1 -type f -name "MajorHavoc_*" ! -name "MajorHavoc_20260730.rbf" -delete
 
-# Ancien nom XNSYSTEM12 (res.sh ne couvre que SYSTEM12_*)
-debug "XNSYSTEM12"
-if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "XNSYSTEM12_*"
-fi
-find $CORE -maxdepth 1 -type f -name "XNSYSTEM12_*" -delete
 
 debug "Klax"
 if [ "$debug" -eq 1 ]; then find $CORE -maxdepth 1 -type f -name "Klax_*" ! -name "Klax_20260811.rbf"
