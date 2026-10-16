@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #1015
+   additem "$taitognet"
    additem "$namco_sys12"
 
 #1013
@@ -84,7 +85,6 @@ counter=0
 
 #1007
    add "SCI (World).mra" "_SCI"
-   additem "$taitognet"
 
 #1006
    add "Violent Storm.mra" "_Violent Storm"
