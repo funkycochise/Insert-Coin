@@ -66,6 +66,7 @@ function additem {
 counter=0
 
 #1020
+   additem "$nintendo_pc10"
    additem "$igspgm2"
 
 #1015
