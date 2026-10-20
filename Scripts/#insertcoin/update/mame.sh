@@ -1575,4 +1575,12 @@ dl "gnet_nightrai.zip"
 dl "gnet_otenki.zip"
 dl "gnet_xiistag.zip"
 
+dl "ddpdojt.zip"
+dl "kov2nl.zip"
+dl "kov3.zip"
+dl "orleg2.zip"
+dl "kof98umh.zip"
+
+dl "playch10.zip"
+
 echo -e "${GREEN}${CHECK}${NC} Completed"

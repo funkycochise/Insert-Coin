@@ -43,7 +43,8 @@ fi
 ./folders/gaelco.sh 
 ./folders/galaxian.sh 
 ./folders/gottlieb.sh 
-./folders/igspgm.sh 
+./folders/igspgm.sh
+./folders/igspgm2.sh
 ./folders/irem.sh 
 ./folders/irem62.sh 
 ./folders/irem72.sh 

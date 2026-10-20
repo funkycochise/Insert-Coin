@@ -1952,6 +1952,22 @@ function process {
             delalt "_Juezhan Tianhuang"
             ;;
 
+            "PGM2")
+            dl "PGM2.zip" "PGM2"
+            debug "PGM2"
+            delmra "DoDonPachi Dai-Ou-Jou Tamashii (V201, China).mra"
+            delmra "Knights of Valour 2 New Legend (V302, Oversea).mra"
+            delmra "Knights of Valour 3 (V104, China, Hong Kong, Taiwan).mra"
+            delmra "Oriental Legend 2 (V104, Oversea).mra"
+            delmra "The King of Fighters '98 - Ultimate Match HERO (China, V100, 09-08-23).mra"
+            delrbf "PGM2_*.rbf"
+            delalt "_DoDonPachi Dai-Ou-Jou Tamashii"
+            delalt "_Knights of Valour 2 New Legend"
+            delalt "_Knights of Valour 3"
+            delalt "_Oriental Legend 2"
+            delalt "_The King of Fighters '98 - Ultimate Match HERO"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2071,6 +2087,7 @@ process "KickleCubicle"
 process "Alpha68K"
 process "Appoooh"
 process "JuezhanTianhuang"
+process "PGM2"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
