@@ -83,7 +83,8 @@ fi
 ./folders/namco_b1.sh
 ./folders/neogeo.sh 
 ./folders/nichibutsu.sh 
-./folders/nintendo.sh 
+./folders/nintendo.sh
+./folders/nintendo_pc10.sh
 ./folders/nmk.sh
 ./folders/nmk16.sh 
 ./folders/orca.sh 
