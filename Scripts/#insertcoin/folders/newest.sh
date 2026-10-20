@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#1020
+   additem "$igspgm2"
+
 #1015
    additem "$taitognet"
    additem "$namco_sys12"
