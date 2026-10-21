@@ -75,7 +75,8 @@ fi
 ./folders/namco_sys1.sh
 ./folders/namco_sys2.sh 
 ./folders/namco_sys11.sh 
-./folders/namco_sys12.sh 
+./folders/namco_sys12.sh
+./folders/namco_sys21.sh
 ./folders/namco_sys22.sh 
 ./folders/namco_sys86.sh
 ./folders/namco_sysfl.sh 

@@ -2084,6 +2084,35 @@ function process {
             delalt "_Yo! Noid (PlayChoice-10)"
             ;;
 
+            "SYS21")
+            dl "SYS21.zip" "SYS21"
+            debug "SYS21"
+            delmra "Air Combat (AC2, US).mra"
+            delmra "Cyber Sled (CY2, World).mra"
+            delmra "Solvalou (SV1, Japan).mra"
+            delmra "Starblade (ST2, World).mra"
+            delmra "Winning Run '91 (Japan) (1991-03-05, Ver 1.0).mra"
+            delmra "Winning Run (World) (89-06-06, Ver.09).mra"
+            delmra "Winning Run- Suzuka GP (Japan) (89-12-03, Ver.02).mra"
+            delrbf "Arcade-XNSYSTEM21_*.rbf"
+            delrbf "Arcade-XNWINRUN_*.rbf"
+            delalt "_Air Combat (AC2, US)"
+            delalt "_Cyber Sled (CY2, World)"
+            delalt "_Solvalou (SV1, Japan)"
+            delalt "_Starblade (ST2, World)"
+            delalt "_Winning Run '91 (Japan) (1991-03-05, Ver 1.0)"
+            delalt "_Winning Run (World) (89-06-06, Ver.09)"
+            delalt "_Winning Run- Suzuka GP (Japan) (89-12-03, Ver.02)"
+            ;;
+
+            "BlackPanther")
+            dl "BlackPanther.zip" "BlackPanther"
+            debug "BlackPanther"
+            delmra "Black Panther.mra"
+            delrbf "BlackPanther_*.rbf"
+            delalt "_Black Panther"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2205,6 +2234,8 @@ process "Appoooh"
 process "JuezhanTianhuang"
 process "PGM2"
 process "PC10"
+process "SYS21"
+process "BlackPanther"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
