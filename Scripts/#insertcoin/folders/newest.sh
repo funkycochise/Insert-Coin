@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+#1021
+   add "Black Panther.mra" "_Black Panther"
+   additem "$namco_sys21"
+
 #1020
    additem "$nintendo_pc10"
    additem "$igspgm2"
