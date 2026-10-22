@@ -196,6 +196,7 @@ function renexisting {
    rename "/media/fat/_Arcade/_alternatives/_Vapor Trail" "Vapor Trail - Hyper Offence Formation (US).mra" "Vapor Trail - Hyper Offence Formation (US) (Coc).mra"
 
 
+
 }
 
 # --- Cleanup helpers -------------------------------------------------
@@ -664,18 +665,45 @@ function process {
         "SYS22")
             dl "SYS22.zip" "Namco System22"
             debug "System22"
+            delmra "Ace Driver- Racing Evolution (World, AD2).mra"
+            delmra "Ace Driver- Victory Lap (World, ADV2 Ver.B).mra"
+            delmra "Air Combat 22 (Japan, ACS1 Ver.B).mra"
+            delmra "Alpine Racer (World, AR2 Ver.D).mra"
+            delmra "Alpine Racer 2 (World, ARS2 Ver.B).mra"
+            delmra "Alpine Surfer (World, AF2 Ver.A).mra"
+            delmra "Aqua Jet (World, AJ2 Ver.B).mra"
+            delmra "Armadillo Racing (World, AM2 Ver.A).mra"
+            delmra "Cyber Commando (Japan, CY1).mra"
+            delmra "Cyber Cycles (World, CB2 Ver.C).mra"
+            delmra "Dirt Dash (World, DT2 Ver.C).mra"
             delmra "Prop Cycle (World, PR2 Ver.A).mra"
             delmra "Rave Racer (World, RV2 Ver.B).mra"
+            delmra "Ridge Racer (World, RR2 Ver.B).mra"
             delmra "Ridge Racer (World, RR2).mra"
             delmra "Ridge Racer 2 (World, RRS2).mra"
             delmra "Time Crisis (World, TS2 Ver.B).mra"
+            delmra "Tokyo Wars (World, TW2 Ver.A).mra"
+
             delrbf "XNSUPER22_*.rbf"
             delrbf "XNSYSTEM22_*.rbf"
+            delalt "_Ace Driver- Racing Evolution"
+            delalt "_Ace Driver- Victory Lap"
+            delalt "_Ace Driver- Victory Lap (World, ADV2 Ver.B)"
+            delalt "_Air Combat 22"
+            delalt "_Alpine Racer"
+            delalt "_Alpine Racer 2"
+            delalt "_Alpine Surfer"
+            delalt "_Aqua Jet"
+            delalt "_Armadillo Racing"
+            delalt "_Cyber Commando"
+            delalt "Cyber Cycles"
+            delalt "_Dirt Dash"
             delalt "_Prop Cycle"
             delalt "_Rave Racer"
             delalt "_Ridge Racer"
             delalt "_Ridge Racer 2"
             delalt "_Time Crisis"
+            delalt "_Tokyo Wars"
             ;;
 
         "SegaS32")
