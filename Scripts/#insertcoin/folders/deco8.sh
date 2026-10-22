@@ -24,6 +24,6 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Shackled.mra" "_Shackled" "" "RNG"
    add "$dir" "V" "SRD - Super Real Darwin.mra" "_SRD - Super Real Darwin" "" "STG"
    add "$dir" "V" "SRD - Super Real Darwin (World).mra" "_SRD Super Real Darwin" "" "STG"
-   add "$dir" "H" "The Real Ghostbusters.mra" "_The Real Ghostbusters" "" ""
+   add "$dir" "H" "The Real Ghostbusters.mra" "_The Real Ghostbusters" "" "ACT"
    dot
 fi
