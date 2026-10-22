@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+#1022
+   additem "$namco_sys22"
+   additem "$deco8"
+
 #1021
    add "Black Panther.mra" "_Black Panther"
    additem "$namco_sys21"
@@ -160,7 +164,6 @@ counter=0
    add "Mad Gear (US).mra" "_Mad Gear"
    add "Led Storm Rally 2011 (World).mra" "_Led Storm Rally 2011"
    additem "$jalecoms32"
-   additem "$namco_sys22"
 
 #0912
    add "Seibu Cup Soccer (set 1).mra" "_Seibu Cup Soccer"
