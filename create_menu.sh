@@ -1,0 +1,173 @@
+#!/bin/bash
+source ./folders/functions.sh
+
+if [ "$debug" == "1" ]; then
+   echo "launchdir: $launchdir"
+   echo "targetfolder: $targetfolder"
+fi
+
+echo "Creating $targetfolder"
+
+function linkcores {
+if [ ! -d $targetfolder/cores ]; then
+   ln -s $ARCADE/cores $targetfolder/cores
+fi 
+}
+
+./folders/alpha.sh
+./folders/aleck64.sh
+./folders/atari.sh
+./folders/atari_sys1.sh
+./folders/atari_sys2.sh
+./folders/atlus.sh
+./folders/bagman.sh
+./folders/bally-midway.sh
+./folders/banpresto.sh 
+./folders/capcom.sh 
+./folders/cave.sh
+./folders/cavecv1k.sh
+./folders/cinematronics.sh
+./folders/comad.sh 
+./folders/cps1.5.sh 
+./folders/cps1.sh
+./folders/cps2.sh
+./folders/cps3.sh
+./folders/crazykong.sh 
+./folders/deco.sh
+./folders/deco_simple156.sh
+./folders/decocassette.sh
+./folders/deco8.sh
+./folders/deco16.sh  
+./folders/exidy.sh
+./folders/fuuki.sh 
+./folders/gaelco.sh 
+./folders/galaxian.sh 
+./folders/gottlieb.sh 
+./folders/igspgm.sh
+./folders/igspgm2.sh
+./folders/irem.sh 
+./folders/irem62.sh 
+./folders/irem72.sh 
+./folders/irem90.sh 
+./folders/irem92.sh 
+./folders/irem92t.sh 
+./folders/irem107.sh 
+./folders/jaleco.sh
+./folders/jaleco_ms32.sh
+./folders/Kaneko.sh
+./folders/Kaneko16.sh
+./folders/skns.sh 
+./folders/Kiwako.sh 
+./folders/konami.sh 
+./folders/konami_twin16.sh
+./folders/konami_gx.sh
+./folders/ladybug.sh 
+./folders/leland.sh 
+./folders/mcr1.sh 
+./folders/mcr2.sh 
+./folders/mcr3.sh 
+./folders/mcr3mono.sh 
+./folders/mcr3scroll.sh 
+./folders/midwayyz.sh
+./folders/midwaytunit.sh
+./folders/midwaywolf.sh 
+./folders/namco.sh 
+./folders/namco_sys1.sh
+./folders/namco_sys2.sh 
+./folders/namco_sys11.sh 
+./folders/namco_sys12.sh
+./folders/namco_sys21.sh
+./folders/namco_sys22.sh 
+./folders/namco_sys86.sh
+./folders/namco_sysfl.sh 
+./folders/namco_nd1.sh
+./folders/namco_b1.sh
+./folders/neogeo.sh 
+./folders/nichibutsu.sh 
+./folders/nintendo.sh
+./folders/nintendo_pc10.sh
+./folders/nmk.sh
+./folders/nmk16.sh 
+./folders/orca.sh 
+./folders/pacman.sh 
+./folders/psikyo1gen.sh
+./folders/psikyosh2.sh 
+./folders/raizing.sh 
+./folders/rare.sh 
+./folders/robotron.sh 
+./folders/rockola.sh 
+./folders/sanritsu.sh 
+./folders/sammy.sh 
+./folders/scramble.sh 
+./folders/sega.sh
+./folders/segag80.sh 
+./folders/segakyugo.sh
+./folders/segamodel1.sh
+./folders/segamodel2.sh 
+./folders/segamp.sh 
+./folders/segaoutrun.sh 
+./folders/segastv.sh 
+./folders/segasys1.sh 
+./folders/segasys16.sh 
+./folders/segasys18.sh
+./folders/segasys2.sh 
+./folders/segasys24.sh 
+./folders/segasys32.sh 
+./folders/segasyse.sh 
+./folders/segax.sh
+./folders/segay.sh
+./folders/seibu.sh
+./folders/sesame.sh 
+./folders/seta.sh 
+./folders/si.sh 
+./folders/snk.sh 
+./folders/stern.sh 
+./folders/success.sh 
+./folders/sun.sh
+./folders/suna.sh 
+./folders/tad.sh 
+./folders/taito.sh 
+#./folders/taitob.sh 
+./folders/taitof2.sh
+./folders/taitof3.sh 
+./folders/taitognet.sh
+./folders/taitosj.sh 
+./folders/taitox.sh 
+./folders/technos.sh 
+./folders/technosoft.sh 
+./folders/technos16.sh 
+./folders/Tehkan-Tecmo.sh
+./folders/tecmo16.sh
+./folders/toaplan.sh 
+./folders/toaplan_stg.sh 
+./folders/tobikomi.sh
+./folders/universal.sh 
+./folders/upl.sh
+./folders/uplfb.sh 
+./folders/visco.sh 
+./folders/vs.sh 
+./folders/williams.sh
+./folders/zn1namco.sh 
+./folders/zn1taito.sh
+./folders/zn1capcom.sh 
+./folders/zn2capcom.sh 
+if [ "$newest" == "1" ]; then
+  ./folders/newest.sh 
+fi
+#if [ "$essential" == "1" ]; then
+#   ./folders/essentials.sh 
+#fi
+if test -f "./update/favorites.sh"; then
+   ./update/favorites.sh 
+fi
+
+#cores in insert coin
+if [ "$rootfolder" == "1" ]; then
+   linkcores
+fi
+
+
+echo -e "${NC}"
+
+
+
