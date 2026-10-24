@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#1024
+   add "Fix-It Felix Jr..mra" "_Fix-It Felix Jr."
+
 #1022
    additem "$namco_sys22"
    additem "$deco8"
