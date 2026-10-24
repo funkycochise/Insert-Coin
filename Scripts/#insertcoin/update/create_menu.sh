@@ -140,6 +140,7 @@ fi
 ./folders/tecmo16.sh
 ./folders/toaplan.sh 
 ./folders/toaplan_stg.sh 
+./folders/tobikomi.sh
 ./folders/universal.sh 
 ./folders/upl.sh
 ./folders/uplfb.sh 
