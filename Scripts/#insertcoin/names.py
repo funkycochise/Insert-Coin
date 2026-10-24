@@ -162,6 +162,7 @@ tecmo=_Tehkan-Tecmo
 tecmo16=_Tecmo16
 toaplan=_Toaplan
 toaplanstg=_Toaplan_STG
+tobikomi=_Tobikomi Company
 universal=_Universal
 upl=_Upl
 uplfb=_Upl Framebuffer
