@@ -2157,6 +2157,14 @@ function process {
             delalt "_Black Panther"
             ;;
 
+            "PlumpPop")
+            dl "PlumpPop.zip" "PlumpPop"
+            debug "PlumpPop"
+            delmra "Plump Pop (Japan).mra"
+            delrbf "PlumpPop.rbf"
+            delalt "_Plump Pop (Japan)"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2280,6 +2288,7 @@ process "PGM2"
 process "PC10"
 process "SYS21"
 process "BlackPanther"
+process "PlumpPop"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
