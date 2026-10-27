@@ -33,6 +33,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    #add "$dir" "H" "The Legend of Kage (bootleg set 1).mra" "_The Legend of Kage" "" "ACT"
    add "$dir" "H" "Bubble Bobble (Japan, Ver 0.1).mra" "_Bubble Bobble" "" "ACT"
    add "$dir" "H" "Cadash (World).mra" "_Cadash" "" ""
+   add "$dir" "H" "Chack'n Pop.mra" "_Chack'n Pop" "" "ACT"
    add "$dir" "H" "Chase HQ (World).mra" "_Chase HQ" "" "RAC"
    add "$dir" "H" "Chuka Taisen (World) (P0-028-A PCB).mra" "_Chuka Taisen" "" "STG"
    add "$dir" "H" "Continental Circus (World).mra" "_Continental Circus" "" "RAC"
