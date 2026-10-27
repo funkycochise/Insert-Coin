@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#1027
+   add "Plump Pop (Japan).mra" "_Plump Pop (Japan)"
+
 #1024
    add "Fix-It Felix Jr..mra" "_Fix-It Felix Jr."
 

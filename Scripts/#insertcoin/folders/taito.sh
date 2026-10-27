@@ -48,7 +48,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Night Striker (World).mra" "_Night Striker" "" ""
    add "$dir" "H" "Onna Sanshirou - Typhoon Gal (rev 1).mra" "_Onna Sanshirou" "" "VSF"
    add "$dir" "H" "Operation Wolf (World, rev 2, set 1).mra" "_Operation Wolf" "" "ACT"
-   add "$dir" "H" "Plump Pop (Japan).mra" "_Plump Pop"
+   add "$dir" "H" "Plump Pop (Japan).mra" "_Plump Pop (Japan)" "" ""
    add "$dir" "H" "Qix (set 1).mra" "_Qix" "" "PUZ"
    add "$dir" "H" "Qix II (Tournament).mra" "_Qix" "" "PUZ"
    add "$dir" "H" "Rainbow Islands - Extra Version.mra" "_Rainbow Islands" "" "ACT"
