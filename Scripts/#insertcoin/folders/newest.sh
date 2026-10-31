@@ -65,6 +65,10 @@ function additem {
 
 counter=0
 
+#1031
+   additem "$konamihornet"
+   additem "$konamigx"
+
 #1027
    add "Chack'n Pop.mra" "_Chack'n Pop"
    add "Plump Pop (Japan).mra" "_Plump Pop (Japan)"
@@ -130,7 +134,7 @@ counter=0
    additem "$namco_sys2"
 
 #0928
-   additem "$konamigx"
+#   additem "$konamigx"
    add "S.T.U.N. Runner.mra" "_S.T.U.N. Runner"
 
 #0926
