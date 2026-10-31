@@ -568,14 +568,19 @@ function process {
         "Model1")
             dl "SegaModel1.zip" "SEGA Model1"
             debug "SEGA Model1"
-            delmra "Wing War.mra"
-            delmra "Virtua Racing.mra"
-            delmra "Virtua Fighter.mra"
+
+            delmra "Sega NetMerc.mra"
             delmra "Star Wars Arcade.mra"
+            delmra "Virtua Fighter.mra"
+            delmra "Virtua Racing.mra"
+            delmra "Wing War.mra"
             delrbf "Model1_*.rbf"
-            delalt "_Wing War"
-            delalt "_Virtua Racing"
+
+            delalt "_NetMerc"
             delalt "_Star Wars Arcade"
+            delalt "_Virtua Fighter"
+            delalt "_Virtua Racing"
+            delalt "_Wing War"
             ;;
 
         "SunA")
