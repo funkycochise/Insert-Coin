@@ -65,6 +65,9 @@ function additem {
 
 counter=0
 
+#1101
+   add "Block Hole.mra" "_Block Hole"
+
 #1031
    additem "$konamihornet"
    additem "$konamigx"
