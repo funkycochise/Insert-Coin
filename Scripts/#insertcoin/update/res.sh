@@ -2211,6 +2211,11 @@ function process {
             delalt "_Block Hole"
             ;;
 
+            "GuwangeOmen")
+            dl "GuwangeOmen.zip" "Guwange Omen"
+            debug "GuwangeOmen"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2340,6 +2345,7 @@ process "PlumpPop"
 process "ChacknPop"
 process "KonamiHornet"
 process "BlockHole"
+process "GuwangeOmen"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
