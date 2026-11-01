@@ -2203,6 +2203,14 @@ function process {
             delalt "_Chack'n Pop"
             ;;
 
+            "BlockHole")
+            dl "BlockHole.zip" "BlockHole"
+            debug "BlockHole"
+            delmra "Block Hole.mra"
+            delrbf "blockhl_*.rbf"
+            delalt "_Block Hole"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2331,6 +2339,7 @@ process "BlackPanther"
 process "PlumpPop"
 process "ChacknPop"
 process "KonamiHornet"
+process "BlockHole"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
