@@ -66,8 +66,8 @@ function additem {
 counter=0
 
 #110
+   add "Mustache Boy (Japan).mra" "_Mustache Boy"
    add "Guwange (Japan, 1999 6-24 Master Ver 16-55).mra" "_Guwange"
-
    add "Block Hole.mra" "_Block Hole"
 
 #1031
