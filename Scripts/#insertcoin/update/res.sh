@@ -2216,6 +2216,14 @@ function process {
             debug "GuwangeOmen"
             ;;
 
+            "MustacheBoy")
+            dl "MustacheBoy.zip" "Mustache Boy"
+            debug "MustacheBoy"
+            delmra "Mustache Boy (Japan).mra"
+            delrbf "MustacheBoy.rbf"
+            delalt "_Mustache Boy"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2346,6 +2354,7 @@ process "ChacknPop"
 process "KonamiHornet"
 process "BlockHole"
 process "GuwangeOmen"
+process "MustacheBoy"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
