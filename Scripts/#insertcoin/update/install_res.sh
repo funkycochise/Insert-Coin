@@ -287,7 +287,7 @@ then
             f=$(basename -- "$file")
             #if [ ! -f "$des_alt/$dir/$f" ]; then
             #   #echo -e "\rcopying $des_alt/$dir/$f                                                   "
-               cp -f "$altdir/$dir/$f" "$des_alt/$dir/$f"
+               cp -rf "$altdir/$dir/$f" "$des_alt/$dir/$f"
             #fi
          done
       fi

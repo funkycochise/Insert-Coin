@@ -56,6 +56,7 @@ fi
 ./folders/jaleco_ms32.sh
 ./folders/Kaneko.sh
 ./folders/Kaneko16.sh
+./folders/kanekofamily.sh
 ./folders/skns.sh 
 ./folders/Kiwako.sh 
 ./folders/konami.sh 

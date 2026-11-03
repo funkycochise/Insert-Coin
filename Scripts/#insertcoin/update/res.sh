@@ -1948,11 +1948,16 @@ function process {
             delalt "_Continental Circus"
             ;;
 
-            "BonkAdventure")
-            dl "BonkAdventure.zip" "BonkAdventure"
-            debug "BonkAdventure"
+            "KanekoFamily")
+            dl "KanekoFamily.zip" "KanekoFamily"
+            debug "KanekoFamily"
+            delmra "1000 Miglia - Great 1000 Miles Rally.mra"
+            delmra "Blood Warrior.mra"
             delmra "Bonk's Adventure (World).mra"
+            delrbf "KanekoFamily_*.rbf"
             delrbf "BonksAdventure.rbf"
+            delalt "_1000 Miglia - Great 1000 Miles Rally"
+            delalt "_Blood Warrior"
             delalt "_Bonk's Adventure"
             ;;
 
@@ -2228,8 +2233,17 @@ function process {
             dl "BerlinWall.zip"
             debug "BerlinWall"
             delmra "The Berlin Wall (World).mra"
+            delrbf "BerlinWall.rbf"
             delrbf "Arcade-BerlinWall.rbf"
             delalt "_The Berlin Wall"
+            ;;
+
+            "Gunpey")
+            dl "Gunpey.zip" "Gunpey"
+            debug "Gunpey"
+            delmra "Gunpey (Japan).mra"
+            delrbf "gunpey_*.rbf"
+            delalt "_Gunpey"
             ;;
 
             *)
@@ -2344,7 +2358,7 @@ process "ViolentSorm"
 process "GNet"
 process "SCI"
 process "ContinentalCircus"
-process "BonkAdventure"
+process "KanekoFamily"
 process "ShogunWarriors"
 process "MetamorphicForce"
 process "DaytonaUSA"
@@ -2364,6 +2378,7 @@ process "BlockHole"
 process "GuwangeOmen"
 process "MustacheBoy"
 process "BerlinWall"
+process "Gunpey"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
