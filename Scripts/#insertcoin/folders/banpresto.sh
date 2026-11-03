@@ -18,6 +18,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "DenjinMakai.mra" "_DenjinMakai" "" "BEA"
    add "$dir" "H" "Godzilla (Japan).mra" "_Godzilla" "" "VSF"
    add "$dir" "H" "Guardians (Denjin Makai II).mra" "_Guardians" "" "BEA"
+   add "$dir" "H" "Gunpey (Japan).mra" "_Gunpey" "" "PUZ"
    add "$dir" "H" "Metamoqester (World).mra" "_Metamoqester"
    add_rep "$dir" "H" "_Pretty Soldier Sailor Moon" "" "BEA"
    add "$dir" "H" "SD Gundam Psycho Salamander no Kyoui.mra" "_SD Gundam Psycho Salamander no Kyoui" "" "ACT" 

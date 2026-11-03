@@ -64,7 +64,9 @@ function additem {
 
 counter=0
 
-1103
+#1103
+   additem "$kanekofamily"
+   add "Gunpey (Japan).mra" "_Gunpey"
    add "The Berlin Wall (World).mra" "_The Berlin Wall"
 
 #1101
