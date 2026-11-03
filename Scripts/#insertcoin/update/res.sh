@@ -2224,6 +2224,14 @@ function process {
             delalt "_Mustache Boy"
             ;;
 
+            "BerlinWall")
+            dl "BerlinWall.zip"
+            debug "BerlinWall"
+            delmra "The Berlin Wall (World).mra"
+            delrbf "Arcade-BerlinWall.rbf"
+            delalt "_The Berlin Wall"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2355,6 +2363,7 @@ process "KonamiHornet"
 process "BlockHole"
 process "GuwangeOmen"
 process "MustacheBoy"
+process "BerlinWall"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
