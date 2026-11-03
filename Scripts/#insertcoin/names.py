@@ -76,6 +76,7 @@ irem107=_Irem M107
 jaleco=_Jaleco
 jalecoms32=_Jaleco MS32
 kaneko=_Kaneko
+kanekofamily=_Kaneko Family
 skns=_Kaneko_Supernova
 kaneko16=_Kaneko16
 kiwako=_Kiwako
