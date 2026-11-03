@@ -112,7 +112,7 @@ counter=0
    add "Zero Team USA.mra" "_Zero Team"
    additem "$segamodel2"
    add "Metamorphic Force (World ver EAA).mra" "_Metamorphic Force"
-   add "Bonk's Adventure (World).mra" "_Bonk's Adventure"
+   #add "Bonk's Adventure (World).mra" "_Bonk's Adventure"
    add "Continental Circus (World).mra" "_Continental Circus"
 
 #1007

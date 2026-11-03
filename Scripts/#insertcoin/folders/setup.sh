@@ -105,6 +105,7 @@ sport=$(ini_get "$ini" sport)
 stg_h=$(ini_get "$ini" stg_h)
 stg_v=$(ini_get "$ini" stg_v)
 vsf=$(ini_get "$ini" vsf)
+racing=$(ini_get "$ini" racing)
 rng_h=$(ini_get "$ini" rng_h)
 rng_v=$(ini_get "$ini" rng_v)
 
