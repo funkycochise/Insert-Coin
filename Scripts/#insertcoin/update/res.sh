@@ -632,6 +632,7 @@ function process {
             delmra "Twin Cobra II.mra"
             delmra "Twin Qix.mra"
             delrbf "Rayforce_*.rbf"
+            delrbf "TaitoF3_*.rbf"
             delalt "_Arabian Magic"
             delalt "_Arkanoid Returns"
             delalt "_Bubble Bobble II"
@@ -2251,6 +2252,16 @@ function process {
             debug "Salamander"
             ;;
 
+            "GTIClub")
+            dl "GTIClub.zip" "GTIClub"
+            debug "GTIClub"
+            delmra "GTI Club (FF, Konami, 1996).mra"
+            delrbf "ffgticlubsd_*.rbf"
+            delrbf "ffgticlub_*.rbf"
+            delalt "_GTI Club"
+            ;;
+
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2385,6 +2396,7 @@ process "MustacheBoy"
 process "BerlinWall"
 process "Gunpey"
 process "Salamander"
+process "GTIClub"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
