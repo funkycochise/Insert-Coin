@@ -65,6 +65,7 @@ function additem {
 counter=0
 
 #1105
+   add "GTI Club (FF, Konami, 1996).mra" "_GTI Club"
    additem "$taitof3"
 
 #1103
