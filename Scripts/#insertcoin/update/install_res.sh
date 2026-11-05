@@ -205,6 +205,11 @@ function getres {
 if test -f "/media/fat/Scripts/#insertcoin/update/res.sh"; then
       /media/fat/Scripts/#insertcoin/update/res.sh
 fi
+if test -f "/media/fat/_Arcade/Gradius IV Fukkatsu (ver JAC).mra"; then
+   if test -f "./update/install_arcsnd.sh"; then
+      ./update/install_arcsnd.sh
+   fi
+fi
 
 if test -f "/media/fat/Scripts/#local/coc_res.sh"; then
       /media/fat/Scripts/#local/coc_res.sh

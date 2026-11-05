@@ -2407,4 +2407,4 @@ install
 
 renexisting
 
-echo -e "${GREEN}${CHECK}${NC} Completed res"
+echo -e "${GREEN}${CHECK}${NC} Completed"
