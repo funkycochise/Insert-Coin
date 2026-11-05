@@ -64,6 +64,9 @@ function additem {
 
 counter=0
 
+#1105
+   additem "$taitof3"
+
 #1103
    additem "$kanekofamily"
    add "Gunpey (Japan).mra" "_Gunpey"
@@ -190,7 +193,7 @@ counter=0
    additem "$suna" 
 
 #0910
-   additem "$taitof3"   
+#   additem "$taitof3"   
 
 #0909
    add "I, Robot.mra" "_I, Robot"

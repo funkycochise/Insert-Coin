@@ -14,7 +14,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V" "Twin Cobra II.mra" "_Twin Cobra II" "" "STG"
 
    add "$dir" "H" "Arabian Magic.mra" "_Arabian Magic" "" "BEA"
-   add "$dir" "H" "Arkanoid Returns.mra" "_Arkanoid Returns" "" ""
+   add "$dir" "H" "Arkanoid Returns.mra" "_Arkanoid Returns" "" "BBR"
    add "$dir" "H" "Bubble Bobble II.mra" "_Bubble Bobble II" "" "ACT"
    add "$dir" "H" "Bubble Memories.mra" "_Bubble Memories" "" "ACT"
    add "$dir" "H" "Cleopatra Fortune.mra" "_Cleopatra Fortune" "" "PUZ"
@@ -42,7 +42,6 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Ring Rage.mra" "_Ring Rage" "" ""
    add "$dir" "H" "Space Invaders '95.mra" "_Space Invaders '95" "" "STG"
    add "$dir" "H" "Super Cup Finals.mra" "_Super Cup Finals" "" ""
-   add "$dir" "H" "Taito Cup Finals.mra" "_Taito Cup Finals" "" ""
    add "$dir" "H" "Taito Power Goal.mra" "_Taito Power Goal" "" "SPO"
    add "$dir" "H" "Top Ranking Stars.mra" "_Top Ranking Stars" "" ""
    add "$dir" "H" "Twin Qix.mra" "_Twin Qix" "" ""
