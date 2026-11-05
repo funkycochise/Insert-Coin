@@ -1,4 +1,6 @@
 #!/bin/bash
+source /media/fat/Scripts/#insertcoin/folders/setup.sh
+
 # Installation du serveur de son hybride (core Gradius 4)
 # Deux vérifications indépendantes :
 #  1. si /media/fat/games/arcsnd n'existe pas : téléchargement de arcsnd.zip
@@ -16,6 +18,8 @@ STARTUP="/media/fat/linux/user-startup.sh"
 LINE='[[ -e /media/fat/Scripts/arcade_hybridsoundserver.sh ]] && /media/fat/Scripts/arcade_hybridsoundserver.sh &'
 ERREUR=0
 
+echo -e "arcsound server installation/verification"
+
 cleanup() {
     rm -rf "$EXTRACT_DIR" "$TMP_ZIP"
     rmdir "$TEMP_DIR" 2>/dev/null
@@ -25,24 +29,24 @@ install_files() {
     mkdir -p "$TEMP_DIR"
     rm -rf "$EXTRACT_DIR" "$TMP_ZIP"
 
-    echo "Téléchargement de arcsnd.zip..."
+    #echo "download of arcsnd.zip..."
     if ! curl -fsSL -o "$TMP_ZIP" "$ZIP_URL"; then
-        echo "Échec avec vérification SSL, nouvel essai sans vérification..."
+        echo "failed with SSL, new try without vérification..."
         if ! curl -fsSL --insecure -o "$TMP_ZIP" "$ZIP_URL"; then
-            echo "ERREUR : téléchargement impossible."
+            echo "ERROR : unable to download."
             return 1
         fi
     fi
 
-    echo "Décompression dans $EXTRACT_DIR..."
+    echo "Unzip to  $EXTRACT_DIR..."
     mkdir -p "$EXTRACT_DIR"
     if ! unzip -o "$TMP_ZIP" -d "$EXTRACT_DIR"; then
-        echo "ERREUR : décompression impossible."
+        echo "ERROR : unable to unzip."
         return 1
     fi
 
     if [ ! -f "$EXTRACT_DIR/games/arcsnd/arcsnd" ] || [ ! -f "$EXTRACT_DIR/Scripts/arcade_hybridsoundserver.sh" ]; then
-        echo "ERREUR : fichiers attendus absents du zip."
+        echo "ERROR : expected files not present."
         return 1
     fi
 
@@ -50,13 +54,13 @@ install_files() {
     cp -f "$EXTRACT_DIR/games/arcsnd/arcsnd" "$SND_DIR/arcsnd"
     cp -f "$EXTRACT_DIR/Scripts/arcade_hybridsoundserver.sh" "$SCRIPT"
     chmod +x "$SCRIPT"
-    echo "OK : $SND_DIR/arcsnd et $SCRIPT installés."
+    echo "$SND_DIR/arcsnd & $SCRIPT installed."
     return 0
 }
 
 # --- Vérification 1 : présence de arcsnd ---
 if [ -d "$SND_DIR" ]; then
-    echo "OK : $SND_DIR déjà présent."
+    echo "$SND_DIR already installed."
 else
     trap cleanup EXIT
     install_files || ERREUR=1
@@ -64,18 +68,18 @@ else
     trap - EXIT
 fi
 
-# --- Vérification 2 : présence dans user-startup.sh ---
-mkdir -p /media/fat/linux
+# ---  user-startup.sh ---
+#mkdir -p /media/fat/linux
 touch "$STARTUP"
 if grep -qF "$LINE" "$STARTUP"; then
-    echo "OK : entrée déjà présente dans $STARTUP"
+    echo "Entry already exists in $STARTUP"
 else
     if [ -s "$STARTUP" ] && [ -n "$(tail -c1 "$STARTUP")" ]; then
         echo "" >> "$STARTUP"
     fi
     echo "$LINE" >> "$STARTUP"
-    echo "OK : entrée ajoutée dans $STARTUP"
+    echo "OK : entry added to $STARTUP"
 fi
 
-echo "Terminé."
+echo -e "${GREEN}${CHECK}${NC} Completed"
 exit $ERREUR

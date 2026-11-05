@@ -165,6 +165,7 @@ if [ "$show_genre" == "1" ]; then
    if [ "$vsf" == "1" ] && [ "$show_genre" == "1" ] && [ "$genre" == "VSF" ]; then
       add_folder "$genre_vsf"
    fi
+
    if [ "$stg_h" == "1" ] && [ "$show_genre" == "1" ] && [ "$orientation" == "H" ] && [ "$genre" == "STG" ]; then
       add_folder "$genre_stg_h"
    fi

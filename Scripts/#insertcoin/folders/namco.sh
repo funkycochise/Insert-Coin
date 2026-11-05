@@ -27,6 +27,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "V"  "The Tower of Druaga.mra" "_The Tower of Druaga"
    add "$dir" "V"  "Xevious.mra" "_Xevious" "" "STG"
 
+
    add "$dir" "H"  "Alien Sector.mra" "_Alien Sector" "" "ACT"
    add "$dir" "H"  "Bosconian - Star Destroyer (new version).mra" "_Bosconian" "" "STG"
    add "$dir" "H"  "Dragon Buster.mra" "_Dragon Buster" "" "STG"
@@ -34,6 +35,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Pac-Land (World).mra" "_Pac-Land" "" "ACT"
    add "$dir" "H"  "Pole Position II.mra" "_Pole Position II" "" "RAC"
    add "$dir" "H"  "Pole Position.mra" "_Pole Position" "" "RAC"
+   add "$dir" "H"  "Rapid River (US, RD3 Ver. C).mra" "_Rapid River" "" ""
 
    dot
 fi

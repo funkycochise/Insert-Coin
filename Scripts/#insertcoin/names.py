@@ -29,6 +29,7 @@ genre_action=__Action
 genre_beat=__Beat'em up
 genre_puzzle=__Puzzle
 genre_sport=__Sport
+genre_racing=__Racing
 genre_vsf=__Vs Fighting
 genre_stg_h=__STG_H
 genre_stg_v=__STG_V
