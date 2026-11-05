@@ -2246,6 +2246,11 @@ function process {
             delalt "_Gunpey"
             ;;
 
+            "Salamander")
+            dl "Salamander.zip" "Salamander"
+            debug "Salamander"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2379,6 +2384,7 @@ process "GuwangeOmen"
 process "MustacheBoy"
 process "BerlinWall"
 process "Gunpey"
+process "Salamander"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
