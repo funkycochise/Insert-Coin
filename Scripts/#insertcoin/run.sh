@@ -177,6 +177,11 @@ if [ "$additional_res" == "1" ]; then
    if test -f "./update/install_res.sh"; then
       ./update/install_res.sh
    fi
+   if test -f "/media/fat/_Arcade/Gradius IV Fukkatsu (ver JAC).mra"; then
+      if test -f "./update/install_arcsnd.sh"; then
+         ./update/install_arcsnd.sh
+      fi
+   fi
 fi
 
 if test -f "/media/fat/Scripts/#local/key2.sh"; then
