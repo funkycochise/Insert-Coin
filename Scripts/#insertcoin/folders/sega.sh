@@ -15,6 +15,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "BankPanic.mra" "_BankPanic"
    add "$dir" "H" "Buck Rogers Planet of Zoom (not encrypted, set 1).mra" "_Buck Rogers Planet of Zoom" "" "STG"
    add "$dir" "H" "Hang-On.mra" "_Hang-On" "" "RAC"
+   add "$dir" "V" "Monaco GP.mra" "_Monaco GP" "" "RAC"
    add "$dir" "H" "Space Harrier (Rev A, 8751 315-5163A).mra" "_Space Harrier" "" "ACT"
    add "$dir" "H" "Super Locomotive.mra" "_Super Locomotive" "" "ACT"
 

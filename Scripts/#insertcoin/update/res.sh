@@ -2261,6 +2261,14 @@ function process {
             delalt "_GTI Club"
             ;;
 
+            "MonacoGP")
+            dl "MonacoGP.zip" "MonacoGP"
+            debug "MonacoGP"
+            delmra "Monaco GP.mra"
+            delrbf "MonacoGP_*.rbf"
+            delalt "_Monaco GP"
+            ;;
+
 
             *)
             echo "Unknown process: $1"
@@ -2397,6 +2405,7 @@ process "BerlinWall"
 process "Gunpey"
 process "Salamander"
 process "GTIClub"
+process "MonacoGP"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo

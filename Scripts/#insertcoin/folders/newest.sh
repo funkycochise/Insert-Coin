@@ -64,6 +64,9 @@ function additem {
 
 counter=0
 
+#1106
+   add "Monaco GP.mra" "_Monaco GP"
+
 #1105
    add "GTI Club (FF, Konami, 1996).mra" "_GTI Club"
    additem "$taitof3"
