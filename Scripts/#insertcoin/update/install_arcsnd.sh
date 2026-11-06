@@ -30,12 +30,9 @@ install_files() {
     rm -rf "$EXTRACT_DIR" "$TMP_ZIP"
 
     #echo "download of arcsnd.zip..."
-    if ! curl -fsSL -o "$TMP_ZIP" "$ZIP_URL"; then
-        echo "failed with SSL, new try without vérification..."
-        if ! curl -fsSL --insecure -o "$TMP_ZIP" "$ZIP_URL"; then
-            echo "ERROR : unable to download."
-            return 1
-        fi
+    if ! curl -fsSL --insecure -o "$TMP_ZIP" "$ZIP_URL"; then
+        echo "ERROR : unable to download."
+        return 1
     fi
 
     echo "Unzip to  $EXTRACT_DIR..."
