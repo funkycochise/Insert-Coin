@@ -64,6 +64,10 @@ function additem {
 
 counter=0
 
+#1107
+   additem "$segamodel2"
+   additem "$segamodel1"  
+
 #1106
    add "Tobe! Polystars (ver JAA).mra" "_Tobe! Polystars"
    add "Monaco GP.mra" "_Monaco GP"
@@ -118,7 +122,6 @@ counter=0
 
 #1011
    add "Zero Team USA.mra" "_Zero Team"
-   additem "$segamodel2"
    add "Metamorphic Force (World ver EAA).mra" "_Metamorphic Force"
    #add "Bonk's Adventure (World).mra" "_Bonk's Adventure"
    add "Continental Circus (World).mra" "_Continental Circus"
@@ -183,8 +186,7 @@ counter=0
 
 #0917
    add "Wardner (World).mra" "_Wardner"
-   add  "Dr. Micro.mra" "_Dr. Micro"
-   additem "$segamodel1"   
+   add  "Dr. Micro.mra" "_Dr. Micro" 
    add "Badlands.mra" "_Badlands"
 
 #0914

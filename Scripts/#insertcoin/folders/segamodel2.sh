@@ -9,5 +9,7 @@ fi
 resh=$(exist "Daytona USA (Revision A).mra")
 if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Daytona USA (Revision A).mra" "_Daytona USA" "" "RAC"
+   add "$dir" "H" "Desert Tank.mra" "_Desert Tank" "" ""
+   add "$dir" "H" "Virtua Cop (Revision A).mra" "_Virtua Cop" "" ""
    dot
 fi

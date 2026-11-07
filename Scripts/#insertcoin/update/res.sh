@@ -1978,12 +1978,18 @@ function process {
             delalt "_Metamorphic Force"
             ;;
 
-            "DaytonaUSA")
-            dl "DaytonaUSA.zip" "Daytona USA"
-            debug "DaytonaUSA"
+            "Model2")
+            dl "SegaModel2.zip" "SegaModel2"
+            debug "SegaModel2"
             delmra "Daytona USA (Revision A).mra"
+            delmra "Desert Tank.mra"
+            delmra "Virtua Cop (Revision A).mra"
             delrbf "Model2_*.rbf"
+            delrbf "Model2A_*.rbf"
+            delrbf "Model2C_*.rbf"
             delalt "_Daytona USA"
+            delalt "_Desert Tank"
+            delalt "_Virtua Cop"
             ;;
 
             "ZeroTeam")
@@ -2389,7 +2395,7 @@ process "ContinentalCircus"
 process "KanekoFamily"
 process "ShogunWarriors"
 process "MetamorphicForce"
-process "DaytonaUSA"
+process "Model2"
 process "ZeroTeam"
 process "KickleCubicle"
 process "Alpha68K"

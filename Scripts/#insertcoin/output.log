@@ -24,7 +24,7 @@ arcsound server installation/verification
 /media/fat/games/arcsnd already installed.
 Entry already exists in /media/fat/linux/user-startup.sh
 [0;32m✓[0m Completed
-Updating games folder /media/fat/games
+Updating games folder /media/fat/games (kinst, kinst2, polystar)
 [0;32m✓[0m Completed
 Downloading res (rmonic79)
 /media/fat/_Arcade/_alternatives/_Raiden
@@ -54,7 +54,7 @@ Cleaning obsolete/unwanted core
 Creating /media/fat/_#Insert-Coin
 [0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█
 [0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0m
-Menu Creation process completed in 220 sec.
+Menu Creation process completed in 222 sec.
 Getting latest console cores
 [0;34m✓[0m PSX
 [0;34m✓[0m S32X
@@ -150,8 +150,10 @@ Getting latest console cores
 /media/fat/_Arcade/cores/Namco_NB1_20261002.rbf
 /media/fat/_Arcade/cores/MustacheBoy.rbf
 /media/fat/_Arcade/cores/MonacoGP_20261105.rbf
-/media/fat/_Arcade/cores/Model2_20261011.rbf
-/media/fat/_Arcade/cores/Model1_20261030.rbf
+/media/fat/_Arcade/cores/Model2C_20261107.rbf
+/media/fat/_Arcade/cores/Model2A_20261107.rbf
+/media/fat/_Arcade/cores/Model2_20261107b.rbf
+/media/fat/_Arcade/cores/Model1_20261106.rbf
 /media/fat/_Arcade/cores/Millipede_20260518.rbf
 /media/fat/_Arcade/cores/metamorphicforce_20261011.rbf
 /media/fat/_Arcade/cores/MegaPlay_20260626.rbf
