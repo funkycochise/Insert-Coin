@@ -1,8 +1,9 @@
 #!/bin/bash
+source /media/fat/Scripts/#insertcoin/folders/setup.sh
 
-BLUE='\033[0;34m'
-NC='\033[0m'
-CHECK="•"
+#BLUE='\033[0;34m'
+#NC='\033[0m'
+#CHECK="•"
 
 SD=/media/fat
 des_games=$SD/games
@@ -11,7 +12,7 @@ ia="https://archive.org/download/insert_coin_mame"
 
 mkdir -p "$temp"
 
-# dl <dossier> <fichier> : télécharge <fichier> dans /media/fat/games/<dossier>/
+# dl <dossier> <fichier> : download <fichier> into /media/fat/games/<dossier>/
 function dl {
    local dir="$1" file="$2"
    local dest="$des_games/$dir/$file"
@@ -42,4 +43,4 @@ dl "kinst" "kinst.img"
 
 dl "kinst2" "kinst2.img"
 
-echo "Completed"
+echo -e "${GREEN}${CHECK}${NC} Completed"

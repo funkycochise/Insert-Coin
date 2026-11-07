@@ -210,6 +210,10 @@ if test -f "/media/fat/_Arcade/Gradius IV Fukkatsu (ver JAC).mra"; then
       ./update/install_arcsnd.sh
    fi
 fi
+if test -f "./update/games_folders.sh"; then
+   ./update/games_folders.sh
+fi
+
 
 if test -f "/media/fat/Scripts/#local/coc_res.sh"; then
       /media/fat/Scripts/#local/coc_res.sh
