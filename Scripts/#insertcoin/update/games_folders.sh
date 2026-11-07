@@ -34,7 +34,7 @@ function dl {
    fi
 }
 
-echo "Updating games folder $des_games"
+echo "Updating games folder $des_games (kinst, kinst2, polystar)"
 
 dl "polystar" "polystar_full.bin"
 dl "polystar" "polystar_full.cue"

@@ -24,6 +24,8 @@ arcsound server installation/verification
 /media/fat/games/arcsnd already installed.
 Entry already exists in /media/fat/linux/user-startup.sh
 [0;32m✓[0m Completed
+Updating games folder /media/fat/games
+[0;32m✓[0m Completed
 Downloading res (rmonic79)
 /media/fat/_Arcade/_alternatives/_Raiden
 [0;34m✓[0m Raiden.zip
@@ -52,7 +54,7 @@ Cleaning obsolete/unwanted core
 Creating /media/fat/_#Insert-Coin
 [0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█
 [0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0m
-Menu Creation process completed in 225 sec.
+Menu Creation process completed in 220 sec.
 Getting latest console cores
 [0;34m✓[0m PSX
 [0;34m✓[0m S32X
@@ -70,7 +72,6 @@ Getting latest console cores
 [0;32m✓[0m Completed
 [0;34m✓[0m Latest updated _Console cores :
 /media/fat/_Console/VirtualBoy_20260804.rbf
-/media/fat/_Console/Vectrex_20261103.rbf
 /media/fat/_Console/TurboGrafx16_20260709.rbf
 /media/fat/_Console/SNES_20260823.rbf
 /media/fat/_Console/SGB_20260802.rbf
@@ -98,6 +99,7 @@ Getting latest console cores
 /media/fat/_Arcade/cores/wrally.rbf
 /media/fat/_Arcade/cores/WolfUnit.rbf
 /media/fat/_Arcade/cores/VioStorm_20261009.rbf
+/media/fat/_Arcade/cores/Vindicators_20261106.rbf
 /media/fat/_Arcade/cores/Universal_DoCastle.rbf
 /media/fat/_Arcade/cores/TwinHawk_20260813.rbf
 /media/fat/_Arcade/cores/Tecmo16_20261004.rbf
@@ -106,7 +108,6 @@ Getting latest console cores
 /media/fat/_Arcade/cores/ST-V_20261019.rbf
 /media/fat/_Arcade/cores/StunRunner_20260930.rbf
 /media/fat/_Arcade/cores/SSV_20260930.rbf
-/media/fat/_Arcade/cores/SNK6502_20261104.rbf
 /media/fat/_Arcade/cores/SMS_20260804.rbf
 /media/fat/_Arcade/cores/SmashTV-YUnit-Family2.rbf
 /media/fat/_Arcade/cores/SKNS_20260901.rbf
@@ -123,11 +124,12 @@ Getting latest console cores
 /media/fat/_Arcade/cores/SegaG80_20260511.rbf
 /media/fat/_Arcade/cores/SCI_20261008.rbf
 /media/fat/_Arcade/cores/sailormn_mister_20250805.rbf
+/media/fat/_Arcade/cores/S32_20261105.rbf
 /media/fat/_Arcade/cores/Rayforce_20260909.rbf
 /media/fat/_Arcade/cores/RampageWT-2E.rbf
+/media/fat/_Arcade/cores/Qix_20261105.rbf
 /media/fat/_Arcade/cores/Punchout_260822.rbf
 /media/fat/_Arcade/cores/PsikyoSH2_20260905.rbf
-/media/fat/_Arcade/cores/PrimalRage_20261102.rbf
 /media/fat/_Arcade/cores/PlumpPop.rbf
 /media/fat/_Arcade/cores/PlayChoice10_20261020.rbf
 /media/fat/_Arcade/cores/PGM2_20261017e.rbf
@@ -180,7 +182,6 @@ Getting latest console cores
 /media/fat/_Arcade/cores/ITech32_20260925.rbf
 /media/fat/_Arcade/cores/I-Robot_20260912.rbf
 /media/fat/_Arcade/cores/HardDrivin_cockpit.rbf
-/media/fat/_Arcade/cores/Gyruss_20261029.rbf
 /media/fat/_Arcade/cores/gunpey_20261023.rbf
 /media/fat/_Arcade/cores/Guardians_20260824.rbf
 /media/fat/_Arcade/cores/GrindStormer_20260728.rbf
@@ -212,6 +213,7 @@ Getting latest console cores
 /media/fat/_Arcade/cores/BerlinWall.rbf
 /media/fat/_Arcade/cores/Batsugun_20260726.rbf
 /media/fat/_Arcade/cores/Batman_20260924.rbf
+/media/fat/_Arcade/cores/atarisys2_20261105.rbf
 /media/fat/_Arcade/cores/Atari-G1_20260925.rbf
 /media/fat/_Arcade/cores/Arcade-ZN2Capcom_20260828.rbf
 /media/fat/_Arcade/cores/Arcade-XNWINRUN_20261017.rbf

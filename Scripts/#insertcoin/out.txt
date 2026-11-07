@@ -32,8 +32,6 @@ NF /media/fat/_Arcade/Gunbird 2 (set 2).mra - /media/fat/_#Insert-Coin/_Psikyo_
 NF /media/fat/_Arcade/Lode Runner - The Dig Fight (ver. A).mra - /media/fat/_#Insert-Coin/_Psikyo_SH2
 NF /media/fat/_Arcade/Space Bomber.mra - /media/fat/_#Insert-Coin/_Psikyo_SH2
 NF /media/fat/_Arcade/Tetris The Absolute - The Grand Master 2 Plus.mra - /media/fat/_#Insert-Coin/_Psikyo_SH2
-NF /media/fat/_Arcade/Arabian Fight.mra - /media/fat/_#Insert-Coin/_Sega-System-32
-NF /media/fat/_Arcade/Dark Edge.mra - /media/fat/_#Insert-Coin/_Sega-System-32
 NF /media/fat/_Arcade/Astro Flash (Japan).mra - /media/fat/_#Insert-Coin/_Sega-System-E
 NF /media/fat/_Arcade/Raiden DX.mra - /media/fat/_#Insert-Coin/_Seibu Kaihatsu
 NF /media/fat/_Arcade/Nibbler (Set 9).mra - /media/fat/_#Insert-Coin/_SNK
