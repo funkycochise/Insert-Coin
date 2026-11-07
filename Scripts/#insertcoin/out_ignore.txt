@@ -4429,3 +4429,331 @@ ignore /media/fat/_Arcade/Waku Waku Ultraman Racing.mra
 ignore /media/fat/_Arcade/Wonder Boy (System 2, Set 1, Japan) [315-5177].mra
 ignore /media/fat/_Arcade/Wonder Boy in Monster Land (Japan New Ver., MC-8123, 317-0043).mra
 ignore /media/fat/_Arcade/Wonder Boy in Monster Land.mra
+ignore /media/fat/_Arcade/Argus.mra
+ignore /media/fat/_Arcade/Baluba-louk no Densetsu (Japan).mra
+ignore /media/fat/_Arcade/Body Slam (World, S16) [8751 317-0015].mra
+ignore /media/fat/_Arcade/Brain.mra
+ignore /media/fat/_Arcade/Burnin Rubber (DECO).mra
+ignore /media/fat/_Arcade/Choplifter (unprotected).mra
+ignore /media/fat/_Arcade/Chuka Taisen (World) (P0-028-A PCB).mra
+ignore /media/fat/_Arcade/Crazy Otto.mra
+ignore /media/fat/_Arcade/Critter Crusher (EA 951204 V1.000).mra
+ignore /media/fat/_Arcade/Curve Ball.mra
+ignore /media/fat/_Arcade/DaeJeon! SanJeon SuJeon (AJTUE 990412 V1.000).mra
+ignore /media/fat/_Arcade/Dakkochan House (MC-8123).mra
+ignore /media/fat/_Arcade/Double Dragon 3 The Rosetta Stone (US).mra
+ignore /media/fat/_Arcade/Double Dragon neo.mra
+ignore /media/fat/_Arcade/Dynamite Deka (J 960515 V1.000).mra
+ignore /media/fat/_Arcade/Excite League (FD1094 317-0079).mra
+ignore /media/fat/_Arcade/Fighters' Impact (Ver 2.02O).mra
+ignore /media/fat/_Arcade/Final Arch (J 950714 V1.001).mra
+ignore /media/fat/_Arcade/Final Fight AE CPS2 Patch.mra
+ignore /media/fat/_Arcade/Flying shark (Slop Label Ver 1.67 MASTER.VER).mra
+ignore /media/fat/_Arcade/Frog Feast.mra
+ignore /media/fat/_Arcade/Ganbare! Marine Kun -Japan 2K0411-.mra
+ignore /media/fat/_Arcade/Gardia (317-0006).mra
+ignore /media/fat/_Arcade/Ghosts'n Goblins (World set 1).mra
+ignore /media/fat/_Arcade/Green Beret.mra
+ignore /media/fat/_Arcade/Gunlock.mra
+ignore /media/fat/_Arcade/Hasamu (Japan).mra
+ignore /media/fat/_Arcade/Heavy Metal (315-5135).mra
+ignore /media/fat/_Arcade/Hotdog Storm.mra
+ignore /media/fat/_Arcade/Hypernoid.mra
+ignore /media/fat/_Arcade/Indiana Jones (set 4).mra
+ignore /media/fat/_Arcade/Insector.mra
+ignore /media/fat/_Arcade/Kick-Man.mra
+ignore /media/fat/_Arcade/Krull.mra
+ignore /media/fat/_Arcade/Last Blade, The.mra
+ignore /media/fat/_Arcade/Legion - Spinner-87 (World ver 2.03).mra
+ignore /media/fat/_Arcade/Lifeforce (US).mra
+ignore /media/fat/_Arcade/Magical Zunou Power (J 961031 V1.000).mra
+ignore /media/fat/_Arcade/Major League (World, S16A) [No Protection].mra
+ignore /media/fat/_Arcade/Major Title 2 (World, set 1).mra
+ignore /media/fat/_Arcade/Marble Madness (set 4).mra
+ignore /media/fat/_Arcade/Microman Battle Charge (J 990326 V1.000).mra
+ignore /media/fat/_Arcade/Name Club Disney (J 980614 V1.000).mra
+ignore /media/fat/_Arcade/Name Club Ver.3 (J 970723 V1.000).mra
+ignore /media/fat/_Arcade/Narc (rev 7.00) [DDR3 v9].mra
+ignore /media/fat/_Arcade/Noboranka (bootleg).mra
+ignore /media/fat/_Arcade/Ocean to Ocean (DECO).mra
+ignore /media/fat/_Arcade/OverTop.mra
+ignore /media/fat/_Arcade/Pollen Angel.mra
+ignore /media/fat/_Arcade/Print Club 2 (U 970921 V1.000).mra
+ignore /media/fat/_Arcade/Print Club 2 Vol. 3 (U 990310 V1.000).mra
+ignore /media/fat/_Arcade/Print Club Pokemon B (U 991126 V1.000).mra
+ignore /media/fat/_Arcade/Puck Man (JP, Set 1).mra
+ignore /media/fat/_Arcade/Puzzle & Action- BoMulEul Chajara (JUET 970125 V2.00K).mra
+ignore /media/fat/_Arcade/Puzzle & Action- Treasure Hunt (JUET 970901 V2.00E).mra
+ignore /media/fat/_Arcade/Quartet 2 (World, S16A) [No Protection].mra
+ignore /media/fat/_Arcade/RyuKyu (Rev A, Japan) (FD1094 317-5023A).mra
+ignore /media/fat/_Arcade/SDI Strategic Defense Initiative (Japan, New Ver., S16A) [FD1089B 317-0027].mra
+ignore /media/fat/_Arcade/SWAT (World, 315-5048).mra
+ignore /media/fat/_Arcade/Salamander (version D).mra
+ignore /media/fat/_Arcade/Star Jacker (alt).mra
+ignore /media/fat/_Arcade/Street Fighter Alpha 3 Challenger's Edition (USA 980904).mra
+ignore /media/fat/_Arcade/Street Fighter Zero 3 Challenger's Edition (USA 980904).mra
+ignore /media/fat/_Arcade/Stress Busters (J 981020 V1.000).mra
+ignore /media/fat/_Arcade/Superior Soldiers (US).mra
+ignore /media/fat/_Arcade/Swat (315-5048).mra
+ignore /media/fat/_Arcade/Technical Bowling (J 971212 V1.000).mra
+ignore /media/fat/_Arcade/The Combatribes (US, Rev 2, Set 1).mra
+ignore /media/fat/_Arcade/Timber.mra
+ignore /media/fat/_Arcade/Toki no Senshi - Chrono Soldier [MC-8123, 317-0040].mra
+ignore /media/fat/_Arcade/Toki no Senshi - Chrono Soldier.mra
+ignore /media/fat/_Arcade/Trog (rev LA5 3-29-91).mra
+ignore /media/fat/_Arcade/Tylz.mra
+ignore /media/fat/_Arcade/UFO Senshi Youko Chan [MC-8123, 317-0064].mra
+ignore /media/fat/_Arcade/Versus Net Soccer (ver EAD).mra
+ignore /media/fat/_Arcade/Virtua Fighter [15kHz CRT].mra
+ignore /media/fat/_Arcade/Virtual Mahjong (J 961214 V1.000).mra
+ignore /media/fat/_Arcade/WWF WrestleFest (World).mra
+ignore /media/fat/_Arcade/Waku Waku Ultraman Racing.mra
+ignore /media/fat/_Arcade/Wonder Boy (System 2, Set 1, Japan) [315-5177].mra
+ignore /media/fat/_Arcade/Wonder Boy in Monster Land (Japan New Ver., MC-8123, 317-0043).mra
+ignore /media/fat/_Arcade/Wonder Boy in Monster Land.mra
+ignore /media/fat/_Arcade/Argus.mra
+ignore /media/fat/_Arcade/Baluba-louk no Densetsu (Japan).mra
+ignore /media/fat/_Arcade/Body Slam (World, S16) [8751 317-0015].mra
+ignore /media/fat/_Arcade/Brain.mra
+ignore /media/fat/_Arcade/Burnin Rubber (DECO).mra
+ignore /media/fat/_Arcade/Choplifter (unprotected).mra
+ignore /media/fat/_Arcade/Chuka Taisen (World) (P0-028-A PCB).mra
+ignore /media/fat/_Arcade/Crazy Otto.mra
+ignore /media/fat/_Arcade/Critter Crusher (EA 951204 V1.000).mra
+ignore /media/fat/_Arcade/Curve Ball.mra
+ignore /media/fat/_Arcade/DaeJeon! SanJeon SuJeon (AJTUE 990412 V1.000).mra
+ignore /media/fat/_Arcade/Dakkochan House (MC-8123).mra
+ignore /media/fat/_Arcade/Double Dragon 3 The Rosetta Stone (US).mra
+ignore /media/fat/_Arcade/Double Dragon neo.mra
+ignore /media/fat/_Arcade/Dynamite Deka (J 960515 V1.000).mra
+ignore /media/fat/_Arcade/Excite League (FD1094 317-0079).mra
+ignore /media/fat/_Arcade/Fighters' Impact (Ver 2.02O).mra
+ignore /media/fat/_Arcade/Final Arch (J 950714 V1.001).mra
+ignore /media/fat/_Arcade/Final Fight AE CPS2 Patch.mra
+ignore /media/fat/_Arcade/Flying shark (Slop Label Ver 1.67 MASTER.VER).mra
+ignore /media/fat/_Arcade/Frog Feast.mra
+ignore /media/fat/_Arcade/Ganbare! Marine Kun -Japan 2K0411-.mra
+ignore /media/fat/_Arcade/Gardia (317-0006).mra
+ignore /media/fat/_Arcade/Ghosts'n Goblins (World set 1).mra
+ignore /media/fat/_Arcade/Green Beret.mra
+ignore /media/fat/_Arcade/Gunlock.mra
+ignore /media/fat/_Arcade/Hasamu (Japan).mra
+ignore /media/fat/_Arcade/Heavy Metal (315-5135).mra
+ignore /media/fat/_Arcade/Hotdog Storm.mra
+ignore /media/fat/_Arcade/Hypernoid.mra
+ignore /media/fat/_Arcade/Indiana Jones (set 4).mra
+ignore /media/fat/_Arcade/Insector.mra
+ignore /media/fat/_Arcade/Kick-Man.mra
+ignore /media/fat/_Arcade/Krull.mra
+ignore /media/fat/_Arcade/Last Blade, The.mra
+ignore /media/fat/_Arcade/Legion - Spinner-87 (World ver 2.03).mra
+ignore /media/fat/_Arcade/Lifeforce (US).mra
+ignore /media/fat/_Arcade/Magical Zunou Power (J 961031 V1.000).mra
+ignore /media/fat/_Arcade/Major League (World, S16A) [No Protection].mra
+ignore /media/fat/_Arcade/Major Title 2 (World, set 1).mra
+ignore /media/fat/_Arcade/Marble Madness (set 4).mra
+ignore /media/fat/_Arcade/Microman Battle Charge (J 990326 V1.000).mra
+ignore /media/fat/_Arcade/Name Club Disney (J 980614 V1.000).mra
+ignore /media/fat/_Arcade/Name Club Ver.3 (J 970723 V1.000).mra
+ignore /media/fat/_Arcade/Narc (rev 7.00) [DDR3 v9].mra
+ignore /media/fat/_Arcade/Noboranka (bootleg).mra
+ignore /media/fat/_Arcade/Ocean to Ocean (DECO).mra
+ignore /media/fat/_Arcade/OverTop.mra
+ignore /media/fat/_Arcade/Pollen Angel.mra
+ignore /media/fat/_Arcade/Print Club 2 (U 970921 V1.000).mra
+ignore /media/fat/_Arcade/Print Club 2 Vol. 3 (U 990310 V1.000).mra
+ignore /media/fat/_Arcade/Print Club Pokemon B (U 991126 V1.000).mra
+ignore /media/fat/_Arcade/Puck Man (JP, Set 1).mra
+ignore /media/fat/_Arcade/Puzzle & Action- BoMulEul Chajara (JUET 970125 V2.00K).mra
+ignore /media/fat/_Arcade/Puzzle & Action- Treasure Hunt (JUET 970901 V2.00E).mra
+ignore /media/fat/_Arcade/Quartet 2 (World, S16A) [No Protection].mra
+ignore /media/fat/_Arcade/RyuKyu (Rev A, Japan) (FD1094 317-5023A).mra
+ignore /media/fat/_Arcade/SDI Strategic Defense Initiative (Japan, New Ver., S16A) [FD1089B 317-0027].mra
+ignore /media/fat/_Arcade/SWAT (World, 315-5048).mra
+ignore /media/fat/_Arcade/Salamander (version D).mra
+ignore /media/fat/_Arcade/Star Jacker (alt).mra
+ignore /media/fat/_Arcade/Street Fighter Alpha 3 Challenger's Edition (USA 980904).mra
+ignore /media/fat/_Arcade/Street Fighter Zero 3 Challenger's Edition (USA 980904).mra
+ignore /media/fat/_Arcade/Stress Busters (J 981020 V1.000).mra
+ignore /media/fat/_Arcade/Superior Soldiers (US).mra
+ignore /media/fat/_Arcade/Swat (315-5048).mra
+ignore /media/fat/_Arcade/Technical Bowling (J 971212 V1.000).mra
+ignore /media/fat/_Arcade/The Combatribes (US, Rev 2, Set 1).mra
+ignore /media/fat/_Arcade/Timber.mra
+ignore /media/fat/_Arcade/Toki no Senshi - Chrono Soldier [MC-8123, 317-0040].mra
+ignore /media/fat/_Arcade/Toki no Senshi - Chrono Soldier.mra
+ignore /media/fat/_Arcade/Trog (rev LA5 3-29-91).mra
+ignore /media/fat/_Arcade/Tylz.mra
+ignore /media/fat/_Arcade/UFO Senshi Youko Chan [MC-8123, 317-0064].mra
+ignore /media/fat/_Arcade/Versus Net Soccer (ver EAD).mra
+ignore /media/fat/_Arcade/Virtua Fighter [15kHz CRT].mra
+ignore /media/fat/_Arcade/Virtual Mahjong (J 961214 V1.000).mra
+ignore /media/fat/_Arcade/WWF WrestleFest (World).mra
+ignore /media/fat/_Arcade/Waku Waku Ultraman Racing.mra
+ignore /media/fat/_Arcade/Wonder Boy (System 2, Set 1, Japan) [315-5177].mra
+ignore /media/fat/_Arcade/Wonder Boy in Monster Land (Japan New Ver., MC-8123, 317-0043).mra
+ignore /media/fat/_Arcade/Wonder Boy in Monster Land.mra
+ignore /media/fat/_Arcade/Argus.mra
+ignore /media/fat/_Arcade/Baluba-louk no Densetsu (Japan).mra
+ignore /media/fat/_Arcade/Body Slam (World, S16) [8751 317-0015].mra
+ignore /media/fat/_Arcade/Brain.mra
+ignore /media/fat/_Arcade/Burnin Rubber (DECO).mra
+ignore /media/fat/_Arcade/Choplifter (unprotected).mra
+ignore /media/fat/_Arcade/Chuka Taisen (World) (P0-028-A PCB).mra
+ignore /media/fat/_Arcade/Crazy Otto.mra
+ignore /media/fat/_Arcade/Critter Crusher (EA 951204 V1.000).mra
+ignore /media/fat/_Arcade/Curve Ball.mra
+ignore /media/fat/_Arcade/DaeJeon! SanJeon SuJeon (AJTUE 990412 V1.000).mra
+ignore /media/fat/_Arcade/Dakkochan House (MC-8123).mra
+ignore /media/fat/_Arcade/Double Dragon 3 The Rosetta Stone (US).mra
+ignore /media/fat/_Arcade/Double Dragon neo.mra
+ignore /media/fat/_Arcade/Dynamite Deka (J 960515 V1.000).mra
+ignore /media/fat/_Arcade/Excite League (FD1094 317-0079).mra
+ignore /media/fat/_Arcade/Fighters' Impact (Ver 2.02O).mra
+ignore /media/fat/_Arcade/Final Arch (J 950714 V1.001).mra
+ignore /media/fat/_Arcade/Final Fight AE CPS2 Patch.mra
+ignore /media/fat/_Arcade/Flying shark (Slop Label Ver 1.67 MASTER.VER).mra
+ignore /media/fat/_Arcade/Frog Feast.mra
+ignore /media/fat/_Arcade/Ganbare! Marine Kun -Japan 2K0411-.mra
+ignore /media/fat/_Arcade/Gardia (317-0006).mra
+ignore /media/fat/_Arcade/Ghosts'n Goblins (World set 1).mra
+ignore /media/fat/_Arcade/Green Beret.mra
+ignore /media/fat/_Arcade/Gunlock.mra
+ignore /media/fat/_Arcade/Hasamu (Japan).mra
+ignore /media/fat/_Arcade/Heavy Metal (315-5135).mra
+ignore /media/fat/_Arcade/Hotdog Storm.mra
+ignore /media/fat/_Arcade/Hypernoid.mra
+ignore /media/fat/_Arcade/Indiana Jones (set 4).mra
+ignore /media/fat/_Arcade/Insector.mra
+ignore /media/fat/_Arcade/Kick-Man.mra
+ignore /media/fat/_Arcade/Krull.mra
+ignore /media/fat/_Arcade/Last Blade, The.mra
+ignore /media/fat/_Arcade/Legion - Spinner-87 (World ver 2.03).mra
+ignore /media/fat/_Arcade/Lifeforce (US).mra
+ignore /media/fat/_Arcade/Magical Zunou Power (J 961031 V1.000).mra
+ignore /media/fat/_Arcade/Major League (World, S16A) [No Protection].mra
+ignore /media/fat/_Arcade/Major Title 2 (World, set 1).mra
+ignore /media/fat/_Arcade/Marble Madness (set 4).mra
+ignore /media/fat/_Arcade/Microman Battle Charge (J 990326 V1.000).mra
+ignore /media/fat/_Arcade/Name Club Disney (J 980614 V1.000).mra
+ignore /media/fat/_Arcade/Name Club Ver.3 (J 970723 V1.000).mra
+ignore /media/fat/_Arcade/Narc (rev 7.00) [DDR3 v9].mra
+ignore /media/fat/_Arcade/Noboranka (bootleg).mra
+ignore /media/fat/_Arcade/Ocean to Ocean (DECO).mra
+ignore /media/fat/_Arcade/OverTop.mra
+ignore /media/fat/_Arcade/Pollen Angel.mra
+ignore /media/fat/_Arcade/Print Club 2 (U 970921 V1.000).mra
+ignore /media/fat/_Arcade/Print Club 2 Vol. 3 (U 990310 V1.000).mra
+ignore /media/fat/_Arcade/Print Club Pokemon B (U 991126 V1.000).mra
+ignore /media/fat/_Arcade/Puck Man (JP, Set 1).mra
+ignore /media/fat/_Arcade/Puzzle & Action- BoMulEul Chajara (JUET 970125 V2.00K).mra
+ignore /media/fat/_Arcade/Puzzle & Action- Treasure Hunt (JUET 970901 V2.00E).mra
+ignore /media/fat/_Arcade/Quartet 2 (World, S16A) [No Protection].mra
+ignore /media/fat/_Arcade/RyuKyu (Rev A, Japan) (FD1094 317-5023A).mra
+ignore /media/fat/_Arcade/SDI Strategic Defense Initiative (Japan, New Ver., S16A) [FD1089B 317-0027].mra
+ignore /media/fat/_Arcade/SWAT (World, 315-5048).mra
+ignore /media/fat/_Arcade/Salamander (version D).mra
+ignore /media/fat/_Arcade/Star Jacker (alt).mra
+ignore /media/fat/_Arcade/Street Fighter Alpha 3 Challenger's Edition (USA 980904).mra
+ignore /media/fat/_Arcade/Street Fighter Zero 3 Challenger's Edition (USA 980904).mra
+ignore /media/fat/_Arcade/Stress Busters (J 981020 V1.000).mra
+ignore /media/fat/_Arcade/Superior Soldiers (US).mra
+ignore /media/fat/_Arcade/Swat (315-5048).mra
+ignore /media/fat/_Arcade/Technical Bowling (J 971212 V1.000).mra
+ignore /media/fat/_Arcade/The Combatribes (US, Rev 2, Set 1).mra
+ignore /media/fat/_Arcade/Timber.mra
+ignore /media/fat/_Arcade/Toki no Senshi - Chrono Soldier [MC-8123, 317-0040].mra
+ignore /media/fat/_Arcade/Toki no Senshi - Chrono Soldier.mra
+ignore /media/fat/_Arcade/Trog (rev LA5 3-29-91).mra
+ignore /media/fat/_Arcade/Tylz.mra
+ignore /media/fat/_Arcade/UFO Senshi Youko Chan [MC-8123, 317-0064].mra
+ignore /media/fat/_Arcade/Versus Net Soccer (ver EAD).mra
+ignore /media/fat/_Arcade/Virtua Fighter [15kHz CRT].mra
+ignore /media/fat/_Arcade/Virtual Mahjong (J 961214 V1.000).mra
+ignore /media/fat/_Arcade/WWF WrestleFest (World).mra
+ignore /media/fat/_Arcade/Waku Waku Ultraman Racing.mra
+ignore /media/fat/_Arcade/Wonder Boy (System 2, Set 1, Japan) [315-5177].mra
+ignore /media/fat/_Arcade/Wonder Boy in Monster Land (Japan New Ver., MC-8123, 317-0043).mra
+ignore /media/fat/_Arcade/Wonder Boy in Monster Land.mra
+ignore /media/fat/_Arcade/Argus.mra
+ignore /media/fat/_Arcade/Baluba-louk no Densetsu (Japan).mra
+ignore /media/fat/_Arcade/Body Slam (World, S16) [8751 317-0015].mra
+ignore /media/fat/_Arcade/Brain.mra
+ignore /media/fat/_Arcade/Burnin Rubber (DECO).mra
+ignore /media/fat/_Arcade/Choplifter (unprotected).mra
+ignore /media/fat/_Arcade/Chuka Taisen (World) (P0-028-A PCB).mra
+ignore /media/fat/_Arcade/Crazy Otto.mra
+ignore /media/fat/_Arcade/Critter Crusher (EA 951204 V1.000).mra
+ignore /media/fat/_Arcade/Curve Ball.mra
+ignore /media/fat/_Arcade/DaeJeon! SanJeon SuJeon (AJTUE 990412 V1.000).mra
+ignore /media/fat/_Arcade/Dakkochan House (MC-8123).mra
+ignore /media/fat/_Arcade/Double Dragon 3 The Rosetta Stone (US).mra
+ignore /media/fat/_Arcade/Double Dragon neo.mra
+ignore /media/fat/_Arcade/Dynamite Deka (J 960515 V1.000).mra
+ignore /media/fat/_Arcade/Excite League (FD1094 317-0079).mra
+ignore /media/fat/_Arcade/Fighters' Impact (Ver 2.02O).mra
+ignore /media/fat/_Arcade/Final Arch (J 950714 V1.001).mra
+ignore /media/fat/_Arcade/Final Fight AE CPS2 Patch.mra
+ignore /media/fat/_Arcade/Flying shark (Slop Label Ver 1.67 MASTER.VER).mra
+ignore /media/fat/_Arcade/Frog Feast.mra
+ignore /media/fat/_Arcade/Ganbare! Marine Kun -Japan 2K0411-.mra
+ignore /media/fat/_Arcade/Gardia (317-0006).mra
+ignore /media/fat/_Arcade/Ghosts'n Goblins (World set 1).mra
+ignore /media/fat/_Arcade/Green Beret.mra
+ignore /media/fat/_Arcade/Gunlock.mra
+ignore /media/fat/_Arcade/Hasamu (Japan).mra
+ignore /media/fat/_Arcade/Heavy Metal (315-5135).mra
+ignore /media/fat/_Arcade/Hotdog Storm.mra
+ignore /media/fat/_Arcade/Hypernoid.mra
+ignore /media/fat/_Arcade/Indiana Jones (set 4).mra
+ignore /media/fat/_Arcade/Insector.mra
+ignore /media/fat/_Arcade/Kick-Man.mra
+ignore /media/fat/_Arcade/Krull.mra
+ignore /media/fat/_Arcade/Last Blade, The.mra
+ignore /media/fat/_Arcade/Legion - Spinner-87 (World ver 2.03).mra
+ignore /media/fat/_Arcade/Lifeforce (US).mra
+ignore /media/fat/_Arcade/Magical Zunou Power (J 961031 V1.000).mra
+ignore /media/fat/_Arcade/Major League (World, S16A) [No Protection].mra
+ignore /media/fat/_Arcade/Major Title 2 (World, set 1).mra
+ignore /media/fat/_Arcade/Marble Madness (set 4).mra
+ignore /media/fat/_Arcade/Microman Battle Charge (J 990326 V1.000).mra
+ignore /media/fat/_Arcade/Name Club Disney (J 980614 V1.000).mra
+ignore /media/fat/_Arcade/Name Club Ver.3 (J 970723 V1.000).mra
+ignore /media/fat/_Arcade/Narc (rev 7.00) [DDR3 v9].mra
+ignore /media/fat/_Arcade/Noboranka (bootleg).mra
+ignore /media/fat/_Arcade/Ocean to Ocean (DECO).mra
+ignore /media/fat/_Arcade/OverTop.mra
+ignore /media/fat/_Arcade/Pollen Angel.mra
+ignore /media/fat/_Arcade/Print Club 2 (U 970921 V1.000).mra
+ignore /media/fat/_Arcade/Print Club 2 Vol. 3 (U 990310 V1.000).mra
+ignore /media/fat/_Arcade/Print Club Pokemon B (U 991126 V1.000).mra
+ignore /media/fat/_Arcade/Puck Man (JP, Set 1).mra
+ignore /media/fat/_Arcade/Puzzle & Action- BoMulEul Chajara (JUET 970125 V2.00K).mra
+ignore /media/fat/_Arcade/Puzzle & Action- Treasure Hunt (JUET 970901 V2.00E).mra
+ignore /media/fat/_Arcade/Quartet 2 (World, S16A) [No Protection].mra
+ignore /media/fat/_Arcade/RyuKyu (Rev A, Japan) (FD1094 317-5023A).mra
+ignore /media/fat/_Arcade/SDI Strategic Defense Initiative (Japan, New Ver., S16A) [FD1089B 317-0027].mra
+ignore /media/fat/_Arcade/SWAT (World, 315-5048).mra
+ignore /media/fat/_Arcade/Salamander (version D).mra
+ignore /media/fat/_Arcade/Star Jacker (alt).mra
+ignore /media/fat/_Arcade/Street Fighter Alpha 3 Challenger's Edition (USA 980904).mra
+ignore /media/fat/_Arcade/Street Fighter Zero 3 Challenger's Edition (USA 980904).mra
+ignore /media/fat/_Arcade/Stress Busters (J 981020 V1.000).mra
+ignore /media/fat/_Arcade/Superior Soldiers (US).mra
+ignore /media/fat/_Arcade/Swat (315-5048).mra
+ignore /media/fat/_Arcade/Technical Bowling (J 971212 V1.000).mra
+ignore /media/fat/_Arcade/The Combatribes (US, Rev 2, Set 1).mra
+ignore /media/fat/_Arcade/Timber.mra
+ignore /media/fat/_Arcade/Toki no Senshi - Chrono Soldier [MC-8123, 317-0040].mra
+ignore /media/fat/_Arcade/Toki no Senshi - Chrono Soldier.mra
+ignore /media/fat/_Arcade/Trog (rev LA5 3-29-91).mra
+ignore /media/fat/_Arcade/Tylz.mra
+ignore /media/fat/_Arcade/UFO Senshi Youko Chan [MC-8123, 317-0064].mra
+ignore /media/fat/_Arcade/Versus Net Soccer (ver EAD).mra
+ignore /media/fat/_Arcade/Virtua Fighter [15kHz CRT].mra
+ignore /media/fat/_Arcade/Virtual Mahjong (J 961214 V1.000).mra
+ignore /media/fat/_Arcade/WWF WrestleFest (World).mra
+ignore /media/fat/_Arcade/Waku Waku Ultraman Racing.mra
+ignore /media/fat/_Arcade/Wonder Boy (System 2, Set 1, Japan) [315-5177].mra
+ignore /media/fat/_Arcade/Wonder Boy in Monster Land (Japan New Ver., MC-8123, 317-0043).mra
+ignore /media/fat/_Arcade/Wonder Boy in Monster Land.mra

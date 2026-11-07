@@ -1,0 +1,72 @@
+NF /media/fat/_Arcade/Toobin.mra - /media/fat/_#Insert-Coin/_Atari
+NF /media/fat/_Arcade/Lunar Battle (Prototype).mra - /media/fat/_#Insert-Coin/_Atari
+NF /media/fat/_Arcade/Toobin.mra - /media/fat/_#Insert-Coin/_Atlus
+NF /media/fat/_Arcade/Blue Print (Midway).mra - /media/fat/_#Insert-Coin/_Bally-midway
+NF /media/fat/_Arcade/Super Dimension Fortress Macross.mra - /media/fat/_#Insert-Coin/_Banpresto
+NF /media/fat/_Arcade/Joe & Mac Returns.mra - /media/fat/_#Insert-Coin/_Capcom-Mitchell
+NF /media/fat/_Arcade/Osman.mra - /media/fat/_#Insert-Coin/_Capcom-Mitchell
+NF /media/fat/_Arcade/Joe & Mac Returns (World, Master Version 1.1, 1994.05.27).mra - /media/fat/_#Insert-Coin/_Capcom-Mitchell
+NF /media/fat/_Arcade/Street Fighter III 3rd Strike Fight for the Future (Japan 990512, NO CD).mra - /media/fat/_#Insert-Coin/_CPS3
+NF /media/fat/_Arcade/Act-Fancer Cybernetick Hyper Weapon (World, Rev. 3) (Coc).mra - /media/fat/_#Insert-Coin/_DataEast-Deco
+NF /media/fat/_Arcade/Boogie Wings (USA v1.7, 92.12.14) (Coc).mra - /media/fat/_#Insert-Coin/_DataEast-Deco
+NF /media/fat/_Arcade/Caveman Ninja (World, Ver. 4) (Coc).mra - /media/fat/_#Insert-Coin/_DataEast-Deco
+NF /media/fat/_Arcade/Crude Buster (World, FX version) (Coc).mra - /media/fat/_#Insert-Coin/_DataEast-Deco
+NF /media/fat/_Arcade/Dark Seal (World revision 3).mra - /media/fat/_#Insert-Coin/_DataEast-Deco
+NF /media/fat/_Arcade/Robocop 2 (USA v0.10).mra - /media/fat/_#Insert-Coin/_DataEast-Deco
+NF /media/fat/_Arcade/The Real Ghostbusters (US, 2 Players, Revision 2).mra - /media/fat/_#Insert-Coin/_DataEast-Deco
+NF /media/fat/_Arcade/Western Express (Japan, rev 4).mra - /media/fat/_#Insert-Coin/_DataEast-Deco
+NF /media/fat/_Arcade/SRD - Super Real Darwin (World).mra - /media/fat/_#Insert-Coin/_Deco-8
+NF /media/fat/_Arcade/Biomechanical Toy.mra - /media/fat/_#Insert-Coin/_Gaelco
+NF /media/fat/_Arcade/Omega [bl].mra - /media/fat/_#Insert-Coin/_Galaxian
+NF /media/fat/_Arcade/Puzzli 2 Super (ver. 200, WORLD).mra - /media/fat/_#Insert-Coin/_IGS_PGM
+NF /media/fat/_Arcade/Grasspin (Jaleco).mra - /media/fat/_#Insert-Coin/_Jaleco
+NF /media/fat/_Arcade/Saturn (Zilec).mra - /media/fat/_#Insert-Coin/_Jaleco
+NF /media/fat/_Arcade/Mortal Kombat (Rev. 4.0 09-28-92).mra - /media/fat/_#Insert-Coin/_Midway_TYZUnit
+NF /media/fat/_Arcade/Mortal Kombat II (Rev. L3.1).mra - /media/fat/_#Insert-Coin/_Midway_TYZUnit
+NF /media/fat/_Arcade/Smash T.V. (Rev. 8.00).mra - /media/fat/_#Insert-Coin/_Midway_TYZUnit
+NF /media/fat/_Arcade/NARC (Rev. 7.00).mra - /media/fat/_#Insert-Coin/_Midway_TYZUnit
+NF /media/fat/_Arcade/Smash T.V. (rev 8.00) [firefix mixboot].mra - /media/fat/_#Insert-Coin/_Midway_Wolf
+NF /media/fat/_Arcade/TankBattalion.mra - /media/fat/_#Insert-Coin/_Namco
+NF /media/fat/_Arcade/Family Bowl (Japan FB1-VER.A).mra - /media/fat/_#Insert-Coin/_Namco-System-11
+NF /media/fat/_Arcade/Gunbird 2 (set 2).mra - /media/fat/_#Insert-Coin/_Psikyo_SH2
+NF /media/fat/_Arcade/Lode Runner - The Dig Fight (ver. A).mra - /media/fat/_#Insert-Coin/_Psikyo_SH2
+NF /media/fat/_Arcade/Space Bomber.mra - /media/fat/_#Insert-Coin/_Psikyo_SH2
+NF /media/fat/_Arcade/Tetris The Absolute - The Grand Master 2 Plus.mra - /media/fat/_#Insert-Coin/_Psikyo_SH2
+NF /media/fat/_Arcade/Arabian Fight.mra - /media/fat/_#Insert-Coin/_Sega-System-32
+NF /media/fat/_Arcade/Dark Edge.mra - /media/fat/_#Insert-Coin/_Sega-System-32
+NF /media/fat/_Arcade/Astro Flash (Japan).mra - /media/fat/_#Insert-Coin/_Sega-System-E
+NF /media/fat/_Arcade/Raiden DX.mra - /media/fat/_#Insert-Coin/_Seibu Kaihatsu
+NF /media/fat/_Arcade/Nibbler (Set 9).mra - /media/fat/_#Insert-Coin/_SNK
+NF /media/fat/_Arcade/Sasuke.mra - /media/fat/_#Insert-Coin/_SNK
+NF /media/fat/_Arcade/Western Express (Japan, rev 4).mra - /media/fat/_#Insert-Coin/_Stern
+NF /media/fat/_Arcade/Ikki.mra - /media/fat/_#Insert-Coin/_Sun
+NF /media/fat/_Arcade/SlapFight Bootleg.mra - /media/fat/_#Insert-Coin/_Taito
+NF /media/fat/_Arcade/Darius II (Japan, dual screen, rev 2).mra - /media/fat/_#Insert-Coin/_Taito
+NF /media/fat/_Arcade/Qix (set 1).mra - /media/fat/_#Insert-Coin/_Taito
+NF /media/fat/_Arcade/Sagaia (World, dual screen).mra - /media/fat/_#Insert-Coin/_Taito
+NF /media/fat/_Arcade/The Legend of Kage (Rev 2) (Coc).mra - /media/fat/_#Insert-Coin/_Taito
+NF /media/fat/_Arcade/Jungle Hunt US.mra - /media/fat/_#Insert-Coin/_Taito-SJ
+NF /media/fat/_Arcade/SlapFight Bootleg.mra - /media/fat/_#Insert-Coin/_Toaplan_STG
+NF /media/fat/_Arcade/Vs. Atari R.B.I. Baseball (set 2).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Baseball (Japan, set BA A-1).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Baseball (Japan, set BA A-2).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Baseball (Japan, set BA A-3).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Excitebike (set EB4-3).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Excitebike (set EB4-4 A).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. From Below.mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Ice Climber (set IC4-4 B-1).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Ice Climber (set IC4-4 ).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Pinball (Japan).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Skate Kids (Two-Bit Score).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Soccer (set SC4-3).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Stroke & Match Golf (Japan, Men Version).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Stroke & Match Golf (Ladies Version).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Stroke & Match Golf (Ladies Version, set E).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Stroke & Match Golf (Men Version, set GF4-2).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Super Mario Bros. (set harder).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Tennis (Japan USA, set 2).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Tennis (Japan USA, set 3).mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Vs. Urban Champion.mra - /media/fat/_#Insert-Coin/_Nintendo Vs.
+NF /media/fat/_Arcade/Shiritsu Justice Gakuen - Legion of Heroes (Japan 971216).mra - /media/fat/_#Insert-Coin/_ZN2-Capcom
+NF /media/fat/_Arcade/Rainbow Islands (World, rev 2, set 1) .mra - /media/fat/_#Insert-Coin/_#Favorites
+NF /media/fat/_Arcade/Rainbow Islands - Extra Version .mra - /media/fat/_#Insert-Coin/_#Favorites

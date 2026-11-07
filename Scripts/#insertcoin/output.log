@@ -16,4 +16,210 @@
 [0m
 Removing /media/fat/_#Insert-Coin
 Resources installation in progress...
-[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█
+[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█
+[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0m
+Please Wait
+[0;32m✓[0m Completed
+arcsound server installation/verification
+/media/fat/games/arcsnd already installed.
+Entry already exists in /media/fat/linux/user-startup.sh
+[0;32m✓[0m Completed
+Downloading res (rmonic79)
+/media/fat/_Arcade/_alternatives/_Raiden
+[0;34m✓[0m Raiden.zip
+[0;34m✓[0m DenjinMakai.zip
+[0;32m✓[0m Completed
+Getting DK3
+[0;34m✓[0m DK3
+[0;32m✓[0m Completed
+Installing latest key
+Archive:  /media/fat/Scripts/temp/cv1k.zip
+  inflating: ikacore_CV1k_20261007.rbf  
+[0;32m✓[0m Completed
+Installing local resources in /media/fat/_#Insert-Coin
+_#Saturn
+_#Pce
+Creating /media/fat/_#Insert-Coin/Paprium.mgl
+[0;32m✓[0m Completed
+Updating mame folder /media/fat/games/mame
+[0;32m✓[0m Completed
+Updating CV1K mame folder /media/fat/games/mame
+[0;32m✓[0m Completed
+Cleaning console mgl
+[0;32m✓[0m Completed
+Cleaning obsolete/unwanted core
+[0;32m✓[0m Completed
+Creating /media/fat/_#Insert-Coin
+[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█
+[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0m
+Menu Creation process completed in 225 sec.
+Getting latest console cores
+[0;34m✓[0m PSX
+[0;34m✓[0m S32X
+[0;34m✓[0m Saturn
+[0;34m✓[0m SGB
+[0;34m✓[0m N64
+[0;34m✓[0m Jaguar
+[0;34m✓[0m CDi
+[0;34m✓[0m TurboGrafx16
+[0;34m✓[0m NES
+[0;34m✓[0m SNES
+[0;34m✓[0m MegaDrive
+[0;34m✓[0m VirtualBoy
+[0;34m✓[0m 3DO
+[0;32m✓[0m Completed
+[0;34m✓[0m Latest updated _Console cores :
+/media/fat/_Console/VirtualBoy_20260804.rbf
+/media/fat/_Console/Vectrex_20261103.rbf
+/media/fat/_Console/TurboGrafx16_20260709.rbf
+/media/fat/_Console/SNES_20260823.rbf
+/media/fat/_Console/SGB_20260802.rbf
+/media/fat/_Console/Saturn_20261019.rbf
+/media/fat/_Console/S32X_20260621.rbf
+/media/fat/_Console/PSX_20260821.rbf
+/media/fat/_Console/NES_20260915.rbf
+/media/fat/_Console/N64_Turbo_20261016.rbf
+/media/fat/_Console/N64_80MHz_20261016.rbf
+/media/fat/_Console/MegaDrive_20260604.rbf
+/media/fat/_Console/Jaguar_20260811.rbf
+/media/fat/_Console/CDi_20260810.rbf
+/media/fat/_Console/3DO_20260717.rbf
+[0;34m✓[0m Latest updated _Arcade cores :
+/media/fat/_Arcade/cores/ZN1Capcom_20260820.rbf
+/media/fat/_Arcade/cores/ZeroTeam_20261010.rbf
+/media/fat/_Arcade/cores/XNZN1TaitoFX1B_20260814.rbf
+/media/fat/_Arcade/cores/XNZN1_20260721.rbf
+/media/fat/_Arcade/cores/XNSYSTEMFL_20260924.rbf
+/media/fat/_Arcade/cores/XNSYSTEM22_20261021.rbf
+/media/fat/_Arcade/cores/XNSYSTEM12_20261014.rbf
+/media/fat/_Arcade/cores/XNSYSTEM11_20260911.rbf
+/media/fat/_Arcade/cores/XNSUPER22_20261021.rbf
+/media/fat/_Arcade/cores/xnbrkthru_20260705.rbf
+/media/fat/_Arcade/cores/wrally.rbf
+/media/fat/_Arcade/cores/WolfUnit.rbf
+/media/fat/_Arcade/cores/VioStorm_20261009.rbf
+/media/fat/_Arcade/cores/Universal_DoCastle.rbf
+/media/fat/_Arcade/cores/TwinHawk_20260813.rbf
+/media/fat/_Arcade/cores/Tecmo16_20261004.rbf
+/media/fat/_Arcade/cores/TaitoGNET_20261015.rbf
+/media/fat/_Arcade/cores/Suna8bit_20260912.rbf
+/media/fat/_Arcade/cores/ST-V_20261019.rbf
+/media/fat/_Arcade/cores/StunRunner_20260930.rbf
+/media/fat/_Arcade/cores/SSV_20260930.rbf
+/media/fat/_Arcade/cores/SNK6502_20261104.rbf
+/media/fat/_Arcade/cores/SMS_20260804.rbf
+/media/fat/_Arcade/cores/SmashTV-YUnit-Family2.rbf
+/media/fat/_Arcade/cores/SKNS_20260901.rbf
+/media/fat/_Arcade/cores/Simple156_20261014.rbf
+/media/fat/_Arcade/cores/ShogunWarriors_20261010.rbf
+/media/fat/_Arcade/cores/SeibuSPI.rbf
+/media/fat/_Arcade/cores/SegaYBoard_20260901.rbf
+/media/fat/_Arcade/cores/SegaVCO_20260801.rbf
+/media/fat/_Arcade/cores/SegaSystem32Multi_20260831.rbf
+/media/fat/_Arcade/cores/SegaSystem32_20260818.rbf
+/media/fat/_Arcade/cores/SegaSpaceHarrier_20260905.rbf
+/media/fat/_Arcade/cores/SegaS32.rbf
+/media/fat/_Arcade/cores/segas24_20260806.rbf
+/media/fat/_Arcade/cores/SegaG80_20260511.rbf
+/media/fat/_Arcade/cores/SCI_20261008.rbf
+/media/fat/_Arcade/cores/sailormn_mister_20250805.rbf
+/media/fat/_Arcade/cores/Rayforce_20260909.rbf
+/media/fat/_Arcade/cores/RampageWT-2E.rbf
+/media/fat/_Arcade/cores/Punchout_260822.rbf
+/media/fat/_Arcade/cores/PsikyoSH2_20260905.rbf
+/media/fat/_Arcade/cores/PrimalRage_20261102.rbf
+/media/fat/_Arcade/cores/PlumpPop.rbf
+/media/fat/_Arcade/cores/PlayChoice10_20261020.rbf
+/media/fat/_Arcade/cores/PGM2_20261017e.rbf
+/media/fat/_Arcade/cores/Paperboy_20260730.rbf
+/media/fat/_Arcade/cores/opwolf_20260718.rbf
+/media/fat/_Arcade/cores/NSS_20260930.rbf
+/media/fat/_Arcade/cores/NMK16_Raphero_20260920.rbf
+/media/fat/_Arcade/cores/NMK16_Macross2_20260920.rbf
+/media/fat/_Arcade/cores/NMK16_Gunnail_20260920.rbf
+/media/fat/_Arcade/cores/NMK16_Afega_20260920.rbf
+/media/fat/_Arcade/cores/Night_Striker_20261006.rbf
+/media/fat/_Arcade/cores/NamcoS2_SZ_20261002.rbf
+/media/fat/_Arcade/cores/NamcoS2_STD_20261002.rbf
+/media/fat/_Arcade/cores/NamcoS2_SG_20261002.rbf
+/media/fat/_Arcade/cores/NamcoS2_MH_20261002.rbf
+/media/fat/_Arcade/cores/NamcoS2_LW_20261002.rbf
+/media/fat/_Arcade/cores/NamcoND1_20260930.rbf
+/media/fat/_Arcade/cores/Namco_NB1_20261002.rbf
+/media/fat/_Arcade/cores/MustacheBoy.rbf
+/media/fat/_Arcade/cores/MonacoGP_20261105.rbf
+/media/fat/_Arcade/cores/Model2_20261011.rbf
+/media/fat/_Arcade/cores/Model1_20261030.rbf
+/media/fat/_Arcade/cores/Millipede_20260518.rbf
+/media/fat/_Arcade/cores/metamorphicforce_20261011.rbf
+/media/fat/_Arcade/cores/MegaPlay_20260626.rbf
+/media/fat/_Arcade/cores/mazinger_mister_20250804.rbf
+/media/fat/_Arcade/cores/MarbleMadness2.rbf
+/media/fat/_Arcade/cores/madgear_20260916.rbf
+/media/fat/_Arcade/cores/LegendOfKage_20260721.rbf
+/media/fat/_Arcade/cores/lastduel_20260916.rbf
+/media/fat/_Arcade/cores/KonamiM2_20261105.rbf
+/media/fat/_Arcade/cores/KonamiHornet_20261026.rbf
+/media/fat/_Arcade/cores/KonamiGXT34_20261030.rbf
+/media/fat/_Arcade/cores/KonamiGXT1_20261013.rbf
+/media/fat/_Arcade/cores/KonamiGX_20261028.rbf
+/media/fat/_Arcade/cores/KillerInstinct_20261030.rbf
+/media/fat/_Arcade/cores/kickle_20261013.rbf
+/media/fat/_Arcade/cores/KickAndRun_20260801.rbf
+/media/fat/_Arcade/cores/KanekoFamily_20261021.rbf
+/media/fat/_Arcade/cores/Kaneko16_20260825.rbf
+/media/fat/_Arcade/cores/Juezhan_Tianhuang_b03.rbf
+/media/fat/_Arcade/cores/jtthundr.rbf
+/media/fat/_Arcade/cores/jtthoop.rbf
+/media/fat/_Arcade/cores/jtthoop2.rbf
+/media/fat/_Arcade/cores/jtsquash.rbf
+/media/fat/_Arcade/cores/jtaligator.rbf
+/media/fat/_Arcade/cores/Jedi_20260930.rbf
+/media/fat/_Arcade/cores/JalecoMS32_20260919.rbf
+/media/fat/_Arcade/cores/JalecoMS1Z_20260923.rbf
+/media/fat/_Arcade/cores/ITech32_20260925.rbf
+/media/fat/_Arcade/cores/I-Robot_20260912.rbf
+/media/fat/_Arcade/cores/HardDrivin_cockpit.rbf
+/media/fat/_Arcade/cores/Gyruss_20261029.rbf
+/media/fat/_Arcade/cores/gunpey_20261023.rbf
+/media/fat/_Arcade/cores/Guardians_20260824.rbf
+/media/fat/_Arcade/cores/GrindStormer_20260728.rbf
+/media/fat/_Arcade/cores/glass_20260713.rbf
+/media/fat/_Arcade/cores/Fuuki_20260916.rbf
+/media/fat/_Arcade/cores/ffxexex_20260930.rbf
+/media/fat/_Arcade/cores/ffwecleman_20261001.rbf
+/media/fat/_Arcade/cores/ffkonamigt_20261004.rbf
+/media/fat/_Arcade/cores/ffgticlubsd_20261105.rbf
+/media/fat/_Arcade/cores/ffgticlub_20261105.rbf
+/media/fat/_Arcade/cores/ffasterix_20260929.rbf
+/media/fat/_Arcade/cores/EscapeKids_20260903.rbf
+/media/fat/_Arcade/cores/Escape_20260830.rbf
+/media/fat/_Arcade/cores/empirecity_20260718.rbf
+/media/fat/_Arcade/cores/DrMicro_20260907.rbf
+/media/fat/_Arcade/cores/DonkeyKong3_20260515.rbf
+/media/fat/_Arcade/cores/Dogyuun.rbf
+/media/fat/_Arcade/cores/DoCastle_20260802.rbf
+/media/fat/_Arcade/cores/DECOCassette_20260630.rbf
+/media/fat/_Arcade/cores/DEC8_20261022.rbf
+/media/fat/_Arcade/cores/Continental_Circus.rbf
+/media/fat/_Arcade/cores/CloakAndDagger_20260708.rbf
+/media/fat/_Arcade/cores/Chase_HQ_20261006.rbf
+/media/fat/_Arcade/cores/ChacknPop.rbf
+/media/fat/_Arcade/cores/cave_20260808.rbf
+/media/fat/_Arcade/cores/Bucky_20260812.rbf
+/media/fat/_Arcade/cores/blockhl_20261029.rbf
+/media/fat/_Arcade/cores/BlackPanther_20261019.rbf
+/media/fat/_Arcade/cores/BerlinWall.rbf
+/media/fat/_Arcade/cores/Batsugun_20260726.rbf
+/media/fat/_Arcade/cores/Batman_20260924.rbf
+/media/fat/_Arcade/cores/Atari-G1_20260925.rbf
+/media/fat/_Arcade/cores/Arcade-ZN2Capcom_20260828.rbf
+/media/fat/_Arcade/cores/Arcade-XNWINRUN_20261017.rbf
+/media/fat/_Arcade/cores/Arcade-XNSYSTEM21_20261017.rbf
+/media/fat/_Arcade/cores/Arcade-TUnit-CRT-Adjust.rbf
+/media/fat/_Arcade/cores/Arcade-NARC-v9.rbf
+/media/fat/_Arcade/cores/Appoooh_20260916.rbf
+/media/fat/_Arcade/cores/Alpha68kN.rbf
+/media/fat/_Arcade/cores/agallet_mister_20250805.rbf
+Installing custom Main
+[0;32m✓[0m Completed

@@ -65,6 +65,7 @@ function additem {
 counter=0
 
 #1106
+   add "Tobe! Polystars (ver JAA).mra" "_Tobe! Polystars"
    add "Monaco GP.mra" "_Monaco GP"
 
 #1105

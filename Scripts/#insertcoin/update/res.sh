@@ -2269,13 +2269,17 @@ function process {
             delalt "_Monaco GP"
             ;;
 
+            "KonamiM2")
+            dl "KonamiM2.zip" "KonamiM2"
+            debug "KonamiM2"
+            delmra "Tobe! Polystars (ver JAA).mra"
+            delrbf "KonamiM2_*.rbf"
+            delalt "_Tobe! Polystars"
+            ;;
 
             *)
             echo "Unknown process: $1"
             ;;
-
-
-
     esac
 }
 
@@ -2406,6 +2410,7 @@ process "Gunpey"
 process "Salamander"
 process "GTIClub"
 process "MonacoGP"
+process "KonamiM2"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo

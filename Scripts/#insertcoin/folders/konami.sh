@@ -78,6 +78,7 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Thunder Cross (set 1).mra" "_Thunder Cross" "" "STG"
    add "$dir" "H"  "Thunder Cross II (World).mra" "_Thunder Cross II" "" "STG"
    add "$dir" "H"  "Thunder Cross II (World).mra" "_Thunder Cross II" "" "STG"
+   add "$dir" "H"  "Tobe! Polystars (ver JAA).mra" "_Tobe! Polystars" 
    add "$dir" "H"  "Track & Field.mra" "_Track & Field" "" "SPO"
    add "$dir" "H"  "Vendetta (World, 4 Players, ver. T).mra" "_Vendetta" "" "BEA"
    add "$dir" "H"  "Vulcan Venture (New).mra" "_Vulcan Venture" "_Gradius II Gofer no Yabou" "STG"
