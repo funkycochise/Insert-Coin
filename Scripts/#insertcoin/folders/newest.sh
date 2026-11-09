@@ -64,6 +64,9 @@ function additem {
 
 counter=0
 
+#1109
+   additem "$namco_sys23" 
+
 #1107
    additem "$segamodel2"
    additem "$segamodel1"  

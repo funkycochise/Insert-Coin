@@ -2283,6 +2283,28 @@ function process {
             delalt "_Tobe! Polystars"
             ;;
 
+	    "NamcoSystem23")
+            dl "NamcoSystem23.zip" "NamcoSystem23"
+            debug "NamcoSystem23"
+            delmra "500 GP (US, 5GP3 Ver. C).mra"
+            delmra "Angler King (Japan, AG1 Ver. A).mra"
+            delmra "Crisis Zone (World, CSZO4 Ver. B).mra"
+            delmra "Downhill Bikers (US, DH3 Ver. A).mra"
+            delmra "Motocross Go! (US, MG2 Ver. A).mra"
+            delmra "Panic Park (World, PNP2 Ver. A).mra"
+            delmra "Time Crisis II (US, TSS3 Ver. B).mra"
+            delrbf "Arcade-XNSUPER23S_*.rbf"
+            delrbf "Arcade-XNSUPER23_*.rbf"
+            delrbf "Arcade-XNSYSTEM23_*.rbf"
+            delalt "_500 GP"
+            delalt "_Angler King"
+            delalt "_Crisis Zone"
+            delalt "_Downhill Bikers"
+            delalt "_Motocross Go!"
+            delalt "_Panic Park"
+            delalt "_Time Crisis II"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2417,6 +2439,7 @@ process "Salamander"
 process "GTIClub"
 process "MonacoGP"
 process "KonamiM2"
+process "NamcoSystem23"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo

@@ -17,7 +17,7 @@
 Removing /media/fat/_#Insert-Coin
 Resources installation in progress...
 [0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█
-[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0m
+[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0m
 Please Wait
 [0;32m✓[0m Completed
 arcsound server installation/verification
@@ -53,8 +53,8 @@ Cleaning obsolete/unwanted core
 [0;32m✓[0m Completed
 Creating /media/fat/_#Insert-Coin
 [0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█
-[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0m
-Menu Creation process completed in 222 sec.
+[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0m
+Menu Creation process completed in 223 sec.
 Getting latest console cores
 [0;34m✓[0m PSX
 [0;34m✓[0m S32X
@@ -99,7 +99,6 @@ Getting latest console cores
 /media/fat/_Arcade/cores/wrally.rbf
 /media/fat/_Arcade/cores/WolfUnit.rbf
 /media/fat/_Arcade/cores/VioStorm_20261009.rbf
-/media/fat/_Arcade/cores/Vindicators_20261106.rbf
 /media/fat/_Arcade/cores/Universal_DoCastle.rbf
 /media/fat/_Arcade/cores/TwinHawk_20260813.rbf
 /media/fat/_Arcade/cores/Tecmo16_20261004.rbf
@@ -124,10 +123,8 @@ Getting latest console cores
 /media/fat/_Arcade/cores/SegaG80_20260511.rbf
 /media/fat/_Arcade/cores/SCI_20261008.rbf
 /media/fat/_Arcade/cores/sailormn_mister_20250805.rbf
-/media/fat/_Arcade/cores/S32_20261105.rbf
 /media/fat/_Arcade/cores/Rayforce_20260909.rbf
 /media/fat/_Arcade/cores/RampageWT-2E.rbf
-/media/fat/_Arcade/cores/Qix_20261105.rbf
 /media/fat/_Arcade/cores/Punchout_260822.rbf
 /media/fat/_Arcade/cores/PsikyoSH2_20260905.rbf
 /media/fat/_Arcade/cores/PlumpPop.rbf
@@ -215,11 +212,13 @@ Getting latest console cores
 /media/fat/_Arcade/cores/BerlinWall.rbf
 /media/fat/_Arcade/cores/Batsugun_20260726.rbf
 /media/fat/_Arcade/cores/Batman_20260924.rbf
-/media/fat/_Arcade/cores/atarisys2_20261105.rbf
 /media/fat/_Arcade/cores/Atari-G1_20260925.rbf
 /media/fat/_Arcade/cores/Arcade-ZN2Capcom_20260828.rbf
 /media/fat/_Arcade/cores/Arcade-XNWINRUN_20261017.rbf
+/media/fat/_Arcade/cores/Arcade-XNSYSTEM23_20261107.rbf
 /media/fat/_Arcade/cores/Arcade-XNSYSTEM21_20261017.rbf
+/media/fat/_Arcade/cores/Arcade-XNSUPER23S_20261107.rbf
+/media/fat/_Arcade/cores/Arcade-XNSUPER23_20261107.rbf
 /media/fat/_Arcade/cores/Arcade-TUnit-CRT-Adjust.rbf
 /media/fat/_Arcade/cores/Arcade-NARC-v9.rbf
 /media/fat/_Arcade/cores/Appoooh_20260916.rbf
