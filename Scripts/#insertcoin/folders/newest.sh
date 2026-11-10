@@ -64,6 +64,10 @@ function additem {
 
 counter=0
 
+#1110
+   additem "$taitognet"
+   add "Beyond Kung-Fu (FF, Irem, 1987) (location test).mra" "_Beyond Kung-Fu"
+
 #1109
    additem "$namco_sys23" 
 
@@ -113,7 +117,7 @@ counter=0
    additem "$igspgm2"
 
 #1015
-   additem "$taitognet"
+#   additem "$taitognet"
    additem "$namco_sys12"
 
 #1013

@@ -17,7 +17,7 @@
 Removing /media/fat/_#Insert-Coin
 Resources installation in progress...
 [0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█
-[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0m
+[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0;34m█[0m
 Please Wait
 [0;32m✓[0m Completed
 arcsound server installation/verification
@@ -54,7 +54,7 @@ Cleaning obsolete/unwanted core
 Creating /media/fat/_#Insert-Coin
 [0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█
 [0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0;31m█[0m
-Menu Creation process completed in 223 sec.
+Menu Creation process completed in 222 sec.
 Getting latest console cores
 [0;34m✓[0m PSX
 [0;34m✓[0m S32X
@@ -102,7 +102,7 @@ Getting latest console cores
 /media/fat/_Arcade/cores/Universal_DoCastle.rbf
 /media/fat/_Arcade/cores/TwinHawk_20260813.rbf
 /media/fat/_Arcade/cores/Tecmo16_20261004.rbf
-/media/fat/_Arcade/cores/TaitoGNET_20261015.rbf
+/media/fat/_Arcade/cores/TaitoGNET_20261102.rbf
 /media/fat/_Arcade/cores/Suna8bit_20260912.rbf
 /media/fat/_Arcade/cores/ST-V_20261019.rbf
 /media/fat/_Arcade/cores/StunRunner_20260930.rbf
@@ -191,6 +191,7 @@ Getting latest console cores
 /media/fat/_Arcade/cores/ffkonamigt_20261004.rbf
 /media/fat/_Arcade/cores/ffgticlubsd_20261105.rbf
 /media/fat/_Arcade/cores/ffgticlub_20261105.rbf
+/media/fat/_Arcade/cores/ffbkungfu_20261107.rbf
 /media/fat/_Arcade/cores/ffasterix_20260929.rbf
 /media/fat/_Arcade/cores/EscapeKids_20260903.rbf
 /media/fat/_Arcade/cores/Escape_20260830.rbf

@@ -35,6 +35,7 @@ function dot {
     dot_n=$((dot_n + 1))
     if [ "$dot_n" -ge "$dot_max" ]; then
         echo
+
         dot_n=0
     fi
 }
@@ -2305,6 +2306,14 @@ function process {
             delalt "_Time Crisis II"
             ;;
 
+            "BeyondKungFu")
+            dl "BeyondKungFu.zip" "BeyondKungFu"
+            debug "BeyondKungFu"
+            delmra "Beyond Kung-Fu (FF, Irem, 1987) (location test).mra"
+            delrbf "ffbkungfu_*.rbf"
+            delalt "_Beyond Kung-Fu"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2440,6 +2449,7 @@ process "GTIClub"
 process "MonacoGP"
 process "KonamiM2"
 process "NamcoSystem23"
+process "BeyondKungFu"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
