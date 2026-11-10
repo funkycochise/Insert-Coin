@@ -2314,6 +2314,10 @@ function process {
             delalt "_Beyond Kung-Fu"
             ;;
 
+            "SFZ3")
+            dl "SFZ3.zip" "SFZ3"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2450,6 +2454,7 @@ process "MonacoGP"
 process "KonamiM2"
 process "NamcoSystem23"
 process "BeyondKungFu"
+process "SFZ3"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
