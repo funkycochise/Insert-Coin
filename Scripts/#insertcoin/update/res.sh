@@ -2318,6 +2318,25 @@ function process {
             dl "SFZ3.zip" "SFZ3"
             ;;
 
+            "Cojag")
+            dl "Cojag.zip" "Cojag"
+            debug "Cojag"
+            delmra "Area 51 (R3000).mra"
+            delmra "Area 51 - Maximum Force Duo v2.0.mra"
+            delmra "Fishin' Frenzy (prototype).mra"
+            delmra "Freeze (Atari) (prototype, English voice, 96-10-25).mra"
+            delmra "Maximum Force v1.05.mra"
+            delmra "Vicious Circle (prototype).mra"
+            delrbf "cojag020_*.rbf"
+            delrbf "cojagr3k_*.rbf"
+            delalt "_Area 51"
+            delalt "_Area 51 - Maximum Force Duo"
+            delalt "_Fishin' Frenzy"
+            delalt "_Freeze"
+            delalt "_Maximum Force"
+            delalt "_Vicious Circle"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2455,6 +2474,7 @@ process "KonamiM2"
 process "NamcoSystem23"
 process "BeyondKungFu"
 process "SFZ3"
+process "Cojag"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo

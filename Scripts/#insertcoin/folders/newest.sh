@@ -64,6 +64,9 @@ function additem {
 
 counter=0
 
+#1113
+   additem "$ataricojag" 
+
 #1110
    additem "$taitognet"
    add "Beyond Kung-Fu (FF, Irem, 1987) (location test).mra" "_Beyond Kung-Fu"

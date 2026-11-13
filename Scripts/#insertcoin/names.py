@@ -40,6 +40,7 @@ alpha=_Alpha
 atlus=_Atlus
 aleck64=_Aleck64
 atari=_Atari
+ataricojag=_Atari Cojag
 atarisys1=_Atari-System-1
 atarisys2=_Atari-System-2
 bagman=_Bagman

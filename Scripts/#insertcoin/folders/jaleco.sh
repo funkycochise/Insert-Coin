@@ -21,10 +21,12 @@ if  [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H" "Jitsuryoku!! Pro Yakyuu (Japan).mra" "_Jitsuryoku!! Pro Yakyuu" "" "ACT"
    add "$dir" "H" "Legend of Makai (World).mra" "_Legend of Makai" "" "ACT"
    add "$dir" "H" "P-47 - The Freedom Fighter (Japan).mra" "_P-47 - The Freedom Fighter" "" "STG"
+   #add "$dir" "H" "P-47 Aces (ver 1.1).mra" "_P-47 Aces" "" "STG"
    add "$dir" "H" "Rod-Land (World, set 1).mra" "_Rod-Land" "" "ACT"
    add "$dir" "H" "Saint Dragon (Set 1).mra" "_Saint Dragon" "" "STG"
    add "$dir" "H" "Soldam.mra" "_Soldam" "" "PUZ"
    add "$dir" "H" "The Lord of King (Japan).mra" "_The Astyanax" "" "ACT"
+   #add "$dir" "H" "The Game Paradise - Master of Shooting! (ver 1.0).mra" "_The Game Paradise - Master of Shooting!" "" "STG"
    add_rep "$dir" "H" "_Avenging Spirit"  "_Avenging Spirit" "" "ACT"
    add_rep "$dir" "H" "_E.D.F. - Earth Defense Force"  "_E.D.F. - Earth Defense Force" "" "ACT"
    dot
