@@ -2263,9 +2263,13 @@ function process {
             dl "GTIClub.zip" "GTIClub"
             debug "GTIClub"
             delmra "GTI Club (FF, Konami, 1996).mra"
+            delmra "Operation Thunder Hurricane (FF, Konami, 1997).mra"
+            delmra "Solar Assault (FF, Konami, 1997).mra"
             delrbf "ffgticlubsd_*.rbf"
             delrbf "ffgticlub_*.rbf"
             delalt "_GTI Club"
+            delalt "_Operation Thunder Hurricane"
+            delalt "_Solar Assault"
             ;;
 
             "MonacoGP")

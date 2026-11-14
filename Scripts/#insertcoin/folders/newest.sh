@@ -64,7 +64,11 @@ function additem {
 
 counter=0
 
+
 #1113
+   add "GTI Club (FF, Konami, 1996).mra" "_GTI Club"
+   add "Solar Assault (FF, Konami, 1997).mra" "_Solar Assault"
+   add "Operation Thunder Hurricane (FF, Konami, 1997).mra" "_Operation Thunder Hurricane"
    additem "$ataricojag" 
 
 #1110
@@ -83,7 +87,6 @@ counter=0
    add "Monaco GP.mra" "_Monaco GP"
 
 #1105
-   add "GTI Club (FF, Konami, 1996).mra" "_GTI Club"
    additem "$taitof3"
 
 #1103
