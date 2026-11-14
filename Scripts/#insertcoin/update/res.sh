@@ -2265,11 +2265,14 @@ function process {
             delmra "GTI Club (FF, Konami, 1996).mra"
             delmra "Operation Thunder Hurricane (FF, Konami, 1997).mra"
             delmra "Solar Assault (FF, Konami, 1997).mra"
+            delmra ""
             delrbf "ffgticlubsd_*.rbf"
             delrbf "ffgticlub_*.rbf"
+            delrbf "ffjetwave_*.rbf"
             delalt "_GTI Club"
             delalt "_Operation Thunder Hurricane"
             delalt "_Solar Assault"
+            delalt "_Jet Wave"
             ;;
 
             "MonacoGP")
