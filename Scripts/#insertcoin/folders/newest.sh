@@ -64,6 +64,10 @@ function additem {
 
 counter=0
 
+#1115
+   add "Pole Position.mra" "_Pole Position"
+   add "Pole Position II.mra" "_Pole Position II"
+
 #1113
    #add "Jet Wave (FF, Konami, 1996).mra" "_Jet Wave"
    #add "Solar Assault (FF, Konami, 1997).mra" "_Solar Assault"

@@ -37,5 +37,8 @@ if [ "$resh" == "1" ] || [ "$resv" == "1" ]; then
    add "$dir" "H"  "Pole Position.mra" "_Pole Position" "" "RAC"
    add "$dir" "H"  "Rapid River (US, RD3 Ver. C).mra" "_Rapid River" "" ""
 
+   add_rep "$dir" "H" "_Pole Position" "_Pole Position" "" "RAC"
+   add_rep "$dir" "H" "_Pole Position II" "_Pole Position II" "" "RAC"
+
    dot
 fi

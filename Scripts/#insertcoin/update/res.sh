@@ -2344,6 +2344,16 @@ function process {
             delalt "_Vicious Circle"
             ;;
 
+            "PolePosition")
+            dl "PolePosition.zip" "PolePosition"
+            debug "PolePosition"
+            delmra "Pole Position.mra"
+            delmra "Pole Position II.mra"
+            delrbf "PolePosition_*.rbf"
+            delalt "_Pole Position"
+            delalt "_Pole Position II"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2482,6 +2492,7 @@ process "NamcoSystem23"
 process "BeyondKungFu"
 process "SFZ3"
 process "Cojag"
+process "PolePosition"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo
