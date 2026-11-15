@@ -62,6 +62,7 @@ fi
 ./folders/Kiwako.sh 
 ./folders/konami.sh 
 ./folders/konami_twin16.sh
+./folders/konami_gticlub.sh
 ./folders/konami_gx.sh
 ./folders/konami_hornet.sh
 ./folders/ladybug.sh 
