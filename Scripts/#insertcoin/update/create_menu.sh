@@ -138,6 +138,7 @@ fi
 ./folders/taitognet.sh
 ./folders/taitosj.sh 
 ./folders/taitox.sh 
+./folders/tatsumi.sh 
 ./folders/technos.sh 
 ./folders/technosoft.sh 
 ./folders/technos16.sh 

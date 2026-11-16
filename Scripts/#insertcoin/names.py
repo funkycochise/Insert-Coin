@@ -161,6 +161,7 @@ taitof3=_Taito-F3
 taitognet=_Taito-GNet
 taitosj=_Taito-SJ
 taitox=_Taito-X
+tatsumi=_Tatsumi
 technos=_Technos
 technosoft=_Technosoft
 technos16=_Technos16

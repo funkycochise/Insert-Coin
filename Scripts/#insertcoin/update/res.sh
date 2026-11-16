@@ -28,7 +28,11 @@ if [ "$debug" == "1" ]; then
 fi
 }
 
-dot_max=100
+function crc32zip {
+   gzip -c "$1" | tail -c8 | od -An -tx4 -N4 | tr -d ' ' | tr a-f A-F
+}
+
+dot_max=123
 dot_n=0
 function dot {
     echo -n -e "${BLUE}█"
@@ -2216,6 +2220,18 @@ function process {
             delalt "_Chack'n Pop"
             ;;
 
+            "Fifj")
+            dl "Fifj.zip" "Fix-It Felix Jr."
+            debug "Fix-It Felix Jr."
+            delmra "Fix-It Felix Jr..mra"
+            delrbf "fifelix.rbf"
+            delalt "_Fix-It Felix Jr."
+            local rom="/media/fat/games/mame/felixjr.zip"
+            if [ -f "$rom" ] && [ "$(crc32zip "$rom")" != "B85EFD1F" ]; then
+               rm -f "$rom"
+            fi
+            ;;
+
             "BlockHole")
             dl "BlockHole.zip" "BlockHole"
             debug "BlockHole"
@@ -2354,6 +2370,22 @@ function process {
             delalt "_Pole Position II"
             ;;
 
+            "TX1")
+            dl "TX1.zip" "TX1"
+            debug "TX-1"
+            delmra "TX-1.mra"
+            delrbf "TX1.rbf"
+            delalt "_TX-1"
+            ;;
+
+            "BuggyBoyJr")
+            dl "BuggyBoyJr.zip" "Buggy Boy Junior"
+            debug "Buggy Boy Junior"
+            delmra "Buggy Boy Junior.mra"
+            delrbf "Arcade-BuggyBoyJunior.rbf"
+            delalt "_Buggy Boy Junior"
+            ;;
+
             *)
             echo "Unknown process: $1"
             ;;
@@ -2478,6 +2510,7 @@ process "SYS21"
 process "BlackPanther"
 process "PlumpPop"
 process "ChacknPop"
+process "Fifj"
 process "KonamiHornet"
 process "BlockHole"
 process "GuwangeOmen"
@@ -2493,6 +2526,8 @@ process "BeyondKungFu"
 process "SFZ3"
 process "Cojag"
 process "PolePosition"
+process "TX1"
+process "BuggyBoyJr"
 
 # Attendre la fin de tous les téléchargements, puis supprimer en une passe
 echo -ne "${NC}"; [ "$dot_n" -ne 0 ] && echo

@@ -64,6 +64,9 @@ function additem {
 
 counter=0
 
+#1116
+   additem "$tatsumi"
+
 #1115
    add "Pole Position.mra" "_Pole Position"
    add "Pole Position II.mra" "_Pole Position II"
