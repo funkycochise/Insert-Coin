@@ -64,6 +64,9 @@ function additem {
 
 counter=0
 
+#1117
+   add "NK_Ghouls'n'Ghosts.mgl" "_Ghouls'n'Ghosts"
+
 #1116
    additem "$tatsumi"
 

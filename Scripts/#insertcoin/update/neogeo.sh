@@ -272,6 +272,7 @@ neo "zupapa.zip"
 neo "turfmastscot.zip"
 neo "TTE_shinobi.zip"
 neo "TTE_goldenaxe.zip"
+neo "NK_ghouls.zip"
 
 xml
 
