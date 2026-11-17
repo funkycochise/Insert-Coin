@@ -189,9 +189,9 @@ if [ "$mame_rom" == "1" ]; then
    ./update/mame.sh
    ./update/mame_cv1k.sh
 fi
-if [ "$neo_rom" == "1" ]; then
+#if [ "$neo_rom" == "1" ]; then
    ./update/neogeo.sh
-fi
+#fi
 
 if [ "$gnw_rom" == "1" ]; then
    ./update/gw.sh
