@@ -168,6 +168,27 @@ then
    rm -r /media/fat/Scripts/#insertcoin/out.txt
 fi
 
+#check Internet connection before doing anything
+function check_network {
+    local i
+    for i in 1; do
+        if curl -s -o /dev/null --head --max-time 5 https://github.com || \
+           wget -q --spider --timeout=5 https://github.com; then
+            return 0
+        fi
+        echo "Connexion Internet indisponible, nouvel essai ($i/3)..."
+        sleep 2
+    done
+    return 1
+}
+
+if ! check_network; then
+    echo "Erreur : pas de connexion Internet. Verifiez le cable ou le Wi-Fi, puis relancez."
+    exit 1
+else
+    echo -e "${BLUE}${CHECK}${NC} Internet Connection OK"
+fi
+
 #clean of existing folders
 if test -f "./update/sweep.sh"; then
   ./update/sweep.sh
@@ -188,10 +209,10 @@ fi
 if [ "$mame_rom" == "1" ]; then
    ./update/mame.sh
    ./update/mame_cv1k.sh
-fi
+#fi
 #if [ "$neo_rom" == "1" ]; then
    ./update/neogeo.sh
-#fi
+fi
 
 if [ "$gnw_rom" == "1" ]; then
    ./update/gw.sh
